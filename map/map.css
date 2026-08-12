@@ -1,0 +1,113 @@
+/* ============================================================
+   map.css — interactive Rokugan → region map
+   ============================================================ */
+.mapapp{ margin:1.4rem 0 0; }
+
+.map-toolbar{
+  display:flex; align-items:center; gap:0.9rem; flex-wrap:wrap;
+  padding:0.55rem 0.9rem; margin-bottom:0.7rem;
+  background:linear-gradient(180deg, rgba(23,18,13,0.96), rgba(23,18,13,0.88));
+  border:1px solid var(--gold-soft); border-radius:3px;
+}
+.map-toolbar .rtitle{
+  font-family:var(--disp); font-weight:600; font-size:1.32rem; color:#f2e9d4; margin-right:auto;
+}
+.map-toolbar .rtitle .clandot{ display:inline-block; width:0.62em; height:0.62em; border-radius:50%; margin-right:0.45em; vertical-align:0.02em; }
+.map-hint{ font-family:var(--caps); text-transform:uppercase; letter-spacing:0.14em; font-size:0.8rem; color:#c9a24f; }
+
+.map-btn{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em; font-size:0.82rem; font-weight:600;
+  color:#e9dcc0; background:rgba(255,255,255,0.05); border:1px solid var(--gold-soft);
+  border-radius:4px; padding:0.32rem 0.7rem; cursor:pointer; transition:.15s;
+}
+.map-btn:hover{ background:var(--crimson); border-color:var(--crimson-deep); color:#fff; }
+.map-btn[disabled]{ opacity:0.32; cursor:default; }
+.map-btn[disabled]:hover{ background:rgba(255,255,255,0.05); color:#e9dcc0; border-color:var(--gold-soft); }
+.zoomctl{ display:inline-flex; gap:0.3rem; }
+.zoomctl .map-btn{ min-width:2.1rem; text-align:center; }
+
+.map-viewport{
+  position:relative; overflow:hidden;
+  height:min(82vh,900px);
+  background:radial-gradient(120% 100% at 50% 0%, #2a2117, #120d08);
+  border:1px solid var(--gold-soft); border-radius:3px;
+  box-shadow:var(--shadow), inset 0 0 60px rgba(0,0,0,0.6);
+  display:flex; align-items:center; justify-content:center;
+  touch-action:none; user-select:none;
+}
+.map-viewport.grab{ cursor:grab; }
+.map-viewport.grabbing{ cursor:grabbing; }
+
+.map-frame{
+  position:relative; height:100%; aspect-ratio:2513/3263;
+  transform-origin:center center; will-change:transform;
+}
+.map-frame.animate{ transition:transform .5s cubic-bezier(.4,0,.2,1); }
+.map-frame img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:fill;
+  display:block; pointer-events:none;
+}
+.map-frame img.base{ opacity:1; transition:opacity .35s ease; }
+.map-frame.fading img.base{ opacity:0; }
+@keyframes descend{ from{ opacity:0; transform:scale(1.06); } to{ opacity:1; transform:scale(1); } }
+.map-frame.region-enter img.region{ animation:descend .55s ease both; }
+
+/* hotspot svg */
+.hotspots{ position:absolute; inset:0; width:100%; height:100%; }
+.hotspots polygon{
+  fill:var(--c,#b62432); fill-opacity:0; stroke:transparent; stroke-width:0.5;
+  cursor:pointer; transition:fill-opacity .18s, stroke .18s;
+}
+.hotspots polygon:hover{ fill-opacity:0.28; stroke:#fff8e6; }
+.hotspots.hidden{ display:none; }
+
+/* clan labels overlay (overview only) */
+.labels{ position:absolute; inset:0; pointer-events:none; }
+.labels .lab{
+  position:absolute; transform:translate(-50%,-50%);
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.14em;
+  font-size:clamp(0.6rem,1.5vw,0.9rem); font-weight:600; white-space:nowrap;
+  color:#fff; text-shadow:0 1px 3px #000, 0 0 10px rgba(0,0,0,0.8);
+  padding:0.1rem 0.5rem; border-radius:3px; background:rgba(23,18,13,0.32);
+  border:1px solid rgba(255,255,255,0.18); transition:.18s; opacity:0.9;
+}
+.labels .lab.uncharted{ color:#d9c8a6; font-style:normal; opacity:0.6; }
+.labels .lab .sub{ display:block; font-size:0.62em; letter-spacing:0.1em; opacity:0.75; font-weight:400; }
+.labels.hidden{ display:none; }
+
+/* location pins (region view) */
+.pins{ position:absolute; inset:0; }
+.pins.hidden{ display:none; }
+.pin{ position:absolute; transform:translate(-50%,-100%); text-decoration:none; }
+.pin .dot{
+  display:block; width:14px; height:14px; margin:0 auto; border-radius:50% 50% 50% 0;
+  transform:rotate(-45deg); background:var(--crimson); border:2px solid #fff8e6;
+  box-shadow:0 2px 6px rgba(0,0,0,0.6);
+}
+.pin .plabel{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.08em; font-size:0.72rem; font-weight:600;
+  color:#fff; white-space:nowrap; text-shadow:0 1px 3px #000;
+  background:rgba(23,18,13,0.72); border:1px solid var(--gold-soft); border-radius:3px;
+  padding:0.04rem 0.4rem; margin-top:0.2rem; display:inline-block;
+  opacity:0; transition:.15s; transform:translateY(-2px);
+}
+.pin:hover .plabel{ opacity:1; transform:translateY(0); }
+.pin:hover .dot{ background:var(--gold-lit); }
+
+/* clan chooser row beneath the map */
+.clanrow{ display:flex; flex-wrap:wrap; gap:0.5rem; margin:0.9rem 0 0; }
+.clanbtn{
+  display:inline-flex; align-items:center; gap:0.4rem;
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em; font-size:0.82rem; font-weight:600;
+  color:var(--ink); background:var(--paper-2); border:1px solid var(--edge); border-left:4px solid var(--c,#888);
+  border-radius:3px; padding:0.3rem 0.75rem; cursor:pointer; transition:.15s;
+}
+.clanbtn .cmon{ width:22px; height:22px; }
+.clanbtn:hover{ background:#fff; box-shadow:var(--shadow-soft); }
+.clanbtn.uncharted{ opacity:0.55; cursor:default; }
+.clanbtn.active{ background:var(--c,#888); color:#fff; }
+
+@media (max-width:620px){
+  .map-viewport{ height:min(70vh,640px); }
+  .map-toolbar .rtitle{ font-size:1.1rem; }
+}

@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doji Setsuna — The Fragile Peace</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="The character dossier of Doji Setsuna — Crane Clan, Doji Bureaucrat, Emerald Magistrate and Personal Advisor to the Imperial Envoy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4efe5;
+    --paper-dark: #e8e0cf;
+    --ink: #1f1d1a;
+    --ink-soft: #4a463f;
+    --ink-faint: #7a7468;
+    --crane-blue: #6b8caf;
+    --crane-blue-deep: #3d5a7a;
+    --gold: #a88a4a;
+    --gold-deep: #7e6432;
+    --crimson: #8b3a3a;
+    --rule: #c9bfa8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at 20% 10%, rgba(168, 138, 74, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(107, 140, 175, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .document {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 4rem 4.5rem 5rem;
+    box-shadow:
+      0 1px 2px rgba(31, 29, 26, 0.08),
+      0 8px 32px rgba(31, 29, 26, 0.12);
+    position: relative;
+    border: 1px solid var(--rule);
+  }
+  .document::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      var(--crane-blue-deep) 0%,
+      var(--crane-blue) 25%,
+      var(--gold) 50%,
+      var(--crane-blue) 75%,
+      var(--crane-blue-deep) 100%);
+  }
+
+  /* HEADER */
+  header.title-block {
+    text-align: center;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  header.title-block::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem auto 0;
+  }
+  .eyebrow {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  h1.character-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .character-name .given {
+    font-style: italic;
+    color: var(--crane-blue-deep);
+  }
+  .epithets {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0.5rem 0 1rem;
+  }
+  .vitals {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+  }
+  .vitals span {
+    border-left: 1px solid var(--rule);
+    padding-left: 1.25rem;
+  }
+  .vitals span:first-child { border-left: none; padding-left: 0; }
+
+  /* SECTIONS */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2.section-title {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    position: relative;
+  }
+  h2.section-title::before {
+    content: "§";
+    color: var(--gold);
+    margin-right: 0.6rem;
+    font-style: italic;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+  }
+  h3.subhead {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--crane-blue-deep);
+    margin: 1.5rem 0 0.5rem;
+    font-style: italic;
+  }
+  h4.entry-label {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin: 1rem 0 0.25rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; padding: 0; }
+  li { margin-bottom: 0.4rem; }
+  em { color: var(--ink-soft); }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* PULL-QUOTES */
+  blockquote.maxim {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--crane-blue-deep);
+    border-left: 3px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(168, 138, 74, 0.04);
+  }
+  blockquote.maxim .attribution {
+    display: block;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--ink-faint);
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 0.15em;
+    margin-top: 0.5rem;
+  }
+
+  /* TABLES */
+  table.dossier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.92rem;
+  }
+  table.dossier-table th {
+    text-align: left;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.dossier-table td:first-child {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+  table.dossier-table tr:last-child td { border-bottom: none; }
+
+  /* PRIORITY TABLE (Advancement Plan) */
+  table.dossier-table.priority td.priority-num {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-deep);
+    text-align: center;
+    width: 2.5rem;
+    line-height: 1.2;
+  }
+  table.dossier-table.priority td.purchase {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: normal;
+    padding-right: 0.75rem;
+    width: 30%;
+  }
+  table.dossier-table.priority td.purchase em {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.15rem;
+  }
+  table.dossier-table.priority td.xp-cost {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: center;
+    width: 3rem;
+    white-space: nowrap;
+    padding-right: 0.75rem;
+  }
+  table.dossier-table.priority td.priority-notes {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  table.dossier-table.priority tr.subtotal td {
+    background: rgba(168, 138, 74, 0.08);
+    font-family: "Cormorant SC", serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table.priority tr.subtotal td.label {
+    text-align: right;
+    font-family: "Cormorant SC", serif;
+  }
+  table.dossier-table.priority tr.subtotal td.xp-cost,
+  table.dossier-table.priority tr.subtotal td.priority-notes {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  table.dossier-table.priority tr.cycle-break td {
+    padding: 0.3rem 0;
+    border-bottom: none;
+    background: transparent;
+  }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid var(--rule);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .stat-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .stat-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  /* SOCIAL STATS */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .social-cell {
+    border: 1px solid var(--rule);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .social-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .social-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: var(--crane-blue-deep);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .social-cell .delta {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.25rem;
+  }
+
+  /* TWO-COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* CALL-OUT */
+  .callout {
+    border: 1px solid var(--crane-blue);
+    border-left: 4px solid var(--crane-blue-deep);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(107, 140, 175, 0.06);
+  }
+  .callout .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--crane-blue-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* RELATIONSHIP CARDS */
+  .relations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .relation {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .relation:last-child { border-bottom: none; }
+  .relation .name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .relation .name .role {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+  .relation .name .clan {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold-deep);
+    margin-left: 0.5rem;
+  }
+  .relation .text {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.25rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+  .timeline-entry {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: 0.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gold);
+  }
+  .timeline-entry .when {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .what {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .detail {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+
+  /* TOC */
+  nav.toc {
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    columns: 2;
+    column-gap: 2rem;
+  }
+  nav.toc .toc-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    column-span: all;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    font-family: "EB Garamond", serif;
+  }
+  nav.toc ol li {
+    counter-increment: toc;
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+    break-inside: avoid;
+  }
+  nav.toc ol li::before {
+    content: counter(toc, upper-roman) ". ";
+    color: var(--gold-deep);
+    font-style: italic;
+    margin-right: 0.3rem;
+  }
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s;
+  }
+  nav.toc a:hover { border-bottom-color: var(--crane-blue); }
+
+  /* FOOTER */
+  footer.colophon {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  footer.colophon::before {
+    content: "❖";
+    display: block;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 1in; max-width: none; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 700px) {
+    body { padding: 1rem 0.5rem; }
+    .document { padding: 2rem 1.5rem 3rem; }
+    h1.character-name { font-size: 2.5rem; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+    .stat-grid { grid-template-columns: repeat(5, 1fr); gap: 0.25rem; }
+    .stat-cell { padding: 0.5rem 0.25rem; }
+    .stat-cell .value { font-size: 1.3rem; }
+    .social-grid { grid-template-columns: 1fr; }
+    nav.toc { columns: 1; }
+    .vitals { gap: 0.75rem; font-size: 0.7rem; }
+    .vitals span { border-left: none; padding-left: 0; }
+  }
+  /* Portrait */
+  .portrait-wrap {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .portrait-wrap img {
+    max-width: 360px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(31,29,26,0.12);
+  }
+
+  /* ---- site chrome (The Fragile Peace) — values literal from rokugan.css ---- */
+  body { padding-top: 0; }
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; flex-wrap:wrap; align-items:center; gap:0.1rem 1.4rem;
+    padding:0.72rem clamp(1rem,4vw,3rem);
+    margin:0 -1rem;
+    background:linear-gradient(180deg, rgba(23,18,13,0.98), rgba(23,18,13,0.9));
+    border-bottom:2px solid #b62432;
+    box-shadow:0 2px 0 rgba(154,123,63,0.35), 0 10px 24px rgba(0,0,0,0.25);
+    backdrop-filter:blur(3px);
+  }
+  .topnav .brand{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-weight:600; letter-spacing:0.24em;
+    text-transform:uppercase; font-size:0.82rem; color:#c2a25c;
+    margin-right:auto; white-space:nowrap;
+  }
+  .topnav .brand::before{ content:"\2756"; color:#b62432; margin-right:0.5em; font-size:0.8em; }
+  .topnav a{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-size:0.86rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:#cdc0a2; text-decoration:none;
+    padding:0.15rem 0; border-bottom:2px solid transparent; transition:.18s;
+  }
+  .topnav a:hover{ color:#fff; }
+  .topnav a.active{ color:#fff; border-bottom-color:#b62432; }
+  .topnav a.notes{ color:#b9c6a8; }
+  .topnav a.notes::before{ content:"\270E\00a0"; }
+  .topnav a.notes:hover{ color:#dcecc8; }
+  .document{ margin-top:2rem; }
+  .sitefoot{
+    text-align:center; margin:3rem auto 0; padding:2rem 1rem 0; max-width:880px;
+    color:#7a7468; font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif;
+    text-transform:uppercase; letter-spacing:0.18em; font-size:0.74rem;
+    border-top:1px solid #c9bfa8;
+  }
+  .sitefoot .mark{ color:#b62432; margin-right:0.6em; }
+</style>
+</head>
+<body>
+<nav class="topnav"><span class="brand">The Fragile Peace</span><a href="../index.html">Home</a><a href="../character/index.html" class="active">Setsuna</a><a href="../party/index.html">The Party</a><a href="../chronicle/index.html">Chronicle</a><a href="../dramatis-personae/index.html">Dramatis Personae</a><a href="../map/index.html">Atlas</a><a href="../lore/index.html">Lore</a><a href="../notes/index.html" class="notes">Player Notes</a></nav>
+<div class="document">
+
+  <header class="title-block">
+    <div class="eyebrow">Confidential Character Dossier</div>
+    <h1 class="character-name">Doji <span class="given">Setsuna</span></h1>
+    <p class="epithets">of Imperial Bloodline · Personal Advisor to the Imperial Envoy · Emerald Magistrate · Famously Successful · Paragon of Courtesy and of Courage</p>
+    <div class="vitals">
+      <span>Crane Clan</span>
+      <span>Doji Bureaucrat School</span>
+      <span>School Rank 3</span>
+      <span>Glory 65</span>
+      <span>Status 60</span>
+    </div>
+  </header>
+
+  <div class="portrait-wrap">
+    <img src="../assets/setsuna.webp" alt="Doji Setsuna">
+  </div>
+
+  <nav class="toc">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#identity">Identity &amp; Standing</a></li>
+      <li><a href="#mechanical">Mechanical Profile</a></li>
+      <li><a href="#doctrine">Operating Doctrine</a></li>
+      <li><a href="#interior">Interior Architecture</a></li>
+      <li><a href="#relations">Established Relations</a></li>
+      <li><a href="#household">Household</a></li>
+      <li><a href="#concealments">Concealments</a></li>
+      <li><a href="#timeline">Career Timeline</a></li>
+      <li><a href="#permitted">Permitted Spaces</a></li>
+      <li><a href="#advancement">Advancement Plan</a></li>
+      <li><a href="#endgame">Trajectory &amp; Endgame</a></li>
+    </ol>
+  </nav>
+
+  <section id="identity">
+    <h2 class="section-title">I. Identity &amp; Standing</h2>
+
+    <p>Doji Setsuna serves the Imperial order as Personal Advisor to Imperial Envoy Miya Misato and as Emerald Magistrate. She is a married woman of the Doji family, presently in her mid-twenties, of kuge standing with Imperial Bloodline. Her professional vocation is legal-administrative work in service to the throne.</p>
+
+    <h4 class="entry-label">Physical Description</h4>
+    <p>Setsuna is in her mid-twenties. She is slight of build at about 5'4", finely-boned with soft hands, light skin warmed by an undertone of gold, and dark brown eyes set in a composed face. Her long black hair is worn in a high, elegant bun from which a few strands always escape &mdash; the one persistent imperfection in an otherwise immaculate presentation. She carries herself with a tall, deliberate poise that makes her seem larger than her frame. Her dress is consistently the finest in any party she travels with: refined Crane silks in pale blue and white, often with gold detailing, cut and worn to suggest understated harmlessness rather than display. Her station speaks for her; she does not need to.</p>
+
+    <h4 class="entry-label">Manner of Presence</h4>
+    <p>She speaks with deliberate precision, choosing less ordinary words where specificity is required. Apparent misspeaking is often intentional. Under stress, she steps forward into situations she is ill-equipped for, believing her words might de-escalate. At high strife she grows curt and attempts increasingly improbable solutions. Her bushidō register is one of rigid acquiescence.</p>
+
+    <h3 class="subhead">Current Obligation &amp; Drive</h3>
+
+    <blockquote class="maxim">
+      To ensure Imperial Envoy Miya Misato succeeds in brokering peace between the Lion and the Unicorn.
+      <span class="attribution">Current giri</span>
+    </blockquote>
+
+    <blockquote class="maxim">
+      To innovate the trilateral agreement for Toshi Ranbo — for the Crane clan, for her grandmother, and to see to her husband's freedom.
+      <span class="attribution">Current ninjō</span>
+    </blockquote>
+
+    <h3 class="subhead">Standing Personal Maxims</h3>
+
+    <blockquote class="maxim">
+      Rule must bind, and if needed, contort.
+      <span class="attribution">Foundational giri — service under Kitsuki Kāgi</span>
+    </blockquote>
+
+    <blockquote class="maxim">
+      Strictures too often interfere with a beautiful tale.
+      <span class="attribution">Foundational ninjō — escape into literature, riding, and pillow-books</span>
+    </blockquote>
+  </section>
+
+  <section id="mechanical">
+    <h2 class="section-title">II. Mechanical Profile</h2>
+
+    <h3 class="subhead">Rings</h3>
+    <div class="stat-grid">
+      <div class="stat-cell"><div class="label">Earth</div><div class="value">2</div></div>
+      <div class="stat-cell"><div class="label">Water</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Fire</div><div class="value">2</div></div>
+      <div class="stat-cell"><div class="label">Air</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Void</div><div class="value">2</div></div>
+    </div>
+    <p><em>Air and Water dominate. Fire and Void, originally at 1 each, have both advanced to 2, correcting the deepest mechanical fragilities of the early build. Skill ranks and technique acquisition remain prioritised over further ring advancement, producing dice pools that rely on the skill die's superior distribution and on layered reroll mechanics.</em></p>
+
+    <h3 class="subhead">Social Standing</h3>
+    <div class="social-grid">
+      <div class="social-cell">
+        <div class="label">Honor</div>
+        <div class="value">66</div>
+        <div class="delta">self-assessment of bushidō adherence</div>
+      </div>
+      <div class="social-cell">
+        <div class="label">Glory</div>
+        <div class="value">65</div>
+        <div class="delta">Respected Adept tier</div>
+      </div>
+      <div class="social-cell">
+        <div class="label">Status</div>
+        <div class="value">60</div>
+        <div class="delta">hatamoto / provincial governor tier</div>
+      </div>
+    </div>
+
+    <h3 class="subhead">School &amp; Title</h3>
+    <table class="dossier-table">
+      <tr>
+        <td>School</td>
+        <td>Doji Bureaucrat — Rank 3. School ability <em>Procedure and Protocol</em>: targets receiving strife from her social-approach checks suffer additional strife equal to school rank.</td>
+      </tr>
+      <tr>
+        <td>Title (invested)</td>
+        <td>Emerald Magistrate — full curriculum completed at creation. Provides <em>Voice of Authority</em>: once per session, social Scheme or Support checks target additional characters equal to her Glory rank.</td>
+      </tr>
+      <tr>
+        <td>Title (acquired)</td>
+        <td>Personal Advisor to Imperial Envoy Miya Misato — mechanically the Advisor title (<em>Emerald Empire</em> p. 249), renamed on the character sheet to reflect her specific assignment. Taken in-campaign for the +10 Status award. Zero XP invested; title ability <em>Skilled Attendant</em> never unlocked. Planned for abandonment once her advisory work with Miya Misato concludes, in order to free the title slot.</td>
+      </tr>
+      <tr>
+        <td>Title (planned)</td>
+        <td>Esteemed Negotiator (<em>Courts of Stone</em>) — to be assigned at the formal request of a Lion or Unicorn daimyō (or Kitsuki Kāgi, or the Imperial Envoy) for her service as treaty mediator. 34 XP to completion. Title ability <em>Calming Words</em>: once per scene as a Scheme and Support action, reduce strife of all characters in the scene by her Sentiment ranks. See §X for allocation plan.</td>
+      </tr>
+    </table>
+
+    <h3 class="subhead">Techniques</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Technique</th><th>Type</th><th>Function</th></tr></thead>
+      <tr><td>Procedure and Protocol</td><td>School Ability</td><td>+School rank strife to targets of social Strife-inflicting checks</td></tr>
+      <tr><td>Voice of Authority</td><td>Title Ability</td><td>Once per session: expand social action targets by Glory rank</td></tr>
+      <tr><td>Beware the Smallest Mouse</td><td>Water Shūji</td><td>Reduces target vigilance ahead of future encounters</td></tr>
+      <tr><td>Well of Desire</td><td>Water Shūji</td><td>Gift-giving: forces target to forfeit glory to refuse, or reduces TN on next social check if accepted</td></tr>
+      <tr><td>Shallow Waters</td><td>Water Shūji</td><td>Learn target's desires and ninjō through conversation</td></tr>
+      <tr><td>Stonewall Tactics</td><td>Earth Shūji</td><td>Raise TN of target's actions that do not involve her</td></tr>
+      <tr><td>Civility Foremost</td><td>Earth Shūji</td><td>Claims protection for an individual by rights of honor; targets must forfeit honor and suffer strife to attack the protected person</td></tr>
+      <tr><td>The Wind Blows Both Ways</td><td>Air Shūji</td><td>Amplify or diminish target's next glory award or stake</td></tr>
+      <tr><td>Hidden in Smoke</td><td>Air Shūji</td><td>Once per scene: conceal true goal; observers perceive a false narrative goal</td></tr>
+      <tr><td>Treaty Signing</td><td>Fire Ritual</td><td>Bind participants on 10 honor each; structural enforcement of agreement</td></tr>
+      <tr><td>Courtier's Resolve</td><td>Void Shūji</td><td>Once per scene: 1 Void to remove strife equal to glory rank</td></tr>
+      <tr><td>Coiling Serpent Style</td><td>Void Kata</td><td>Disarm or immobilise via snaring weapon (incl. unarmed)</td></tr>
+      <tr><td>Open-Hand Style</td><td>Void Kata</td><td>Force opponent's stance change via unarmed snaring</td></tr>
+      <tr><td>Crescent Moon Style</td><td>Void Kata</td><td>Counter-strike during Guard action</td></tr>
+    </table>
+
+    <h3 class="subhead">Distinctions, Adversities, Passions, Anxieties</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Type</th><th>Trait</th></tr></thead>
+      <tr><td>Distinction</td><td>Famously Successful (Glory 65+ acquisition)</td></tr>
+      <tr><td>Distinction</td><td>Paragon of Courtesy</td></tr>
+      <tr><td>Distinction</td><td>Paragon of Courage</td></tr>
+      <tr><td>Distinction</td><td>Legal Scholarship</td></tr>
+      <tr><td>Distinction</td><td>Blessed Lineage (Void) — the mechanical expression of her Imperial Bloodline. Characters of Status 50 or higher recognise that harming her risks loss of prestige and so do not choose to kill her as a first option, even if she is a political obstacle they would otherwise eliminate. On checks where her esteemed lineage is a benefit, she may reroll up to two dice.</td></tr>
+      <tr><td>Adversity</td><td>Scorn of Kakita — gained from the Shirogome tax ruling; standing institutional grudge among the Kakita family</td></tr>
+      <tr><td>Adversity</td><td>Haunting — by the ghost of her grandmother, who married into the Crane from the Matsu</td></tr>
+      <tr><td>Anxiety</td><td>Dark Secret (Abortion) — mechanically tracked since the procedure</td></tr>
+      <tr><td>Anxiety</td><td>Fear of Death — terrified of dying; courage operates against this</td></tr>
+      <tr><td>Passion</td><td>Wordplay — at peace when writing poetry, reading pillow-books, riding</td></tr>
+    </table>
+  </section>
+
+  <section id="doctrine">
+    <h2 class="section-title">III. Operating Doctrine</h2>
+
+    <h3 class="subhead">The Single Cut</h3>
+    <p>Her father Doji Masateru taught her to wield the law like a sword: a single correct argument, like a single cut, should be fatal. The Kakita parsimony — the duel decided in one stroke — operates in every register of her work. Each major institutional move is one document, one ruling, one ask, prepared exhaustively in advance and executed once. Extended engagement is treated as failure of preparation. Multiple exchanges are aesthetic and operational defects.</p>
+
+    <h3 class="subhead">Visibility as Armour</h3>
+    <p>She is least in danger when most apparently exposed. Her institutional protections — Status, Glory, Imperial Bloodline, magistrate authority — activate only when her identity is legible to observers. Hidden behind walls and bodyguards she is operationally vulnerable; fully exposed in ceremonial register she is structurally protected, because harming her is prohibitively expensive to any plausible attacker. Therefore she sets the terms of her own exposure rather than waiting for blades to strike.</p>
+
+    <h3 class="subhead">Courtesy is not Kindness</h3>
+    <p>Her Paragon of Courtesy is a doctrinal commitment that excludes kindness as a register. Courtesy is for the room; kindness is for the recipient. Her courtesy operates outward toward all observers, performing perfect correctness regardless of her actual disposition. Her care travels through action and never through manner. Recipients receive correct treatment; only the few she has chosen receive the substance of her care, and that care is delivered structurally rather than warmly.</p>
+
+    <h3 class="subhead">Imperial Order Above Clan Interest</h3>
+    <p>From her first ruling against the Kakita provincial daimyō at Shirogome onward, she has consistently chosen the Imperial framework over Crane Clan interest where the two diverge. Her rulings produce Imperial gains at clan-level expense by finding the principle that elevates Imperial position above clan claims. The pattern is professional, conscious, and has accumulated specific institutional enemies.</p>
+
+    <h3 class="subhead">Information Asymmetry</h3>
+    <p><em>If you don't know the truth, you can't lie about it.</em> Trusted intimates are distributed across minimum-viable circles by function. Different parties carry different fragments of her interior life. The complete picture exists only in her.</p>
+
+    <h3 class="subhead">Layered Motivations</h3>
+    <p>Every significant action serves more than one purpose simultaneously. The invoice letter to the Scorpion lord performed institutional capture, financial reallocation, frame inversion, and historical revision in a single document. The maternal investment in Mia is genuine care, operational instrument, political career-building, atonement, and Imperial duty all at once. She does not separate her motives because the doctrine forbids the separation.</p>
+  </section>
+
+  <section id="interior">
+    <h2 class="section-title">IV. Interior Architecture</h2>
+
+    <h3 class="subhead">Sources of Formation</h3>
+    <table class="dossier-table">
+      <tr>
+        <td>Father</td>
+        <td>The legal blade. Trained her in the single-cut doctrine of Imperial law. Emotionally distant. Source of her professional method.</td>
+      </tr>
+      <tr>
+        <td>Mother</td>
+        <td>The literary transmutation. Arranged her marriage; a year in, advised obliquely that <em>a daughter of the Doji turns infidelities into poetry</em>. Source of her parallel-life framework.</td>
+      </tr>
+      <tr>
+        <td>Bayushi Tomono</td>
+        <td>The Scorpion courtier who taught her to exploit Imperial law and weaponise harmlessness. One of three people whose approval she cares about. Currently off-stage.</td>
+      </tr>
+      <tr>
+        <td>Asahina Shigehiro</td>
+        <td>Her former lord at Shirogome. Shugenja-trained city administrator who employed her as legal counsel. One of three whose approval matters.</td>
+      </tr>
+      <tr>
+        <td>Kitsuki Kāgi</td>
+        <td>Her current Emerald Magistrate superior. Recruited her after the Kakita tax loophole. One of three whose approval matters.</td>
+      </tr>
+    </table>
+
+    <h3 class="subhead">Inherited Doctrine</h3>
+    <p>The Kakita single-cut philosophy is paternal pedagogy made operational across her career. The pillow-book channel and the framework of parallel intimate life are maternal instruction made domestic infrastructure. The Affect of Harmlessness and the Imperial-law exploitation framework are Tomono's teaching. Her doctrine is not original synthesis but inherited instrumentation, refined in her own practice across years.</p>
+
+    <h3 class="subhead">Courage and Fear</h3>
+    <p>Her Fear of Death is genuine and structural. She is terrified of dying and her courage operates against the fear, not in its absence. The Paragon of Courage distinction recognises this directly: the bushidō tenet requires fear as precondition, and her demonstrated actions under fear have earned the formal virtue. Her courage is operational rather than constitutional — given time to face death, she would shrink from it. The doctrine requires the absence of time for the bravery to hold.</p>
+  </section>
+
+  <section id="relations">
+    <h2 class="section-title">V. Established Relations</h2>
+
+    <div class="relations-grid">
+
+      <div class="relation">
+        <div class="name">Shinjō Harunobu <span class="role">— husband, Husband (Lover) bond Rank 1</span><span class="clan">Unicorn</span></div>
+        <div class="text">A respected Shinjō commander, currently a Lion prisoner of war. Loves her and respects her intellect, though he considers her work <em>legal trickery</em> and prefers to solve problems directly. He understands he has married up. They communicate by letter; the marriage has been long-distance for years, but the affection is mutual and registered formally on the character sheet as a Husband (Lover) bond at Rank 1. He is blind to how she protects him politically. Her current ninjō includes seeing to his freedom; his release will come through the Toshi Ranbo settlement she is drafting.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Doji Masateru <span class="role">— father</span><span class="clan">Crane</span></div>
+        <div class="text">Imperial legal scholar, well-versed and emotionally distant. Taught her to wield the law like a sword; a single correct argument, like a single cut, should be fatal.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Doji Ayaka <span class="role">— mother</span><span class="clan">Crane</span></div>
+        <div class="text">Arranged her marriage to Harunobu. A year later, advised obliquely that <em>a daughter of the Doji turns infidelities into poetry</em>. The phrase is the mother's complete pedagogy on the parallel-life framework Setsuna now operates within.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Doji Retsuo <span class="role">— older brother</span><span class="clan">Crane</span></div>
+        <div class="text">The model heir. Thinks she is too verbose. Does not register the substance of her work.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Doji Emika <span class="role">— younger sister</span><span class="clan">Crane</span></div>
+        <div class="text">Sees Setsuna as a woman trapped by duty. Keeps her thoughts private. Has no desire to follow in her footsteps. Reserved in the Toshi Ranbo settlement for the Matsu marriage that will satisfy the grandmother's restoration demand.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Kakita Noritomo <span class="role">— provincial daimyō</span><span class="clan">Crane / Kakita</span></div>
+        <div class="text">The daimyō whose tax loophole Setsuna found while serving Shirogome. Barred her from Kakita courts and dōjō. His allies within the Emerald Magistrates may look for opportunities to undermine or discredit her. Adversity is on the sheet as <em>Scorn of Kakita</em>.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Bayushi Tomono <span class="role">— mentor</span><span class="clan">Scorpion</span></div>
+        <div class="text">A Scorpion courtier visiting Shirogome who engaged her in wordplay and taught her how to exploit Imperial law and weaponise harmlessness. Source of her core doctrinal instruments. One of three people whose approval she cares about. Currently off-stage.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Asahina Shigehiro <span class="role">— former lord</span><span class="clan">Crane / Asahina</span></div>
+        <div class="text">Lord of Shirogome. Employed her as legal counsel on Imperial-law matters. Shugenja-trained; relied on her for the technical-legal half of his administration. One of three whose approval matters.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Kitsuki Kāgi <span class="role">— Emerald Magistrate superior</span><span class="clan">Dragon / Kitsuki</span></div>
+        <div class="text">Recruited her into Imperial service after the Kakita tax loophole. Her current institutional superior. One of three whose approval matters.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Mirumoto Kyou <span class="role">— rival magistrate</span><span class="clan">Dragon / Mirumoto</span></div>
+        <div class="text">Resents Setsuna. Does not understand how she was chosen over him. Believes she does not cherish the role he was bested for.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Kakita Yoshitada <span class="role">— senior magistrate</span><span class="clan">Crane / Kakita</span></div>
+        <div class="text">Did not support her appointment. Twenty years' experience in Imperial law and duelling arbitration. Would never openly undermine an Emerald Magistrate.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Miya Misato <span class="role">— Imperial Envoy, ward</span><span class="clan">Imperial / Miya</span></div>
+        <div class="text">Sixteen years old, originally dispatched on a mission designed to fail. Setsuna appointed herself as her advisor and has invested her own XP transferring Government and Martial Arts (Unarmed) ranks to her. Mia was nearly assassinated and survived, blinded. Setsuna's maternal investment in her is the displaced object of the motherhood Setsuna refused; it is also operational instrument, atonement, and political instrument simultaneously.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Bayushi Monbon <span class="role">— assigned yojimbo</span><span class="clan">Scorpion</span></div>
+        <div class="text">Assigned to Setsuna as punishment duty by his Scorpion lord, with right of seppuku explicitly denied. Setsuna fired him at the Ifrit incident, reclaimed him at the Midnight Treaty, and invoiced his lord for his ransom. Currently operating as her yojimbo; partnership now functional. Setsuna has filed him privately as a catastrophic-violence reserve via the bound Lady of Decay he carries.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Kakita Kazume <span class="role">— magistrate colleague</span><span class="clan">Crane / Kakita</span></div>
+        <div class="text">Topaz Champion and secretly a Crane Clan harrier (shinobi). Magistrate party-member. Provided discreet logistical support during the abortion procedure.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Shiba Midori <span class="role">— magistrate colleague</span><span class="clan">Phoenix / Shiba</span></div>
+        <div class="text">Phoenix shugenja in the magistrate party. Brewed the abortifacient and conducted the procedure. The sole peer-level intimate with whom Setsuna has been visibly unmasked (ugly crying after the procedure). Her shugenja presence allowed the grandmother's ghost to manifest, granting Setsuna self-knowledge of the haunting she had carried unrecognised.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Matsu Setsuna <span class="role">— namesake great-aunt</span><span class="clan">Crane / Matsu by marriage</span></div>
+        <div class="text">Setsuna's great-aunt and namesake, who perished in battle; her estate was lost. The heritage record names her.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Matsu Tomoe <span class="role">— grandmother, ghost</span><span class="clan">Crane / Matsu by marriage</span></div>
+        <div class="text">Setsuna's maternal grandmother, who married into the Crane from the Matsu and hated being a Crane for the rest of her life. Now haunts Setsuna. Previously imperceptible, made legible when Midori's shugenja presence allowed the ghost to manifest. Demands the restoration of Toshi Ranbo and the continuation of the Matsu lineage through Emika's eventual marriage. Will not be fully satisfied; relationship is now active and adversarial.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">The Lover at Court <span class="role">— unnamed</span><span class="clan">Imperial Family</span></div>
+        <div class="text">An unnamed member of an Imperial family in Otosan Uchi. Father of the pregnancy Setsuna conceived approximately four months before the campaign began. He does not know she was pregnant and has never known. Setsuna does not pursue contact. The decision to conceal from him was partly to protect him from legal exposure and partly to spare him knowledge that would mark him.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="household">
+    <h2 class="section-title">VI. Household</h2>
+
+    <table class="dossier-table">
+      <thead><tr><th>Member</th><th>Role &amp; Function</th></tr></thead>
+      <tr><td>Bayushi Monbon</td><td>Yojimbo (Scorpion). Assigned to Setsuna as punishment duty by his Scorpion lord, originally without right of seppuku. Fired by Setsuna at the Ifrit incident and reclaimed at the Midnight Treaty; his ransom invoiced back to his lord. Currently in functional partnership with her. Carries a bound Lady of Decay that grows more visible over time.</td></tr>
+      <tr><td>Aika</td><td>Personal attendant, former geisha (Crane). Manages hair, dress, and intimate chamber care. Geisha-trained discretion. One of the two senior female witnesses to the pregnancy and procedure.</td></tr>
+      <tr><td>Ishika</td><td>Lady's maid and personal attendant (Crane). Quiet, middle-aged, motherly. Maternal-continuity register. The second senior female witness to the pregnancy and procedure.</td></tr>
+      <tr><td>Otoya</td><td>Male Crane scribe and legal assistant. Encyclopedic knowledge of Imperial law. Setsuna's working partner for document preparation and legal research.</td></tr>
+      <tr><td>Jiro</td><td>Horse attendant (Unicorn). Cares for Kogarashi.</td></tr>
+      <tr><td>Kogarashi</td><td>White Utaku steed with silver mane and tail. Lean, swift, always poised. Wedding gift from the Shinjo family. The single object of Setsuna's unguarded affection.</td></tr>
+    </table>
+
+    <div class="callout">
+      <div class="label">On the Witnesses</div>
+      <p>Aika and Ishika know Setsuna was pregnant and underwent termination. Neither has ever been formally asked for confidentiality. The trust is presumed at the deepest structural level: any request for the silence would itself constitute the breach. They serve under the knowledge that disclosure would carry capital exposure to all parties, including themselves. They have continued to serve.</p>
+    </div>
+  </section>
+
+  <section id="concealments">
+    <h2 class="section-title">VII. Concealments</h2>
+
+    <h3 class="subhead">The Pregnancy</h3>
+    <p>Approximately four months before the campaign began, Setsuna conceived in Otosan Uchi by an unnamed Imperial-family man during a period when her husband was on campaign in Unicorn lands. She carried the pregnancy through the Loyalty Castle mission and subsequent early sessions, considering carrying to term seriously before electing termination. The procedure was conducted in session by Midori; Kazume provided discreet logistical support.</p>
+
+    <h3 class="subhead">Layers of Legal Jeopardy</h3>
+    <ul>
+      <li><strong>Adultery</strong> — class-internal, framework-managed by mother's instruction; would damage marriage and clan position if known.</li>
+      <li><strong>Concealed Imperial-family bloodline</strong> — would have constituted bloodline fraud against the Imperial families if the child had been claimed as Harunobu's.</li>
+      <li><strong>Unauthorised destruction of Imperial bloodline</strong> — the act of termination, taken without Imperial sanction, is a capital crime against the throne.</li>
+    </ul>
+
+    <h3 class="subhead">Knowledge Distribution</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Person</th><th>What they know</th></tr></thead>
+      <tr><td>Midori</td><td>Procedure, medical detail. Not the father's identity.</td></tr>
+      <tr><td>Kazume</td><td>Existence of pregnancy and procedure (deduced via Skullduggery). Not the father's identity.</td></tr>
+      <tr><td>Aika</td><td>Witnessed bodily evidence of pregnancy and procedure. Not the father's identity.</td></tr>
+      <tr><td>Ishika</td><td>Witnessed bodily evidence of pregnancy and procedure. Not the father's identity.</td></tr>
+      <tr><td>The lover</td><td>Nothing. He has never known she was pregnant.</td></tr>
+      <tr><td>Harunobu</td><td>Nothing, and must never know. Learning of her infidelity would destroy him.</td></tr>
+      <tr><td>Setsuna's mother</td><td>Not consulted on this matter. Whether she suspects is unknown.</td></tr>
+      <tr><td>The wider world</td><td>Nothing. A false rumour of a liaison with the Governor of the City of the Rich Frog operates as decoy noise.</td></tr>
+    </table>
+
+    <h3 class="subhead">Persistent Cost</h3>
+    <p>The procedure produced a severe Void ring wound. The wound increases TNs for Void-stance and Void-skill checks rather than reducing pool capacity. It has persisted across the entire arc of the campaign, partially healed but not fully restored. It represents both the procedural cost and the integrated weight of the secret as carried in her body.</p>
+  </section>
+
+  <section id="timeline">
+    <h2 class="section-title">VIII. Career Timeline</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-entry">
+        <div class="when">Childhood and Early Adulthood</div>
+        <div class="what">Trained in law by her father; in domestic management and parallel-life framework by her mother.</div>
+        <div class="detail">Family of origin: Doji household. Older brother Retsuo as model heir; younger sister Emika reserved for later treaty deployment.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">Shirogome Years</div>
+        <div class="what">Legal Counsel to Asahina Shigehiro, lord of Shirogome.</div>
+        <div class="detail">Trained Government to rank 3, Composition to rank 2, acquired Beware the Smallest Mouse and Treaty Signing. Encountered Bayushi Tomono, who taught her to weaponise harmlessness and exploit Imperial law.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">The Kakita Tax Loophole</div>
+        <div class="what">Ruled that artisans were protected under an Imperial precedent from Hantei V, voiding Kakita Noritomo's new tax on craftsmen.</div>
+        <div class="detail">Daimyō declined to contest. Setsuna banned from Kakita lands. Adversity Scorn of Kakita (Water) registered on character sheet. Affect of Harmlessness (Air) was also assigned at the time but has since been retired in play, as Setsuna's accumulated career &mdash; Famously Successful, Emerald Magistrate authority, the Spear-Forest Ultimatum &mdash; no longer reads as harmless to anyone informed.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">Recruitment</div>
+        <div class="what">Kitsuki Kāgi recruited her into the Emerald Magistrates.</div>
+        <div class="detail">Completed Emerald Magistrate title curriculum: Fitness, Performance, Commerce, Unarmed to rank 3, Coiling Serpent Style, Open-Hand Style, Crescent Moon Style, Shallow Waters. Investment focused on physical defence and intelligence-gathering for field operation.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">Marriage</div>
+        <div class="what">Political marriage to Shinjo Harunobu arranged by her mother.</div>
+        <div class="detail">Received Kogarashi as wedding gift from the Shinjo family. Marriage settled rapidly into long-distance pattern.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">Otosan Uchi · Approximately Four Months Pre-Campaign</div>
+        <div class="what">Took an Imperial-family lover at court; conceived.</div>
+        <div class="detail">Departed for assignment carrying the pregnancy. Did not inform the lover.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">Loyalty Castle</div>
+        <div class="what">First major independent magistrate mission.</div>
+        <div class="detail">Adjudicated three-clan contested ownership of the Snow Plains mine. Ruled that all claims had lapsed through century-plus of non-exercise; property reverted to Imperial ownership. No clan lost to another clan; all three lost to the Imperial principle. Foundational framework of her subsequent career.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">The Procedure</div>
+        <div class="what">Termination of the pregnancy.</div>
+        <div class="detail">Midori brewed the abortifacient and conducted the procedure; Kazume provided discreet logistical support. Setsuna severely wounded in Void. Unmasked privately with Midori afterward (ugly crying). Mia Misato arrived at court the same session.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">The Fracture</div>
+        <div class="what">Court intrigue at the City of the Rich Frog.</div>
+        <div class="detail">Party credibility damaged. Monbon publicly scarred in a duel and dismissed by Setsuna shortly afterward. Party split; Setsuna travelled east with Mia.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">The Midnight Treaty</div>
+        <div class="what">Authored the Lion–Unicorn nonaggression treaty at the besieged castle gate.</div>
+        <div class="detail">Reclaimed Monbon from captivity via the ransom invoice. Acquired Famously Successful distinction at Glory 65+. The treaty staked 10 honor per signatory and held.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">The Assassination Attempt</div>
+        <div class="what">Walked unarmed into the tent where assassins held Mia at knife-point.</div>
+        <div class="detail">Disarmed the principal attacker via Coiling Serpent Style, directed Mia to strike. Mia survived but lost her sight. Setsuna severely wounded.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">The Spear-Forest Ultimatum</div>
+        <div class="what">Delivered seppuku-or-cooperation to both generals between their armies.</div>
+        <div class="detail">Air-stance Command check in formal-lacquer register. Compromised at scene end. Both generals pledged.</div>
+      </div>
+
+      <div class="timeline-entry">
+        <div class="when">Recent Advancements</div>
+        <div class="what">School Rank 3; Hidden in Smoke; Legal Scholarship; Paragon of Courage; Major honor award.</div>
+        <div class="detail">Honor 66 secured through demonstrated action under fear; Paragon of Courage acquired on the same basis. A further glory award is owed for the Spear-Forest Ultimatum but deferred to a later scene of public recognition. Build now consolidating toward Rank 4 endgame techniques.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="permitted">
+    <h2 class="section-title">IX. Permitted Spaces</h2>
+
+    <p>Her doctrine maintains a strict seal on her interior life from peer-level court society. Four channels operate outside that seal, each in an asymmetric relationship that forecloses the kind of exposure her position cannot tolerate.</p>
+
+    <h3 class="subhead">Kogarashi</h3>
+    <p>The Utaku steed received as wedding gift. The one object of her unguarded affection. Channel for kinetic warmth. Riding is simultaneously personal pleasure and political instrument; she does not separate the two. Kogarashi's visible identification as Setsuna's mount carries diplomatic weight in Unicorn-facing contexts.</p>
+
+    <h3 class="subhead">Pillow Books</h3>
+    <p>Particularly the novels of Hano no Ami. Channel for the romantic and erotic registers her own life forecloses. Vicarious literary access to the kinds of relationship her marriage and position do not permit. Her familiarity with Hano no Ami also has operational value; the novels have plot-relevant connections to investigations she has worked.</p>
+
+    <h3 class="subhead">Aika and Ishika</h3>
+    <p>The two senior female household attendants. Channel for bodily care (Aika) and maternal continuity (Ishika). Both witness her interior life without ever narrating it. The silent trust is the form of the relationship; any articulation would constitute a breach.</p>
+
+    <h3 class="subhead">Midori</h3>
+    <p>The sole peer-level intimate with whom she has been visibly unmasked. The relationship operates at professional and operational registers in public; in private (after the abortion procedure) she has cried in front of Midori without doctrinal cost. Midori's shugenja presence also unlocked the grandmother's haunting from imperceptible to legible.</p>
+  </section>
+
+  <section id="advancement">
+    <h2 class="section-title">X. Advancement Plan</h2>
+
+    <p>Near-term XP roadmap, organised into two phases. <strong>Phase 1</strong> pushes School Rank 4 with no active title (the Advisor title currently held on her sheet is abandoned without completion once her work with Miya Misato concludes; zero XP was ever invested in it). <strong>Phase 2</strong> opens upon the narrative assignment of the <em>Esteemed Negotiator</em> title (<em>Courts of Stone</em>, 34 XP) at a Lion or Unicorn daimyō's formal request for her as treaty mediator. From that point, each new purchase is allocated to <em>either</em> school-rank progress <em>or</em> title progress — never both.</p>
+
+    <div class="callout">
+      <div class="label">Title XP Allocation Rule</div>
+      <p>Per <em>Core Rulebook</em> p. 305: each XP purchase may be allocated to the active title (full value for listed advancements, half value rounded up for non-listed), <em>or</em> to the current school rank, but not to both. XP already spent before a title was assigned cannot be retroactively reallocated. The matrix below therefore distinguishes purchases by which budget they should serve at the moment of purchase.</p>
+    </div>
+
+    <h3 class="subhead">Phase 1 · Push to Rank 4 (no active title)</h3>
+    <p>Standard cycle. All purchases allocate to school rank. ~24 curriculum XP toward the 32 needed for Rank 4.</p>
+    <table class="dossier-table priority">
+      <thead>
+        <tr>
+          <th style="width: 2.5rem; text-align: center;">#</th>
+          <th>Purchase</th>
+          <th style="width: 3rem; text-align: center;">XP</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="priority-num">1</td>
+          <td class="purchase">Earth 2 &rarr; 3</td>
+          <td class="xp-cost">9</td>
+          <td class="priority-notes">Out-of-curriculum ring (Doji Bureaucrat's ring bonus is the chargen +1 Earth, +1 Water; rings are not in per-rank curriculum). Half value: 5 XP toward Rank 4. Structural rebalance; powers Stonewall, Civility Foremost, Composure, Endurance, and all Earth shūji including the title's R1-3 group.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">2</td>
+          <td class="purchase">Lady Doji's Decree<em>R2 Void Shūji, Crane-only</em></td>
+          <td class="xp-cost">6</td>
+          <td class="priority-notes">Out-of-curriculum (3 &times; rank). Half value: 3 XP toward Rank 4. Once-per-session immunity to Attack actions; Void (op)(op) extends to Scheme.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">3</td>
+          <td class="purchase">Cadence<em>R1 Air Shūji</em></td>
+          <td class="xp-cost">3</td>
+          <td class="priority-notes"><strong>In-curriculum</strong> (R3 Air Shūji group). Full 3 XP toward Rank 4. Live channel to Midori and Kazume for parallel meaning under any Social (Air) check.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">4</td>
+          <td class="purchase">Composition 2 &rarr; 3</td>
+          <td class="xp-cost">6</td>
+          <td class="priority-notes">Out-of-curriculum at R3. Half value: 3 XP toward Rank 4. Directly powers Treaty Signing's first check; single-cut writing.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">5</td>
+          <td class="purchase">Culture 2 &rarr; 3</td>
+          <td class="xp-cost">6</td>
+          <td class="priority-notes"><strong>In-curriculum</strong> at R3. Full 6 XP toward Rank 4. (Also listed on the Esteemed Negotiator table; if the title arrives before this is purchased, the allocation choice is forced — see Phase 2.) Court reading and Tea Ceremony target expansion.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">6</td>
+          <td class="purchase">Command 1 &rarr; 2</td>
+          <td class="xp-cost">4</td>
+          <td class="priority-notes"><strong>In-curriculum</strong> at R3 (Social Skills group); also R4 (named skill) and R5. Full 4 XP toward Rank 4. Closes the cycle.</td>
+        </tr>
+        <tr class="subtotal">
+          <td></td>
+          <td class="label">Phase 1 subtotal</td>
+          <td class="xp-cost">34</td>
+          <td class="priority-notes">~24 curriculum XP toward Rank 4 (32 needed)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="subhead">Phase 2 · Esteemed Negotiator (title assigned)</h3>
+    <p>Mid-arc, a Status-50+ figure formally requests her as treaty mediator: Lion or Unicorn daimyō, Kitsuki Kāgi as her magistrate superior, or Miya Misato's uncle the Imperial Envoy. Esteemed Negotiator is assigned. <strong>Glory +10 to a minimum of 65</strong> (locks her glory floor at 65; any deferred Spear-Forest glory above that snaps in here). Title ability <em>Calming Words</em>: once per scene as Scheme and Support, reduce strife of all characters in the scene by her Sentiment ranks. The advancement table is Social Skills group · Culture · Government · Sentiment · Rank 1-3 Earth Shūji group · The Ties That Bind (ritual) · Treaty Signing (ritual, already owned and therefore inert).</p>
+    <p>From this point forward, every purchase has an explicit allocation. <strong>Bold</strong> entries route to the title; the remainder continue Rank 4 (or Rank 5) school progress.</p>
+
+    <table class="dossier-table priority">
+      <thead>
+        <tr>
+          <th style="width: 2.5rem; text-align: center;">#</th>
+          <th>Purchase</th>
+          <th style="width: 3rem; text-align: center;">XP</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="priority-num">7</td>
+          <td class="purchase"><strong>Honest Assessment</strong><em>R1 Earth Shūji &middot; allocate to title</em></td>
+          <td class="xp-cost">3</td>
+          <td class="priority-notes">Out-of-school-curriculum at R3 and R4. <strong>In-title-curriculum</strong> (Rank 1-3 Earth Shūji group). Full 3 XP toward title (vs. half value if allocated to school). Mia and Monbon enabler; Earth 3 amplifies.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">8</td>
+          <td class="purchase"><strong>Weight of Duty</strong><em>R1 Earth Shūji &middot; allocate to title</em></td>
+          <td class="xp-cost">3</td>
+          <td class="priority-notes">Same routing as priority 7. Full 3 XP toward title. Giri-reader complement to Shallow Waters; combines with Honest Assessment as a paired interrogation toolkit.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">9</td>
+          <td class="purchase"><strong>The Ties That Bind</strong><em>Ritual &middot; allocate to title</em></td>
+          <td class="xp-cost">3</td>
+          <td class="priority-notes"><strong>In-title-curriculum</strong> (named). Full 3 XP toward title. Ritual binding complement to Treaty Signing; thematic core of the negotiator's toolkit.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">10</td>
+          <td class="purchase"><strong>Sentiment 2 &rarr; 3</strong><em>Allocate to title</em></td>
+          <td class="xp-cost">6</td>
+          <td class="priority-notes"><strong>In-title-curriculum</strong> (named skill). Full 6 XP toward title. Also directly scales Calming Words (which removes strife equal to Sentiment ranks). Out-of-curriculum at school R4 (school R4 skills are Command, Meditation, Tactics).</td>
+        </tr>
+        <tr>
+          <td class="priority-num">11</td>
+          <td class="purchase"><strong>Government 3 &rarr; 4</strong><em>Allocate to title</em></td>
+          <td class="xp-cost">8</td>
+          <td class="priority-notes"><strong>In-title-curriculum</strong> (named skill). Full 8 XP toward title. Out-of-curriculum at school R4. Core legal-procedure skill; underpins every magistrate check and the Imperial-framework doctrine.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">12</td>
+          <td class="purchase"><strong>An R2 or R3 Earth Shūji</strong><em>Allocate to title</em></td>
+          <td class="xp-cost">3</td>
+          <td class="priority-notes">Specific shūji chosen at the time of purchase based on emerging needs (e.g. <em>Truth Burns through Lies</em>, <em>Ebb and Flow</em>, or another in-group option). <strong>In-title-curriculum</strong> (R1-3 Earth Shūji group). Full 3 XP. Completes the title at exactly 34 XP.</td>
+        </tr>
+        <tr class="subtotal">
+          <td></td>
+          <td class="label">Phase 2 title subtotal</td>
+          <td class="xp-cost">26</td>
+          <td class="priority-notes">+ 5 XP from priority 1 (Earth ring, half-value) + 3 XP from priority 4 alternate route if reallocated = up to 34 XP. Title ability <em>Calming Words</em> unlocks on completion.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Earth ring 2&rarr;3 (priority 1) can be retroactively considered for title allocation only if purchased <em>after</em> the title assignment; if already bought during Phase 1, its 9 XP has been spent and cannot be reallocated. Per the rule, the title arithmetic is forward-looking from the moment of assignment.</p>
+
+    <h3 class="subhead">Deferred or contingent</h3>
+    <table class="dossier-table priority">
+      <thead>
+        <tr>
+          <th style="width: 2.5rem; text-align: center;">#</th>
+          <th>Purchase</th>
+          <th style="width: 3rem; text-align: center;">XP</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="priority-num">D1</td>
+          <td class="purchase">Fire 2 &rarr; 3</td>
+          <td class="xp-cost">9</td>
+          <td class="priority-notes">Out-of-curriculum for both school and title. Half value: 5 XP. Slow payoff; shores up the Famously Successful (Fire) reroll. Deferred to Phase 3 (post-title-completion) unless a Fire-pressured scene forces the issue.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">D2</td>
+          <td class="purchase">Lover Bond (Harunobu) &rarr; Rank 2</td>
+          <td class="xp-cost">4</td>
+          <td class="priority-notes">No curriculum or title contribution. Time to a session featuring Harunobu directly.</td>
+        </tr>
+        <tr>
+          <td class="priority-num">D3</td>
+          <td class="purchase">Lover Bond (Harunobu) &rarr; Rank 3</td>
+          <td class="xp-cost">6</td>
+          <td class="priority-notes">Flashback scene mechanic. Defer until after title completion and Rank 4 transition.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="subhead">Rank 4 Transition</h3>
+    <p>Phase 1 contributes ~24 curriculum XP toward Rank 4. Combined with what she has already accumulated at Rank 3 (Courtesy 2&rarr;3, Hidden in Smoke, Sentiment 1&rarr;2, &amp;c.), <strong>she likely advances to Rank 4 partway through or at the end of Phase 1.</strong> The Esteemed Negotiator assignment is timed to land at roughly the same moment — the treaty arc is the narrative trigger for both.</p>
+
+    <div class="callout">
+      <div class="label">When she crosses the school threshold</div>
+      <ul>
+        <li><strong>Doji Bureaucrat Rank 4 curriculum</strong> is: Scholar Skills group · Command · Meditation · Tactics · Rank 1-4 Rituals group · <strong>The Immovable Hand of Peace</strong> · <strong>Rallying Cry</strong>. The Rank 1-4 Rituals tech group is the most useful piece here for her — it covers <em>The Ties That Bind</em> (already on the Esteemed Negotiator title table) and other binding rituals consistent with the treaty toolkit.</li>
+        <li><strong>Government 3&rarr;4 (priority 11)</strong> is no longer in school curriculum at R4. Routing it to the title is the correct allocation.</li>
+        <li><strong>Sentiment 2&rarr;3 (priority 10)</strong> is similarly out of school R4 curriculum. Title allocation is correct.</li>
+        <li><strong>If Phase 2 begins before Rank 4 advances</strong>: Culture 2&rarr;3 (priority 5) and Command 1&rarr;2 (priority 6) become forced allocation choices, since both are in-curriculum for school R3 <em>and</em> for the title. Keep them on the school side; they are doing the work of pushing Rank 4 forward.</li>
+        <li><strong>Defer Lover Bond purchases</strong> until after title completion and Rank 4 transition. Bond XP contributes to neither budget.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="endgame">
+    <h2 class="section-title">XI. Trajectory &amp; Endgame</h2>
+
+    <h3 class="subhead">The Toshi Ranbo Treaty</h3>
+    <p>Now her explicit ninjō: a trilateral settlement returning Toshi Ranbo to Crane administration while binding the Lion and Unicorn into stable peace. The treaty arranges Emika's marriage into the Matsu family to satisfy the grandmother's restoration demand, secures Harunobu's freedom through the prisoner exchange clauses, and opens Crane–Unicorn trade. Its legal framework will be Imperial-grounded, consistent with her career-long doctrine of finding Imperial principle in inter-clan disputes.</p>
+
+    <h3 class="subhead">School Endgame Capabilities</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Rank</th><th>Capability</th><th>Strategic Function</th></tr></thead>
+      <tr><td>Rank 5</td><td>Formal Tea Ceremony</td><td>Ritual binding of agreements at the ceremonial register.</td></tr>
+      <tr><td>Rank 6</td><td>Post Facto (Mastery)</td><td>Once per session: reveal a legal precedent that retroactively justifies her own or her allies' actions. The loophole-finder's instinct institutionalised as a permanent capability.</td></tr>
+    </table>
+
+    <h3 class="subhead">Title Endgame Capability</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Title</th><th>Capability</th><th>Strategic Function</th></tr></thead>
+      <tr><td>Esteemed Negotiator</td><td>Calming Words + The Ties That Bind</td><td>Strife reduction across the entire room as a Scheme and Support action — the doctrinal inverse of Procedure and Protocol's strife addition. Where the school weaponises strife as pressure, the title clears strife to land fragile agreements. Paired with The Ties That Bind, the title is the operational toolkit of the treaty arc itself.</td></tr>
+    </table>
+
+    <h3 class="subhead">Accumulating Adversaries</h3>
+    <p>Setsuna has accumulated a population of clan-level operators with specific grievances. The Kakita daimyō Noritomo and his allies in the Magistrates. The Lion and Unicorn families who lost the Snow Plains mine ruling. The Scorpion lord she invoiced for Monbon's ransom. Mirumoto Kyou and Kakita Yoshitada among her fellow Magistrates. The eventual signing of the Toshi Ranbo treaty will focus and intensify these grievances; her endgame defensive capabilities are being built specifically to handle the convergence.</p>
+
+    <h3 class="subhead">The Probable End</h3>
+    <div class="callout">
+      <div class="label">From Step 20 of Character Creation</div>
+      <p>Setsuna should die unexpectedly and suddenly, so that she does not have a chance to shrink from it or overthink it. It is unlikely that her destiny is fulfilled in this life.</p>
+    </div>
+    <p>The player walked in believing the character would not complete her work. The Toshi Ranbo project, the grandmother's full restoration, the doctrine's full execution are generational tasks. What she completes will be partial. What she leaves unfinished will be substantial. The doctrine is the framework for working well under that condition.</p>
+  </section>
+
+  <footer class="colophon">
+    Dossier compiled
+  </footer>
+
+</div>
+<footer class="sitefoot"><span class="mark">❖</span>The Fragile Peace · Legend of the Five Rings</footer>
+</body>
+</html>
