@@ -164,6 +164,69 @@ class Rewrite(object):
         return out
 
 
+class Interlude(object):
+    """A stretch between sessions that was played but never recorded.
+
+    Not a session and never given a session number — the count of what happened
+    in it is not known. It sits in the chronicle where it belongs and says so.
+
+        sources/chronicle/i41-the-road-north.md
+
+            after: 41
+            title: The Road North
+            dates: 2026-03-02 to 2026-04-06
+            ---
+            ## Narrative
+            ## Learned
+            ## Setsuna
+    """
+
+    is_interlude = True
+
+    def __init__(self, meta, sections, rw):
+        self.meta = meta
+        self.after = int(meta["after"])
+        self.title = meta["title"]
+        self.date = meta.get("dates", "")
+        # Sorts between its neighbours and keys the ledger like a session, but
+        # never renders as "Session N" — it is explicitly an unknown number of them.
+        self.number = self.after + 0.5
+        self.slug = "i%02d-%s" % (self.after, slugify(self.title))
+        self.rw = rw
+        self.recap = self.moments = self.timeline = ""
+
+
+def _parse(raw):
+    head, _, body = raw.partition("\n---\n")
+    meta = {}
+    for line in head.splitlines():
+        if ":" in line:
+            k, _, v = line.partition(":")
+            meta[k.strip().lower()] = v.strip()
+    sections, cur = {}, None
+    for line in body.splitlines():
+        m = re.match(r"^##\s+(.+?)\s*$", line)
+        if m:
+            cur = m.group(1).strip().lower()
+            sections[cur] = []
+        elif cur:
+            sections[cur].append(line)
+    return meta, {k: "\n".join(v).strip() for k, v in sections.items()}
+
+
+def load_interludes():
+    d = os.path.join(ROOT, "sources", "chronicle")
+    out = []
+    if not os.path.isdir(d):
+        return out
+    for fn in sorted(os.listdir(d)):
+        if not (fn.startswith("i") and fn.endswith(".md")):
+            continue
+        meta, sections = _parse(io.open(os.path.join(d, fn), encoding="utf-8").read())
+        out.append(Interlude(meta, sections, Rewrite(meta, sections)))
+    return out
+
+
 def load_rewrites():
     """
     sources/chronicle/sNN-slug.md:
@@ -183,8 +246,8 @@ def load_rewrites():
     if not os.path.isdir(d):
         return out
     for fn in sorted(os.listdir(d)):
-        if not fn.endswith(".md"):
-            continue
+        if not (fn.startswith("s") and fn.endswith(".md")):
+            continue   # iNN-*.md are interludes, loaded by load_interludes()
         raw = io.open(os.path.join(d, fn), encoding="utf-8").read()
         head, _, body = raw.partition("\n---\n")
         meta = {}
@@ -342,9 +405,11 @@ def entity_body(p, reg, ledger, sessions_by_no):
             bits.append('<article class="panel"><h2>What is known</h2>')
             for no, line in lines:
                 s = sessions_by_no[no]
-                bits.append('<div class="learned"><a class="lr-s" href="%s">S%d</a>'
+                bits.append('<div class="learned"><a class="lr-s%s" href="%s">%s</a>'
                             '<span class="lr-t">%s</span></div>'
-                            % (rel(url, "chronicle/%s.html" % s.slug), no,
+                            % (" lr-i" if s.is_interlude else "",
+                               rel(url, "chronicle/%s.html" % s.slug),
+                               "&#8212;" if s.is_interlude else "S%d" % no,
                                link_wikilinks(md_inline(esc(line)), url, reg)))
             bits.append('<p class="meta" style="margin-top:1rem">Each line is what she took '
                         'from the session it cites, and nothing else. The Archivist\'s own '
@@ -375,20 +440,21 @@ def entity_body(p, reg, ledger, sessions_by_no):
             for no, st in rows:
                 s = sessions_by_no[no]
                 href = rel(url, "chronicle/%s.html" % s.slug)
+                nm = "Between sessions" if s.is_interlude else "Session %d" % no
                 if st in (Ledger.KNOWN, Ledger.REMEMBERED):
                     cls = "enc-k" if st == Ledger.KNOWN else "enc-r"
                     tail = esc(s.date) if st == Ledger.KNOWN else "remembered, not lived"
-                    bits.append('<li class="%s"><a class="ref" href="%s">Session %d &middot; %s</a>'
+                    bits.append('<li class="%s"><a class="ref" href="%s">%s &middot; %s</a>'
                                 '<span class="enc-t">%s</span></li>'
-                                % (cls, href, no, esc(s.title), tail))
+                                % (cls, href, nm, esc(s.title), tail))
                 elif st == Ledger.PENDING:
-                    bits.append('<li class="enc-p"><span class="enc-n">Session %d</span>'
+                    bits.append('<li class="enc-p"><span class="enc-n">%s</span>'
                                 '<span class="mask-bar short" aria-label="not yet transcribed"></span>'
-                                '<span class="enc-t">not yet transcribed</span></li>' % no)
+                                '<span class="enc-t">not yet transcribed</span></li>' % nm)
                 else:
-                    bits.append('<li class="enc-a"><span class="enc-n">Session %d</span>'
+                    bits.append('<li class="enc-a"><span class="enc-n">%s</span>'
                                 '<span class="mask-bar" aria-label="not witnessed"></span>'
-                                '<span class="enc-t">apart from her</span></li>' % no)
+                                '<span class="enc-t">apart from her</span></li>' % nm)
             bits.append("</ul>")
         bits.append("</article>")
         bits.append('<article class="panel" style="margin-top:1.4rem"><h2>Not known</h2>'
@@ -474,9 +540,12 @@ def session_page(s, prev, nxt, rewrites, reg):
     bits = ['<div class="wrap">',
             '<p class="crumb"><a href="../index.html">Home</a><span class="sep">&#8250;</span>'
             '<a href="index.html">Chronicle</a><span class="sep">&#8250;</span>%s</p>' % esc(s.title),
-            '<header class="masthead"><div class="eyebrow">Session</div>',
-            '<h1>%s</h1><p class="meta">Session %d<span class="sep">&middot;</span>%s</p></header>'
-            % (esc(s.title), s.number, esc(s.date)),
+            '<header class="masthead"><div class="eyebrow">%s</div>'
+            % ("Between Sessions" if s.is_interlude else "Session"),
+            '<h1>%s</h1><p class="meta">%s<span class="sep">&middot;</span>%s</p></header>'
+            % (esc(s.title),
+               "An unrecorded stretch" if s.is_interlude else "Session %d" % s.number,
+               esc(s.date)),
             '<div class="col"><article class="panel">']
 
     # Sessions played after the export was pulled have no Archivist timeline.
@@ -524,23 +593,30 @@ def session_page(s, prev, nxt, rewrites, reg):
     bits.append("\n".join(pager))
     bits.append("</div></div>")
 
-    desc = "Session %d of The Fragile Peace, played %s." % (s.number, s.date)
+    desc = ("The Fragile Peace between sessions, %s." % s.date if s.is_interlude
+            else "Session %d of The Fragile Peace, played %s." % (s.number, s.date))
     return shell(url, "%s — The Fragile Peace" % s.title, desc, "chronicle", "\n".join(bits))
 
 
-def chronicle_index(sessions, rewrites):
+def chronicle_index(entries, rewrites):
     url = "chronicle/index.html"
+    sessions = [e for e in entries if not e.is_interlude]
     done = sum(1 for s in sessions if s.number in rewrites)
     rows = []
-    for s in sessions:
+    for s in entries:
         rw = rewrites.get(s.number)
         state = "" if rw else '<span class="chip raw">raw</span>'
         if s.number in FLASHBACK_SESSIONS:
             state += '<span class="chip back">three centuries back</span>'
+        if s.is_interlude:
+            state += '<span class="chip gap">no record</span>'
         rows.append(
-            '<a class="chron-row%s" href="%s.html"><span class="cn">Session %d</span>'
+            '<a class="chron-row%s%s" href="%s.html"><span class="cn">%s</span>'
             '<span class="ct">%s</span>%s<span class="cd">%s</span></a>'
-            % ("" if rw else " is-raw", s.slug, s.number, esc(s.title), state, esc(s.date)))
+            % ("" if rw else " is-raw", " is-gap" if s.is_interlude else "",
+               s.slug,
+               "Between" if s.is_interlude else "Session %d" % s.number,
+               esc(s.title), state, esc(s.date)))
     body = """<div class="wrap">
 <p class="crumb"><a href="../index.html">Home</a><span class="sep">&#8250;</span>Chronicle</p>
 <header class="masthead"><div class="eyebrow">The Record of Play</div>
@@ -668,8 +744,15 @@ def main():
         sessions.append(s)
     sessions.sort(key=lambda s: s.number)
 
-    ledger = Ledger(sessions, rewrites, reg)
-    by_no = {s.number: s for s in sessions}
+    # Interludes are stretches that were played but never recorded. They take a
+    # ledger key between their neighbours and are otherwise ordinary entries.
+    interludes = load_interludes()
+    for iv in interludes:
+        rewrites[iv.number] = iv.rw
+    entries = sorted(sessions + interludes, key=lambda e: e.number)
+
+    ledger = Ledger(entries, rewrites, reg)
+    by_no = {e.number: e for e in entries}
 
     for d in GENERATED:
         p = os.path.join(ROOT, d)
@@ -677,13 +760,13 @@ def main():
             shutil.rmtree(p)
 
     n = 0
-    # ---- sessions
-    for i, s in enumerate(sessions):
-        write("chronicle/%s.html" % s.slug,
-              session_page(s, sessions[i - 1] if i else None,
-                           sessions[i + 1] if i + 1 < len(sessions) else None,
+    # ---- sessions and interludes, in one prev/next chain
+    for i, e in enumerate(entries):
+        write("chronicle/%s.html" % e.slug,
+              session_page(e, entries[i - 1] if i else None,
+                           entries[i + 1] if i + 1 < len(entries) else None,
                            rewrites, reg)); n += 1
-    write("chronicle/index.html", chronicle_index(sessions, rewrites)); n += 1
+    write("chronicle/index.html", chronicle_index(entries, rewrites)); n += 1
 
     # ---- entity pages
     for p in pages:
@@ -708,7 +791,12 @@ def main():
           "Sessions 10&ndash;17 are not the present. They run three centuries back, on the "
           "Snow Plain, and the table played its own forebears through them &mdash; Setsuna "
           "living the memories of <b>Matsu Morozane</b>, her Lion ancestor. What she took "
-          "from that arc she remembers rather than witnessed, and the site marks it so.",
+          "from that arc she remembers rather than witnessed, and the site marks it so. "
+          "It is no longer only memory: the present war has come back to that same ground, "
+          "and settled it the same way &mdash; Lion against Unicorn, one commander killing "
+          "the other in single combat, a field of Lion dead afterwards. Setsuna has now "
+          "been on the <a class='ref' href='../atlas/snow-plain.html'>Snow Plain</a> twice, "
+          "and is the only person in the column who knows it settled nothing the first time.",
           ancestral),
          ("Off stage", "Walked with the party and are no longer at the table. "
                        "What they did is still in the record.", offstage)])); n += 1
@@ -790,8 +878,9 @@ Empire as its interpreters of Heaven's will.</p>
         link_wikilinks(p.raw, p.url, reg, unres2); tot += len(A.LINK_RE.findall(p.raw))
 
     print("pages written        : %d" % n)
-    print("sessions             : %d (%d rewritten, %d raw)"
-          % (len(sessions), len(rewrites), len(sessions) - len(rewrites)))
+    written = sum(1 for s in sessions if s.number in rewrites)
+    print("sessions             : %d (%d rewritten, %d raw), %d interlude(s)"
+          % (len(sessions), written, len(sessions) - written, len(interludes)))
     print("entities             : %s"
           % ", ".join("%s %d" % (c, sum(1 for p in pages if p.cat == c))
                       for c in ["npc", "pc", "location", "faction", "item", "lore"]))

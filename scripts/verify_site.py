@@ -88,15 +88,16 @@ def check_rewrites():
     A.add_fuzzy_aliases(reg, set(unres.keys()))
 
     rewrites = B.load_rewrites()
+    entries = [("session %d" % no, rewrites[no]) for no in sorted(rewrites)]
+    entries += [("interlude %r" % iv.title, iv.rw) for iv in B.load_interludes()]
     bad, n = [], 0
-    for no in sorted(rewrites):
-        rw = rewrites[no]
+    for label, rw in entries:
         for txt in (rw.narrative, rw.coda, rw.epigraph):
             for m in A.LINK_RE.findall(txt):
                 n += 1
                 if reg.get(norm(m[0].strip())) is None:
-                    bad.append((no, m[0]))
-    return len(rewrites), n, bad
+                    bad.append((label, m[0]))
+    return len(entries), n, bad
 
 
 def main():
@@ -115,9 +116,9 @@ def main():
     fail |= bool(bad)
 
     ns, n, bad = check_rewrites()
-    print("rewrites   : %d sessions, %d wikilinks, %d unresolved" % (ns, n, len(bad)))
-    for no, name in bad[:20]:
-        print("             session %d -> [[%s]]" % (no, name))
+    print("rewrites   : %d entries, %d wikilinks, %d unresolved" % (ns, n, len(bad)))
+    for label, name in bad[:20]:
+        print("             %s -> [[%s]]" % (label, name))
     fail |= bool(bad)
 
     sessions = A.discover_sessions()

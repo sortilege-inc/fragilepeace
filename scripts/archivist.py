@@ -167,6 +167,7 @@ class Session(object):
         self.timeline = ""
         self.slug = None
         self.rewrite = None       # loaded from sources/chronicle/
+        self.is_interlude = False
 
     def __repr__(self):
         return "<Session %s %r>" % (self.number, self.title)

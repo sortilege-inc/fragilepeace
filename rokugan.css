@@ -520,6 +520,16 @@ blockquote{
   background:rgba(90,74,110,0.08); border-radius:3px; padding:0.02rem 0.4rem; margin-left:0.4rem; }
 .rost.remembered{ border-left-color:#5a4a6e; }
 .enc .enc-r a.ref{ color:#5a4a6e; }
+
+/* interludes — stretches that were played but never recorded */
+.chip.gap{ font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.62rem; color:#6e5f48; border:1px solid rgba(110,95,72,0.45);
+  background:rgba(110,95,72,0.08); border-radius:3px; padding:0.02rem 0.4rem; margin-left:0.4rem; }
+.chron-row.is-gap{ background:repeating-linear-gradient(135deg,
+  transparent 0 8px, rgba(110,95,72,0.05) 8px 16px); }
+.chron-row.is-gap .cn, .chron-row.is-gap .ct{ color:var(--ink-2); font-style:italic; }
+.learned .lr-s.lr-i{ background:#6e5f48; }
+.learned .lr-s.lr-i:hover{ background:#574b39; }
 .panel.remembered{ background:rgba(90,74,110,0.07); border-left:3px solid #5a4a6e; }
 .rost.playable{ border-left-color:var(--crimson); background:linear-gradient(180deg,var(--paper-2),#ece0c6); }
 .rost.playable .ro-s{ color:var(--crimson); font-weight:600; }
