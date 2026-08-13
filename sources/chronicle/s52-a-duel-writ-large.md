@@ -187,12 +187,17 @@ has just found the man across the table who needs that outcome for reasons entir
 own. She does not have to persuade him of anything. **She has to let him have the credit
 for it**, and be seen not to mind.
 
-**And she knows he read her, and does not know how deeply.** That is the uncomfortable
-half. She could feel it happening — the sense of sitting opposite somebody working the
-same trade at the same level, and of coming away lighter than she went in. What she cannot
-tell is **what he actually took**. She does not know which of her weaknesses he now holds,
-or that he was ever near the thing she wants for herself. She only knows the account does
-not balance, and that she will find out what he bought when he chooses to spend it.
+**And she knows he read her — accurately, and further than she would like.** She was there
+for it. She felt him take her measure, felt the decoy hold and the true objective stay
+buried, and she knows he came away from the small talk holding the one private thing she
+wants. That is uncomfortable and it is survivable, because she can see the shape of it and
+plan around it.
+
+**What she cannot see is the one that will actually hurt her.** She has no idea that her
+own legal learning has been turned against her — that the next time she reasons from
+precedent with [[Ikoma Ujiaki]] opposite, her best instrument will work backwards in her
+hands. **She will walk into her strongest lane not knowing it has been mined**, and she
+will find out in front of the whole tent.
 
 **And he knows what she wants.** Not what the magistrate wants — what *she* wants, the
 poetry gathering on the coast that she has never once asked for and does not believe she
