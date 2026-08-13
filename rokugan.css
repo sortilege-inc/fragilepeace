@@ -185,8 +185,6 @@ blockquote{
 /* ------------------------------------------------------------ wiki refs */
 .ref{ color:var(--crimson); text-decoration:none; border-bottom:1px solid rgba(182,36,50,0.34); transition:.15s; }
 .ref:hover{ color:var(--crimson-deep); border-bottom-color:var(--crimson); background:var(--crimson-soft); }
-.ref-open{ color:var(--ink-soft); border-bottom:1px dotted var(--ink-dim); cursor:help; }
-
 /* ------------------------------------------------------------ portraits */
 .portrait-frame{
   float:right; width:min(320px,44%); margin:0.3rem 0 1.4rem 1.8rem;

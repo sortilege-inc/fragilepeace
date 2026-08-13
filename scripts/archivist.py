@@ -551,7 +551,15 @@ LINK_RE = re.compile(r"\[\[([^\]|]+?)(?:\|([^\]]*))?\]\]")
 def link_wikilinks(text, cur_url, reg, unresolved=None):
     """
     [[Target]] / [[Target|Display]] -> <a class="ref"> when the target has a page,
-    otherwise a dotted 'not yet chronicled' span. Never emits a broken href.
+    otherwise the plain display text. Never emits a broken href.
+
+    An unresolved link used to render as a dotted "not yet chronicled" span. The
+    Archivist invents links freely — [[kitchen]], [[guest quarters]], [[47 Lion
+    soldiers]] — and none of those is a thing anyone will ever write a page for,
+    so the marker promised a page that was never coming and put a help cursor on
+    the word "kitchen". Owner 2026-08-13: drop them. They still count in the
+    build report, which is where an unresolved link is actually worth knowing
+    about.
     """
     def sub(m):
         target = m.group(1).strip()
@@ -562,7 +570,7 @@ def link_wikilinks(text, cur_url, reg, unresolved=None):
                 html.escape(rel(cur_url, p.url), quote=True), html.escape(display))
         if unresolved is not None:
             unresolved[target] += 1
-        return '<span class="ref-open" title="not yet chronicled">%s</span>' % html.escape(display)
+        return html.escape(display)
     return LINK_RE.sub(sub, text)
 
 
