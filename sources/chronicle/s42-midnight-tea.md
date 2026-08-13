@@ -20,8 +20,8 @@ Imperial name was very likely the only thing keeping him breathing. The rider al
 him something he did not have: on the way in, the [[Lion Clan|Lion]] had burned
 [[Unicorn Clan|Unicorn]] land and desecrated the bodies of the dead.
 
-[[Doji Setsuna]] was travelling by norimono, still carrying the void wound from the
-[[Terminating Tea]] — a thing only [[Shiba Midori]] and [[Kakita Kazumi]] know the cause
+[[Doji Setsuna]] was travelling by norimono, still carrying her own void wound from the
+[[Terminating Tea]] she drank at the Governor's Tea House — a thing only [[Shiba Midori]] and [[Kakita Kazumi]] know the cause
 of. She spent her one void point on getting it down, and it worked: the wound went from
 severe to slight, and it went like a fever breaking. It also left her with nothing in
 reserve for the rest of the night, which turned out to matter at the gate.
@@ -35,9 +35,9 @@ answer it. What it did was arrive, and put the envoy's name in front of her in a
 hand before anything else happened.
 
 She asked [[Ikoma Tadayoshi]], who is a [[Lion Clan|Lion]] bard and knows his own clan's
-officers, what [[Matsu Matsumaro]] was like. He knew: she loves strategy games, and shoji
+officers, what [[Matsu Matsumaro]] was like. He knew: she loves strategy games, and shōgi
 in particular. So [[Doji Setsuna]] went into the castle stores, requisitioned an
-[[Eda Shoji Set|Eda family shoji set]] on a magistrate's authority, and sent it as a gift.
+[[Eda Shōgi Set|Eda family shōgi set]] on a magistrate's authority, and sent it as a gift.
 
 Meanwhile [[Miya Misato]] would not let the castle go. The stores were full. Nothing had
 been poisoned. Nothing had been sabotaged. There was enough food behind those walls to
@@ -65,7 +65,7 @@ lieutenant, started organising a defence, and soldiers went for spears.
 She told [[Miya Misato]] to dress as though she were being received by the Emperor and to
 walk behind her, and [[Miya Misato]] agreed with her voice cracking. They went down through
 a castle arming itself. [[Seisi]], the [[Lion Clan|Lion]] physician, stopped and stared as
-they passed. [[Ikoma Tadayoshi]] came behind carrying the shoji set, and when someone
+they passed. [[Ikoma Tadayoshi]] came behind carrying the shōgi set, and when someone
 looked at him he said he was just a bodyguard.
 
 At the gate [[Matsu Yunko]] refused. Nobody could make out an Imperial banner at that
@@ -96,7 +96,7 @@ Emperor has commanded.*
 
 What followed was a formal negotiation, with an order of precedence and everyone taking
 turns. [[Doji Setsuna]]'s standing put her ahead of [[Matsu Matsumaro]] in it, and she used
-the opening to propose that the two commanders play a game of shoji, the winner's name to go
+the opening to propose that the two commanders play a game of shōgi, the winner's name to go
 first **on whatever agreement we come up with**. Both of them began arguing about whose name
 went first. Neither noticed that they had just agreed there would be a document with both
 their names on it.
@@ -129,13 +129,13 @@ at a table, an envoy presiding over them, and tea.
 
 ## Learned
 
-- Matsu Matsumaro: Commander of the Lion relief force. Received Setsuna's letter and the shoji set, and opened the castle gate on her own authority when nobody could have made her. Midori read her at the tea: she was sent by her own superiors to lose her troops, on the field or in a hopeless defence. She needs this peace more than anyone present.
+- Matsu Matsumaro: Commander of the Lion relief force. Received Setsuna's letter and the shōgi set, and opened the castle gate on her own authority when nobody could have made her. Midori read her at the tea: she was sent by her own superiors to lose her troops, on the field or in a hopeless defence. She needs this peace more than anyone present.
 - Moto Gaharis: A one-eyed Unicorn family champion on a huge warhorse, leading the army up the southern road. Complimented Kogarashi, tried to reframe the meeting as a Lion surrender, and sat down anyway. Holds Monban and floated ransoming him back.
 - Matsu Yunko: Matsumaro's lieutenant. Organised the castle's defence and argued against opening the gate on the grounds that no banner is legible at night — a correct objection.
 - Kogarashi: Setsuna's Utaku courser, white with a silver mane. Recognisable to any Unicorn rider at any distance, which is the entire reason walking out of that gate was survivable. A gift from Shinjo Harunobu's family.
 - Miya Misato: Held that the abandoned castle was a trap and would not be talked out of it. Dressed to meet the Emperor and walked to the gate frightened. Took Setsuna's argument that the approach is to affirm the Lion victory rather than to sue for peace.
 - Seisi: The Lion physician with the relief force. Watched the envoy's party walk out through a castle arming for a siege.
-- Eda Shoji Set: Requisitioned from the abandoned castle's stores on a magistrate's authority and given to Matsumaro, who accepted it.
+- Eda Shōgi Set: Requisitioned from the abandoned castle's stores on a magistrate's authority and given to Matsumaro, who accepted it.
 - Bayushi Monban: A prisoner of the Unicorn, tied over a horse in their baggage train. Told his captor no lord would ransom him. Publicly claimed by Setsuna in front of the man holding him.
 - The Unicorn rider with the baggage train (unpaged): Leading Monban's horse. Knows what he is worth and told him plainly that the Imperial name is the only thing keeping him alive.
 

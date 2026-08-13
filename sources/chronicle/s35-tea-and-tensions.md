@@ -27,7 +27,8 @@ Then she brewed the first dose, and measured it carefully.
 That evening [[Doji Setsuna]] drank it, under [[Shiba Midori]]'s eye. Her attendants
 turned [[Bayushi Monban]] away at the door and [[Kakita Kazumi]] steered him off asking
 further. It worked, and it took the toll [[Shiba Midori]] had told her it would: it
-wounded her badly in the void, and she was still carrying that wound weeks later.
+wounded **[[Doji Setsuna]]** badly in the void, and she was still carrying that
+wound weeks later.
 
 [[Doji Setsuna]] requisitioned a palanquin from [[Governor Miya Tetsuya]] for the journey.
 
@@ -38,7 +39,7 @@ wounded her badly in the void, and she was still carrying that wound weeks later
 - Ide Chiharu: A dealer in curiosities in the Unicorn District, reached through Kazumi's contact.
 - Shiba Midori: Knows the preparation and the dosage, said plainly what the tea does, and did not argue. Compelled an apothecary to release a restricted herb on a magistrate's authority. Has the Ifrit's box in her own quarters in a long receptacle, and is arranging guards.
 - Kakita Kazumi: Corrected the botched shopping without being asked, advised on diluted nightshade, and carried the leaves to Midori himself with handling instructions. Discreet about all of it.
-- Terminating Tea: What it is, what it costs, and where the ingredients come from. Midori brewed the first dose and Setsuna drank it that evening. It did what it was meant to do and wounded her severely in the void; the palanquin she leaves in is because of it.
+- Terminating Tea: What it is, what it costs, and where the ingredients come from. Midori brewed the first dose; Setsuna drank it that evening. It did what it was meant to do, and it wounded Setsuna — not Midori — severely in the void. The palanquin she leaves in is because of it.
 - Burnt Theater: The spiritual disturbance in the ruin has not settled.
 
 ## Setsuna
@@ -51,7 +52,7 @@ It also puts her exactly where she wants to be. The writ orders the [[Lion Clan|
 
 **And the private matter is being handled by her friends and not by her household.** [[Ishika]] and [[Aika]] were sent for the ingredients without being told what they were for and came back with the wrong things. [[Kakita Kazumi]] fixed it quietly and made no remark. [[Shiba Midori]] brewed it herself and measured the dose.
 
-That is three people who now know, plus an apothecary who was compelled by a magistrate's authority to hand over a restricted herb and will remember which magistrate it was. She drank it the same evening, and it cost her a severe wound in the void. She has a palanquin ordered for a journey she would ordinarily ride, and she is leaving at dawn for a war.
+That is three people who now know, plus an apothecary who was compelled by a magistrate's authority to hand over a restricted herb and will remember which magistrate it was. [[Doji Setsuna]] drank it the same evening, and it cost **her** a severe wound in the void — hers, not the woman who brewed it. She has a palanquin ordered for a journey she would ordinarily ride, and she is leaving at dawn for a war.
 
 **Two people know what the palanquin is actually for** — [[Shiba Midori]] and [[Kakita Kazumi]]. [[Bayushi Monban]] was turned away at the door and does not. She should decide deliberately whether that stays true, rather than letting it be decided by whoever is standing nearest when she next collapses.
 
