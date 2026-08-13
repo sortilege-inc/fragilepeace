@@ -12,7 +12,7 @@ Then [[Miya Misato]] arrived — the [[The Emperor|Emperor]]'s envoy, young, sen
 
 There was a problem underneath the mission. [[Miya Misato]] does not know where either army currently is. The group remembered a missive about items turning up near the [[Battle of the Snow Plains]], which gives them somewhere to start looking.
 
-So they went to ask. [[Governor Miya Tetsuya]] gave them a boat across to the [[Unicorn Clan|Unicorn]] District and its merchant quarter, thick with samurai and rōnin. [[Kakita Kazumi]]'s contact put him onto [[Ide Chiharu]], who deals in curiosities, and [[Hideyoshi Aki]], a trader of real weight — and from Aki's people he got the useful thing: **recent shipments have shifted northeast.** Goods follow armies.
+So they went to ask. [[Governor Miya Tetsuya]] gave them a boat across to the [[Unicorn Clan|Unicorn]] District and its merchant quarter, thick with samurai and rōnin. [[Kakita Kazumi]]'s contact put him onto [[Ide Chiharu]], who deals in curiosities, and [[Hideyoshi Aki]], a trader of real weight — and from Aki's people he got the useful thing: recent shipments have shifted northeast. Goods follow armies.
 
 [[Bayushi Monban]] tried a young [[Scorpion Clan|Scorpion]] samurai, who knew nothing about the armies and knew exactly who [[Bayushi Monban]] was. Then he went to the [[Burnt Theater]] and walked the ruin, where the spiritual disturbance has not settled.
 
@@ -24,11 +24,7 @@ And through the day, quietly, the other thing. [[Doji Setsuna]] asked [[Shiba Mi
 
 Then she brewed the first dose, and measured it carefully.
 
-That evening [[Doji Setsuna]] drank it, under [[Shiba Midori]]'s eye. Her attendants
-turned [[Bayushi Monban]] away at the door and [[Kakita Kazumi]] steered him off asking
-further. It worked, and it took the toll [[Shiba Midori]] had told her it would: it
-wounded **[[Doji Setsuna]]** badly in the void, and she was still carrying that
-wound weeks later.
+That evening [[Doji Setsuna]] drank it, under [[Shiba Midori]]'s eye. Her attendants turned [[Bayushi Monban]] away at the door and [[Kakita Kazumi]] steered him off asking further. It worked, and it took the toll [[Shiba Midori]] had told her it would: it wounded [[Doji Setsuna]] badly in the void, and she was still carrying that wound weeks later.
 
 [[Doji Setsuna]] requisitioned a palanquin from [[Governor Miya Tetsuya]] for the journey.
 
@@ -44,16 +40,16 @@ wound weeks later.
 
 ## Setsuna
 
-**Her giri just walked into the room.** She is sworn to see [[Miya Misato]] succeed in brokering this peace, and until today that was a sentence in a letter. The envoy is young, does not know where the armies are, and is going to the front anyway with a writ in her hand. Whatever else is true this week, **this is the duty**, and it is now a person she is responsible for rather than an objective.
+**Her giri just walked into the room.** She is sworn to see [[Miya Misato]] succeed in brokering this peace, and until today that was a sentence in a letter. The envoy is young, does not know where the armies are, and is going to the front anyway with a writ in her hand. Whatever else is true this week, this is the duty, and it is a person she is responsible for now rather than an objective.
 
-It also puts her exactly where she wants to be. The writ orders the [[Lion Clan|Lion]] to stop fighting and treat with the [[Unicorn Clan|Unicorn]] Champion. Prisoner exchanges happen when armies stop. [[Shinjo Harunobu]] is with the [[Lion Clan|Lion]] host. Serving the envoy honestly and getting her husband back are, for the first time in thirty-five sessions, **the same road** — and she should be careful, because that is precisely when a person stops noticing which one they are actually serving.
+It also puts her exactly where she wants to be. The writ orders the [[Lion Clan|Lion]] to stop fighting and treat with the [[Unicorn Clan|Unicorn]] Champion. Prisoner exchanges happen when armies stop. [[Shinjo Harunobu]] is with the [[Lion Clan|Lion]] host. Serving the envoy honestly and getting her husband back are, for the first time in thirty-five sessions, the same road — and that is precisely when a person stops noticing which one they are actually serving.
 
-**Northeast.** [[Hideyoshi Aki]]'s shipments have moved and goods follow armies. That is the only hard fact anyone has about where the front is, and it came from a merchant's stock ledger rather than from anyone's intelligence service. Same lesson as the quartermasters' books at the [[Snow Plain]]: **the people who count things know first.**
+Northeast. [[Hideyoshi Aki]]'s shipments have moved and goods follow armies. That is the only hard fact anyone has about where the front is, and it came from a merchant's stock ledger rather than from anyone's intelligence service. Same lesson as the quartermasters' books at the [[Snow Plain]]: the people who count things know first.
 
-**And the private matter is being handled by her friends and not by her household.** [[Ishika]] and [[Aika]] were sent for the ingredients without being told what they were for and came back with the wrong things. [[Kakita Kazumi]] fixed it quietly and made no remark. [[Shiba Midori]] brewed it herself and measured the dose.
+And the private matter is being handled by her friends and not by her household. [[Ishika]] and [[Aika]] were sent for the ingredients without being told what they were for and came back with the wrong things. [[Kakita Kazumi]] fixed it quietly and made no remark. [[Shiba Midori]] brewed it herself and measured the dose.
 
-That is three people who now know, plus an apothecary who was compelled by a magistrate's authority to hand over a restricted herb and will remember which magistrate it was. [[Doji Setsuna]] drank it the same evening, and it cost **her** a severe wound in the void — hers, not the woman who brewed it. She has a palanquin ordered for a journey she would ordinarily ride, and she is leaving at dawn for a war.
+That is three people who now know, plus an apothecary who was compelled by a magistrate's authority to hand over a restricted herb and will remember which magistrate it was. [[Doji Setsuna]] drank it the same evening, and it cost her a severe wound in the void — hers, not the woman who brewed it. She has a palanquin ordered for a journey she would ordinarily ride, and she is leaving at dawn for a war.
 
-**Two people know what the palanquin is actually for** — [[Shiba Midori]] and [[Kakita Kazumi]]. [[Bayushi Monban]] was turned away at the door and does not. She should decide deliberately whether that stays true, rather than letting it be decided by whoever is standing nearest when she next collapses.
+Two people know what the palanquin is actually for: [[Shiba Midori]] and [[Kakita Kazumi]]. [[Bayushi Monban]] was turned away at the door and does not. She should decide deliberately whether that stays true, rather than letting it be decided by whoever is standing nearest when she next collapses.
 
 Nothing here needs advice. It needs noting that the timing is hers, that [[Shiba Midori]] did not argue, and that the road to the front is three days of a woman being carried in a box while she decides.

@@ -8,13 +8,13 @@ epigraph: The Scorpion's proof that they were at the Snow Plain has been sitting
 
 Then the party went into the archives in three directions.
 
-[[Bayushi Monban]] took the military records at the [[Akodo War College]] and came out with the thing they had been looking for. The arrival and return rosters put the losses at roughly two-thirds. And the quartermasters' books record what the journals do not: illness through the army, and **water and food supplies contaminated**. Not one personal account mentions it. He also found a physic named [[Akodo Kayamayako]] in those rosters — named, and praised, for the lives they saved.
+[[Bayushi Monban]] took the military records at the [[Akodo War College]] and came out with the thing they had been looking for. The arrival and return rosters put the losses at roughly two-thirds. And the quartermasters' books record what the journals do not: illness through the army, and water and food supplies contaminated. Not one personal account mentions it. He also found a physic named [[Akodo Kayamayako]] in those rosters — named, and praised, for the lives they saved.
 
 When he put the possibility of a cover-up to [[Akodo Atsushi]], the instructor went at him. *I don't think I've ever heard of a Scorpion keeping a diary* — which is a way of refusing a question rather than answering it.
 
 [[Shiba Midori]] went after the same medic from the other end, because [[Akodo Kayamayako]] is tied to the attempted murder of her own ancestor. She took [[Ikoma Ichigo]] into the [[Ikoma Hall of Scribes|Ikoma House of Scribes]] and they went through the genealogies of the [[Lion Clan]] and found nothing. *I'm having great difficulty locating this person*, Ichigo said, of a man his own clan's rosters praise. What they did find, tracing the dynastic lines, was how many of them run forward into the current leadership of the Lion — and into the party themselves.
 
-[[Kakita Kazumi]] sat in the [[Kitsu Archives]] with [[Ikoma Akuyaku]]'s journals spread around him and found the concealed account. [[Ikoma Akuyaku]] had been embedding **[[Scorpion Clan|Scorpion]] reports inside the [[Lion Clan]]'s own records**.
+[[Kakita Kazumi]] sat in the [[Kitsu Archives]] with [[Ikoma Akuyaku]]'s journals spread around him and found the concealed account. [[Ikoma Akuyaku]] had been embedding [[Scorpion Clan|Scorpion]] reports inside the [[Lion Clan]]'s own records.
 
 Put together, they arrived at three: a known Unicorn-aligned agent, [[Ikoma Akuyaku]], and the medic. Three people, working the same battle from inside a Lion camp, and the Lion lost it.
 
@@ -40,14 +40,14 @@ The group also discussed forging Lion documents — they have, after all, been *
 
 ## Setsuna
 
-**The ledgers held.** She said stores are counted and they were: the quartermasters' books record illness through the army and contaminated water and food, and not one personal journal admits it. The sabotage at the [[Snow Plain]] is now a documented fact rather than an ancestral memory, and it is documented in the [[Lion Clan|Lion]]'s own hand, in the one kind of book nobody thought to edit.
+The ledgers held. She said stores are counted and they were: the quartermasters' books record illness through the army and contaminated water and food, and not one personal journal admits it. The sabotage at the [[Snow Plain]] is a documented fact now rather than an ancestral memory, and it is documented in the [[Lion Clan|Lion]]'s own hand, in the one kind of book nobody thought to edit.
 
-**The medic was praised and then erased.** [[Akodo Kayamayako]] is in the rosters, thanked for saving lives, and in no genealogy at all. Common soldiers remember them; samurai do not. That is not a person who was forgotten. That is a person who was taken out of the family records after the fact, which requires a family to do it.
+The medic was praised and then erased. [[Akodo Kayamayako]] is in the rosters, thanked for saving lives, and in no genealogy at all. Common soldiers remember them; samurai do not. That is not a person who was forgotten. That is a person taken out of the family records afterward, which requires a family to do it.
 
-**And [[Ikoma Akuyaku]] hid Scorpion reports inside the Lion archive.** This is the largest thing the party has found and she should be careful how she uses it, because it cuts both ways at once. It proves the [[Scorpion Clan|Scorpion]] were present and active at the [[Snow Plain]] — which is their whole claim — and it proves the presence was **espionage against the clan whose archive she is standing in**. A claim founded on that evidence is a claim founded on treason. [[Shoshuro Aishi]] cannot lead with it. Neither can she, in front of a Lion daimyō who has been generous to her four times over.
+And [[Ikoma Akuyaku]] hid Scorpion reports inside the Lion archive. It is the largest thing the party has found and it cuts both ways at once. It proves the [[Scorpion Clan|Scorpion]] were present and active at the [[Snow Plain]], which is their whole claim, and it proves the presence was **espionage against the clan whose archive she is standing in.** A claim founded on that evidence is a claim founded on treason. [[Shoshuro Aishi]] cannot lead with it. Neither can she, in front of a Lion daimyō who has been generous to her four times over.
 
-**The forgery is the one thing that would destroy her.** They can write what the record is missing because they have been inside it. An Emerald Magistrate who manufactures evidence in a case she is weighing is finished, and so is every ruling she has ever made, and so is her husband's transfer. If the party goes that way she should have no part in it and should know nothing about it.
+The forgery is the one thing that would destroy her. They can write what the record is missing because they have been inside it. An Emerald Magistrate who manufactures evidence in a case she is weighing is finished, and so is every ruling she has ever made, and so is her husband's transfer. If the party goes that way she wants no part in it and no knowledge of it.
 
-Two things to track. She has opened with [[Shosuro Imako]] — her recommendation to favour the Scorpion, **conditional** on their pledge of non-intervention in the [[Crane Clan|Crane]]–[[Lion Clan|Lion]] treaty, and credit if it is acted on. Conditional is the right shape: if the Scorpion never close on the condition, the offer lapses and she is free. Watch for them trying to hold the offer without paying for it.
+Two things to track. She has opened with [[Shosuro Imako]] — her recommendation to favour the Scorpion, conditional on their pledge of non-intervention in the [[Crane Clan|Crane]]–[[Lion Clan|Lion]] treaty, and credit if it is acted on. Conditional is the right shape: if the Scorpion never close on the condition, the offer lapses and she is free. What she is watching for is an attempt to hold the offer without paying for it.
 
 And she has [[Shinjo Harunobu]]'s custody moving, which is the first real thing she has won, and which she now owes [[Kitsu Takeko]] for.

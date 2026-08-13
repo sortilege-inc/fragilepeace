@@ -9,8 +9,10 @@ actually produces. Most of them are not mechanically detectable — whether an
 image is earned is a judgement. These five are, or are close enough that a
 short list of candidates beats reading 76,000 words looking for them.
 
-  2nd-person   you / your / we / our outside quoted speech. World-facing prose
-               does not know the reader exists. A hard error.
+  address      you / your / we / our — and I / me / my, which is the same fault
+               from the other end: s27 had "The pact worries me on her behalf."
+               Checked outside quoted speech only. World-facing prose does not
+               know either the reader or the writer exists. A hard error.
   bold-narr    ** ** inside ## Narrative. Owner's call, 2026-08-13: emphasis is
                carried by sentence structure there. A hard error.
   wink         a trailing "which is/was …" clause of the kind the skill tells us
@@ -29,7 +31,10 @@ import os, re, io, sys, glob
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECOND = re.compile(r"\b(you|your|yours|yourself|we|we're|our|ours|us)\b", re.I)
+# Case-sensitive, so "I" is caught and the ordinary word "i" is not invented.
+# "mine" is deliberately absent: this campaign turns on a diamond mine, and the
+# possessive never appears outside dialogue anyway.
+SECOND = re.compile(r"\b(you|your|yours|yourself|we|we're|our|ours|us|I|me|my|myself)\b")
 BOLD = re.compile(r"\*\*[^*]+\*\*")
 ITAL = re.compile(r"(?<!\*)\*(?!\*)[^*\n]+\*(?!\*)")
 
@@ -41,7 +46,7 @@ THEME = re.compile(
     r"which is the point|that is the (?:single )?most important)\b", re.I)
 HEDGE = re.compile(r"\b(perhaps|maybe|somewhat|arguably|it seems|some might)\b", re.I)
 
-HARD = ("2nd-person", "bold-narr")
+HARD = ("address", "bold-narr")
 
 
 def sections(t):
@@ -70,7 +75,7 @@ def scan(path):
     narr = secs.get("Narrative", "")
 
     for m in SECOND.finditer(outside_quotes(narr + "\n" + secs.get("Setsuna", ""))):
-        hits.append(("2nd-person", m.group(0), context(narr, m)))
+        hits.append(("address", m.group(0), context(narr, m)))
     for m in BOLD.finditer(narr):
         hits.append(("bold-narr", m.group(0)[:50], ""))
     for name, rx in (("wink", WINK), ("theme", THEME), ("hedge", HEDGE)):

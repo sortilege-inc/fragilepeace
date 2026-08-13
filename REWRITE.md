@@ -88,7 +88,51 @@ Recorded as they are made, per the working agreement.
 7. `notes/index.html` audit
 8. Full gate, commit, push
 
+## Corrections made on the evidence of the record itself
+
+Pronoun and name slips where the corpus contradicts itself and the weight of evidence settles it.
+Anything the record does *not* settle goes to the open questions below instead.
+
+- **Akodo Toronoko is "she."** Ikoma Akuyaku's wife, "she"/"her" in ten places across s13–s17.
+  s11 had "a thin elite centre under his own hand". Corrected to hers.
+- **Iuchi Minoru is "he."** The s28 body and its Learned entry are "he"/"his" throughout — *as a
+  child he broke his grandmother's jade tea cup*. Only the epigraph read "she". Corrected.
+
 ## Open questions for the owner
 
-None outstanding. Anything the rewrite cannot resolve from the existing record is raised here
-rather than guessed at.
+- **Kaeru Haia and Kaeru Haya are the same person, under two spellings.** She runs the rōnin watch
+  on the Unicorn side of the City of the Rich Frog; s30 introduces her as Haia, s31 runs the dawn
+  operation as Haya, and s31's own Setsuna section cites "Haia's report" about the missing sailors.
+  Six mentions each, and the site currently builds **two Dramatis Personae pages** with half her
+  record on each. The Archivist export does not settle it — 53 Haia to 51 Haya, so the transcription
+  never picked one either. The fix is one line in `archivist.CORRECTIONS` plus a `RENAMES` merge,
+  and it needs the correct spelling from the table. Left as written until then.
+
+## Found in passing — split entity pages
+
+Not part of the voice rewrite and not touched by it. A sweep for near-identical page titles across
+the 457 generated entity pages turned up one entity built as two pages, each holding half its
+record. Each needs a `CORRECTIONS` entry and a `RENAMES` merge; several need the owner to say which
+spelling is right.
+
+| Built as | And as | Note |
+|---|---|---|
+| `dramatis-personae/kaeru-haia` | `kaeru-haya` | Same rōnin watch commander. Spelling unsettled — see above. |
+| `dramatis-personae/ikoma-aku-yaku` | `ikoma-akuyaku` | Spacing only. |
+| `dramatis-personae/asahina-nao` | `asahina-nao-2` | The `-2` is the builder disambiguating a title collision. |
+| `dramatis-personae/the-emperor` | `the-emperor-2` | Same. |
+| `atlas/slow-tide-harbor` | `slowtide-harbor` | Spacing only. |
+| `lore/relics/shinjo-kamu-letters` | `shinjukamu-letters` | Spacing only. |
+| `atlas/dran-merchant-river` | `drowned-merchant-river` | "Dran" is a truncation. |
+| `atlas/governors-manor` | `governors-mansion` | |
+| `lore/factions/asawa-family` | `isawa-family` | "Asawa" is not a family. |
+| `atlas/war-college` | `atlas/akodo-war-college` | Short form and full, plus a third copy under `lore/factions`. |
+| `atlas/akodo-war-college` | `lore/factions/akodo-war-college` | Same institution filed as both place and faction. |
+| `atlas/diamond-mines` | `lore/relics/diamond-mines` | Same. |
+| `dramatis-personae/ifrit` | `lore/relics/the-ifrit` | The spirit and its vessel, or one thing filed twice. |
+| `dramatis-personae/shinjuku-kamu` | `lore/factions/shinjuku-kamu` | And "Shinjuku Kamu" is itself a garbling of **Shinjo Kamo** — the Unicorn general at the Snow Plain. The Shinjukamu Letters are his. |
+
+Deliberately excluded as genuinely distinct: Phoenix Clan/Phoenix Lands, Scorpion Clan/Scorpion
+Lands, Unicorn Clan/Unicorn Lands, Centipede Clan/Centipede Lands, Daidoji Family/Doji Family,
+Dragon Clan/Dragonfly Clan, Akodo Osakuan/Akodo Sakura, Matsu Tsuki/Matsu Tsuko, Shosuro
+Akio/Shosuro Imako, Koji/Kojin.

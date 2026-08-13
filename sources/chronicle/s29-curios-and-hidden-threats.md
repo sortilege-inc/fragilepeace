@@ -14,13 +14,13 @@ They took the last ferry across and found the [[Curio Shop]] off the wharf, smal
 
 [[Doji Setsuna]] asked whether he had anything that would ease a spiritual burden — she meant her husband — and the man's shutters came down. He steered hard for steppe curios and away from anything with a spirit in it. [[Shiba Midori]] got them back on course by asking for the sort of thing a child would ask for. [[Doji Setsuna]] offered a writ of indemnity out of her own office to cover whatever he had already done; he said his problem needed more than indemnity.
 
-Then [[Shiba Midori]] accused him outright of setting the man outside on them, and pushed until he broke. The tail was **a local police officer**, and he was not following the party at all — he was after the judge. Out came the receipts and the paperwork. [[Doji Setsuna]] pressed to take custody of the documents before anyone else could, and got them.
+Then [[Shiba Midori]] accused him outright of setting the man outside on them, and pushed until he broke. The tail was a local police officer, and he was not following the party at all — he was after the judge. Out came the receipts and the paperwork. [[Doji Setsuna]] pressed to take custody of the documents before anyone else could, and got them.
 
-And in them: a receipt made out to the pen name **Hanano Ame**, for a talisman said to hold a wild spirit from the [[Burning Sands]], bought from a [[Fox Clan Samurai]] — with an inn address to find him at.
+And in them: a receipt made out to the pen name *Hanano Ame*, for a talisman said to hold a wild spirit from the [[Burning Sands]], bought from a [[Fox Clan Samurai]] — with an inn address to find him at.
 
 They bought an ornate saddle tassel at a badly inflated price so the man had a sale to point to, with the contact details hidden in the box. Outside, [[Bayushi Monban]] put his badge in the officer's face while [[Kakita Kazumi]] worked him from the roof, and the ronin bowed and left. [[The Shopkeeper]] shut up his shop behind them.
 
-Over dumplings they read the paperwork properly. [[Shiba Midori]] worked out the handling instructions, and the important line in them is this: **once a bound spirit is let out, the talisman it was in is finished.** A released spirit needs a new vessel, and a decorative saddle tassel is not one.
+Over dumplings they read the paperwork properly. [[Shiba Midori]] worked out the handling instructions, and the important line in them is this: once a bound spirit is let out, the talisman it was in is finished. A released spirit needs a new vessel, and a decorative saddle tassel is not one.
 
 She also said what she thought of the method. Meishōdō binding is coercion; the [[Phoenix Clan|Phoenix]] rites are an agreement. They talked about asking the local kami what had been let loose in this city and decided the spiritual weather and the politics both made that hard. Tomorrow: [[Tongbo Temple]], and the governor. Tonight: [[The Docks]], as magistrates.
 
@@ -35,14 +35,14 @@ She also said what she thought of the method. Meishōdō binding is coercion; th
 
 ## Setsuna
 
-**The author is a buyer.** That is the session and everything else is scaffolding. [[Hana no Ame]] is not a scandal-monger who happens to write about spirits; her pen name is on a receipt for a talisman containing a wild spirit out of the [[Burning Sands]]. The Lion daimyō wants her found because of a story about a samurai and an ancestor spirit. The Dragon want the [[Meishodo Talismans|Meishōdō]] traffic stopped. [[Daidoji Shin]] wants whoever roused the spirits that hit the [[Crane Lands|Crane lands]]. **All three of those are one person's shopping.**
+**The author is a buyer.** That is the session and everything else is scaffolding. [[Hana no Ame]] is not a scandal-monger who happens to write about spirits; her pen name is on a receipt for a talisman containing a wild spirit out of the [[Burning Sands]]. The Lion daimyō wants her found because of a story about a samurai and an ancestor spirit. The Dragon want the [[Meishodo Talismans|Meishōdō]] traffic stopped. [[Daidoji Shin]] wants whoever roused the spirits that hit the [[Crane Lands|Crane lands]]. All three of those are one person's shopping.
 
 Her story about a Lion samurai in a romance with an ancestor spirit reads differently now. It may be reportage.
 
-**And a vessel is going to be needed.** [[Shiba Midori]] established that letting a bound spirit out ruins the talisman holding it, so anyone planning a release has to have a replacement ready first. If [[Hana no Ame]] is collecting, she is either collecting vessels too or she is about to need one badly. Watch for someone in this city buying an empty container of unusual quality.
+And a vessel is going to be needed. [[Shiba Midori]] established that letting a bound spirit out ruins the talisman holding it, so anyone planning a release has to have a replacement ready first. If [[Hana no Ame]] is collecting, she is either collecting vessels too or she is about to need one badly. Someone in this city will shortly be buying an empty container of unusual quality.
 
-**Two things she did well.** She took custody of the paperwork before the police officer could, which is the difference between evidence and a rumour about evidence. And she bought the tassel at a stupid price so the shopkeeper had a clean transaction to show for the evening — he can survive having talked to them, which means he can be talked to again.
+Two things she did well. She took custody of the paperwork before the police officer could, which is the difference between evidence and a rumour about evidence. And she bought the tassel at a stupid price so the shopkeeper had a clean transaction to show for the evening — he can survive having talked to them, which means he can be talked to again.
 
-**One thing to be careful of.** She asked a stranger, in a shop, for something to ease [[Shinjo Harunobu]]'s spiritual burden. That is the second time this week her husband has been the thing she wants badly enough to ask for openly. In a city where people are watching the party closely enough to plant a lie about [[Toshi Ranbo]] within hours, a known want is a handle.
+One thing to be careful of. She asked a stranger, in a shop, for something to ease [[Shinjo Harunobu]]'s spiritual burden. That is the second time this week her husband has been the thing she wants badly enough to ask for openly. In a city where people are watching the party closely enough to plant a lie about [[Toshi Ranbo]] within hours, a known want is a handle.
 
 And [[The Shopkeeper]] said an Emerald Magistrate's indemnity was not enough to protect him. Somebody has a hold on that man that outranks her office.

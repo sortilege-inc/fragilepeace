@@ -16,7 +16,7 @@ By the water in the garden, [[Shiba Midori]] found [[Bayushi Monban]] anxious. H
 
 Out in the garden [[Ikoma Tadayoshi]] played his flute and picked up something worth having: an unusual body of [[Lion Clan]] passing nearby, which could be an escort. [[Governor Miya Tetsuya]] called him in privately afterwards to warn him what the Lion will want for it.
 
-That night [[Shiba Midori]] and [[Bayushi Monban]] settled the spirit. She undertook to carry it west to the [[Burning Sands]] and let it go where it belongs. **The [[Ifrit]] accepted, on terms: it would stay inside [[Bayushi Monban]] for now, provided they left this water-logged castle immediately.**
+That night [[Shiba Midori]] and [[Bayushi Monban]] settled the spirit. She undertook to carry it west to the [[Burning Sands]] and let it go where it belongs. The [[Ifrit]] accepted, on terms: it would stay inside [[Bayushi Monban]] for now, provided they left this water-logged castle immediately.
 
 They could not. The governor had sealed the island for the night, and the major-domo said their audience would be in the morning.
 
@@ -35,12 +35,12 @@ So they split. [[Shiba Midori]] and [[Bayushi Monban]] would handle the spirit; 
 
 **She spent the night teaching.** She got past the guards into the room where the Empire had hidden its envoy, and then used the access to coach a young woman in how to argue — not to guard her, not to interrogate her, and not to look at whatever is sealed against her skin. That is the most useful thing anyone did this week and it is the least dramatic. [[Miya Misato]] is going to a war with a writ and no experience. What she needs is not another sword.
 
-**The spirit is inside her yojimbo and the gates are shut.** [[Bayushi Monban]] agreed a bargain on the [[Ifrit]]'s terms — carry it west, free it in the [[Burning Sands]] — and the one condition was *leave now*. Then [[Governor Miya Tetsuya]] sealed the island until morning. So the party spends a night inside a locked castle with a fire spirit lodged in the man who has already proved that touching its box makes him irritable and hungry for fire.
+The spirit is inside her yojimbo and the gates are shut. [[Bayushi Monban]] agreed a bargain on the [[Ifrit]]'s terms — carry it west, free it in the [[Burning Sands]] — and the one condition was *leave now*. Then [[Governor Miya Tetsuya]] sealed the island until morning. So the party spends a night inside a locked castle with a fire spirit lodged in the man who has already proved that touching its box makes him irritable and hungry for fire.
 
 If it turns, it turns here, with the envoy in the building.
 
-**[[Ikoma Tadayoshi]] now has an official warrant to watch them.** The governor gave him the escort and told him to keep an eye on the magistrates' own methods. That is not paranoia on the governor's part — it is [[Bayushi Monban]] using Cackling Laughter on a room of guests, [[Kakita Kazumi]] burgling the party, a poison bag turning up above a Crane bed. **They have been assessed and found to be a risk to the person they are protecting**, and the assessment is fair.
+[[Ikoma Tadayoshi]] has an official warrant to watch them now. The governor gave him the escort and told him to keep an eye on the magistrates' own methods. That is not paranoia on the governor's part — it is [[Bayushi Monban]] using Cackling Laughter on a room of guests, [[Kakita Kazumi]] burgling the party, a poison bag turning up above a Crane bed. They have been assessed and found to be a risk to the person they are protecting, and the assessment is fair.
 
-**And the Lion escort has a price.** [[Governor Miya Tetsuya]] warned him about it privately rather than in front of everyone, which tells her the price is political rather than material. An unusual [[Lion Clan|Lion]] contingent conveniently near the road west, while she carries an Imperial writ ordering the Lion to stop fighting — she should establish who those troops answer to **before** the envoy is inside their column.
+And the Lion escort has a price. [[Governor Miya Tetsuya]] warned him about it privately rather than in front of everyone, which tells her the price is political rather than material. An unusual [[Lion Clan|Lion]] contingent conveniently near the road west, while she carries an Imperial writ ordering the Lion to stop fighting — she should establish who those troops answer to before the envoy is inside their column.
 
-Her own road is now set: west with [[Miya Misato]], in a palanquin, toward the front where [[Shinjo Harunobu]] is held. The giri and the ninjō have finally converged and both of them run through the same gate.
+Her own road is set now: west with [[Miya Misato]], in a palanquin, toward the front where [[Shinjo Harunobu]] is held. The giri and the ninjō have finally converged and both of them run through the same gate.

@@ -14,9 +14,9 @@ Then the business. [[Kaeru Haia]] wanted a formal report on the [[Mantis Captain
 
 Rested, they crossed to the [[Dragonfly Clan]] shrines, past the water gardens and the bushi on the gates, and [[Tonbo Kuma]] came down off a balcony and set aside his go board to receive them. [[Doji Setsuna]] asked for a teaching game at maximum handicap and beat him. Then she asked for a second and beat him again.
 
-Out of that came the useful thing. There is a novelist in the city researching how people interact with spirits — and **both a [[Unicorn Clan|Unicorn]] and a [[Lion Clan|Lion]] samurai have already come looking for the same person.**
+Out of that came the useful thing. There is a novelist in the city researching how people interact with spirits — and both a [[Unicorn Clan|Unicorn]] and a [[Lion Clan|Lion]] samurai have already come looking for the same person.
 
-Then the theatre. [[Daidoji Shin]]'s planned theatre had burned, and at the ruin [[Shiba Midori]] communed with the fire spirits and got a plain answer: **a caged spirit was let out to start it.**
+Then the theatre. [[Daidoji Shin]]'s planned theatre had burned, and at the ruin [[Shiba Midori]] communed with the fire spirits and got a plain answer: a caged spirit was let out to start it.
 
 And then an urgent summons. [[Asahina Nao]] came aboard the governor's boat to collect them, and [[Governor Miya Tetsuya]] laid out something worse — a guest in their care showing the signs of possession. The magistrates have seen this before. They gave their word to keep the meishōdō dimension and the theatre fire quiet, given what both would do politically if they were not. [[Bayushi Monban]] put a Cleansing Spirit ritual over the group before they went in.
 
@@ -33,14 +33,14 @@ And then an urgent summons. [[Asahina Nao]] came aboard the governor's boat to c
 
 ## Setsuna
 
-**[[Kakita Kazumi]] was never taken**, which corrects last session's reading and makes the pattern narrower, not wider: the collectors took [[Shiba Midori]] — the spirit speaker — and left everyone else. [[Kaeru Haya]] understood that immediately and was angry about it. *The boss needs another* means another **shugenja**.
+**[[Kakita Kazumi]] was never taken**, which corrects last session's reading and makes the pattern narrower rather than wider: the collectors took [[Shiba Midori]] — the spirit speaker — and left everyone else. [[Kaeru Haya]] understood that immediately and was angry about it. *The boss needs another* means another shugenja.
 
-**The theatre is the proof of method.** A caged spirit was released to set that fire. That is the whole apparatus in one sentence: spirits bound into objects, moved through this port, and **spent** — used up as arson, and the vessel ruined in the using, which is why the trade needs constant resupply. It also means the traffic is not collectors buying curios. It is somebody arming themselves.
+The theatre is the proof of method. A caged spirit was released to set that fire. That is the whole apparatus in one sentence: spirits bound into objects, moved through this port, and spent — used up as arson, and the vessel ruined in the using, which is why the trade needs constant resupply. It also means the traffic is not collectors buying curios. It is somebody arming themselves.
 
 And it was [[Daidoji Shin]]'s theatre. The [[Crane Clan|Crane]] agent hunting the shugenja who roused the spirits in the [[Crane Lands|Crane lands]] has now had his own project burned by a released spirit in this city. He is not chasing this trade. He is being answered by it.
 
-**Three parties are hunting the same novelist.** A Unicorn, a Lion, and now the magistrates — with [[Hana no Ame]]'s pen name already on a receipt for a wild spirit out of the [[Burning Sands]]. Whoever finds this author first controls what the other two learn. She should assume the Lion and the Unicorn are not looking for a writer to silence but for a supplier to secure.
+Three parties are hunting the same novelist. A Unicorn, a Lion, and now the magistrates — with [[Hana no Ame]]'s pen name already on a receipt for a wild spirit out of the [[Burning Sands]]. Whoever finds this author first controls what the other two learn. She should assume the Lion and the Unicorn are not looking for a writer to silence but for a supplier to secure.
 
-**The report is a real weapon and she should write it carefully.** She has the pen on the official record of the [[Mantis Clan|Mantis]] captain's conduct. That document will be read by people who will never meet [[Captain Kubota]] — and she still does not know whether his ransom story was true. Writing him down as contemptuous of Imperial authority before she has checked is exactly the kind of tidy sentence that becomes a fact.
+The report is a real weapon and she should write it carefully. She has the pen on the official record of the [[Mantis Clan|Mantis]] captain's conduct. That document will be read by people who will never meet [[Captain Kubota]] — and she still does not know whether his ransom story was true. Writing him down as contemptuous of Imperial authority before she has checked is exactly the kind of tidy sentence that becomes a fact.
 
 She beat [[Tonbo Kuma]] twice at maximum handicap and got a lead out of it. That is the cheapest intelligence anyone has bought this month.

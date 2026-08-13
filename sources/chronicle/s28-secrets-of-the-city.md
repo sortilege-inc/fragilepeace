@@ -1,5 +1,5 @@
 session: 28
-epigraph: A Unicorn shugenja broke her grandmother's jade cup as a child and something came out of it. She has been arguing ever since that what she does is a partnership. The Phoenix call it caging.
+epigraph: A Unicorn shugenja broke his grandmother's jade cup as a child and something came out of it. He has been arguing ever since that what the Unicorn do is a partnership. The Phoenix call it caging.
 ---
 
 ## Narrative
@@ -37,10 +37,10 @@ They agreed to do it that night.
 
 **Going in without the badge was the right call and it should be held to.** In a city split three ways across a river, an Emerald Magistrate's authority is an announcement, and every announcement in this place crosses a bridge faster than she can. She got more out of [[Ide Iwena]] in one conversation as a curious traveller than the office would have bought her in a week.
 
-**The two leads are one lead.** Illicit [[Meishodo Talismans|Meishōdō]] surfacing in Dragon lands; a scandalous story about a Lion samurai and an ancestor spirit; a Unicorn practice that the [[Phoenix Clan|Phoenix]] call caging. Everything in this city is about **spirits being put into objects and moved across borders**, and the story about the samurai may not be scandal at all — it may be a description.
+The two leads are one lead. Illicit [[Meishodo Talismans|Meishōdō]] surfacing in Dragon lands; a scandalous story about a Lion samurai and an ancestor spirit; a Unicorn practice that the [[Phoenix Clan|Phoenix]] call caging. Everything in this city is about spirits being put into objects and moved across borders, and the story about the samurai may not be scandal at all. It may be a description.
 
-She should also hold [[Iuchi Minoru]]'s warning against her own recent history. A vessel with a being of great power in it, carried by people who do not know what they have — that is precisely the black talisman [[Matsu Morozane]] cut off a Unicorn shugenja's neck three hundred years ago and handed to a [[Kitsu Family|Kitsu]] to interrogate. That thread has now come at her twice.
+She should also hold [[Iuchi Minoru]]'s warning against her own recent history. A vessel with a being of great power in it, carried by people who do not know what they have — that is precisely the black talisman [[Matsu Morozane]] cut off a Unicorn shugenja's neck three hundred years ago and handed to a [[Kitsu Family|Kitsu]] to interrogate. That thread has come at her twice now.
 
-**The Toshi Ranbo lie is worth more than the truth it hides.** [[Shiba Midori]] is right that it is a lie; the question is who bothered to plant it. Somebody in this city knew the party was looking for [[Hana no Ame]] within hours of them arriving and had an answer ready. They are being watched, and by someone who thinks the author is worth protecting.
+The Toshi Ranbo lie is worth more than the truth it hides. [[Shiba Midori]] is right that it is a lie; the question is who bothered to plant it. Somebody in this city knew the party was looking for [[Hana no Ame]] within hours of them arriving and had an answer ready. They are being watched, and by someone who thinks the author is worth protecting.
 
-One caution about tonight. Putting [[Kakita Kazumi]] on [[The Docks]] as bait is [[Kaeru Akiara]]'s idea, and [[Kaeru Akiara]] is a rōnin in [[Lion Clan|Lion]] pay whom they met this evening. It may be a good plan. It is also exactly what you would suggest if you wanted to know where one of them would be, alone, after dark.
+One caution about tonight. Putting [[Kakita Kazumi]] on [[The Docks]] as bait is [[Kaeru Akiara]]'s idea, and [[Kaeru Akiara]] is a rōnin in [[Lion Clan|Lion]] pay whom they met this evening. It may be a good plan. It is also the plan to propose if what is wanted is one of them alone, in a known place, after dark.
