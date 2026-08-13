@@ -153,6 +153,15 @@ CORRECTIONS = [
     # unrelated Ide Ujiyasu, and a bare rule would have corrupted it.
     (r"\bIkoma Ujiyasu\b", "Ikoma Ujiaki"),
     (r"\bKodo Totori\b", "Akodo Toturi"),
+    # Owner 2026-08-13: it was an abortion. The Archivist filed session 35 as
+    # "Doji Setsuna's Miscarriage" and used the word twice in the entry, which
+    # is wrong on the record's own evidence — she asked Shiba Midori for the
+    # Terminating Tea, had the ingredients gathered, and drank it, and the
+    # entry's own first clause is "your efforts were successful". A miscarriage
+    # is something that happens to a woman; this is something she did. The word
+    # appears in that one file and nowhere else in the sources.
+    (r"you have indeed miscarried", "you have indeed aborted the pregnancy"),
+    (r"\bMiscarriage successful\b", "Abortion successful"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
 
@@ -211,6 +220,10 @@ RENAMES = {
     # The spirit and the box it was sealed into are one being. It negotiated in
     # session 33; it belongs with the people, not the relics.
     "The Ifrit": "Ifrit",
+    # Owner 2026-08-13. See the note in CORRECTIONS: she sought the tea out and
+    # drank it, and the Archivist's own entry opens "your efforts were
+    # successful". The title was the Archivist's word, not the table's.
+    "Doji Setsuna's Miscarriage": "Doji Setsuna’s Abortion",
 }
 
 # Pages the export filed under the wrong kind, keyed by (export folder's cat,
