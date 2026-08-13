@@ -40,6 +40,8 @@ confirmed [[Shinjo Altansarnai]] was already there without obliging [[Moto Gaher
 admit it. The message gave her name, mentioned that her husband [[Shinjo Harunobu]] is a
 [[Lion Clan|Lion]] prisoner — a credential in that camp — stated what the mission was
 for, and asked one question: **who else was party to the dissolution of the betrothal?**
+It is worth saying that this was not a stranger writing to a stranger.
+[[Shinjo Altansarnai]] was a guest at [[Doji Setsuna]]'s wedding.
 The outrider's answer came back as *how interesting*, which is a door left open.
 
 In the evening [[Miya Misato]] asked the party whether any of them had unmarried
@@ -142,7 +144,8 @@ assumed the mission was a woman. It is a document.
 **[[Shinjo Altansarnai]] can probably end this by herself.** If a Champion can nullify
 the betrothal on her own authority, then the entire war is waiting on one woman's
 signature, and that woman is in a camp two tents away and has just been told there is a
-Crane who wants to talk. The back channel was the best thing she did all day and it is
+Crane who wants to talk — a Crane whose wedding she attended, married into her own
+clan. That is not a back channel. That is an acquaintance who has not been called on. The back channel was the best thing she did all day and it is
 now the most urgent.
 
 **And [[Moto Gaheris]] is not a fool about the [[Crane Clan|Crane]].** He is wrong that

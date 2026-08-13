@@ -50,9 +50,19 @@ name [[Ikoma Family|Ikoma]], and become [[Lord Ikoma]]'s wife. The
 [[Unicorn Clan|Unicorn]] were to cede border territory, [[Hisomori Village]] among it,
 settling claims that have been argued over for centuries. [[Matsu Maro]] called it
 amicable and said it would have ended the border war for good. She also said she had never
-understood why [[Shinjo Altansarnai]] agreed to it, since the Champion stood to lose a
-great deal of standing by it. And she passed on a rumour: [[Shinjo Altansarnai]] has a
+understood why [[Shinjo Altansarnai]] agreed to it. [[Lord Ikoma]] is a man of about
+fifty and the Champion would have been stepping down to him in every sense — out of her
+office, out of her name, and out of the Unicorn succession, which would then have had to
+be settled all over again. And she passed on a rumour: [[Shinjo Altansarnai]] has a
 lover, not a husband, and a daughter.
+
+Pressed on it, [[Matsu Maro]] gave a reading more generous than she had to.
+*I don't believe that she ever wanted to marry. I don't think that that was her desire.
+I think she did it for her clan.* And then: *if she were not my enemy, I would almost
+respect that dedication.* [[Kakita Kazumi]] observed that they were a
+[[Kakita Family|Kakita]] and a [[Matsu Family|Matsu]] talking amicably. She allowed it —
+*then again, you and I are not anywhere near [[Toshi Ranbo]]* — and told him not to get
+ideas, being married.
 
 [[Kakita Kazumi]] pushed on the honour of it and got the answer that matters. From a
 [[Lion Clan|Lion]] view the refusal was not a snub, it was a **direct insult** — and in
@@ -66,8 +76,17 @@ Asked whether the contract carried a penalty for breach, she scratched her head 
 know. [[Doji Setsuna]] guessed that writing one in at that level would itself have been an
 insult — who would insert a clause anticipating that a Champion might renege? Nobody argued.
 
-[[Doji Setsuna]] then asked why [[Shinjo Altansarnai]] had held herself back. Either she is
-a free spirit who baulked at the last, or a better offer appeared. She went through the
+[[Doji Setsuna]] knows some of this from the other side. Her husband's people are
+[[Shinjo Family|Shinjo]], and **[[Shinjo Altansarnai]] was at her wedding.** The woman
+is a free spirit and her daughter more so — and by every account the daughter was
+rightly offended that her mother should be made to marry at all. What the
+[[Unicorn Clan|Unicorn]] understood was that the Champion's arrangement with her lover
+was as good as a marriage in everything but name, and the only reason it was not one
+was that she was keeping her own value on the board for whenever the clan needed to
+spend it.
+
+So [[Doji Setsuna]] asked why she had held herself back this time. Either she is a free
+spirit who baulked at the last, or a better offer appeared. She went through the
 field and found nothing: [[Akodo Toturi]] married, the [[Crab Clan|Hida]],
 [[Mantis Clan|Yoritomo]] and [[Scorpion Clan|Scorpion]] Champions married,
 [[Doji Hotaru]] and the [[Phoenix Clan|Phoenix]] Champion the wrong sex for it, the
@@ -75,9 +94,11 @@ field and found nothing: [[Akodo Toturi]] married, the [[Crab Clan|Hida]],
 available.** The only way up from where she stands is an Imperial marriage, which would
 move her out of the bushi ranks entirely.
 
-So she asked [[Matsu Maro]] outright whether an Imperial suitor existed. [[Matsu Maro]] was
-caught flat-footed and allowed that one *could be supposed*. [[Doji Setsuna]] noted, to
-herself, that a claim like that would be very hard for anyone to disprove.
+So she turned to the Imperial family member sitting with them and asked
+[[Miya Misato]] outright whether an Imperial suitor existed for
+[[Shinjo Altansarnai]]. [[Miya Misato]] went wide-eyed and allowed that there
+*could be supposed* to be one. [[Doji Setsuna]] noted, to herself, that a claim like
+that would be very hard for anyone to disprove.
 
 From there the strategies stacked up. First, a poison pill: rule that the betrothal must be
 honoured, and attach reparations for the punitive expedition payable by the
@@ -90,8 +111,9 @@ Second, [[Kakita Kazumi]] observed that they were escorting a member of the Impe
 [[Miya Misato]] objected in the manner of a sixteen-year-old being volunteered. She is not
 betrothed, and she would be a defensible substitute for [[Shinjo Altansarnai]] — slightly
 lower in personal standing but kuge rather than bushi, which about evens it. [[Doji Setsuna]]
-was frank about using it as the position everyone else has to argue against, to make
-[[Miya Misato]] help find something better, and reassured her that a marriage can be
+asked whether she had brothers available; she does, and they are twelve, which buys time
+rather than solving anything. She was frank about using the substitution as the position
+everyone else has to argue against, to make [[Miya Misato]] help find something better, and reassured her that a marriage can be
 conducted perfectly well from two different cities. [[Kakita Kazumi]] noted that the
 [[Ikoma Family|Ikoma]] are famous philanderers and offered his services as a physician for
 anything that came of it — well out of [[Lion Clan|Lion]] hearing.
@@ -144,9 +166,9 @@ leverage here, only the pitch.
 
 ## Learned
 
-- Matsu Maro: Gave up the betrothal's terms — Shinjo Altansarnai to stand down as Champion, take the Ikoma name and marry Lord Ikoma; the Unicorn to cede border land including Hisomori Village. Called it amicable, and said she never understood why Altansarnai agreed, since the Champion lost standing by it. Confirmed the war is about Lion honour and not the marriage: restore the honour another way and the Lion can stand down. Passed on a rumour that Altansarnai has a lover and a daughter. Did not know whether the contract carried any penalty for breach.
-- Shinjo Altansarnai: Champion of the Unicorn. Was to give up the Championship, the name, and her clan's border territory for this marriage, and refused at the last. No clan-level match exists above what she had, so either she baulked on her own account or an Imperial suitor appeared. Reported to have a lover rather than a husband, and a daughter of marriageable age.
-- Lord Ikoma: Champion of the Ikoma, and the intended husband. Matsu Maro says his personal feelings are not what the war is about. He was also not the one who negotiated the territorial concessions.
+- Matsu Maro: Reads Altansarnai more generously than duty requires — that she never wanted the marriage and took it for her clan, and that she would respect the dedication in anyone who was not her enemy. Named Toshi Ranbo as the place where a Kakita and a Matsu stop being able to talk amicably. Gave up the betrothal's terms — Shinjo Altansarnai to stand down as Champion, take the Ikoma name and marry Lord Ikoma; the Unicorn to cede border land including Hisomori Village. Called it amicable, and said she never understood why Altansarnai agreed, since the Champion lost standing by it. Confirmed the war is about Lion honour and not the marriage: restore the honour another way and the Lion can stand down. Passed on a rumour that Altansarnai has a lover and a daughter. Did not know whether the contract carried any penalty for breach.
+- Shinjo Altansarnai: Champion of the Unicorn, and a woman Setsuna has actually met — she was a guest at her wedding. Was to give up the Championship, the name, her clan's border territory and her place in the Unicorn succession for this marriage, and refused at the last. A free spirit; her daughter more so, and offended on her mother's behalf. Her arrangement with her lover is as good as a marriage in all but name, kept unmarried so her own value stayed available to the clan. No clan-level match exists above what she was offered.
+- Lord Ikoma: Champion of the Ikoma, and the intended husband — a man of about fifty, against a Champion in her prime. Matsu Maro says his personal feelings are not what the war is about. He was also not the one who negotiated the territorial concessions, and said himself he would not have made that bargain.
 - Akodo Toturi: Champion of the Lion Clan, and Akodo Akihito's uncle. Married, and therefore not a match for Altansarnai.
 - Akodo Akihito: Akodo Toturi's nephew — which puts him close enough to the Lion succession to answer the insult by marriage. Holds a Unicorn prisoner. His castle is the column's destination.
 - Hisomori Village: Among the border territories the Unicorn agreed to cede under the betrothal, settling ancient claims.
@@ -185,11 +207,24 @@ refused once. It also avoids the [[Miya Misato]] substitution, which would work 
 she should be honest about not wanting to use — she talked the girl through it and
 volunteered her as a bargaining position in the same breath.
 
-**Nobody has asked [[Shinjo Altansarnai]] anything.** Every plan on the table turns on her
-or on her daughter, and the party has heard her second-hand from a [[Lion Clan|Lion]]
-general who admits she never understood the woman. The daughter's supposed willingness is
-a rumour repeated by an enemy. That is a thin footing for a treaty, and she is riding
-toward [[Battlemaiden Castle]] where the Champion herself is.
+**Nobody has asked [[Shinjo Altansarnai]] anything, and [[Doji Setsuna]] is the one
+person here who could.** Every plan on the table turns on the Champion or on her
+daughter, and the party has taken all of it second-hand from a [[Lion Clan|Lion]]
+general who says outright she never understood the woman. But
+[[Shinjo Altansarnai]] stood at [[Doji Setsuna]]'s wedding. Her husband's family are
+[[Shinjo Family|Shinjo]]. **She is not a stranger to be approached through channels —
+she is an acquaintance**, and a letter from a Doji married into her clan is a different
+object from a magistrate's summons. The daughter's supposed willingness is still only a
+rumour repeated by an enemy, and that is a thin footing for a treaty when the woman
+herself is at [[Battlemaiden Castle]] up the road.
+
+**And the thing to ask her is not what she wants but what she was protecting.** She kept
+her own marriage undone for years so the [[Unicorn Clan|Unicorn]] would always have that
+piece to play, then agreed to spend it on [[Lord Ikoma]] — a man of fifty, at the cost of
+her office, her name and her place in the succession — and then would not go through with
+it. A woman who has been that deliberate about her own value for that long does not baulk
+at the last out of temperament. **Something changed between the agreement and the
+refusal**, and nobody in the column has any idea what.
 
 **She has also handed herself a weapon she cannot control.** The Imperial suitor is a claim
 nobody could easily disprove — which is precisely why using it would be a lie told with an
