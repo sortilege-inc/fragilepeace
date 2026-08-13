@@ -98,6 +98,7 @@ CORRECTIONS = [
     # The 2026-04-27 notes. Owner 2026-08-13: "Cosmi" is Kakita Kazumi (Crane
     # courtier, and the one with medicine in the record), and "Komo Tadayoshi"
     # is Ikoma Tadayoshi, spoken for by another player in his absence.
+    (r"\bKakita Cosmi\b", "Kakita Kazumi"),   # must precede the bare form
     (r"\bCosmi\b", "Kakita Kazumi"),
     (r"\bKomo Tadayoshi\b", "Ikoma Tadayoshi"),
     (r"\bMia Misato\b", "Miya Misato"),
