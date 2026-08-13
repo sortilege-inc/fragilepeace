@@ -105,7 +105,10 @@ CORRECTIONS = [
     (r"\bLordy Ikoma\b", "Lord Ikoma"),
     # Both are Great Clan Champions whose names the 2026-04-13 notes garbled. The
     # L5R5e corpus has Altansarnai and Toturi; it has neither of the other forms.
-    (r"\bShinjo Alten?sari\b", "Shinjo Altansarnai"),
+    (r"\bShinjo Alt[ae]n?sar(?:i|nia)\b", "Shinjo Altansarnai"),
+    # Session 48 names the jilted groom the record has only called Lord Ikoma.
+    (r"\bIkoma Asakichi\b", "Ikoma Anakazu"),
+    (r"\bLord Ikoma\b", "Ikoma Anakazu"),
     (r"\bKodo Totori\b", "Akodo Toturi"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
