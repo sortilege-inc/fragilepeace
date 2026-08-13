@@ -142,15 +142,35 @@ Anything the record does *not* settle goes to the open questions below instead.
 - **Iuchi Minoru is "he."** The s28 body and its Learned entry are "he"/"his" throughout — *as a
   child he broke his grandmother's jade tea cup*. Only the epigraph read "she". Corrected.
 
+## Resolved: Kaeru Haia → Kaeru Haya
+
+**Owner's call, 2026-08-13: she is Kaeru Haya.** One line in `archivist.CORRECTIONS` does the whole
+merge — `correct()` is applied to titles as well as prose, and `discover()` already collapses two
+files that land on one title, so the export's `Kaeru Haia.md` and `Kaeru Haya.md` became a single
+page carrying s30, s31 and s32.
+
+Two things surfaced in the doing of it.
+
+- **The merge was dropping a line.** `Ledger.learned` is keyed `{page: {session: line}}`, and s32
+  carried a bullet under *each* spelling. Once both corrected to Haya, the second silently replaced
+  the first and her "told the magistrates exactly what she thought of people who leave a spirit
+  speaker alone at night" never reached the page. Folded into one bullet.
+- **The same defect was already live, and older.** A scan for duplicate ledger keys found s26
+  carrying two `Shosuro Aishi` bullets — one for the living advocate, one for the ancestor she is
+  named for. The ancestor's was being dropped. Folded in as well.
+
+`verify_site.py` grew a **`ledger`** check for it, proven on a planted duplicate. Nothing about
+either case is visible in the built site except as an entry that is quietly missing, which is why
+it went unnoticed.
+
+- **And her pronouns disagreed across the two spellings.** s30 has "her people", s32 had "what he
+  thought". The export settles it: its `Kaeru Haia.md` runs 12 *her* / 9 *she* against one *his*,
+  and `Kaeru Haya.md` 9 *her* / 9 *she* against one *him*. She is a woman; s32's *he* was a slip
+  and is corrected.
+
 ## Open questions for the owner
 
-- **Kaeru Haia and Kaeru Haya are the same person, under two spellings.** She runs the rōnin watch
-  on the Unicorn side of the City of the Rich Frog; s30 introduces her as Haia, s31 runs the dawn
-  operation as Haya, and s31's own Setsuna section cites "Haia's report" about the missing sailors.
-  Six mentions each, and the site currently builds **two Dramatis Personae pages** with half her
-  record on each. The Archivist export does not settle it — 53 Haia to 51 Haya, so the transcription
-  never picked one either. The fix is one line in `archivist.CORRECTIONS` plus a `RENAMES` merge,
-  and it needs the correct spelling from the table. Left as written until then.
+None outstanding.
 
 ## Found in passing — split entity pages
 

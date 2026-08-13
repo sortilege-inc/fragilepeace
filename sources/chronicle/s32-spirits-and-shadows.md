@@ -8,9 +8,9 @@ epigraph: The fire spirits at the burned theatre had a straight answer for her. 
 
 At [[The Docks]] he presented the thief to [[Shiba Midori]], who arrived bruised, black-eyed and unarmed. The purse was a koku light; the thief said it spilled while he ran. Then she knelt down and used water magic on him — *I will pull back your blood into your body* — and closed his wounds. He had robbed her, beaten her, and put her in a boat, and she healed him on a dock in front of witnesses.
 
-[[Kaeru Haya]] arrived and told the magistrates exactly what he thought of people who leave a spirit speaker alone at night in this city, and said he would be settling with the men who did it. [[Bayushi Monban]] came down out of the sky to join the conversation.
+[[Kaeru Haya]] arrived and told the magistrates exactly what she thought of people who leave a spirit speaker alone at night in this city, and said she would be settling with the men who did it. [[Bayushi Monban]] came down out of the sky to join the conversation.
 
-Then the business. [[Kaeru Haia]] wanted a formal report on the [[Mantis Captain]]'s conduct toward Emerald Magistrates, and [[Doji Setsuna]] volunteered to draft the investigation records herself — written so that the [[Kaeru Ronin]]'s competence is on the page and the captain's contempt is on it too. They took lodgings on the [[Unicorn Clan|Unicorn]] side and sent word to the governor that they were in the city.
+Then the business. [[Kaeru Haya]] wanted a formal report on the [[Mantis Captain]]'s conduct toward Emerald Magistrates, and [[Doji Setsuna]] volunteered to draft the investigation records herself — written so that the [[Kaeru Ronin]]'s competence is on the page and the captain's contempt is on it too. They took lodgings on the [[Unicorn Clan|Unicorn]] side and sent word to the governor that they were in the city.
 
 Rested, they crossed to the [[Dragonfly Clan]] shrines, past the water gardens and the bushi on the gates, and [[Tonbo Kuma]] came down off a balcony and set aside his go board to receive them. [[Doji Setsuna]] asked for a teaching game at maximum handicap and beat him. Then she asked for a second and beat him again.
 
@@ -25,8 +25,7 @@ And then an urgent summons. [[Asahina Nao]] came aboard the governor's boat to c
 - Tonbo Kuma: Leader of the Dragonfly at their shrines in the city, and a go player who will set the board aside for guests. Lost twice to Setsuna at maximum handicap. Knows of a novelist researching spirit interactions — and that a Unicorn and a Lion samurai have both already come asking after the same person.
 - Governor Miya Tetsuya: Summoned the magistrates urgently. Has a guest under their roof showing signs of possession, and a political problem in both the meishōdō trade and the theatre fire.
 - Asahina Nao: Came aboard the governor's boat to bring the magistrates in.
-- Kaeru Haya: Told the magistrates plainly what he thought of them leaving a spirit speaker alone at night, and intends to settle with the men who took her.
-- Kaeru Haia: Wants a formal report on the Mantis captain's conduct toward Emerald Magistrates. Setsuna is drafting it.
+- Kaeru Haya: Told the magistrates plainly what she thought of them leaving a spirit speaker alone at night, and intends to settle with the men who took her. Wants a formal report on the Mantis captain's conduct toward Emerald Magistrates, which Setsuna is drafting.
 - Daidoji Shin: His planned theatre was burned down. The fire spirits say a caged spirit was released to do it.
 - Shiba Midori: Healed the man who robbed and beat her, on the dock, in front of everyone.
 - Kakita Kazumi: Alive and never taken. Bound the thief to service rather than killing him.

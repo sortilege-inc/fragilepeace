@@ -28,11 +28,10 @@ With the floor open, [[Bayushi Monban]] proposed calling the ancestors themselve
 
 - Kitsuko Ayoko: Summoned her own ancestor in open court. The ancestor carries guilt for an unfair victory, and said that guilt is why the histories were allowed to erode. She named Kitsu Yui the true hero of the Snow Plain, and said her ancestor's mistake was made out of fear — the fear of nearly having won.
 - Kitsu Takeko: Performed the void rite herself to compel the ancestors to attend, with Midori supporting.
-- Shoshuro Aishi: Manifested in the courtroom. The Scorpion ancestor whose name the living advocate Shosuro Aishi carries.
 - Ikoma Akuyaku: Manifested alongside her. The scout who erased the histories, called to answer for it.
 - Kitsuki Kaage: Openly sceptical of ancestral vision as testimony — asked how anyone attests to a battle three centuries gone, and called the shared-vision scroll fanciful lore. Refused Setsuna's request to be excused from the séance.
 - Ide Subane: Argued that a Lion edge means the Lion could have won unaided, so the Scorpion claim should be dismissed. Warned that summoned ghosts can be manipulated like any other witness.
-- Shosuro Aishi: Argues Morozane's own account proves Scorpion presence at the first clash and at the treaty signing. Answered Midori's infiltrator with the observation that he wore no clan colours.
+- Shosuro Aishi: Argues Morozane's own account proves Scorpion presence at the first clash and at the treaty signing. Answered Midori's infiltrator with the observation that he wore no clan colours. And the ancestor she is named for manifested in the courtroom alongside Ikoma Akuyaku when the void was opened — the living advocate carries a dead Scorpion's name into a case about what that Scorpion did.
 - Shiba Midori: Argued that granting recompense for dishonourable methods sets the precedent, whatever the facts. The court went quiet rather than answer it.
 
 ## Setsuna

@@ -88,6 +88,15 @@ CORRECTIONS = [
     (r"\bYue\b", "Yui"),
     # Owner 2026-08-12: Ryo and Ryu are one retainer, spelled Ryu.
     (r"\bRyo\b", "Ryu"),
+    # Owner 2026-08-13: the rōnin watch commander on the Unicorn side of the
+    # Rich Frog is Kaeru Haya. The record used both spellings freely — s30
+    # introduces her as Haia, s31 runs the dawn operation as Haya, and s31's own
+    # coda cites "Haia's report" about the missing sailors. Six mentions each,
+    # and the export cannot settle it either (53 Haia to 51 Haya), so this is
+    # the owner's call. The export has a file under each name; correcting the
+    # title as well as the prose lets discover() merge them into one page rather
+    # than leaving half her record on each.
+    (r"\bKaeru Haia\b", "Kaeru Haya"),
     # Morozane's lion, spelled three ways across the sources. Owner 2026-08-13:
     # the lion is Shigo no Chinmoku, which is also what his Foundry actor says.
     (r"\bShigo no Tomoku\b", "Shigo no Chinmoku"),

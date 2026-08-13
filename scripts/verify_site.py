@@ -123,6 +123,33 @@ def check_names():
     return [(p, n, where[p]) for p, n in bad.most_common()]
 
 
+def check_ledger():
+    """No session may carry two ## Learned bullets for the same entity.
+
+    Ledger.learned is keyed {page: {session: line}}, so a second bullet for the
+    same person in the same session silently replaces the first and its content
+    never reaches the page. Two ways in: an entity written under two spellings
+    that CORRECTIONS later merges — Kaeru Haia and Kaeru Haya both had a bullet
+    in s32 — and one written twice deliberately, as Shosuro Aishi was in s26,
+    once for the living advocate and once for the ancestor she is named for.
+    Both read as a normal source file and neither shows up in the built site
+    except as an entry that is quietly missing.
+    """
+    import glob
+    bad = []
+    for path in sorted(glob.glob(os.path.join(ROOT, "sources", "chronicle", "*.md"))):
+        txt = A.correct(io.open(path, encoding="utf-8").read())
+        m = re.search(r"## Learned(.*?)(?=^## |\Z)", txt, re.S | re.M)
+        if not m:
+            continue
+        keys = [norm(l.split(":", 1)[0])
+                for l in re.findall(r"^-\s+(.+)$", m.group(1), re.M)]
+        dup = sorted({k for k in keys if keys.count(k) > 1})
+        if dup:
+            bad.append((os.path.basename(path), dup))
+    return bad
+
+
 def main():
     fail = 0
 
@@ -148,6 +175,12 @@ def main():
     print("rewrites   : %d entries, %d wikilinks, %d unresolved" % (ns, n, len(bad)))
     for label, name in bad[:20]:
         print("             %s -> [[%s]]" % (label, name))
+    fail |= bool(bad)
+
+    bad = check_ledger()
+    print("ledger     : %d session(s) with two bullets for one entity" % len(bad))
+    for f, keys in bad[:20]:
+        print("             %s : %s" % (f, ", ".join(keys)))
     fail |= bool(bad)
 
     sessions = A.discover_sessions()

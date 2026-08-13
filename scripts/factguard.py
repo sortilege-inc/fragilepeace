@@ -88,14 +88,32 @@ ACCEPT = {
     "s25-court-of-competing-claims.md": [
         ("read", "opened 'Read it either way and it is worth knowing which'"),
     ],
-    "s26-court-of-ancestral-shadows.md": [
-        ("note", "opened 'Note that this is the second time this week…'"),
-    ],
     "s43-the-midnight-treaty.md": [
         ("deploy", "opened 'Deploy it last, when it will land, not first.'"),
     ],
     "s48-the-stone-in-the-shoe.md": [
         ("ask", "opened 'Ask before the delegations sit down, not after.'"),
+    ],
+    # Owner 2026-08-13: Kaeru Haia and Kaeru Haya are one woman, merged onto
+    # Haya. Both spellings had a bullet in s32, and the ledger keys by session,
+    # so one was silently overwriting the other on her page. Folded into one.
+    "s32-spirits-and-shadows.md": [
+        ("kaeru haia", "merged into Kaeru Haya on the owner's call; her s32 "
+                       "bullet is now the second half of Haya's."),
+        ("haia", "same merge."),
+    ],
+    # The same defect, found by the scan the merge prompted and older than it:
+    # s26 carried two Shosuro Aishi bullets, one for the living advocate and one
+    # for the ancestor she is named for. The ancestor's was being dropped.
+    "s26-court-of-ancestral-shadows.md": [
+        ("note", "opened 'Note that this is the second time this week…'"),
+        ("shoshuro aishi", "the duplicate ledger key. Its content — that the "
+                           "ancestor manifested in the courtroom alongside "
+                           "Ikoma Akuyaku — is folded into the surviving "
+                           "Shosuro Aishi bullet, which previously overwrote it."),
+        ("manifested", "still present, in lower case, inside that folded "
+                       "sentence. The capitalised form now reads as a sentence "
+                       "opener and is discounted."),
     ],
     "s51-matters-of-fact.md": [
         ("west", "was the bold section label '**West.**'. The scene keeps its "
