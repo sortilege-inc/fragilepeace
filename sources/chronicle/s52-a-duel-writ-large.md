@@ -173,14 +173,26 @@ he wants, which is real and which is less than he took. **She enjoyed it, which 
 careful about.** Going toe to toe with someone her own size felt good, and feeling good
 across a table from [[Ikoma Ujiaki]] is how a person gets handled.
 
-**But what she took off him is a handle.** He wants to be remembered as one of the great
-[[Lion Clan|Lion]] negotiators, and he is vain enough to believe he is becoming one. That
-is not a man who wants a war settled over his head by an arbiter, and it is certainly not
-a man who wants his name on the losing side of an Imperial ruling. **A settlement he can
-be said to have authored is worth more to him than a Lion victory he merely attended** —
-and he has been talking over [[Akodo Akihito]] all week to make sure people notice him
-doing it. If she wants the [[Lion Clan|Lion]] to settle rather than be ruled against, he
-is the one to let take the credit for it.
+**But what she took off him is a handle, and she knew it while he was still talking.** He
+wants to be remembered as one of the great [[Lion Clan|Lion]] negotiators, and he is vain
+enough to believe he is becoming one. That is not a man who wants a war settled over his
+head by an arbiter, and it is certainly not a man who wants his name on the losing side of
+an Imperial ruling. **A settlement he can be said to have authored is worth more to him
+than a Lion victory he merely attended** — and he has been talking over [[Akodo Akihito]]
+all week to make sure people notice him doing it.
+
+**Which means his want and her want are the same shape.** She has been trying since the
+first day to get the [[Lion Clan|Lion]] to settle rather than be ruled against, and she
+has just found the man across the table who needs that outcome for reasons entirely his
+own. She does not have to persuade him of anything. **She has to let him have the credit
+for it**, and be seen not to mind.
+
+**And she knows he read her, and does not know how deeply.** That is the uncomfortable
+half. She could feel it happening — the sense of sitting opposite somebody working the
+same trade at the same level, and of coming away lighter than she went in. What she cannot
+tell is **what he actually took**. She does not know which of her weaknesses he now holds,
+or that he was ever near the thing she wants for herself. She only knows the account does
+not balance, and that she will find out what he bought when he chooses to spend it.
 
 **And he knows what she wants.** Not what the magistrate wants — what *she* wants, the
 poetry gathering on the coast that she has never once asked for and does not believe she
