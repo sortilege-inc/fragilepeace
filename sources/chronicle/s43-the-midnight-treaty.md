@@ -39,7 +39,7 @@ high plains and the empty steppe of the [[Moto Family|Moto]] country — and the
 [[Unicorn Clan|Unicorn]] side of the table cooled.
 
 [[Doji Setsuna]] spent her turn reading the man rather than answering him, and found the
-thing worth having. **His war is not with the [[Lion Clan|Lion]].** It is with the
+thing worth having. His war is not with the [[Lion Clan|Lion]]. It is with the
 [[Shinjo Family|Shinjo]], for primacy inside his own clan — and it is on hold, because
 the whole [[Unicorn Clan|Unicorn]] is mustering against some enemy from outside and
 internal rivalry has been put away for the duration. A peace here does not cost him a
@@ -82,7 +82,7 @@ never been serious. She had given him a door out of it.
 And then the moment the whole night had been built for. [[Shiba Midori]] used Cadence on
 the envoy — arranged between her and [[Doji Setsuna]] before the session began — and
 goaded her into speaking. [[Miya Misato]] stepped forward and stated that the
-[[Lion Clan|Lion]] would accompany her. Not asked. Not proposed. **Ordered.** *(The
+[[Lion Clan|Lion]] would accompany her. Not asked. Not proposed. Ordered. *(The
 recording of this exchange was lost; what it contained is reconstructed from the people
 who were in the room.)*
 
@@ -154,42 +154,41 @@ and the others did — the reading, the music, the poetry, the shōgi coaching, 
 atmosphere — was scaffolding for [[Miya Misato]] to give one order at the moment
 [[Moto Gaheris]] was ready to obey it. He could not take terms from an Emerald Magistrate
 and he could not take them from a [[Lion Clan|Lion]] general. He could take them from the
-Emperor. **The lesson is that her office does not win rooms; it builds the moment when
-someone whose office does can speak.** Deploy it last, when it will land, not first, when
-it will be tested.
+Emperor. Her office does not win rooms; it builds the moment when someone whose office
+does can speak. Deployed last, it lands. Deployed first, it gets tested.
 
-**The lever is the [[Shinjo Family|Shinjo]], and it is still there.** [[Moto Gaheris]]'s
-war is inside his own clan and it is currently frozen by a general muster against
-something from outside. He wants this settled so he can get back to it. That is the single
-most useful thing anyone learned tonight, and it does not expire when the column moves.
+The lever is the [[Shinjo Family|Shinjo]], and it is still there. [[Moto Gaheris]]'s war
+is inside his own clan and it is currently frozen by a general muster against something
+from outside. He wants this settled so he can get back to it. That is the single most
+useful thing anyone learned tonight, and it does not expire when the column moves.
 
-**And nobody has said what the [[Unicorn Clan|Unicorn]] are mustering against.** An entire
+And nobody has said what the [[Unicorn Clan|Unicorn]] are mustering against. An entire
 Great Clan has suspended its internal politics for an external enemy and the Empire's own
 envoy is riding into their country without knowing what it is. That is worth asking
 [[Moto Gaheris]] directly, on the march, while he is pleased with himself.
 
-**[[Miya Misato]] has now given a command and been obeyed.** She talked a Khan out of a
-demand and then ordered a clan's general to accompany her, in front of five hundred
-horse. She needed [[Shiba Midori]] to goad her into it and she may need that again — but
-an envoy who has done it once is a different instrument from an envoy who never has, and
-the whole embassy is built on her.
+[[Miya Misato]] has given a command now and been obeyed. She talked a Khan out of a demand
+and then ordered a clan's general to accompany her, in front of five hundred horse. She
+needed [[Shiba Midori]] to goad her into it and she may need that again — but an envoy who
+has done it once is a different instrument from an envoy who never has, and the whole
+embassy is built on her.
 
-**The treaty has teeth, which is new.** Ten honour staked by every party, forfeit to
-whoever breaks it second. Nothing else in this campaign has bound anybody. This does, it
-is in her handwriting, and it will be read.
+The treaty has teeth, which is new. Ten honour staked by every party, forfeit to whoever
+breaks it second. Nothing else in this campaign has bound anybody. This does, it is in her
+handwriting, and it will be read.
 
-**[[Bayushi Monban]] wants a private word with the man who held him.** He was gagged
-through the entire negotiation with nothing to do but watch, he reads Cadence, and he
-therefore saw exactly how [[Miya Misato]] was steered. Then he moved a piece on the board
-and winked at the Khan. She should find out what that conversation is for before it
-happens, and she probably cannot.
+[[Bayushi Monban]] wants a private word with the man who held him. He was gagged through
+the entire negotiation with nothing to do but watch, he reads Cadence, and he therefore saw
+exactly how [[Miya Misato]] was steered. Then he moved a piece on the board and winked at
+the Khan. She should find out what that conversation is for before it happens, and she
+probably cannot.
 
-**She has just billed a [[Scorpion Clan|Scorpion]] lord fifty koku** and framed it as his
+She has also just billed a [[Scorpion Clan|Scorpion]] lord fifty koku and framed it as his
 own obligation, in a letter of impeccable courtesy that her yojimbo has not read. It is
 correct — the duty was his lordship's assignment — and it puts a Scorpion daimyō in debt
 to her arithmetic. Worth being clear-eyed about which of those she was doing.
 
-**And the road runs to [[Battlemaiden Castle]]**, where [[Shinjo Altensari]] is said to be
+And the road runs to [[Battlemaiden Castle]], where [[Shinjo Altensari]] is said to be
 investing against [[Kodo Totori]]. She is travelling there under the escort of a
 [[Moto Family|Moto]] Khan whose ambition is to displace the [[Shinjo Family|Shinjo]].
 Whatever happens at that siege, [[Moto Gaheris]] will not be a neutral party to it, and

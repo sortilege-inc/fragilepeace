@@ -14,7 +14,7 @@ epigraph: She heard the struggle through the canvas and went in as she was — s
 magistrates ate it without comment, which was the correct answer.
 
 Then [[Doji Setsuna]] laid out the law of the betrothal, and it came out better than she
-had any right to expect. **The contract sits in a grey area.** [[Shinjo Altansarnai]],
+had any right to expect. The contract sits in a grey area. [[Shinjo Altansarnai]],
 as [[Unicorn Clan|Unicorn]] Champion, may be able to nullify it unilaterally. The
 [[Lion Clan|Lion]] case rests on a contested reading rather than a settled one. And the
 whole dispute turns on the difference between precedent that binds and precedent that
@@ -39,10 +39,10 @@ person in the camp. Half an hour later they came back having decided otherwise, 
 confirmed [[Shinjo Altansarnai]] was already there without obliging [[Moto Gaheris]] to
 admit it. The message gave her name, mentioned that her husband [[Shinjo Harunobu]] is a
 [[Lion Clan|Lion]] prisoner — a credential in that camp — stated what the mission was
-for, and asked one question: **who else was party to the dissolution of the betrothal?**
-It is worth saying that this was not a stranger writing to a stranger.
-[[Shinjo Altansarnai]] was a guest at [[Doji Setsuna]]'s wedding.
-The outrider's answer came back as *how interesting*, which is a door left open.
+for, and asked one question: who else was party to the dissolution of the betrothal? This
+was not a stranger writing to a stranger. [[Shinjo Altansarnai]] was a guest at
+[[Doji Setsuna]]'s wedding. The outrider's answer came back as *how interesting*, which
+is a door left open.
 
 In the evening [[Miya Misato]] asked the party whether any of them had unmarried
 relatives, hunting for a substitute bride. [[Doji Setsuna]] said she has a younger
@@ -55,7 +55,7 @@ That night the party took tents inside the joint [[Lion Clan|Lion]] and
 
 There were three armed men in the envoy's tent. One had a knife at [[Miya Misato]]'s
 throat and a hand inside her kimono. The other two were holding [[Ikoma Tadayoshi]] down
-rather than killing him. **Nobody was meant to die.** This was an extraction, handled
+rather than killing him. Nobody was meant to die. This was an extraction, handled
 quietly, with the exits kept open.
 
 [[Doji Setsuna]] went in as she was. Sleeping robes, no wakizashi — it was not on her and
@@ -66,8 +66,8 @@ She has one martial skill and it is unarmed. It is the training a high-status co
 is given so that if she is ever seized she has some chance of getting loose. She used it
 on somebody else. Coiling Serpent Style, targeted on the knife rather than the man —
 and the three of them had already filed the unarmed woman in nightclothes as not a
-threat, which is exactly why it worked. **The knife came away from [[Miya Misato]]'s
-throat.** In the same breath she told [[Miya Misato]] to knee him, and [[Miya Misato]]
+threat, which is exactly why it worked. The knife came away from [[Miya Misato]]'s
+throat. In the same breath she told [[Miya Misato]] to knee him, and [[Miya Misato]]
 did, and he was briefly out of it. Two court women in sleeping robes fighting ugly in the
 dark for ten seconds, and it held.
 
@@ -115,42 +115,42 @@ that a court woman can save her own skin, and she spent it on someone else while
 and in her nightclothes. A duelist running into that tent is doing their job. She was
 doing something nobody had ever asked of her.
 
-**They came to take [[Miya Misato]] alive.** That is the single most important fact of
-the night and it should govern the whole investigation. Nobody in that tent was killed
-who could have been. [[Ikoma Tadayoshi]] was pinned. She herself was tackled rather than
-cut once they had placed her rank — being worth more alive is not a compliment, it is a
-brief. **An assassination and an extraction are ordered by different people for different
-reasons.** Whoever sent them wanted the envoy in their hands, not in the ground.
+They came to take [[Miya Misato]] alive. That is the single most important fact of the
+night and it should govern the whole investigation. Nobody in that tent was killed who
+could have been. [[Ikoma Tadayoshi]] was pinned. She herself was tackled rather than cut
+once they had placed her rank — being worth more alive is not a compliment, it is a brief.
+An assassination and an extraction are ordered by different people for different reasons.
+Whoever sent them wanted the envoy in their hands, not in the ground.
 
-**The failure of the escort is the leverage, and it is enormous.** Five Imperial persons
-were attacked in their tents inside a joint [[Lion Clan|Lion]] and [[Moto Family|Moto]]
-camp. There are only two readings. Either one of the two escorting forces did it — a
-faction inside an army seizing the Emperor's envoy mid-mission — or a third party walked
-through both perimeters, which means both commanders failed the duty they took on. There
-is no third reading and no innocent version. **Their dishonour is already established;
-they simply have not been told yet.**
+The failure of the escort is the leverage, and it is enormous. Five Imperial persons were
+attacked in their tents inside a joint [[Lion Clan|Lion]] and [[Moto Family|Moto]] camp.
+There are only two readings. Either one of the two escorting forces did it — a faction
+inside an army seizing the Emperor's envoy mid-mission — or a third party walked through
+both perimeters, which means both commanders failed the duty they took on. There is no
+third reading and no innocent version. Their dishonour is already established; they simply
+have not been told yet.
 
-So when she wakes she should put it to both commanders in the plainest, most courteous
-terms available: help her clear their names and run the investigation, or answer for
-having let this happen in their custody. That is not a threat. It is a description of
-where bushidō has already put them, and she is offering herself as the way back. The
-courtesy is what will make it impossible to refuse.
+That is the ground she wakes onto. Put to both commanders in the plainest, most courteous
+terms available — help her clear their names and run the investigation, or answer for
+having let this happen in their custody — it is not a threat but a description of where
+bushidō has already placed them, with a way back offered. The courtesy is what makes it
+impossible to refuse.
 
-**If [[Miya Misato]] dies, the mission does not.** It is a charge, and charges pass. She
-is the Personal Advisor, an Emerald Magistrate, and the person who has done the
-substantive legal work; she can carry it in the envoy's name. Whoever ordered this
-assumed the mission was a woman. It is a document.
+If [[Miya Misato]] dies, the mission does not. It is a charge, and charges pass. She is
+the Personal Advisor, an Emerald Magistrate, and the person who has done the substantive
+legal work; she can carry it in the envoy's name. Whoever ordered this assumed the mission
+was a woman. It is a document.
 
-**[[Shinjo Altansarnai]] can probably end this by herself.** If a Champion can nullify
-the betrothal on her own authority, then the entire war is waiting on one woman's
-signature, and that woman is in a camp two tents away and has just been told there is a
-Crane who wants to talk — a Crane whose wedding she attended, married into her own
-clan. That is not a back channel. That is an acquaintance who has not been called on. The back channel was the best thing she did all day and it is
-now the most urgent.
+[[Shinjo Altansarnai]] can probably end this by herself. If a Champion can nullify the
+betrothal on her own authority, then the entire war is waiting on one woman's signature,
+and that woman is in a camp two tents away and has just been told there is a Crane who
+wants to talk — a Crane whose wedding she attended, married into her own clan. That is not
+a back channel. That is an acquaintance who has not been called on. The back channel was
+the best thing she did all day and it is now the most urgent.
 
-**And [[Moto Gaheris]] is not a fool about the [[Crane Clan|Crane]].** He is wrong that
-they arranged this war. He is right that a [[Crane Clan|Crane]] treaty has quietly
-rearranged the north to Crane advantage at [[Lion Clan|Lion]] expense, and right to
-notice that the Crane in the room is the one saying least. She was correct to let
-[[Kakita Kazumi]] answer him. She should also register that a man who reads her clan that
-accurately, from that little, will read her the same way eventually.
+And [[Moto Gaheris]] is not a fool about the [[Crane Clan|Crane]]. He is wrong that they
+arranged this war. He is right that a [[Crane Clan|Crane]] treaty has quietly rearranged
+the north to Crane advantage at [[Lion Clan|Lion]] expense, and right to notice that the
+Crane in the room is the one saying least. She was correct to let [[Kakita Kazumi]] answer
+him. She should also register that a man who reads her clan that accurately, from that
+little, will read her the same way eventually.

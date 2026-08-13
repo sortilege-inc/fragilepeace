@@ -21,10 +21,11 @@ him something he did not have: on the way in, the [[Lion Clan|Lion]] had burned
 [[Unicorn Clan|Unicorn]] land and desecrated the bodies of the dead.
 
 [[Doji Setsuna]] was travelling by norimono, still carrying her own void wound from the
-[[Terminating Tea]] she drank at the Governor's Tea House — a thing only [[Shiba Midori]] and [[Kakita Kazumi]] know the cause
-of. She spent her one void point on getting it down, and it worked: the wound went from
-severe to slight, and it went like a fever breaking. It also left her with nothing in
-reserve for the rest of the night, which turned out to matter at the gate.
+[[Terminating Tea]] she drank at the Governor's Tea House — a thing only [[Shiba Midori]]
+and [[Kakita Kazumi]] know the cause of. She spent her one void point on getting it down,
+and it worked: the wound went from severe to slight, and it went like a fever breaking. It
+also left her with nothing in reserve for the rest of the night, which turned out to matter
+at the gate.
 
 Then she got up and started working.
 
@@ -60,7 +61,7 @@ The lights came up on the southern road. Gongs. [[Moto Gaheris]] — a one-eyed
 to a castle that had been taken without a fight. [[Matsu Yunko]], [[Matsu Maro]]'s
 lieutenant, started organising a defence, and soldiers went for spears.
 
-[[Doji Setsuna]]'s answer was one sentence. **Now we broker a peace.**
+[[Doji Setsuna]]'s answer was one sentence. *Now we broker a peace.*
 
 She told [[Miya Misato]] to dress as though she were being received by the Emperor and to
 walk behind her, and [[Miya Misato]] agreed with her voice cracking. They went down through
@@ -86,7 +87,7 @@ with its [[Miya Family|Miya]] markings where it would be seen first, and [[Shiba
 began laying out tea in the open ground between the two armies.
 
 [[Moto Gaheris]] rode up on a battering ram's worth of momentum and found a tea ceremony.
-[[Doji Setsuna]] bowed. **Thank you for agreeing to meet with the Imperial Envoy.**
+[[Doji Setsuna]] bowed. *Thank you for agreeing to meet with the Imperial Envoy.*
 
 He had agreed to nothing. He had come to storm a castle. He complimented the horse instead,
 and she told him it was a gift from her husband's family — establishing that she is married
@@ -97,7 +98,7 @@ Emperor has commanded.*
 What followed was a formal negotiation, with an order of precedence and everyone taking
 turns. [[Doji Setsuna]]'s standing put her ahead of [[Matsu Maro]] in it, and she used
 the opening to propose that the two commanders play a game of shōgi, the winner's name to go
-first **on whatever agreement we come up with**. Both of them began arguing about whose name
+first on whatever agreement they came up with. Both of them began arguing about whose name
 went first. Neither noticed that they had just agreed there would be a document with both
 their names on it.
 
@@ -118,8 +119,8 @@ She also made sure that whatever came out of this would be credited to [[Miya Mi
 
 Near the end, [[Moto Gaheris]] asked, lightly, whether the Ruby Champion might pay to have
 back some spies who had been claiming to be Emerald Magistrates. [[Doji Setsuna]] answered
-without pausing. **Oh, you found my yojimbo? Free him so he can resume his duty and stop
-being a spy.**
+without pausing. *Oh, you found my yojimbo? Free him so he can resume his duty and stop
+being a spy.*
 
 [[Bayushi Monban]], who had told a stranger that morning that nobody would ransom him, heard
 the woman who dismissed him claim him out loud as hers.
@@ -148,33 +149,32 @@ loose at. The order she gave at the gate was the least important thing she did a
 Everything that made it obeyable was done hours earlier, from inside a norimono, while
 she was too ill to stand up straight.
 
-**[[Matsu Maro]] was sent to die and that is the whole negotiation.** Her own side
-handed her a battle that gutted her and a castle that cannot be held, and either outcome
-suits them. She is not an obstacle between the envoy and a peace. She is the person in
-that circle who most needs one, and she cannot say so. Everything offered to her should
-be shaped to let her take it without ever admitting that.
+[[Matsu Maro]] was sent to die, and that is the whole negotiation. Her own side handed her
+a battle that gutted her and a castle that cannot be held, and either outcome suits them.
+She is not an obstacle between the envoy and a peace. She is the person in that circle who
+most needs one, and she cannot say so. Everything offered to her should be shaped to let
+her take it without ever admitting that.
 
-**She got both generals arguing about the wrong thing.** Proposing that the winner's
-name goes first on the agreement made the agreement a settled fact and its billing the
-open question. Two commanders who had not agreed to a treaty spent the evening
-negotiating its letterhead. That is a trick that works once, and it has now been used.
+She got both generals arguing about the wrong thing. Proposing that the winner's name goes
+first on the agreement made the agreement a settled fact and its billing the open question.
+Two commanders who had not agreed to a treaty spent the evening negotiating its letterhead.
+That is a trick that works once, and it has been used.
 
-**She claimed [[Bayushi Monban]] out loud.** In front of the man holding him, as a piece
-of administrative tidying, at the moment when giving her something cost [[Moto Gaheris]]
-nothing and bought him goodwill. It also means his lord now owes for the recovery, and
-that she has publicly reattached herself to a yojimbo she dismissed. She should be clear
-with herself about which of those she was doing.
+She claimed [[Bayushi Monban]] out loud. In front of the man holding him, as a piece of
+administrative tidying, at the moment when giving her something cost [[Moto Gaheris]]
+nothing and bought him goodwill. It also means his lord now owes for the recovery, and that
+she has publicly reattached herself to a yojimbo she dismissed. She should be clear with
+herself about which of those she was doing.
 
-**The castle is still unexplained, and the whole party is inside it.** Full stores, whole
+The castle is still unexplained, and the whole party is inside it. Full stores, whole
 defences, and everybody gone. [[Miya Misato]] has said it three times. She was right about
 the trap being a trap before she could name it, and nobody has spent an hour finding out
 what emptied that place.
 
-**And she has now been on the [[Snow Plain]] twice.** Three centuries ago
-[[Matsu Morozane]] settled it with a blade and it settled nothing; the banners came down
-and the same two clans are back on the same ground. This time she walked out of a gate
-in a formal robe and made them sit down. Whether that holds is the only question the
-campaign is actually about.
+And she has been on the [[Snow Plain]] twice now. Three centuries ago [[Matsu Morozane]]
+settled it with a blade and it settled nothing; the banners came down and the same two
+clans are back on the same ground. This time she walked out of a gate in a formal robe and
+made them sit down. Whether that holds is the only question the campaign is actually about.
 
 The bill for it: one void point spent, nothing in reserve, and one point of strife short
 of losing her composure in front of two armies. She held it. But the performance is what

@@ -134,6 +134,11 @@ def f_links(t):
 
 def f_names(t):
     t = strip_markup(t)
+    # The source is hard-wrapped mid-sentence, so a line break is not a sentence
+    # break. Join wrapped lines before splitting, or a name that happens to land
+    # at the start of a line gets discounted as a sentence opener and reads as a
+    # loss. Blank lines stay: those are real paragraph breaks.
+    t = re.sub(r"(?<!\n)\n(?!\s*\n)", " ", t)
     # Split into sentences so the opener of each can be discounted.
     got = collections.Counter()
     for sent in re.split(r"(?<=[.!?;:])\s+|\n+", t):

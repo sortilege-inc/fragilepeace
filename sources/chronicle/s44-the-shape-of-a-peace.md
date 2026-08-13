@@ -16,8 +16,8 @@ arguing about what the Emperor had actually told them to do.
 of the border and have to come off it. [[Bayushi Monban]] agreed, and wanted both sides
 cooled, because more fighting is the one outcome the Emperor has ruled out.
 
-Then [[Bayushi Monban]] made the observation that reframed everything. **There are no
-[[Lion Clan|Lion]] outposts behind them.** Nothing was garrisoned on the way up. What the
+Then [[Bayushi Monban]] made the observation that reframed everything. There are no
+[[Lion Clan|Lion]] outposts behind them. Nothing was garrisoned on the way up. What the
 Lion have been doing is burning and desecrating — no ground taken, nothing held. That is
 not a conquest. It is a punitive expedition, and it means they never wanted the land.
 
@@ -65,19 +65,19 @@ respect that dedication.* [[Kakita Kazumi]] observed that they were a
 ideas, being married.
 
 [[Kakita Kazumi]] pushed on the honour of it and got the answer that matters. From a
-[[Lion Clan|Lion]] view the refusal was not a snub, it was a **direct insult** — and in
+[[Lion Clan|Lion]] view the refusal was not a snub, it was a direct insult — and in
 [[Rokugan]] a direct insult is answered with a duel. [[Bayushi Monban]] asked what clans do
 when the parties are armies, and the answer is the thing happening outside the tent.
 [[Matsu Maro]] called [[Kakita Kazumi]] very perceptive and confirmed it: this is about
 [[Lion Clan|Lion]] honour, not about the marriage and not about [[Lord Ikoma]]'s feelings.
-**Find another way to restore the honour and the Lion can be talked down.**
+Find another way to restore the honour and the Lion can be talked down.
 
 Asked whether the contract carried a penalty for breach, she scratched her head and did not
 know. [[Doji Setsuna]] guessed that writing one in at that level would itself have been an
 insult — who would insert a clause anticipating that a Champion might renege? Nobody argued.
 
 [[Doji Setsuna]] knows some of this from the other side. Her husband's people are
-[[Shinjo Family|Shinjo]], and **[[Shinjo Altansarnai]] was at her wedding.** The woman
+[[Shinjo Family|Shinjo]], and [[Shinjo Altansarnai]] was at her wedding. The woman
 is a free spirit and her daughter more so — and by every account the daughter was
 rightly offended that her mother should be made to marry at all. What the
 [[Unicorn Clan|Unicorn]] understood was that the Champion's arrangement with her lover
@@ -90,8 +90,8 @@ spirit who baulked at the last, or a better offer appeared. She went through the
 field and found nothing: [[Akodo Toturi]] married, the [[Crab Clan|Hida]],
 [[Mantis Clan|Yoritomo]] and [[Scorpion Clan|Scorpion]] Champions married,
 [[Doji Hotaru]] and the [[Phoenix Clan|Phoenix]] Champion the wrong sex for it, the
-[[Dragon Clan|Dragon]] Champion's identity not even known. **No clan-level match was
-available.** The only way up from where she stands is an Imperial marriage, which would
+[[Dragon Clan|Dragon]] Champion's identity not even known. No clan-level match was
+available. The only way up from where she stands is an Imperial marriage, which would
 move her out of the bushi ranks entirely.
 
 So she turned to the Imperial family member sitting with them and asked
@@ -102,7 +102,7 @@ that would be very hard for anyone to disprove.
 
 From there the strategies stacked up. First, a poison pill: rule that the betrothal must be
 honoured, and attach reparations for the punitive expedition payable by the
-[[Lion Clan|Lion]] **only if the marriage goes through** — set high enough that they cannot
+[[Lion Clan|Lion]] only if the marriage goes through — set high enough that they cannot
 carry it. Then the Lion waive the reparations, the [[Unicorn Clan|Unicorn]] waive the
 marriage, and everybody walks away covered. [[Bayushi Monban]] pointed out that this turns
 a military problem into a political one.
@@ -113,10 +113,11 @@ betrothed, and she would be a defensible substitute for [[Shinjo Altansarnai]] �
 lower in personal standing but kuge rather than bushi, which about evens it. [[Doji Setsuna]]
 asked whether she had brothers available; she does, and they are twelve, which buys time
 rather than solving anything. She was frank about using the substitution as the position
-everyone else has to argue against, to make [[Miya Misato]] help find something better, and reassured her that a marriage can be
-conducted perfectly well from two different cities. [[Kakita Kazumi]] noted that the
-[[Ikoma Family|Ikoma]] are famous philanderers and offered his services as a physician for
-anything that came of it — well out of [[Lion Clan|Lion]] hearing.
+everyone else has to argue against, to make [[Miya Misato]] help find something better, and
+reassured her that a marriage can be conducted perfectly well from two different cities.
+[[Kakita Kazumi]] noted that the [[Ikoma Family|Ikoma]] are famous philanderers and offered
+his services as a physician for anything that came of it — well out of [[Lion Clan|Lion]]
+hearing.
 
 They pulled at what the parties actually want. [[Miya Misato]] observed that all of it
 reduces to standing. [[Bayushi Monban]] wondered whether [[Lord Ikoma]] simply wanted an
@@ -135,7 +136,7 @@ border could simply be settled without a marriage, [[Doji Setsuna]] said the
 [[Lord Ikoma]] was not the one who agreed those concessions, and the Unicorn giving up the
 river bank is strange on its own terms.
 
-Then she named the party she thought was behind it. **The [[Scorpion Clan|Scorpion]].** They
+Then she named the party she thought was behind it. The [[Scorpion Clan|Scorpion]]. They
 profit from the [[Lion Clan|Lion]] and the [[Unicorn Clan|Unicorn]] tearing at each other;
 [[Soshi Aisha]] had already let slip that [[Bayushi Kachiko]] opposed the betrothal; and a
 diminished Lion suits them. [[Bayushi Monban]] agreed, reluctantly, on the grounds that he
@@ -143,7 +144,7 @@ has watched his own clan trade away glory and honour for the pleasure of setting
 adversary back.
 
 [[Kakita Kazumi]] asked how [[Akodo Akihito]] stood to the [[Lion Clan|Lion]] Champion, and
-the answer moved everything: **he is [[Akodo Toturi]]'s nephew.**
+the answer moved everything: he is [[Akodo Toturi]]'s nephew.
 
 So [[Doji Setsuna]] built the proposal they left with. Let [[Shinjo Altansarnai]]'s daughter
 marry [[Akodo Akihito]]. It puts [[Shinjo Family|Shinjo]] blood into the
@@ -183,56 +184,54 @@ leverage here, only the pitch.
 said it outright: not the marriage, not [[Lord Ikoma]]'s feelings — honour. In
 [[Rokugan]] a direct insult is answered with a duel, and when the parties are clans the
 duel is a war. That reframes the problem completely. She has been trying to arbitrate a
-broken contract. **She is actually being asked to find a substitute for a duel** — some
+broken contract. What she is actually being asked for is a substitute for a duel — some
 public act that discharges the offence — and there is more than one of those.
 
-**[[Bayushi Monban]]'s observation is the best evidence anyone has produced.** No
-garrisons, no outposts, nothing held. An army that meant to take the country would be
-sitting on it. This one burned and moved on, which proves the [[Lion Clan|Lion]] do not
-want the land and confirms what [[Matsu Maro]] then admitted. It also means the
-[[Unicorn Clan|Unicorn]] have a real grievance of their own — burned land and desecrated
-dead — and she should stop treating this as a case with one injured party.
+[[Bayushi Monban]]'s observation is the best evidence anyone has produced. No garrisons, no
+outposts, nothing held. An army that meant to take the country would be sitting on it. This
+one burned and moved on, which proves the [[Lion Clan|Lion]] do not want the land and
+confirms what [[Matsu Maro]] then admitted. It also means the [[Unicorn Clan|Unicorn]] have
+a real grievance of their own — burned land and desecrated dead — and she should stop
+treating this as a case with one injured party.
 
-**Her ruling is sound and she should say it in exactly those words.** A command to make
-peace overrules any objection to what broke it, because peace is the cessation of
-hostilities. It costs the [[Lion Clan|Lion]] their claim without calling them wrong, and
-it costs the [[Unicorn Clan|Unicorn]] nothing they still hold. It is also the floor: it
-stops the armies but settles nothing, which is why the marriage question still has to be
-answered.
+Her ruling is sound and she should say it in exactly those words. A command to make peace
+overrules any objection to what broke it, because peace is the cessation of hostilities. It
+costs the [[Lion Clan|Lion]] their claim without calling them wrong, and it costs the
+[[Unicorn Clan|Unicorn]] nothing they still hold. It is also the floor: it stops the armies
+but settles nothing, which is why the marriage question still has to be answered.
 
-**The daughter is the right answer.** It puts [[Shinjo Family|Shinjo]] blood into the
+The daughter is the right answer. It puts [[Shinjo Family|Shinjo]] blood into the
 [[Lion Clan|Lion]] succession through the Champion's own nephew, discharges the insult in
 public, and does not require [[Shinjo Altansarnai]] to accept a thing she has already
 refused once. It also avoids the [[Miya Misato]] substitution, which would work and which
 she should be honest about not wanting to use — she talked the girl through it and
 volunteered her as a bargaining position in the same breath.
 
-**Nobody has asked [[Shinjo Altansarnai]] anything, and [[Doji Setsuna]] is the one
-person here who could.** Every plan on the table turns on the Champion or on her
-daughter, and the party has taken all of it second-hand from a [[Lion Clan|Lion]]
-general who says outright she never understood the woman. But
-[[Shinjo Altansarnai]] stood at [[Doji Setsuna]]'s wedding. Her husband's family are
-[[Shinjo Family|Shinjo]]. **She is not a stranger to be approached through channels —
-she is an acquaintance**, and a letter from a Doji married into her clan is a different
-object from a magistrate's summons. The daughter's supposed willingness is still only a
-rumour repeated by an enemy, and that is a thin footing for a treaty when the woman
-herself is at [[Battlemaiden Castle]] up the road.
+Nobody has asked [[Shinjo Altansarnai]] anything, and [[Doji Setsuna]] is the one person
+here who could. Every plan on the table turns on the Champion or on her daughter, and the
+party has taken all of it second-hand from a [[Lion Clan|Lion]] general who says outright
+she never understood the woman. But [[Shinjo Altansarnai]] stood at [[Doji Setsuna]]'s
+wedding. Her husband's family are [[Shinjo Family|Shinjo]]. She is not a stranger to be
+approached through channels — she is an acquaintance, and a letter from a Doji married into
+her clan is a different object from a magistrate's summons. The daughter's supposed
+willingness is still only a rumour repeated by an enemy, and that is a thin footing for a
+treaty when the woman herself is at [[Battlemaiden Castle]] up the road.
 
-**And the thing to ask her is not what she wants but what she was protecting.** She kept
-her own marriage undone for years so the [[Unicorn Clan|Unicorn]] would always have that
-piece to play, then agreed to spend it on [[Lord Ikoma]] — a man of fifty, at the cost of
-her office, her name and her place in the succession — and then would not go through with
-it. A woman who has been that deliberate about her own value for that long does not baulk
-at the last out of temperament. **Something changed between the agreement and the
-refusal**, and nobody in the column has any idea what.
+And the thing to ask her is not what she wants but what she was protecting. She kept her
+own marriage undone for years so the [[Unicorn Clan|Unicorn]] would always have that piece
+to play, then agreed to spend it on [[Lord Ikoma]] — a man of fifty, at the cost of her
+office, her name and her place in the succession — and then would not go through with it. A
+woman who has been that deliberate about her own value for that long does not baulk at the
+last out of temperament. Something changed between the agreement and the refusal, and
+nobody in the column has any idea what.
 
-**She has also handed herself a weapon she cannot control.** The Imperial suitor is a claim
+She has also handed herself a weapon she cannot control. The Imperial suitor is a claim
 nobody could easily disprove — which is precisely why using it would be a lie told with an
-Emperor's name on it, in a document she signs. She noticed how hard it would be to
-disprove before she noticed anything else about it.
+Emperor's name on it, in a document she signs. She noticed how hard it would be to disprove
+before she noticed anything else about it.
 
-**And she has named the [[Scorpion Clan|Scorpion]] out loud.** [[Bayushi Kachiko]] opposed
-the betrothal, the Scorpion gain from both clans bleeding, and her own yojimbo — a
+And she has named the [[Scorpion Clan|Scorpion]] out loud. [[Bayushi Kachiko]] opposed the
+betrothal, the Scorpion gain from both clans bleeding, and her own yojimbo — a
 [[Scorpion Clan|Scorpion]] — agreed with the reading. She was right to put it aside until
 the fighting stops. She should be equally clear that setting it aside is not the same as
 deciding it does not matter, and that the man who agreed with her is bound by an edict from

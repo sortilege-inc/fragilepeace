@@ -48,7 +48,7 @@ open to a finishing blow and she took it at once. He got the scabbard up in a sh
 parry; it broke in half and the cut went in anyway, opening him from the side of the jaw
 across the eye and into the hairline.
 
-He unmasked. **How dare you disfigure a member of a great Clan.** He called her worthless
+He unmasked. *How dare you disfigure a member of a great Clan.* He called her worthless
 and lucky and spat blood at her, on a dock, in front of the town and the children who had
 run down to watch. She shifted her stance a little to invite him in, feinted him, and hit
 him again. He did not touch her once for the length of it.
@@ -167,38 +167,38 @@ Scorpion* and [[Daidoji Shin]] is putting it to music. That is not a private hum
 she can manage — by the end of the week it will be a song, and the song will name the
 Emerald Magistrates.
 
-**[[Karahaya]] is now inside the escort.** The woman who took her yojimbo apart is attached
-to [[Miya Misato]] as yojimbo for the road. She is plainly the most competent fighter
-anyone has seen this month and she gave [[Bayushi Monban]] two chances to walk away before
-she cut him, which is a fair record. She is also [[Governor Miya Tetsuya]]'s officer,
-travelling with the governor's niece, alongside a magistrate the governor has already had
-reason to doubt. Setsuna should treat her as an asset and assume she reports.
+[[Karahaya]] is inside the escort now. The woman who took her yojimbo apart is attached to
+[[Miya Misato]] as yojimbo for the road. She is plainly the most competent fighter anyone
+has seen this month and she gave [[Bayushi Monban]] two chances to walk away before she cut
+him, which is a fair record. She is also [[Governor Miya Tetsuya]]'s officer, travelling
+with the governor's niece, alongside a magistrate the governor has already had reason to
+doubt. Setsuna should treat her as an asset and assume she reports.
 
-**The assessment from last week is now confirmed on the record.** [[Ikoma Tadayoshi]] was
-given a standing instruction to watch whether the magistrates' own methods endangered the
-envoy. Since then their yojimbo has insulted the governor, been ejected, drawn steel on the
-guard, lost a duel over it, and left the city. The governor's caution has been vindicated
-in front of witnesses, and every request Setsuna makes from here is made against that.
+The assessment from last week is confirmed on the record. [[Ikoma Tadayoshi]] was given a
+standing instruction to watch whether the magistrates' own methods endangered the envoy.
+Since then their yojimbo has insulted the governor, been ejected, drawn steel on the guard,
+lost a duel over it, and left the city. The governor's caution has been vindicated in front
+of witnesses, and every request Setsuna makes from here is made against that.
 
-**The Matsu are the thing to move on.** A whole team of [[Matsu Family|Matsu]] warriors is
+The Matsu are the thing to move on. A whole team of [[Matsu Family|Matsu]] warriors is
 crossing to the [[Unicorn Clan|Unicorn]] side, has been asked to keep clear of the city, and
 will be located by midday tomorrow — the morning the embassy rides west with an Imperial
 writ ordering the Lion to stand down. Last week she was warned the Lion escort would come
 with a price. Whose troops these are, and who ordered them across, is a question she should
-have answered **before** the envoy's column is anywhere near them.
+have answered before the envoy's column is anywhere near them.
 
-**She traded a rumour for a room and it is working.** She is not correcting the talk about
-the governor because correcting it would cost more than letting it stand, and it has put her
+She traded a rumour for a room and it is working. She is not correcting the talk about the
+governor because correcting it would cost more than letting it stand, and it has put her
 inside the tower with the envoy at the hour when people are being taken out of guarded rooms.
 It has also put her in the mouths of a court that includes a [[Unicorn Clan|Unicorn]]
 delegation, in a city she entered to get her husband out of a Lion prison. That bill arrives
 later and she should know it is coming.
 
-**What she actually did this week was teach.** [[Miya Misato]] can now argue, has some idea
-how a government moves, and knows to go for the eyes. She is sixteen, she carries the
-Emperor's writ, and she is riding to a war. Of everything on this island, that is the piece
-most likely to still matter in a year.
+What she actually did this week was teach. [[Miya Misato]] can now argue, has some idea how
+a government moves, and knows to go for the eyes. She is sixteen, she carries the Emperor's
+writ, and she is riding to a war. Of everything on this island, that is the piece most
+likely to still matter in a year.
 
 And she saw the roofs herself, from a window, and had guards on them inside a minute. Two
-shinobi are dead and one went into the water alive. **If the ronin take that one, it is the
-first person in this whole affair anyone can question.**
+shinobi are dead and one went into the water alive. If the ronin take that one, it is the
+first person in this whole affair anyone can question.

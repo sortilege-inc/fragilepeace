@@ -47,12 +47,12 @@ one blade; both times a field of Lion dead afterwards. She is the only person in
 column who has seen it happen before, and the only person who knows it did not settle
 anything the first time either.
 
-**She recorded the dying.** That is the office at its plainest — no writ, no intrigue,
-no leverage, just a magistrate with a brush making sure a man's last act is entered
+She recorded the dying. That is the office at its plainest — no writ, no intrigue, no
+leverage, just a magistrate with a brush making sure a man's last act is entered
 somewhere it will be read by his family. Whatever else this stretch cost, that part
 was the job.
 
-**Nothing about the castle adds up.** People who abandon a fortress burn the stores or
+Nothing about the castle adds up. People who abandon a fortress burn the stores or
 poison the wells. These people left months of food behind, intact, and did not damage
 the defences. That is not a garrison withdrawing; that is a household running from
 something. It is worth finding out what before the column settles in behind those walls.

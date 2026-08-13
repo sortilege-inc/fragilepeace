@@ -36,7 +36,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # possessive never appears outside dialogue anyway.
 SECOND = re.compile(r"\b(you|your|yours|yourself|we|we're|our|ours|us|I|me|my|myself)\b")
 BOLD = re.compile(r"\*\*[^*]+\*\*")
-ITAL = re.compile(r"(?<!\*)\*(?!\*)[^*\n]+\*(?!\*)")
+# Quoted speech is exempt from the address check, and the source hard-wraps at
+# about 90 columns, so a quotation routinely runs over several lines. Allow a
+# single newline inside a run; stop at a blank line, which is a paragraph break
+# and means the asterisk was never a closing one.
+ITAL = re.compile(r"(?<!\*)\*(?!\*)(?:[^*\n]|\n(?!\s*\n))+\*(?!\*)")
 
 WINK = re.compile(
     r",\s*(?:and\s+)?which\s+(?:is|was|are|were)\b[^.]*\.", re.I)
@@ -76,7 +80,11 @@ def scan(path):
 
     for m in SECOND.finditer(outside_quotes(narr + "\n" + secs.get("Setsuna", ""))):
         hits.append(("address", m.group(0), context(narr, m)))
-    for m in BOLD.finditer(narr):
+    # !note blocks are editorial apparatus, not chronicle prose — they exist to
+    # say a session has no surviving record. Their bold is a warning label, and
+    # the register rules do not reach them.
+    for m in BOLD.finditer(re.sub(r"^\s*!note.*?(?=\n\s*\n|\Z)", "", narr,
+                                  flags=re.S | re.M)):
         hits.append(("bold-narr", m.group(0)[:50], ""))
     for name, rx in (("wink", WINK), ("theme", THEME), ("hedge", HEDGE)):
         for m in rx.finditer(outside_quotes(narr + "\n" + secs.get("Setsuna", ""))):

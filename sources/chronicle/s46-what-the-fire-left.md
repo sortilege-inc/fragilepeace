@@ -8,8 +8,8 @@ epigraph: He went into the fire pit himself rather than be taken, and stayed in 
 
 !lede The tent at first light was an inventory of who could still stand.
 [[Doji Setsuna]] unconscious, and bleeding no worse only because there is nothing an
-unconscious woman can do to make it worse. [[Miya Misato]] dying on the floor. [[Bayushi Monban]] gone down in medium
-armour across her, which was making it worse.
+unconscious woman can do to make it worse. [[Miya Misato]] dying on the floor.
+[[Bayushi Monban]] gone down in medium armour across her, which was making it worse.
 
 [[Ikoma Tadayoshi]] was up with two bad wounds and no running left in him.
 [[Shiba Midori]] was up, severely hurt in fire and water, and was the only medic in the
@@ -17,16 +17,16 @@ camp who mattered. [[Kitsuko Ayoko]] was there and — unlike most of the people
 tent — actually knew medicine. And [[Kakita Kazumi]] was already outside in the dark,
 untouched, running.
 
-**Outside.** It was night, with the camp's fire down to embers, and he hunted all three
-of them by almost no light at all.
+Outside, it was night with the camp's fire down to embers, and he hunted all three of
+them by almost no light at all.
 
 The first went out the front. [[Kakita Kazumi]] put an arrow into him at range — it stuck
 audibly in a set of [[Unicorn Clan|Unicorn]] furs and the man did not so much as break
 stride, which told him what sort of people these were. So he closed, stowed the bow, drew,
 and took him apart in three exchanges: something thrown at him that nearly put him on the
 ground, a failed break for open country, and then a rising cut a compromised man could not
-answer. The last stroke took the arm off. **And [[Kakita Kazumi]] tied off the stump** —
-deliberately, so there would be somebody left to question — and dragged him back toward
+answer. The last stroke took the arm off. And [[Kakita Kazumi]] tied off the stump,
+deliberately, so there would be somebody left to question, and dragged him back toward
 the camp.
 
 He bled out anyway, before anyone got back to him.
@@ -37,23 +37,24 @@ one. Then he came back and finished it the same way, and that arm came off too. 
 bled where he fell.
 
 The third had gone out the back of the tent with the Imperial writ and a lead that should
-have been the end of it, and he was the one who mattered. [[Kakita Kazumi]] burned everything he had on closing —
-free movement, his action, and more besides — and caught him at the edge of the
-[[Lion Clan|Lion]] camp with a rising cut he could not defend against.
+have been the end of it, and he was the one who mattered. [[Kakita Kazumi]] burned
+everything he had on closing — free movement, his action, and more besides — and caught
+him at the edge of the [[Lion Clan|Lion]] camp with a rising cut he could not defend
+against.
 
-So the man **threw himself bodily into a fire pit**, to burn the writ rather than give it
+So the man threw himself bodily into a fire pit, to burn the writ rather than give it
 up. [[Kakita Kazumi]] went in after him shouting for water; [[Lion Clan|Lion]] soldiers
 came running. The shinobi, alight, took further injury on himself and went on trying to
-burn the document. **[[Kakita Kazumi]] missed the save by a hair** — the parchment went.
-One piece came out of it, and he knew which piece to grab: the **[[Imperial Seal]]**,
+burn the document. [[Kakita Kazumi]] missed the save by a hair and the parchment went.
+One piece came out of it, and he knew which piece to grab: the [[Imperial Seal]],
 melted at the edges and still recognisable for what it was.
 
 The soldiers threw a bucket of something foul over the burning man and beat him down. He
 got to his poison first. He died of that.
 
-**Inside.** [[Ikoma Tadayoshi]] spent everything he had left rolling [[Bayushi Monban]]
-off [[Miya Misato]] — he is a big man in armour and it was not easy — and that cleared the
-space to work in.
+Inside the tent, [[Ikoma Tadayoshi]] spent everything he had left rolling
+[[Bayushi Monban]] off [[Miya Misato]] — he is a big man in armour and it was not easy —
+and that cleared the space to work in.
 
 [[Shiba Midori]] went at the dying and missed it by one success. She is severely wounded
 herself, and what it looked like from inside was knowing exactly what to do and losing the
@@ -61,8 +62,8 @@ next step of it. [[Miya Misato]] lost a round off a countdown she did not have r
 spare on.
 
 Then [[Kitsuko Ayoko]] came in, who has the training, and put her hands where they were
-needed, and [[Shiba Midori]] went again and got it. **Two rounds before [[Miya Misato]]
-would have died.**
+needed, and [[Shiba Midori]] went again and got it. Two rounds before [[Miya Misato]]
+would have died.
 
 Stopping the dying is not stopping the bleeding. [[Doji Setsuna]] — woken by [[Aika]] with
 water and up on [[Ikoma Tadayoshi]]'s arm, shaking — looked at what she had. The water
@@ -73,7 +74,7 @@ purpose, because dressing a bleeding woman ruins the clothes and settles nothing
 
 [[Miya Misato]] lived.
 
-**She lost both eyes.** The bandages went over both of them and whether either can be
+She lost both eyes. The bandages went over both of them and whether either can be
 saved is a question for time. The stroke that did it had been aimed at her neck and only
 just missed taking her head off. She has major wounds on top of that, severe damage in
 water and earth, and is carrying half again the fatigue she can hold.
@@ -92,12 +93,12 @@ substance, to do their jobs or kill themselves.
 
 It worked. Neither [[Moto Gaheris]] nor [[Matsu Maro]] was going to concede that the
 other had done this, and each of them privately believed the other had. She put it to
-them that **neither of them would** — that there was nothing in it for either army — and
+them that neither of them would — that there was nothing in it for either army — and
 that what they were looking at was a third party who wanted exactly this. That was enough
 to stop the two of them circling each other and get them both facing the same direction.
 
-It cost her something she will not get back. **Nobody is ever going to read
-[[Doji Setsuna]] as harmless again.** The disarm in the envoy's tent worked precisely
+It cost her something she will not get back. Nobody is ever going to read
+[[Doji Setsuna]] as harmless again. The disarm in the envoy's tent worked precisely
 because three armed men looked at a woman in her nightclothes and filed her as no threat.
 She has now stood in front of two armies and told a [[Moto Family|Moto]] Khan to open his
 own belly. That version of her is gone, and it is gone by her own doing.
@@ -117,36 +118,36 @@ own belly. That version of her is gone, and it is gone by her own doing.
 [[City Of The Rich Frog]] she wrote it down plainly: *the target is the seal, not the
 woman* — they want the writ, or a true impression of the seal to forge with. Then in the
 tent she read a knife at a throat and a hand inside a kimono as men taking the envoy, and
-built her whole reading of the night on it. **The hand in the kimono was going for the
-writ**, which she has known since the island is carried against [[Miya Misato]]'s skin.
-The third man went out the back with it while she was fighting over the first. Her earlier
-judgement was the correct one and she came off it under pressure, in the dark, with the
-girl she is sworn to in front of her. That is worth knowing about herself.
+built her whole reading of the night on it. The hand in the kimono was going for the writ,
+which she has known since the island is carried against [[Miya Misato]]'s skin. The third
+man went out the back with it while she was fighting over the first. Her earlier judgement
+was the correct one and she came off it under pressure, in the dark, with the girl she is
+sworn to in front of her. That is worth knowing about herself.
 
-**None of them would be taken.** Two bled out rather than stop, and the third went into a
-fire and stayed in it, on fire, working, and then poisoned himself when soldiers dragged
-him clear. Hired men do not do that. **These were people who could not afford to be
-questioned** — which says more about who sent them than any confession would have.
+None of them would be taken. Two bled out rather than stop, and the third went into a fire
+and stayed in it, on fire, working, and then poisoned himself when soldiers dragged him
+clear. Hired men do not do that. These were people who could not afford to be questioned,
+which says more about who sent them than any confession would have.
 
-**And there is no one to question.** [[Kakita Kazumi]] saw that coming, took an arm off
-and then knelt down and tied the stump so there would be a witness, and the man died
-before anyone got back to him. The party bought a prisoner and lost him. Everything now
-rests on the physical: the [[Imperial Seal]], the furs, the armour on the man who held
+And there is no one to question. [[Kakita Kazumi]] saw that coming, took an arm off and
+then knelt down and tied the stump so there would be a witness, and the man died before
+anyone got back to him. The party bought a prisoner and lost him. Everything now rests on
+the physical: the [[Imperial Seal]], the furs, the armour on the man who held
 [[Ikoma Tadayoshi]], and the fact that this is the *second* time a crew has come precisely
 for that seal.
 
-**The seal came out of the fire and that is the case.** Half melted and still legible. It
+The seal came out of the fire and that is the case. Half melted and still legible. It
 proves what was taken and what was worth burning a man alive to destroy, and it is the one
 thing an investigation can be built on. It survives because [[Kakita Kazumi]] knew, in the
 instant, which fragment of a burning document was the one to reach for.
 
-**[[Miya Misato]] is blind.** Everything [[Doji Setsuna]] has taught her — how a room is
+[[Miya Misato]] is blind. Everything [[Doji Setsuna]] has taught her — how a room is
 worked, how to concede a point without losing it, how to read who in a chamber is about to
 speak — was built on being able to see the room. That instruction now has to be rebuilt
 from the ground up or replaced with something else, and the person who has to do it is the
 person who taught it the first time. She is also still the envoy, still carries the
-Emperor's charge, and is now unmistakably a wounded girl. **How a court reads her has
-changed completely**, and not all of that runs against her.
+Emperor's charge, and is now unmistakably a wounded girl. How a court reads her has changed
+completely, and not all of that runs against her.
 
 The leverage from last night is exactly where it was and heavier. An Imperial Envoy was
 maimed in the custody of two armies. Neither commander has been told yet what that means.

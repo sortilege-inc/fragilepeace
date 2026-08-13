@@ -28,11 +28,11 @@ it.
 
 She ruled that the bodies stay in magistrate custody until the investigation closes, with
 either general free to examine them as a courtesy, and then read what was in front of her.
-**The [[Moto Family|Moto]] clothes were stolen** — somewhere in that camp are people
-missing them. And whoever wore them **knew their way into the [[Lion Clan|Lion]] camp
-without being challenged**, which is not something you learn on the night. So: an inventory
-on the [[Unicorn Clan|Unicorn]] side and a roll call on the [[Lion Clan|Lion]] side. The
-Lion know exactly who their numbers did and did not include.
+The [[Moto Family|Moto]] clothes were stolen — somewhere in that camp are people missing
+them. And whoever wore them knew their way into the [[Lion Clan|Lion]] camp without being
+challenged, which is not something learned on the night. So: an inventory on the
+[[Unicorn Clan|Unicorn]] side and a roll call on the [[Lion Clan|Lion]] side. The Lion know
+exactly who their numbers did and did not include.
 
 Then she nearly went over. [[Bayushi Monban]] caught her and held her up, and told her she
 was embarrassing them in front of the [[Lion Clan|Lion]] — *what would your grandmother
@@ -40,17 +40,17 @@ say* — and got a look for it. *I will strive to comport myself with excellence
 
 [[Shiba Midori]] worked the other end of it. She scried the ground for anything
 supernatural used nearby in the last day and found residual traces: not, so far as she
-could read them, **a spell cast by one of the attackers, but a spell laid on one of them.**
+could read them, a spell cast by one of the attackers, but a spell laid on one of them.
 Somebody had worked on these men before they came.
 
 Then she called up their ghosts, and found somebody already there.
 
 An imperious woman in ghostly armour was walking among them with an enormous no-dachi,
-chasing them and cutting them down as they fled — **[[Matsu Tomoe]]**, whose face
+chasing them and cutting them down as they fled — [[Matsu Tomoe]], whose face
 [[Shiba Midori]] recognised because it is her granddaughter's. Killing them, she explained,
 sends them on the faster. [[Shiba Midori]] bowed and asked, if it pleased the Lady Doji,
-to question one first — and was corrected, coldly, on the name. She is a [[Matsu Family|Matsu]].
-She married into the [[Doji Family|Doji]]; she never became one.
+to question one first — and was corrected, coldly, on the name. She is a
+[[Matsu Family|Matsu]]. She married into the [[Doji Family|Doji]]; she never became one.
 
 She ran the chosen ghost down anyway, beat it, and threw it on its knees, *because it
 amuses me that you killed one of them.*
@@ -59,9 +59,9 @@ amuses me that you killed one of them.*
 and yours say the same. The [[Lion Clan|Lion]] and the [[Unicorn Clan|Unicorn]] will
 destroy each other* — until she reminded him that the dead cannot refuse.
 
-**The Lord [[Bayushi Family|Bayushi]]. She commands there be no peace between them and the
+*The Lord [[Bayushi Family|Bayushi]]. She commands there be no peace between them and the
 [[Unicorn Clan|Unicorn]]. His previous servant has failed. Although his previous servant
-yet lives, perhaps he may redeem himself with success.**
+yet lives, perhaps he may redeem himself with success.*
 
 Asked what else walked here, [[Matsu Tomoe]] answered instead, and turned on
 [[Shiba Midori]]: *you are part of the [[Isawa Family|Isawa]]'s conspiracy to rile the
@@ -74,8 +74,8 @@ the ghost's head off.
 were plain travelling clothes, the sort anybody walking with a baggage train would own —
 except that the [[Lion Clan|Lion]] brought no baggage train; every man carried his own.
 Sewn into the linings he found the rest of it: throwing stars, blowguns and darts, and
-**three doses of an extract of nightshade, still sealed.** They never got the chance to
-use them. Nothing on any of them said where they came from.
+three doses of an extract of nightshade, still sealed. They never got the chance to use
+them. Nothing on any of them said where they came from.
 
 [[Shiba Midori]] went to find [[Bayushi Monban]] and found him in the envoy's tent, sitting
 up with [[Ikoma Tadayoshi]] in the burnt-down candles, the two of them meditating in
@@ -84,48 +84,48 @@ beside them, twitching, whimpering, her breathing ragged.
 
 She spoke to [[Bayushi Monban]] in Cadence, so the tent would not hear it. That she is
 uneasy about [[Ikoma Tadayoshi]]. That she had questioned the assassins and they claimed
-orders from a [[Bayushi Family|Bayushi]] lord. **And that they had also said he could be
-turned to their cause.** She told him she did not believe them, and that it was worth
+orders from a [[Bayushi Family|Bayushi]] lord. And that they had also said he could be
+turned to their cause. She told him she did not believe them, and that it was worth
 knowing that they did. He shrugged, and shrugged again, and said he could do no more, and
 she bowed and left it.
 
 Then she told [[Doji Setsuna]], who went white. *Was she? I would have thought she of all
 people would be pleased by tonight* — meaning her grandmother, who had instead found the
-evening entertaining. A [[Bayushi Family|Bayushi]] lord, [[Shiba Midori]] said. Not the one
-you know. Another one.
+evening entertaining. A [[Bayushi Family|Bayushi]] lord, [[Shiba Midori]] said, and not the one
+she knew. Another one.
 
 [[Doji Setsuna]] named the question she could not chase tonight and wanted on the record
-anyway: **what kind of peace is it that a [[Scorpion Clan|Scorpion]] would go to this
-length to prevent?** Then she told them something she had not told them before. Her own
-mentor was a [[Bayushi Family|Bayushi]].
+anyway: what kind of peace is it that a [[Scorpion Clan|Scorpion]] would go to this length
+to prevent? Then she told them something she had not told them before. Her own mentor was
+a [[Bayushi Family|Bayushi]].
 
 And she sat down and assembled what she knows about [[Bayushi Kachiko]]. That her mentor
 had once walked her through a thing [[Bayushi Kachiko]] had done which broke no Imperial
-law anywhere and broke the whole spirit of it — a lesson in how to bend a rule so that you
-end up untouchable and friendless. That [[Bayushi Kachiko]] was in line to lead the
+law anywhere and broke the whole spirit of it — a lesson in how to bend a rule so that the
+bender ends up untouchable and friendless. That [[Bayushi Kachiko]] was in line to lead the
 [[Shosuro Family|Shosuro]] until her marriage to [[Bayushi Shoju]] required her to become
 [[Bayushi Family|Bayushi]] instead, and that there are Scorpion who still think that was a
 mistake. That her husband is Champion of the whole clan and appears entirely untroubled by
-her private standing with the throne. That **the Emperor's sight is failing, and she reads
-his correspondence to him** — which means she decides, in practice, what reaches him.
+her private standing with the throne. That the Emperor's sight is failing, and she reads
+his correspondence to him — which means she decides, in practice, what reaches him.
 
-And that her brother is **[[Shosuro Hametsu]]**, who leads the
-[[Shosuro Family|Shosuro]] — and who is [[Bayushi Monban]]'s lord, and the man
-[[Doji Setsuna]] has just billed fifty koku.
+And that her brother is [[Shosuro Hametsu]], who leads the [[Shosuro Family|Shosuro]] —
+and who is [[Bayushi Monban]]'s lord, and the man [[Doji Setsuna]] has just billed fifty
+koku.
 
 She also saw the other edge of it. Being the one who stands between the Emperor and his
-letters is an enormous advantage and it **costs her deniability entirely**. Nothing can
-happen in that correspondence without her; if the Emperor ever routes around her, it is
-because she has failed or because he has stopped trusting her.
+letters is an enormous advantage and it costs her deniability entirely. Nothing can happen
+in that correspondence without her; if the Emperor ever routes around her, it is because
+she has failed or because he has stopped trusting her.
 
 [[Otoya]] sat up through what was left of the night making a clean copy of the writ — which
 is possible at all because [[Kakita Kazumi]] pulled the seal out of the fire, and the seal
 is intact enough to be used.
 
 In the morning [[Doji Setsuna]] wrote the agreement and got it right. All four magistrates
-as signatories and both generals with them: **the Emerald Magistrates will see
+as signatories and both generals with them: the Emerald Magistrates will see
 [[Miya Misato]] to the front to deliver the writ, and both commanders will do everything in
-their power to bring about the peace the Emperor has demanded.** Twelve honour staked by
+their power to bring about the peace the Emperor has demanded. Twelve honour staked by
 every party, and no loopholes in it that anyone could object to.
 
 Then [[Kitsuko Ayoko]] found [[Miya Misato]] dead.
@@ -139,15 +139,15 @@ knew before she got there.
 beside him — and his face went through grief to horror to the understanding that he owes
 his life for it.
 
-[[Doji Setsuna]] had braced for this and it did not change her road. **Do not disclose it
-until the agreement is signed and the column is moving.** And then, since the document
+[[Doji Setsuna]] had braced for this and it did not change her road. Do not disclose it
+until the agreement is signed and the column is moving. And then, since the document
 requires the magistrates to see [[Miya Misato]] to the front and says nothing whatever
 about her being alive when she arrives: they will take her with them.
 
 [[Bayushi Monban]] would not have it. The charge was hers and it died with her; the
 magistrates should order the [[Lion Clan|Lion]] out of [[Unicorn Clan|Unicorn]] country,
 send both sides back to the [[City Of The Rich Frog]] to renegotiate, and let the capital
-send another envoy and a senior magistrate. **Nobody has to accept their authority.** He
+send another envoy and a senior magistrate. Nobody has to accept their authority. He
 wanted the death used as leverage instead — an Imperial had died under two armies' care,
 and that alone would make them listen.
 
@@ -198,46 +198,44 @@ made that read as [[Bayushi Kachiko]]. She called the [[Scorpion Clan|Scorpion]]
 weeks ago on inference; this is testimony. It is also unusable — she cannot walk into a
 court and say a beheaded assassin told a [[Phoenix Clan|Phoenix]] shugenja.
 
-**The right question is the one she asked and could not chase.** Not who, but *what kind
-of peace is worth this much to prevent?* Someone is spending assassins, a spell laid on a
-man, and an Imperial envoy's life to keep the [[Lion Clan|Lion]] and the
+The right question is the one she asked and could not chase. Not who, but what kind of
+peace is worth this much to prevent. Someone is spending assassins, a spell laid on a man,
+and an Imperial envoy's life to keep the [[Lion Clan|Lion]] and the
 [[Unicorn Clan|Unicorn]] cutting at each other. That is not spite. That is a plan with a
 shape, and knowing the shape would be worth more than the name.
 
-**And she has found the seam in [[Bayushi Kachiko]].** Standing between a half-blind
-Emperor and his letters is the whole of her power and **it leaves her nowhere to stand if
-anything goes wrong in that correspondence.** She cannot claim not to have known. Anyone
-who wants to move against her does not need to prove she ordered a thing — only that
-something reached the throne, or failed to, while she was the one holding it.
+And she has found the seam in [[Bayushi Kachiko]]. Standing between a half-blind Emperor
+and his letters is the whole of her power, and it leaves her nowhere to stand if anything
+goes wrong in that correspondence. She cannot claim not to have known. Anyone who wants to
+move against her does not need to prove she ordered a thing — only that something reached
+the throne, or failed to, while she was the one holding it.
 
-**[[Shosuro Hametsu]] is her brother.** Which means the fifty-koku invoice
-[[Doji Setsuna]] wrote in her own hand went to the household of the woman who is very
-probably trying to kill this peace, and that her yojimbo's oath runs to that house. She
-should think hard about what [[Bayushi Monban]] is inside this, and she should do it
-without deciding in advance what the answer is.
+[[Shosuro Hametsu]] is her brother. Which means the fifty-koku invoice [[Doji Setsuna]]
+wrote in her own hand went to the household of the woman who is very probably trying to
+kill this peace, and that her yojimbo's oath runs to that house. She should think hard
+about what [[Bayushi Monban]] is inside this, and she should do it without deciding in
+advance what the answer is.
 
-**[[Miya Misato]] died in her sleep and the mission did not.** The agreement was signed
-before anyone knew, it commits four magistrates and two generals to seeing the envoy to
-the front, and it says nothing about her being alive when she gets there. That is not a
-trick; it is the document doing what a document is for. But she should be clear that she is
-about to carry a dead sixteen-year-old across a war zone in a palanquin so that a piece of
-paper stays true, and that whatever else that is, it is not what she promised the girl she
-was teaching to argue.
+[[Miya Misato]] died in her sleep and the mission did not. The agreement was signed before
+anyone knew, it commits four magistrates and two generals to seeing the envoy to the front,
+and it says nothing about her being alive when she gets there. That is not a trick; it is
+the document doing what a document is for. But she should be clear that she is about to
+carry a dead sixteen-year-old across a war zone in a palanquin so that a piece of paper
+stays true, and that whatever else that is, it is not what she promised the girl she was
+teaching to argue.
 
-**[[Bayushi Monban]] is not wrong.** Nobody has to accept their authority, the writ is
-burnt, and the envoy is dead — and he is the one who said out loud that the death is
-leverage and should be used as such rather than hidden. He would go to the
-[[City Of The Rich Frog]], get a real commission, and come back able to command rather than
-persuade. The detour she offered him is the right compromise and she should take it
-seriously rather than as a sop, because the version of this where they arrive at
-[[Battlemaiden Castle]] with no envoy, no writ and no standing is exactly the one he is
-describing.
+[[Bayushi Monban]] is not wrong. Nobody has to accept their authority, the writ is burnt,
+and the envoy is dead — and he is the one who said out loud that the death is leverage and
+should be used as such rather than hidden. He would go to the [[City Of The Rich Frog]],
+get a real commission, and come back able to command rather than persuade. The detour she
+offered him is the right compromise and she should take it seriously rather than as a sop,
+because the version of this where they arrive at [[Battlemaiden Castle]] with no envoy, no
+writ and no standing is exactly the one he is describing.
 
-**And [[Matsu Tomoe]] is telling her something in the middle of all of it.** Her grandmother
+And [[Matsu Tomoe]] is telling her something in the middle of all of it. Her grandmother
 was on that ground, cutting down assassins' ghosts for sport, and thought the night
 entertaining. She also thinks the [[Phoenix Clan|Phoenix]] are conspiring to turn the
 elements against the [[Lion Clan|Lion]], and says her clan's shugenja are working to prove
 it. [[Shiba Midori]] is a [[Phoenix Clan|Phoenix]], stands beside [[Doji Setsuna]] every
-day, and just saved the envoy's life for as long as it could be saved. **That is a second
-war being prepared underneath this one**, and the woman who told her about it is her own
-dead.
+day, and just saved the envoy's life for as long as it could be saved. That is a second war
+being prepared underneath this one, and the woman who told her about it is her own dead.
