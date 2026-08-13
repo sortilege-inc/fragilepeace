@@ -142,6 +142,9 @@ RENAMES = {
     # title rather than by alias, so there is one page and not two.
     "Shigo no Tomoku": "Shigo no Chinmoku",
     "Shiguro Chinmoku": "Shigo no Chinmoku",
+    # Session 47 names Monban's lord: the Shosuro daimyo is Shosuro Hametsu,
+    # Bayushi Kachiko's brother. The export only ever calls him by his title.
+    "Daimyo Shoshuro": "Shosuro Hametsu",
 }
 
 
@@ -327,6 +330,8 @@ ALIASES = {
     "Aishi": "Shosuro Aishi",
     "the Lady of Decay": "Lady of Decay",
     "Ryo": "Ryu",
+    "Daimyo Shosuro": "Shosuro Hametsu",
+    "Daimyo Shoshuro": "Shosuro Hametsu",
     # The trader has no page of his own; the export files his premises.
     "Hideyoshi Aki": "Hideyoshi Aki’s Counting House And Warehouse",
     "Hana no Ame": "Tonbo Higuchi",
