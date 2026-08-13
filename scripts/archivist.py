@@ -60,8 +60,47 @@ class Page(object):
         return "<Page %s %r>" % (self.cat, self.title)
 
 
+# Spellings that are simply wrong, and what they should read as. RENAMES (below)
+# only relabels a page's *title*; these rewrite the prose, so a corrected name is
+# corrected everywhere it is displayed rather than only on its own page. Applied
+# once, at read time, to every source file — inside [[wikilinks]] as well as out,
+# since every replacement resolves to the same page the old one did.
+#
+# Only outright errors belong here. Legitimate short forms and alternate names
+# ("Lion" for Lion Clan, "Higuchi", the pen name "Hana no Ame") stay as written
+# and are handled by ALIASES instead. scripts/verify_site.py fails the build if
+# any of these reappears in the generated site.
+CORRECTIONS = [
+    # Owner 2026-08-12: Shishoro is not a family name; Aishi is a Shoshuro.
+    (r"\bShishoro\b", "Shoshuro"),
+    (r"\bShosuro Aishi\b", "Shoshuro Aishi"),
+    # Owner 2026-08-12: the governor is Tetsuya. The export invents "Tetsuna".
+    (r"\bMiya Tetsuna\b", "Miya Tetsuya"),
+    # Owner 2026-08-12: Yui is the spelling.
+    (r"\bKitsuyue\b", "Kitsu Yui"),
+    (r"\bYue\b", "Yui"),
+    # Owner 2026-08-12: Ryo and Ryu are one retainer, spelled Ryu.
+    (r"\bRyo\b", "Ryu"),
+    # Morozane's lion, spelled three ways across the sources.
+    (r"\bShigo no (?:Tomoku|Chinmoku)\b", "Shiguro Chinmoku"),
+    # The 2026-04 session summaries against the export and the earlier record.
+    (r"\bMiya Masato\b", "Miya Misato"),
+    (r"\bDoji Shin\b", "Daidoji Shin"),
+    (r"\bMoto Gaharis\b", "Moto Gaheris"),
+    (r"\bMatsu Matsumaro\b", "Matsu Maro"),
+    (r"\bAtoya\b", "Otoya"),
+]
+CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
+
+
+def correct(text):
+    for rx, repl in CORRECTIONS:
+        text = rx.sub(repl, text)
+    return text
+
+
 def _read(p):
-    return io.open(p, encoding="utf-8").read()
+    return correct(io.open(p, encoding="utf-8").read())
 
 
 # The export's filenames are not always the correct name. Owner's ruling
@@ -82,6 +121,10 @@ RENAMES = {
     # One person, filed by the export under both.
     "Hana no Ame": "Tonbo Higuchi",
     "Higuchi": "Tonbo Higuchi",
+    # Morozane's lion has an export file under each of its spellings. Merged by
+    # title rather than by alias, so there is one page and not two.
+    "Shigo no Tomoku": "Shiguro Chinmoku",
+    "Shigo no Chinmoku": "Shiguro Chinmoku",
 }
 
 

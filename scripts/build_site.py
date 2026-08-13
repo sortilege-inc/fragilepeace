@@ -222,7 +222,7 @@ def load_interludes():
     for fn in sorted(os.listdir(d)):
         if not (fn.startswith("i") and fn.endswith(".md")):
             continue
-        meta, sections = _parse(io.open(os.path.join(d, fn), encoding="utf-8").read())
+        meta, sections = _parse(A.correct(io.open(os.path.join(d, fn), encoding="utf-8").read()))
         out.append(Interlude(meta, sections, Rewrite(meta, sections)))
     return out
 
@@ -248,7 +248,7 @@ def load_rewrites():
     for fn in sorted(os.listdir(d)):
         if not (fn.startswith("s") and fn.endswith(".md")):
             continue   # iNN-*.md are interludes, loaded by load_interludes()
-        raw = io.open(os.path.join(d, fn), encoding="utf-8").read()
+        raw = A.correct(io.open(os.path.join(d, fn), encoding="utf-8").read())
         head, _, body = raw.partition("\n---\n")
         meta = {}
         for line in head.splitlines():

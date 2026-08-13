@@ -66,8 +66,21 @@ python3 scripts/build_site.py && python3 scripts/verify_site.py
 The build wipes and rebuilds `chronicle/`, `party/`, `dramatis-personae/`, `atlas/` and
 `lore/` only; everything else is left alone. `verify_site.py` is the gate and **must exit
 0** — it crawls every local `href`/`src` in the site, asserts that no mask bar contains
-content, asserts that every `[[wikilink]]` in a hand-authored session resolves, and fails
-on a gap in the session numbering.
+content, asserts that no superseded spelling survives anywhere, asserts that every
+`[[wikilink]]` in a hand-authored session or interlude resolves, and fails on a gap in
+the session numbering.
+
+### Correcting a name
+
+`archivist.CORRECTIONS` is the single place a wrong spelling is fixed. Add the bad form
+and the good one, and the build rewrites it **in the prose**, everywhere it appears —
+inside `[[wikilinks]]` as well as out, across the export, the hand-authored sessions and
+the entity pages. `RENAMES` is a different thing: it only relabels a page's own *title*,
+and is also how two export files are merged into one page. A rename without a correction
+leaves the old spelling all over everyone else's prose, which is what happened before
+2026-08-12; `verify_site.py` now fails the build if any corrected spelling reappears.
+Only outright errors belong in `CORRECTIONS` — legitimate short forms and alternate names
+(`Lion` for Lion Clan, the pen name `Hana no Ame`) go in `ALIASES` instead.
 
 ### Adding a session
 

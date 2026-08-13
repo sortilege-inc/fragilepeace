@@ -4,12 +4,13 @@ verify_site.py — gate the generated site.
 
     python3 scripts/build_site.py && python3 scripts/verify_site.py
 
-Exits non-zero on any failure. Four checks:
+Exits non-zero on any failure. Five checks:
 
   links   every local href/src in every .html/.css/.js resolves to a real file
   masks   every mask bar is empty — there must be nothing behind a mask
-  rewrit  every [[wikilink]] in a hand-authored session file resolves to a page
-  span    prints the session count and the first/last dates on record
+  names   no superseded spelling from archivist.CORRECTIONS survives anywhere
+  rewrit  every [[wikilink]] in a hand-authored session or interlude resolves
+  span    session count, the first/last dates, and any gap in the numbering
 """
 
 import os, re, io, sys, collections
@@ -100,6 +101,28 @@ def check_rewrites():
     return len(entries), n, bad
 
 
+def check_names():
+    """No superseded spelling may appear anywhere in the generated site.
+
+    A rename used to relabel only the page's own title, leaving the old spelling
+    all over everyone else's prose. archivist.CORRECTIONS now rewrites the text
+    at read time; this is the assertion that it worked, and the thing that fails
+    the build if a corrected name ever comes back.
+    """
+    bad = collections.Counter()
+    where = {}
+    for path in walk():
+        if not path.endswith(".html"):
+            continue
+        txt = io.open(path, encoding="utf-8", errors="replace").read()
+        for rx, repl in A.CORRECTIONS:
+            hits = rx.findall(txt)
+            if hits:
+                bad[rx.pattern] += len(hits)
+                where.setdefault(rx.pattern, os.path.relpath(path, ROOT))
+    return [(p, n, where[p]) for p, n in bad.most_common()]
+
+
 def main():
     fail = 0
 
@@ -113,6 +136,12 @@ def main():
     print("masks      : %d bars, %d with content" % (n, len(bad)))
     for f, r in bad[:20]:
         print("             %s : %r" % (f, r))
+    fail |= bool(bad)
+
+    bad = check_names()
+    print("names      : %d superseded spelling(s) still rendered" % len(bad))
+    for pat, n, f in bad[:20]:
+        print("             %s  x%d  (e.g. %s)" % (pat, n, f))
     fail |= bool(bad)
 
     ns, n, bad = check_rewrites()
