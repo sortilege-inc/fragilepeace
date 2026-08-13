@@ -6,8 +6,8 @@ epigraph: This conflict is a duel writ large between clans rather than between c
 
 ## Narrative
 
-!lede [[Akodo Kage]] came and sat with [[Doji Setsuna]] over the recess, was charming for
-half an hour, and took more out of the conversation than she did. Then
+!lede [[Doji Setsuna]] went to sit with the man she had humiliated the day before, and
+[[Ikoma Ujiaki]] was charming for half an hour and took more out of it than she did. Then
 [[Akodo Akihito]] came back into the tent speaking in a completely different voice.
 
 Word had finally reached [[Bayushi Monban]], out west, of what had happened while he was
@@ -63,8 +63,9 @@ the mountain, between two rock teeth, with one spirit dead, one dying, two troll
 unhurt, and a question he cannot answer: whether the [[The Earthen Queen|Earthen Queen]] is watching, and
 whether a favour owed by him is worth more to her than a pair of trolls.
 
-**At the shrine.** [[Akodo Kage]] came to [[Doji Setsuna]] during the recess and was
-delightful.
+**At the shrine.** [[Doji Setsuna]] went to [[Ikoma Ujiaki]] over the recess — the man
+she had pinned in front of the whole tent the day before, who had every reason to be
+bristling. He turned on the charm instead.
 
 She has been walking a rope between two buildings for weeks and can do it blindfolded, and
 what she felt sitting opposite him was something close to enjoyment — the particular lift
@@ -79,22 +80,25 @@ never have left her destitute, she said only that she looked forward to the reco
 it, at the appropriate time. When he called the whole business a misunderstanding escalated
 by other people's choices, she was polite and did not agree.
 
-What he got was more. He read her — her composure, the old [[Kakita Family|Kakita]] grudge
-she carries, and a social objective, which was the decoy she had laid and not the real
-one. Then he did something to her that will keep: **he turned her legal scholarship into a
-liability.** Whatever [[Ikoma Ujiaki]] meets her with from now on, her own learning can be
-made to work against her — precedents she does not know, weaknesses in her own arguments,
-the strength turned around.
+She got something out of him too, and it is the most human thing anyone has learned about
+a [[Lion Clan|Lion]] in this negotiation: **she found out what he actually wants.**
+
+But he got more. He read her — her composure, the old [[Kakita Family|Kakita]] grudge she
+carries, and a social objective, which was the decoy she had laid and not the real one.
+Then he did something to her that will keep: **he turned her legal scholarship into a
+liability.** From now on, when he opposes her, her own learning works against her —
+precedents she does not know, weaknesses found in her own arguments, the strength
+reversed.
 
 And in the pleasant part of the conversation, the small talk, he found out **the one thing
-she wants for herself.** There is a small private gathering the [[Asahina Family|Asahina]]
+she wants for herself**, which is the harder loss of the two. There is a small private gathering the [[Asahina Family|Asahina]]
 hold on the [[Crane Clan|Crane]] coast in spring — poetry, a few days, by invitation —
 utterly unlike everything she has spent her life on, and she would say yes to it in a
 heartbeat and believes she would never be asked. She dismissed it prettily as impossible
 for someone like her. *Don't undersell yourself*, he said. *You are an extraordinary young
 magistrate, making a name for yourself.*
 
-Afterwards she went to the [[Unicorn Clan|Unicorn]]'s own [[Iuchi Family|Iuchi]] advisor —
+Afterwards she went to [[The Unicorn's Iuchi Advisor|the Unicorn's own Iuchi advisor]] —
 a middle-aged woman in a shugenja's robes hung about with talismans, who had performed the
 morning's blessing herself rather than let [[Shiba Midori]] do it, [[Shiba Midori]] being a
 party. She is [[Akodo Kage]]'s opposite number and knows it.
@@ -144,22 +148,22 @@ sitting here instead.
 
 ## Learned
 
-- Akodo Kage: Spent the recess charming her and came away with more than he gave. He has her composure, an old adversity, and a decoy objective — and he has turned her legal learning into something Ikoma Ujiaki can use against her. In the pleasant part of the talk he found out the one thing she wants for herself, and told her not to undersell herself. He will not concede that the Lion did anything improperly until it is proved, but insists they were always concerned for the former wife's well-being and would never have left her destitute.
+- Ikoma Ujiaki: Stung in front of the whole tent yesterday and pleasant as anything today. He came away with her composure, an old adversity, a decoy objective — and with her legal learning turned into a thing he can use against her. In the small talk he found out the one thing she wants for herself, and told her not to undersell herself. He will not concede the Lion did anything improperly until it is proved, but insists they were always concerned for the former wife's well-being and would never have left her destitute. Setsuna got his ninjō out of him in return.
 - Akodo Akihito: Came back after the recess in an entirely different register — the Lion razed nothing, answered no insult with insult, killed only warriors defending their homes, and he praised the Unicorn for their courage. He calls the war a duel writ large between clans rather than champions, presently undecided, and says this is the moment to step back before someone takes a blow they cannot answer. The Lion are prepared to settle. Someone has given him new orders.
-- The Unicorn's Iuchi advisor (unpaged): A middle-aged woman in a shugenja's robes and talismans who gave the morning blessing herself because Midori is a party to the case. Kage's opposite number. Her warning: a lion in a trap is more dangerous, because it believes it has nothing left to lose, and the trick is to let them lose without feeling they have lost. Her advice on Ikari: find her quickly, and do not put her in front of this table. Her priorities, in order: land, horses, hostages — give those three and she can likely bring Altansarnai to the rest.
+- The Unicorn's Iuchi Advisor: A middle-aged woman in a shugenja's robes and talismans who gave the morning blessing herself because Midori is a party to the case. Kage's opposite number. Her warning: a lion in a trap is more dangerous, because it believes it has nothing left to lose, and the trick is to let them lose without feeling they have lost. Her advice on Ikari: find her quickly, and do not put her in front of this table. Her priorities, in order: land, horses, hostages — give those three and she can likely bring Altansarnai to the rest.
 - Bayushi Monban: Permitted only two fire spirits up the mountain instead of six. Burned out the troll cave and left one thing standing — a picture of himself the trolls drew and defaced — so that whoever lives there remembers who got them the place. One spirit dead, one dying, both trolls unhurt: their skin adapts to what is hurting it.
 - Onahime: The bargain is finally plain. When they died they had to be masked to enter Jigoku, and he made an agreement with her that they would remain joined. She kept him alive down there and brought him out; what she asked was to take a piece of him with her when she left. She is not an evil thing, and she has kept her side of it.
 - Asako Ikari: Nobody has found her. The Unicorn's own advisor thinks it would be better for the case if she were located and *not* called to speak.
 
 ## Setsuna
 
-**She lost that conversation and should say so to herself plainly.** [[Akodo Kage]] took her
-composure, an old wound, and a reading of what she wants — and he has turned her legal
-learning into something that can be used against her by the man across the table. She got
-him nearer to initiating a settlement and she refused his premises gracefully, which is
-real, and it is less than he took. **She enjoyed it, which is the part to be careful
-about.** Going toe to toe with someone her own size felt good, and feeling good in a room
-with [[Akodo Kage]] in it is how a person gets handled.
+**She lost that conversation and should say so to herself plainly.** [[Ikoma Ujiaki]] took
+her composure, an old wound, and a reading of what she wants — and he turned her legal
+learning into a weapon he can use on her the next time they are opposed. She got him nearer
+to initiating a settlement, refused his premises gracefully, and came away with his ninjō,
+which is real and which is less than he took. **She enjoyed it, which is the part to be
+careful about.** Going toe to toe with someone her own size felt good, and feeling good
+across a table from [[Ikoma Ujiaki]] is how a person gets handled.
 
 **And he knows what she wants.** Not what the magistrate wants — what *she* wants, the
 poetry gathering on the coast that she has never once asked for and does not believe she
@@ -168,7 +172,7 @@ that could be offered rather than threatened**, and it is now in the hands of a 
 has just demonstrated he will use whatever he is given. She should decide, before it is
 ever offered, what her answer is.
 
-**The [[Iuchi Family|Iuchi]] advisor gave her the settlement.** Land, horses, hostages, in
+**[[The Unicorn's Iuchi Advisor|The Iuchi advisor]] gave her the settlement.** Land, horses, hostages, in
 that order, and the rest can follow. That is a floor she can actually build on: the land is
 the thing the [[Unicorn Clan|Unicorn]] will not move on, the horses cost the
 [[Lion Clan|Lion]] nothing but face, and the hostages are the piece [[Akodo Akihito]] has
