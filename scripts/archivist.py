@@ -110,6 +110,7 @@ CORRECTIONS = [
     (r"\bIkoma Asakichi\b", "Ikoma Anakazu"),
     (r"\bLord Ikoma\b", "Ikoma Anakazu"),
     (r"\bShiro Hametsu\b", "Shosuro Hametsu"),
+    (r"\bIde Subame\b", "Ide Subane"),
     (r"\bKodo Totori\b", "Akodo Toturi"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
