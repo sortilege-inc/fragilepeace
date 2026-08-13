@@ -80,8 +80,16 @@ never have left her destitute, she said only that she looked forward to the reco
 it, at the appropriate time. When he called the whole business a misunderstanding escalated
 by other people's choices, she was polite and did not agree.
 
-She got something out of him too, and it is the most human thing anyone has learned about
-a [[Lion Clan|Lion]] in this negotiation: **she found out what he actually wants.**
+She got something out of him too, and it is the most useful thing anyone has learned about
+a [[Lion Clan|Lion]] in this negotiation. **She found out what he actually wants.** Not
+power — he does not want to be a champion of anything. **He wants to go down in history as
+one of the [[Lion Clan|Lion]]'s most competent negotiators**, and he believes he is well
+on his way.
+
+And the tell had already been in front of her. It was [[Akodo Akihito]]'s place to raise
+the objection about [[Shiba Midori]] representing two clans. [[Ikoma Ujiaki]] did not wait
+for him. **He keeps stepping in front of the man his own clan seated in that chair**, and
+now she knows why.
 
 But he got more. He read her — her composure, the old [[Kakita Family|Kakita]] grudge she
 carries, and a social objective, which was the decoy she had laid and not the real one.
@@ -148,7 +156,7 @@ sitting here instead.
 
 ## Learned
 
-- Ikoma Ujiaki: Stung in front of the whole tent yesterday and pleasant as anything today. He came away with her composure, an old adversity, a decoy objective — and with her legal learning turned into a thing he can use against her. In the small talk he found out the one thing she wants for herself, and told her not to undersell herself. He will not concede the Lion did anything improperly until it is proved, but insists they were always concerned for the former wife's well-being and would never have left her destitute. Setsuna got his ninjō out of him in return.
+- Ikoma Ujiaki: Stung in front of the whole tent yesterday and pleasant as anything today. He came away with her composure, an old adversity, a decoy objective — and with her legal learning turned into a thing he can use against her. In the small talk he found out the one thing she wants for herself, and told her not to undersell herself. He will not concede the Lion did anything improperly until it is proved, but insists they were always concerned for the former wife's well-being and would never have left her destitute. **And she got what he wants: to be remembered as one of the Lion's most competent negotiators.** He does not want to be a champion. He wants the name. Which is why he keeps raising objections that were Akihito's to raise.
 - Akodo Akihito: Came back after the recess in an entirely different register — the Lion razed nothing, answered no insult with insult, killed only warriors defending their homes, and he praised the Unicorn for their courage. He calls the war a duel writ large between clans rather than champions, presently undecided, and says this is the moment to step back before someone takes a blow they cannot answer. The Lion are prepared to settle. Someone has given him new orders.
 - The Unicorn's Iuchi Advisor: A middle-aged woman in a shugenja's robes and talismans who gave the morning blessing herself because Midori is a party to the case. Kage's opposite number. Her warning: a lion in a trap is more dangerous, because it believes it has nothing left to lose, and the trick is to let them lose without feeling they have lost. Her advice on Ikari: find her quickly, and do not put her in front of this table. Her priorities, in order: land, horses, hostages — give those three and she can likely bring Altansarnai to the rest.
 - Bayushi Monban: Permitted only two fire spirits up the mountain instead of six. Burned out the troll cave and left one thing standing — a picture of himself the trolls drew and defaced — so that whoever lives there remembers who got them the place. One spirit dead, one dying, both trolls unhurt: their skin adapts to what is hurting it.
@@ -160,10 +168,19 @@ sitting here instead.
 **She lost that conversation and should say so to herself plainly.** [[Ikoma Ujiaki]] took
 her composure, an old wound, and a reading of what she wants — and he turned her legal
 learning into a weapon he can use on her the next time they are opposed. She got him nearer
-to initiating a settlement, refused his premises gracefully, and came away with his ninjō,
-which is real and which is less than he took. **She enjoyed it, which is the part to be
+to initiating a settlement, refused his premises gracefully, and came away with the thing
+he wants, which is real and which is less than he took. **She enjoyed it, which is the part to be
 careful about.** Going toe to toe with someone her own size felt good, and feeling good
 across a table from [[Ikoma Ujiaki]] is how a person gets handled.
+
+**But what she took off him is a handle.** He wants to be remembered as one of the great
+[[Lion Clan|Lion]] negotiators, and he is vain enough to believe he is becoming one. That
+is not a man who wants a war settled over his head by an arbiter, and it is certainly not
+a man who wants his name on the losing side of an Imperial ruling. **A settlement he can
+be said to have authored is worth more to him than a Lion victory he merely attended** —
+and he has been talking over [[Akodo Akihito]] all week to make sure people notice him
+doing it. If she wants the [[Lion Clan|Lion]] to settle rather than be ruled against, he
+is the one to let take the credit for it.
 
 **And he knows what she wants.** Not what the magistrate wants — what *she* wants, the
 poetry gathering on the coast that she has never once asked for and does not believe she
