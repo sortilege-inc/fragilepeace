@@ -465,6 +465,44 @@ blockquote{
   border-radius:3px; padding:0.02rem 0.4rem; }
 
 /* ------------------------------------------------------------ roster grids */
+/* ------------------------------------------------ dramatis personae filters */
+.rfilter{
+  display:flex; flex-wrap:wrap; align-items:flex-end; gap:0.7rem 0.9rem;
+  margin:0 0 1.6rem; padding:0.9rem 1rem;
+  background:var(--paper-2); border:1px solid var(--edge-soft);
+  border-left:3px solid var(--gold-soft); border-radius:4px;
+}
+.rfilter.is-filtered{ border-left-color:var(--crimson); }
+.rf-f{ display:flex; flex-direction:column; gap:0.25rem; }
+.rf-f > span{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.12em;
+  font-size:0.6rem; color:var(--ink-soft);
+}
+.rf-f select, .rf-f input{
+  font:inherit; font-size:0.9rem; color:var(--sumi);
+  padding:0.3rem 0.5rem; background:#fff;
+  border:1px solid var(--edge-soft); border-radius:3px; min-width:9rem;
+}
+.rf-f select:focus, .rf-f input:focus{ outline:2px solid var(--gold-soft); outline-offset:1px; }
+.rf-q input{ min-width:11rem; }
+.rf-clear{
+  font-family:var(--caps); text-transform:uppercase; letter-spacing:0.1em;
+  font-size:0.66rem; color:var(--ink-soft); cursor:pointer;
+  padding:0.42rem 0.8rem; background:transparent;
+  border:1px solid var(--edge-soft); border-radius:3px;
+}
+.rf-clear:hover{ color:var(--crimson); border-color:var(--crimson); }
+.rf-count{
+  margin:0 0 0 auto; font-family:var(--caps); text-transform:uppercase;
+  letter-spacing:0.12em; font-size:0.66rem; color:var(--ink-soft);
+}
+.roster-empty{ color:var(--ink-soft); font-style:italic; margin:1rem 0 2rem; }
+@media (max-width:640px){
+  .rf-f{ flex:1 1 8rem; }
+  .rf-f select, .rf-f input{ min-width:0; width:100%; }
+  .rf-count{ margin-left:0; flex-basis:100%; }
+}
+
 .roster{ display:grid; gap:0.5rem; grid-template-columns:repeat(auto-fill,minmax(15rem,1fr)); margin:1rem 0 2rem; }
 .rost{
   display:flex; flex-direction:column; gap:0.1rem; text-decoration:none; color:inherit;

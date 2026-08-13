@@ -45,9 +45,12 @@ CATDIR = {"npc": "dramatis-personae", "pc": "party", "location": "atlas",
 CATNAV = {"npc": "dramatis", "pc": "party", "location": "map",
           "faction": "lore", "item": "lore", "lore": "lore"}
 
-# The four who are still at the table; everyone else in Characters/PCs is off stage.
-CURRENT_PARTY = ["Doji Setsuna", "Bayushi Monban", "Shiba Midori", "Kakita Kazumi",
-                 "Ikoma Tadayoshi"]
+# Those still at the table; everyone else in Characters/PCs is off stage.
+#
+# Ikoma Tadayoshi came off it after session 47. He was Miya Misato's yojimbo,
+# he slept while she died beside him, and the charge he existed to carry ended
+# with her.
+CURRENT_PARTY = ["Doji Setsuna", "Bayushi Monban", "Shiba Midori", "Kakita Kazumi"]
 
 # Sessions 10-17 are a flashback three centuries back, played with different
 # characters. Setsuna lived that arc as the memories of her ancestor Morozane.
@@ -624,7 +627,10 @@ def chronicle_index(entries, rewrites):
     sessions = [e for e in entries if not e.is_interlude]
     done = sum(1 for s in sessions if s.number in rewrites)
     rows = []
-    for s in entries:
+    # Most recent first. The page is read to catch up on where the campaign is,
+    # not to start it from the beginning; the session pages themselves still
+    # chain forward through their pager.
+    for s in reversed(entries):
         rw = rewrites.get(s.number)
         state = "" if rw else '<span class="chip raw">raw</span>'
         if s.number in FLASHBACK_SESSIONS:
@@ -665,17 +671,30 @@ def initial(t):
     return t[0].upper() if t else "?"
 
 
-def people_index(pages, ledger, url, active, title, eyebrow, sub, groups):
-    """groups: list of (heading, blurb, [pages])."""
+def family_of(title):
+    """The family name, when the first word is one the Empire recognises."""
+    head = title.split()[0] if title.split() else ""
+    return head if head in A.FAMILY_CLAN else ""
+
+
+def people_index(pages, ledger, url, active, title, eyebrow, sub, groups,
+                 filters=False):
+    """groups: list of (heading, blurb, [pages]). filters adds the roster bar."""
     bits = ['<div class="wrap">',
             '<p class="crumb"><a href="../index.html">Home</a>'
             '<span class="sep">&#8250;</span>%s</p>' % esc(title),
             '<header class="masthead"><div class="eyebrow">%s</div><h1>%s</h1>'
             '<p class="sub">%s</p></header>' % (eyebrow, esc(title), sub),
             '<div class="flourish"></div>', '<div class="col">']
+
+    everyone = [p for _h, _b, items in groups for p in items]
+    if filters:
+        bits.append(roster_filters(everyone, ledger))
+
     for heading, blurb, items in groups:
         if not items:
             continue
+        bits.append('<section class="group" data-group>')
         bits.append('<h2 class="group-h">%s</h2>' % esc(heading))
         if blurb:
             bits.append('<p class="group-sub">%s</p>' % blurb)
@@ -691,15 +710,55 @@ def people_index(pages, ledger, url, active, title, eyebrow, sub, groups):
                 state, note = "pending", "not yet transcribed"
             else:
                 state, note = "unmet", "no word of them"
+            seen = sorted(ledger.state.get(p, {}))
             bits.append(
-                '<a class="rost %s%s" href="%s"><span class="ro-n">%s</span>'
+                '<a class="rost %s%s" href="%s" data-name="%s" data-clan="%s" '
+                'data-family="%s" data-state="%s" data-sessions="%s">'
+                '<span class="ro-n">%s</span>'
                 '<span class="ro-c">%s</span><span class="ro-s">%s</span></a>'
                 % (state, " playable" if p.title in PLAYABLE else "",
-                   rel(url, p.url), esc(p.title), esc(clan),
+                   rel(url, p.url), esc(norm(p.title)), esc(clan),
+                   esc(family_of(p.title)), state,
+                   " ".join("s%d" % n for n in seen),
+                   esc(p.title), esc(clan),
                    esc("playable" if p.title in PLAYABLE else note)))
         bits.append("</div>")
+        bits.append("</section>")
+    bits.append('<p class="roster-empty" hidden>Nobody in the record matches that.</p>'
+                if filters else "")
     bits.append("</div></div>")
+    if filters:
+        bits.append('<script src="%s"></script>' % rel(url, "assets/roster.js"))
     return shell(url, "%s — The Fragile Peace" % title, sub, active, "\n".join(bits))
+
+
+def roster_filters(people, ledger):
+    """The filter bar. Every option is drawn from who is actually on the page."""
+    clans = sorted({p.clan or A.clan_of(p.title) for p in people} - {"", None})
+    fams = sorted({family_of(p.title) for p in people} - {""})
+    sess = sorted({n for p in people for n in ledger.state.get(p, {})})
+
+    def sel(key, label, opts):
+        o = "".join('<option value="%s">%s</option>' % (esc(str(v)), esc(str(t)))
+                    for v, t in opts)
+        return ('<label class="rf-f"><span>%s</span>'
+                '<select data-filter="%s"><option value="">Any</option>%s</select>'
+                '</label>' % (esc(label), key, o))
+
+    return (
+        '<div class="rfilter" data-roster-filters>'
+        '<label class="rf-f rf-q"><span>Search</span>'
+        '<input type="search" data-filter="q" placeholder="name&hellip;" '
+        'autocomplete="off"></label>'
+        + sel("clan", "Clan", [(c, c) for c in clans])
+        + sel("family", "Family", [(f, f) for f in fams])
+        + sel("sessions", "Session", [("s%d" % n, "Session %d" % n) for n in sess])
+        + sel("state", "Standing", [("met", "Met"), ("remembered", "By memory"),
+                                    ("pending", "Not transcribed"),
+                                    ("unmet", "Not met")])
+        + '<button type="button" class="rf-clear" data-roster-clear>Clear</button>'
+        '<p class="rf-count" data-roster-count></p>'
+        '</div>')
 
 
 def list_index(pages, url, active, title, eyebrow, sub, intro):
@@ -833,7 +892,8 @@ def main():
         "there for; the rest is masked, and there is nothing behind the mask.",
         [("Known to her", "She has dealt with these, or a companion brought word back. Knowing of someone is enough to be listed here \u2014 it does not mean she has met them.", met),
          ("Named only", "The record carries them, but nothing has reached her. Their pages are "
-                        "mask and outline until a session brings them within her hearing.", unmet)])); n += 1
+                        "mask and outline until a session brings them within her hearing.", unmet)],
+        filters=True)); n += 1
 
     locs = [p for p in pages if p.cat == "location"]
     facs = [p for p in pages if p.cat == "faction"]
