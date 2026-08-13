@@ -237,10 +237,9 @@ GEAR = [
 # Morozane's lion is an Adversary-type actor, not a character, and the owner
 # supplied it as screenshots rather than an export. Transcribed here and marked
 # as such — replace with a real export when one exists. The Foundry actor spells
-# it "Shigo no Chinmoku"; the site spells it Shiguro Chinmoku, per
-# archivist.CORRECTIONS, so that one name is used everywhere.
+# it "Shigo no Chinmoku", and so does the site (owner 2026-08-13).
 COMPANION = {
-    "name": "Shiguro Chinmoku",
+    "name": "Shigo no Chinmoku",
     "kind": "Lion · Animal Bond companion",
     "note": "Transcribed from the owner's Foundry screenshots (2026-08-12), not "
             "from an export. Verify before leaning on the numbers.",

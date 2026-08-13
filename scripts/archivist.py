@@ -71,9 +71,12 @@ class Page(object):
 # and are handled by ALIASES instead. scripts/verify_site.py fails the build if
 # any of these reappears in the generated site.
 CORRECTIONS = [
-    # Owner 2026-08-12: Shishoro is not a family name; Aishi is a Shoshuro.
-    (r"\bShishoro\b", "Shoshuro"),
-    (r"\bShosuro Aishi\b", "Shoshuro Aishi"),
+    # Owner 2026-08-12, corrected 2026-08-13: the family is Shosuro. "Shishoro"
+    # is not a family name, and the owner's first call of "Shoshuro" was withdrawn
+    # once the L5R5e corpus was checked — it uses Shosuro throughout and Shoshuro
+    # never. This normalises every Scorpion of that family to one spelling.
+    (r"\bShishoro\b", "Shosuro"),
+    (r"\bShoshuro\b", "Shosuro"),
     # Owner 2026-08-12: the governor is Tetsuya. The export invents "Tetsuna".
     (r"\bMiya Tetsuna\b", "Miya Tetsuya"),
     # Owner 2026-08-12: Yui is the spelling.
@@ -81,14 +84,28 @@ CORRECTIONS = [
     (r"\bYue\b", "Yui"),
     # Owner 2026-08-12: Ryo and Ryu are one retainer, spelled Ryu.
     (r"\bRyo\b", "Ryu"),
-    # Morozane's lion, spelled three ways across the sources.
-    (r"\bShigo no (?:Tomoku|Chinmoku)\b", "Shiguro Chinmoku"),
+    # Morozane's lion, spelled three ways across the sources. Owner 2026-08-13:
+    # the lion is Shigo no Chinmoku, which is also what his Foundry actor says.
+    (r"\bShigo no Tomoku\b", "Shigo no Chinmoku"),
+    (r"\bShiguro Chinmoku\b", "Shigo no Chinmoku"),
     # The 2026-04 session summaries against the export and the earlier record.
     (r"\bMiya Masato\b", "Miya Misato"),
     (r"\bDoji Shin\b", "Daidoji Shin"),
     (r"\bMoto Gaharis\b", "Moto Gaheris"),
     (r"\bMatsu Matsumaro\b", "Matsu Maro"),
+    (r"\bMatsumaro\b", "Matsu Maro"),     # must follow the line above
     (r"\bAtoya\b", "Otoya"),
+    # The 2026-04-27 notes. Owner 2026-08-13: "Cosmi" is Kakita Kazumi (Crane
+    # courtier, and the one with medicine in the record), and "Komo Tadayoshi"
+    # is Ikoma Tadayoshi, spoken for by another player in his absence.
+    (r"\bCosmi\b", "Kakita Kazumi"),
+    (r"\bKomo Tadayoshi\b", "Ikoma Tadayoshi"),
+    (r"\bMia Misato\b", "Miya Misato"),
+    (r"\bLordy Ikoma\b", "Lord Ikoma"),
+    # Both are Great Clan Champions whose names the 2026-04-13 notes garbled. The
+    # L5R5e corpus has Altansarnai and Toturi; it has neither of the other forms.
+    (r"\bShinjo Alten?sari\b", "Shinjo Altansarnai"),
+    (r"\bKodo Totori\b", "Akodo Toturi"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
 
@@ -103,13 +120,12 @@ def _read(p):
     return correct(io.open(p, encoding="utf-8").read())
 
 
-# The export's filenames are not always the correct name. Owner's ruling
-# 2026-08-12: "Shishoro" is not a Scorpion family; the family is Shoshuro.
-# Left-hand side is the export's filename stem, right-hand side is what the
-# site should call the person.
+# The export's filenames are not always the correct name. Left-hand side is the
+# export's filename stem, right-hand side is what the site should call the
+# person. A rename here relabels the *title* only, and merges two export files
+# onto one page — use CORRECTIONS above to fix a spelling in the prose.
 RENAMES = {
-    "Shishoro Aishi": "Shoshuro Aishi",
-    "Shosuro Aishi": "Shoshuro Aishi",
+    "Shishoro Aishi": "Shosuro Aishi",
     # The export files the governor three ways — with and without the title,
     # and as "Miya Tetsuna" in session 29, where it calls them the governor
     # outright. Owner confirmed Tetsuya is the governor.
@@ -123,8 +139,8 @@ RENAMES = {
     "Higuchi": "Tonbo Higuchi",
     # Morozane's lion has an export file under each of its spellings. Merged by
     # title rather than by alias, so there is one page and not two.
-    "Shigo no Tomoku": "Shiguro Chinmoku",
-    "Shigo no Chinmoku": "Shiguro Chinmoku",
+    "Shigo no Tomoku": "Shigo no Chinmoku",
+    "Shiguro Chinmoku": "Shigo no Chinmoku",
 }
 
 
@@ -140,8 +156,10 @@ def discover():
         for fn in sorted(os.listdir(d)):
             if not fn.endswith(".md"):
                 continue
-            title = fn[:-3]
-            pages.append(Page(cat, RENAMES.get(title, title),
+            # correct() the title too, so a spelling fix does not need its own
+            # RENAMES entry as well — RENAMES is for retitling and merging.
+            title = correct(RENAMES.get(fn[:-3], fn[:-3]))
+            pages.append(Page(cat, title,
                               _read(os.path.join(d, fn)),
                               os.path.join(d, fn)))
 
@@ -186,7 +204,7 @@ def discover_local():
             if ":" in line:
                 k, _, v = line.partition(":")
                 meta[k.strip().lower()] = v.strip()
-        pg = Page(meta.get("cat", "npc"), fn[:-3], body.strip(),
+        pg = Page(meta.get("cat", "npc"), correct(fn[:-3]), body.strip(),
                   os.path.join(d, fn))
         pg.clan = meta.get("clan", "")
         pages.append(pg)
@@ -304,9 +322,8 @@ ALIASES = {
     "Governor Miya Amaya": "Governor Miya Tetsuya",
     "Miya Amaya": "Governor Miya Tetsuya",
     "Miya Tetsuya": "Governor Miya Tetsuya",
-    "Shishoro Aishi": "Shoshuro Aishi",
-    "Shosuro Aishi": "Shoshuro Aishi",
-    "Aishi": "Shoshuro Aishi",
+    "Shishoro Aishi": "Shosuro Aishi",
+    "Aishi": "Shosuro Aishi",
     "the Lady of Decay": "Lady of Decay",
     "Ryo": "Ryu",
     # The trader has no page of his own; the export files his premises.
@@ -318,8 +335,8 @@ ALIASES = {
     # "Shiguro Chinmoku" and "Shigo no Tomoku" as separate NPC files, and his
     # Foundry actor calls it "Shigo no Chinmoku". Merged onto the first, which
     # is the page that exists. Worth renaming once the owner picks one.
-    "Shigo no Tomoku": "Shiguro Chinmoku",
-    "Shigo no Chinmoku": "Shiguro Chinmoku",
+    "Shigo no Tomoku": "Shigo no Chinmoku",
+    "Shiguro Chinmoku": "Shigo no Chinmoku",
     "Diamond Mines": "Old Diamond Mines",
     # Owner's ruling 2026-08-12: Yui is the correct spelling; the export's
     # "Kitsu Yue" (94 instances) is the same person. Pinned rather than left

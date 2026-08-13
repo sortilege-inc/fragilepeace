@@ -52,7 +52,7 @@ CURRENT_PARTY = ["Doji Setsuna", "Bayushi Monban", "Shiba Midori", "Kakita Kazum
 # Sessions 10-17 are a flashback three centuries back, played with different
 # characters. Setsuna lived that arc as the memories of her ancestor Morozane.
 # 17 belongs to it despite the export naming "Doji Setsuna" in it: the rider it
-# calls Setsuna is mounted on Shiguro Chinmoku, which is Morozane's lion, and no
+# calls Setsuna is mounted on Shigo no Chinmoku, which is Morozane's lion, and no
 # present-day companion appears anywhere in the session.
 FLASHBACK_PARTY = ["Matsu Morozane", "Kitsu Somalia", "Matsumura Zane"]
 FLASHBACK_SESSIONS = set(range(10, 18))
