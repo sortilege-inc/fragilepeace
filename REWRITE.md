@@ -76,17 +76,61 @@ Recorded as they are made, per the working agreement.
   where scanning is the point.
 - **2026-08-13 (owner) — s07 "twice her business" was "twice her size."** Restored as a physical
   mismatch; the phrase is no longer an open question.
+- **2026-08-13 — provenance moved out of the entity prose.** Every `sources/entities` page ended
+  with some form of "Not in the Archivist export." — the site announcing its own machinery inside
+  gazetteer prose, 36 times. `Page.local` is now set by `discover_local`, and the builder renders
+  one meta line for any page carrying it. Recorded in `factguard.ACCEPT_ALL`.
 
-## Order of work
+## Bugs found while running the gates
 
-1. ~~factguard + s07 pilot~~ — done, awaiting voice sign-off
-2. Sessions 1–17 — the road east and the Snow Plain flashback
-3. Sessions 18–39 — the courts
-4. Sessions 40–52 and the two interludes — the peace
-5. The 36 entity files
-6. `index.html` and the `build_site.py` blurbs
-7. `notes/index.html` audit
-8. Full gate, commit, push
+Four, each of which was either hiding signal or already wrong on the live site.
+
+- **`factguard` discounted sentence-initial names.** The opener heuristic assumed a name recurs
+  mid-sentence somewhere; names appearing exactly once, at a sentence start, read as losses. It now
+  discounts a sentence-initial capital only when the same word also appears in lower case in that
+  file. The tighter rule surfaced 10 previously-masked losses — all of them the imperatives removed
+  under the owner's `## Setsuna` call, each recorded in `ACCEPT` with the sentence it opened.
+- **`factguard` split sentences on newlines.** The source is hard-wrapped mid-sentence, so any name
+  landing at the start of a wrapped line was discounted. It flagged a false `Scorpion` loss in i47
+  and would equally have masked a true one.
+- **`voicecheck`'s italic pattern stopped at newlines,** so multi-line quoted speech read as
+  unquoted and every *you* inside it flagged as address.
+- **The chronicle index printed a broken date** — `"52 sessions, 2025-03 2025 to 2026-08 2026"`,
+  a literal year appended to an already-formatted `YYYY-MM`. Fixed with `month_year()`. The same
+  line promised a machine summary for "the rest" when the rest is zero; that clause is now
+  conditional.
+
+## Stale facts corrected on the home page
+
+Overtaken by play, not by voice.
+
+| Was | Now |
+|---|---|
+| "39 sessions, March 2025 to February 2026" | 52 and two interludes, to August 2026 |
+| "Monban, Midori and Kazumi … and the six who walked part of it" | Tadayoshi is at the table; two off stage, three carried by memory |
+| "Miya Misato **is** charged with brokering a peace" | she died of her wounds in s47; Setsuna carries it |
+| "for her husband's freedom" | Harunobu was released in s48 |
+
+## Order of work — complete
+
+1. ~~factguard + s07 pilot~~ — `6494663`
+2. ~~Sessions 1–17~~ — the road east and the Snow Plain flashback, `6494663`
+3. ~~Sessions 18–39~~ — the courts, `25fae71`
+4. ~~Sessions 40–52 and the two interludes~~ — the peace, `3a5b557`
+5. ~~The 36 entity files~~ — `a61132c`
+6. ~~`index.html` and the `build_site.py` blurbs~~ — `bab5382`
+7. ~~`notes/index.html` audit~~
+8. ~~Full gate~~
+
+Final state: **91 files, 953 insertions, 951 deletions.** Bold went from 445 spans
+to 50 — 190 of them were in `## Narrative`, and the six that remain are all `!note`
+warning labels.
+
+    factguard  : 89 changed vs 8133e1f, 89 clean, 0 losses, 0 thinned
+    voicecheck : 85 flags, 0 hard
+    verify     : links 23977/0 broken, masks 791/0, names 0,
+                 rewrites 54/0 unresolved, span 52 sessions — PASS
+    leak       : no table vocabulary in any rendered narrative
 
 ## Corrections made on the evidence of the record itself
 
