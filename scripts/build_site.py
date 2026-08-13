@@ -468,6 +468,15 @@ def entity_body(p, reg, ledger, sessions_by_no):
         bits.append(paras(p.raw, url, reg))
         bits.append("</article>")
 
+    # Provenance, said once by the site rather than thirty-six times inside the
+    # entries themselves. The export is a snapshot; anything played after it was
+    # taken has no export entry to draw on, and a reader is entitled to know
+    # which pages those are without the prose breaking voice to tell them.
+    if getattr(p, "local", False):
+        bits.append('<p class="meta" style="margin-top:1.2rem">The Archivist export was '
+                    'taken before this entry existed. What the page holds is drawn from '
+                    'the sessions themselves.</p>')
+
     bits.append("</div></div>")
     return "\n".join(bits)
 

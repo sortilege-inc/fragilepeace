@@ -48,9 +48,60 @@ import os, re, io, sys, subprocess, unicodedata, collections
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Tokens accepted everywhere, for a reason that is the same in every file. Use
+# this only when the loss is one editorial decision applied across a whole
+# surface; anything file-specific belongs in ACCEPT below, where it can be read
+# against the file it applies to.
+ACCEPT_ALL = {
+    "archivist": "2026-08-13: every sources/entities page ended with some form "
+                 "of 'Not in the Archivist export.' — the site announcing its "
+                 "own machinery inside gazetteer prose, 36 times over. The "
+                 "provenance is real and worth keeping, so it moved out of the "
+                 "entries and into one meta line the builder renders for any "
+                 "page flagged Page.local. No information lost; one voice "
+                 "violation removed.",
+}
+
 # Losses that were looked at and accepted, keyed by file basename. Each entry is
 # (token, reason). Nothing goes in here without a reason a reader can check.
 ACCEPT = {
+    # The owner's 2026-08-13 call on the ## Setsuna register: keep every
+    # conclusion, drop the imperatives. Each of these is the capitalised opening
+    # verb of an instruction to the reader, and each lost its capital rather
+    # than its content — "Ask before the delegations sit down" became "the
+    # asking should happen before the delegations sit down", and so on.
+    "s02-loyalty-castle.md": [
+        ("assume", "opened 'Assume from here that she is not on any list…'"),
+    ],
+    "s08-whispers-of-the-ancestors.md": [
+        ("note", "opened 'Note the technique.'"),
+        ("whether", "opened 'Whether it also told Kitsu Takeko where the "
+                    "pressure goes is a question worth holding.'"),
+    ],
+    "s13-winters-wrath.md": [
+        ("hold", "opened 'Hold that against Shoshuro Amane at the parley.'"),
+    ],
+    "s19-negotiations-and-hidden-truths.md": [
+        ("watch", "opened 'Watch for them trying to hold the offer without "
+                  "paying for it.'"),
+    ],
+    "s25-court-of-competing-claims.md": [
+        ("read", "opened 'Read it either way and it is worth knowing which'"),
+    ],
+    "s26-court-of-ancestral-shadows.md": [
+        ("note", "opened 'Note that this is the second time this week…'"),
+    ],
+    "s43-the-midnight-treaty.md": [
+        ("deploy", "opened 'Deploy it last, when it will land, not first.'"),
+    ],
+    "s48-the-stone-in-the-shoe.md": [
+        ("ask", "opened 'Ask before the delegations sit down, not after.'"),
+    ],
+    "s51-matters-of-fact.md": [
+        ("west", "was the bold section label '**West.**'. The scene keeps its "
+                 "place and its opening now reads 'Far to the west, …', so the "
+                 "word survives in lower case."),
+    ],
     "s04-the-duel.md": [
         ("empire", "Only occurrence was the narrator's aside on Monban's trade of "
                    "honour for contempt — 'which is the sort of trade the Empire "
@@ -139,7 +190,11 @@ def f_names(t):
     # at the start of a line gets discounted as a sentence opener and reads as a
     # loss. Blank lines stay: those are real paragraph breaks.
     t = re.sub(r"(?<!\n)\n(?!\s*\n)", " ", t)
-    # Split into sentences so the opener of each can be discounted.
+    # Ordinary words that this text also uses in lower case. A capital at the
+    # start of a sentence is only evidence of a name if the word is never seen
+    # uncapitalised — otherwise it is just a sentence beginning.
+    lower = {w for w in re.findall(r"\b[a-zà-ɏ'’-]+\b", t)}
+
     got = collections.Counter()
     for sent in re.split(r"(?<=[.!?;:])\s+|\n+", t):
         toks = re.findall(r"[A-Z][A-Za-zÀ-ɏ'’-]+", sent)
@@ -149,9 +204,10 @@ def f_names(t):
         for i, w in enumerate(toks):
             if w in OPENERS:
                 continue
-            if i == 0 and first and first.group(1) == w and w not in got:
-                # Sentence-initial and not yet seen mid-sentence: hold it, it
-                # will be counted if it appears anywhere else.
+            if (i == 0 and first and first.group(1) == w
+                    and w.lower() in lower):
+                # Sentence-initial, and the same word appears in lower case
+                # elsewhere, so the capital is punctuation rather than a name.
                 continue
             if norm(w) in STOP:
                 continue
@@ -213,6 +269,7 @@ def compare(ref, relpath):
         return "unchanged", [], []
     losses, thin = [], []
     accepted = {a for a, _ in ACCEPT.get(os.path.basename(relpath), [])}
+    accepted |= set(ACCEPT_ALL)
     for chan, fn in CHANNELS:
         o, n = fn(old), fn(new)
         for tok, cnt in sorted(o.items()):

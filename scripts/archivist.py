@@ -55,6 +55,10 @@ class Page(object):
         self.url = None           # root-relative, set by the builder
         self.aliases = set()
         self.clan = ""            # override; otherwise read off the family name
+        self.local = False        # hand-authored under sources/entities/, not
+                                  # drawn from the export; the builder says so
+                                  # in a meta line rather than making every
+                                  # entry announce it in its own prose
 
     def __repr__(self):
         return "<Page %s %r>" % (self.cat, self.title)
@@ -221,6 +225,7 @@ def discover_local():
         pg = Page(meta.get("cat", "npc"), correct(fn[:-3]), body.strip(),
                   os.path.join(d, fn))
         pg.clan = meta.get("clan", "")
+        pg.local = True
         pages.append(pg)
     return pages
 
