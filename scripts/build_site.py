@@ -105,6 +105,18 @@ def shell(url, title, desc, active, body, extra=""):
            nav=navbar(active, depth), body=body, foot=FOOT)
 
 
+MONTHS = ("January February March April May June July August September October "
+          "November December").split()
+
+
+def month_year(iso):
+    """'2025-03-11' -> 'March 2025'. The chronicle index used to print the ISO
+    year-month with a literal year appended after it — '2025-03 2025 to
+    2026-08 2026'."""
+    y, m = iso[:4], int(iso[5:7])
+    return "%s %s" % (MONTHS[m - 1], y)
+
+
 def write(url, content):
     path = os.path.join(ROOT, url)
     d = os.path.dirname(path)
@@ -634,11 +646,14 @@ def chronicle_index(entries, rewrites):
 <div class="flourish"></div>
 <div class="col">
 <p class="epigraph">A peace is a document before it is a fact. Every clause in it is a place where it can fail.</p>
-<p class="meta">%d sessions, %s 2025 to %s 2026. %d rewritten; the rest carry the Archivist's
-machine summary until they are.</p>
+<p class="meta">%d sessions, %s to %s.%s</p>
 <div class="chron">%s</div>
 </div>
-</div>""" % (len(sessions), sessions[0].date[:7], sessions[-1].date[:7], done, "\n".join(rows))
+</div>""" % (len(sessions), month_year(sessions[0].date), month_year(sessions[-1].date),
+             ("" if done >= len(sessions) else
+              " %d rewritten; the rest carry the Archivist's machine summary "
+              "until they are." % done),
+             "\n".join(rows))
     return shell(url, "Chronicle — The Fragile Peace",
                  "The record of play, session by session.", "chronicle", body)
 
