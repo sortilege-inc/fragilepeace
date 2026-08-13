@@ -205,31 +205,33 @@ and the tending of the kami — is folded into the local page, and the export fi
 
 Also untracked `scripts/__pycache__`, which was committed and kept colliding on checkout.
 
-## Superseded — the original survey
+Held as genuinely distinct, and deliberately not merged: Phoenix Clan/Phoenix Lands, Scorpion
+Clan/Scorpion Lands, Unicorn Clan/Unicorn Lands, Centipede Clan/Centipede Lands, Daidoji
+Family/Doji Family, Dragon Clan/Dragonfly Clan, Akodo Osakuan/Akodo Sakura, Matsu Tsuki/Matsu
+Tsuko, Shosuro Akio/Shosuro Imako, Koji/Kojin. A clan and its lands are two entries on purpose.
 
-Not part of the voice rewrite and not touched by it. A sweep for near-identical page titles across
-the 457 generated entity pages turned up one entity built as two pages, each holding half its
-record. Each needs a `CORRECTIONS` entry and a `RENAMES` merge; several need the owner to say which
-spelling is right.
+## Cleaning up after the corrections
 
-| Built as | And as | Note |
-|---|---|---|
-| `dramatis-personae/kaeru-haia` | `kaeru-haya` | Same rōnin watch commander. Spelling unsettled — see above. |
-| `dramatis-personae/ikoma-aku-yaku` | `ikoma-akuyaku` | Spacing only. |
-| `dramatis-personae/asahina-nao` | `asahina-nao-2` | The `-2` is the builder disambiguating a title collision. |
-| `dramatis-personae/the-emperor` | `the-emperor-2` | Same. |
-| `atlas/slow-tide-harbor` | `slowtide-harbor` | Spacing only. |
-| `lore/relics/shinjo-kamu-letters` | `shinjukamu-letters` | Spacing only. |
-| `atlas/dran-merchant-river` | `drowned-merchant-river` | "Dran" is a truncation. |
-| `atlas/governors-manor` | `governors-mansion` | |
-| `lore/factions/asawa-family` | `isawa-family` | "Asawa" is not a family. |
-| `atlas/war-college` | `atlas/akodo-war-college` | Short form and full, plus a third copy under `lore/factions`. |
-| `atlas/akodo-war-college` | `lore/factions/akodo-war-college` | Same institution filed as both place and faction. |
-| `atlas/diamond-mines` | `lore/relics/diamond-mines` | Same. |
-| `dramatis-personae/ifrit` | `lore/relics/the-ifrit` | The spirit and its vessel, or one thing filed twice. |
-| `dramatis-personae/shinjuku-kamu` | `lore/factions/shinjuku-kamu` | And "Shinjuku Kamu" is itself a garbling of **Shinjo Kamo** — the Unicorn general at the Snow Plain. The Shinjukamu Letters are his. |
+A rewrite this size leaves rules behind. Swept 2026-08-13, after everything above had landed.
 
-Deliberately excluded as genuinely distinct: Phoenix Clan/Phoenix Lands, Scorpion Clan/Scorpion
-Lands, Unicorn Clan/Unicorn Lands, Centipede Clan/Centipede Lands, Daidoji Family/Doji Family,
-Dragon Clan/Dragonfly Clan, Akodo Osakuan/Akodo Sakura, Matsu Tsuki/Matsu Tsuko, Shosuro
-Akio/Shosuro Imako, Koji/Kojin.
+**Removed — 16 dead `ALIASES`.** `correct()` runs over the text before any wikilink is resolved, so
+an alias whose *key* is itself a misspelling can never be looked up: by the time the registry sees
+`[[Shinjo Kamu]]` it already says `[[Shinjo Kamo]]`. Fourteen were pure dead weight. Two were worse
+than dead — `General Shinjo Kamu` corrected to `General Shinjo Kamo` and `Yue` to `Yui`, neither of
+which resolved to anything, so both were live broken links wearing an alias's clothes. Re-pointed at
+the forms that actually reach the registry. The builder's fuzzy-alias count fell from 9 to 8: one
+link it had been guessing at is now pinned.
+
+**Removed — 1 dead `RENAMES`.** `Higuchi` had no export file behind it; the `ALIASES` entry of the
+same name does the real work.
+
+**Kept, deliberately — 11 `CORRECTIONS` that match nothing.** These look like the obvious thing to
+prune and are the opposite. `verify_site.py`'s `names` check iterates `CORRECTIONS` to fail the
+build if a superseded spelling reappears, so a rule that fires zero times is the gate holding, not
+dead weight. Once a misspelling is fixed at source its pattern matches nothing *by definition*.
+There is now a comment above the list saying so.
+
+**Checked and clean:** no orphaned HTML (505 files on disk, 498 written by the builder, and the
+seven-file difference is the hand-authored set — `index.html`, the dossier, the notes, the map, the
+two play sheets); every `factguard.ACCEPT` entry still corresponds to a real loss; no dead `RECAT`
+or `SUPERSEDED_BY_LOCAL` keys.

@@ -74,6 +74,13 @@ class Page(object):
 # ("Lion" for Lion Clan, "Higuchi", the pen name "Hana no Ame") stay as written
 # and are handled by ALIASES instead. scripts/verify_site.py fails the build if
 # any of these reappears in the generated site.
+#
+# Do not prune the entries that no longer match anything. Once a misspelling has
+# been corrected at the source, its pattern matches nothing by definition — and
+# it is precisely that pattern which verify_site's `names` check iterates to
+# keep the spelling from coming back in the next session's notes. A rule here
+# that fires zero times is the gate working, not dead weight. As of 2026-08-13
+# eleven of them are in that state.
 CORRECTIONS = [
     # Owner 2026-08-12, corrected 2026-08-13: the family is Shosuro. "Shishoro"
     # is not a family name, and the owner's first call of "Shoshuro" was withdrawn
@@ -176,7 +183,6 @@ RENAMES = {
     # Owner's ruling 2026-08-12: Hana no Ame is Tonbo Higuchi's pen name.
     # One person, filed by the export under both.
     "Hana no Ame": "Tonbo Higuchi",
-    "Higuchi": "Tonbo Higuchi",
     # Morozane's lion has an export file under each of its spellings. Merged by
     # title rather than by alias, so there is one page and not two.
     "Shigo no Tomoku": "Shigo no Chinmoku",
@@ -397,7 +403,6 @@ ALIASES = {
     "Crane Guest Rooms": "Crane Couple’s Guest Quarters",
     "Crane Couple's Quarters": "Crane Couple’s Guest Quarters",
     "Monban's Room": "Bayushi Monban’s Room",
-    "Slow Tide Harbor": "Slowtide Harbor",
     "Swift Sword Castle": "Castle of the Swift Sword",
     "Governor’s Manor": "Governor’s Mansion",
     "Governor’s residence": "Governor’s Mansion",
@@ -409,10 +414,8 @@ ALIASES = {
     "Virtuous Contemplation": "Garden Of Virtuous Contemplation",
     "The Ifrit": "Ifrit",
     "Efreet": "Ifrit",
-    "General Shinjo Kamu": "Shinjo Kamo",
-    "Shinjo Kamu": "Shinjo Kamo",
+    "General Shinjo Kamo": "Shinjo Kamo",
     "General Matsu Sakura": "Matsu Sakura",
-    "Doji Shin": "Daidoji Shin",
     "Katsuki Kage": "Kitsuki Kaage",
     "Katsuki": "Kitsuki Kaage",
     "Katsuki Wataru": "Kitsuki Wataru",
@@ -424,12 +427,9 @@ ALIASES = {
     "Governor Miya Amaya": "Governor Miya Tetsuya",
     "Miya Amaya": "Governor Miya Tetsuya",
     "Miya Tetsuya": "Governor Miya Tetsuya",
-    "Shishoro Aishi": "Shosuro Aishi",
     "Aishi": "Shosuro Aishi",
     "the Lady of Decay": "Lady of Decay",
-    "Ryo": "Ryu",
     "Daimyo Shosuro": "Shosuro Hametsu",
-    "Daimyo Shoshuro": "Shosuro Hametsu",
     # The trader has no page of his own; the export files his premises.
     "Hideyoshi Aki": "Hideyoshi Aki’s Counting House And Warehouse",
     "Hana no Ame": "Tonbo Higuchi",
@@ -439,33 +439,24 @@ ALIASES = {
     # "Shiguro Chinmoku" and "Shigo no Tomoku" as separate NPC files, and his
     # Foundry actor calls it "Shigo no Chinmoku". Merged onto the first, which
     # is the page that exists. Worth renaming once the owner picks one.
-    "Shigo no Tomoku": "Shigo no Chinmoku",
-    "Shiguro Chinmoku": "Shigo no Chinmoku",
     "Diamond Mines": "Old Diamond Mines",
     # Owner's ruling 2026-08-12: Yui is the correct spelling; the export's
     # "Kitsu Yue" (94 instances) is the same person. Pinned rather than left
     # to the fuzzy pass, so the merge is a decision and not a guess.
-    "Kitsu Yue": "Kitsu Yui",
-    "Kitsuyue": "Kitsu Yui",
-    "Yue": "Kitsu Yui",
+    "Yui": "Kitsu Yui",
     # Session 41's notes spell the governor's niece "Miya Masato". The export has
     # a Miya Misato (16, the niece, carries the writ) and a separate Doji Masato
     # (Crane, married to Doji Miho) — the woman in the tower says "tell your
     # uncle", so it is Misato. Pinned so the two never collapse into each other.
-    "Miya Masato": "Miya Misato",
     # Same session shortens Daidoji Shin. The export runs 81 "Daidoji Shin" to
     # 4 "Doji Shin", and has no Doji Shin page.
-    "Doji Shin": "Daidoji Shin",
     # The 2026-04-06 summary and the 2026-04-13 record disagree on two new names.
     # The later document is the more careful one — it carries a participants
     # table, the GM's name and transcript timestamps, and it independently gets
     # Miya Misato and Ikoma Tadayoshi right where the earlier one does not — so
     # its spellings win and the earlier ones are kept as aliases.
-    "Moto Gaharis": "Moto Gaheris",
-    "Matsu Matsumaro": "Matsu Maro",
     # Setsuna's scribe, on the road with her since session 1. The 2026-04-13
     # record spells him "Atoya"; session 1 and the export both say Otoya.
-    "Atoya": "Otoya",
 }
 
 # Names that look like entities but are common nouns or one-off props; never link.
