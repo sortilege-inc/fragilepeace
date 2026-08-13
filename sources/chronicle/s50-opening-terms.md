@@ -56,7 +56,7 @@ standing of their own delegations**. Behind and slightly above each of them, at 
 deliberate remove, the people who actually decide: [[Akodo Kage]] for the
 [[Lion Clan|Lion]], and for the [[Unicorn Clan|Unicorn]] a young
 [[Shinjo Family|Shinjo]] who looks more than a little like [[Shinjo Altansarnai]].
-[[Ikoma Ujiyasu]] and a [[Matsu Family|Matsu]] filled out the Lion side;
+[[Ikoma Ujiaki]] and a [[Matsu Family|Matsu]] filled out the Lion side;
 [[Ide Subane]] and a [[Moto Family|Moto]] the Unicorn. And [[Kakita Kazumi]] sat behind
 [[Doji Setsuna]] as her yojimbo, because the man who holds that office is somewhere in the
 western desert.
@@ -104,7 +104,7 @@ Empire have ever seen her do.
 Nobody on the [[Lion Clan|Lion]] side was surprised by any of it. They have known all
 along. But as the wrong was set out item by item, **[[Akodo Akihito]] twitched.**
 
-[[Ikoma Ujiyasu]] objected, and objected well. The [[Lion Clan|Lion]] took military
+[[Ikoma Ujiaki]] objected, and objected well. The [[Lion Clan|Lion]] took military
 objectives only; no lasting harm was done to roads, fields or villages; the fortresses
 they hold are in good repair and the only works they razed were ones they chose not to
 keep. And then the real move: **it is improper for one delegate to represent two clans**,
@@ -158,7 +158,7 @@ The lady's court is upriver, at the spring where the water starts.
 
 - Akodo Akihito: Speaks for the Lion, and is the lowest in standing of his own delegation, with Kage seated above and behind him. Refused the request to free Miharu in immaculately polite calligraphy of his own hand. Presented half an hour of Lion demands and meant them to be seen as reasonable — he is not trying to slip anything past the bench. His giri is to serve Toturi however told, but what he believes he is for is field command. He twitched when Ikari's treatment was enumerated.
 - Akodo Kage: Seated above and behind Akihito, at the remove of someone who decides rather than argues. Gave the history of the Snow Plains with the line about correcting the errors in a mutual history, and took the Unicorn's deliberately tedious answer with good grace, knowing exactly what it was.
-- Ikoma Ujiyasu: Objected that the Lion took military objectives only and left roads, fields and villages intact, and that the fortresses they hold are in good repair. Then moved to sever the Phoenix question to another venue on the grounds that one delegate may not represent two clans.
+- Ikoma Ujiaki: Objected that the Lion took military objectives only and left roads, fields and villages intact, and that the fortresses they hold are in good repair. Then moved to sever the Phoenix question to another venue on the grounds that one delegate may not represent two clans.
 - Ide Subane: On the Unicorn delegation, assisting Midori, and quick to pass her a note when the hostages and the horses went unmentioned.
 - Matsu Yunko: Offered by the Lion as their token peace hostage — Akihito's own former yojimbo.
 - Shinjo Miharu: Still held. The request to free her for the delegation was refused, courteously, and her disposition folded into the negotiation itself.
@@ -186,7 +186,7 @@ rather than judgement, and **the story she has planted about herself is the exac
 somebody would tell to discredit her.** She has pre-loaded her own smear.
 
 **The ruling on the [[Phoenix Clan|Phoenix]] was the right one and she should hold the
-line she drew.** Facts in, standing reserved. [[Ikoma Ujiyasu]] tried to move the whole
+line she drew.** Facts in, standing reserved. [[Ikoma Ujiaki]] tried to move the whole
 [[Asako Ikari]] question out of the room, and if he had succeeded the case would have gone
 back to being two clans arguing about a border. Instead the wrong is admissible and the
 advocacy is undecided, which keeps the pressure on the [[Lion Clan|Lion]] without letting

@@ -111,6 +111,11 @@ CORRECTIONS = [
     (r"\bLord Ikoma\b", "Ikoma Anakazu"),
     (r"\bShiro Hametsu\b", "Shosuro Hametsu"),
     (r"\bIde Subame\b", "Ide Subane"),
+    # Owner 2026-08-13: the GM mispronounces him across several sessions; the
+    # Lion strong-arm negotiator is Ikoma Ujiaki.
+    # Scoped to the Ikoma: Setsuna's sheet quotes L5R fiction containing an
+    # unrelated Ide Ujiyasu, and a bare rule would have corrupted it.
+    (r"\bIkoma Ujiyasu\b", "Ikoma Ujiaki"),
     (r"\bKodo Totori\b", "Akodo Toturi"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]

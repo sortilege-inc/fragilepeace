@@ -25,7 +25,7 @@ seriously and will send somebody competent rather than fearsome, so the
 [[Shiba Midori]] backed it beautifully. The officers were baffled, which was the point,
 and [[Akodo Kage]] granted that the magistrates *add an interesting complication*: the
 process levels the ground in a way that makes overkill worthless. They had been reaching
-for [[Ikoma Ujiyasu]], who is exactly the strong arm she did not want across the table —
+for [[Ikoma Ujiaki]], who is exactly the strong arm she did not want across the table —
 and, to her private relief, not [[Ikoma Anakazu]], whom she wants kept for other purposes.
 
 [[Akodo Osakuan]] — [[Akodo Toturi]]'s right hand, and [[Akodo Akihito]]'s father —
@@ -120,7 +120,7 @@ Champion said, to treat privately with a magistrate before an overseen negotiati
 said the substance in public instead.
 
 Back at the Lion camp they announced [[Shiba Midori]]. Three Akodo were genuinely
-surprised; [[Matsu Tsuko]] smirked; [[Ikoma Ujiyasu]] gave away nothing at all. And
+surprised; [[Matsu Tsuko]] smirked; [[Ikoma Ujiaki]] gave away nothing at all. And
 [[Akodo Kage]] immediately turned the precedent around — if the [[Unicorn Clan|Unicorn]]
 may seat a magistrate of appropriate standing, the [[Lion Clan|Lion]] should reconsider
 whom they field rather than lean on the Crane on the bench. Which boxes the council
@@ -166,7 +166,7 @@ into the desert with water and nothing else.
 - Akodo Arasou: The previous Lion Champion and Akodo Toturi's elder brother. He arranged the betrothal and ordered the divorce that caused this war, and he is dead — Doji Hotaru's arrow, at the gates of Toshi Ranbo, with Toturi watching. No seppuku can be demanded of him. The shame falls on his brother.
 - Asako Ikari: Came to the Unicorn court intending to die there. Spared, and told the Champion everything. She and her daughter sheltered at the Eda's castle for a time; where they are now is unknown, possibly with the Phoenix. Her husband has never looked for her.
 - Akodo Osakuan: Toturi's right hand and Akihito's father. He was the one to name aloud the awkwardness of an Emerald Magistrate who is subordinate by marriage to the Lion Champion. Toturi weighed it and let it lie.
-- Ikoma Ujiyasu: The Lion's strong-arm negotiator and the overkill option the council reached for. Gave nothing away when Midori's appointment was announced.
+- Ikoma Ujiaki: The Lion's strong-arm negotiator and the overkill option the council reached for. Gave nothing away when Midori's appointment was announced.
 - Matsu Tsuko: Reviewing troops in the Lion camp, and smirked at the news. She stood at the gates of Toshi Ranbo and watched Akodo Arasou die.
 - Akodo Kage: Turned Midori's appointment straight back on his own council — if the Unicorn seat a magistrate of standing, the Lion should field their own rather than lean on the Crane. Which pushes them toward Akihito.
 - Shinjo Miharu: The Unicorn did not know she was alive. Held by Akihito and never ransomed, which they took badly.
