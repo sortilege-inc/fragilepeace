@@ -335,6 +335,13 @@ blockquote{
 .tag-set{ background:#2f6b3f; color:#eafcef; }
 .tag-super{ background:#4a4a4a; color:#e6e6e6; }
 
+/* tagged entries on the Player Notes page */
+.nlist{ list-style:none; margin:1.2rem 0 0; padding:0; }
+.nlist li{ padding:0.7rem 0; border-top:1px solid var(--edge-soft); line-height:1.6; }
+.nlist li:first-child{ border-top:none; padding-top:0; }
+.nlist .tag{ margin-right:0.5rem; vertical-align:0.08em; }
+.nlist b{ color:var(--sumi); }
+
 /* tables */
 .tablewrap{ overflow-x:auto; margin:1.4rem 0; border:1px solid var(--edge); }
 .tablewrap table{ border-collapse:collapse; width:100%; font-size:0.92rem; }

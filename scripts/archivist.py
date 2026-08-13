@@ -54,6 +54,7 @@ class Page(object):
         self.srcpath = srcpath
         self.url = None           # root-relative, set by the builder
         self.aliases = set()
+        self.clan = ""            # override; otherwise read off the family name
 
     def __repr__(self):
         return "<Page %s %r>" % (self.cat, self.title)
@@ -111,6 +112,42 @@ def discover():
         merged[key] = pg
         out.append(pg)
     return out
+
+
+def discover_local():
+    """Entity pages the export does not hold.
+
+    The export is a snapshot. Sessions played after it introduce people and
+    places it has never heard of — Karahaya, who put a scar across the party's
+    yojimbo, is in none of its 543 files. Those live in sources/entities/ as
+
+        cat: npc
+        clan: Ronin
+        ---
+        prose (used for non-npc pages; npc pages are built from the ledger)
+
+    and are merged into the same registry, so they link and are linked like
+    anything else.
+    """
+    d = os.path.join(ROOT, "sources", "entities")
+    pages = []
+    if not os.path.isdir(d):
+        return pages
+    for fn in sorted(os.listdir(d)):
+        if not fn.endswith(".md"):
+            continue
+        raw = _read(os.path.join(d, fn))
+        head, _, body = raw.partition("\n---\n")
+        meta = {}
+        for line in head.splitlines():
+            if ":" in line:
+                k, _, v = line.partition(":")
+                meta[k.strip().lower()] = v.strip()
+        pg = Page(meta.get("cat", "npc"), fn[:-3], body.strip(),
+                  os.path.join(d, fn))
+        pg.clan = meta.get("clan", "")
+        pages.append(pg)
+    return pages
 
 
 # ------------------------------------------------------------------ sessions
@@ -246,6 +283,14 @@ ALIASES = {
     "Kitsu Yue": "Kitsu Yui",
     "Kitsuyue": "Kitsu Yui",
     "Yue": "Kitsu Yui",
+    # Session 41's notes spell the governor's niece "Miya Masato". The export has
+    # a Miya Misato (16, the niece, carries the writ) and a separate Doji Masato
+    # (Crane, married to Doji Miho) — the woman in the tower says "tell your
+    # uncle", so it is Misato. Pinned so the two never collapse into each other.
+    "Miya Masato": "Miya Misato",
+    # Same session shortens Daidoji Shin. The export runs 81 "Daidoji Shin" to
+    # 4 "Doji Shin", and has no Doji Shin page.
+    "Doji Shin": "Daidoji Shin",
 }
 
 # Names that look like entities but are common nouns or one-off props; never link.

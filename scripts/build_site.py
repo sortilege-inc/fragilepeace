@@ -46,9 +46,10 @@ CATNAV = {"npc": "dramatis", "pc": "party", "location": "map",
           "faction": "lore", "item": "lore", "lore": "lore"}
 
 # The four who are still at the table; everyone else in Characters/PCs is off stage.
-CURRENT_PARTY = ["Doji Setsuna", "Bayushi Monban", "Shiba Midori", "Kakita Kazumi"]
+CURRENT_PARTY = ["Doji Setsuna", "Bayushi Monban", "Shiba Midori", "Kakita Kazumi",
+                 "Ikoma Tadayoshi"]
 
-# Sessions 10-17 are a flashback two centuries back, played with different
+# Sessions 10-17 are a flashback three centuries back, played with different
 # characters. Setsuna lived that arc as the memories of her ancestor Morozane.
 # 17 belongs to it despite the export naming "Doji Setsuna" in it: the rider it
 # calls Setsuna is mounted on Shiguro Chinmoku, which is Morozane's lion, and no
@@ -133,6 +134,11 @@ class Rewrite(object):
     def epigraph(self):
         return self.meta.get("epigraph", "")
 
+    def text(self):
+        """Everything the rewrite says, for sessions the export does not cover."""
+        return "\n".join([self.narrative, self.coda] +
+                         ["[[%s]]" % n for n, _, u in self.learned() if not u])
+
     def names(self, key):
         v = self.meta.get(key, "")
         return [x.strip() for x in v.split(";") if x.strip()]
@@ -206,11 +212,14 @@ def paras(text, url, reg):
         block = block.strip()
         if not block:
             continue
-        cls = ""
+        cls, tag = "", "p"
         if block.startswith("!lede "):
             block, cls = block[6:], ' class="lede"'
+        elif block.startswith("!note "):
+            # A standing caveat about the record itself, not about the fiction.
+            block, cls, tag = block[6:], ' class="raw-note"', "div"
         body = link_wikilinks(md_inline(esc(block).replace("\n", " ")), url, reg)
-        out.append("<p%s>%s</p>" % (cls, body))
+        out.append("<%s%s>%s</%s>" % (tag, cls, body, tag))
     return "\n".join(out)
 
 
@@ -262,9 +271,18 @@ class Ledger(object):
                 self.state[pg][s.number] = self.APART if pg in kept else default
 
     def appearances(self, s):
-        """Every entity page named anywhere in a session's three source files."""
+        """Every entity page a session names.
+
+        Normally that is read off the export's three source files. Sessions
+        played after the export was pulled have none, so the hand-written
+        rewrite is the only record and stands in for them.
+        """
+        rw = self.rewrites.get(s.number)
+        texts = (s.recap, s.moments, s.timeline)
+        if not any(t.strip() for t in texts) and rw is not None:
+            texts = (rw.text(),)
         seen = set()
-        for txt in (s.recap, s.moments, s.timeline):
+        for txt in texts:
             for m in A.LINK_RE.findall(txt):
                 pg = self.reg.get(norm(m[0].strip()))
                 if pg is not None:
@@ -296,7 +314,7 @@ def mask_bar(label, hint):
 def entity_body(p, reg, ledger, sessions_by_no):
     url = p.url
     known, apart, pending, remembered = ledger.counts(p)
-    clan = A.clan_of(p.title) or ""
+    clan = p.clan or A.clan_of(p.title) or ""
 
     bits = []
     bits.append('<div class="wrap">')
@@ -341,7 +359,7 @@ def entity_body(p, reg, ledger, sessions_by_no):
             bits.append('<article class="panel remembered"><h2>Known by memory</h2>'
                         '<p class="meta">Setsuna never met this person. She carries them from '
                         'the memories of her ancestor <a class="ref" href="%s">Matsu Morozane</a>, '
-                        'two centuries dead. What she holds is his, and it is that old.</p>'
+                        'three centuries dead. What she holds is his, and it is that old.</p>'
                         "</article>" % rel(url, "party/matsu-morozane.html"))
         else:
             bits.append('<article class="panel unmet"><h2>Not met</h2>'
@@ -390,14 +408,17 @@ def entity_body(p, reg, ledger, sessions_by_no):
 
 # ------------------------------------------------------------------ session pages
 
-def entities_block(s, url, reg):
+def entities_block(s, url, reg, rw=None):
     """The cast and ground a session names, grouped — the 'Entities' tab."""
     groups = collections.OrderedDict([("Characters", []), ("Locations", []),
                                       ("Factions", []), ("Relics", [])])
     gof = {"npc": "Characters", "pc": "Characters", "location": "Locations",
            "faction": "Factions", "item": "Relics", "lore": "Factions"}
     seen = set()
-    for txt in (s.recap, s.moments, s.timeline):
+    texts = (s.recap, s.moments, s.timeline)
+    if not any(t.strip() for t in texts) and rw is not None:
+        texts = (rw.text(),)
+    for txt in texts:
         for m in A.LINK_RE.findall(txt):
             pg = reg.get(norm(m[0].strip()))
             if pg is None or pg in seen:
@@ -458,12 +479,17 @@ def session_page(s, prev, nxt, rewrites, reg):
             % (esc(s.title), s.number, esc(s.date)),
             '<div class="col"><article class="panel">']
 
+    # Sessions played after the export was pulled have no Archivist timeline.
+    has_tl = bool(s.timeline.strip())
+    labels = ['<label for="ct-chr">Chronicle</label>']
+    if has_tl:
+        labels.append('<label for="ct-tl">Timeline</label>')
+    labels.append('<label for="ct-ent">Entities</label>')
     tabs = ['<div class="chron-tabs">'
             '<input type="radio" id="ct-chr" name="ct" checked>'
             '<input type="radio" id="ct-tl" name="ct">'
             '<input type="radio" id="ct-ent" name="ct">'
-            '<div class="tab-labels"><label for="ct-chr">Chronicle</label>'
-            '<label for="ct-tl">Timeline</label><label for="ct-ent">Entities</label></div>']
+            '<div class="tab-labels">%s</div>' % "".join(labels)]
 
     tabs.append('<div class="tab-panel tp-chr">')
     if rw:
@@ -482,8 +508,9 @@ def session_page(s, prev, nxt, rewrites, reg):
         tabs.append(paras(body, url, reg))
     tabs.append("</div>")
 
-    tabs.append('<div class="tab-panel tp-tl">%s</div>' % timeline_block(s, url, reg))
-    tabs.append('<div class="tab-panel tp-ent">%s</div>' % entities_block(s, url, reg))
+    tabs.append('<div class="tab-panel tp-tl">%s</div>'
+                % (timeline_block(s, url, reg) if has_tl else ""))
+    tabs.append('<div class="tab-panel tp-ent">%s</div>' % entities_block(s, url, reg, rw))
     tabs.append("</div>")
     bits.append("\n".join(tabs))
     bits.append("</article>")
@@ -509,7 +536,7 @@ def chronicle_index(sessions, rewrites):
         rw = rewrites.get(s.number)
         state = "" if rw else '<span class="chip raw">raw</span>'
         if s.number in FLASHBACK_SESSIONS:
-            state += '<span class="chip back">two centuries back</span>'
+            state += '<span class="chip back">three centuries back</span>'
         rows.append(
             '<a class="chron-row%s" href="%s.html"><span class="cn">Session %d</span>'
             '<span class="ct">%s</span>%s<span class="cd">%s</span></a>'
@@ -555,7 +582,7 @@ def people_index(pages, ledger, url, active, title, eyebrow, sub, groups):
         bits.append('<div class="roster">')
         for p in items:
             k, a, pend, rem = ledger.counts(p)
-            clan = A.clan_of(p.title) or ""
+            clan = p.clan or A.clan_of(p.title) or ""
             if k:
                 state, note = "met", "known from %d session%s" % (k, "" if k == 1 else "s")
             elif rem:
@@ -602,7 +629,14 @@ GENERATED = ["chronicle", "party", "dramatis-personae", "atlas", "lore"]
 
 
 def main():
-    pages = A.discover()
+    exported = A.discover()
+    local = A.discover_local()
+    have = {norm(p.title) for p in exported}
+    for p in local:
+        if norm(p.title) in have:
+            raise KeyError("sources/entities/%s.md duplicates an export page; the "
+                           "export's copy is authoritative" % p.title)
+    pages = exported + local
     sessions = A.discover_sessions()
     for p in pages:
         p.url = "%s/%s.html" % (CATDIR[p.cat], slugify(p.title))
@@ -619,6 +653,21 @@ def main():
     A.add_fuzzy_aliases(reg, set(unres.keys()), log=fuzzy)
 
     rewrites = load_rewrites()
+
+    # Sessions played after the export was pulled exist only as hand-written
+    # files, and carry their own title and date in front matter.
+    have = {s.number for s in sessions}
+    for no in sorted(set(rewrites) - have):
+        rw = rewrites[no]
+        for k in ("title", "date"):
+            if not rw.meta.get(k):
+                raise KeyError("session %d is not in the export, so its file must "
+                               "carry a '%s:' line" % (no, k))
+        s = A.Session(None, rw.meta["title"], no, rw.meta["date"])
+        s.slug = "s%02d-%s" % (no, A.slugify(s.title))
+        sessions.append(s)
+    sessions.sort(key=lambda s: s.number)
+
     ledger = Ledger(sessions, rewrites, reg)
     by_no = {s.number: s for s in sessions}
 
@@ -653,10 +702,10 @@ def main():
     write("party/index.html", people_index(
         pages, ledger, "party/index.html", "party", "The Party",
         "Those Setsuna Travels With",
-        "The four who hold the road now, and those who walked part of it.",
+        "Those who hold the road now, and those who walked part of it.",
         [("At the table", "The company as it stands.", current),
          ("The ancestral company",
-          "Sessions 10&ndash;16 are not the present. They run two centuries back, on the "
+          "Sessions 10&ndash;17 are not the present. They run three centuries back, on the "
           "Snow Plain, and the table played its own forebears through them &mdash; Setsuna "
           "living the memories of <b>Matsu Morozane</b>, her Lion ancestor. What she took "
           "from that arc she remembers rather than witnessed, and the site marks it so.",
