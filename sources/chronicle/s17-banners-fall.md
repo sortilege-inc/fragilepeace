@@ -7,7 +7,7 @@ epigraph: The Emperor's horns came over the field with both armies still standin
 
 !lede [[Shinjo Kamo]] spent everything he had left in one push and the battle stopped being manoeuvre and became grinding. Discipline went on both sides. [[Akodo Toronoko]] met him in a duel in the middle of it, and the two of them went at each other, went down, and got up to do it again.
 
-[[Matsu Morozane]] was looking at the horse. [[Shinjo Kamo]]'s banner was fixed to his saddle — the standard the whole Unicorn line took its bearing from — and a banner on a horse can be taken if you are willing to take the horse. He put his soldiers around it with spears up to make the animal think about them, rode in on [[Shiguro Chinmoku]] while it was distracted, got a hand on the reins and hauled, and threw [[Shinjo Kamo]] into the snow. The cold ground broke the general's fall. Then he had the banner off the saddle and up over his head where his own general could see it.
+[[Matsu Morozane]] was looking at the horse. [[Shinjo Kamo]]'s banner was fixed to his saddle — the standard the whole Unicorn line took its bearing from — and a banner on a horse can be taken by anyone willing to take the horse. He put his soldiers around it with spears up to make the animal think about them, rode in on [[Shiguro Chinmoku]] while it was distracted, got a hand on the reins and hauled, and threw [[Shinjo Kamo]] into the snow. The cold ground broke the general's fall. Then he had the banner off the saddle and up over his head where his own general could see it.
 
 That is the blow the [[Lion Clan]] had been trying to land for a week, and it is not a wound. It is a symbol taken off a horse in front of an army, and the panic it puts through a line is worth more than a cohort.
 
@@ -33,7 +33,7 @@ The spy was one of their own healers. And [[Kitsu Somalia]] was the only man ali
 
 **The [[Snow Plain]] was never decided. It was interrupted.** Two armies locked in a stalemate, an Imperial emissary on the field, and the Emperor's judgement arriving over the top of both of them. Nobody won that ground. Somebody was later *awarded* it, and the difference between those two verbs is the entire dispute she has been sent to weigh.
 
-That reframes the deed. If the [[Old Diamond Mines|mines]] passed by Imperial judgement rather than by conquest, then the question is not who held the hill in 1123-minus-two-hundred, but **what the Empire was told when it ruled** — and the Empire was told by the same clans whose accounts she has already found to be silent about the mines' existence. An Imperial ruling made in ignorance of the property's value is a very different document from one made with knowledge of it.
+That reframes the deed. If the [[Old Diamond Mines|mines]] passed by Imperial judgement rather than by conquest, then the question is not who held the hill in 1123-minus-two-hundred, but what the Empire was told when it ruled — and the Empire was told by the same clans whose accounts she has already found to be silent about the mines' existence. An Imperial ruling made in ignorance of the property's value is a very different document from one made with knowledge of it.
 
 Two other things to carry out of the memory. The [[Lion Clan|Lion]]'s spy was a healer in their own camp, a woman whose voice [[Kitsu Somalia]] knew — and he was the only one who could name her, and he was unconscious more than he was awake. Whether he ever did name her is not in this memory.
 

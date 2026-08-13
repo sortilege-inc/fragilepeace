@@ -33,10 +33,10 @@ When it was quiet, all three Unicorn leaders were dead, their army was broken, t
 
 ## Setsuna
 
-**The Lion held the field.** All three Unicorn commanders dead, the Unicorn army broken, the [[Central Hill]] in [[Lion Clan|Lion]] hands at the end of it.
+The Lion held the field. All three Unicorn commanders dead, the Unicorn army broken, the [[Central Hill]] in [[Lion Clan|Lion]] hands at the end of it.
 
 [[Ikoma Ichigo]] told her, in the [[Ikoma Hall of Scribes|Hall of Scribes]], that the [[Snow Plain]] was a Unicorn victory and a Lion defeat.
 
-Those cannot both be the whole truth, and the memory is not finished — there are days of this left, and an army that holds a hill on one evening can lose everything by the next. But she should stop treating the historian's summary as the settled fact of the battle. Somewhere between this hill and the ending, the Lion lost what they were standing on, and **how** they lost it is the thing the record has been quiet about twice now.
+Those cannot both be the whole truth, and the memory is not finished — there are days of this left, and an army that holds a hill on one evening can lose everything by the next. The historian's summary is no longer the settled fact of the battle. Somewhere between this hill and the ending the Lion lost what they were standing on, and **how they lost it is the thing the record has been quiet about twice now.**
 
-And the ending itself is worth holding: the engagement did not conclude, it was **buried**. An avalanche came off the [[Central Hill]] and cut the field in two. That matters for a property dispute in a way it did not matter to anyone fighting there — snow moves ground, and ground that moved three hundred years ago is not where the old survey says it is. Whatever boundary the [[Old Diamond Mines|mines]] were described by before that winter, the hill it was drawn on came down.
+The ending itself is worth as much. The engagement did not conclude, it was buried. An avalanche came off the [[Central Hill]] and cut the field in two. That matters for a property dispute in a way it did not matter to anyone fighting there — snow moves ground, and ground that moved three hundred years ago is not where the old survey says it is. Whatever boundary the [[Old Diamond Mines|mines]] were described by before that winter, the hill it was drawn on came down.

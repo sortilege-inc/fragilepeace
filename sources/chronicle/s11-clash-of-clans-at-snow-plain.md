@@ -5,11 +5,11 @@ epigraph: The whole line went forward to make the Unicorn show their commanders.
 
 ## Narrative
 
-!lede [[Akodo Toronoko]] laid the field out to be taken. A thin elite centre under his own hand, offered as bait for a frontal charge, and both cohorts thickened to hold what the charge would open — [[Matsu Morozane]] on the left where the rice paddies and the hills were, [[Kitsu Somalia]] on the right where the river runs, which put a shugenja of the [[Kitsu Family|Kitsu]] within reach of the water kami and was not an accident.
+!lede [[Akodo Toronoko]] laid the field out to be taken. A thin elite centre under her own hand, offered as bait for a frontal charge, and both cohorts thickened to hold what the charge would open — [[Matsu Morozane]] on the left where the rice paddies and the hills were, [[Kitsu Somalia]] on the right where the river runs, which put a shugenja of the [[Kitsu Family|Kitsu]] within reach of the water kami and was not an accident.
 
 [[Matsu Sakura]]'s order was to test their mettle and make the [[Unicorn Clan]] show who was giving their orders. It was also cover. While the whole line was making noise, [[Ikoma Akuyaku]] went into the [[Unicorn Clan War Camp]] in the dark.
 
-The first exchange went to the Lion. [[Kitsu Somalia]] came off the riverbank into the Unicorn right and put three measures of panic through it. [[Matsu Morozane]] took a Lightning Raid straight into the cohort facing him, broke its order, and set the Touchstone of Courage behind it to hold what he had taken. The Unicorn answered hard and both sides lost men, and the round closed with the Lion still standing on their ground and the centre still not committed — which is what a bait centre is for.
+The first exchange went to the Lion. [[Kitsu Somalia]] came off the riverbank into the Unicorn right and put three measures of panic through it. [[Matsu Morozane]] took a Lightning Raid straight into the cohort facing him, broke its order, and set the Touchstone of Courage behind it to hold what he had taken. The Unicorn answered hard and both sides lost men, and the round closed with the Lion still standing on their ground and the centre still not committed, which is what a bait centre is for.
 
 In the second, [[Matsu Sakura]] gave [[Kitsu Somalia]] the lead and she spent Void on it, and the Unicorn right thinned again. Then the Unicorn stopped fighting like cavalry. Red-robed men came forward and threw explosive firebombs into [[Kitsu Somalia]]'s troops, and their commander turned a whirling incantation into fire and put it across the cohort. That is not a horse clan's battle. That is a prepared position spending prepared weapons.
 
@@ -31,7 +31,7 @@ The battle held there for a moment: both Lion flanks engaged, the centre unspent
 
 ## Setsuna
 
-Here is the thing the [[Ikoma Hall of Scribes|Hall of Scribes]] does not have, and it is the whole case: **the [[Lion Clan]] ran [[Ikoma Akuyaku]] into the [[Unicorn Clan War Camp]] at the [[Snow Plain]]**, and the attack that morning was ordered partly to permit it. [[Ikoma Ichigo]]'s account carries no infiltration and no diversion at all. This one the Lion certainly knew about — a general who orders a diversion is not ignorant of it — so its absence from the record is a decision somebody took afterward, and a narrower one than it looks: it keeps a covert operation out of a victory account, which is ordinary.
+The [[Lion Clan]] ran [[Ikoma Akuyaku]] into the [[Unicorn Clan War Camp]] at the [[Snow Plain]], and the attack that morning was ordered partly to permit it. That is the case, and the [[Ikoma Hall of Scribes|Hall of Scribes]] does not have it. [[Ikoma Ichigo]]'s account carries no infiltration and no diversion at all. This one the Lion certainly knew about — a general who orders a diversion is not ignorant of it — so its absence from the record is a decision somebody took afterward, and a narrower one than it looks: it keeps a covert operation out of a victory account, which is ordinary.
 
 The second fact is nearly as good. The [[Unicorn Clan]] on that field fought with prepared firebombs and battlefield sorcery out of a fortified camp on ground they had chosen. Whatever the deed says the mines were won by, it was not a cavalry engagement.
 

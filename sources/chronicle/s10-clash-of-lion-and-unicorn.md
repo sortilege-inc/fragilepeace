@@ -1,6 +1,6 @@
 session: 10
 mode: flashback
-epigraph: Three hundred years before any of this, on ground that is now a line in a disputed deed, the Lion held a war council in the snow and decided wrong.
+epigraph: Three hundred years before any of this, on ground that is now a line in a disputed deed, the Lion held a war council in the snow. Two officers argued against crossing the bog. The commander overruled both.
 ---
 
 ## Narrative
@@ -9,7 +9,7 @@ epigraph: Three hundred years before any of this, on ground that is now a line i
 
 The ground was worse than the camp. The field the [[Lion Clan]] meant to cross was bog with fresh snow lying on top of thick mud, which looks like a field and holds a man's foot like a hand.
 
-[[Matsu Sakura]] called her officers together. [[Matsu Morozane]] gave them the reading on the missing horses: the Unicorn had not abandoned the camp, because *abandoning many horses appears cowardly*, and the officers laughed — the notion that a Unicorn would give up his horse being, to a Lion, the funniest thing available that morning. It is the correct reading. It is also exactly the reading a man is meant to reach when the horses have been moved on purpose.
+[[Matsu Sakura]] called her officers together. [[Matsu Morozane]] gave them the reading on the missing horses: the Unicorn had not abandoned the camp, because *abandoning many horses appears cowardly*. The officers laughed. To a Lion, a Unicorn giving up his horse is a joke and not a possibility. It is the correct reading. It is also exactly the reading a man is meant to reach when the horses have been moved on purpose.
 
 [[Kitsu Somalia]] did not laugh. The spirits had something to say and what they said was that the Unicorn were waiting, that they intended to use the ground itself, and that they would choose the moment. She proposed settling the whole thing by a contest of champions, which is honourable, cheap, and available. [[Matsu Sakura]] refused it as premature: an army had been assembled to fight an enemy, not to watch two people fight.
 
@@ -31,4 +31,4 @@ This is not a session she attended. It is a memory she is inside, three centurie
 
 What it establishes that the [[Ikoma Hall of Scribes|Hall of Scribes]] does not: the [[Unicorn Clan]] chose that ground, prepared it overnight, and moved their horses out to be seen to have moved them. The [[Lion Clan]] crossed a bog to reach a fortified camp because their commander overruled two officers who told her not to. [[Ikoma Ichigo]]'s account gives the Unicorn the victory. It does not give them the preparation, and a victory that was prepared is a different fact in a deed dispute than a victory that was won.
 
-And note what the council does not say. They argue that ground for a full session — the bog, the snow, the eastern approach through the village and up into the mountains — and nobody once mentions that the [[Old Diamond Mines]] are on the hill above them. Neither army knew. That absence is worth more to her than anything they did say.
+What the council does not say matters as much. They argue that ground for a full session — the bog, the snow, the eastern approach through the village and up into the mountains — and nobody once mentions that the [[Old Diamond Mines]] are on the hill above them. Neither army knew. That absence is worth more to her than anything they did say.

@@ -1,5 +1,5 @@
 session: 9
-epigraph: The case turns on a battle nobody wrote down properly. The one witness who can still be questioned has been dead three hundred years, and she is currently moving furniture in the Hall of Scribes.
+epigraph: The case turns on a battle nobody wrote down properly. The one witness who can still be questioned has been dead three hundred years, and she is moving the furniture in the Hall of Scribes.
 ---
 
 ## Narrative
@@ -33,7 +33,7 @@ They went back to the [[Kitsu Archives]] to keep digging, with a preliminary rep
 
 ## Setsuna
 
-The case is now legible and it is worse than a property dispute. The [[Scorpion Clan|Scorpion]] and the [[Unicorn Clan|Unicorn]] both claim the diamond mines; the claim turns on what happened at the Battle of the [[Snow Plain]]; and the Lion record of that battle is missing where it is not silent. The [[Lion Clan]]'s own historian tells it with no Scorpion in it. Either the Scorpion were not there and their claim is air, or they were there and the Lion did not write them down — and the Lion are the ones holding the archive, hosting the negotiation, and fighting a war on the other side of the wall.
+The case is legible now, and it is worse than a property dispute. The [[Scorpion Clan|Scorpion]] and the [[Unicorn Clan|Unicorn]] both claim the diamond mines; the claim turns on what happened at the Battle of the [[Snow Plain]]; and the Lion record of that battle is missing where it is not silent. The [[Lion Clan]]'s own historian tells it with no Scorpion in it. Either the Scorpion were not there and their claim is air, or they were there and the Lion did not write them down — and the Lion are the ones holding the archive, hosting the negotiation, and fighting a war on the other side of the wall.
 
 Her line of attack is the losing side's staff work. Unicorn tactical lieutenants had to account for the field to their own officers, and they had no reason to keep the Scorpion out of it. That is where a Scorpion presence at [[Snow Plain]] will be, if it is anywhere.
 

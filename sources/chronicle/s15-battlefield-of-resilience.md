@@ -9,7 +9,7 @@ epigraph: Poisoned stores, a third of the army in its blankets, and somebody in 
 
 [[Matsu Sakura]] opened the council with the arithmetic. *We have three problems that must be dealt with.* The stores were poisoned and a third of the army was in its blankets. Morale had gone with them. And somebody had known about the flanking manoeuvre — there was a Unicorn spy inside the Lion's decisions.
 
-[[Ikoma Akuyaku]] added Unicorn reinforcements coming up. [[Kitsu Yui]] added that the contaminated food was being thrown away faster than anyone wanted to say out loud. And a scouting party had come back east of the camp near the river — come back dead, with **no tracks at the [[River Bend]]**. The council turned that over and got as far as a spy, or a route nobody had mapped, and someone raised the possibility that the Unicorn were sitting in the [[Old Diamond Mines]].
+[[Ikoma Akuyaku]] added Unicorn reinforcements coming up. [[Kitsu Yui]] added that the contaminated food was being thrown away faster than anyone wanted to say out loud. And a scouting party had come back east of the camp near the river — come back dead, with no tracks at the [[River Bend]]. The council turned that over and got as far as a spy, or a route nobody had mapped, and someone raised the possibility that the Unicorn were sitting in the [[Old Diamond Mines]].
 
 The argument was food. [[Akodo Kagekatsu]] wanted the [[Peasant Village]] taken — it was feeding the Unicorn, taking it would starve them and fill the Lion's carts. [[Matsu Morozane]], on his stick, argued for holding what they had and looking at the village rather than lunging at it. They sanctioned [[Ikoma Akuyaku]] to go out again for intelligence on ruined feet, and [[Matsu Sakura]] sent him with the plainest order she gave anyone: *don't come back without answers. And if you don't come back, well, die well.*
 
@@ -33,11 +33,11 @@ None of it mattered. The village was a trap and the cavalry rode into it. [[Akod
 
 ## Setsuna
 
-Now the two accounts reconcile, and the reconciliation is worse than either.
+The two accounts reconcile now, and the reconciliation is worse than either.
 
 The [[Lion Clan|Lion]] took the [[Central Hill]] and killed three Unicorn commanders and still lost the [[Snow Plain]] — not on the field, but to poisoned stores, a third of the army sick in its blankets, a village that was bait, and somebody who knew the flanking plan before it was run. [[Ikoma Ichigo]]'s Unicorn victory is true. It is just not a victory of arms, and his account does not say what kind of victory it was.
 
-Three facts sit together and she should not pretend they do not. A scouting party died **east of camp, by the river, leaving no tracks at all**. A Unicorn flanking force came up out of the snowbanks onto the officer corps from ground nobody had them on. And the [[Lion Clan|Lion]]'s own flanking route went up **along the old mine paths** — the workings [[Matsu Morozane]] found with the snow over them swept flat.
+Three facts sit together and she should not pretend they do not. A scouting party died east of camp, by the river, leaving no tracks at all. A Unicorn flanking force came up out of the snowbanks onto the officer corps from ground nobody had them on. And the [[Lion Clan|Lion]]'s own flanking route went up along the old mine paths — the workings [[Matsu Morozane]] found with the snow over them swept flat.
 
 Somebody was moving through that hill unseen. The Lion council's guess was Unicorn insurgents in the [[Old Diamond Mines]] and they never proved it. Her own reading is that the party who knew the hill was worth something was the [[Scorpion Clan|Scorpion]], and that a body which knows the tunnels can sell that knowledge to whichever army is willing to pay for a route — or use it themselves and let both armies blame each other.
 

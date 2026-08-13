@@ -8,7 +8,7 @@ epigraph: Under the dead leader's mask, a strip of cloth with the Doji crest on 
 
 [[Doji Setsuna]] rode for the [[Castle of the Swift Sword]] and reached the gate after dark. The badge opened it. A majordomo took her straight to a rear tea house, and there she met [[Kitsu Takeko]], the Lion daimyō, who gave her a short and correct ceremony and then let her talk.
 
-She talked well. She had been attacked on Lion roads while carrying an Imperial writ; the men were trained, uniformly dressed and wore no mon. She did not present this as her misfortune. She presented it as an insult to the Empire committed on [[Lion Clan]] ground, which makes the Lion's honour the injured party alongside the Emperor's, and then asked [[Kitsu Takeko]] for the strength to punish it and for help with her Imperial business. [[Kitsu Takeko]] gave her both: [[Akodo Atsushi]] of the [[Akodo War College]] was ordered to put men across the roads and find four samurai dressed as clan samurai and wearing no mon — *alive*. When [[Doji Setsuna]] asked to ride with him she was refused, on the grounds that she had her own obligations.
+She had been attacked on Lion roads while carrying an Imperial writ; the men were trained, uniformly dressed and wore no mon. She did not present this as her misfortune. She presented it as an insult to the Empire committed on [[Lion Clan]] ground, which makes the Lion's honour the injured party alongside the Emperor's, and then asked [[Kitsu Takeko]] for the strength to punish it and for help with her Imperial business. [[Kitsu Takeko]] gave her both: [[Akodo Atsushi]] of the [[Akodo War College]] was ordered to put men across the roads and find four samurai dressed as clan samurai and wearing no mon — *alive*. When [[Doji Setsuna]] asked to ride with him she was refused, on the grounds that she had her own obligations.
 
 Then the tea resumed and the daimyō asked after [[Otosan Uchi]], and after her family. [[Doji Setsuna]] began the formal answer and did not finish it. *I was not able to protect my retinue and those that were with me. I am alone in this place with this huge burden of responsibilities.* Her husband is a prisoner of the clan whose tea she was drinking. [[Kitsu Takeko]] was kind about it, promised to make enquiries after him, and gave orders that her guest be properly kept. [[Doji Setsuna]] said nothing at all about [[Asako Taishi]], or about how badly he had wanted not to be looked at.
 
@@ -29,11 +29,11 @@ Then they made offerings and named the ancestors they wanted, and something came
 
 ## Setsuna
 
-She got what she came into that tea house for, and she got it by framing. The ambush was not presented as a Crane's grievance or a magistrate's inconvenience but as an insult to the Empire committed on [[Lion Clan]] soil — which made the Lion co-injured and gave [[Kitsu Takeko]] a reason of her own to spend cavalry on it. Note the technique. It worked on a daimyō in the middle of a war, and it cost nothing.
+She got what she came into that tea house for, and she got it by framing. The ambush went to [[Kitsu Takeko]] not as a Crane's grievance or a magistrate's inconvenience but as an insult to the Empire committed on [[Lion Clan]] soil, which made the Lion co-injured and gave the daimyō a reason of her own to spend cavalry on it. It worked on a daimyō in the middle of a war, and it cost nothing.
 
 She was refused the ride along. The hunt is [[Akodo Atsushi]]'s and whatever it turns up will reach her secondhand, if at all, and the standing order is to take them alive — which is what she needs and also what a Lion would want for their own reasons.
 
-She let the formal answer break in front of a Lion daimyō when asked about her family, and said aloud that she is alone and carrying too much. It bought sympathy and a promise of enquiries about [[Shinjo Harunobu]]. Whether it also told [[Kitsu Takeko]] where the pressure goes is a question worth holding.
+She let the formal answer break in front of a Lion daimyō when asked about her family, and said aloud that she is alone and carrying too much. It bought sympathy and a promise of enquiries about [[Shinjo Harunobu]]. It may also have shown [[Kitsu Takeko]] exactly where to press.
 
 She kept [[Asako Taishi]] out of it entirely, including his agitation on the road. That is a live omission in front of the person hunting his attackers.
 
