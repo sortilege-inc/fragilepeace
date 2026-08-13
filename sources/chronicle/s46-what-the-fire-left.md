@@ -83,9 +83,24 @@ water and earth, and is carrying half again the fatigue she can hold.
 back down to something functional. [[Miya Misato]] could have surfaced and chose to stay
 under a while longer.
 
-!note **The record stops here.** What the party did next — reconstructing the writ around
-the salvaged seal, and the political reckoning that followed from it — was played and is
-not written down. The account above covers the fighting and the surgery and nothing after.
+!note **What follows is reconstructed from the opening recap of the next session,** which
+is all that survives of it. The reconstruction of the writ around the salvaged seal was
+also played and is not recorded at all.
+
+Then [[Doji Setsuna]] went and stood in front of both commanders and told them, in
+substance, to do their jobs or kill themselves.
+
+It worked. Neither [[Moto Gaheris]] nor [[Matsu Maro]] was going to concede that the
+other had done this, and each of them privately believed the other had. She put it to
+them that **neither of them would** — that there was nothing in it for either army — and
+that what they were looking at was a third party who wanted exactly this. That was enough
+to stop the two of them circling each other and get them both facing the same direction.
+
+It cost her something she will not get back. **Nobody is ever going to read
+[[Doji Setsuna]] as harmless again.** The disarm in the envoy's tent worked precisely
+because three armed men looked at a woman in her nightclothes and filed her as no threat.
+She has now stood in front of two armies and told a [[Moto Family|Moto]] Khan to open his
+own belly. That version of her is gone, and it is gone by her own doing.
 
 ## Learned
 
