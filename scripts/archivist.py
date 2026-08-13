@@ -109,6 +109,7 @@ CORRECTIONS = [
     # Session 48 names the jilted groom the record has only called Lord Ikoma.
     (r"\bIkoma Asakichi\b", "Ikoma Anakazu"),
     (r"\bLord Ikoma\b", "Ikoma Anakazu"),
+    (r"\bShiro Hametsu\b", "Shosuro Hametsu"),
     (r"\bKodo Totori\b", "Akodo Toturi"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
