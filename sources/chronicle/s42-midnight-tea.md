@@ -1,7 +1,7 @@
 session: 42
 title: Midnight Tea
 date: 2026-04-06
-epigraph: Moto Gaharis rode up to storm a castle and found a Crane woman on a sacred Utaku steed, an Imperial palanquin, and a tea ceremony being laid out while the battering ram stood idle against the wall.
+epigraph: Moto Gaheris rode up to storm a castle and found a Crane woman on a sacred Utaku steed, an Imperial palanquin, and a tea ceremony being laid out while the battering ram stood idle against the wall.
 ---
 
 ## Narrative
@@ -28,14 +28,14 @@ reserve for the rest of the night, which turned out to matter at the gate.
 
 Then she got up and started working.
 
-She wrote to [[Matsu Matsumaro]], the [[Lion Clan|Lion]] commander, on the envoy's
+She wrote to [[Matsu Maro]], the [[Lion Clan|Lion]] commander, on the envoy's
 behalf, asking for an audience — [[Ikoma Tadayoshi]] helping with the composition. The
-letter did nothing visible. [[Matsu Matsumaro]] was busy investing the castle and did not
+letter did nothing visible. [[Matsu Maro]] was busy investing the castle and did not
 answer it. What it did was arrive, and put the envoy's name in front of her in a courteous
 hand before anything else happened.
 
 She asked [[Ikoma Tadayoshi]], who is a [[Lion Clan|Lion]] bard and knows his own clan's
-officers, what [[Matsu Matsumaro]] was like. He knew: she loves strategy games, and shōgi
+officers, what [[Matsu Maro]] was like. He knew: she loves strategy games, and shōgi
 in particular. So [[Doji Setsuna]] went into the castle stores, requisitioned an
 [[Eda Shōgi Set|Eda family shōgi set]] on a magistrate's authority, and sent it as a gift.
 
@@ -55,9 +55,9 @@ Then [[Doji Setsuna]] laid Civility Foremost over her, and over six others stand
 her, so that anyone who raised a hand to the envoy would lose honour for it in front of
 everyone. Nobody saw her do it. It is the thing the entire night was built on.
 
-The lights came up on the southern road. Gongs. [[Moto Gaharis]] — a one-eyed
+The lights came up on the southern road. Gongs. [[Moto Gaheris]] — a one-eyed
 [[Unicorn Clan|Unicorn]] family champion on an enormous warhorse — was bringing an army
-to a castle that had been taken without a fight. [[Matsu Yunko]], [[Matsu Matsumaro]]'s
+to a castle that had been taken without a fight. [[Matsu Yunko]], [[Matsu Maro]]'s
 lieutenant, started organising a defence, and soldiers went for spears.
 
 [[Doji Setsuna]]'s answer was one sentence. **Now we broker a peace.**
@@ -77,7 +77,7 @@ light.
 She gave the order to open it. She was compromised, out of void, and the roll came up
 short.
 
-The gate opened anyway. [[Matsu Matsumaro]], who had received a courteous letter and a
+The gate opened anyway. [[Matsu Maro]], who had received a courteous letter and a
 gift chosen because someone had bothered to find out what she liked, signalled her
 soldiers to lift the bar.
 
@@ -85,7 +85,7 @@ soldiers to lift the bar.
 with its [[Miya Family|Miya]] markings where it would be seen first, and [[Shiba Midori]]
 began laying out tea in the open ground between the two armies.
 
-[[Moto Gaharis]] rode up on a battering ram's worth of momentum and found a tea ceremony.
+[[Moto Gaheris]] rode up on a battering ram's worth of momentum and found a tea ceremony.
 [[Doji Setsuna]] bowed. **Thank you for agreeing to meet with the Imperial Envoy.**
 
 He had agreed to nothing. He had come to storm a castle. He complimented the horse instead,
@@ -95,18 +95,18 @@ the meeting into a [[Lion Clan|Lion]] surrender, she moved it back: *the peace t
 Emperor has commanded.*
 
 What followed was a formal negotiation, with an order of precedence and everyone taking
-turns. [[Doji Setsuna]]'s standing put her ahead of [[Matsu Matsumaro]] in it, and she used
+turns. [[Doji Setsuna]]'s standing put her ahead of [[Matsu Maro]] in it, and she used
 the opening to propose that the two commanders play a game of shōgi, the winner's name to go
 first **on whatever agreement we come up with**. Both of them began arguing about whose name
 went first. Neither noticed that they had just agreed there would be a document with both
 their names on it.
 
 [[Ikoma Tadayoshi]] played, and worked insults to particular [[Moto Family|Moto]] branches
-into the music, until [[Moto Gaharis]]'s yojimbo was visibly rattled and the
+into the music, until [[Moto Gaheris]]'s yojimbo was visibly rattled and the
 [[Unicorn Clan|Unicorn]] side of the ground was the agitated one.
 
 [[Shiba Midori]] made tea through all of it, wounded, holding the form — and while she was
-doing it she read [[Matsu Matsumaro]] and found the thing that changes the shape of the
+doing it she read [[Matsu Maro]] and found the thing that changes the shape of the
 whole negotiation. The [[Lion Clan|Lion]] commander had been sent to spend her troops. Die
 on the field or die holding a castle that could not be held; either would do, and her own
 superiors had chosen it for her. She does not need to be talked into a peace. She needs one
@@ -116,7 +116,7 @@ upright, and it could not be allowed to break.
 
 She also made sure that whatever came out of this would be credited to [[Miya Misato]].
 
-Near the end, [[Moto Gaharis]] asked, lightly, whether the Ruby Champion might pay to have
+Near the end, [[Moto Gaheris]] asked, lightly, whether the Ruby Champion might pay to have
 back some spies who had been claiming to be Emerald Magistrates. [[Doji Setsuna]] answered
 without pausing. **Oh, you found my yojimbo? Free him so he can resume his duty and stop
 being a spy.**
@@ -129,26 +129,26 @@ at a table, an envoy presiding over them, and tea.
 
 ## Learned
 
-- Matsu Matsumaro: Commander of the Lion relief force. Received Setsuna's letter and the shōgi set, and opened the castle gate on her own authority when nobody could have made her. Midori read her at the tea: she was sent by her own superiors to lose her troops, on the field or in a hopeless defence. She needs this peace more than anyone present.
-- Moto Gaharis: A one-eyed Unicorn family champion on a huge warhorse, leading the army up the southern road. Complimented Kogarashi, tried to reframe the meeting as a Lion surrender, and sat down anyway. Holds Monban and floated ransoming him back.
-- Matsu Yunko: Matsumaro's lieutenant. Organised the castle's defence and argued against opening the gate on the grounds that no banner is legible at night — a correct objection.
+- Matsu Maro: Commander of the Lion relief force. Received Setsuna's letter and the shōgi set, and opened the castle gate on her own authority when nobody could have made her. Midori read her at the tea: she was sent by her own superiors to lose her troops, on the field or in a hopeless defence. She needs this peace more than anyone present.
+- Moto Gaheris: A one-eyed Unicorn family champion on a huge warhorse, leading the army up the southern road. Complimented Kogarashi, tried to reframe the meeting as a Lion surrender, and sat down anyway. Holds Monban and floated ransoming him back.
+- Matsu Yunko: Maro's lieutenant. Organised the castle's defence and argued against opening the gate on the grounds that no banner is legible at night — a correct objection.
 - Kogarashi: Setsuna's Utaku courser, white with a silver mane. Recognisable to any Unicorn rider at any distance, which is the entire reason walking out of that gate was survivable. A gift from Shinjo Harunobu's family.
 - Miya Misato: Held that the abandoned castle was a trap and would not be talked out of it. Dressed to meet the Emperor and walked to the gate frightened. Took Setsuna's argument that the approach is to affirm the Lion victory rather than to sue for peace.
 - Seisi: The Lion physician with the relief force. Watched the envoy's party walk out through a castle arming for a siege.
-- Eda Shōgi Set: Requisitioned from the abandoned castle's stores on a magistrate's authority and given to Matsumaro, who accepted it.
+- Eda Shōgi Set: Requisitioned from the abandoned castle's stores on a magistrate's authority and given to Maro, who accepted it.
 - Bayushi Monban: A prisoner of the Unicorn, tied over a horse in their baggage train. Told his captor no lord would ransom him. Publicly claimed by Setsuna in front of the man holding him.
 - The Unicorn rider with the baggage train (unpaged): Leading Monban's horse. Knows what he is worth and told him plainly that the Imperial name is the only thing keeping him alive.
 
 ## Setsuna
 
 **The gate did not open because she rolled well.** It opened because a letter arrived,
-and a gift arrived that had been chosen after someone asked what [[Matsu Matsumaro]]
+and a gift arrived that had been chosen after someone asked what [[Matsu Maro]]
 liked, and because the horse under her was one no [[Unicorn Clan|Unicorn]] archer would
 loose at. The order she gave at the gate was the least important thing she did all night.
 Everything that made it obeyable was done hours earlier, from inside a norimono, while
 she was too ill to stand up straight.
 
-**[[Matsu Matsumaro]] was sent to die and that is the whole negotiation.** Her own side
+**[[Matsu Maro]] was sent to die and that is the whole negotiation.** Her own side
 handed her a battle that gutted her and a castle that cannot be held, and either outcome
 suits them. She is not an obstacle between the envoy and a peace. She is the person in
 that circle who most needs one, and she cannot say so. Everything offered to her should
@@ -160,7 +160,7 @@ open question. Two commanders who had not agreed to a treaty spent the evening
 negotiating its letterhead. That is a trick that works once, and it has now been used.
 
 **She claimed [[Bayushi Monban]] out loud.** In front of the man holding him, as a piece
-of administrative tidying, at the moment when giving her something cost [[Moto Gaharis]]
+of administrative tidying, at the moment when giving her something cost [[Moto Gaheris]]
 nothing and bought him goodwill. It also means his lord now owes for the recovery, and
 that she has publicly reattached herself to a yojimbo she dismissed. She should be clear
 with herself about which of those she was doing.

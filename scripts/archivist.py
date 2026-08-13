@@ -292,6 +292,16 @@ ALIASES = {
     # Same session shortens Daidoji Shin. The export runs 81 "Daidoji Shin" to
     # 4 "Doji Shin", and has no Doji Shin page.
     "Doji Shin": "Daidoji Shin",
+    # The 2026-04-06 summary and the 2026-04-13 record disagree on two new names.
+    # The later document is the more careful one — it carries a participants
+    # table, the GM's name and transcript timestamps, and it independently gets
+    # Miya Misato and Ikoma Tadayoshi right where the earlier one does not — so
+    # its spellings win and the earlier ones are kept as aliases.
+    "Moto Gaharis": "Moto Gaheris",
+    "Matsu Matsumaro": "Matsu Maro",
+    # Setsuna's scribe, on the road with her since session 1. The 2026-04-13
+    # record spells him "Atoya"; session 1 and the export both say Otoya.
+    "Atoya": "Otoya",
 }
 
 # Names that look like entities but are common nouns or one-off props; never link.
