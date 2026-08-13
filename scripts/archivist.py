@@ -97,6 +97,22 @@ CORRECTIONS = [
     # title as well as the prose lets discover() merge them into one page rather
     # than leaving half her record on each.
     (r"\bKaeru Haia\b", "Kaeru Haya"),
+    # The Unicorn general at the Snow Plain. The transcription never got his
+    # name and the export files him five ways — as a person twice, as a faction
+    # once, and in the titles of his letters and his camp. All of it is Shinjo
+    # Kamo: the Characters entry describes the commander unseated from his horse
+    # with his banner on the saddle, which is what Morozane did to him in s17,
+    # and the other describes the hand and the chop on the disputed treaty.
+    # Longest form first, so the bare name does not eat the others.
+    (r"\bShinjuku Kamu\b", "Shinjo Kamo"),
+    (r"\bShinjo Kamu\b", "Shinjo Kamo"),
+    (r"\bShinjukamu\b", "Shinjo Kamo"),
+    # Spacing and truncation, each of which built a second page.
+    (r"\bIkoma Aku Yaku\b", "Ikoma Akuyaku"),
+    (r"\bSlow Tide Harbor\b", "Slowtide Harbor"),
+    (r"\bDran Merchant River\b", "Drowned Merchant River"),
+    # "Asawa" is not a family of the Phoenix; the Isawa are.
+    (r"\bAsawa Family\b", "Isawa Family"),
     # Morozane's lion, spelled three ways across the sources. Owner 2026-08-13:
     # the lion is Shigo no Chinmoku, which is also what his Foundry actor says.
     (r"\bShigo no Tomoku\b", "Shigo no Chinmoku"),
@@ -168,6 +184,56 @@ RENAMES = {
     # Session 47 names Monban's lord: the Shosuro daimyo is Shosuro Hametsu,
     # Bayushi Kachiko's brother. The export only ever calls him by his title.
     "Daimyo Shoshuro": "Shosuro Hametsu",
+    # The export duplicated two people outright, suffixing the second file.
+    "The Emperor (2)": "The Emperor",
+    "Asahina Nao (2)": "Asahina Nao",
+    # The governor's residence on Central Island, filed five times under five
+    # names. Every one of them describes the same building: an island in the
+    # middle of the river at the City of the Rich Frog, the home of Governor
+    # Miya Tetsuya. The chronicle links it as the Governor's Mansion.
+    "Governor’s Palace": "Governor’s Mansion",
+    "Governor’s Manor": "Governor’s Mansion",
+    "Governor’s residence": "Governor’s Mansion",
+    "Miya Governor’s Palace": "Governor’s Mansion",
+    # Short form and full name of one institution inside the Castle of the
+    # Swift Sword.
+    "War College": "Akodo War College",
+    # The mines under the hill at the Snow Plain, which the chronicle calls the
+    # Old Diamond Mines throughout.
+    "Diamond Mines": "Old Diamond Mines",
+    "diamond mines": "Old Diamond Mines",
+    # The spirit and the box it was sealed into are one being. It negotiated in
+    # session 33; it belongs with the people, not the relics.
+    "The Ifrit": "Ifrit",
+}
+
+# Pages the export filed under the wrong kind, keyed by (export folder's cat,
+# file stem) and mapped to the cat they should have had.
+#
+# discover() merges by (cat, title), so two files describing one thing under
+# two different kinds build two pages no matter how the titles are corrected —
+# the Ifrit was a "person" in Characters and a "relic" in Items, and Shinjo
+# Kamo was a person and a faction at once. Recategorising before the merge
+# collapses them. Applied to the file as the export names it, before RENAMES.
+RECAT = {
+    ("faction", "Shinjuku Kamu"): "npc",     # a man, not a body
+    ("item", "The Ifrit"): "npc",            # the spirit, not its box
+    ("item", "diamond mines"): "location",   # a place, not a possession
+    ("faction", "War College"): "location",  # somewhere the party toured
+    ("faction", "Akodo War College"): "location",
+}
+
+# Export files that a hand-authored sources/entities page replaces outright.
+#
+# The builder's normal rule is that the export wins a title collision, which is
+# right when the collision is an accident. It is wrong when the export's entry
+# is a misspelling of a real thing and the local page is the corrected one:
+# "Asawa Family" is not a family of the Phoenix, the Isawa are, and correcting
+# the name would otherwise build a second Isawa Family page out of machine
+# prose beside the written one. Anything worth keeping from the export entry is
+# folded into the local page before its name goes in here.
+SUPERSEDED_BY_LOCAL = {
+    "Asawa Family",
 }
 
 
@@ -183,10 +249,13 @@ def discover():
         for fn in sorted(os.listdir(d)):
             if not fn.endswith(".md"):
                 continue
+            stem = fn[:-3]
+            if stem in SUPERSEDED_BY_LOCAL:
+                continue
             # correct() the title too, so a spelling fix does not need its own
             # RENAMES entry as well — RENAMES is for retitling and merging.
-            title = correct(RENAMES.get(fn[:-3], fn[:-3]))
-            pages.append(Page(cat, title,
+            title = correct(RENAMES.get(stem, stem))
+            pages.append(Page(RECAT.get((cat, stem), cat), title,
                               _read(os.path.join(d, fn)),
                               os.path.join(d, fn)))
 
@@ -328,10 +397,15 @@ ALIASES = {
     "Crane Guest Rooms": "Crane Couple’s Guest Quarters",
     "Crane Couple's Quarters": "Crane Couple’s Guest Quarters",
     "Monban's Room": "Bayushi Monban’s Room",
-    "Slowtide Harbor": "Slow Tide Harbor",
+    "Slow Tide Harbor": "Slowtide Harbor",
     "Swift Sword Castle": "Castle of the Swift Sword",
     "Governor’s Manor": "Governor’s Mansion",
     "Governor’s residence": "Governor’s Mansion",
+    # RENAMES moves the page but leaves prose still linking the old title, so
+    # every merged name needs its alias here as well as its rename above.
+    "Governor’s Palace": "Governor’s Mansion",
+    "Miya Governor’s Palace": "Governor’s Mansion",
+    "War College": "Akodo War College",
     "Virtuous Contemplation": "Garden Of Virtuous Contemplation",
     "The Ifrit": "Ifrit",
     "Efreet": "Ifrit",

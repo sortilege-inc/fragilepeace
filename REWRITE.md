@@ -172,7 +172,40 @@ it went unnoticed.
 
 None outstanding.
 
-## Found in passing — split entity pages
+## Split entity pages — all merged, 2026-08-13
+
+**457 entity pages → 436.** Twenty-one collapsed. The scan is clean: no two pages now share a
+normalised name, and nothing sits above 0.87 similarity that is not genuinely two things.
+
+Three mechanisms, because the splits were three different faults.
+
+- **`CORRECTIONS`** for misspellings, since `correct()` is applied to titles as well as prose and
+  `discover()` merges what lands on one title: `Ikoma Aku Yaku`, `Slow Tide Harbor`,
+  `Dran Merchant River`, `Asawa Family`, and the whole Shinjo Kamo cluster.
+- **`RENAMES`** for pages that were correctly spelled but differently named — the export's literal
+  `The Emperor (2).md` and `Asahina Nao (2).md`, the governor's residence under five names, the
+  War College under short and full form, and the Diamond Mines under two.
+- **`RECAT`**, new, for the cross-category pairs. `discover()` merges by `(cat, title)`, so a thing
+  filed as both a person and a relic builds two pages no matter how the titles are corrected. The
+  Ifrit was a person in `Characters` and a relic in `Items`; Shinjo Kamo was a person and a faction
+  at once.
+
+**Shinjo Kamo was the worst of them.** The Unicorn general at the Snow Plain, filed five ways —
+twice as a person, once as a faction, and in the titles of his letters and his camp. The
+`Characters` entry describes the commander unseated from his horse with his banner on the saddle,
+which is what Morozane did to him in s17; the other describes the hand and the chop on the disputed
+treaty. His page now carries s12, s16, s17 and s23 instead of one line each on four pages.
+
+**`SUPERSEDED_BY_LOCAL`**, also new. Correcting `Asawa Family` to `Isawa Family` made the export's
+machine prose collide with the hand-authored page, and the builder's rule is that the export wins.
+That rule is right for an accidental collision and wrong when the export entry is a misspelling of a
+real family and the local page is the corrected one in the house voice. The one substantive fact
+from the export entry — the Isawa as the Phoenix shugenja family, their work the balance of the five
+and the tending of the kami — is folded into the local page, and the export file is suppressed.
+
+Also untracked `scripts/__pycache__`, which was committed and kept colliding on checkout.
+
+## Superseded — the original survey
 
 Not part of the voice rewrite and not touched by it. A sweep for near-identical page titles across
 the 457 generated entity pages turned up one entity built as two pages, each holding half its
