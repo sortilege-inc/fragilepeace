@@ -140,14 +140,18 @@ killed. Honour is internal, and nobody had to see it.
 
 ## Setsuna
 
-**She stopped trying to win the case and started trying to end the war, and those turned
-out to be different jobs.** Every session since the tent has been spent building a ruling:
-the bad-faith lever, the unlawful-duel counter, the divorce that may never have happened.
-All of it was sound and all of it would have cost the [[Lion Clan|Lion]] honour to be
-ruled against. Offering to witness a bilateral agreement instead threw the entire case
-away and got the [[Unicorn Clan|Unicorn]] everything they actually wanted inside an hour.
-[[Iuchi Yukiko]] said the arbiter looked like someone who would rather be right than have
-a peace. She was right, and she said it early enough to be useful.
+**The case was never meant to be delivered, and today it did the work it was built for.**
+The bad-faith lever, the unlawful-duel counter, the divorce that may never have happened —
+every one of them raised the price of being ruled against, and she named that price to
+[[Akodo Kage]] out loud two sessions ago: settle gracefully, with the
+[[Lion Clan|Lion]] the ones to begin it, or take a ruling that will be a great deal
+harsher. Offering to witness a bilateral agreement
+was the relief at the end of all that pressure, and the [[Lion Clan|Lion]] reached for it
+inside the hour and paid the [[Unicorn Clan|Unicorn]] everything they came for.
+[[Iuchi Yukiko]] told [[Shiba Midori]] the arbiter looked like somebody who would rather be
+right than have a peace. That was a fair reading of the performance and the wrong reading
+of the intent, and it cost nothing to leave standing — a [[Unicorn Clan|Unicorn]] who
+believes the bench leans their way is a Unicorn who stays helpful.
 
 The trade is clean and it is worth naming exactly. The Lion bought a written victory and
 an affirmation of their conduct, over an Imperial witness. They paid for it with the land,
@@ -170,11 +174,14 @@ clan that has just been handed its dignity back in front of witnesses. That is w
 than anything in the treaty and it is the only thing in this session that is hers
 personally rather than the Empire's.
 
-What she gave up to get it is the whole of the case. [[Asako Ikari]] is struck from the
-record along with the betrothal, the fault, and the concessions — all of it referred to
-Winter Court, where she has now stacked [[Toshi Ranbo]], the [[Phoenix Clan|Phoenix]]
-claim, the divorce documentation, and the woman herself. That is a great deal of weight on
-one season, and [[Akodo Kage]] will be at it too, with his documentation and his patience.
+The case was spent rather than surrendered, and the difference matters less than she
+would like. [[Asako Ikari]] is struck from the record along with the betrothal, the fault
+and the concessions, and all of it goes to Winter Court — which is where she said it should
+go before the delegations ever sat down, and where she has now also stacked
+[[Toshi Ranbo]], the [[Phoenix Clan|Phoenix]] claim, the divorce documentation and the
+woman herself. Intending a thing is not the same as it being harmless. That is a great deal
+of weight on one season, and [[Akodo Kage]] will be at it too, with his documentation and
+his patience.
 
 [[Asako Ikari]] is still nobody's priority, and the agreement just made her officially
 somebody else's problem. She tried to die of this. She has still not been found.
