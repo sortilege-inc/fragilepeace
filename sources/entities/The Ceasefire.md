@@ -20,4 +20,6 @@ to Winter Court, on [[Doji Setsuna]]'s statement that she could not attest to a 
 that was untrue by omission.
 
 [[Doji Setsuna]], [[Shiba Midori]] and [[Akodo Akihito]] each staked ten honour on it
-holding, which binds their clans through them.
+holding, which binds their clans through them. The honour is staked, not spent: it
+is forfeit only by whoever breaks the agreement, and not by anyone whose counterpart
+broke it first.
