@@ -427,6 +427,11 @@ ALIASES = {
     "Virtuous Contemplation": "Garden Of Virtuous Contemplation",
     "The Ifrit": "Ifrit",
     "Efreet": "Ifrit",
+    # Session 53 gave the Unicorn's advisor a name. Her page was titled by
+    # her role because the record had not supplied one; s52 still links her
+    # that way, so the old title stays pointed at the new one.
+    "The Unicorn's Iuchi Advisor": "Iuchi Yukiko",
+    "The Unicorn’s Iuchi Advisor": "Iuchi Yukiko",
     "General Shinjo Kamo": "Shinjo Kamo",
     "General Matsu Sakura": "Matsu Sakura",
     "Katsuki Kage": "Kitsuki Kaage",
