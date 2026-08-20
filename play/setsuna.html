@@ -27,7 +27,7 @@
 <script id="sheet-data" type="application/json">
 {
   "id": "setsuna",
-  "name": "Doji Setsuna",
+  "name": "Doji Setsuna (Aug 19 corrected)",
   "clan": "Crane",
   "family": "Doji",
   "school": "Doji Bureaucrat School",
@@ -59,7 +59,7 @@
       "start": 2
     }
   },
-  "stance": "earth",
+  "stance": "air",
   "social": {
     "honor": 66,
     "glory": 65,
@@ -73,9 +73,8 @@
     "culture": 2,
     "government": 3,
     "sentiment": 2,
-    "command": 1,
+    "command": 2,
     "courtesy": 3,
-    "games": 1,
     "performance": 1,
     "commerce": 1
   },
@@ -95,7 +94,7 @@
       "text": "When you cause a character to receive strife as a result of a check using a social approach, that character suffers additional strife equal to your school rank."
     },
     {
-      "name": "Voice of Authority (Emerald Magistrate)",
+      "name": "Voice of Authority",
       "tag": "Title Ability",
       "ring": "void",
       "use": {
@@ -126,6 +125,19 @@
       "tag": "Shūji",
       "ring": "water",
       "text": "Bribery is considered to be corruption in Rokugan, yet gift exchanges and gift giving is a time-honored tradition. The shrewdest courtiers can engineer scenarios in which their targets cannot refuse their gifts without tarnishing their reputations. Thus, the recipient of such a poisoned gift might find it preferable to owe the courtier a favor than to be shamed in public.\n\nActivation: When you make a Courtesy (water) check to present a gift to a target, you may spend (op) as follows:\n\n(water)(op): To refuse your gift, your target must forfeit glory equal to your Water Ring. Additionally, if the gift is something that the target desires, the target also must suffer strife equal to its rarity to refuse it. If your target accepts the gift, reduce the TN of your next Social skill check targeting them by the rarity of the item (to a minimum of 1)."
+    },
+    {
+      "name": "Call to Ride",
+      "tag": "Shūji",
+      "ring": "water",
+      "activation": {
+        "actionType": "Support action",
+        "punct": ":",
+        "tn": 1,
+        "skill": "survival",
+        "ring": "water"
+      },
+      "text": "A skilled rider can train their loyal steed to come to them on command. When the rider takes a long journey through perilous lands, this technique can be especially vital for escaping the chaos of battle or pursuing marauders who have struck at their caravan.\n\nActivation: As a Support action, you can make a TN 1 Survival (water) check targeting your mount or animal companion, provided it is within range 5 of you.\n\nEffects: If you succeed, your mount or animal companion immediately moves up to 2 range bands towards you, plus 1 additional range band for every two bonus successes. If it is a mount and ends at range 0 of you, you can immediately mount it.\n\nNew Opportunities:\n\n(op)(op): Increase the TN of Attack action checks targeting you and your mount or animal companion by 1. This effect persists until the end of your next turn.\n\n(op)(op): If you perform a Maneuver action after mounting, you may move up to 2 range bands instead of 1."
     },
     {
       "name": "Stonewall Tactics",
@@ -315,7 +327,7 @@
       "text": "There are few crimes worse in the mind of the Rokugani than cowardice, which is seen as a violation of no fewer than three tenets of the Code of Bushidō: Yū, Meiyo, and Chūgi. To help them teach the lessons of cowardice, Rokugan’s storytellers have many fables at their disposal: tales of courageous heroes brought low by cowardly allies, histories in which the fall of an entire noble house hinges upon a failure of courage, and more.\n\nEffects: The following apply to a character with the Fear of Death anxiety:\n\n• You cannot voluntarily choose to die or sacrifice your life (including committing seppuku when honor demands it), and if there is a chance you could live, you must always pursue it.\n\n• After performing a check to risk your life or accept your mortality (such as a Meditation (earth) check to find inner tranquility before battle or a Tactics (earth) check to hold a position against long odds), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
     },
     {
-      "name": "Dark Secret (Abortion)",
+      "name": "Dark Secret",
       "tag": "Anxiety",
       "ring": "void",
       "strife": 3,
@@ -411,7 +423,7 @@
           "max": 1,
           "per": "Session"
         },
-        "usesKey": "Voice of Authority (Emerald Magistrate)",
+        "usesKey": "Voice of Authority",
         "scaleBy": "gloryRank",
         "note": "Choose additional targets equal to your glory rank ({n})."
       },
@@ -426,7 +438,7 @@
       ]
     },
     {
-      "name": "Personal Advisor to Imperial Envoy Miya Misato",
+      "name": "Personal Advisor to Miya Misato",
       "state": "Held — 0 XP invested",
       "statusAward": "+10 (to a minimum of 40)",
       "assignedBy": "Daimyō, Emerald Magistrates, military leaders, high-ranking courtiers, and other individuals of import",
