@@ -92,7 +92,7 @@ the usual failure mode, so check which one you're in before writing.
 | `chronicle/` | Narrative register. Same discipline — concrete, unhedged, no purple — but it follows one woman through time, may render her reasoning and her doubt, and uses past tense for events. Still no second person. |
 | `notes/` (Player Notes) | Analytical, and written from the *player's* side of the table — not a GM's. Addresses the owner directly, second person is fine, every claim is tagged (`TABLE` / `SOURCE` / `HEARD` / `OPEN` / `PLAN` / `SUPERSEDED` / `NOTE`), and prose gives way to structure where structure is clearer. Never record as fact what Setsuna was merely told. |
 | `map/` | Furniture. Short, plain labels and hints; no voice work. |
-| `play/`, `character/` | Mechanical. Rules text is **verbatim** — see hard constraints. `character/setsuna.html` is the dossier carried over unedited; do not rewrite its prose. |
+| `play/`, `character/` | Mechanical. Rules text is **verbatim** — see hard constraints. `play/setsuna.html` is generated from the Foundry export by the `doji-setsuna` build script — edit that script, never the HTML. `character/setsuna.html` is a dossier carried over from elsewhere: do not restyle or rewrite it on your own initiative, but it *is* editable when the owner supplies more current information. Match its own analytical register — declarative, mechanical terms used bare — not gazetteer voice. |
 
 ## Hard constraints inherited from the project
 
