@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shinjo Harunobu — The Fragile Peace</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="The character dossier of Shinjo Harunobu — Unicorn Clan, Hida Battle Leader, Renowned Warrior, and husband to Doji Setsuna.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4efe5;
+    --paper-dark: #e8e0cf;
+    --ink: #1f1d1a;
+    --ink-soft: #4a463f;
+    --ink-faint: #7a7468;
+    --crane-blue: #6b8caf;
+    --crane-blue-deep: #3d5a7a;
+    --gold: #a88a4a;
+    --gold-deep: #7e6432;
+    --crimson: #8b3a3a;
+    --rule: #c9bfa8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at 20% 10%, rgba(168, 138, 74, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(107, 140, 175, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .document {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 4rem 4.5rem 5rem;
+    box-shadow:
+      0 1px 2px rgba(31, 29, 26, 0.08),
+      0 8px 32px rgba(31, 29, 26, 0.12);
+    position: relative;
+    border: 1px solid var(--rule);
+  }
+  .document::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      var(--crane-blue-deep) 0%,
+      var(--crane-blue) 25%,
+      var(--gold) 50%,
+      var(--crane-blue) 75%,
+      var(--crane-blue-deep) 100%);
+  }
+
+  /* HEADER */
+  header.title-block {
+    text-align: center;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  header.title-block::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem auto 0;
+  }
+  .eyebrow {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  h1.character-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .character-name .given {
+    font-style: italic;
+    color: var(--crane-blue-deep);
+  }
+  .epithets {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0.5rem 0 1rem;
+  }
+  .vitals {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+  }
+  .vitals span {
+    border-left: 1px solid var(--rule);
+    padding-left: 1.25rem;
+  }
+  .vitals span:first-child { border-left: none; padding-left: 0; }
+
+  /* SECTIONS */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2.section-title {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    position: relative;
+  }
+  h2.section-title::before {
+    content: "§";
+    color: var(--gold);
+    margin-right: 0.6rem;
+    font-style: italic;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+  }
+  h3.subhead {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--crane-blue-deep);
+    margin: 1.5rem 0 0.5rem;
+    font-style: italic;
+  }
+  h4.entry-label {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin: 1rem 0 0.25rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; padding: 0; }
+  li { margin-bottom: 0.4rem; }
+  em { color: var(--ink-soft); }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* PULL-QUOTES */
+  blockquote.maxim {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--crane-blue-deep);
+    border-left: 3px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(168, 138, 74, 0.04);
+  }
+  blockquote.maxim .attribution {
+    display: block;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--ink-faint);
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 0.15em;
+    margin-top: 0.5rem;
+  }
+
+  /* TABLES */
+  table.dossier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.92rem;
+  }
+  table.dossier-table th {
+    text-align: left;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.dossier-table td:first-child {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+  table.dossier-table tr:last-child td { border-bottom: none; }
+
+  /* PRIORITY TABLE (Advancement Plan) */
+  table.dossier-table.priority td.priority-num {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-deep);
+    text-align: center;
+    width: 2.5rem;
+    line-height: 1.2;
+  }
+  table.dossier-table.priority td.purchase {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: normal;
+    padding-right: 0.75rem;
+    width: 30%;
+  }
+  table.dossier-table.priority td.purchase em {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.15rem;
+  }
+  table.dossier-table.priority td.xp-cost {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: center;
+    width: 3rem;
+    white-space: nowrap;
+    padding-right: 0.75rem;
+  }
+  table.dossier-table.priority td.priority-notes {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  table.dossier-table.priority tr.subtotal td {
+    background: rgba(168, 138, 74, 0.08);
+    font-family: "Cormorant SC", serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table.priority tr.subtotal td.label {
+    text-align: right;
+    font-family: "Cormorant SC", serif;
+  }
+  table.dossier-table.priority tr.subtotal td.xp-cost,
+  table.dossier-table.priority tr.subtotal td.priority-notes {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  table.dossier-table.priority tr.cycle-break td {
+    padding: 0.3rem 0;
+    border-bottom: none;
+    background: transparent;
+  }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid var(--rule);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .stat-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .stat-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  /* SOCIAL STATS */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .social-cell {
+    border: 1px solid var(--rule);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .social-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .social-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: var(--crane-blue-deep);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .social-cell .delta {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.25rem;
+  }
+
+  /* TWO-COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* CALL-OUT */
+  .callout {
+    border: 1px solid var(--crane-blue);
+    border-left: 4px solid var(--crane-blue-deep);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(107, 140, 175, 0.06);
+  }
+  .callout .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--crane-blue-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* RELATIONSHIP CARDS */
+  .relations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .relation {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .relation:last-child { border-bottom: none; }
+  .relation .name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .relation .name .role {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+  .relation .name .clan {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold-deep);
+    margin-left: 0.5rem;
+  }
+  .relation .text {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.25rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+  .timeline-entry {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: 0.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gold);
+  }
+  .timeline-entry .when {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .what {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .detail {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+
+  /* TOC */
+  nav.toc {
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    columns: 2;
+    column-gap: 2rem;
+  }
+  nav.toc .toc-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    column-span: all;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    font-family: "EB Garamond", serif;
+  }
+  nav.toc ol li {
+    counter-increment: toc;
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+    break-inside: avoid;
+  }
+  nav.toc ol li::before {
+    content: counter(toc, upper-roman) ". ";
+    color: var(--gold-deep);
+    font-style: italic;
+    margin-right: 0.3rem;
+  }
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s;
+  }
+  nav.toc a:hover { border-bottom-color: var(--crane-blue); }
+
+  /* FOOTER */
+  footer.colophon {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  footer.colophon::before {
+    content: "❖";
+    display: block;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 1in; max-width: none; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 700px) {
+    body { padding: 1rem 0.5rem; }
+    .document { padding: 2rem 1.5rem 3rem; }
+    h1.character-name { font-size: 2.5rem; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+    .stat-grid { grid-template-columns: repeat(5, 1fr); gap: 0.25rem; }
+    .stat-cell { padding: 0.5rem 0.25rem; }
+    .stat-cell .value { font-size: 1.3rem; }
+    .social-grid { grid-template-columns: 1fr; }
+    nav.toc { columns: 1; }
+    .vitals { gap: 0.75rem; font-size: 0.7rem; }
+    .vitals span { border-left: none; padding-left: 0; }
+  }
+  /* Portrait */
+  .portrait-wrap {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .portrait-wrap img {
+    max-width: 360px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(31,29,26,0.12);
+  }
+
+  /* ---- site chrome (The Fragile Peace) — values literal from rokugan.css ---- */
+  body { padding-top: 0; }
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; flex-wrap:wrap; align-items:center; gap:0.1rem 1.4rem;
+    padding:0.72rem clamp(1rem,4vw,3rem);
+    margin:0 -1rem;
+    background:linear-gradient(180deg, rgba(23,18,13,0.98), rgba(23,18,13,0.9));
+    border-bottom:2px solid #b62432;
+    box-shadow:0 2px 0 rgba(154,123,63,0.35), 0 10px 24px rgba(0,0,0,0.25);
+    backdrop-filter:blur(3px);
+  }
+  .topnav .brand{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-weight:600; letter-spacing:0.24em;
+    text-transform:uppercase; font-size:0.82rem; color:#c2a25c;
+    margin-right:auto; white-space:nowrap;
+  }
+  .topnav .brand::before{ content:"\2756"; color:#b62432; margin-right:0.5em; font-size:0.8em; }
+  .topnav a{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-size:0.86rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:#cdc0a2; text-decoration:none;
+    padding:0.15rem 0; border-bottom:2px solid transparent; transition:.18s;
+  }
+  .topnav a:hover{ color:#fff; }
+  .topnav a.active{ color:#fff; border-bottom-color:#b62432; }
+  .topnav a.notes{ color:#b9c6a8; }
+  .topnav a.notes::before{ content:"\270E\00a0"; }
+  .topnav a.notes:hover{ color:#dcecc8; }
+  .document{ margin-top:2rem; }
+  .sitefoot{
+    text-align:center; margin:3rem auto 0; padding:2rem 1rem 0; max-width:880px;
+    color:#7a7468; font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif;
+    text-transform:uppercase; letter-spacing:0.18em; font-size:0.74rem;
+    border-top:1px solid #c9bfa8;
+  }
+  .sitefoot .mark{ color:#b62432; margin-right:0.6em; }
+
+  /* Unicorn accent. This dossier reuses Setsuna's stylesheet so the two match;
+     only the clan colour changes. The variables keep their names so the shared
+     block stays diffable against character/setsuna.html. */
+  :root { --crane-blue: #7d6b9e; --crane-blue-deep: #4a3c68; }
+</style>
+</head>
+<body>
+<nav class="topnav"><span class="brand">The Fragile Peace</span><a href="../index.html">Home</a><a href="../character/index.html">Setsuna</a><a href="../party/index.html">The Party</a><a href="../chronicle/index.html">Chronicle</a><a href="../dramatis-personae/index.html">Dramatis Personae</a><a href="../map/index.html">Atlas</a><a href="../lore/index.html">Lore</a><a href="../notes/index.html" class="notes">Player Notes</a></nav>
+<div class="document">
+
+  <header class="title-block">
+    <div class="eyebrow">Confidential Character Dossier</div>
+    <h1 class="character-name">Shinjo <span class="given">Harunobu</span></h1>
+    <p class="epithets">Renowned Warrior · strategic commander under Utaku Kamoko · Crab-trained and Unicorn-returned · husband to Doji Setsuna · prisoner of the Lion, sessions 2 to 48</p>
+    <div class="vitals">
+      <span>Unicorn Clan</span>
+      <span>Hida Battle Leader School</span>
+      <span>School Rank 3</span>
+      <span>Glory 49</span>
+      <span>Status 35</span>
+    </div>
+  </header>
+
+  <div class="portrait-wrap">
+    <img src="../assets/harunobu.webp" alt="Shinjo Harunobu, armoured and mounted on a black charger">
+  </div>
+
+  <nav class="toc">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#identity">Identity &amp; Standing</a></li>
+      <li><a href="#mechanical">Mechanical Profile</a></li>
+      <li><a href="#doctrine">Operating Doctrine</a></li>
+      <li><a href="#interior">Interior Architecture</a></li>
+      <li><a href="#relations">Established Relations</a></li>
+      <li><a href="#khar-baatar">Khar Baatar</a></li>
+      <li><a href="#captivity">The Captivity</a></li>
+      <li><a href="#timeline">Career Timeline</a></li>
+      <li><a href="#trajectory">Trajectory</a></li>
+    </ol>
+  </nav>
+
+  <section id="identity">
+    <h2 class="section-title">I. Identity &amp; Standing</h2>
+
+    <p>Shinjo Harunobu is a Unicorn bushi who trained in a Crab school. He holds the Hida Battle Leader School at Rank 3, commands a specialised force within the Unicorn army, and serves Utaku Kamoko as both field commander and personal advisor. He is married to Doji Setsuna of the Crane. From the second session of the campaign until shortly before the forty-eighth he was a prisoner of the Lion.</p>
+
+    <p>His standing is martial rather than courtly. Status 35 places him well below his wife's 60; Glory 49 is the record of three engagements rather than of a name known at court. Honour 55 is the honour of a man who keeps his word and does not enjoy being asked to explain it.</p>
+
+    <h4 class="entry-label">Physical Description</h4>
+    <p>The first thing anyone notices is his height. At six feet six he stands over almost every samurai in a room, which is an asset on a field and a nuisance in a chamber where the point is not to be looked at. Out of his helmet he ties his hair up with a purple ribbon, and it is a good one — the single piece of deliberate ornament he carries.</p>
+
+    <h4 class="entry-label">Formation</h4>
+    <p>He left home for the Crab lands at about nine years old, one of nine children in a large and affectionate family, and did not come back the same. A Shinjo trained by the Crab is an unusual object: the school teaches fortification, attrition and the holding of a line, the opposite of the fast-strike cavalry doctrine his own clan is built on, and he came back carrying it. It makes him the Unicorn officer who can talk to Hida commanders, and it is why Kamoko keeps him near. Crab commanders respect him and consider him <em>too soft for having returned to the Unicorn</em>. He is fluent in two military traditions and fully at home in neither.</p>
+
+    <h4 class="entry-label">Manner of Presence</h4>
+    <p>Direct to the point of bluntness. He solves problems by acting on them and regards his wife's professional instrument — argument, procedure, the correctly drafted document — as <em>legal trickery</em>. His paramount tenet is Courage; his least significant is Courtesy, and the ordering is not accidental. He disdains courtly manoeuvring and says so.</p>
+
+    <p>Under stress he goes sullen and withdraws, and he does it worst when the subject of the stress is himself. He is not evasive about other people's difficulties. He is unreachable about his own.</p>
+
+    <h4 class="entry-label">On Compassion</h4>
+    <p>The Unicorn prize Compassion above the other virtues. Harunobu holds it subordinate to a shared objective — that mercy is something you can afford once the thing you came to do is done, and not before. He has acted on that reasoning at least once at a price he has never named.</p>
+
+    <h3 class="subhead">Current Obligation &amp; Drive</h3>
+
+    <blockquote class="maxim">
+      Utaku Kamoko. Strategic commander in her forces, directing defensive operations when her fast-strike tactics need reinforcement, and trusted to lead independently when she must focus elsewhere. One of the few people she trusts to challenge her ideas without undermining her authority. Liaison to the Crab, keeping Unicorn supply lines open against the blunt and inflexible Hida.
+      <span class="attribution">Current giri</span>
+    </blockquote>
+
+    <blockquote class="maxim">
+      He feels constrained by courts and by command. He wants men under his own command, particularly after the debacle with the Lion.
+      <span class="attribution">Current ninjō</span>
+    </blockquote>
+  </section>
+
+  <section id="mechanical">
+    <h2 class="section-title">II. Mechanical Profile</h2>
+
+    <h3 class="subhead">Rings</h3>
+    <div class="stat-grid">
+      <div class="stat-cell"><div class="label">Earth</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Water</div><div class="value">2</div></div>
+      <div class="stat-cell"><div class="label">Fire</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Air</div><div class="value">2</div></div>
+      <div class="stat-cell"><div class="label">Void</div><div class="value">3</div></div>
+    </div>
+    <p>Endurance 12, Composure 10, Focus 5, Vigilance 2. Earth and Fire at 3 is a man who is hard to move and hits hard when he does; Vigilance 2 against his wife's 3 is the difference between a soldier and a courtier, and it is the number that explains most of what happens to him socially.</p>
+
+    <h3 class="subhead">Social Standing</h3>
+    <table class="dossier-table">
+      <tr><td class="social-cell">Honor 55</td><td>Keeps his word; dislikes being asked to justify it.</td></tr>
+      <tr><td class="social-cell">Glory 49</td><td>Earned on three named engagements rather than at court.</td></tr>
+      <tr><td class="social-cell">Status 35</td><td>A field commander's standing. His wife outranks him by 25.</td></tr>
+    </table>
+
+    <h3 class="subhead">School &amp; Title</h3>
+    <p>Hida Battle Leader School, Rank 3. He holds one title, <strong>Renowned Warrior</strong> (<em>Fields of Victory</em> p. 135), fully invested at 16 of 16 XP, which unlocks <strong>Behold the Legend</strong>. The title is the mechanical form of his Glorious Deeds passion: recognition by a commander of sufficient influence, spread across a province.</p>
+
+    <h3 class="subhead">Skills</h3>
+    <p>Martial Arts [Melee] 3, Tactics 3, Command 3, Survival 3. Martial Arts [Ranged] 2 and Sentiment 2. Fitness, Meditation and Courtesy at 1. Nothing in Artisan, Scholar or Trade beyond Survival. Four skills at 3 is a narrow, deep build: he fights, he plans, he orders, and he lives outdoors.</p>
+
+    <h3 class="subhead">Techniques</h3>
+    <p>Fourteen, weighted to command and endurance rather than to duelling. His school ability is <strong>Thunderous Courage</strong>. Three shūji — Battle of No Escape, Fortress of Necessity, Great Anvil's Measure — are all about making a position hold. Five kata, including Striking as Earth and Striking as Fire. Three rituals of invocation: <strong>Beseech Akodo's Judgment</strong>, <strong>Beseech Hida's Might</strong> and <strong>Beseech Shiba's Calm</strong>, which is a Unicorn asking three other clans' ancestors for help and is worth noticing. One ninjutsu, <strong>The Patient Viper</strong>.</p>
+
+    <h3 class="subhead">Distinctions, Adversities, Passions &amp; Anxieties</h3>
+    <table class="dossier-table">
+      <tr><td class="label">Bishamon's Blessing</td><td>Distinction (Water) — Physical, Spiritual.</td></tr>
+      <tr><td class="label">Indomitable Will</td><td>Distinction (Earth) — Interpersonal, Mental.</td></tr>
+      <tr><td class="label">Glorious Deeds</td><td>Passion (Fire) — Martial, Social.</td></tr>
+      <tr><td class="label">Fukurokujin's Curse</td><td>Adversity (Fire) — Mental, Spiritual.</td></tr>
+      <tr><td class="label">Belligerent</td><td>Anxiety (Earth) — Interpersonal.</td></tr>
+      <tr><td class="label">Superstition</td><td>Anxiety (Void) — Mental, Spiritual.</td></tr>
+    </table>
+    <p>Two anxieties against one adversity, and both anxieties fire in exactly the situations his ninjō puts him in: Belligerent when he is being managed, Superstition when the answer is not a material one. A man blessed by Bishamon and cursed by Fukurokujin is lucky in war and unlucky in wisdom, which is a fair summary of his career.</p>
+
+    <h3 class="subhead">Experience</h3>
+    <p>All 100 XP is spent, and where it went is the clearest statement of priorities on the sheet.</p>
+    <table class="dossier-table">
+      <tr><td class="label">51 — Advancements</td><td>Earth, Fire and Void each raised to 3 at 9 apiece; Martial Arts [Melee] to 3; Command to 3; Tactics to 3; a single point of Courtesy.</td></tr>
+      <tr><td class="label">33 — Techniques</td><td>Eleven bought outside any curriculum, at 3 each — the three Beseech rituals, three shūji, three kata, the title ability and one ninjutsu.</td></tr>
+      <tr><td class="label">16 — Renowned Warrior</td><td>The title, fully invested: Righteous Example, Heartpiercing Strike, Command to 2 and Martial Arts [Ranged] to 2.</td></tr>
+    </table>
+    <p>Twenty-seven of the fifty-one advancement points went on rings, and every ring he raised was Earth, Fire or Void — endurance, force and composure, with nothing at all spent on Air or Water. He bought no Artisan, Scholar or Trade skill beyond Survival. This is a man who has never once spent experience on being better in a room.</p>
+
+    <p class="detail">Gear: katana, wakizashi, tetsubō, gunbai and horsebow; lacquered armour, ceremonial clothes, travelling clothes; a finger of jade, a travelling pack, a scroll of battle tactics and the record he calls Three Victories. 400 zeni.</p>
+  </section>
+
+  <section id="doctrine">
+    <h2 class="section-title">III. Operating Doctrine</h2>
+
+    <h3 class="subhead">Hold the Ground</h3>
+    <p>Every shūji he owns raises the cost of moving him. Fortress of Necessity, Great Anvil's Measure, Battle of No Escape: the Crab school taught him that a position held is worth more than a charge landed, and he brought that back to a clan that believes the opposite. When Kamoko's cavalry cannot solve a problem, he is the alternative she reaches for.</p>
+
+    <h3 class="subhead">Act Rather Than Argue</h3>
+    <p>He treats a problem as a thing to be met directly. This is his strength in the field and the whole of his limitation everywhere else — the same reflex that makes him useful to Kamoko is the one that keeps him from the command he wants, because the route to that command runs through courts he refuses to enter.</p>
+
+    <h3 class="subhead">Courage Before Courtesy</h3>
+    <p>His tenets are ordered Courage paramount, Courtesy least significant. In practice this means he will take a risk that a more careful officer would decline and will not soften the report afterwards. It also means that when he is wrong he is wrong loudly, in front of people who will remember.</p>
+  </section>
+
+  <section id="interior">
+    <h2 class="section-title">IV. Interior Architecture</h2>
+
+    <h3 class="subhead">What He Left in the Shadowlands</h3>
+    <p>He rode into the Shadowlands alone and found Hida Ayame and what was left of her warriors making a last stand with their backs to a ravine, surrounded, with an oni among them tearing Crab samurai apart. There was no saving them all. There was only her.</p>
+
+    <p>He went in weaving, cutting only what stood between him and her, and he did not look at the dying because he could not afford to. He hauled Ayame across his saddle and turned to flee. The oni was too busy with the slaughter to notice him at first, and that — the sound of it, bones and roaring, a thing that has never left him — is what bought the seconds that mattered. He rode the horse past what it could bear and did not look back.</p>
+
+    <p>They reached safety. He did not collapse. He sat, and Ayame stirred beside him, and his body went on working. By his own account something of him stayed behind where the oni was feeding.</p>
+
+    <p>This is the load-bearing event of the character and it explains most of the sheet. It is why Compassion ranks below the objective. It is what the two anxieties are made of, and why one of them is Void. It is why a warm family finds their son a stranger. And it is a piece of arithmetic he performed correctly and has been unable to stop performing since: he traded the dying for the one he could reach, and it worked.</p>
+
+    <h3 class="subhead">Katsuro's Question</h3>
+    <p>Hida Katsuro trained him and gave him four things: that hesitation is death; that war is not a duel, but overwhelming force, terrain and knowing when to cut losses; that tactics mean nothing without food, rest and supply; and that command is a burden rather than a privilege — <em>if you want to be in charge, you better be ready to order men to their deaths. If you can't do that, stay in line.</em></p>
+
+    <p>He absorbed all of it and refused the conclusion. Katsuro treated soldiers as resources to be managed; Harunobu wants to lead from the front and take the risk first, which made Katsuro admire him and despair of him in the same breath. The question still runs underneath everything he wants: he wants command, and he does not want to become the man who taught him how to hold it.</p>
+
+    <h3 class="subhead">The Shape of the Frustration</h3>
+    <p>His ninjō is not a want but a trap, and the export states all four walls of it. He believes his strategies are often more sound than Kamoko's, and must defer to her anyway. He watches her command and thinks that it should be him — with the specific justification that he understands both Unicorn and Crab doctrine and she does not. He feels that if she relies on him this much, he should be the one leading. And he knows that a politically capable samurai could manoeuvre himself into that command, and refuses to be one.</p>
+
+    <p>The last of those is the load-bearing one. His refusal to play the political game is, by his own reckoning, what is preventing his rise. He can see the door and will not use it because of what using it would make him.</p>
+
+    <h3 class="subhead">Married to the Door</h3>
+    <p>The irony the campaign is built on: he is married to one of the most capable political operators in the Empire, considers her craft <em>legal trickery</em>, and owes his freedom to it. He is blind to how comprehensively she protects him. Whether that stays true is the most interesting question on this sheet.</p>
+
+    <h3 class="subhead">The Sky</h3>
+    <p>Asked at Loyalty Castle what captivity would do to him, his wife said he would suffocate without the sky. She said it to keep a conversation warm and it was also true. He is a man who lives outdoors at Survival 3 and who spent forty-six sessions in a room.</p>
+  </section>
+
+  <section id="relations">
+    <h2 class="section-title">V. Established Relations</h2>
+
+    <div class="relations-grid">
+
+      <div class="relation">
+        <div class="name">Doji Setsuna <span class="role">— wife, Husband (Lover) bond Rank 1 on her sheet</span><span class="clan">Crane</span></div>
+        <div class="text">Married by arrangement between the houses — her mother Doji Ayaka made the match on the Crane side, and it was Shinjo Altansarnai who put his name forward on the Unicorn's. The marriage is distant and transactional by design: he spends his time with Kamoko's campaigns rather than at court, and it is conducted by letter. He loves her and respects her intellect, understands he has married up, and regards her professional method as trickery. He does not realise she is the political force who could get him what he wants, and would likely dismiss the offer as dishonourable scheming if she made it. He may also quietly resent that she has the kind of power he does not. He sent her a gift wrapped in purple while a prisoner — the colour he ties his own hair with — which told her he was well enough to send something and being handled by people who would let it through. Kogarashi, the white Utaku courser she rides, was a wedding gift from his family.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Utaku Kamoko <span class="role">— his lord</span><span class="clan">Unicorn</span></div>
+        <div class="text">He commands a specialised force in her army, advises her privately, and is one of the few permitted to challenge her without it reading as insubordination. He also believes he should have her job. Both things are true at once and he has not resolved them.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Akodo Masanari <span class="role">— sworn brother</span><span class="clan">Lion</span></div>
+        <div class="text">A brilliant tactician respected within the Akodo ranks who, like Harunobu, has no patience for the court he is nonetheless required to attend. Their conversations are a contest of minds about strategy and command, and they are the company Harunobu actually enjoys. They exchanged gifts as a pact of brotherhood: Harunobu gave an iron mon cut from a fallen section of the Kaiu Wall he had defended; Masanari gave a calligraphy scroll in his own hand, <em>Victory over the enemy. Victory over oneself. Victory over fate.</em> The scroll is a question about whether Harunobu is following his own path or merely orders, and it is on his gear list. <strong>He does not mention Masanari to Kamoko.</strong> Note what that means during a Lion–Unicorn war.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Hida Ayame <span class="role">— owes him her life</span><span class="clan">Crab</span></div>
+        <div class="text">A cold and brilliant commander who was expected to die leading that patrol into the Shadowlands and did not, because he came for her. She respects him immensely and believes he deserves more than a supporting role. If she reappears it will be to ask him why he follows when he could lead — which is his own ninjō in someone else's mouth, and much harder to dismiss there.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Hida Katsuro <span class="role">— the commander who trained him</span><span class="clan">Crab</span></div>
+        <div class="text">Taught him that hesitation is death, that war is not a duel, that logistics decide battles, and that command means being willing to order men to die. Harunobu took the lessons and rejected the man's coldness — Katsuro managed soldiers as resources, Harunobu insists on taking the first risk himself. Katsuro admired him and shook his head at him.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Shinjo Altansarnai <span class="role">— recommended the marriage</span><span class="clan">Unicorn</span></div>
+        <div class="text">The Unicorn Champion put his name forward to the Crane, partly for his years living apart from the clan and partly to reward his valour with the status a marriage to a future Emerald Magistrate would bring. She believes she honoured him. She may instead have shackled him to a life he does not want. She is also the woman whose own refused betrothal started this war, and she attended his wedding.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">His parents and eight siblings <span class="role">— family</span><span class="clan">Unicorn</span></div>
+        <div class="text">Warm, loving, and largely strangers to him since he left at nine. They are proud of him and tell the stories — the Kaiu Wall, service under Kamoko, the Crane marriage — and they worry, because the man who visits is colder and quieter than the boy who went. They read it as reserve picked up from the Crab. They do not know what he saw. He respects them, does not resent being sent away, and cannot engage with a household full of warmth and simple joys that he no longer understands.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Shinjo Miharu <span class="role">— cousin</span><span class="clan">Unicorn</span></div>
+        <div class="text">Held by Akodo Akihito as a hostage and never ransomed; the Unicorn did not know she was alive until session 49. She surrendered to Akihito believing he would do right by her, and by session 48 there was something between them she declined to deny. She attended Setsuna's wedding.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Shinjo Mono <span class="role">— serves Harunobu's uncle</span><span class="clan">Unicorn</span></div>
+        <div class="text">A young provisional magistrate met on the road in session 3, and the first line Setsuna found into her husband's own family. His lord is Harunobu's uncle and holds border security for the stretch of country the war then crossed.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Akodo Toturi <span class="role">— released him</span><span class="clan">Lion</span></div>
+        <div class="text">Had him conveyed under safe conduct to the Castle of the Swift Sword, unasked, on a plea from Kitsu Takeko made on behalf of a worried wife. Harunobu owes his freedom to a Lion Champion acting on an obligation that had nothing to do with him.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Kitsu Takeko <span class="role">— moved his custody twice</span><span class="clan">Lion</span></div>
+        <div class="text">Shifted him out of Okoto Sakuon's command on the strength of Akodo Akihito's service, and later made the plea to Toturi that freed him. Neither was done by writ. Both were obligation.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="khar-baatar">
+    <h2 class="section-title">VI. Khar Baatar</h2>
+
+    <div class="portrait-wrap">
+      <img src="../assets/khar-baatar.webp" alt="Khar Baatar, a black Moto Charger">
+    </div>
+
+    <p>A Moto Charger: <em>hot-tempered breed known for strength, size, and explosive gallop, carrying heavily armoured lancers into battle but lacking stamina for prolonged journeys.</em> Combat threat 3, Intrigue 1, demeanour Loyal. He is not a fast horse over distance and is not meant to be one.</p>
+
+    <p>The name is Moto rather than Rokugani — <em>khar</em>, black; <em>baatar</em>, hero — which is the register the Unicorn kept from the years outside the Empire, the same register that gives Shinjo Altansarnai her name. Naming a warhorse in it is a choice about which half of the clan's history a man stands in.</p>
+
+    <p>Mechanically he is a mount rather than a companion: he takes no turn of his own in a conflict, adds bonus successes equal to his Water Ring when his rider succeeds on a Movement action, and lets Harunobu substitute Survival for Fitness. His hooves are Range 1–2, Damage 7, Deadliness 6. He carries Brute Strength and Masterful Fighter as distinctions and Willful as his adversity — the charger's temper, written into the sheet.</p>
+
+    <p class="detail">Set against Kogarashi: hers is a white Utaku courser recognisable to any Unicorn rider at any distance, and it opened a castle gate at night because of it. His is a black charger bred to close the distance and hit. The two horses are an unusually direct statement of the two marriages-worth of temperament in this household.</p>
+  </section>
+
+  <section id="captivity">
+    <h2 class="section-title">VII. The Captivity</h2>
+
+    <p>He was taken at the Battle of the Hanto River, north of the Drowned Merchant River, in the second session. Nobody sent word to his wife; she learned it in passing at a Lion castle during a conversation about supply lines.</p>
+
+    <p>What follows is the spine of Setsuna's campaign and almost none of it was visible to him. A courtier at Loyalty Castle refused to write for his release and told her such requests belong after hostilities. Bayushi Monban obtained two letters confirming he was being treated honourably, and was then told to stop interfering. Kitsu Takeko moved his custody out of Okoto Sakuon's command on the strength of Akodo Akihito's service. He sent a gift wrapped in purple by a tired Unicorn messenger, and a parcel arrived where a prisoner did not.</p>
+
+    <p>He was freed two weeks before session 48, under safe conduct, on Kitsu Takeko's plea to Akodo Toturi — who volunteered the fact to Setsuna while accepting a gift of her husband's court clothes, and then said <em>it seems I am in your debt.</em> By the Lion's account he had fought well, had not fallen, was recovered, and his wounds were tended.</p>
+
+    <p>The <em>debacle with the Lion</em> named in his ninjō is this. It is also the reason he wants his own command: forty-six sessions of being a man things were done about.</p>
+  </section>
+
+  <section id="timeline">
+    <h2 class="section-title">VIII. Career Timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-entry"><div class="when">Age ~9</div><div class="what">Sent from a large and affectionate family to the Crab lands. One of nine children.</div></div>
+      <div class="timeline-entry"><div class="when">Youth</div><div class="what">Trained in the Hida Battle Leader School under Hida Katsuro. Serves on the Kaiu Wall.</div></div>
+      <div class="timeline-entry"><div class="when">Before play</div><div class="what">Rides alone into the Shadowlands and carries Hida Ayame out of a last stand, past an oni and the men he could not reach.</div></div>
+      <div class="timeline-entry"><div class="when">Before play</div><div class="what">Returns to the Unicorn and takes command under Utaku Kamoko. Exchanges gifts with Akodo Masanari — an iron mon of the Kaiu Wall for a scroll of the Three Victories.</div></div>
+      <div class="timeline-entry"><div class="when">Before play</div><div class="what">Shinjo Altansarnai recommends him to the Crane. Married to Doji Setsuna; his family gives her Kogarashi.</div></div>
+      <div class="timeline-entry"><div class="when">Session 1</div><div class="what">North of the Aelu River the Lion break the Unicorn and take the opposing general. The lord he serves gets off the field alive.</div></div>
+      <div class="timeline-entry"><div class="when">Session 2</div><div class="what">Taken prisoner at the Battle of the Hanto River. No word is sent to his wife.</div></div>
+      <div class="timeline-entry"><div class="when">Session 19</div><div class="what">His custody is moved out of Okoto Sakuon's command at Kitsu Takeko's order.</div></div>
+      <div class="timeline-entry"><div class="when">Session 24</div><div class="what">Confirmed by letter to be treated honourably as a prisoner of war.</div></div>
+      <div class="timeline-entry"><div class="when">Session 27</div><div class="what">Sends Setsuna a gift wrapped in purple. Her request for his custody goes unanswered.</div></div>
+      <div class="timeline-entry"><div class="when">~Session 46</div><div class="what">Conveyed under safe conduct to the Castle of the Swift Sword on Akodo Toturi's order, unasked.</div></div>
+      <div class="timeline-entry"><div class="when">Session 48</div><div class="what">Setsuna learns he is free. She does not yet know what he intends to do next.</div></div>
+    </div>
+  </section>
+
+  <section id="trajectory">
+    <h2 class="section-title">IX. Trajectory</h2>
+
+    <h3 class="subhead">A Build With No Slack In It</h3>
+    <p>Every point of his hundred is committed, and committed narrowly: three rings at 3, four skills at 3, and a title carried to completion. There is no reserve and no hedge. The next experience he earns is the first real choice he has had, and it arrives at the moment his ninjō has finally named what he wants.</p>
+
+    <h3 class="subhead">The Command He Wants</h3>
+    <p>His ninjō asks for men of his own. The obstacles are named in it: Kamoko's authority, his own refusal to manoeuvre, and now a captivity that will be read by some as a failure. The Unicorn's internal politics are live — Moto Gaheris wants primacy over the Shinjo and has suspended that contest only while the clan musters against something from outside — so there is a route to an independent command for a Shinjo officer who is willing to be political. He is the one man who will not take it.</p>
+
+    <h3 class="subhead">The Marriage</h3>
+    <p>He returns to a wife who spent the war becoming an Imperial arbiter, who has stacked Toshi Ranbo, the Phoenix claim and a missing woman onto a single Winter Court, and whose method he does not respect. Everything he owes he owes to obligations she arranged and he never saw. Whether he ever learns that is the question the character is actually pointed at.</p>
+  </section>
+
+  <footer class="doc-footer">
+    <p>Built from the owner's Foundry VTT exports of 24 August 2026 (<code>sources/foundry/fvtt-Actor-shinjo-harunobu.json</code> and <code>fvtt-Actor-khar-baatar.json</code>), from the owner's character notes, and from the chronicle. Where the notes and the export disagree, the export governs. The playable sheet is at <a href="../play/harunobu.html">Play</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>

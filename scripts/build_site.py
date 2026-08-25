@@ -60,10 +60,17 @@ CURRENT_PARTY = ["Doji Setsuna", "Bayushi Monban", "Shiba Midori", "Kakita Kazum
 FLASHBACK_PARTY = ["Matsu Morozane", "Kitsu Somalia", "Matsumura Zane"]
 FLASHBACK_SESSIONS = set(range(10, 18))
 
-# PCs with a live sheet under play/. Setsuna is built by the doji-setsuna repo;
-# Morozane by scripts/build_morozane_sheet.py in this one.
+# Characters with a live sheet under play/. Setsuna is built by the doji-setsuna
+# repo; Morozane by scripts/build_morozane_sheet.py and Harunobu by
+# scripts/build_harunobu_sheet.py, both in this one. Harunobu is an NPC rather
+# than a PC — the sheet exists because he is statted, not because he is played.
 PLAYABLE = {"Doji Setsuna": "play/setsuna.html",
-            "Matsu Morozane": "play/morozane.html"}
+            "Matsu Morozane": "play/morozane.html",
+            "Shinjo Harunobu": "play/harunobu.html"}
+
+# Hand-authored dossiers under character/. Setsuna's is also reachable from
+# character/index.html; an NPC's entity page is the only route to theirs.
+DOSSIER = {"Shinjo Harunobu": "character/harunobu.html"}
 
 
 def esc(s):
@@ -407,9 +414,15 @@ def entity_body(p, reg, ledger, sessions_by_no):
     eyebrow = {"npc": "Dramatis Persona", "pc": "The Party", "location": "Gazetteer",
                "faction": "Faction", "item": "Relic", "lore": "Document"}[p.cat]
     sub = ('<p class="meta">%s</p>' % esc(clan)) if clan else ""
-    if p.title in PLAYABLE:
-        sub += ('<p style="margin-top:0.9rem"><a class="play-btn" href="%s">'
-                'Open the sheet &amp; play</a></p>' % rel(url, PLAYABLE[p.title]))
+    if p.title in PLAYABLE or p.title in DOSSIER:
+        links = []
+        if p.title in DOSSIER:
+            links.append('<a class="play-btn" href="%s">Read the dossier</a>'
+                         % rel(url, DOSSIER[p.title]))
+        if p.title in PLAYABLE:
+            links.append('<a class="play-btn" href="%s">Open the sheet &amp; play</a>'
+                         % rel(url, PLAYABLE[p.title]))
+        sub += '<p style="margin-top:0.9rem">%s</p>' % " ".join(links)
     bits.append('<header class="masthead"><div class="eyebrow">%s</div><h1>%s</h1>%s</header>'
                 % (eyebrow, esc(p.title), sub))
     bits.append('<div class="col">')
