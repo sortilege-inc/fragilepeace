@@ -183,7 +183,9 @@ ARMOR_KEYS = ["Physical", "Supernatural", "Rarity", "Qualities"]
 # from the owner's character notes; nothing mechanical is invented, and where the
 # notes say nothing the entry stays bare.
 GEAR_NOTES = {
-    "Three Victories": "A calligraphy scroll, penned by Akodo Masanari and given to him as the "
+    "Scroll of Battle Tactics": "School issue. The Hida Battle Leader starting outfit includes "
+                                "“several scrolls of battle tactics”, and he still carries them.",
+    "Three Victories":"A calligraphy scroll, penned by Akodo Masanari and given to him as the "
                        "Lion half of a pact of brotherhood: “Victory over the enemy. "
                        "Victory over oneself. Victory over fate.” Masanari meant it as a "
                        "question — whether Harunobu pursues his own path or merely follows "
