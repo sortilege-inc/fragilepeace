@@ -99,14 +99,18 @@
     {
       "name": "Battle of No Escape",
       "tag": "Shūji",
-      "text": "There are no conditions of battle simpler or more motivating than “win or die.” A warrior surrounded, with no hope of surrender, is far more likely to be willing to fight to the death, clinging to the feeble chance of survival presented: seize victory or pay the ultimate price. An outnumbered or outmatched commander might intentionally place their troops such that retreat is difficult or impossible, keeping them fighting to the last despite the terrible odds against them.\n\nActivation: Once per scene as a Support action, you may make a TN 5 Command (void) check targeting your cohort or a number of characters who can hear you up to your ranks in Meditation. Reduce the TN of this check to 2 if all targets are in Confining or Entangling terrain.\n\nEffects: If you succeed during a mass battle, your army does not suffer morale collapse if its panic exceeds its discipline, and continues to function normally. This effect persists for one round, plus one round for every three bonus successes. If you succeed during an intrigue, duel, or skirmish, each target ignores the effects of the Compromised condition. This effect persists for one round, plus one round for every two bonus successes.\n\nNew Opportunities\n\n(void)(op)+ (Intrigue, Duel, or Skirmish): Choose one additional target per  spent this way.\n\n(void)(op)(op) (Intrigue, Duel, or Skirmish): If you succeed, each target also ignores the effects of the Incapacitated condition for one round, plus one round for every two bonus successes.",
+      "text": "TN 2 if all targets are in Confining or Entangling terrain. Reaches your cohort, or characters who can hear you up to your ranks in Meditation (1).\n\nThere are no conditions of battle simpler or more motivating than “win or die.” A warrior surrounded, with no hope of surrender, is far more likely to be willing to fight to the death, clinging to the feeble chance of survival presented: seize victory or pay the ultimate price. An outnumbered or outmatched commander might intentionally place their troops such that retreat is difficult or impossible, keeping them fighting to the last despite the terrible odds against them.\n\nActivation: Once per scene as a Support action, you may make a TN 5 Command (void) check targeting your cohort or a number of characters who can hear you up to your ranks in Meditation. Reduce the TN of this check to 2 if all targets are in Confining or Entangling terrain.\n\nEffects: If you succeed during a mass battle, your army does not suffer morale collapse if its panic exceeds its discipline, and continues to function normally. This effect persists for one round, plus one round for every three bonus successes. If you succeed during an intrigue, duel, or skirmish, each target ignores the effects of the Compromised condition. This effect persists for one round, plus one round for every two bonus successes.\n\nNew Opportunities\n\n(void)(op)+ (Intrigue, Duel, or Skirmish): Choose one additional target per  spent this way.\n\n(void)(op)(op) (Intrigue, Duel, or Skirmish): If you succeed, each target also ignores the effects of the Incapacitated condition for one round, plus one round for every two bonus successes.",
       "ring": "void",
       "activation": {
-        "actionType": "Scheme",
-        "punct": ".",
-        "tnLabel": "target's vigilance",
+        "actionType": "Support action",
+        "punct": ":",
+        "tn": 5,
         "skill": "command",
         "ring": "void"
+      },
+      "uses": {
+        "max": 1,
+        "per": "Scene"
       }
     },
     {
@@ -126,14 +130,13 @@
       "name": "Great Anvil's Measure",
       "tag": "Shūji",
       "text": "A proud leader often draws attention to themselves in battle, and a leader both proud and skilled does so to draw their enemy into attacking them—especially when the enemy would rather attack elsewhere. When the leader’s troops are properly readied, and especially when they are in a highly defensible location, such an attack against them is doomed to fail.\n\nActivation: When you make a check to perform a Guard action in a skirmish (see page 264 of the core rulebook) or a Reinforce action in a mass battle (see page 279 of the core rulebook), you may spend (op) as follows:\n\n(earth)(op)+ (Guard): Choose any number of characters in the scene with focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. Each chosen character must receive strife equal to your ranks in Performance to perform an Attack or Scheme action targeting any character other than you. This effect persists until the end of your next turn.\n\n(earth)(op)+ (Reinforce): Choose any number of leaders in the enemy army with focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. The enemy army receives panic equal to your ranks in Performance each time any of those leaders performs an Attack or Scheme action targeting any cohort other than yours. This effect persists until the end of your next turn.",
-      "ring": "earth",
-      "activation": {
-        "actionType": "Support action",
-        "punct": ":",
-        "tn": 2,
-        "skill": "tactics",
-        "ring": "earth"
-      }
+      "ring": "earth"
+    },
+    {
+      "name": "Righteous Example",
+      "tag": "Shūji",
+      "text": "A leader’s power exists only in the minds of their followers, yet none can deny the power of an army. In Rokugani warfare, leaders and even commanders often take the field themselves at the start of battle, showing that they shoulder a portion of the risk alongside their warriors. This helps spur their forces on to great victories no warrior alone could achieve.\n\nActivation: As an Attack and Support action during a mass battle, you may make a TN 3 Martial Arts (fire) check targeting an enemy leader’s cohort.\n\nEffects: If you succeed, the enemy army suffers attrition and panic equal to 1 plus your bonus successes. If you succeed, other leaders in your army reduce the TN of their Attack action checks by 1. This effect persists until the end of your next turn. If you fail, reduce the TN of Attack and Scheme action checks targeting your cohort by 1. This effect persists until the end of your next turn.\n\nNew Opportunities\n\n(fire)(op)(op): If you are both the commander and a leader, your army gains 1 momentum point toward its current strategic objective.",
+      "ring": "fire"
     },
     {
       "name": "Beseech Akodo's Judgment",
@@ -152,6 +155,12 @@
       "tag": "Ritual",
       "text": "Shiba was a warrior, but he did not love war—despite his vast might, he sought peace over conflict and compromise over bloodshed. Yet war was inescapable in his lifetime, and so he sought Isawa’s spiritual expertise to learn methods for purifying battlefields after times of bloodshed profaned the land. As the War with Fu Leng dragged on, Isawa saw the wisdom in sharing this knowledge, and the rites he taught Shiba for stilling the unsettled spirits of the land after the shedding of blood are used in Rokugan even centuries later.\n\nActivation: Once per game session after participating in a Mass Battle or as a downtime activity, you may make a TN 3 Theology (void) check targeting an area upon which a mass battle was fought earlier that day.\n\nEffects: If you succeed, remove the Defiled terrain quality from the area.\n\nNew Opportunities\n\n(op): If the area gained the Dangerous, Entangling, or Obscuring terrain quality during the battle through supernatural means, remove one or more of those terrain qualities of your choice.\n\n(op)(op): Remove the Imbalanced terrain quality from the area.\n\n(op)(op): Until the end of the game session, non-Tainted beings reduce the TN of Theology checks they make in this area by 1 (to a minimum of 1), and Tainted beings increase the TN of all checks they make in this area by 1.\n\n(op)+: Reduce the TN of any Fitness or Meditation checks that characters in your army need to make at the end of a scene by 1 per (op) spent this way, to a minimum of 1.",
       "ring": "void"
+    },
+    {
+      "name": "Heartpiercing Strike",
+      "tag": "Kata",
+      "text": "Battle is the art of killing, and woe betide any warrior who forgets it. With a roar, the bushi launches forward, stabbing out with their weapon to fatally impale their enemy. Even if the strike does not slay the foe, it is likely to weaken them significantly.\n\nActivation: As an Attack and Movement action using a readied weapon, you may make a TN 4 Martial Arts (fire) check using the appropriate skill for that weapon, targeting one character within the weapon’s range.\n\nEffects: If you succeed, your target suffers a critical strike with severity equal to your weapon’s deadliness plus your bonus successes. The TN of the Fitness check to resist this critical strike is 3 ((air) 4, (water) 1) instead of the normal TN. If you fail, you suffer the Disoriented condition.\n\nNew Opportunities\n\n(fire)(op): Before resolving the effect, move up to 1 range band toward your target.",
+      "ring": "fire"
     },
     {
       "name": "Soaring Slice",
@@ -175,26 +184,26 @@
       "name": "Tactical Assessment",
       "tag": "Kata",
       "text": "Akodo’s Leadership and Bayushi’s Lies agree on a few topics, for both leaders were practical to a certain degree, even if Akodo famously scorned many of Bayushi’s methods. As the scholar Hida Fuyuko noted in her revelatory commentary on Leadership’s lessons for commanders on the Kaiu Wall, the most famous meeting of these two minds comes on the matter of preparation: battles are not won in the field, but in the leadup to the conflict. Even in small clashes, the warrior who better understands the terrain, the strength of their own forces, and the composition of the enemy’s troops is usually victorious.\n\nActivation: When you make an Initiative check, you may spend (op) in the following way:\n\n(air)(op): Choose an enemy in the conflict. Learn one of their advantages (of their choice) and their physical or supernatural resistance (your choice).\n\n(earth)(op): Choose a character in the conflict. They do not apply any of their disadvantages to their checks until the end of their first turn.\n\n(water)(op): Choose a piece of terrain in the scene (see Terrain on page 267). Until the start of your first turn, it counts as having the Obscuring quality for Attack action checks targeting you and your allies.\n\n(fire)(op): Choose a character in the conflict and one of their advantages you know. Until the end of their first turn, they apply that advantage to all of their checks.",
-      "ring": "void",
-      "activation": {
-        "actionType": "Support action",
-        "punct": ":",
-        "tn": 2,
-        "skill": "tactics",
-        "ring": "void"
-      }
+      "ring": "void"
     },
     {
       "name": "Warrior’s Resolve",
       "tag": "Kata",
       "text": "The bushi draws a deep breath, exhaling as they rise to their feet. Pain can be conquered as long as there is a duty to be done. Honor is stronger than steel, it is said, and it falls to the samurai to prove it.\n\nActivation: Once per scene, as a Support action, you may spend 1 Void point to recover.\n\nEffects: Remove fatigue equal to your honor rank.",
       "ring": "void",
-      "activation": {
-        "actionType": "Support action",
-        "punct": ":",
-        "tn": 2,
-        "skill": "meditation",
-        "ring": "void"
+      "uses": {
+        "max": 1,
+        "per": "Scene"
+      },
+      "use": {
+        "label": "Support action",
+        "voidCost": 1,
+        "fatigueRemove": "honorRank",
+        "uses": {
+          "max": 1,
+          "per": "Scene"
+        },
+        "note": "No check. Removes fatigue equal to your honor rank ({n})."
       }
     },
     {
@@ -417,7 +426,21 @@
       "text": "Most samurai who serve on the battlefield are not driven by a desire for monetary recompense, but this does not mean that they are not motivated by rewards. Recognition by one’s daimyō or commander is highly sought-after, and a choice word of praise from an individual of sufficient influence can spread quickly through a province or even across the entire Empire.\n\nAssigned by: A daimyō or army commander with status 60 or higher after you have been part of a mass battle in which your cohort was the one to complete at least one strategic objective.\n\nGlory Award: +5\n\nStatus Award: +5 (to a maximum of 40)\n\nTitle Ability: Behold the Legend\n\nCurriculum\n\nMartial Skills\n\n— Skill Group\n\nCommand\n\n— Skill\n\nCulture\n\n— Skill\n\nPerformance\n\n— Skill\n\n(kata) Rank 1-2 Kata (prereq)\n\n— Tech. Grp.\n\n(kata) Heartpiercing Strike (prereq)\n\n— Technique\n\n(shuji) Righteous Example (prereq)\n\n— Technique"
     }
   ],
-  "bonds": [],
+  "bonds": [
+    {
+      "name": "Doji Setsuna",
+      "type": "Wife (Lover)",
+      "rank": 1,
+      "ability": "With You, the Storm Subsides",
+      "abilityText": "At end of scene involving lover or reminders of them, call upon bond to remove additional strife equal to bond rank.",
+      "use": {
+        "label": "End of scene · call upon the bond",
+        "strifeRemove": "bondRank",
+        "note": "Removes additional strife equal to your bond rank ({n})."
+      },
+      "text": "Samurai are expected to place romantic love below their obligations to family and clan — but the human heart is not so easily confined. Many samurai who fall in love keep their relationship secret, while others are more overt.\n\nA lover seeks to spend time with you, writes letters to you, and is willing to assist you in ways that do not require publicly acknowledging your bond — giving you information key to pursuing a desired goal, encouraging you to pursue your personal interests, helping you to deal with emotions you usually must keep to yourself — and they expect you to do the same.\n\nGenerally, your lover's allies do not acknowledge your relationship. Some might be favorably disposed to you covertly if you make their ally happy (and unfavorably disposed if you make them unhappy), while others might be jealous of the attention you receive. Your lover's enemies might target you to attempt to gain leverage over your lover.\n\nIf your bond rank is 3 or higher, a lover is more overt about your relationship, allowing them to assist you more publicly — such as giving you letters of introduction to officials above your status, allowing you to use their name to pursue your goals, and even helping you directly — and they expect the same from you."
+    }
+  ],
   "afflictions": [],
   "companion": {
     "name": "Khar Baatar",
@@ -450,7 +473,12 @@
     },
     "ability": "Loyal Steed · Willful (Adversity) · Brute Strength (Distinction) · Masterful Fighter (Distinction)",
     "note": "Hot-tempered breed known for strength, size, and explosive gallop. Carries heavily armored lancers into battle but lacks stamina for prolonged journeys.\n\nHooves — Range 1-2 · Damage 7 · Deadliness 6\n\nA Rokugani pony is a silhouette 3 creature. It can be ridden by a human-sized (silhouette 2 or lower) rider.\n\nMounts and Riding\n\nWhile it is being ridden during a conflict, a mount does not take a turn of its own, and provides the following benefits to its rider:\n\n• When the rider succeeds on a Movement action check, add bonus successes equal to the mount's Water Ring.\n\n• The rider may use their Survival skill in place of their Fitness skill for any Fitness check they make. During narrative and downtime scenes, a mounted character doubles their overland travel speed."
-  }
+  },
+  "pendingLabel": "Awaiting the GM",
+  "pending": [
+    "<b>Glory award outstanding</b> for his part in the Unicorn/Lion conflict and his captivity as a prisoner of the Lion — and possibly honour or status with it. The GM has yet to set the figure; expected next session.",
+    "The glory, honour and status below are therefore <b>pre-award</b>. Do not spend or stake against a number that is about to move."
+  ]
 }
 </script>
 <script>window.SHEET = JSON.parse(document.getElementById("sheet-data").textContent);</script>

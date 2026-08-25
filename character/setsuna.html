@@ -82,6 +82,34 @@
     background: var(--gold);
     margin: 1rem auto 0;
   }
+  /* Standing notice — table facts the sheet cannot carry yet: an award the GM
+     has still to set, or a credit taken in play and not spent. Mirrors
+     .pend-banner on the play sheet. Delete an entry the moment it lands. */
+  aside.standing {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    background: rgba(168, 138, 74, 0.09);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--crimson);
+    padding: 0.9rem 1.15rem;
+    margin: 0 0 2.75rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  aside.standing .seal { color: var(--crimson); font-size: 1.2rem; line-height: 1.25; }
+  aside.standing .standing-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+  aside.standing ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+  aside.standing li { margin: 0.25rem 0; }
+  aside.standing strong { color: var(--ink); }
+
   .eyebrow {
     font-family: "Cormorant SC", serif;
     font-size: 0.75rem;
@@ -598,6 +626,17 @@
 <body>
 <nav class="topnav"><span class="brand">The Fragile Peace</span><a href="../index.html">Home</a><a href="../character/index.html" class="active">Setsuna</a><a href="../party/index.html">The Party</a><a href="../chronicle/index.html">Chronicle</a><a href="../dramatis-personae/index.html">Dramatis Personae</a><a href="../map/index.html">Atlas</a><a href="../lore/index.html">Lore</a><a href="../notes/index.html" class="notes">Player Notes</a></nav>
 <div class="document">
+
+  <aside class="standing">
+    <span class="seal">&#10070;</span>
+    <div>
+      <div class="standing-label">In hand, unspent</div>
+      <ul>
+        <li><strong>Two boons, owed by the Lion.</strong> Unspent and unspecified, taken in the tent at session 53 when they were left choosing between giving ground and owing her.</li>
+        <li><strong>Next Social skill check against Miya Satoshi: TN &minus;4</strong>, to a minimum of TN 1. Worth spending on a Social (Water) check so Shallow Waters can buy his ninj&#333; at two opportunities.</li>
+      </ul>
+    </div>
+  </aside>
 
   <header class="title-block">
     <div class="eyebrow">Confidential Character Dossier</div>

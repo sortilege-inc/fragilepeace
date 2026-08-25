@@ -23,6 +23,15 @@
 /* read-only snapshot */
 .ro-banner{ display:flex; gap:0.8rem; align-items:flex-start; background:rgba(154,123,63,0.14); border:1px solid var(--gold-soft); border-left:3px solid var(--gold); border-radius:4px; padding:0.8rem 1rem; margin:0 0 1.2rem; color:var(--ink-2); font-size:0.96rem; line-height:1.5; }
 .ro-banner .seal{ font-size:1.4rem; color:var(--gold); line-height:1; }
+
+/* Standing notices — same frame as .ro-banner, crimson rule and seal so it reads
+   as a note pinned to the sheet rather than a lock on it. */
+.pend-banner{ display:flex; gap:0.8rem; align-items:flex-start; background:rgba(154,123,63,0.10); border:1px solid var(--gold-soft); border-left:3px solid var(--crimson); border-radius:4px; padding:0.75rem 1rem; margin:0 0 1.2rem; color:var(--ink-2); font-size:0.94rem; line-height:1.5; }
+.pend-banner .seal{ font-size:1.25rem; color:var(--crimson); line-height:1.1; }
+.pend-banner .pl{ font-family:var(--caps); text-transform:uppercase; letter-spacing:0.14em; font-size:0.68rem; color:var(--gold); }
+.pend-banner ul{ margin:0.3rem 0 0; padding-left:1.05rem; }
+.pend-banner li{ margin:0.22rem 0; }
+.pend-banner b{ color:var(--ink); }
 .ro-banner b{ color:var(--sumi); }
 #sheet.readonly .pips{ pointer-events:none; }
 #sheet.readonly .pip{ cursor:default; }

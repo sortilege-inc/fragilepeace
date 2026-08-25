@@ -148,19 +148,44 @@ PECULIARITY_TAGS = {"distinction": "Distinction", "passion": "Passion",
                     "adversity": "Adversity", "anxiety": "Anxiety"}
 
 # Roller hooks, keyed by technique name. The engine reads these to offer an
-# activation button; no export carries them.
+# activation button; no export carries them, so each one is checked against the
+# corpus rather than guessed at.
+#
+# Only techniques that are *independently activated on their own check* belong
+# here. Great Anvil's Measure and Tactical Assessment are (op) spends on somebody
+# else's action — a Guard or Reinforce, and an Initiative check — and giving them
+# a roller button invites a check that the rules never call for. Warrior's Resolve
+# takes no check at all. All three are deliberately absent.
 ACTIVATION = {
-    "Warrior’s Resolve": {"actionType": "Support action", "punct": ":", "tn": 2,
-                          "skill": "meditation", "ring": "void"},
-    "Tactical Assessment": {"actionType": "Support action", "punct": ":", "tn": 2,
-                            "skill": "tactics", "ring": "void"},
-    "Battle of No Escape": {"actionType": "Scheme", "punct": ".",
-                            "tnLabel": "target's vigilance", "skill": "command",
-                            "ring": "void"},
-    "Great Anvil's Measure": {"actionType": "Support action", "punct": ":", "tn": 2,
-                              "skill": "tactics", "ring": "earth"},
+    # "Once per scene as a Support action, you may make a TN 5 Command (Void) check
+    # targeting your cohort or a number of characters who can hear you up to your
+    # ranks in Meditation. Reduce TN to 2 if all targets are in Confining or
+    # Entangling terrain."
+    "Battle of No Escape": {"actionType": "Support action", "punct": ":", "tn": 5,
+                            "skill": "command", "ring": "void",
+                            "note": "TN 2 if all targets are in Confining or Entangling "
+                                    "terrain. Reaches your cohort, or characters who can "
+                                    "hear you up to your ranks in Meditation ({med})."},
     "Fortress of Necessity": {"actionType": "Support action", "punct": ":", "tn": 3,
                               "skill": "command", "ring": "earth"},
+}
+
+# Per-scene limits on the techniques that carry one.
+USES = {
+    "Battle of No Escape": {"max": 1, "per": "Scene"},
+    "Warrior’s Resolve": {"max": 1, "per": "Scene"},
+}
+
+# Techniques that spend a resource instead of rolling. Core p. 178: "Once per
+# scene, as a Support action, you may spend 1 Void point to recover. Effects:
+# Remove fatigue equal to your honor rank." No check is involved, so this is a
+# button rather than an activation.
+USE = {
+    "Warrior’s Resolve": {"label": "Support action", "voidCost": 1,
+                          "fatigueRemove": "honorRank",
+                          "uses": {"max": 1, "per": "Scene"},
+                          "note": "No check. Removes fatigue equal to your honor rank "
+                                  "({n})."},
 }
 
 # Anxieties drive the engine's strife buttons; distinctions and adversities drive
@@ -206,7 +231,16 @@ def technique(it):
     if s.get("ring"):
         t["ring"] = s["ring"]
     if it["name"] in ACTIVATION:
-        t["activation"] = ACTIVATION[it["name"]]
+        act = dict(ACTIVATION[it["name"]])
+        note = act.pop("note", None)
+        t["activation"] = act
+        if note:
+            t["text"] = note.replace("{med}", str(
+                sysd["skills"]["martial"].get("meditation", 0))) + "\n\n" + t["text"]
+    if it["name"] in USES:
+        t["uses"] = USES[it["name"]]
+    if it["name"] in USE:
+        t["use"] = USE[it["name"]]
     return t
 
 
@@ -248,8 +282,28 @@ def gear(it):
     return g
 
 
+def all_items(src):
+    """Every item, including the ones a title owns.
+
+    A title's own `system.items` holds the advancements and techniques bought
+    through it, and they are items the character genuinely has — Righteous
+    Example and Heartpiercing Strike are both paid for and both invisible to a
+    pass that only walks `actor["items"]`. The title card listing them under
+    Curriculum is what made them look accounted for.
+
+    Used for display only. The XP pass below deliberately keeps reading top level,
+    because a title's `xp_used` already sums its children and walking both would
+    total 116 against an `xp_total` of 100.
+    """
+    for i in src:
+        yield i
+        if i["type"] == "title":
+            for sub in i["system"].get("items", []):
+                yield sub
+
+
 def ordered(kind, key=None):
-    out = [i for i in items if i["type"] == kind]
+    out = [i for i in all_items(items) if i["type"] == kind]
     return sorted(out, key=key) if key else out
 
 
@@ -267,6 +321,54 @@ gear_list = [gear(i) for i in
 
 rings = sysd["rings"]
 flat_skills = {k: v for grp in sysd["skills"].values() for k, v in grp.items() if v}
+
+# The reciprocal of the bond on Setsuna's sheet. A GM grant at rank 1, costing
+# nothing, so it sits outside the XP ledger entirely — bond XP counts toward
+# neither school curriculum nor title progress in any case.
+#
+# Prefer a bond item off the export, so the two sheets stay in step from one
+# source; the constant below is the stand-in until an export carrying it lands.
+SETSUNA_BOND = {
+    "name": "Doji Setsuna",
+    "type": "Wife (Lover)",
+    "rank": 1,
+    "ability": "With You, the Storm Subsides",
+    "abilityText": "At end of scene involving lover or reminders of them, call upon bond "
+                   "to remove additional strife equal to bond rank.",
+    "use": {"label": "End of scene · call upon the bond", "strifeRemove": "bondRank",
+            "note": "Removes additional strife equal to your bond rank ({n})."},
+    "text": "Samurai are expected to place romantic love below their obligations to family "
+            "and clan — but the human heart is not so easily confined. Many samurai who "
+            "fall in love keep their relationship secret, while others are more overt.\n\n"
+            "A lover seeks to spend time with you, writes letters to you, and is willing "
+            "to assist you in ways that do not require publicly acknowledging your bond — "
+            "giving you information key to pursuing a desired goal, encouraging you to "
+            "pursue your personal interests, helping you to deal with emotions you usually "
+            "must keep to yourself — and they expect you to do the same.\n\n"
+            "Generally, your lover's allies do not acknowledge your relationship. Some "
+            "might be favorably disposed to you covertly if you make their ally happy (and "
+            "unfavorably disposed if you make them unhappy), while others might be jealous "
+            "of the attention you receive. Your lover's enemies might target you to attempt "
+            "to gain leverage over your lover.\n\n"
+            "If your bond rank is 3 or higher, a lover is more overt about your "
+            "relationship, allowing them to assist you more publicly — such as giving you "
+            "letters of introduction to officials above your status, allowing you to use "
+            "their name to pursue your goals, and even helping you directly — and they "
+            "expect the same from you.",
+}
+
+bonds = []
+for it in items:
+    if it["type"] != "bond":
+        continue
+    s = it["system"]
+    b = {"name": it["name"], "rank": s.get("rank", 1),
+         "text": plain(s.get("description", ""))}
+    if it["name"] == SETSUNA_BOND["name"]:
+        b = dict(SETSUNA_BOND, **{k: v for k, v in b.items() if v})
+    bonds.append(b)
+if not any(b["name"] == SETSUNA_BOND["name"] for b in bonds):
+    bonds.append(SETSUNA_BOND)
 
 # The one title he holds. Its ability is a technique in its own right in the
 # export, so the card points at that entry rather than restating the text.
@@ -332,6 +434,19 @@ if _steed:
     _note.append(plain(_steed["system"].get("description", "")))
 COMPANION["note"] = "\n\n".join(x for x in _note if x)
 
+# Standing notices, shown at the top of both the sheet and the dossier. These are
+# table facts the export cannot carry: awards the GM has said are owed but has not
+# yet set. Delete the entry the moment the number lands on the sheet — a banner
+# that outlives its award is worse than no banner.
+PENDING_LABEL = "Awaiting the GM"
+PENDING = [
+    "<b>Glory award outstanding</b> for his part in the Unicorn/Lion conflict and "
+    "his captivity as a prisoner of the Lion — and possibly honour or status with "
+    "it. The GM has yet to set the figure; expected next session.",
+    "The glory, honour and status below are therefore <b>pre-award</b>. Do not "
+    "spend or stake against a number that is about to move.",
+]
+
 SHEET = {
     "id": "harunobu",
     "name": actor["name"],
@@ -360,9 +475,11 @@ SHEET = {
     "peculiarities": peculiarities,
     "gear": gear_list,
     "titles": titles,
-    "bonds": [],
+    "bonds": bonds,
     "afflictions": [],
     "companion": COMPANION,
+    "pendingLabel": PENDING_LABEL,
+    "pending": PENDING,
 }
 
 # XP has to be counted off the item tree, not read off `system.xp_spent` — that

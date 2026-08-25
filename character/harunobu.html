@@ -82,6 +82,34 @@
     background: var(--gold);
     margin: 1rem auto 0;
   }
+  /* Standing notice — table facts the sheet cannot carry yet: an award the GM
+     has still to set, or a credit taken in play and not spent. Mirrors
+     .pend-banner on the play sheet. Delete an entry the moment it lands. */
+  aside.standing {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    background: rgba(168, 138, 74, 0.09);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--crimson);
+    padding: 0.9rem 1.15rem;
+    margin: 0 0 2.75rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  aside.standing .seal { color: var(--crimson); font-size: 1.2rem; line-height: 1.25; }
+  aside.standing .standing-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+  aside.standing ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+  aside.standing li { margin: 0.25rem 0; }
+  aside.standing strong { color: var(--ink); }
+
   .eyebrow {
     font-family: "Cormorant SC", serif;
     font-size: 0.75rem;
@@ -604,6 +632,17 @@
 <nav class="topnav"><span class="brand">The Fragile Peace</span><a href="../index.html">Home</a><a href="../character/index.html">Setsuna</a><a href="../party/index.html">The Party</a><a href="../chronicle/index.html">Chronicle</a><a href="../dramatis-personae/index.html">Dramatis Personae</a><a href="../map/index.html">Atlas</a><a href="../lore/index.html">Lore</a><a href="../notes/index.html" class="notes">Player Notes</a></nav>
 <div class="document">
 
+  <aside class="standing">
+    <span class="seal">&#10070;</span>
+    <div>
+      <div class="standing-label">Awaiting the GM</div>
+      <ul>
+        <li><strong>Glory award outstanding</strong> for his part in the Unicorn/Lion conflict and his captivity as a prisoner of the Lion &mdash; and possibly honour or status with it. The GM has yet to set the figure; expected next session.</li>
+        <li>The glory, honour and status recorded below are therefore <strong>pre-award</strong>. Do not spend or stake against a number that is about to move.</li>
+      </ul>
+    </div>
+  </aside>
+
   <header class="title-block">
     <div class="eyebrow">Confidential Character Dossier</div>
     <h1 class="character-name">Shinjo <span class="given">Harunobu</span></h1>
@@ -632,6 +671,7 @@
       <li><a href="#khar-baatar">Khar Baatar</a></li>
       <li><a href="#captivity">The Captivity</a></li>
       <li><a href="#timeline">Career Timeline</a></li>
+      <li><a href="#advancement">Advancement Plan</a></li>
       <li><a href="#trajectory">Trajectory</a></li>
     </ol>
   </nav>
@@ -877,8 +917,70 @@
     </div>
   </section>
 
+  <section id="advancement">
+    <h2 class="section-title">IX. Advancement Plan</h2>
+
+    <p>The problem to solve is that his command half is starved. Every technique on the
+    support side scales off a skill he does not have, while the martial side is fully
+    funded at Melee 3, Fire 3 and Earth 3. Two of his shūji are inert or crippled as the
+    sheet stands.</p>
+
+    <table class="dossier-table">
+      <tr><td class="label">Great Anvil's Measure</td><td>Scales off <strong>Performance 0</strong>. Inflicts strife equal to Performance and affects only characters with focus at or below Performance + 2 per <em>opportunity</em>. Both terms are zero-based, so the technique does nothing.</td></tr>
+      <tr><td class="label">Fortress of Necessity</td><td>Scales off <strong>Labor 0</strong>. The fortification's difficulty is Labor plus bonus successes, so it is bonus successes only, and upkeep is a TN 2 Labor (earth) check he cannot reliably pass.</td></tr>
+      <tr><td class="label">Battle of No Escape</td><td>Reach is his ranks in <strong>Meditation 1</strong>. Outside a cohort it carries one character.</td></tr>
+    </table>
+
+    <h3 class="subhead">Priority 1 · Ujik Horsebow Pattern — 4 XP</h3>
+    <p>An item pattern applied to the horsebow he already carries: <em>enhanced recurve
+    bow — +1 damage, gains the Snaring quality, loses Durable, vulnerable to moisture.</em>
+    Rarity modifier +3. It is the only purchase on this list that improves the half of him
+    that already works, and Snaring on a bow is a control tool a battle leader can use on
+    somebody else's charge rather than on his own.</p>
+
+    <h3 class="subhead">Priority 2 · Performance 0 → 1 and Labor 0 → 1 — 4 XP</h3>
+    <p>Both are in the rank 3 Hida Battle Leader curriculum — Performance by name, Labor as
+    a Trade skill — so both count in full toward school rank 4. Performance 1 makes Great
+    Anvil's Measure functional: 1 strife on chosen targets, focus threshold 1 + 2 per
+    opportunity. Labor 1 gives Fortress of Necessity a real difficulty value and makes it
+    maintainable at TN 2 on four dice keeping three. This is the highest ratio of function
+    restored to experience spent anywhere on the sheet.</p>
+
+    <h3 class="subhead">Priority 3 · Performance 1 → 2 — 4 XP</h3>
+    <p>Takes Anvil's Measure from functional to threatening: 2 strife, focus threshold
+    2 + 2 per opportunity, and in a mass battle two panic on the enemy army per qualifying
+    leader action.</p>
+
+    <h3 class="subhead">Free · one point of glory</h3>
+    <p>Beseech Akodo's Judgment grants discipline equal to glory rank plus Command ranks.
+    At Glory 49 that is rank 4, for +7. Glory 50 is rank 5, for +8. One public deed is worth
+    an experience purchase here, which makes it a thing to ask the GM for rather than to
+    buy.</p>
+
+    <h3 class="subhead">Deliberately not recommended</h3>
+    <p><strong>Meditation 1 → 2</strong> is a Martial skill in the rank 2 curriculum, so
+    out-of-curriculum at rank 3 and 8 XP; it doubles Battle of No Escape's non-cohort reach
+    from one target to two, and is only worth it if the campaign turns from mass battle to
+    skirmish. <strong>Theology 0 → 1</strong> is out-of-curriculum at 4 XP for a
+    once-per-session battlefield cleansing with no combat application. <strong>Fitness
+    1 → 2</strong> is 8 XP out-of-curriculum, tempting with two Cumbersome items, but
+    mounted he substitutes Survival 3 and Warrior's Resolve already answers fatigue for a
+    Void point.</p>
+
+    <h3 class="subhead">Noted, not costed</h3>
+    <p>Government 0 and Games 0 are gaps by character rather than by oversight. His giri is
+    military negotiation with the Crab and the school's own text calls a Hida Battle Leader
+    as adept on a tactical board as on the field, so both are defensible purchases; both are
+    now out-of-curriculum. Duel initiative is a Meditation check and Meditation is 1, which
+    is worth knowing before he accepts a challenge. And skirmish initiative is a TN 1
+    Tactics check with a ring of his choosing, so Tactical Assessment fires in nearly every
+    fight — its Earth opportunity suppresses a chosen character's disadvantages through
+    their first turn, and pointed at himself that mutes Belligerent, Superstition and
+    Fukurokujin's Curse for round one.</p>
+  </section>
+
   <section id="trajectory">
-    <h2 class="section-title">IX. Trajectory</h2>
+    <h2 class="section-title">X. Trajectory</h2>
 
     <h3 class="subhead">A Build With No Slack In It</h3>
     <p>Every point of his hundred is committed, and committed narrowly: three rings at 3, four skills at 3, and a title carried to completion. There is no reserve and no hedge. The next experience he earns is the first real choice he has had, and it arrives at the moment his ninjō has finally named what he wants.</p>

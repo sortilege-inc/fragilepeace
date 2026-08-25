@@ -173,6 +173,20 @@
     head.appendChild(tools);
     root.appendChild(head);
 
+    // Standing notices — awards the GM has not set yet, and debts the table owes
+    // the character. Current-sheet state only: a read-only snapshot predates them,
+    // and a sheet with no `pending` key renders exactly as before.
+    if(!RO && S.pending && S.pending.length){
+      var pb=el("div","pend-banner","<span class='seal'>&#10070;</span>");
+      var pbody=el("div");
+      pbody.appendChild(el("div","pl", S.pendingLabel || "Standing"));
+      var pul=el("ul");
+      S.pending.forEach(function(p){ pul.appendChild(el("li",null,p)); });
+      pbody.appendChild(pul);
+      pb.appendChild(pbody);
+      root.appendChild(pb);
+    }
+
     if(RO){
       var v=verById(curView);
       root.appendChild(el("div","ro-banner","<span class='seal'>&#9719;</span><div><b>Read-only.</b> Viewing "+(v?v.label:"a past session")+(v&&v.date?" &middot; "+v.date:"")+" — a snapshot from an earlier session. Switch the sheet selector to <em>Current</em> to make changes.</div>"));
@@ -312,7 +326,8 @@
   }
   function useScale(u, ctx){
     var spec = u.scaleBy!=null ? u.scaleBy
-             : (u.strifeRemove!=null ? u.strifeRemove : u.strifeAdd);
+             : (u.strifeRemove!=null ? u.strifeRemove
+             : (u.strifeAdd!=null ? u.strifeAdd : u.fatigueRemove));
     return useAmount(spec, ctx);
   }
   function abilityUse(name, u, ctx){
@@ -327,6 +342,7 @@
     if(u.voidCost) bits.push(u.voidCost+" Void");
     if(u.strifeRemove!=null) bits.push("&minus;"+useAmount(u.strifeRemove,ctx)+" strife");
     if(u.strifeAdd!=null) bits.push("+"+useAmount(u.strifeAdd,ctx)+" strife");
+    if(u.fatigueRemove!=null) bits.push("&minus;"+useAmount(u.fatigueRemove,ctx)+" fatigue");
     var btn=el("button","tech-activate ability-btn"+(blocked?" spent":""),
       (u.label||"Use")+(bits.length?" &middot; "+bits.join(" &middot; "):""));
     if(u.locked){ btn.disabled=true; btn.title=u.locked; }
@@ -354,10 +370,17 @@
       var add=useAmount(u.strifeAdd,ctx), s0=st.strife||0;
       st.strife=s0+add; done.push("Strife "+s0+" → "+st.strife);   // no upper clamp, as elsewhere
     }
+    // Warrior's Resolve spends a Void point to remove fatigue equal to honor rank
+    // (core p. 178). Symmetric with strife above; no sheet without fatigueRemove
+    // is affected.
+    if(u.fatigueRemove!=null){
+      var fam=useAmount(u.fatigueRemove,ctx), f0=st.fatigue||0;
+      st.fatigue=Math.max(0,f0-fam); done.push("Fatigue "+f0+" → "+st.fatigue);
+    }
     if(u.uses) st.techUses[key]=(st.techUses[key]||0)+1;
     save();
     logEvent("ability", name+(done.length?" — "+done.join("; "):" — used"), {source:name});
-    syncTracker("strife"); syncTracker("void"); syncRoller();
+    syncTracker("strife"); syncTracker("fatigue"); syncTracker("void"); syncRoller();
     renderTechniques(); renderTitles();
   }
 
