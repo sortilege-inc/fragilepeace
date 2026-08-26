@@ -454,6 +454,20 @@ for it in ordered("title"):
 NINJO = field(sysd["social"]["ninjo"]) or field(tq["step6"]["social_ninjo"])
 GIRI = field(sysd["social"]["giri"]) or field(tq["step5"]["social_giri"])
 
+# Jūjirō is non-binary. The pronoun correction reached the twenty-questions
+# record but not `system.social.ninjo`, which is the field actually published,
+# so the site was misgendering them. The owner has since fixed it in Foundry;
+# this stands in until an export carrying the fix lands, and reports itself as
+# redundant the moment one does. Delete it then.
+NINJO_STALE, NINJO_FIXED = "find him a match", "find them a match"
+if NINJO_STALE in NINJO:
+    NINJO = NINJO.replace(NINJO_STALE, NINJO_FIXED)
+    print("  note: ninjō pronoun corrected in-flight — the export still reads "
+          "%r in system.social.ninjo" % NINJO_STALE)
+else:
+    print("  note: export carries the ninjō pronoun fix; the in-flight "
+          "correction in this script is now redundant and can be deleted")
+
 # The live field and the chargen record are allowed to differ — Setsuna's tenets
 # do, on purpose. But when they differ only in a pronoun it is a half-applied
 # edit, so say so on every build rather than shipping the stale one silently.
