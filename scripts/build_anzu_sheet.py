@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 build_anzu_sheet.py — generate play/anzu.html, the playable L5R5e sheet for
-Shinjo Anzu.
+Shinjō Anzu.
 
-Anzu is Shinjo Harunobu's older sister: a Shinjo raised into the Iuchi Meishōdō
+Anzu is Shinjō Harunobu's older sister: a Shinjō raised into the Iuchi Meishōdō
 Master school, an Artisan rather than a Shugenja, who binds spirits into objects
 rather than calling on them. She is not a campaign PC and does not appear in the
 chronicle; this sheet exists so the owner can push the build around.
@@ -42,6 +42,16 @@ TEMPLATE = os.path.join(ROOT, "play", "setsuna.html")
 CORPUS_DIR = os.path.expanduser("~/Working/Titterpig DSL/titterpig-dsl-l5r5e/0.4")
 
 RINGS = ("air", "earth", "fire", "water", "void")
+
+
+def house(s):
+    """The site's spelling of the Unicorn family, applied to authored text only.
+
+    Foundry and the l5r5e books both write Shinjo; this site standardises on
+    Shinjō. Never run this over technique, item or peculiarity descriptions —
+    those are reproduced exactly as printed.
+    """
+    return s.replace("Shinjo", "Shinjō")
 
 
 # ---------------------------------------------------------------- extraction
@@ -166,7 +176,7 @@ CHARGEN_TECHNIQUES = [
     ("Ancestry Unearthed", "shuji", "earth"),
 ]
 CHARGEN_OUTFIT = ["Ceremonial Clothes", "Traveling Clothes", "Wakizashi",
-                  "Shinjo Horsebow", "Calligraphy Set", "Traveling Pack"]
+                  "Horsebow", "Calligraphy Set", "Traveling Pack"]
 
 TECH_TAGS = {"school_ability": "School Ability", "invocation": "Invocation",
              "ritual": "Ritual", "shuji": "Shūji", "inversion": "Inversion"}
@@ -282,7 +292,7 @@ hs = horse["system"]
 _hbody = corpus_block("Shinjo Courser")
 COMPANION = {
     "name": horse["name"],
-    "kind": "Shinjo Courser · mount",
+    "kind": "Shinjō Courser · mount",
     "threat": {"combat": hs["conflict_rank"]["martial"],
                "intrigue": hs["conflict_rank"]["social"]},
     "demeanor": hs.get("attitude", ""),
@@ -473,12 +483,14 @@ def build(actor):
     
     SHEET = {
         "id": "anzu",
-        "name": "Shinjo Anzu",
+        "name": "Shinjō Anzu",
         "clan": sysd["identity"]["clan"] or q("step1", "clan") or "Unicorn",
         # The family field is blank on the export, but step 2 records the Shinjo
         # entry item for item — Fire-or-Water, Sentiment +1, Survival +1, Glory 44,
         # Wealth 8 — and she is Harunobu's sister.
-        "family": sysd["identity"]["family"] or q("step2", "family") or "Shinjo",
+        # Authored character data takes the house spelling; the quoted book
+        # text further down the sheet is reproduced exactly as printed.
+        "family": house(sysd["identity"]["family"] or q("step2", "family") or "Shinjō"),
         "school": SCHOOL,
         "role": sysd["identity"]["roles"] or q("step3", "roles") or "Artisan",
         "rank": sysd["identity"]["school_rank"] or 1,
@@ -494,8 +506,8 @@ def build(actor):
                                  or q("step8", "tenet_paramount") or "",
                     "less": sysd["social"]["bushido_tenets"]["less_significant"]
                             or q("step8", "tenet_less_significant") or ""},
-        "ninjo": sysd["social"]["ninjo"] or q("step6", "social_ninjo") or "",
-        "giri": sysd["social"]["giri"] or q("step5", "social_giri") or "",
+        "ninjo": house(sysd["social"]["ninjo"] or q("step6", "social_ninjo") or ""),
+        "giri": house(sysd["social"]["giri"] or q("step5", "social_giri") or ""),
         "money": ("%d koku" % int(q("step2", "wealth") or 0)) if not sysd.get("zeni")
                  else "%d zeni" % sysd["zeni"],
         "techniques": techniques,
@@ -524,8 +536,8 @@ def build(actor):
     # creation-in-progress line joins it only while questions remain unanswered.
     SHEET["pendingLabel"] = "Not a campaign character"
     SHEET["pending"] = [
-        "Shinjo Anzu does not appear in the chronicle and is not played. She is "
-        "Shinjo Harunobu's older sister, and this sheet exists to try the build.",
+        "Shinjō Anzu does not appear in the chronicle and is not played. She is "
+        "Shinjō Harunobu's older sister, and this sheet exists to try the build.",
     ]
     if UNANSWERED:
         SHEET["pendingLabel"] = "Character creation in progress"
@@ -574,7 +586,7 @@ if "</script" in blob:
     sys.exit("sheet data would close the script tag")
 
 page = open(TEMPLATE, encoding="utf-8").read()
-page = page.replace("Doji Setsuna — Character Sheet", "Shinjo Anzu — Character Sheet")
+page = page.replace("Doji Setsuna — Character Sheet", "Shinjō Anzu — Character Sheet")
 page = page.replace('<a href="../character/setsuna.html">&lsaquo; Bio</a>',
                     '<a href="../character/anzu.html">&lsaquo; Bio</a>')
 page = re.sub(r'(<script id="sheet-data" type="application/json">\n).*?(\n</script>)',

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 build_harunobu_sheet.py — generate play/harunobu.html, the playable L5R5e sheet
-for Shinjo Harunobu and his Moto Charger, Khar Baatar.
+for Shinjō Harunobu and his Moto Charger, Khar Baatar.
 
-Harunobu is Doji Setsuna's husband: a Shinjo bushi trained in a Crab school, a
+Harunobu is Doji Setsuna's husband: a Shinjō bushi trained in a Crab school, a
 prisoner of the Lion from session 2 until Akodo Toturi freed him before session
 48. The sheet runs on the same engine as hers — play/sheet.js, play/sheet.css,
 play/l5rdata.js.
@@ -449,9 +449,10 @@ PENDING = [
 
 SHEET = {
     "id": "harunobu",
-    "name": actor["name"],
+    # The export spells the family plainly; the site standardises on Shinjō.
+    "name": actor["name"].replace("Shinjo", "Shinjō"),
     "clan": sysd["identity"]["clan"],
-    "family": sysd["identity"]["family"],
+    "family": sysd["identity"]["family"].replace("Shinjo", "Shinjō"),
     "school": sysd["identity"]["school"],
     "role": sysd["identity"]["roles"],
     "rank": sysd["identity"]["school_rank"],
@@ -514,7 +515,7 @@ if "</script" in blob:
 # The page frame is taken from Setsuna's sheet so the two stay identical but for
 # their data — same engine, same stylesheet, same bar.
 page = open(TEMPLATE, encoding="utf-8").read()
-page = page.replace("Doji Setsuna — Character Sheet", "Shinjo Harunobu — Character Sheet")
+page = page.replace("Doji Setsuna — Character Sheet", "Shinjō Harunobu — Character Sheet")
 page = page.replace('<a href="../character/setsuna.html">&lsaquo; Bio</a>',
                     '<a href="../character/harunobu.html">&lsaquo; Bio</a>')
 page = re.sub(r'(<script id="sheet-data" type="application/json">\n).*?(\n</script>)',

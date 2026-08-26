@@ -101,6 +101,20 @@ def check_rewrites():
     return len(entries), n, bad
 
 
+# Corrections that are house *orthography* rather than factual corrections, and
+# the directories they may not be enforced over. play/ carries technique, item
+# and peculiarity text imported verbatim from the game's own books — "Called the
+# Shinjo horsebow in Rokugan", "Compassion of Shinjo (Ancestral)", the passage
+# about Shinjo Reki — and the project rule is that rules text is reproduced
+# exactly, with only whitespace, HTML escaping and dice glyphs transformed.
+# Macronising inside a quotation is not one of those transforms.
+#
+# The character data on those same sheets — family, giri, ninjō, the character's
+# own name — is authored, and the generators spell it the house way, so the
+# visible sheet still reads Shinjō. Only the quoted book text is left alone.
+ORTHOGRAPHY_EXEMPT = {r"\bShinjo\b": ("play",)}
+
+
 def check_names():
     """No superseded spelling may appear anywhere in the generated site.
 
@@ -108,18 +122,24 @@ def check_names():
     all over everyone else's prose. archivist.CORRECTIONS now rewrites the text
     at read time; this is the assertion that it worked, and the thing that fails
     the build if a corrected name ever comes back.
+
+    Orthography rules carry an exemption list; see ORTHOGRAPHY_EXEMPT above.
     """
     bad = collections.Counter()
     where = {}
     for path in walk():
         if not path.endswith(".html"):
             continue
+        rel = os.path.relpath(path, ROOT)
+        top = rel.split(os.sep)[0]
         txt = io.open(path, encoding="utf-8", errors="replace").read()
         for rx, repl in A.CORRECTIONS:
+            if top in ORTHOGRAPHY_EXEMPT.get(rx.pattern, ()):
+                continue
             hits = rx.findall(txt)
             if hits:
                 bad[rx.pattern] += len(hits)
-                where.setdefault(rx.pattern, os.path.relpath(path, ROOT))
+                where.setdefault(rx.pattern, rel)
     return [(p, n, where[p]) for p, n in bad.most_common()]
 
 

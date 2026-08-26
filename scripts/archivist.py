@@ -19,7 +19,8 @@ CLANS = ["Crane", "Lion", "Unicorn", "Scorpion", "Dragon", "Phoenix", "Crab",
 FAMILY_CLAN = {
     "Doji": "Crane", "Kakita": "Crane", "Daidoji": "Crane", "Asahina": "Crane",
     "Matsu": "Lion", "Akodo": "Lion", "Ikoma": "Lion", "Kitsu": "Lion",
-    "Shinjo": "Unicorn", "Ide": "Unicorn", "Utaku": "Unicorn", "Iuchi": "Unicorn",
+    "Shinjō": "Unicorn", "Shinjo": "Unicorn", "Ide": "Unicorn",
+    "Utaku": "Unicorn", "Iuchi": "Unicorn",
     "Moto": "Unicorn", "Otaku": "Unicorn",
     "Bayushi": "Scorpion", "Shosuro": "Scorpion", "Shoshuro": "Scorpion",
     "Soshi": "Scorpion", "Yogo": "Scorpion",
@@ -162,6 +163,19 @@ CORRECTIONS = [
     # appears in that one file and nowhere else in the sources.
     (r"you have indeed miscarried", "you have indeed aborted the pregnancy"),
     (r"\bMiscarriage successful\b", "Abortion successful"),
+    # Owner 2026-08-26: the Unicorn family is spelled Shinjō, with the macron,
+    # everywhere on this site. Before this the site ran 769 plain to 3 macron and
+    # the L5R5e corpus writes Shinjo throughout, so this is a deliberate
+    # house-style departure from the books rather than a correction toward them.
+    #
+    # Ordering matters: this runs last, after the Kamo and Altansarnai rules
+    # above, whose replacements spell the family plainly. They produce
+    # "Shinjo Kamo" and this rule then takes it to "Shinjō Kamo". Do not move it
+    # up the list.
+    #
+    # Safe for URLs: slugify() normalises NFKD and drops combining marks, so
+    # "Shinjō Harunobu" still slugs to shinjo-harunobu and no link moves.
+    (r"\bShinjo\b", "Shinjō"),
 ]
 CORRECTIONS = [(re.compile(a), b) for a, b in CORRECTIONS]
 
