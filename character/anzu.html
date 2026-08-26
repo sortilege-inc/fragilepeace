@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shinjo Anzu — The Fragile Peace</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="The character dossier of Shinjo Anzu — Unicorn Clan, Iuchi Meishōdō Master, and Shinjo Harunobu's older sister.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4efe5;
+    --paper-dark: #e8e0cf;
+    --ink: #1f1d1a;
+    --ink-soft: #4a463f;
+    --ink-faint: #7a7468;
+    --crane-blue: #6b8caf;
+    --crane-blue-deep: #3d5a7a;
+    --gold: #a88a4a;
+    --gold-deep: #7e6432;
+    --crimson: #8b3a3a;
+    --rule: #c9bfa8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at 20% 10%, rgba(168, 138, 74, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(107, 140, 175, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .document {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 4rem 4.5rem 5rem;
+    box-shadow:
+      0 1px 2px rgba(31, 29, 26, 0.08),
+      0 8px 32px rgba(31, 29, 26, 0.12);
+    position: relative;
+    border: 1px solid var(--rule);
+  }
+  .document::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      var(--crane-blue-deep) 0%,
+      var(--crane-blue) 25%,
+      var(--gold) 50%,
+      var(--crane-blue) 75%,
+      var(--crane-blue-deep) 100%);
+  }
+
+  /* HEADER */
+  header.title-block {
+    text-align: center;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  header.title-block::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem auto 0;
+  }
+  /* Standing notice — table facts the sheet cannot carry yet: an award the GM
+     has still to set, or a credit taken in play and not spent. Mirrors
+     .pend-banner on the play sheet. Delete an entry the moment it lands. */
+  aside.standing {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    background: rgba(168, 138, 74, 0.09);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--crimson);
+    padding: 0.9rem 1.15rem;
+    margin: 0 0 2.75rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  aside.standing .seal { color: var(--crimson); font-size: 1.2rem; line-height: 1.25; }
+  aside.standing .standing-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+  aside.standing ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+  aside.standing li { margin: 0.25rem 0; }
+  aside.standing strong { color: var(--ink); }
+
+  .eyebrow {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  h1.character-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .character-name .given {
+    font-style: italic;
+    color: var(--crane-blue-deep);
+  }
+  .epithets {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0.5rem 0 1rem;
+  }
+  .vitals {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+  }
+  .vitals span {
+    border-left: 1px solid var(--rule);
+    padding-left: 1.25rem;
+  }
+  .vitals span:first-child { border-left: none; padding-left: 0; }
+
+  /* SECTIONS */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2.section-title {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    position: relative;
+  }
+  h2.section-title::before {
+    content: "§";
+    color: var(--gold);
+    margin-right: 0.6rem;
+    font-style: italic;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+  }
+  h3.subhead {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--crane-blue-deep);
+    margin: 1.5rem 0 0.5rem;
+    font-style: italic;
+  }
+  h4.entry-label {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin: 1rem 0 0.25rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; padding: 0; }
+  li { margin-bottom: 0.4rem; }
+  em { color: var(--ink-soft); }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* PULL-QUOTES */
+  blockquote.maxim {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--crane-blue-deep);
+    border-left: 3px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(168, 138, 74, 0.04);
+  }
+  blockquote.maxim .attribution {
+    display: block;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--ink-faint);
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 0.15em;
+    margin-top: 0.5rem;
+  }
+
+  /* TABLES */
+  table.dossier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.92rem;
+  }
+  table.dossier-table th {
+    text-align: left;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.dossier-table td:first-child {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+  table.dossier-table tr:last-child td { border-bottom: none; }
+
+  /* PRIORITY TABLE (Advancement Plan) */
+  table.dossier-table.priority td.priority-num {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-deep);
+    text-align: center;
+    width: 2.5rem;
+    line-height: 1.2;
+  }
+  table.dossier-table.priority td.purchase {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: normal;
+    padding-right: 0.75rem;
+    width: 30%;
+  }
+  table.dossier-table.priority td.purchase em {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.15rem;
+  }
+  table.dossier-table.priority td.xp-cost {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: center;
+    width: 3rem;
+    white-space: nowrap;
+    padding-right: 0.75rem;
+  }
+  table.dossier-table.priority td.priority-notes {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  table.dossier-table.priority tr.subtotal td {
+    background: rgba(168, 138, 74, 0.08);
+    font-family: "Cormorant SC", serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table.priority tr.subtotal td.label {
+    text-align: right;
+    font-family: "Cormorant SC", serif;
+  }
+  table.dossier-table.priority tr.subtotal td.xp-cost,
+  table.dossier-table.priority tr.subtotal td.priority-notes {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  table.dossier-table.priority tr.cycle-break td {
+    padding: 0.3rem 0;
+    border-bottom: none;
+    background: transparent;
+  }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid var(--rule);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .stat-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .stat-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  /* SOCIAL STATS */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .social-cell {
+    border: 1px solid var(--rule);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .social-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .social-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: var(--crane-blue-deep);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .social-cell .delta {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.25rem;
+  }
+
+  /* TWO-COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* CALL-OUT */
+  .callout {
+    border: 1px solid var(--crane-blue);
+    border-left: 4px solid var(--crane-blue-deep);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(107, 140, 175, 0.06);
+  }
+  .callout .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--crane-blue-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* RELATIONSHIP CARDS */
+  .relations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .relation {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .relation:last-child { border-bottom: none; }
+  .relation .name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .relation .name .role {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+  .relation .name .clan {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold-deep);
+    margin-left: 0.5rem;
+  }
+  .relation .text {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.25rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+  .timeline-entry {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: 0.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gold);
+  }
+  .timeline-entry .when {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .what {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .detail {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+
+  /* TOC */
+  nav.toc {
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    columns: 2;
+    column-gap: 2rem;
+  }
+  nav.toc .toc-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    column-span: all;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    font-family: "EB Garamond", serif;
+  }
+  nav.toc ol li {
+    counter-increment: toc;
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+    break-inside: avoid;
+  }
+  nav.toc ol li::before {
+    content: counter(toc, upper-roman) ". ";
+    color: var(--gold-deep);
+    font-style: italic;
+    margin-right: 0.3rem;
+  }
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s;
+  }
+  nav.toc a:hover { border-bottom-color: var(--crane-blue); }
+
+  /* FOOTER */
+  footer.colophon {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  footer.colophon::before {
+    content: "❖";
+    display: block;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 1in; max-width: none; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 700px) {
+    body { padding: 1rem 0.5rem; }
+    .document { padding: 2rem 1.5rem 3rem; }
+    h1.character-name { font-size: 2.5rem; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+    .stat-grid { grid-template-columns: repeat(5, 1fr); gap: 0.25rem; }
+    .stat-cell { padding: 0.5rem 0.25rem; }
+    .stat-cell .value { font-size: 1.3rem; }
+    .social-grid { grid-template-columns: 1fr; }
+    nav.toc { columns: 1; }
+    .vitals { gap: 0.75rem; font-size: 0.7rem; }
+    .vitals span { border-left: none; padding-left: 0; }
+  }
+  /* Portrait */
+  .portrait-wrap {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .portrait-wrap img {
+    max-width: 360px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(31,29,26,0.12);
+  }
+
+  /* ---- site chrome (The Fragile Peace) — values literal from rokugan.css ---- */
+  body { padding-top: 0; }
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; flex-wrap:wrap; align-items:center; gap:0.1rem 1.4rem;
+    padding:0.72rem clamp(1rem,4vw,3rem);
+    margin:0 -1rem;
+    background:linear-gradient(180deg, rgba(23,18,13,0.98), rgba(23,18,13,0.9));
+    border-bottom:2px solid #b62432;
+    box-shadow:0 2px 0 rgba(154,123,63,0.35), 0 10px 24px rgba(0,0,0,0.25);
+    backdrop-filter:blur(3px);
+  }
+  .topnav .brand{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-weight:600; letter-spacing:0.24em;
+    text-transform:uppercase; font-size:0.82rem; color:#c2a25c;
+    margin-right:auto; white-space:nowrap;
+  }
+  .topnav .brand::before{ content:"\2756"; color:#b62432; margin-right:0.5em; font-size:0.8em; }
+  .topnav a{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-size:0.86rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:#cdc0a2; text-decoration:none;
+    padding:0.15rem 0; border-bottom:2px solid transparent; transition:.18s;
+  }
+  .topnav a:hover{ color:#fff; }
+  .topnav a.active{ color:#fff; border-bottom-color:#b62432; }
+  .topnav a.notes{ color:#b9c6a8; }
+  .topnav a.notes::before{ content:"\270E\00a0"; }
+  .topnav a.notes:hover{ color:#dcecc8; }
+  .document{ margin-top:2rem; }
+  .sitefoot{
+    text-align:center; margin:3rem auto 0; padding:2rem 1rem 0; max-width:880px;
+    color:#7a7468; font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif;
+    text-transform:uppercase; letter-spacing:0.18em; font-size:0.74rem;
+    border-top:1px solid #c9bfa8;
+  }
+  .sitefoot .mark{ color:#b62432; margin-right:0.6em; }
+
+  /* Unicorn accent. This dossier reuses the shared stylesheet so all four
+     match; only the clan colour changes. */
+  :root { --crane-blue: #7d6b9e; --crane-blue-deep: #4a3c68; }
+</style>
+</head>
+<body>
+<nav class="topnav"><span class="brand">The Fragile Peace</span><a href="../index.html">Home</a><a href="../character/index.html">Characters</a><a href="../party/index.html">The Party</a><a href="../chronicle/index.html">Chronicle</a><a href="../dramatis-personae/index.html">Dramatis Personae</a><a href="../map/index.html">Atlas</a><a href="../lore/index.html">Lore</a><a href="../notes/index.html" class="notes">Player Notes</a></nav>
+<div class="document">
+
+  <aside class="standing">
+    <span class="seal">&#10070;</span>
+    <div>
+      <div class="standing-label">Not a campaign character</div>
+      <ul>
+        <li>Shinjo Anzu does not appear in the chronicle and is not played. She is <strong>Shinjo Harunobu's older sister</strong>, built to try the Iuchi Meish&#333;d&#333; Master school, and she has not been in a scene.</li>
+      </ul>
+    </div>
+  </aside>
+
+  <header class="title-block">
+    <div class="eyebrow">Confidential Character Dossier</div>
+    <h1 class="character-name">Shinjo <span class="given">Anzu</span></h1>
+    <p class="epithets">Talisman-maker to the Shinjo &middot; auntie to the ordu &middot; the browband on the Khan of Khans' horse &middot; older sister to Shinjo Harunobu</p>
+    <div class="vitals">
+      <span>Unicorn Clan</span>
+      <span>Iuchi Meish&#333;d&#333; Master</span>
+      <span>School Rank 4</span>
+      <span>Glory 46</span>
+      <span>Status 33</span>
+    </div>
+  </header>
+
+  <div class="portrait-wrap">
+    <img src="../assets/anzu.webp" alt="Shinjo Anzu, broad-faced and weathered, greying at the temples, in fur-collared robes with braided-metal earrings">
+  </div>
+
+  <nav class="toc">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#identity">Identity &amp; Standing</a></li>
+      <li><a href="#mechanical">Mechanical Profile</a></li>
+      <li><a href="#method">The Way of Names</a></li>
+      <li><a href="#interior">Interior Architecture</a></li>
+      <li><a href="#relations">Established Relations</a></li>
+      <li><a href="#kurige">Kurige</a></li>
+      <li><a href="#objects">Two Objects</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#advancement">Advancement Plan</a></li>
+      <li><a href="#trajectory">Trajectory</a></li>
+    </ol>
+  </nav>
+
+  <section id="identity">
+    <h2 class="section-title">I. Identity &amp; Standing</h2>
+
+    <p>Shinjo Anzu is a Unicorn artisan of the Iuchi Meish&#333;d&#333; Master school, held at Rank 1. Her family is Shinjo and her training is Iuchi, which is the same displacement her younger brother carries in the opposite direction &mdash; he is a Shinjo trained by the Crab. Her role is <strong>Artisan</strong> rather than Shugenja, and the distinction is the whole of her: the Iuchi cannot call on the kami as other shugenja do, so they bind spirits into objects using words of power learned from foreign sorcerers. Anzu is a maker whose material is spirits.</p>
+
+    <p>Her three standing values disagree with each other in a way worth reading. <strong>Status 33</strong> and <strong>Glory 46</strong> are both modest; she is a household craftsman known within her clan and barely outside it. <strong>Honour 40</strong> is the lowest of the four sheets on this site, and it is deliberate: she declined the devotion that would have raised it and took a rank of Medicine instead.</p>
+
+    <h4 class="entry-label">Physical Description</h4>
+    <p>Broad-faced and weathered past her years, with the grey starting to come in at the temples and her hair worn long and loose the way riders wear it rather than pinned the way the Iuchi school prefers. Her hands are marked across the backs and knuckles from wire and hot metal, and she wears her own work &mdash; braided metal at the ears and throat.</p>
+
+    <h4 class="entry-label">Manner of Presence</h4>
+    <p>She stands well with the Unicorn and is called auntie by half of them, including men older than she is, which is usually a courtesy. Under stress she yells, and invents her own very colourful profanity.</p>
+
+    <h3 class="subhead">Current Obligation &amp; Drive</h3>
+
+    <h4 class="entry-label">Giri</h4>
+    <p>Her giri is to Shinjo Altansarnai, Khan of Khans and daim&#333; of the Shinjo: she makes meish&#333;d&#333; for the family's own use, issued where they are needed rather than given where they are wanted.</p>
+
+    <h4 class="entry-label">Ninj&#333;</h4>
+    <p>She wants children and has not been able to have them.</p>
+
+    <h4 class="entry-label">Bush&#333;d&#333;</h4>
+    <p>She holds <strong>Compassion</strong> first and <strong>Honour</strong> last, having spent enough time putting bushi back together to conclude that most of what the code asks of them on a field is foolishness.</p>
+  </section>
+
+  <section id="mechanical">
+    <h2 class="section-title">II. Mechanical Profile</h2>
+
+    <h3 class="subhead">Rings</h3>
+    <div class="stat-grid">
+      <div class="stat-cell"><div class="label">Air</div><div class="value">1</div></div>
+      <div class="stat-cell"><div class="label">Earth</div><div class="value">2</div></div>
+      <div class="stat-cell"><div class="label">Fire</div><div class="value">5</div></div>
+      <div class="stat-cell"><div class="label">Water</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Void</div><div class="value">4</div></div>
+    </div>
+    <p>Endurance 14 &middot; Composure 10 &middot; Focus 6 &middot; Vigilance 2 &middot; Void points 4. Stance: Void. Purse: 400 zeni.</p>
+
+    <p><strong>She is the most durable character on this site.</strong> Composure 10 gives her a strife maximum of 10 against Asahina J&#363;jir&#333;'s 6, and Endurance 14 is the highest of the four. She is very hard to compromise and very hard to exhaust.</p>
+
+    <p>She built out of her one real weakness. At creation her <strong>Void was 1</strong> &mdash; a single Void point, for a woman who carries a Void talisman &mdash; and she has spent 27 experience taking it to <strong>4</strong>. Fire went from 3 to 5 for another 27. Between them that is more than half of everything she has earned, poured into the element she binds with and the element she was given.</p>
+
+    <p><strong>Vigilance 2 is what she did not fix</strong>, and with Air still at 1 it is not going to move. She is difficult to break and easy to surprise.</p>
+
+    <h3 class="subhead">Social Standing</h3>
+    <div class="stat-grid">
+      <div class="social-cell"><div class="label">Honour</div><div class="value">40</div></div>
+      <div class="social-cell"><div class="label">Glory</div><div class="value">46</div></div>
+      <div class="social-cell"><div class="label">Status</div><div class="value">33</div></div>
+    </div>
+    <p>Honour 40 is the school's starting value, untouched &mdash; she took the Medicine rank rather than the devotion bonus. Glory is 44 from the Shinjo, +5 for standing well with her clan, &minus;3 from her heritage. Status is 30 from the Unicorn, +3 from the same heritage.</p>
+
+    <h3 class="subhead">Skills</h3>
+    <p>Design 3 &middot; Smithing 3 &middot; Survival 3 &middot; Theology 2 &middot; Aesthetics 1 &middot; Courtesy 1 &middot; Medicine 1 &middot; Sentiment 1.</p>
+    <p><strong>Design and Smithing are both at 3</strong>, which is the shape of the whole character: the school ability activates on a Design check, and Smithing is what her father taught her before the Iuchi took her. She has advanced the priest and the smith at exactly the same rate.</p>
+
+    <h3 class="subhead">School</h3>
+    <p><strong>Iuchi Meish&#333;d&#333; Master, Rank 4.</strong> School ability <em>The Way of Names</em>: as a downtime activity, a TN 2 Design check using any ring binds a spirit into an inanimate vessel, making a meish&#333;d&#333; talisman for one invocation of that Element she has learned. She can sustain talismans up to her school rank &mdash; <strong>at Rank 4, four</strong>, where at creation she could sustain one.</p>
+
+    <p>That matters more than the number suggests. The school's Rank 6 mastery, <em>The Spirits Unbound</em>, spends Void points to destroy her own talismans and immediately cast every invocation sealed inside them at a TN reduced by 3. Four sustained talismans and four Void points is the loaded version of that ability. She is two ranks from being able to empty her whole workshop into a single moment.</p>
+
+    <h3 class="subhead">Techniques</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Technique</th><th>Type</th><th>Activation</th></tr></thead>
+      <tr><td>The Way of Names</td><td>School ability</td><td>Downtime &middot; TN 2 Design, any ring</td></tr>
+      <tr><td>J&#363;r&#333;jin's Balm</td><td>Invocation (Earth)</td><td>Support &middot; TN 1 Theology (Earth)</td></tr>
+      <tr><td>The Rushing Wave</td><td>Invocation (Water)</td><td>Movement &middot; TN 2 Theology (Water)</td></tr>
+      <tr><td>Commune with the Spirits</td><td>Ritual</td><td>Downtime or Support &middot; TN 1 Theology, any ring</td></tr>
+      <tr><td>Ancestry Unearthed</td><td>Sh&#363;ji (Earth)</td><td>Opportunity spend on a Scholar or Social (Earth) check</td></tr>
+      <tr><td>Sight beyond Existence</td><td>Inversion (Void)</td><td>Once per session &middot; TN 2 Theology (Void)</td></tr>
+      <tr><td>Sympathetic Energies</td><td>Invocation (Water)</td><td>Support &middot; TN 2 Theology (Water)</td></tr>
+      <tr><td>Hands of the Tides</td><td>Invocation (Water)</td><td>Movement &middot; TN 5 Theology (Water)</td></tr>
+      <tr><td>Courage of Seven Thunders</td><td>Invocation (Earth)</td><td>Support &middot; TN 2 Theology (Earth)</td></tr>
+      <tr><td>Rise, Earth</td><td>Invocation (Earth)</td><td>Support &middot; TN 6 Theology (Earth)</td></tr>
+      <tr><td>Cleansing Rite</td><td>Ritual</td><td>Downtime &middot; TN 3 Theology (Void)</td></tr>
+      <tr><td>Dazzling Performance</td><td>Sh&#363;ji (Fire)</td><td>Opportunity spend on an Artisan, Games or Performance (Fire) check</td></tr>
+    </table>
+
+    <p>Nine of the twelve carry a roller hook on the playable sheet. Ancestry Unearthed, Dazzling Performance and The Way of Names do not, because none of them is an action of its own.</p>
+
+    <p><strong>Ancestry Unearthed is the sharpest thing on the sheet</strong> and it never rolls. Spent on any Scholar or Social (Earth) check targeting a person, two opportunities buy <em>&ldquo;one secret of the character's family that they would prefer be forgotten, and have perhaps even worked to bury.&rdquo;</em> Three buy something the target does not know about their own ancestry.</p>
+
+    <h3 class="subhead">Distinctions, Adversities, Passions, Anxieties</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Peculiarity</th><th>Ring</th><th>What it does in play</th></tr></thead>
+      <tr><td><strong>Famously Reliable</strong> <em>(distinction)</em></td><td>Earth</td><td>Her oaths and her work are believed by default. Reroll two dice where that reputation helps.</td></tr>
+      <tr><td><strong>Skilled Midwife</strong> <em>(distinction)</em></td><td>Fire</td><td>Pregnancy, childbirth, childhood illness. Others take her advice on it.</td></tr>
+      <tr><td><strong>Hot Pot</strong> <em>(passion)</em></td><td>Earth</td><td>Removes 3 strife after preparing a communal meal.</td></tr>
+      <tr><td><strong>Encompassing Duty</strong> <em>(adversity)</em></td><td>Earth</td><td>Cannot relax or attend to anything unrelated to the family's talismans.</td></tr>
+      <tr><td><strong>Conspiracy</strong> <em>(anxiety)</em></td><td>Earth</td><td>3 strife on interacting with any unfamiliar authority figure.</td></tr>
+    </table>
+
+    <h3 class="subhead">Possessions</h3>
+    <p>Ceremonial clothes &middot; travelling clothes &middot; wakizashi &middot; horsebow (Range 2&ndash;4, Damage 4, Deadliness 5) &middot; calligraphy set &middot; travelling pack &middot; <strong>maker's punch</strong> &middot; <strong>herbal medicines</strong>.</p>
+    <p>The punch is her mark, struck into the metal, and it is not sentimental: <em>Famously Reliable</em> only pays if people can tell which pieces are hers. The herbal medicines came from the Ujik midwife.</p>
+
+    <h3 class="subhead">Experience</h3>
+    <p><strong>104 of 104 spent</strong> &mdash; advancements 86, techniques 18. Rings took 54 of it: Fire 3&rarr;5 and Void 1&rarr;4. The rest went to Design and Smithing to 3, Survival to 3, Theology to 2, Courtesy to 1, and six new techniques.</p>
+    <p class="meta">The playable sheet keeps her character-creation state as a read-only snapshot in the version selector, so the Rank 1 build can still be read beside this one.</p>
+  </section>
+
+  <section id="method">
+    <h2 class="section-title">III. The Way of Names</h2>
+
+    <p>The Way of Names uses the element of the practitioner's choice, and most masters use Earth to settle a spirit into place or Void to meet it on its own terms. <strong>Anzu uses Fire</strong>: she doesn't settle the spirit, she inflames it into wanting to be there. It's faster, it takes worse, and the talismans that survive it have vocal opinions.</p>
+
+    <p>That method has a cause, and it is not doctrinal. The Iuchi mark their students young, and the family gave her up the year she was marked. Before that she was her father's girl: the horse-lines and the forge, wire and hooves and the fitting of tack. She was taught to be a smith before she was taught to be a priest, and she never stopped applying the first training to the second &mdash; heat it, work it, and it either takes or it doesn't.</p>
+
+    <p>It also explains what she is known for. The one piece of her work the whole clan can name is a piece of <strong>tack</strong>, which is the exact intersection of the two things her father put in her hands.</p>
+
+    <h4 class="entry-label">Why the family word for her is <em>reliable</em></h4>
+    <p>A meish&#333;d&#333; that fails does not merely stop working; it lets something out. Anzu made the browband Ping has worn since Shinjo Altansarnai first rode her, and in all those years it has needed neither repair nor replacement &mdash; which is why the word the family uses for her work is not <em>clever</em> but <em>reliable</em>, and why she is the one they send for when the thing must not fail.</p>
+
+    <h4 class="entry-label">The tradition is suspect and she knows it</h4>
+    <p>Meish&#333;d&#333; is foreign in origin and the Empire has never been comfortable with it. The Phoenix decide what counts as proper practice and the court decides what the Emperor hears, and the Iuchi way answers to neither on its own merits. Anzu assumes any authority she has not yet met has already been told something about meish&#333;d&#333;, and it is unlikely to have been kind, or even true.</p>
+
+    <p>She is right to worry, and the campaign has already proved it. At the City of the Rich Frog the magistrates walked into a trade in bound spirits &mdash; a fire spirit out of the Burning Sands sealed into a foreign pendant, released to burn a theatre, and a noblewoman possessed by another. The apparatus was her art, used as a weapon and moved through a port. Nobody has told her.</p>
+  </section>
+
+  <section id="interior">
+    <h2 class="section-title">IV. Interior Architecture</h2>
+
+    <h4 class="entry-label">The count</h4>
+    <p>The family's talismans are never finished, only sufficient, and Anzu keeps a running count in her head of which ones are ageing and who is carrying them; anything else has to be done around it, and the list is never completed.</p>
+
+    <h4 class="entry-label">What calms her</h4>
+    <p>Occasionally she is able to cook outside for whoever is there &mdash; a pot big enough for everyone, and the children eating standing up between rides. The word <em>occasionally</em> is the count doing its work.</p>
+
+    <h4 class="entry-label">The two things decided without her</h4>
+    <p>She was taken out of the forge and the horse-lines the year somebody noticed an aptitude she had not asked for. And she wants children and has not been able to have them. Neither was a choice she made, and the second is the one nobody in the ordu mentions.</p>
+
+    <h4 class="entry-label">What she was taught, and by whom</h4>
+    <p>She and all eight of her siblings were delivered by the same old Ujik woman, who stayed long enough afterwards to teach Anzu what she knew: how a birth goes wrong and how early it can be read, which fevers in a child are worth waking the ordu for, and the names of the Ten Lords of Death, of whom the Child Bearer is one. Anzu is who they send for when a child is coming. She has never had one.</p>
+  </section>
+
+  <section id="relations">
+    <h2 class="section-title">V. Established Relations</h2>
+
+    <div class="relations-grid">
+
+      <div class="relation">
+        <div class="name">Shinjo Harunobu <span class="role">&mdash; younger brother</span><span class="clan">Unicorn / Shinjo</span></div>
+        <div class="text">Left for the Crab lands at about nine and has been a stranger to the family since; a prisoner of the Lion from the campaign's second session until shortly before its forty-eighth. Their parents' dossier line is that the siblings are <em>&ldquo;warm, loving, and largely strangers to him.&rdquo;</em> Anzu is older, which makes her one of the few people alive who remembers him before the Crab had him. She made him <a href="#objects">Musubi</a>.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Shinjo Altansarnai <span class="role">&mdash; lord</span><span class="clan">Unicorn / Shinjo</span></div>
+        <div class="text">Khan of Khans and daim&#333; of the Shinjo &mdash; in this clan the two offices are one. Anzu's giri runs to her, her browband rides on her horse, and it was Altansarnai who put Harunobu's name forward on the Unicorn side of the Crane marriage. She was a guest at the wedding. Three separate threads, one woman, and her seat is currently in play.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">The old Ujik midwife <span class="role">&mdash; teacher, unnamed</span><span class="clan">Ujik</span></div>
+        <div class="text">Delivered Anzu and all nine of them, and stayed to teach her. The herbal medicines in her pack are hers. See <a href="#interior">IV</a>.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Her parents and eight siblings <span class="role">&mdash; family</span><span class="clan">Unicorn / Shinjo</span></div>
+        <div class="text">Her father taught her the horse-lines and the forge and both parents still say she was better with a hammer at eleven than a smith's apprentice &mdash; which is the nearest either of them comes to saying they would rather have kept her.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Doji Setsuna <span class="role">&mdash; sister-in-law</span><span class="clan">Crane / Doji</span></div>
+        <div class="text">One meeting, at the wedding, and no contact since. They are unlikely to cross paths. Worth noting anyway: <strong>Kogarashi</strong>, the white Utaku courser that is the single object of Setsuna's unguarded affection, was a wedding gift <em>from Harunobu's family</em> &mdash; which is to say from Anzu's.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">The children of the ordu <span class="role">&mdash; auntie</span><span class="clan">Unicorn</span></div>
+        <div class="text">All of them. This is the passion, the distinction and the ninj&#333; meeting in one place.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kurige">
+    <h2 class="section-title">VI. Kurige</h2>
+
+    <div class="portrait-wrap">
+      <img src="../assets/kurige.webp" alt="Kurige, a lean brown Shinjo courser grazing on open steppe">
+    </div>
+
+    <p>A brown <strong>Shinjo Courser</strong>, named for her colour &mdash; <em>kurige</em> is simply the word for a chestnut coat. A woman raised in her father's horse-lines called the horse what the lines called it and never improved on it.</p>
+
+    <p>The breed is not a warhorse. The corpus is blunt about it: <em>&ldquo;renowned for speed and stamina but high-spirited and flighty. Ideal for scouts, courtiers, and mounted archers, but ill-suited to traditional battle.&rdquo;</em> Which suits her rider, who carries a horsebow and is not a soldier.</p>
+
+    <div class="stat-grid">
+      <div class="stat-cell"><div class="label">Combat</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Intrigue</div><div class="value">1</div></div>
+      <div class="stat-cell"><div class="label">Endurance</div><div class="value">10</div></div>
+      <div class="stat-cell"><div class="label">Composure</div><div class="value">4</div></div>
+      <div class="stat-cell"><div class="label">Focus</div><div class="value">6</div></div>
+    </div>
+    <p>Demeanour <strong>Cautious</strong> &mdash; Earth &minus;2, Air +2. <em>Loyal Steed</em> and <em>Fleet of Foot</em>. Hooves at Range 1&ndash;2, Damage 7.</p>
+    <p>The Cautious demeanour is the breed's, not a quirk of this animal: a Shinjo courser is built to notice things and leave. Kurige is easier to startle than Harunobu's Moto charger and considerably faster over open ground.</p>
+  </section>
+
+  <section id="objects">
+    <h2 class="section-title">VII. Two Objects</h2>
+
+    <p>One she made, and one she was given. They are the two ends of her craft.</p>
+
+    <h3 class="subhead">Musubi &mdash; made for her brother</h3>
+    <p>A nemuranai in the form of a braided knot, made for Harunobu after his release. Built to the pattern the books use for putting an invocation into an object a non-shugenja can carry: <strong>Durable</strong> and <strong>Sacred</strong>, with <strong>J&#363;r&#333;jin's Balm</strong> sealed inside, which the wearer may perform once per session <strong>using Survival instead of Theology</strong>.</p>
+    <p>The invocation reduces the TN of all checks to resist poison and disease by 2, and the bearer cannot become intoxicated. For a man who spent forty-six sessions a prisoner it is the obvious gift; the second clause is the better one, because it also works in a room full of Lion courtiers, and Harunobu holds Courtesy as his least significant tenet.</p>
+    <p>Its quirk: <strong>the knot works itself loose whenever he says he is fine and is not.</strong> His own dossier calls him unreachable about himself. His sister made a charm that will not let him lie about it.</p>
+    <p class="meta">Musubi is a nemuranai rather than a sustained meish&#333;d&#333;, so it sits outside The Way of Names and does not occupy her one talisman slot.</p>
+
+    <h3 class="subhead">Sight beyond Existence &mdash; given to her</h3>
+    <p>She is named after her grandmother's spirit companion, and befittingly it seems a spirit has chosen her as well, although its strange powers convey the Void.</p>
+    <p>Mechanically this is the <strong>Spirit Companion</strong> heritage: an ancestor made an agreement with a spirit, and Anzu holds an additional meish&#333;d&#333; talisman she did not bind. Once per session, immediately after an action of great consequence, a TN 2 Theology (Void) check scries another outcome and returns to the moment before &mdash; all effects undone, with only Anzu and the target aware of the reality that no longer is.</p>
+    <p>It is by a distance the most powerful thing she owns, and it is not hers. The heritage table rolls a ring for the talisman and sends one roll in five to <strong>Void</strong>, then instructs the player to select a rank 1 <em>invocation</em> &mdash; of which the game contains none in that element. A rank 1 Void inversion is the nearest legal object.</p>
+    <p class="meta">It does not count against the meish&#333;d&#333; she can sustain: she did not bind it.</p>
+  </section>
+
+  <section id="timeline">
+    <h2 class="section-title">VIII. Timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-entry">
+        <div class="when">Childhood &middot; the ordu</div>
+        <div class="what">Her father's girl.</div>
+        <div class="detail">Delivered by the old Ujik midwife, as all nine of them were, and taught by her afterwards. Raised to the horse-lines and the forge; better with a hammer at eleven than a smith's apprentice.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">The year she was marked</div>
+        <div class="what">Given up to the Iuchi.</div>
+        <div class="detail">The Iuchi mark their students young. She was taken out of the forge for an aptitude she had not asked for, and brought the smith's method with her.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">Her brother, at nine</div>
+        <div class="what">Harunobu left for the Crab lands.</div>
+        <div class="detail">He did not come back the same, and the siblings have been strangers to him since.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">The browband</div>
+        <div class="what">Made for the Khan of Khans' horse.</div>
+        <div class="detail">Ping has worn it since Altansarnai first rode her. Neither repair nor replacement in all that time, which is the whole of Anzu's reputation.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">Present</div>
+        <div class="what">The count, and a knot for her brother.</div>
+        <div class="detail">Talismans for the family, issued where they are needed. Harunobu is home from the Lion, and she has made him Musubi.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advancement">
+    <h2 class="section-title">IX. Advancement</h2>
+
+    <h3 class="subhead">What she has already done</h3>
+    <p>The three things worth buying first have been bought. <strong>Design 1&rarr;3</strong>, the skill her school ability activates on and the stability term for everything she makes. <strong>Theology 1&rarr;2</strong>, which every invocation and ritual she owns is cast with. And <strong>Void 1&rarr;4</strong>, which took her from a single Void point to four and made the talisman she was given genuinely usable.</p>
+    <p>She also took <strong>Fire 3&rarr;5</strong>, which is the element she binds with and the most expensive thing on the sheet at 27 experience for two ranks. Nothing about that is efficient; it is the choice of someone who intends to keep working the way she works.</p>
+
+    <h3 class="subhead">Where it goes next</h3>
+    <ul>
+      <li><strong>School Rank 5, then 6.</strong> <em>The Spirits Unbound</em> is the endgame and it is now within reach: destroy sustained talismans to cast everything inside them at TN &minus;3. She has the Void points and the sustain capacity to make it worth having.</li>
+      <li><strong>Design 3&rarr;4.</strong> Still the single skill the whole character runs through, and still in curriculum.</li>
+      <li><strong>The Utsuko Pattern</strong> (3 XP, rarity +4) &mdash; a meish&#333;d&#333; specialist design that adds the creator's Void ring to talisman stability. At Void 1 it was worth almost nothing. At Void 4 it is one of the best three experience she can spend.</li>
+    </ul>
+
+    <h3 class="subhead">Deliberately not recommended</h3>
+    <ul>
+      <li><strong>Air.</strong> It is 1 and has stayed 1 through 104 experience, which at this point is a decision rather than an omission. Focus 6 and Vigilance 2 are the price and she has already agreed to pay it.</li>
+      <li><strong>Martial skills.</strong> All still 0. The wakizashi and horsebow remain school issue.</li>
+    </ul>
+  </section>
+
+  <section id="trajectory">
+    <h2 class="section-title">X. Trajectory</h2>
+
+    <h4 class="entry-label">The obvious use of her, if she is ever played</h4>
+    <p>Ancestry Unearthed against a person with something buried. It costs no action and no roll of its own &mdash; only opportunities on a check she was making anyway &mdash; and it is pointed at exactly the kind of secret this campaign is built out of.</p>
+
+    <h4 class="entry-label">The obvious danger to her</h4>
+    <p>The meish&#333;d&#333; trade at the City of the Rich Frog is an existing, unresolved thread in which her art is the weapon. She has a Conspiracy anxiety, a foreign practice, an Iuchi training, and a court that has already seen what a bound spirit does when it gets loose.</p>
+
+    <h4 class="entry-label">How this should end</h4>
+    <p>She will receive a great vision while riding, and will perish from the fall off her horse.</p>
+    <p>Which is the talisman's bill. She has four Void points to spend on it now and a Vigilance of 2 to notice what it costs her, on a horse whose demeanour is Cautious and whose whole breeding is to notice something and move.</p>
+  </section>
+
+  <div class="sitefoot"><span class="mark">&#10070;</span>The Fragile Peace &middot; Legend of the Five Rings</div>
+</div>
+</body>
+</html>

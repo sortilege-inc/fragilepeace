@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asahina Jūjirō — The Fragile Peace</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<meta name="description" content="The character dossier of Asahina Jūjirō — Crane Clan, Asahina Artificer, Master Artisan, and maker of awakened things.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4efe5;
+    --paper-dark: #e8e0cf;
+    --ink: #1f1d1a;
+    --ink-soft: #4a463f;
+    --ink-faint: #7a7468;
+    --crane-blue: #6b8caf;
+    --crane-blue-deep: #3d5a7a;
+    --gold: #a88a4a;
+    --gold-deep: #7e6432;
+    --crimson: #8b3a3a;
+    --rule: #c9bfa8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at 20% 10%, rgba(168, 138, 74, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(107, 140, 175, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .document {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 4rem 4.5rem 5rem;
+    box-shadow:
+      0 1px 2px rgba(31, 29, 26, 0.08),
+      0 8px 32px rgba(31, 29, 26, 0.12);
+    position: relative;
+    border: 1px solid var(--rule);
+  }
+  .document::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      var(--crane-blue-deep) 0%,
+      var(--crane-blue) 25%,
+      var(--gold) 50%,
+      var(--crane-blue) 75%,
+      var(--crane-blue-deep) 100%);
+  }
+
+  /* HEADER */
+  header.title-block {
+    text-align: center;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  header.title-block::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem auto 0;
+  }
+  /* Standing notice — table facts the sheet cannot carry yet: an award the GM
+     has still to set, or a credit taken in play and not spent. Mirrors
+     .pend-banner on the play sheet. Delete an entry the moment it lands. */
+  aside.standing {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    background: rgba(168, 138, 74, 0.09);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--crimson);
+    padding: 0.9rem 1.15rem;
+    margin: 0 0 2.75rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  aside.standing .seal { color: var(--crimson); font-size: 1.2rem; line-height: 1.25; }
+  aside.standing .standing-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+  aside.standing ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+  aside.standing li { margin: 0.25rem 0; }
+  aside.standing strong { color: var(--ink); }
+
+  .eyebrow {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  h1.character-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .character-name .given {
+    font-style: italic;
+    color: var(--crane-blue-deep);
+  }
+  .epithets {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0.5rem 0 1rem;
+  }
+  .vitals {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+  }
+  .vitals span {
+    border-left: 1px solid var(--rule);
+    padding-left: 1.25rem;
+  }
+  .vitals span:first-child { border-left: none; padding-left: 0; }
+
+  /* SECTIONS */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2.section-title {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    position: relative;
+  }
+  h2.section-title::before {
+    content: "§";
+    color: var(--gold);
+    margin-right: 0.6rem;
+    font-style: italic;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+  }
+  h3.subhead {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--crane-blue-deep);
+    margin: 1.5rem 0 0.5rem;
+    font-style: italic;
+  }
+  h4.entry-label {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin: 1rem 0 0.25rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; padding: 0; }
+  li { margin-bottom: 0.4rem; }
+  em { color: var(--ink-soft); }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* PULL-QUOTES */
+  blockquote.maxim {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--crane-blue-deep);
+    border-left: 3px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(168, 138, 74, 0.04);
+  }
+  blockquote.maxim .attribution {
+    display: block;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--ink-faint);
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 0.15em;
+    margin-top: 0.5rem;
+  }
+
+  /* TABLES */
+  table.dossier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.92rem;
+  }
+  table.dossier-table th {
+    text-align: left;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.dossier-table td:first-child {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+  table.dossier-table tr:last-child td { border-bottom: none; }
+
+  /* PRIORITY TABLE (Advancement Plan) */
+  table.dossier-table.priority td.priority-num {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-deep);
+    text-align: center;
+    width: 2.5rem;
+    line-height: 1.2;
+  }
+  table.dossier-table.priority td.purchase {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: normal;
+    padding-right: 0.75rem;
+    width: 30%;
+  }
+  table.dossier-table.priority td.purchase em {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.15rem;
+  }
+  table.dossier-table.priority td.xp-cost {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: center;
+    width: 3rem;
+    white-space: nowrap;
+    padding-right: 0.75rem;
+  }
+  table.dossier-table.priority td.priority-notes {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  table.dossier-table.priority tr.subtotal td {
+    background: rgba(168, 138, 74, 0.08);
+    font-family: "Cormorant SC", serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table.priority tr.subtotal td.label {
+    text-align: right;
+    font-family: "Cormorant SC", serif;
+  }
+  table.dossier-table.priority tr.subtotal td.xp-cost,
+  table.dossier-table.priority tr.subtotal td.priority-notes {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  table.dossier-table.priority tr.cycle-break td {
+    padding: 0.3rem 0;
+    border-bottom: none;
+    background: transparent;
+  }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid var(--rule);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .stat-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .stat-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  /* SOCIAL STATS */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .social-cell {
+    border: 1px solid var(--rule);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .social-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .social-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: var(--crane-blue-deep);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .social-cell .delta {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.25rem;
+  }
+
+  /* TWO-COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* CALL-OUT */
+  .callout {
+    border: 1px solid var(--crane-blue);
+    border-left: 4px solid var(--crane-blue-deep);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(107, 140, 175, 0.06);
+  }
+  .callout .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--crane-blue-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* RELATIONSHIP CARDS */
+  .relations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .relation {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .relation:last-child { border-bottom: none; }
+  .relation .name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .relation .name .role {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+  .relation .name .clan {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold-deep);
+    margin-left: 0.5rem;
+  }
+  .relation .text {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.25rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+  .timeline-entry {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: 0.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gold);
+  }
+  .timeline-entry .when {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .what {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .detail {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+
+  /* TOC */
+  nav.toc {
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    columns: 2;
+    column-gap: 2rem;
+  }
+  nav.toc .toc-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    column-span: all;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    font-family: "EB Garamond", serif;
+  }
+  nav.toc ol li {
+    counter-increment: toc;
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+    break-inside: avoid;
+  }
+  nav.toc ol li::before {
+    content: counter(toc, upper-roman) ". ";
+    color: var(--gold-deep);
+    font-style: italic;
+    margin-right: 0.3rem;
+  }
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s;
+  }
+  nav.toc a:hover { border-bottom-color: var(--crane-blue); }
+
+  /* FOOTER */
+  footer.colophon {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  footer.colophon::before {
+    content: "❖";
+    display: block;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 1in; max-width: none; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 700px) {
+    body { padding: 1rem 0.5rem; }
+    .document { padding: 2rem 1.5rem 3rem; }
+    h1.character-name { font-size: 2.5rem; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+    .stat-grid { grid-template-columns: repeat(5, 1fr); gap: 0.25rem; }
+    .stat-cell { padding: 0.5rem 0.25rem; }
+    .stat-cell .value { font-size: 1.3rem; }
+    .social-grid { grid-template-columns: 1fr; }
+    nav.toc { columns: 1; }
+    .vitals { gap: 0.75rem; font-size: 0.7rem; }
+    .vitals span { border-left: none; padding-left: 0; }
+  }
+  /* Portrait */
+  .portrait-wrap {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .portrait-wrap img {
+    max-width: 360px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(31,29,26,0.12);
+  }
+
+  /* ---- site chrome (The Fragile Peace) — values literal from rokugan.css ---- */
+  body { padding-top: 0; }
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; flex-wrap:wrap; align-items:center; gap:0.1rem 1.4rem;
+    padding:0.72rem clamp(1rem,4vw,3rem);
+    margin:0 -1rem;
+    background:linear-gradient(180deg, rgba(23,18,13,0.98), rgba(23,18,13,0.9));
+    border-bottom:2px solid #b62432;
+    box-shadow:0 2px 0 rgba(154,123,63,0.35), 0 10px 24px rgba(0,0,0,0.25);
+    backdrop-filter:blur(3px);
+  }
+  .topnav .brand{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-weight:600; letter-spacing:0.24em;
+    text-transform:uppercase; font-size:0.82rem; color:#c2a25c;
+    margin-right:auto; white-space:nowrap;
+  }
+  .topnav .brand::before{ content:"\2756"; color:#b62432; margin-right:0.5em; font-size:0.8em; }
+  .topnav a{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-size:0.86rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:#cdc0a2; text-decoration:none;
+    padding:0.15rem 0; border-bottom:2px solid transparent; transition:.18s;
+  }
+  .topnav a:hover{ color:#fff; }
+  .topnav a.active{ color:#fff; border-bottom-color:#b62432; }
+  .topnav a.notes{ color:#b9c6a8; }
+  .topnav a.notes::before{ content:"\270E\00a0"; }
+  .topnav a.notes:hover{ color:#dcecc8; }
+  .document{ margin-top:2rem; }
+  .sitefoot{
+    text-align:center; margin:3rem auto 0; padding:2rem 1rem 0; max-width:880px;
+    color:#7a7468; font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif;
+    text-transform:uppercase; letter-spacing:0.18em; font-size:0.74rem;
+    border-top:1px solid #c9bfa8;
+  }
+  .sitefoot .mark{ color:#b62432; margin-right:0.6em; }
+
+</style>
+</head>
+<body>
+<nav class="topnav"><span class="brand">The Fragile Peace</span><a href="../index.html">Home</a><a href="../character/index.html">Characters</a><a href="../party/index.html">The Party</a><a href="../chronicle/index.html">Chronicle</a><a href="../dramatis-personae/index.html">Dramatis Personae</a><a href="../map/index.html">Atlas</a><a href="../lore/index.html">Lore</a><a href="../notes/index.html" class="notes">Player Notes</a></nav>
+<div class="document">
+
+  <header class="title-block">
+    <div class="eyebrow">Confidential Character Dossier</div>
+    <h1 class="character-name">Asahina <span class="given">J&#363;jir&#333;</span></h1>
+    <p class="epithets">Master Artisan by the gift of the Imperial consort &middot; maker of shintai &middot; distant kin to Asahina Shigehiro &middot; betrothed to Mirumoto Shizuka &middot; father of the pregnancy Doji Setsuna ended</p>
+    <div class="vitals">
+      <span>Crane Clan</span>
+      <span>Asahina Artificer School</span>
+      <span>School Rank 2</span>
+      <span>Glory 78</span>
+      <span>Status 35</span>
+    </div>
+  </header>
+
+  <div class="portrait-wrap">
+    <img src="../assets/jujiro.webp" alt="Asahina J&#363;jir&#333;, pale and white-haired, in blue and white robes worked with a wave motif">
+  </div>
+
+  <nav class="toc">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#identity">Identity &amp; Standing</a></li>
+      <li><a href="#mechanical">Mechanical Profile</a></li>
+      <li><a href="#method">The Family Method</a></li>
+      <li><a href="#interior">Interior Architecture</a></li>
+      <li><a href="#relations">Established Relations</a></li>
+      <li><a href="#otosan">The Otosan Uchi Season</a></li>
+      <li><a href="#betrothal">The Betrothal</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#advancement">Advancement Plan</a></li>
+      <li><a href="#trajectory">Trajectory</a></li>
+    </ol>
+  </nav>
+
+  <section id="identity">
+    <h2 class="section-title">I. Identity &amp; Standing</h2>
+
+    <p>Asahina J&#363;jir&#333; is a Crane shugenja-artisan of the Asahina Artificer School, held at Rank 2. They make sacred objects &mdash; and, at the height of the craft, objects with something awake inside them. They are non-binary; they/them throughout.</p>
+
+    <p>Their standing is peculiar and worth reading carefully, because the three numbers disagree with each other. <strong>Status 35</strong> is an ordinary household artisan: no office, no lands, no command. <strong>Honour 60</strong> is the honour of someone who has never been seriously tested. <strong>Glory 78</strong> is the fame of a Clan Champion. That gap is not decoration &mdash; it is the whole political fact of the character. J&#363;jir&#333; is known far beyond anything their rank can protect.</p>
+
+    <p>The glory has a single cause and a date. Master Artisan carries a glory award of <em>+30, to a maximum of 80</em>, and the title can only be granted by &ldquo;someone of status 75 or higher after the character performs a great artistic feat&rdquo; &mdash; a threshold no clan daim&#333; reaches. Four months before the campaign began, at Otosan Uchi, the Imperial consort <a href="#relations">Shiba Ayame</a> named them, and 48 became 78 in a season.</p>
+
+    <h4 class="entry-label">Physical Description</h4>
+    <p>Beautiful, and sickly in the wrong light. They are wracked by coughs when the body is pushed too hard, and it is neither concealed nor concealable.</p>
+
+    <h4 class="entry-label">Manner of Presence</h4>
+    <p>Courtesy is their paramount tenet, and it is professional before it is moral: every commission is somebody's patronage, and an artisan who cannot hold a room does not eat. Courage is their least significant, and the ordering is honest &mdash; nothing has yet asked it of them, and the body gives out before the nerve is tested.</p>
+
+    <p>They are known for working past the point where a piece is finished, and for giving away the result.</p>
+
+    <h3 class="subhead">Current Obligation &amp; Drive</h3>
+
+    <h4 class="entry-label">Giri</h4>
+    <p><strong>Lord:</strong> Asahina Shigehiro of Shirogome, a distant relation, to whose house the family is attached. That duty stands but is in abeyance: when the Emperor's consort asks for your artisan, you lend them, and Shigehiro did.</p>
+    <p><strong>Current giri:</strong> to outfit Shiba Ayame's new shrine to Benten &mdash; a careful curation of awakened objects, each <em>shintai</em> chosen for the place it will stand and the people who will stand before it. It is the family method applied at the scale of a building.</p>
+
+    <h4 class="entry-label">Ninj&#333;</h4>
+    <p>To convince the family to use their own time-honoured method to find them a match that truly fits, rather than one forced to fit.</p>
+
+    <p>The two are not merely in tension; they are the same instrument pointed in two directions. The giri is a shrine to <strong>Benten, Fortune of Arts and Romantic Love</strong> &mdash; &ldquo;patron of artists, lovers, and those seeking beauty.&rdquo; Every hour J&#363;jir&#333; spends discharging their duty is an hour furnishing a house for the god of the thing their duty forbids them.</p>
+  </section>
+
+  <section id="mechanical">
+    <h2 class="section-title">II. Mechanical Profile</h2>
+
+    <h3 class="subhead">Rings</h3>
+    <div class="stat-grid">
+      <div class="stat-cell"><div class="label">Air</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Earth</div><div class="value">1</div></div>
+      <div class="stat-cell"><div class="label">Fire</div><div class="value">3</div></div>
+      <div class="stat-cell"><div class="label">Water</div><div class="value">2</div></div>
+      <div class="stat-cell"><div class="label">Void</div><div class="value">2</div></div>
+    </div>
+    <p>Endurance 8 &middot; Composure 6 &middot; Focus 6 &middot; Vigilance 3 &middot; Void points 2. Stance: Void. Purse: 300 zeni.</p>
+
+    <p><strong>Earth 1 is the floor, and it is the thing that will kill them.</strong> It is the lowest a ring can be, and everything defensive follows from it: Endurance 8, and a <strong>strife maximum of 6</strong>, which is among the most fragile composures a played character can have. Their Claustrophobia alone inflicts 3 strife at a stroke &mdash; half their capacity &mdash; and acting against their ninj&#333; costs 3 more. Two bad moments in a scene compromises them.</p>
+
+    <p>Their Incurable Illness is an <strong>Earth</strong> adversity, and their Earth is 1. Under the family's own system of reading, J&#363;jir&#333; is a person with a great deal of air and fire and no ground beneath any of it.</p>
+
+    <h3 class="subhead">Social Standing</h3>
+    <div class="stat-grid">
+      <div class="social-cell"><div class="label">Honour</div><div class="value">60</div></div>
+      <div class="social-cell"><div class="label">Glory</div><div class="value">78</div></div>
+      <div class="social-cell"><div class="label">Status</div><div class="value">35</div></div>
+    </div>
+    <p>Bush&#333;d&#333;: <strong>Courtesy</strong> paramount, <strong>Courage</strong> least significant.</p>
+
+    <h3 class="subhead">Skills</h3>
+    <p>Aesthetics 3 &middot; Theology 3 &middot; Courtesy 2 &middot; Culture 2 &middot; Meditation 2 &middot; Performance 2 &middot; Design 1 &middot; Medicine 1 &middot; Sentiment 1 &middot; Smithing 1.</p>
+    <p>Aesthetics and Theology are the two pillars: the eye and the liturgy. Every invocation they own is cast on Theology.</p>
+
+    <h3 class="subhead">School &amp; Title</h3>
+    <p><strong>Asahina Artificer School, Rank 2.</strong> School ability <em>Spiritual Artisan</em>: when making a check to mystically summon an illusion or to summon, augment, or awaken an object, add kept ring-set-to-opportunity results equal to school rank. The school's final mastery, at Rank 6, is <em>Stir the Slumbering Spirit</em> &mdash; awaken an item's spirit so that it becomes a nemuranai until the end of the session.</p>
+
+    <p><strong>Master Artisan</strong> (Courts of Stone p.130), invested at <strong>12 of 60 XP</strong>. Title ability <em>Inspired Creations</em>: when crafting an item, spend three opportunities to make it a singular masterwork, which must be named, and which lets a character add one ring set to any result once per session.</p>
+
+    <h3 class="subhead">Techniques</h3>
+    <p>Ten in all. Five invocations &mdash; Armor of Radiance, Cloak of Night, Path to Inner Peace, Reflections of P&#8217;an Ku, Token of Memory. Three rituals &mdash; Cleansing Rite, Commune with the Spirits, Tea Ceremony. One sh&#363;ji, Artisan's Appraisal. Plus the school ability.</p>
+    <p>Eight carry a roller hook on the playable sheet. Artisan's Appraisal deliberately does not: it is an opportunity spend on somebody else's Artisan, Performance or Games check, not an action of its own.</p>
+
+    <h3 class="subhead">Distinctions, Adversities, Passions, Anxieties</h3>
+    <table class="dossier-table">
+      <thead><tr><th>Peculiarity</th><th>Ring</th><th>What it does in play</th></tr></thead>
+      <tr><td><strong>Benten's Blessing</strong> <em>(distinction)</em></td><td>Air</td><td>After a scene or two in someone's company, they know with certainty whether that person is open to them. Reroll two dice where Benten's favour helps.</td></tr>
+      <tr><td><strong>Charity</strong> <em>(passion)</em></td><td>Water</td><td>Removes 3 strife &mdash; half their capacity. The relief valve the whole character depends on.</td></tr>
+      <tr><td><strong>Bitter Betrothal</strong> <em>(adversity)</em></td><td>Water</td><td>Shizuka undermines any check needing her collaboration. Reroll two successes.</td></tr>
+      <tr><td><strong>Incurable Illness</strong> <em>(adversity)</em></td><td>Earth</td><td>Violent fits when they push too hard. Reroll two successes on checks to stay active.</td></tr>
+      <tr><td><strong>Claustrophobia</strong> <em>(anxiety)</em></td><td>Water</td><td>3 strife on entering an enclosed space. Kilns, storehouses, shrine interiors.</td></tr>
+    </table>
+
+    <h3 class="subhead">Experience</h3>
+    <p><strong>50 of 50 spent</strong> &mdash; advancements 26, techniques 12, the Master Artisan title 12. The export's own <code>xp_spent</code> field reads 0 and is wrong; the ledger is reconstructed from the item tree and the generator refuses to publish if it fails to balance.</p>
+  </section>
+
+  <section id="method">
+    <h2 class="section-title">III. The Family Method</h2>
+
+    <p>The first Asahina to distinguish themselves was also called J&#363;jir&#333;, and what they discovered was that <strong>people have elemental temperaments and can be read the way an object is read</strong>. The finding was put to two uses: pairing a person with an awakened object so that neither is wasted on the other, and pairing people with each other. The family kept the discovery, the method, and the name &mdash; which goes in each generation to the child judged likeliest to have inherited the eye for it.</p>
+
+    <p>Three things follow, and they are the spine of the character.</p>
+
+    <h4 class="entry-label">The blessing is a technique, not a gift</h4>
+    <p>Benten's Blessing reads, in the rules, as a Fortune's favour arriving unearned. Under the family method it is the instrument working on the practitioner's own behalf &mdash; which is worse to carry, because it cannot be switched off and it never returns a comfortable answer.</p>
+
+    <h4 class="entry-label">The name was given before the talent was known</h4>
+    <p>Their parents named them for the ancestor before anyone could know whether the aptitude had carried. It had. They have spent their life being the vindication of somebody else's guess.</p>
+
+    <h4 class="entry-label">The method is a rival tradition, in their own clan</h4>
+    <p>Matchmaking is already a prestigious Crane institution: Musume Mura, near Kyuden Doji, holds &ldquo;the Doji's most prestigious <em>nakodo</em> school,&rdquo; where samurai parents make pilgrimages for advice, and where the Emperor's intended spends a night before the wedding. The Doji <em>nakodo</em> read lineage, standing and the compatibility of houses. The Asahina claim to read the person. When the two disagree, the Asahina lose.</p>
+  </section>
+
+  <section id="interior">
+    <h2 class="section-title">IV. Interior Architecture</h2>
+
+    <h4 class="entry-label">Under stress</h4>
+    <p>They hole themselves up and work until the body gives out, and they are stubborn in their refusals. The workshop is the one room where the reading is theirs to make. It is also exactly how the fits are brought on, so their response to pressure removes them from the situation a day or two later. Strangers read that as delicacy.</p>
+
+    <h4 class="entry-label">What calms them</h4>
+    <p>Giving the work away. A commission satisfied is a debt discharged and nothing more; a piece put into hands that could never have paid for it settles them completely. They have done it often enough that people they have never met will grant them a reasonable favour on the strength of it.</p>
+
+    <h4 class="entry-label">What they fear</h4>
+    <p>Enclosed spaces &mdash; kilns, storehouses, shrine interiors, the inner rooms of the Forbidden City. Anywhere the air is finite. It compounds the illness, because the first sign of a fit is that breathing stops being automatic, and a closed room leaves nothing to do but wait for it.</p>
+
+    <h4 class="entry-label">The illness</h4>
+    <p>It began under Asahina Riku, the old woman in Shirogome who taught them the school's arts. The talent and the damage arrived together, which is the fact the character never quite gets out from under.</p>
+
+    <h4 class="entry-label">How this should end</h4>
+    <p>The illness will kill them young. They likely have only a few years left, and they intend to spend them gloriously.</p>
+  </section>
+
+  <section id="relations">
+    <h2 class="section-title">V. Established Relations</h2>
+
+    <div class="relations-grid">
+
+      <div class="relation">
+        <div class="name">Shiba Ayame <span class="role">&mdash; Imperial consort, patron</span><span class="clan">Phoenix / Shiba</span></div>
+        <div class="text">Concubine of Emperor Hantei XXXVIII and a highly regarded patron of the arts. She commissioned the damaged family heirloom that J&#363;jir&#333; reworked and woke, had the feat recorded, directed that they be named Master Artisan, and brought them to Otosan Uchi to furnish her shrine to Benten. She dotes on them. She gave them the omamori &mdash; a Boon of Benten &mdash; knowing exactly what she was making a joke about. <strong>She knows about Setsuna</strong> and treats it as a confidence between the two of them. She does not know about the pregnancy. She is no relation to Shiba Midori; the shared family name is coincidence.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Doji Setsuna <span class="role">&mdash; lover at court</span><span class="clan">Crane / Doji</span></div>
+        <div class="text">Met at Ayame's salon at Otosan Uchi. The reading came back open &mdash; the first time in J&#363;jir&#333;'s life the family method ever answered in their favour &mdash; and what followed was neither a near-miss nor a courtesy. It was an affair conducted with appetite on both sides, over weeks. She had spent years reading pillow books and turning what she could not have into verse; with them she stopped writing it down and did it instead. No contact since she left Otosan Uchi. <strong>J&#363;jir&#333; does not know she conceived, and has never known.</strong></div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Mirumoto Shizuka <span class="role">&mdash; betrothed</span><span class="clan">Dragon / Mirumoto</span></div>
+        <div class="text">A Mirumoto raised in the Asahina Envoy school to be married into the family; she will be Asahina Shizuka when it happens. The match was well-intentioned and neither of them pretends it is more than that. See <a href="#betrothal">VII</a>.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Asahina Shigehiro <span class="role">&mdash; lord, distant relation</span><span class="clan">Crane / Asahina</span></div>
+        <div class="text">Lord of Shirogome; shugenja-trained city administrator. J&#363;jir&#333;'s lord, whose claim currently stands lent out to Ayame. He also employed <strong>Doji Setsuna</strong> as legal counsel on Imperial-law matters some years earlier, and remains one of the three people whose approval she cares about. The two of them served the same house without ever overlapping in it &mdash; which means that if the affair ever surfaces, it lands on one desk twice.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Asahina Riku <span class="role">&mdash; teacher</span><span class="clan">Crane / Asahina</span></div>
+        <div class="text">The old woman in Shirogome who taught them the arts of their school, and the first person to hear the lungs fail.</div>
+      </div>
+
+      <div class="relation">
+        <div class="name">Their parents <span class="role">&mdash; unnamed</span><span class="clan">Crane / Asahina</span></div>
+        <div class="text">Proud in public, careful in private. They gave J&#363;jir&#333; the ancestor's name before anyone could know whether the aptitude had carried, and were vindicated. They also arranged the Mirumoto match, consulted the method, and accepted its answer. Smithing was taught as the family's ordinary trade; the fame is regarded as an ornament on a craft. <strong>No bond is recorded with either of them.</strong></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="otosan">
+    <h2 class="section-title">VI. The Otosan Uchi Season</h2>
+
+    <p>Everything that matters about this character happened in one stretch of about four months before the campaign began, and the two halves of it are the same trip.</p>
+
+    <p><strong>The feat.</strong> Ayame commissioned them to rework a damaged family heirloom. What they made did not merely stun; it woke. She had it recorded as a great artistic feat, named them Master Artisan, and moved them to Otosan Uchi under her patronage to begin Benten's shrine.</p>
+
+    <p><strong>The aptitude.</strong> It was the same season the family gift came in fully. Since then they have known, after a scene or two in a person's company, whether that person is open to them &mdash; reliably, and without having asked to know.</p>
+
+    <p><strong>The affair.</strong> And it was the same season they met Doji Setsuna at Ayame's salon and the reading came back open.</p>
+
+    <p>Their fame and their worst secret date from the same weeks. That is a useful thing to be able to say about someone whose distinction is knowing who wants them.</p>
+
+    <h4 class="entry-label">What J&#363;jir&#333; does not know</h4>
+    <p>That Setsuna conceived; that she carried it through the Loyalty Castle mission; that she considered carrying to term and then elected termination; that the procedure severely wounded her Void ring and has never fully healed. The decision to conceal it was hers, taken partly to spare them knowledge that would mark them, and partly because they are betrothed elsewhere and it would not have been theirs alone to carry.</p>
+  </section>
+
+  <section id="betrothal">
+    <h2 class="section-title">VII. The Betrothal</h2>
+
+    <p>The house that invented the science of matching people matched J&#363;jir&#333; to a woman they cannot love.</p>
+
+    <p>The method was consulted and did not object. Shizuka is Earth where J&#363;jir&#333; has none, and would steady them. <strong>It was correct.</strong> That is the bitterness of it &mdash; not that the instrument failed, but that it worked, and being accurately matched to someone you cannot love is the worse outcome. It leaves the method's authority intact, which matters, because it is the same authority that told them the truth about Setsuna.</p>
+
+    <p>The mechanical text of Bitter Betrothal offers three reasons a spouse undermines you &mdash; malice, negligence, or an incompatible set of goals. This is the third, which is the only one that does not make Shizuka a villain. She knows there is no chemistry. She was raised in J&#363;jir&#333;'s own family's courtier school for the express purpose of this marriage, by a decision made over both their heads, and she has as little say in it as they do.</p>
+
+    <p>Since Ayame's patronage it no longer makes political sense either &mdash; a household artisan of status 35 with the glory of a Champion and the ear of the Emperor's consort is not the match that was negotiated for. Nonetheless promises were made, and a marriage can only be deferred so long.</p>
+  </section>
+
+  <section id="timeline">
+    <h2 class="section-title">VIII. Timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-entry">
+        <div class="when">Childhood &middot; Shirogome</div>
+        <div class="what">Named for the ancestor, on a guess.</div>
+        <div class="detail">Taught smithing as the family's ordinary trade. Apprenticed under Asahina Riku, who taught them the school's arts &mdash; and under whom the sensitivity of the lungs first manifested.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">The Kakita Levy</div>
+        <div class="what">A Doji ruling saved the workshop.</div>
+        <div class="detail">Doji Setsuna, then legal counsel at Shirogome, ruled that artisans were protected under a precedent of Hantei V, voiding a Kakita daim&#333;'s new tax on craftsmen. J&#363;jir&#333; was one of the craftsmen it saved and had never met her. The Kakita have not forgiven the Doji for it.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">The Betrothal</div>
+        <div class="what">Matched to Mirumoto Shizuka.</div>
+        <div class="detail">Arranged by their parents, endorsed by the family method, and settled before either party was consulted. Shizuka was placed in the Asahina Envoy school to be married into the family.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">Otosan Uchi &middot; Approximately Four Months Pre-Campaign</div>
+        <div class="what">The heirloom woke; the title followed; so did Setsuna.</div>
+        <div class="detail">Ayame's commission, the record of a great artistic feat, Master Artisan and +30 glory, the move to Otosan Uchi, the aptitude coming in fully, and the affair &mdash; all one season. See <a href="#otosan">VI</a>.</div>
+      </div>
+      <div class="timeline-entry">
+        <div class="when">Present</div>
+        <div class="what">Furnishing Benten's shrine.</div>
+        <div class="detail">Under Ayame's patronage, curating awakened objects &mdash; each <em>shintai</em> chosen for the place it will stand and the people who will stand before it. Shigehiro's claim is in abeyance for the duration.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="advancement">
+    <h2 class="section-title">IX. Advancement Plan</h2>
+
+    <p>One structural fact governs everything below: <strong>Master Artisan cannot be completed for a very long time.</strong> Its two technique prerequisites are rank-gated far above J&#363;jir&#333;'s School Rank 2 &mdash; <em>All Arts Are One</em> is a <strong>Rank 3</strong> sh&#363;ji, and <em>Formal Tea Ceremony</em> is a <strong>Rank 5</strong> ritual. With 48 of 60 XP still outstanding and a Rank-5 gate on the last piece, this is an end-game title, not a near-term goal. Plan around the school, not the title.</p>
+
+    <h3 class="subhead">Priority 1 &middot; Earth 1 &rarr; 2 (6 XP)</h3>
+    <p>The single most valuable purchase available, and it is not close. Earth 1 is the floor. Raising it to 2 takes Endurance from 8 to 10 and Composure from 6 to <strong>8</strong> &mdash; which raises the strife maximum from 6 to 8, moving them from &ldquo;compromised by two bad moments&rdquo; to something survivable. It also blunts the Incurable Illness, which is an Earth adversity.</p>
+    <p>Out of curriculum, so full price at 3 &times; the new rank. Buy it first.</p>
+
+    <h3 class="subhead">Priority 2 &middot; Finish the Rank 2 curriculum</h3>
+    <p>Rank 2 wants Scholar Skills, Aesthetics, Design, Performance, Rank 1&ndash;2 Water Invocations, Grasp of the Air Dragon and Tea Ceremony. Performance and Tea Ceremony are bought. In-curriculum skills cost 2 &times; the new rank, so the cheap advances are <strong>Design 1&rarr;2 (4 XP)</strong> and <strong>Aesthetics 3&rarr;4 (8 XP)</strong> &mdash; the latter being their signature skill and the one every commission runs through.</p>
+    <p>Reaching Rank 3 is what unlocks the title's first prerequisite, so this is also the only road to Master Artisan.</p>
+
+    <h3 class="subhead">Priority 3 &middot; All Arts Are One, at Rank 3</h3>
+    <p>The first title prerequisite, and unavailable until School Rank 3. A Support action, TN 4 Martial skill, Games or Performance check on Void, to absorb a new activity without the usual TN increase for unfamiliarity.</p>
+
+    <h3 class="subhead">Deliberately not recommended</h3>
+    <ul>
+      <li><strong>More Fire or Air.</strong> Both are already 3 and both are the half of them that works. Spending there widens the gap that is already the problem.</li>
+      <li><strong>Martial skills.</strong> All five are at 0 and should stay there. The wakizashi and yumi are the school's starting outfit, not a plan.</li>
+      <li><strong>Pushing the title before Rank 3.</strong> XP put into Culture, Medicine and Meditation counts toward the title, but the gate is the school rank, not the ledger.</li>
+    </ul>
+
+    <h3 class="subhead">Noted, not costed</h3>
+    <p>The school's Rank 6 mastery, <em>Stir the Slumbering Spirit</em>, is what J&#363;jir&#333; actually wants &mdash; and even it only holds until the end of the session. The thing they are reaching for is not on the advancement table at all.</p>
+  </section>
+
+  <section id="trajectory">
+    <h2 class="section-title">X. Trajectory</h2>
+
+    <h4 class="entry-label">The shrine</h4>
+    <p>Finishing it pays a giri, and giri completion pays 10 or more glory. J&#363;jir&#333; is at 78 of a possible 100. Complete Benten's shrine and they land near 88 &mdash; glory rank 8 against status rank 3, with no office, no lands, and a lord who has lent them out. That gap is not a bug. It is the thing that will eventually get them hurt.</p>
+
+    <h4 class="entry-label">The exposure</h4>
+    <p>Ayame's fondness is genuine, which makes it the least predictable risk in the arrangement: a woman who finds a secret charming is a woman who may one day say so warmly to the wrong listener. She sits in the Forbidden City and outranks everyone who could protect J&#363;jir&#333; from the consequences.</p>
+
+    <h4 class="entry-label">The marriage</h4>
+    <p>It can be deferred and it cannot be avoided, and the ninj&#333; is not to escape it but to make the family use its own instrument honestly. That is a desire J&#363;jir&#333; can pursue in a conversation, at range, in any session &mdash; which is what makes it playable rather than decorative.</p>
+
+    <h4 class="entry-label">The end</h4>
+    <p>The lungs. Young, with the work unfinished, and sooner than anyone has arranged for.</p>
+  </section>
+
+  <div class="sitefoot"><span class="mark">&#10070;</span>The Fragile Peace &middot; Legend of the Five Rings</div>
+</div>
+</body>
+</html>
