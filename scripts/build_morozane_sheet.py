@@ -304,9 +304,13 @@ SHEET = {
     "school": sysd["identity"]["school"],
     "role": sysd["identity"]["roles"],
     "rank": sysd["identity"]["school_rank"],
-    # Hot-linked from Foundry rather than copied in, matching how the Caul site
-    # sources its portraits. Swap for a local asset if the Forge URL ever moves.
-    "portrait": actor["img"],
+    # Local, like the other four. It was hot-linked from the owner's Forge VTT
+    # account, which made it the only image on a published site depending on a
+    # third party staying up and the account staying paid. The file is the same
+    # one, fetched once and converted; the export's own `img` is left untouched.
+    # Kept square rather than cropped to the 3:4 the other portraits use, because
+    # Morozane shares the frame with Shigo no Chinmoku and 3:4 loses the lion.
+    "portrait": "../assets/morozane.webp",
     "rings": {r: rings[r] for r in ("air", "earth", "fire", "water", "void")},
     "derived": {"endurance": sysd["endurance"], "composure": sysd["composure"],
                 "focus": sysd["focus"], "vigilance": sysd["vigilance"]},
@@ -361,7 +365,12 @@ head = head.replace("Doji Setsuna — Character Sheet",
                     "Matsu Morozane — Character Sheet")
 head = head.replace('<a href="../character/setsuna.html">&lsaquo; Bio</a>',
                     '<a href="../party/matsu-morozane.html">&lsaquo; Bio</a>')
+# He is on the chooser page now, so the bar keeps the Characters link the other
+# four sheets carry rather than replacing it. The Party and the cross-link to
+# Setsuna's sheet are appended, since his bio lives under party/ and the two
+# sheets are the same battle seen from opposite ends.
 head = head.replace('<a href="../character/index.html">Characters</a>',
+                    '<a href="../character/index.html">Characters</a>'
                     '<a href="../party/index.html">The Party</a>'
                     '<a href="setsuna.html">Setsuna &rsaquo;</a>')
 page = (head
