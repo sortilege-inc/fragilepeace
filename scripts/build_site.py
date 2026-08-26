@@ -32,7 +32,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">')
 
 NAV = [("home", "Home", "index.html"),
-       ("character", "Setsuna", "character/index.html"),
+       ("character", "Characters", "character/index.html"),
        ("party", "The Party", "party/index.html"),
        ("chronicle", "Chronicle", "chronicle/index.html"),
        ("dramatis", "Dramatis Personae", "dramatis-personae/index.html"),
