@@ -14,27 +14,29 @@
   // Region definitions. `shapes` are polygons on the overview map.
   // `map` is the detailed region image (null = not yet charted).
   var REGIONS = [
-    { key:"dragon", name:"Dragon Lands", color:C.dragon, map:"../assets/regions/dragon.webp",
-      shapes:[[[16,7],[30,3],[52,3],[60,9],[60,18],[46,22],[34,21],[24,19],[16,13]]],
-      label:[38,12],
-      pins:[] },
     { key:"unicorn", name:"Unicorn Lands", color:C.unicorn, map:"../assets/regions/unicorn.webp",
-      shapes:[[[2,9],[16,9],[24,20],[22,34],[18,46],[10,50],[3,40],[1,22]]], label:[12,22] },
+      shapes:[[[0,1],[16,0],[28,5],[31,13],[27,22],[16,26],[5,24],[0,14]]], label:[15,13],
+      pins:[] },
+    { key:"dragon", name:"Dragon Lands", color:C.dragon, map:"../assets/regions/dragon.webp",
+      shapes:[[[33,1],[47,0],[59,2],[60,8],[56,14],[46,15],[38,13],[33,7]]], label:[46,7] },
     { key:"phoenix", name:"Phoenix Lands", color:C.phoenix, map:"../assets/regions/phoenix.webp",
-      shapes:[[[62,3],[90,2],[92,22],[84,33],[72,32],[62,18],[60,9]]], label:[80,15] },
+      shapes:[[[63,0],[85,0],[88,5],[85,12],[80,16],[70,15],[64,9],[62,4]]], label:[76,7] },
     { key:"lion", name:"Lion Lands", color:C.lion, map:"../assets/regions/lion.webp",
-      shapes:[[[36,22],[58,20],[66,32],[60,44],[46,45],[35,36],[34,27]]], label:[50,32] },
+      shapes:[[[37,15],[50,12],[62,14],[65,19],[60,24],[54,30],[45,31],[38,26],[36,20]]],
+      label:[49,21] },
     { key:"crane", name:"Crane Lands", color:C.crane, map:"../assets/regions/crane.webp",
       shapes:[
-        [[58,33],[80,33],[82,52],[66,55],[58,46],[56,40]],
-        [[44,63],[64,58],[67,74],[52,85],[42,74],[42,66]]
-      ], label:[71,45], label2:[54,73] },
-    { key:"crab", name:"Crab Lands", color:C.crab, map:"../assets/regions/crab.webp",
-      shapes:[[[8,58],[30,56],[39,66],[35,80],[20,85],[7,73]]], label:[22,69] },
+        [[55,24],[62,26],[67,31],[68,35],[63,44],[55,44],[52,37],[52,29]],
+        [[32,78],[43,78],[45,81],[40,84],[33,83],[30,80]]
+      ], label:[59,34], label2:[38,81] },
     { key:"scorpion", name:"Scorpion Lands", color:C.scorpion, map:null,
-      shapes:[[[28,44],[46,45],[50,55],[44,63],[32,61],[25,52]]], label:[38,53] },
+      shapes:[[[28,21],[38,20],[47,26],[47,35],[40,41],[31,40],[26,32],[26,24]]], label:[36,30] },
+    { key:"crab", name:"Crab Lands", color:C.crab, map:"../assets/regions/crab.webp",
+      shapes:[[[11,57],[26,55],[38,62],[42,69],[42,74],[34,77],[27,76],[19,73],[12,65]]],
+      label:[24,66] },
     { key:"shadow", name:"The Shadowlands", color:C.shadow, map:null,
-      shapes:[[[5,76],[20,84],[22,93],[11,97],[3,90],[2,80]]], label:[11,86] }
+      shapes:[[[0,44],[5,48],[9,56],[11,64],[16,72],[19,77],[14,83],[7,88],[1,90],[0,82]]],
+      label:[7,76] }
   ];
 
   var byKey = {};
@@ -53,6 +55,19 @@
   var backBtn = document.getElementById("backBtn");
   var clanrow = document.getElementById("clanrow");
   var zin = document.getElementById("zin"), zout = document.getElementById("zout"), zreset = document.getElementById("zreset");
+
+  // The overview sheet and the region sheets are different shapes, and the
+  // frame stretches its image to fill. Take the ratio off the image instead.
+  function fitFrame(img) {
+    function set() {
+      if (img.naturalWidth && img.naturalHeight) {
+        frame.style.setProperty("--frame-ar",
+          img.naturalWidth + "/" + img.naturalHeight);
+      }
+    }
+    if (img.complete) set(); else img.addEventListener("load", set, { once:true });
+  }
+  fitFrame(baseImg);
 
   var SVGNS = "http://www.w3.org/2000/svg";
   var view = "overview";       // or a region key
@@ -115,6 +130,7 @@
     setTimeout(function () {
       regionImg.src = r.map;
       regionImg.alt = r.name;
+      fitFrame(regionImg);
       view = key;
       // reset transform for region view
       frame.classList.remove("animate");
@@ -136,6 +152,7 @@
 
   function goOverview() {
     view = "overview";
+    fitFrame(baseImg);
     regionImg.style.display = "none";
     baseImg.style.display = "block";
     svg.classList.remove("hidden");

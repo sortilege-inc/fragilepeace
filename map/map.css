@@ -39,7 +39,9 @@
 .map-viewport.grabbing{ cursor:grabbing; }
 
 .map-frame{
-  position:relative; height:100%; aspect-ratio:2513/3263;
+  /* Set per image by map.js — the overview and the region sheets are not
+     the same shape, and object-fit:fill would stretch whichever lost. */
+  position:relative; height:100%; aspect-ratio:var(--frame-ar, 3600/5999);
   transform-origin:center center; will-change:transform;
 }
 .map-frame.animate{ transition:transform .5s cubic-bezier(.4,0,.2,1); }
