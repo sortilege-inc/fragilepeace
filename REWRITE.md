@@ -9,8 +9,8 @@ Pre-rewrite commit: **8133e1f**. That is the reference every fact check runs aga
 
 ## The gate
 
-    python3 scripts/factguard.py 8133e1f            # every source file
-    python3 scripts/factguard.py 8133e1f sources/chronicle/s07-*.md
+    python3 fragile-peace-support/scripts/factguard.py 8133e1f            # every source file
+    python3 fragile-peace-support/scripts/factguard.py 8133e1f sources/chronicle/s07-*.md
 
 `factguard.py` compares each source file to its committed version and fails on any *fact token*
 that the old text carried and the new one does not: `[[wikilinks]]`, capitalised names, numbers,
@@ -23,7 +23,7 @@ to make each one a decision somebody looked at. Accepted losses go in `ACCEPT` w
 
 Full gate before commit:
 
-    python3 scripts/factguard.py 8133e1f && python3 scripts/build_site.py && python3 scripts/verify_site.py
+    python3 fragile-peace-support/scripts/factguard.py 8133e1f && python3 fragile-peace-support/scripts/build_site.py && python3 fragile-peace-support/scripts/verify_site.py
 
 ## What is in scope
 
@@ -35,7 +35,7 @@ Measured against the site's own enumerable sets, not against what gets built.
 | `sources/entities/*.md` | 36 files | 1,708 | |
 | `notes/index.html` | 1 file, own register | 6,238 | |
 | `index.html` | 1 file | 345 | |
-| `scripts/build_site.py` blurbs | ~10 literals + panel explainers | ~400 | |
+| `fragile-peace-support/scripts/build_site.py` blurbs | ~10 literals + panel explainers | ~400 | |
 
 Each chronicle file carries an `epigraph`, a `!lede`, `## Narrative`, `## Learned` (374 bullets
 across the corpus), and `## Setsuna`.
@@ -203,7 +203,7 @@ real family and the local page is the corrected one in the house voice. The one 
 from the export entry — the Isawa as the Phoenix shugenja family, their work the balance of the five
 and the tending of the kami — is folded into the local page, and the export file is suppressed.
 
-Also untracked `scripts/__pycache__`, which was committed and kept colliding on checkout.
+Also untracked `fragile-peace-support/scripts/__pycache__`, which was committed and kept colliding on checkout.
 
 Held as genuinely distinct, and deliberately not merged: Phoenix Clan/Phoenix Lands, Scorpion
 Clan/Scorpion Lands, Unicorn Clan/Unicorn Lands, Centipede Clan/Centipede Lands, Daidoji
