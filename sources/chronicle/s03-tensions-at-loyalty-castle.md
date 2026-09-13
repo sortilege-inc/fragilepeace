@@ -6,16 +6,21 @@ epigraph: A provisional magistrate of the Unicorn had not heard that a battle ha
 
 !lede A [[Lion Clan]] shugenja came to [[Shiba Midori]] with a problem of observance: the people are not tending the kami properly and she wants that fixed. [[Shiba Midori]] won the shugenja competition at the Topaz Championship, which is why the question came to her. She answered it in the register of a campaign. If it is urgent, treat it as urgent: assign it, resource it, work it. She proposed exchanges between the clans' shrines, and proposed reframing the tending of a shrine as a tribute owed to victorious ancestors rather than a chore of piety. The Lion had not expected a Phoenix to talk that way, and the reframing landed, because it is a Lion argument made about a Phoenix subject.
 
-In the courtyard the other conversation was going worse. [[Lion Clan]] samurai had [[Bayushi Monban]] with blades out. [[A Monk]] walked into it with the Dragon teaching — *neither shall I* — and offered to take one blow for every blow they gave, which put the Lion in a position where continuing meant beating a monk who had done nothing to anybody. [[Shiba Midori]] stepped in beside him. The samurai stalled on the arithmetic. The code that had them drawing swords was the same code that would not let them swing.
+In the courtyard that afternoon the other conversation was going worse. [[Bayushi Monban]] had insulted the daimyō's kitchen, and a number of [[Lion Clan]] bushi were giving him a serious thrashing for it with their hands — more of them, and quicker off the mark, than an insult to a cook would seem to justify. Nobody could account for that at the time.
+
+[[A Monk]] walked into it with the Dragon teaching — *neither shall I* — and offered to take one blow for every blow they gave, which put the Lion in a position where continuing meant beating a monk who had done nothing to anybody. They tried to settle it cheaply, laying a solid blow on [[Bayushi Monban]] and a light tap on the monk, and the monk declined to accept that as the bargain. [[Shiba Midori]] stepped in beside him. The arithmetic never recovered. The code that set them on him was the same code that would not let them finish.
 
 Then [[Shinjo Mono]] arrived: young, swarthy, foreign blood in him, curly hair pulled to a topknot, a thin trimmed beard, and a provisional magistrate's authority. [[Doji Setsuna]] rode [[Kogarashi]] across his line of sight to be noticed, and was. She asked whose man he was. A Shinjo, he said — the uncle of [[Shinjo Harunobu]]. She observed that his lord holds border security for a stretch of country that has just had a battle fought across it. [[Shinjo Mono]] had not heard about the battle.
 
-He asked about the horse. She told him it was a wedding gift from her husband, [[Shinjo Harunobu]], and advised him to be careful what he asked and of whom. Then the party turned for the [[Castle of the Swift Sword]].
+He asked about the horse. She told him it was a wedding gift from her husband, [[Shinjo Harunobu]], and advised him to be careful what he asked and of whom.
+
+The arrival was also what saved [[Bayushi Monban]]. Every Lion in the courtyard turned to look at the [[Unicorn Clan|Unicorn]] riding in with an Emerald Magistrate's badge on, and he walked out of the beating while they did. He kept the bruises, and he kept the conviction that the insult had been offered to him first. Nobody left for the [[Castle of the Swift Sword]] that day; there was a duel to be fought first.
 
 ## Learned
 
+- Bayushi Monban: Beaten in the courtyard by Lion bushi for insulting the daimyō's kitchen. The number of them, and how fast they came, did not match the offence — and no one could say why.
 - Shinjo Mono: A young Unicorn provisional magistrate — swarthy, foreign blood, curly hair in a topknot, thin trimmed beard. His lord is a Shinjo, and the uncle of her husband. That makes him the nearest thing she has to a line into Harunobu's own family.
-- A Monk: Stepped between the Lion and Monban with the Dragon teaching "neither shall I", offering to take a blow for every blow given. It stopped them, because the code that armed them would not let them strike him.
+- A Monk: Stepped between the Lion and Monban with the Dragon teaching "neither shall I", offering to take a blow for every blow given. They tried to buy it off with a hard blow to Monban and a tap to him, and he would not take it. It stopped them, because the code that set them on Monban would not let them strike a monk.
 - Shiba Midori: Won the shugenja competition at the Topaz Championship, which is why the Lion bring her their problems of observance. She answers religious questions in military terms and it works on Lion listeners.
 
 ## Setsuna
