@@ -4,7 +4,7 @@ epigraph: Setsuna asked to be excused from the séance. Kaage refused her. Then 
 
 ## Narrative
 
-!lede [[Kitsuki Kaage]] put the obvious question to the room: how does anyone testify to a battle three centuries gone? The answer he got was ancestral vision, and he did not like it. When [[Kitsuko Ayoko]] called up her own ancestor — who carried the guilt of a victory won unfairly, and said that the guilt was why the histories had been allowed to rot — and described a scroll her ancestor gave her that put the same vision into the whole assembly, [[Kitsuki Kaage]] called it fanciful lore.
+!lede [[Kitsuki Kaage]] put the obvious question to the room: how does anyone testify to a battle three centuries gone? The answer he got was ancestral vision, and he did not like it. When [[Kitsu Ayoko]] called up her own ancestor — who carried the guilt of a victory won unfairly, and said that the guilt was why the histories had been allowed to rot — and described a scroll her ancestor gave her that put the same vision into the whole assembly, [[Kitsuki Kaage]] called it fanciful lore.
 
 The witnesses held. They had all seen the same battle from different places in it, and they named [[Shinjo Altansari]] and [[Matsu Sakura]] as the fixed points they could all check each other against.
 
@@ -16,7 +16,7 @@ The witnesses held. They had all seen the same battle from different places in i
 
 [[Shiba Midori]] cut across all of it with the argument nobody wanted. Whatever the Scorpion did or did not do, the court should not be in the business of paying out for dishonourable methods, because of what that teaches everyone watching. The room went politely quiet.
 
-Then [[Kitsuko Ayoko]] was called back, shaken, and gave the session its verdict before the magistrate could. Her ancestor had made a mistake, out of fear — the fear of having very nearly won the battle. And [[Kitsu Yui]] was the true hero of the [[Snow Plain]], and neither Unicorn valour nor Scorpion treachery could put her honour in shadow.
+Then [[Kitsu Ayoko]] was called back, shaken, and gave the session its verdict before the magistrate could. Her ancestor had made a mistake, out of fear — the fear of having very nearly won the battle. And [[Kitsu Yui]] was the true hero of the [[Snow Plain]], and neither Unicorn valour nor Scorpion treachery could put her honour in shadow.
 
 [[Bayushi Monban]] closed for the [[Scorpion Clan|Scorpion]]: that they have kept the Empire's histories for centuries, that an agreement obliges regardless of whether it was honourable, that the Lion disobeyed during the battle, and that the timing of events made the Unicorn victors — and so the mines are theirs to give.
 
@@ -26,7 +26,7 @@ With the floor open, [[Bayushi Monban]] proposed calling the ancestors themselve
 
 ## Learned
 
-- Kitsuko Ayoko: Summoned her own ancestor in open court. The ancestor carries guilt for an unfair victory, and said that guilt is why the histories were allowed to erode. She named Kitsu Yui the true hero of the Snow Plain, and said her ancestor's mistake was made out of fear — the fear of nearly having won.
+- Kitsu Ayoko: Summoned her own ancestor in open court. The ancestor carries guilt for an unfair victory, and said that guilt is why the histories were allowed to erode. She named Kitsu Yui the true hero of the Snow Plain, and said her ancestor's mistake was made out of fear — the fear of nearly having won.
 - Kitsu Takeko: Performed the void rite herself to compel the ancestors to attend, with Midori supporting.
 - Ikoma Akuyaku: Manifested alongside her. The scout who erased the histories, called to answer for it.
 - Kitsuki Kaage: Openly sceptical of ancestral vision as testimony — asked how anyone attests to a battle three centuries gone, and called the shared-vision scroll fanciful lore. Refused Setsuna's request to be excused from the séance.
@@ -42,4 +42,4 @@ Her testimony was honest and it cost her the argument. Asked whether the Lion ad
 
 And her own account was used by the other side. [[Shosuro Aishi]] took [[Matsu Morozane]]'s testimony — Setsuna's ancestor, Setsuna's mouth — and made it the [[Scorpion Clan|Scorpion]]'s proof of presence at both the clash and the signing. Anything she says about that battle from now on is evidence for whoever finds it useful. She should assume it and prepare for it rather than resent it.
 
-[[Shiba Midori]] made the argument that wins. Not who was there — what the Empire teaches by paying out. A court that rewards poisoned wells and forged ledgers instructs every clan watching. The room had no answer, and a room with no answer is where a magistrate rules. That is the ground the Imperial-custody finding should be argued from, and [[Kitsuko Ayoko]]'s testimony now sits under it: the honour that deserves recognition at the [[Snow Plain]] is [[Kitsu Yui]]'s, and she belongs to nobody's claim.
+[[Shiba Midori]] made the argument that wins. Not who was there — what the Empire teaches by paying out. A court that rewards poisoned wells and forged ledgers instructs every clan watching. The room had no answer, and a room with no answer is where a magistrate rules. That is the ground the Imperial-custody finding should be argued from, and [[Kitsu Ayoko]]'s testimony now sits under it: the honour that deserves recognition at the [[Snow Plain]] is [[Kitsu Yui]]'s, and she belongs to nobody's claim.

@@ -128,7 +128,7 @@ as signatories and both generals with them: the Emerald Magistrates will see
 their power to bring about the peace the Emperor has demanded. Twelve honour staked by
 every party, and no loopholes in it that anyone could object to.
 
-Then [[Kitsuko Ayoko]] found [[Miya Misato]] dead.
+Then [[Kitsu Ayoko]] found [[Miya Misato]] dead.
 
 No sign of anyone's hand in it. She had simply lost too much blood, in the night, in her
 sleep, three hours after everyone else finally lay down. [[Doji Setsuna]] was woken by a
@@ -182,9 +182,9 @@ pay for it, as the least they owe a woman who died in their keeping.
 - Shosuro Hametsu: Head of the Shosuro family, Bayushi Kachiko's brother, and Bayushi Monban's lord — the man Setsuna has billed fifty koku for Monban's ransom.
 - Bayushi Shoju: Champion of the Scorpion Clan and Kachiko's husband. Appears entirely untroubled by his wife's private access to the Emperor.
 - Matsu Tomoe: Present at the bodies in ghostly armour with a no-dachi, cutting down the assassins' ghosts as they fled — killing them, she says, sends them on the faster. She corrected Midori sharply for calling her a Doji: she married into them and never became one. She accuses the Isawa of a conspiracy to turn the elements against the Lion, and says the shugenja of her clan are working to prove how.
-- Miya Misato: Dead. Not by anyone's hand — she lost too much blood, in her sleep, hours after the surgery. Found by Kitsuko Ayoko in the small hours.
+- Miya Misato: Dead. Not by anyone's hand — she lost too much blood, in her sleep, hours after the surgery. Found by Kitsu Ayoko in the small hours.
 - Ikoma Tadayoshi: Woke to find the woman he was yojimbo to dead beside him while he slept, and understood at once that he owes his life for it.
-- Kitsuko Ayoko: Found the envoy's body.
+- Kitsu Ayoko: Found the envoy's body.
 - Otoya: Sat up through the night making a clean copy of the writ from the salvaged seal.
 - Matsu Maro: Put a dozen of her own around the envoy's tent and let as many Moto stand with them. Told the magistrates the crime was theirs to solve. Still on board, lower in status than Setsuna, and knows how exposed she is.
 - Imperial Seal: Intact enough to use. It is the only reason the writ can be reproduced in its exact wording at all.

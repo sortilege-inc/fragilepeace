@@ -10,9 +10,9 @@ So they turned west. Into [[Unicorn Clan|Unicorn]] country, to find out what the
 
 Business first. [[Bayushi Monban]] asked [[Kitsu Takeko]] humbly for the return of a certain letter. He also watched her take delivery of one with a hasty sketch in it — the mahōtsukai the party has met before. A childhood friend of his is being sent to the [[Castle of the Centipede]] to try for peace, and if that fails he will go to [[The Wall]] and take his chances against what is behind it. There is more Shadowlands movement in the [[Shinomen Forest]] than anyone is comfortable with.
 
-[[Shiba Midori]] petitioned [[Kitsu Takeko]] formally to take [[Kitsuko Ayoko]] as her yoriki. *Of course you may.* The girl marked the appointment by chasing a badly dressed servant out of [[Shiba Midori]]'s room with a broom — *I shouldn't beat them with a katana, that's not fair* — which is correct about the katana and a fair instinct about the servant.
+[[Shiba Midori]] petitioned [[Kitsu Takeko]] formally to take [[Kitsu Ayoko]] as her yoriki. *Of course you may.* The girl marked the appointment by chasing a badly dressed servant out of [[Shiba Midori]]'s room with a broom — *I shouldn't beat them with a katana, that's not fair* — which is correct about the katana and a fair instinct about the servant.
 
-They rode out with the [[Three Hida Brothers]] alongside them. On the road [[Bayushi Monban]] taught [[Kitsuko Ayoko]] how a court reads a person, and how much of [[Shiba Midori]]'s standing now depends on how her yoriki behaves. [[Shiba Midori]] told them the story of the [[Sword of Hiruma]] — Crab-forged, supernaturally pure, and now lost through treachery. [[Bayushi Monban]] hit the floor with his fist, announced that unless it was the magistrates nobody was to bother him, and went to meditate. [[Ryu]] and [[So]] exchanged a look.
+They rode out with the [[Three Hida Brothers]] alongside them. On the road [[Bayushi Monban]] taught [[Kitsu Ayoko]] how a court reads a person, and how much of [[Shiba Midori]]'s standing now depends on how her yoriki behaves. [[Shiba Midori]] told them the story of the [[Sword of Hiruma]] — Crab-forged, supernaturally pure, and now lost through treachery. [[Bayushi Monban]] hit the floor with his fist, announced that unless it was the magistrates nobody was to bother him, and went to meditate. [[Ryu]] and [[So]] exchanged a look.
 
 And they made a pact: nobody speaks of their deaths, and nobody speaks of what happened to them at the Battle of the [[Snow Plain]].
 
@@ -24,7 +24,7 @@ The City of the Rich Frog sits where the Three Sides River meets the [[Drowned M
 
 - Kitsuki Kaage: Named Setsuna's argument the most persuasive before him in the ruling.
 - Shinjo Harunobu: Sent her a gift, wrapped in purple, by a Unicorn messenger. No answer has come on the custody request.
-- Kitsuko Ayoko: Now Shiba Midori's yoriki, by Kitsu Takeko's approval. Drove an intruder out of Midori's quarters with a broom rather than a blade, on the reasoning that a katana would not be fair.
+- Kitsu Ayoko: Now Shiba Midori's yoriki, by Kitsu Takeko's approval. Drove an intruder out of Midori's quarters with a broom rather than a blade, on the reasoning that a katana would not be fair.
 - Ikoma Kotone: The Lion tea mistress at the City of the Rich Frog teahouse, above the Drowned Merchant River. Pleased to see Setsuna, and glad to talk.
 - Matsu Koda: In the City of the Rich Frog. Setsuna offered him help managing the author Hana no Ame — the same Matsu Koda who duelled Kakita Kazumi at Loyalty Castle and apologised to her in open court.
 - Hana no Ame: A scandalous author, rumoured to be somewhere in the city, and someone's problem.

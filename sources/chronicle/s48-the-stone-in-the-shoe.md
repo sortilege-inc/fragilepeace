@@ -11,7 +11,7 @@ by [[Shiba Midori]], and spent the rest of the day walking the [[Lion Clan|Lion]
 undoing the damage done while she slept — and finished it standing in the Lion Champion's
 war tent putting [[Toshi Ranbo]] on the table.
 
-[[Kitsuko Ayoko]] said she looked much better. She was right. What was left of the
+[[Kitsu Ayoko]] said she looked much better. She was right. What was left of the
 fever's damage [[Doji Setsuna]] cleared herself, and what she could not,
 [[Shiba Midori]] took off her. She is completely well for the first time in months.
 

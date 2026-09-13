@@ -23,7 +23,7 @@ her dazed and unable to keep anything down. The physicians the castle produced d
 with each other and none of them cleared it; a shugenja ran Pathway to Inner Peace over
 her and got her stable, and no further. The ring wounds she has been carrying for weeks
 made everything slower. She dictated a message to [[Bayushi Monban]] through
-[[Kitsuko Ayoko]], to be handed over only after the duel was decided: if he died in it,
+[[Kitsu Ayoko]], to be handed over only after the duel was decided: if he died in it,
 she would haunt him for the rest of eternity.
 
 [[Daidoji Shin]] set up on the [[Unicorn Clan|Unicorn]] docks across the water with a
@@ -82,11 +82,11 @@ who serve them. [[Daidoji Shin]] began composing a song. The ronin had already s
 the name.
 
 The letter came up from [[Shiba Midori]] afterwards — the poisoning, the ejection, the
-duel and the loss, the state of the island. [[Kitsuko Ayoko]] had begun it and
+duel and the loss, the state of the island. [[Kitsu Ayoko]] had begun it and
 [[Shiba Midori]] had taken over and finished it herself, and [[Doji Setsuna]] read the
 seam: the hand changes, and so does the voice behind it, and each of them had chosen what
 to put on her side of the join. Reading it properly was the best hour of her week.
-[[Shiba Midori]], for her part, noted from [[Kitsuko Ayoko]]'s reply that Setsuna was being
+[[Shiba Midori]], for her part, noted from [[Kitsu Ayoko]]'s reply that Setsuna was being
 described as *a private guest of the governor*, and approved.
 
 Then [[Doji Setsuna]] turned to [[Miya Misato]] and told her what to do about it. *Tell
@@ -116,7 +116,7 @@ evil-doers, and that she hoped they would catch them.
 [[Ikoma Tadayoshi]] had the west shore, walking the beach with a lantern in air stance, and
 the full moon gave him the whole length of it. [[Shiba Midori]] was found sleepwalking in a
 corridor by a guard, slurring something about *your brother* and hoping he was alive. She
-woke, dressed properly, looked in on [[Kitsuko Ayoko]] — asleep over a half-written letter —
+woke, dressed properly, looked in on [[Kitsu Ayoko]] — asleep over a half-written letter —
 and went down to join him, coming up on him quietly enough not to be noticed and then setting
 herself facing the castle while he faced the river, so that between them they had all of it.
 
@@ -150,7 +150,7 @@ dead or dying, one still going for the water under fire, and the ronin closing.
 - Karahaya: Captain of the governor's guard. She fought Monban in full ashigaru armour on the docks, beat him without being touched once, gave him a scar from jaw to hairline, and took an apology and a public withdrawal of his statements. She reported it to the governor in Setsuna's hearing and laid a piece of his broken scabbard down as a trophy. The governor has now attached her to Miya Misato as yojimbo for the road.
 - Miya Misato: Still in the tower with Setsuna, working over documents at all hours. Setsuna taught her how government moves and how to fight with her hands and whatever is to hand. She asked her uncle for a morning departure and got it.
 - Governor Miya Tetsuya: Praised Karahaya's conduct in open chamber. Set the watch on the island's four shores. Granted the morning departure, gave Karahaya to the envoy as yojimbo, and arranged travel support for Midori. Reported that a Matsu contingent is trying to cross to the Unicorn side, that they were asked not to land at the Rich Frog, and that their position should be known by midday tomorrow.
-- Kitsuko Ayoko: Took Midori's dictation while she was too ill to write — the message to Monban, and the first half of the letter to Setsuna. Fell asleep over the next one.
+- Kitsu Ayoko: Took Midori's dictation while she was too ill to write — the message to Monban, and the first half of the letter to Setsuna. Fell asleep over the next one.
 - Daidoji Shin: Watched the duel from the Unicorn docks with a gaijin spyglass and narrated it live to the castle's drawing room. Began composing a song about Karahaya's victory afterwards.
 - Matsu Tsuki: A Lion samurai stuck on the castle side while the duel was fought across the river.
 - Ikoma Ukyo: The same, and complaining about it alongside Matsu Tsuki.

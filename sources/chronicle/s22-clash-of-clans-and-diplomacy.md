@@ -30,7 +30,7 @@ He had three versions of [[Ikoma Akuyaku]]'s journals in front of him. One a tra
 
 [[Kakita Kazumi]] staked five measures of honour on his document being found the better of the two when the examination is run, which guarantees an argument over evidence later. [[Shiba Midori]] withdrew hers. *I wanted to make sure these concerns were addressed. I did not feel that they were.*
 
-Then a servant slid the door open. [[Kitsuko Ayoko]] had brought the documents [[Kitsuki Kaage]] asked for, and she had other evidence of her own she wished to present. He looked at the four of them and asked whether they had known anything about this. Her ancestor is [[Kitsu Yue]] — the shugenja who called the dead onto that field, and whose work [[Shiba Midori]]'s own ancestor was credited with.
+Then a servant slid the door open. [[Kitsu Ayoko]] had brought the documents [[Kitsuki Kaage]] asked for, and she had other evidence of her own she wished to present. He looked at the four of them and asked whether they had known anything about this. Her ancestor is [[Kitsu Yue]] — the shugenja who called the dead onto that field, and whose work [[Shiba Midori]]'s own ancestor was credited with.
 
 *I think there's been quite enough delays arguing over evidence. I will not accept any new evidence without substantial reason as to why I should. But I will hear out this Kitsu Ayoko.*
 
@@ -49,7 +49,7 @@ The party's testimony survives the spiritual exclusion, because it is not spirit
 - Ide Tsubame: The Unicorn advocate, arguing her first case of this kind. Put the Treaty of White Shores Lake in and argued that Lion, Emperor and Scorpion all conceded the land by their own chops; that the Lion produce rights were a term-limited gift that has expired; and that the Scorpion showed no interest for three centuries. Produced her ancestor Shinjo Kamuko's letters about General Shinjo Kamo.
 - Shiba Midori: Told Kaage the truth about the flashback rather than confess to a forgery or let him send the journals out. Then withdrew her own evidence, saying her concerns had not been addressed.
 - Kakita Kazumi: Staked five honour on his document being found the superior of the two under examination.
-- Kitsuko Ayoko: Arrived with the documents Kaage requested and evidence of her own to present. Her ancestor is Kitsu Yue.
+- Kitsu Ayoko: Arrived with the documents Kaage requested and evidence of her own to present. Her ancestor is Kitsu Yue.
 - Lady Kitsu: Monban asked that she be given the chance to help him call two witnesses, and she was offered it.
 - Bayushi Monban: Showed the hidden writing in Akuyaku's journals, and was told Kaage had taught him to find it. Argued for the Scorpion: the Emperor has had three hundred years to take these mines and has not.
 - Old Diamond Mines: Fallen into disrepair, and inactive for well over a century — which is the hinge of Setsuna's legal argument. Nobody in the room can say why the Scorpion want them.
@@ -65,6 +65,6 @@ The forgery is dead and it died badly. Three mutually contradictory journals in 
 
 [[Shiba Midori]] is the reason it has not been withdrawn. Offered the choice between confessing to a forgery and letting the documents go out for examination, she told him the truth — a thing she knew would not be believed and could not be tested — and then withdrew her own evidence rather than press it. [[Kakita Kazumi]] staked five honour on his. The difference between those two responses is going to matter.
 
-Two things to carry. [[Kitsuki Kaage]] now knows [[Bayushi Monban]] can read invisible ink because he taught him, which means every clever thing her yojimbo does in this room is legible to the man judging it. And [[Kitsuko Ayoko]] has walked in with evidence nobody vetted, on behalf of an ancestor whose work was credited to somebody else — which is either the best thing that has happened to this case or the end of it, and [[Doji Setsuna]] does not know which.
+Two things to carry. [[Kitsuki Kaage]] now knows [[Bayushi Monban]] can read invisible ink because he taught him, which means every clever thing her yojimbo does in this room is legible to the man judging it. And [[Kitsu Ayoko]] has walked in with evidence nobody vetted, on behalf of an ancestor whose work was credited to somebody else — which is either the best thing that has happened to this case or the end of it, and [[Doji Setsuna]] does not know which.
 
 She still cannot say why the [[Scorpion Clan|Scorpion]] want a set of dead mines. Until she can, every argument she makes is aimed at the wrong target.

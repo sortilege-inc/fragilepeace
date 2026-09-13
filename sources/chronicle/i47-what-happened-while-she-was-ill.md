@@ -17,7 +17,7 @@ enough to stand, two of the four magistrates were gone and a [[Lion Clan|Lion]] 
 lost an eye.
 
 [[Doji Setsuna]] was ill for about a week. Nobody has a name for it. She was nauseous,
-feverish and mostly asleep, and [[Kitsuko Ayoko]] kept her in tea and got her through it.
+feverish and mostly asleep, and [[Kitsu Ayoko]] kept her in tea and got her through it.
 
 [[Bayushi Monban]] left. He took [[Kogarashi]] out of the lines one night without asking,
 lost the [[Unicorn Clan|Unicorn]] riders who went after him, and went up into the
@@ -62,7 +62,7 @@ It is late summer. The invitations to Winter Court are going out.
 - Khanbulak: The walled trade city at the western end of the Empire's road, and the gate to the Burning Sands. Where Monban has ended up.
 - Kogarashi: Taken out of the lines by Monban one night without asking, and brought back by Midori the next day.
 - Bayushi Monban: Gone. Rode west, lost the Unicorn riders sent after him, and was punished in the mountains by the Lady of Decay — made to muck out a troll's cave, at real cost to his standing. Arrived at Khanbulak with one sword pawned and no magistrate's badge.
-- Kitsuko Ayoko: Nursed Setsuna through a week of fever and kept her in tea.
+- Kitsu Ayoko: Nursed Setsuna through a week of fever and kept her in tea.
 
 ## Setsuna
 

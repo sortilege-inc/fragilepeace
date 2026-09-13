@@ -4,7 +4,7 @@ epigraph: The Shinjukamu letters vanished overnight after Monban's late visit to
 
 ## Narrative
 
-!lede In the recess [[Shiba Midori]] went to [[Ikoma Ichigo]] in the [[Ikoma Hall of Scribes]] with [[Kitsuko Ayoko]] beside her, and a Hida military scholar watching every step they took. Then [[Kitsuki Kaage]] laid the whole body of documents out for both sides to inspect, and put [[Ikoma Ichigo]] up to testify on them.
+!lede In the recess [[Shiba Midori]] went to [[Ikoma Ichigo]] in the [[Ikoma Hall of Scribes]] with [[Kitsu Ayoko]] beside her, and a Hida military scholar watching every step they took. Then [[Kitsuki Kaage]] laid the whole body of documents out for both sides to inspect, and put [[Ikoma Ichigo]] up to testify on them.
 
 He worked fast and he worked cleanly. The [[Imperial-Sealed Official Treaty]] is genuine, and it puts the [[Snow Plain]] in [[Unicorn Clan|Unicorn]] hands. Of the two competing secret agreements, one is signed and executed and carries no Imperial seal, which is the thing that would make it bind. And the clause willing the mines to *the least of the [[Bayushi Family|Bayushi]]* is too vague to do the work being asked of it.
 
@@ -16,7 +16,7 @@ When the court came back, [[Kitsuki Kaage]] set the order of argument and gave i
 
 Then [[Kakita Kazumi]] stood up and said [[Bayushi Monban]]'s evidence was forged, and invited the court to compare it against his own notes and the library journals.
 
-[[Doji Setsuna]] argued the principles rather than the documents. [[Kakita Kazumi]] argued for the mines to go into Imperial custody. [[Ikoma Ichigo]] came back with his comparison samples and confirmed the cache scrolls as authentic, and [[Kitsuki Kaage]] was visibly relieved to have one body of evidence in the room he could trust, which strengthened [[Shiba Midori]]'s position considerably. [[Kitsuko Ayoko]] testified that the Lion camp held out until the Imperial forces arrived, so whatever the sabotage achieved, it did not win the battle.
+[[Doji Setsuna]] argued the principles rather than the documents. [[Kakita Kazumi]] argued for the mines to go into Imperial custody. [[Ikoma Ichigo]] came back with his comparison samples and confirmed the cache scrolls as authentic, and [[Kitsuki Kaage]] was visibly relieved to have one body of evidence in the room he could trust, which strengthened [[Shiba Midori]]'s position considerably. [[Kitsu Ayoko]] testified that the Lion camp held out until the Imperial forces arrived, so whatever the sabotage achieved, it did not win the battle.
 
 Then [[Ikoma Ichigo]] said the last thing. There is no secret treaty on file anywhere. And every one of the [[Shinjukamu Letters]] disappeared overnight, after [[Bayushi Monban]]'s late visit.
 
@@ -32,7 +32,7 @@ Then [[Ikoma Ichigo]] said the last thing. There is no secret treaty on file any
 - Ide Tsubame: Moved to call the librarian to place Monban in the library at unorthodox hours, and refused Setsuna's explanation — the timeline gives a window and a man alone with the exemplars.
 - Kitsuki Kaage: Ruled that one of the two competing secret documents is forged, and that the proof is not good enough to say which. Warned Ide Tsubame what an accusation against an Emerald Magistrate would require. Relieved to have one authentic body of evidence.
 - Kakita Kazumi: Stood up in open court and called Monban's evidence forged, inviting comparison against his own notes — then argued for the mines to pass into Imperial custody.
-- Kitsuko Ayoko: Testified that the Lion camp endured until the Imperial forces came, so the sabotage did not decide the battle.
+- Kitsu Ayoko: Testified that the Lion camp endured until the Imperial forces came, so the sabotage did not decide the battle.
 - Shinjukamu Letters: Every one of them gone from the library overnight.
 
 ## Setsuna
@@ -41,7 +41,7 @@ Then [[Ikoma Ichigo]] said the last thing. There is no secret treaty on file any
 
 Her account is a testable claim now. If the librarian's version does not match hers, she is not a magistrate whose yojimbo forged something. She is a magistrate who gave a false account from the floor of an Imperial arbitration.
 
-Everything else went well, which is the difficult part. [[Ikoma Ichigo]] confirmed the cache genuine, [[Shiba Midori]]'s Imperial-holding argument is the strongest thing in the room, [[Kitsuko Ayoko]] testified that the sabotage did not decide the battle, and [[Ikoma Hideri]]'s chronicle — the murdered woman's own account — is out of the ground and in evidence. The honest case is winning on its own. The dishonest one is the only thing that can now lose it.
+Everything else went well, which is the difficult part. [[Ikoma Ichigo]] confirmed the cache genuine, [[Shiba Midori]]'s Imperial-holding argument is the strongest thing in the room, [[Kitsu Ayoko]] testified that the sabotage did not decide the battle, and [[Ikoma Hideri]]'s chronicle — the murdered woman's own account — is out of the ground and in evidence. The honest case is winning on its own. The dishonest one is the only thing that can now lose it.
 
 And [[Kakita Kazumi]] denounced [[Bayushi Monban]]'s evidence in open court, having sat with [[Soshi Yamako]] over plum wine and helped design it. There are two readings and it matters which: he is cutting the forgery loose to save the party and the Imperial argument, or he is putting the whole thing on [[Bayushi Monban]]. He also invited the court to compare it against his own notes, which is a bold offer from a man who can write in several hands.
 

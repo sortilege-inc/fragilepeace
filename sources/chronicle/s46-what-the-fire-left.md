@@ -13,7 +13,7 @@ unconscious woman can do to make it worse. [[Miya Misato]] dying on the floor.
 
 [[Ikoma Tadayoshi]] was up with two bad wounds and no running left in him.
 [[Shiba Midori]] was up, severely hurt in fire and water, and was the only medic in the
-camp who mattered. [[Kitsuko Ayoko]] was there and — unlike most of the people in that
+camp who mattered. [[Kitsu Ayoko]] was there and — unlike most of the people in that
 tent — actually knew medicine. And [[Kakita Kazumi]] was already outside in the dark,
 untouched, running.
 
@@ -61,7 +61,7 @@ herself, and what it looked like from inside was knowing exactly what to do and 
 next step of it. [[Miya Misato]] lost a round off a countdown she did not have rounds to
 spare on.
 
-Then [[Kitsuko Ayoko]] came in, who has the training, and put her hands where they were
+Then [[Kitsu Ayoko]] came in, who has the training, and put her hands where they were
 needed, and [[Shiba Midori]] went again and got it. Two rounds before [[Miya Misato]]
 would have died.
 
@@ -106,7 +106,7 @@ own belly. That version of her is gone, and it is gone by her own doing.
 ## Learned
 
 - Miya Misato: Alive, and blind. Both eyes bandaged over, the prognosis blindness, and only time will say if either can be saved. The stroke was aimed at her neck. Multiple major wounds, severe damage in water and earth, and half again the fatigue she can carry. She was two rounds from dead when Midori got the dying stopped.
-- Kitsuko Ayoko: Midori's attendant, and the only other person in the tent with real medical training. She came in after the first attempt failed and her hands are the reason the second one landed.
+- Kitsu Ayoko: Midori's attendant, and the only other person in the tent with real medical training. She came in after the first attempt failed and her hands are the reason the second one landed.
 - Imperial Seal: Salvaged out of a fire pit by Kakita Kazumi with the rest of the writ destroyed around it. Melted at the edges, still recognisable. It is the only physical thing left of the document the attack was for.
 - Aika: Woke Setsuna with water.
 - Ikoma Tadayoshi: Two major wounds, hurt in fire and air, and still the one who got Monban's armoured weight off the envoy so Midori could work. Setsuna got to her feet on his arm.
