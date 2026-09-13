@@ -29,7 +29,7 @@ What it looked like from inside the cohort was this. Lightly armoured men in red
 
 The last thing to happen was a challenge, and it did not come from the Lion. Horns went up on the Unicorn side and a single rider came out to the edge of their line, a scimitar turning in his hand and the man standing on his own saddle to dance, and he called for the cowardly dog commanding this force to come out and face his doom. He meant [[Matsu Morozane]].
 
-[[Shiguro Chinmoku]] went out ahead of his master. The lion leapt for the horse, the horse reared and kicked him in the side, and the rider had to come down off the saddle to keep his seat from throwing him — which is how a mounted challenge became an answerable one. [[Matsu Morozane]] accepted, and the stake was ten honour and five glory.
+[[Shiguro Chinmoku]] went out ahead of her master. The lion leapt for the horse, the horse reared and kicked her in the side, and the rider had to come down off the saddle to keep his seat from throwing him — which is how a mounted challenge became an answerable one. [[Matsu Morozane]] accepted, and the stake was ten honour and five glory.
 
 He fought it in his head first. Battle of the Mind took Fire and Earth away from the [[Unicorn Officer]]'s stances before a blade moved; the man went to Water. Then [[Matsu Morozane]] bid three more strife than he needed to and bought the first move with it, standing in Void where the roll could not cost him anything. He wanted Striking as Fire and could not have it in Void. He wanted Shattering Tide Style and the ground was merely ensnaring, not confining. So he put the yari in and the [[Unicorn Officer]] came off the line of it — two points of fatigue and not much else. Then the man answered with both scimitars, took four out of [[Matsu Morozane]] and knocked chain links out of his armour, and the clash carried over unfinished.
 
@@ -43,7 +43,7 @@ It ended there for the day. Both flanks engaged, both centres unspent, neither s
 - Matsu Morozane: Opened with a Lightning Raid for three panic, then spent the second round on the Touchstone of Courage rather than a second strike — raising his cohort's discipline and clearing its panic while the other flank burned.
 - Ikoma Akuyaku: Moved one range band toward the Unicorn camp under cover of the battle, hugging the ridge and a paddy lip to stay off open ground, and loosed a second arrow at a target he reported only to the general. He did not reach the camp.
 - Unicorn Officer: Rode out under horns, dancing on his saddle with a scimitar turning, and called Matsu Morozane a cowardly dog. Dismounted when Shiguro Chinmoku went for his horse, fought the clash in Water with two scimitars, gave up two fatigue and took four back. The Lion never learned his name.
-- Shiguro Chinmoku: Morozane's lion. Leapt at a mounted officer's horse, took a kick in the side for it, and brought the challenge to the ground where it could be answered.
+- Shiguro Chinmoku: Morozane's lion, and a lioness. Leapt at a mounted officer's horse, took a kick in the side for it, and brought the challenge to the ground where it could be answered.
 - Snow Plain: Ensnaring ground — fresh snow over thick mud — and the Lion army is poor at bad footing. Not confining and not dangerous, which cost Morozane a technique in the clash.
 
 ## Setsuna
