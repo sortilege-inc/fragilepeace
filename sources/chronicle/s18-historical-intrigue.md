@@ -6,7 +6,7 @@ epigraph: The one historian who survived the Snow Plain and meant to write it do
 
 !lede Three days until [[Kitsuki Kaage]] arrives at the [[Castle of the Swift Sword]] with the [[Scorpion Clan|Scorpion]] and [[Unicorn Clan|Unicorn]] ambassadors behind him, to adjudicate the Scorpion's claim to the [[Old Diamond Mines|Snow Plain diamond mines]] — a claim the Unicorn deny outright. Three days, and an archive.
 
-The first thing the archive gave them was a murder. [[Ikoma Hideri]] came off the [[Snow Plain]] alive and set out to write the battle down properly, and was assassinated before he finished it. Everything the Empire knows about that field is what survived him, which is to say it is what somebody was content to leave.
+The first thing the archive gave them was a murder. [[Ikoma Hideri]] came off the [[Snow Plain]] alive and set out to write the battle down properly, and was assassinated before she finished it. Everything the Empire knows about that field is what survived her, which is to say it is what somebody was content to leave.
 
 [[Doji Setsuna]] went looking for [[Matsu Morozane]] and found his records thin. What is in them is not the fighting. It is weather, and supply, and the ways the army failed to feed itself — a general who came out of that winter writing about logistics rather than valour. That pointed the whole party at the quartermasters' books.
 
@@ -26,7 +26,7 @@ So they set their course. Quartermasters' books, to prove the supply failures we
 
 ## Learned
 
-- Ikoma Hideri: A Lion historian who survived the Battle of the Snow Plain and was assassinated before he could finish his chronicle of it. His absence is why the record of that battle is fragmentary. Neither Akodo Toronoko's account nor Matsu Sakura's mentions him.
+- Ikoma Hideri: A Lion historian who survived the Battle of the Snow Plain and was assassinated before she could finish her chronicle of it. Her absence is why the record of that battle is fragmentary. Neither Akodo Toronoko's account nor Matsu Sakura's mentions her.
 - Kitsuki Kaage: Arriving at the Castle of the Swift Sword in three days with the Scorpion and Unicorn ambassadors, to adjudicate the claim.
 - Akodo Toronoko: Her account of the Snow Plain boasts of her own valour, plays down the supply failures, and omits Ikoma Hideri. Her writing changes markedly after that battle.
 - Matsu Sakura: Her record admits the Lion's failures, and still omits both Ikoma Hideri and the medic suspected of espionage.
@@ -43,7 +43,7 @@ She has now read the archive of a battle she has been inside, and the two do not
 
 The medic first. [[Kitsu Somalia]] came round on that field and said the person who tried to kill him was a woman whose voice he knew, because she had patched him up before. The medic in that camp was [[Akodo Kayamayako]], who rewarmed [[Ikoma Akuyaku]]'s frostbitten feet with gentle fire and dressed [[Matsu Morozane]]'s burns. And [[Kakita Kazumi]] has searched the whole archive for that medic and found nothing — no record, in any century. A person can be left out of a battle account. **Being left out of the archive entirely takes somebody doing it.**
 
-Then the pattern of what is missing. [[Ikoma Hideri]], killed before he could write. [[Kitsu Somalia]], who called the dead onto the field, absent. [[Shoshuro Amane]], present at every hinge, absent. The medic, erased. What survives is [[Akodo Toronoko]] boasting, and [[Matsu Sakura]] admitting failures that make the [[Lion Clan|Lion]] look unlucky rather than betrayed. These are not four separate accidents.
+Then the pattern of what is missing. [[Ikoma Hideri]], killed before she could write. [[Kitsu Somalia]], who called the dead onto the field, absent. [[Shoshuro Amane]], present at every hinge, absent. The medic, erased. What survives is [[Akodo Toronoko]] boasting, and [[Matsu Sakura]] admitting failures that make the [[Lion Clan|Lion]] look unlucky rather than betrayed. These are not four separate accidents.
 
 And her own ancestor kept the right books. [[Matsu Morozane]] wrote about weather and supply and how an army starves. He was there for the duels and the banner and he wrote about the carts. That reads like a man who worked out what actually beat them, which is exactly where the party is now digging.
 

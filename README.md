@@ -35,7 +35,7 @@ hand-authored files under `sources/`. No bundler; plain static HTML for GitHub P
 ## What came from where
 
 - **Setsuna's dossier** (`character/setsuna.html`) is the dossier from
-  `~/Working/dossiers/characters/doji-setsuna/dossier.html`, **prose unedited**. Only the
+  `~/Sortilege/Projects/Active/dossiers/characters/doji-setsuna/dossier.html`, **prose unedited**. Only the
   page chrome changed: title, favicon, the site nav bar and footer, the Barlow Condensed
   webfont for that nav, and the portrait `src` repointed at `../assets/setsuna.webp`.
 - **The playable sheet** (`play/setsuna.html`) is the Portents & Fortunes deployment of
@@ -148,7 +148,7 @@ Code launch config on port 8734.)
   [teaml5r/l5r5e](https://gitlab.com/teaml5r/l5r5e) Foundry system assets.
 - Maps and character art supplied by the campaign owner.
 - Session logs for this campaign live in Notion (exported under
-  `~/Working/session-history`); write-ups are transcribed into `chronicle/` by hand.
+  `~/Sortilege/Utilities/session-history`); write-ups are transcribed into `chronicle/` by hand.
 
 *Legend of the Five Rings is © Fantasy Flight Games / Edge Studio. This is a personal,
 non-commercial fan campaign archive.*
