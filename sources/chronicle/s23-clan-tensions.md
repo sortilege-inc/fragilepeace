@@ -8,7 +8,7 @@ epigraph: Setsuna read the secret treaty and heard her own yojimbo's voice in th
 
 In the shrine that is now a courtroom, [[Ide Subane]] asked [[Kitsuki Kaage]] for a recess to read the newly entered evidence, got it, and spent it going through the government documents line by line.
 
-Then [[Bayushi Monban]] produced his case: three versions of [[Ikoma Akuyaku]]'s diary, and a secret treaty between [[Shinjo Kamo]] and [[Shoshuro Amane]], carrying [[Shoshuro Amane]]'s chop and a clause transferring the diamond mines to the [[Scorpion Clan|Scorpion]].
+Then [[Bayushi Monban]] produced his case: three versions of [[Ikoma Akuyaku]]'s diary, and a secret treaty between [[Shinjo Kamo]] and [[Shosuro Amane]], carrying [[Shosuro Amane]]'s chop and a clause transferring the diamond mines to the [[Scorpion Clan|Scorpion]].
 
 [[Doji Setsuna]] read it and heard something wrong in it. The phrasing had a particular flavour — his flavour, the turn of speech a man is known for — and once she had noticed it she could not stop noticing it. A document three centuries old should not sound like the person handing it over.
 
@@ -25,7 +25,7 @@ The court rose. [[Bayushi Monban]] went to the shrine and stayed there a while.
 - Mirumoto Isshin: A Dragon bushi, brought into the castle in restraints by four Lion bushi, shouting accusations of misconduct and spitting on a menpō. Monban had him taken to quarters for proper questioning rather than dealt with in the hall. What he came to say is not yet known.
 - Kitsuki Kaage: Withheld Monban's secret treaty from evidence pending verification and sent to the Lion library for records to check it against. Tabled Setsuna's dismissal motion for the same reason — nothing rules until the evidence is authenticated. Told the room to bring substantiated claims, not accusations.
 - Ide Subane: Took a recess to read the new evidence properly, then attacked the treaty's legitimacy and the contradictions between the three diaries. She is doing the most careful work of anyone at that table.
-- Shoshuro Amane: Her chop is on the secret treaty transferring the mines to the Scorpion, alongside Shinjo Kamo's — the same Scorpion Setsuna watched refused at the parley three centuries ago.
+- Shosuro Amane: Her chop is on the secret treaty transferring the mines to the Scorpion, alongside Shinjo Kamo's — the same Scorpion Setsuna watched refused at the parley three centuries ago.
 - Shinjo Kamo: Named as the other signatory of the secret treaty.
 
 ## Setsuna

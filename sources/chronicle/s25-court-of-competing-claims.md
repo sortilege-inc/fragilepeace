@@ -12,7 +12,7 @@ He worked fast and he worked cleanly. The [[Imperial-Sealed Official Treaty]] is
 
 When the court came back, [[Kitsuki Kaage]] set the order of argument and gave it to [[Ide Subane]] first — who moved to call the librarian, to testify that [[Bayushi Monban]] had been in the library at hours nobody has business being there. [[Kitsuki Kaage]] warned her what an accusation like that against an Emerald Magistrate would need behind it.
 
-[[Shoshuro Aishi]] pressed for the signed secret treaty to be ratified anyway. [[Bayushi Monban]] put in [[Ikoma Akuyaku]]'s journals with their confessions of [[Scorpion Clan|Scorpion]] work against the [[Lion Clan|Lion]] at the [[Snow Plain]], and [[Kitsuki Kaage]] said aloud that the weight of it was starting to look like Scorpion collusion with the [[Unicorn Clan|Unicorn]].
+[[Shosuro Aishi]] pressed for the signed secret treaty to be ratified anyway. [[Bayushi Monban]] put in [[Ikoma Akuyaku]]'s journals with their confessions of [[Scorpion Clan|Scorpion]] work against the [[Lion Clan|Lion]] at the [[Snow Plain]], and [[Kitsuki Kaage]] said aloud that the weight of it was starting to look like Scorpion collusion with the [[Unicorn Clan|Unicorn]].
 
 Then [[Kakita Kazumi]] stood up and said [[Bayushi Monban]]'s evidence was forged, and invited the court to compare it against his own notes and the library journals.
 

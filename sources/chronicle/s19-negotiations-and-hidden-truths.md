@@ -76,7 +76,7 @@ Then the thing that changes the case.
 
 It cuts in a direction she did not expect. If the Scorpion bargain was to deliver the Unicorn a victory, they delivered it: without those three agents the [[Lion Clan|Lion]] would have finished the battle before the Emperor's heralds arrived, and it was the heralds who made it a Unicorn win. **The Scorpion's claim may simply be true.** She came here expecting to expose a forgery and has instead found the receipt.
 
-Which leaves the shape of the thing rather than the fact of it. Their claim is founded on treason against the clan whose archive she is standing in, committed by a man whose descendants include two of her own colleagues. [[Shoshuro Aishi]] cannot lead with that. Nor can she say it in a Lion castle whose lord has now been generous to her four times over.
+Which leaves the shape of the thing rather than the fact of it. Their claim is founded on treason against the clan whose archive she is standing in, committed by a man whose descendants include two of her own colleagues. [[Shosuro Aishi]] cannot lead with that. Nor can she say it in a Lion castle whose lord has now been generous to her four times over.
 
 The forgery is the one thing that would finish her. They can write what the record is missing because they lived it. An Emerald Magistrate who manufactures evidence in a case she is weighing is done, and so is every ruling she has made, and so is her husband's transfer.
 

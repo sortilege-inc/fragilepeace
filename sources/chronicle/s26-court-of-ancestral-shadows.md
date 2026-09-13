@@ -22,7 +22,7 @@ Then [[Kitsuko Ayoko]] was called back, shaken, and gave the session its verdict
 
 With the floor open, [[Bayushi Monban]] proposed calling the ancestors themselves. [[Doji Setsuna]] asked to be excused from the séance. [[Kitsuki Kaage]] refused her. [[Ide Subane]] warned that ghosts can be worked on like anyone else; the Scorpion agreed to it under conditions.
 
-[[Kitsu Takeko]] came forward. *I am going to do my very best to see that these ancestors attend this matter.* She performed the rite with [[Shiba Midori]] supporting her, opened the void, and two of the dead came into the room: [[Shoshuro Aishi]] and [[Ikoma Akuyaku]].
+[[Kitsu Takeko]] came forward. *I am going to do my very best to see that these ancestors attend this matter.* She performed the rite with [[Shiba Midori]] supporting her, opened the void, and two of the dead came into the room: [[Shosuro Aishi]] and [[Ikoma Akuyaku]].
 
 ## Learned
 
