@@ -48,7 +48,7 @@ At breakfast the advisor [[Kitsu Yayoi]] — an amiable man with an extremely fi
 
 [[Doji Setsuna]] placed the father rather than the son. [[Akodo Sakura]] sits fourth or fifth in the line of succession of the [[Akodo Family|Akodo]]: [[Akodo Toturi]] has no heir, his younger brother is heir presumptive, and then a short list, and [[Akodo Sakura]] is on it. The man holding her husband is close enough to the Lion Clan Championship to count.
 
-They also learned when their actual work arrives. [[Kitsuki Kaage]] is coming up the [[Drowned Merchant River]] and has been delayed by unseasonable rains; he will be here within days, bringing [[Ide Subane]] and another representative with him, and he will render the final judgement himself. What he wants from [[Doji Setsuna]] is the investigation prepared and ready to sign when he walks in.
+They also learned when their actual work arrives. [[Kitsuki Kaage]] is coming up the [[Drowned Merchant River]] and has been delayed by unseasonable rains; he will be here within days, bringing [[Ide Tsubame]] and another representative with him, and he will render the final judgement himself. What he wants from [[Doji Setsuna]] is the investigation prepared and ready to sign when he walks in.
 
 [[Doji Setsuna]] asked to be taken to the [[Kitsu Archives]] — to wherever treaties are kept — and asked for an assistant researcher to go with her. She was told the daimyō is the one who gives that permission, and that it could be raised after the meeting. So they were given the tour instead.
 

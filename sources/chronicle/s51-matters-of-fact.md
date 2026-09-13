@@ -43,7 +43,7 @@ Elsewhere in the tent, [[Shiba Midori]]'s own delegation were pleased with her a
 confident of the outcome, because her friend [[Doji Setsuna]] will rule for them. They
 said so out loud.
 
-[[Ide Subane]] gave [[Shiba Midori]] the [[Unicorn Clan|Unicorn]]'s real floor. Most of
+[[Ide Tsubame]] gave [[Shiba Midori]] the [[Unicorn Clan|Unicorn]]'s real floor. Most of
 what was read out is negotiable. Three things are not. The marriage must not complete —
 the Champion is particularly slighted at having been asked to destroy a family to make it.
 No territorial concessions, none, this time. And no indemnity for the privilege of having
@@ -201,7 +201,7 @@ Only then will she permit it.
 - Ikoma Anakazu: His marriage to Asako Ikari was agreed between two clans — the father of Akodo Arasou and Akodo Toturi, and a lord of the Phoenix — with a dowry. Only one clan appears to have commanded the divorce, no Imperial petition appears to have been made, and nobody can yet name the Phoenix lord who authorised it. On the face of it he may still be married.
 - Ikoma Ujiaki: Came to Setsuna at the tea to ask what standard of proof she required, meaning: dismiss the Unicorn's claim on our word. Took strife rather than be silenced, and withdrew angry. Objected twice to the relevance of the Phoenix question — and by the end of the day had withdrawn the objection.
 - Akodo Akihito: Confirmed the Lion position that the broken engagement justified the incursion, and was asked in the same breath what redress the Phoenix and the Unicorn are owed for a groom who was not free to be offered. Afterwards accused Midori of arranging a second humiliation for him deliberately.
-- Ide Subane: Gave Midori the Unicorn's floor. The marriage must not complete; no territorial concession this time; no indemnity for the return of their own ground; and every horse returned. Everything else is negotiable, and the status quo is acceptable.
+- Ide Tsubame: Gave Midori the Unicorn's floor. The marriage must not complete; no territorial concession this time; no indemnity for the return of their own ground; and every horse returned. Everything else is negotiable, and the status quo is acceptable.
 - Shinjo Altansarnai: Feels particularly slighted that she was asked to destroy a family in order to marry.
 - Asako Ikari: Her dowry should have gone back to her on the divorce. Nobody at the table knows whether it did.
 - The Earthen Queen (unpaged): Sovereign of the Earthen Court under the mountains, in a geode hall, made of uncut jewels. She read Monban exactly — that he is both a cause of the imbalance and its advocate — and will permit the fire spirits the cave only if he can give her a reason to shelter them and secure the fealty of their leader.

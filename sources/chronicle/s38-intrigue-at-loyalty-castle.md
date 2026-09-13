@@ -4,7 +4,7 @@ epigraph: The bag of contact poison was in the ceiling above the Crane quarters.
 
 ## Narrative
 
-!lede The tea went on with everyone smiling and nobody mentioning the night. [[Daidoji Shin]] was there, and [[Asahina Nao]], and [[Ide Subane]] with [[Utaku Sumiteru]] beside her, while [[Kaeru Ronin]] went through the guest wing room by room.
+!lede The tea went on with everyone smiling and nobody mentioning the night. [[Daidoji Shin]] was there, and [[Asahina Nao]], and [[Ide Tsubame]] with [[Utaku Sumiteru]] beside her, while [[Kaeru Ronin]] went through the guest wing room by room.
 
 [[Bayushi Monban]] and [[Kakita Kazumi]] used the gathering as cover to search the [[Crane Couple’s Guest Quarters|Crane guest rooms]]. [[Kakita Kazumi]] talked his way past the [[Kaeru Ronin]] on Emerald Magistrate authority, got inside, and found a ceiling panel out of true with a rope behind it running up into the roof space.
 
@@ -29,7 +29,7 @@ And [[Ikoma Tadayoshi]] worked the room while all this was happening, dropping i
 - Firebiter Poison: A forbidden contact poison, found in an oily black hemp bag in the roof space above the Crane quarters — and consistent with what has been afflicting Shiba Midori.
 - The breathing tubes (unpaged): Reins cut and used as breathing tubes, found under the shoreline rocks. The attackers came in through the water.
 - Ikoma Tadayoshi: Spent the gathering seeding it among the Unicorn and others that the Crane are concealing their part in this.
-- Utaku Sumiteru: A Unicorn bushi attending with Ide Subane.
+- Utaku Sumiteru: A Unicorn bushi attending with Ide Tsubame.
 - Kaeru Ronin: Searching the guest wing room by room, and yielded to Emerald Magistrate authority when Kazumi invoked it.
 
 ## Setsuna

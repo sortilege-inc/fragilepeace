@@ -4,7 +4,7 @@ epigraph: A dream led them to a jar in the ground with the unedited field record
 
 ## Narrative
 
-!lede Two deliveries opened the day. A long box came to [[Shiba Midori]] at breakfast, which she put aside to open alone. And a packet came to [[Ide Subane]] from the [[Head Librarian]] on the castle's holdings for [[Shinjo Kamo]] — letters authenticated as being in his own hand, and short of what the case needs. Then she looked again at the bottom corner and found a watermark that was not quite accidental, and behind it the suggestion of a message in ink that does not show. She said so aloud rather than keeping it, and later went to the [[Commandant of the Academy]] to have the holdings explained properly.
+!lede Two deliveries opened the day. A long box came to [[Shiba Midori]] at breakfast, which she put aside to open alone. And a packet came to [[Ide Tsubame]] from the [[Head Librarian]] on the castle's holdings for [[Shinjo Kamo]] — letters authenticated as being in his own hand, and short of what the case needs. Then she looked again at the bottom corner and found a watermark that was not quite accidental, and behind it the suggestion of a message in ink that does not show. She said so aloud rather than keeping it, and later went to the [[Commandant of the Academy]] to have the holdings explained properly.
 
 [[Bayushi Monban]] found something worse. The secret treaty he thought had been lost in the [[Akodo Libraries]] had never been entered in any previous inquiry at all. Then [[Shosuro Aishi]] caught him alone in a dim corridor with her fan up and talked to him about forgeries, and about how much better all of this would go with *coordination*, and about the ancestral specters that were shortly going to be summoned to testify.
 
@@ -27,8 +27,8 @@ In the recess, [[Doji Setsuna]] invited [[Shosuro Aishi]] to tea in a well-made 
 ## Learned
 
 - Akodo Akihito: Dreamed the location of a sealed jar and dug it up. Inside were the unedited field records of the Snow Plain, a Shosuro-sealed letter, an unsigned treaty, and a skeleton.
-- Head Librarian: Sent Ide Subane the castle's authenticated holdings in Shinjo Kamo's hand, and testified from the bench that the cache treaty carries none of the formalities that would make it evidence.
-- Ide Subane: Found a semi-deliberate watermark on a librarian's letter concealing a message in invisible ink, and disclosed it rather than keeping it. Consulted the Commandant of the Academy on the Shinjo Kamo holdings.
+- Head Librarian: Sent Ide Tsubame the castle's authenticated holdings in Shinjo Kamo's hand, and testified from the bench that the cache treaty carries none of the formalities that would make it evidence.
+- Ide Tsubame: Found a semi-deliberate watermark on a librarian's letter concealing a message in invisible ink, and disclosed it rather than keeping it. Consulted the Commandant of the Academy on the Shinjo Kamo holdings.
 - Shosuro Aishi: Cornered Monban in a dim corridor to talk about forgeries and "better coordination", and about the coming summoning of ancestral specters. Later took tea with Setsuna and staked her honour on a pact of non-interference.
 - Shosuro Family: The cache treaty awards the diamond mines to the Shosuro rather than to the Bayushi — and it is unsigned.
 - Hida Kasudo: Arrived from the Crab with his brothers Hida Nozomu and Hida Kenji, armoured and armed, to wait on Lady Kitsu.

@@ -6,13 +6,13 @@ epigraph: Setsuna read the secret treaty and heard her own yojimbo's voice in th
 
 !lede Four [[Lion Clan|Lion]] bushi dragged [[Mirumoto Isshin]] into the castle in restraints. He was shouting misconduct the whole way, and he spat on a menpō, and [[Bayushi Monban]] met him with the flat authority of an Emerald Magistrate and had him taken to his quarters to be questioned properly rather than handled in a corridor. Whatever the [[Dragon Clan|Dragon]] came to say, it arrived tied up.
 
-In the shrine that is now a courtroom, [[Ide Subane]] asked [[Kitsuki Kaage]] for a recess to read the newly entered evidence, got it, and spent it going through the government documents line by line.
+In the shrine that is now a courtroom, [[Ide Tsubame]] asked [[Kitsuki Kaage]] for a recess to read the newly entered evidence, got it, and spent it going through the government documents line by line.
 
 Then [[Bayushi Monban]] produced his case: three versions of [[Ikoma Akuyaku]]'s diary, and a secret treaty between [[Shinjo Kamo]] and [[Shosuro Amane]], carrying [[Shosuro Amane]]'s chop and a clause transferring the diamond mines to the [[Scorpion Clan|Scorpion]].
 
 [[Doji Setsuna]] read it and heard something wrong in it. The phrasing had a particular flavour — his flavour, the turn of speech a man is known for — and once she had noticed it she could not stop noticing it. A document three centuries old should not sound like the person handing it over.
 
-[[Ide Subane]] went straight at it: the treaty's legitimacy, and the inconsistencies running between the three diaries. [[Kitsuki Kaage]] called the room to order and told all of them to bring substantiated claims instead of accusations. Then he ruled: the treaty is withheld from evidence pending verification, and he sent an assistant to the Lion library for the records that would verify it.
+[[Ide Tsubame]] went straight at it: the treaty's legitimacy, and the inconsistencies running between the three diaries. [[Kitsuki Kaage]] called the room to order and told all of them to bring substantiated claims instead of accusations. Then he ruled: the treaty is withheld from evidence pending verification, and he sent an assistant to the Lion library for the records that would verify it.
 
 [[Shiba Midori]] said nothing at all. She had decided to speak in the morning, when the room was cooler.
 
@@ -24,13 +24,13 @@ The court rose. [[Bayushi Monban]] went to the shrine and stayed there a while.
 
 - Mirumoto Isshin: A Dragon bushi, brought into the castle in restraints by four Lion bushi, shouting accusations of misconduct and spitting on a menpō. Monban had him taken to quarters for proper questioning rather than dealt with in the hall. What he came to say is not yet known.
 - Kitsuki Kaage: Withheld Monban's secret treaty from evidence pending verification and sent to the Lion library for records to check it against. Tabled Setsuna's dismissal motion for the same reason — nothing rules until the evidence is authenticated. Told the room to bring substantiated claims, not accusations.
-- Ide Subane: Took a recess to read the new evidence properly, then attacked the treaty's legitimacy and the contradictions between the three diaries. She is doing the most careful work of anyone at that table.
+- Ide Tsubame: Took a recess to read the new evidence properly, then attacked the treaty's legitimacy and the contradictions between the three diaries. She is doing the most careful work of anyone at that table.
 - Shosuro Amane: Her chop is on the secret treaty transferring the mines to the Scorpion, alongside Shinjo Kamo's — the same Scorpion Setsuna watched refused at the parley three centuries ago.
 - Shinjo Kamo: Named as the other signatory of the secret treaty.
 
 ## Setsuna
 
-**She recognised the hand.** The secret treaty transferring the mines reads like [[Bayushi Monban]] talks. She noticed the phrasing herself, unprompted, and noticing it was not clever — it was available to anyone in the room. [[Ide Subane]] went for the treaty within minutes. [[Kitsuki Kaage]] withheld it and sent for the Lion library's records to check it against. When those records come back, the comparison will be made by a Kitsuki against a chop he can hold in his hand.
+**She recognised the hand.** The secret treaty transferring the mines reads like [[Bayushi Monban]] talks. She noticed the phrasing herself, unprompted, and noticing it was not clever — it was available to anyone in the room. [[Ide Tsubame]] went for the treaty within minutes. [[Kitsuki Kaage]] withheld it and sent for the Lion library's records to check it against. When those records come back, the comparison will be made by a Kitsuki against a chop he can hold in his hand.
 
 This is the forgery from [[Soshi Yamako]], laundered through her own yojimbo, produced in open court under an Emerald Magistrate's authority. There is no version of the coming week in which it survives.
 
