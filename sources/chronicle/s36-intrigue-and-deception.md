@@ -1,5 +1,5 @@
 session: 36
-epigraph: He undressed for the bath and there was a warm golden chain around his neck that had not been there the day before. He does not remember taking it. He does not want it off.
+epigraph: A shuriken pinned to the wall of the Imperial Envoy's room, holding a scrap of paper. Two characters, crudely scrawled in dark blue ink. "Turn back." Nothing else.
 ---
 
 ## Narrative
@@ -16,7 +16,7 @@ While he was out, [[Kakita Kazumi]] went over the roof into [[Shiba Midori]]'s q
 
 [[Shiba Midori]] was at the daimyō's table with her breakfast bowl. [[Doji Setsuna]] was in the worst night of her life — exhaustion on top of the medicine on top of everything else — past vomiting into dry heaving, convulsing, her attendants rotating buckets — and through the delirium she caught the scream as a separate thing from her own noise: a young woman's voice, and terror. The medicine had not reduced the damage by much.
 
-[[Kakita Kazumi]] was on the roof and closest. He looked through the window rather than dropping in, because coming through a window would have finished the girl off, and went round through the building to knock on the door like a person. [[Miya Misato]] was crouched in the corner of her own room clutching herself. [[Miya Misato]]'s room had been searched exhaustively and left in complete disarray. She pointed, terrified, at the wall — where a throwing star pinned a scrap of paper, two characters crudely scrawled in dark blue ink. *Turn back.* And a name: [[Aoi]].
+[[Kakita Kazumi]] was on the roof and closest. He looked through the window rather than dropping in, because coming through a window would have finished the girl off, and went round through the building to knock on the door like a person. [[Miya Misato]] was crouched in the corner of her own room clutching herself. [[Miya Misato]]'s room had been searched exhaustively and left in complete disarray. She pointed, terrified, at the wall — where a throwing star pinned a scrap of paper, two characters crudely scrawled in dark blue ink. *Turn back.* Two characters, and no more than that — nobody signed it.
 
 She threw herself at him. *Someone was here. They could have killed me, and they did not. Why did they not kill me?*
 
@@ -64,7 +64,7 @@ She will need a clean vessel and will have to start again.
 
 ## Learned
 
-- Aoi: The name on the note under the shuriken, over the words "Turn back," written in dark blue ink — the same colour as the cloth left in Setsuna's rafters. Whoever they are, they chose to be named.
+- The note under the shuriken (unpaged): Two characters, crudely scrawled in dark blue ink — the same colour as the cloth left in Setsuna's rafters. They read "Turn back." There is no signature; the record carried one for a while and the recording does not support it.
 - Miya Misato: Her room was searched exhaustively and fast, in the dark, by people who had all the time they needed to kill her and did not. They were after one specific thing and did not find it: the message under the Imperial Seal, which she carries on her person and which she indicated in front of a room full of people when asked. The window she had latched against the chill was standing open.
 - Scorpion Cousin: An informant, not a killer, and said so twice before offering to do it anyway. Knows the apothecaries on this side of the water. Took payment in future favours and named the shape of them — a target the family wants removed, and the assumption that a man who buys poison will use it again. His advice, unasked: the family will use its own until they are useless, and he should get out.
 - The Box: Kazumi stole it off Midori and found it empty, and was certain. It was empty because Bayushi Monban had already emptied it. The seals on all three boxes in his quarters were deliberately scratched off, the magical locks broken, and the warnings defaced.
@@ -84,7 +84,7 @@ Everything he did between the geisha house and the bath was done by a man wearin
 
 **The target of the theft was never her, and never the envoy's life.** [[Miya Misato]] was left alive by people who had hours in her room. They wanted the writ, or more likely a clean impression of the [[Imperial Seal]] to make a better one — and [[Kakita Kazumi]] said that out loud, in a room with the governor, the household and a sobbing sixteen-year-old in it, and then watched her pat the front of her kimono to show where she keeps it. Three Emerald Magistrates were standing there and not one of them stopped her. If anybody in that room was working for the other side, the second attempt will not need to search.
 
-*Turn back. [[Aoi]].* Nobody signs a threat to an Imperial envoy. That is a warning-off, written by somebody who would rather this did not become a killing, in the same dark blue ink as the cloth that was left hanging in **her own** rafters. She should stop treating those two rooms as one event. One intruder wanted a document. The other stood over a woman who was convulsing and took nothing at all.
+*Turn back.* Two characters, unsigned, in the same dark blue ink as the cloth left hanging in **her own** rafters. Nobody threatens an Imperial envoy and then leaves; this is a warning-off, written by somebody who would rather this did not become a killing, and who took care to leave nothing in it but the instruction. She should stop treating those two rooms as one event. One intruder wanted a document. The other stood over a woman who was convulsing and took nothing at all.
 
 And [[Shiba Midori]] did not recognise the cloth. Not from the road in session six, not from anywhere. It is not a clan colour, it is shinobi work, cut to be invisible against a shadow — which means the party has no prior sighting to match it to, and the comfort of a familiar enemy is not available.
 

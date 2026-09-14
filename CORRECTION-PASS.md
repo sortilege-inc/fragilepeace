@@ -2792,6 +2792,95 @@ Flagged rather than corrected — nothing is wrong, these simply never come back
   the border** (s37) are never followed up under those descriptions, though s38's
   search of the Crane quarters is plainly the next step on the same trail.
 
+## Chasing the two dangling threads
+
+Both chased against **all 73 recordings**, extracted to plain text and searched
+together, rather than against the corpus. One is a fabrication; the other is
+genuinely unresolved.
+
+### Aoi did not sign anything, and is not that Aoi
+
+The old s36 record: a shuriken pinning a note reading *"Turn back. Aoi."*, and a
+Setsuna paragraph built on it — *"nobody signs a threat to an Imperial envoy…
+whoever Aoi is, they chose to be identifiable."*
+
+What the 2026-01-12 recording actually has, as the guards bring the paper back:
+
+> *"On which is crudely scrawled. **Two characters in blue ink. Turn back.**"*
+
+and then, as a separate hesitant aside: *"Um, Joy."*
+
+The Archivist turned that aside into a signature, and then — because an `Aoi`
+already existed in its NPC files — **wikilinked it to her**: one of the three
+Kitsu of a vassal family keeping the [[Border Waystation]] in s5, who admires
+fashion and wishes she had half of Setsuna's wardrobe. The two were merged onto
+one page, so the record had a waystation hostess signing a warning to an Imperial
+envoy thirty-one sessions later.
+
+**"Aoi" appears in exactly one of the 73 recordings, and it is the s5
+waystation scene.** Nothing after s36 names her. And a note the GM describes as
+*two characters* does not also carry a name.
+
+The signature is removed. The note is two characters, unsigned, in the same dark
+blue ink as the cloth in Setsuna's rafters — which is a better fact than the
+invented one, because an unsigned warning-off from someone who could have killed
+the envoy and did not is the more interesting object.
+
+### The second bound spirit is a real loose end
+
+The s32 fire spirits said a larger one was in the room when the little one went
+out, and is still bound. Searched every recording from 2025-12-15 to 2026-09-07
+for it — *bigger/larger/second/other spirit, still bound, theatre, arson,
+meishōdō, talisman*. The only later hits are the Burnt Theater scene in s35
+(already recorded) and an unrelated fire-spirit negotiation in the 2026-07-20
+session.
+
+**Nothing in any recording resolves it.** It is not a gap in the pass; it is a
+thread the table has not returned to. Left standing, and now standing on
+evidence rather than on my not having looked.
+
+### The fix this exposed: struck identifications were not struck from the cast
+
+A session's cast is read off the **export's** recap/moments/timeline, so removing
+a fabricated identification from the prose never removed the person from the
+session. Every fabrication the pass struck left the same residue — the page went
+on listing a session its subject was never in:
+
+| Page | Still listed | Removed from the prose at |
+|---|---|---|
+| Matsu Koda | Session 27 | s27 — nowhere in the recording, and Kazumi is not in the session |
+| Isawa Kaede | Session 28 | s28 — the recording has an unnamed male Isawa |
+| Aoi | Session 36 | s36 — see above |
+
+Fixed generally, not case by case: `archivist.MISREAD_APPEARANCES` maps a session
+number to the pages the export puts in it that the recording does not support,
+and `Ledger.appearances()` drops them. Each entry carries its ruling. All three
+pages are now clear of the session they were never in.
+
+### A defect of my own, shipped and now fixed
+
+Moving the accept table out of `factguard.py` on 2026-09-14 left a **residual
+`ACCEPT = {…}` literal 756 lines long below the new loader**, which silently
+overwrote it. So `factguard` went on reading the old Python literal while
+`acceptcheck` read the JSON, and the two drifted apart for three commits —
+including the commit that retired the 14 dead reasons, which therefore **had no
+effect on the gate at all** when I reported it done. The splice that extracted
+the table had searched for the first column-0 `}`, which closed `ACCEPT_ALL`, not
+`ACCEPT`.
+
+Removed the literal; `factguard` now reads the JSON, and the 14 retirements and
+the two new Aoi reasons are all genuinely in force. Gates re-run and pass with
+the loader actually in effect.
+
+`acceptcheck` now **cross-checks that factguard's loaded table is the same table
+as the file**, and fails if they differ. Regression-tested by injecting a drift:
+the check exits 1 and names the divergent files.
+
+**Method note.** "The gate passes" is not the same as "the gate is reading what I
+changed." When a config moves, prove the consumer picked it up before reporting
+the move done — this is the same failure as reporting `build_site` OK at s30
+without checking the exit code, one level further in.
+
 ## Open questions — revisit after the pass
 
 - **Export session dates run a day late.** For 29 of the 35 export-era sessions
