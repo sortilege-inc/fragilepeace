@@ -2986,11 +2986,9 @@ while checking pages I suspected of being artefacts:
   resolves.
 
 **One page whose framing is wrong but whose subject is real.** `First Enemy
-Blood` is filed as *"a faction within Rokugan, represented by Bayushi Monban."*
-The phrase is his, and attested — *"he is our brother and first enemy blood"* —
-but it is a form of words about kinship and the first enemy, not an organisation
-with a membership. Left alone: correcting an export page's category is a
-different job from correcting the chronicle, and nothing links to it as a faction.
+Blood` was filed as *"a faction within Rokugan, represented by Bayushi Monban."*
+Taken up separately below, on the owner's note that the phrase is Monban's and
+that what it refers to is not yet settled.
 
 ### Method note
 
@@ -2998,6 +2996,65 @@ Three of the five "not found" results were my search being wrong, and I nearly
 reported them as fabrications. A negative result from a matcher is a claim about
 the matcher until it has been tested the other way. Check the tool before
 indicting the data.
+
+## "First enemy blood" — the evidence, and a question left open
+
+Owner's note, 2026-09-14: the phrase is one Monban uses and **what it refers to is
+not yet settled**. So this gathers what the recordings show and stops there.
+Nothing in the chronicle should harden past it.
+
+**22 occurrences across 14 of the 73 recordings**, and they are two different
+things.
+
+### "The first enemy" — settled, and already right in the corpus
+
+A plain noun phrase for the power beyond the Wall, used by several speakers, not
+only Monban:
+
+- *"These aren't the enemy. The first enemy is the enemy. My skills are a
+  mahō-tsukai killer."* (2025-04-21)
+- *"They're literally fighting the first enemy. They need our help."* — of the
+  Wall (2025-11-10)
+- *"the Sword of Hiruma has been stolen by servants of the first enemy"*
+  (2025-11-10), which s27 already records
+- *"raised activity in Shimanen Forest of first enemy minions of **the Foolish
+  One**"* (2025-11-10)
+
+### "First enemy blood" — a form of address, never a body of people
+
+Every use attaches it to a **relationship word**, and nobody but Monban says it:
+
+| Recording | Said of | Form |
+|---|---|---|
+| 2025-04-28 | Akodo Akihito | *"he is our brother and first enemy blood"* |
+| 2025-09-01 ×2 | Akodo Akihito | *"My brother in First Enemy Blood"* |
+| 2025-10-06 | Akodo Akihito | *"a letter to my brother in First Enemy Blood"* |
+| 2026-05-18 | the party | *"family, and first enemy blood hug"* |
+| 2026-07-13 | Shiba Midori | *"my big sister and first enemy blood"* |
+| 2026-07-20 | Shiba Midori | *"My big sister in first enemy blood"* |
+| 2026-08-24 | Akodo Akihito | *"[brother] in first enemy blood"* |
+| 2026-09-07 | a Crab, shown the demon wound | *"We are family, you and I. Family and first enemy blood."* |
+
+**The nearest thing to an explanation** is 2026-08-24, where he puts it as a
+question first: *"We have shared battle with the first enemy, have we not? Just
+like your cousin. My brother in first enemy blood."*
+
+The chronicle already reads that as kinship claimed through having stood against
+the Shadowlands together — s54 says so outright, of the Lion niece who is no
+relation to him by blood and calls him uncle anyway. That reading fits all eight
+uses. **It is still a reading, not a ruling**, and it does not say whether the
+phrase names an oath, an order, something Kuni, or simply a way of speaking.
+
+### The export page was not about the phrase at all
+
+`Factions/First Enemy Blood.md` is a summary of the s24 arbitration — diamond
+mines, the Castle of the Swift Sword, forgery, the letter condemning the *"least
+of the Bayushi"* — filed under a phrase that appears nowhere in any of it, and it
+**repeats the invented mines claim the pass struck at s12**. A confabulated page
+wearing a real phrase as a title.
+
+Superseded. The local replacement is filed as **lore, not faction**, lists the
+usage above, and says in terms that the referent is held open on the owner's call.
 
 ## Open questions — revisit after the pass
 
