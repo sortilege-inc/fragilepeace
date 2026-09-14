@@ -1,0 +1,824 @@
+{
+  "_comment": "factguard's accept table. Every entry is a token a rewrite deliberately dropped, with the reason it was allowed to go. Lives in the SITE REPO so the reasons have git history, on the same side of the line as sources/ for the same argument the site.config.json _repo_inputs note makes about the chronicle. Loaded by fragile-peace-support/scripts/factguard.py; checked for duplicate keys by scripts/acceptcheck.py.",
+  "all": {
+    "archivist": "2026-08-13: every sources/entities page ended with some form of 'Not in the Archivist export.' — the site announcing its own machinery inside gazetteer prose, 36 times over. The provenance is real and worth keeping, so it moved out of the entries and into one meta line the builder renders for any page flagged Page.local. No information lost; one voice violation removed.",
+    "daimyo shoshuro": "owner's spelling ruling 2026-09-13: Shoshuro -> Shosuro, swept across the sources. CORRECTIONS already rendered it this way; the files now match.",
+    "ide subane": "2026-09-13 spelling fix: Ide Subane -> Ide Tsubame. The transcriptions say Tsubame 8 times out of 8, including from the player who voices her; Subane is the export's dropped consonant, as 'Okoto' is for 'Akodo'.",
+    "katsuki yui": "owner's merge 2026-09-13: Kitsu Yui -> Kitsu Yue. CORRECTIONS already rendered it this way; the sources are catching up as the pass reaches each file.",
+    "kitsu yui": "owner's merge 2026-09-13: Kitsu Yui -> Kitsu Yue. CORRECTIONS already rendered it this way; the sources are catching up as the pass reaches each file.",
+    "kitsuko": "2026-09-13 spelling fix: Kitsuko Ayoko -> Kitsu Ayoko. The transcriptions say Kitsu Ayoko 27 times across 11 recordings against a single 'Kitsuko' (2025-04-28). Kitsu is a real Lion family and the canonical ancestor-speaking bloodline, which is exactly her role; Kitsuko is not a family at all. Shosuro Aishi says so on the 2025-10-06 recording -- 'that is only the provenance of the Kitsu' -- and the Castle of the Swift Sword is the Kitsu seat.",
+    "kitsuko ayoko": "2026-09-13 spelling fix: Kitsuko Ayoko -> Kitsu Ayoko. The transcriptions say Kitsu Ayoko 27 times across 11 recordings against a single 'Kitsuko' (2025-04-28). Kitsu is a real Lion family and the canonical ancestor-speaking bloodline, which is exactly her role; Kitsuko is not a family at all. Shosuro Aishi says so on the 2025-10-06 recording -- 'that is only the provenance of the Kitsu' -- and the Castle of the Swift Sword is the Kitsu seat.",
+    "shoshuro": "owner's spelling ruling 2026-09-13: Shoshuro -> Shosuro, swept across the sources. CORRECTIONS already rendered it this way; the files now match.",
+    "shoshuro aishi": "owner's spelling ruling 2026-09-13: Shoshuro -> Shosuro, swept across the sources. CORRECTIONS already rendered it this way; the files now match.",
+    "shoshuro amane": "owner's spelling ruling 2026-09-13: Shoshuro -> Shosuro, swept across the sources. CORRECTIONS already rendered it this way; the files now match.",
+    "shoshuro s": "owner's spelling ruling 2026-09-13: Shoshuro -> Shosuro, swept across the sources. CORRECTIONS already rendered it this way; the files now match.",
+    "subane": "2026-09-13 spelling fix: Ide Subane -> Ide Tsubame. The transcriptions say Tsubame 8 times out of 8, including from the player who voices her; Subane is the export's dropped consonant, as 'Okoto' is for 'Akodo'.",
+    "yui": "owner's merge 2026-09-13: Kitsu Yui -> Kitsu Yue. CORRECTIONS already rendered it this way; the sources are catching up as the pass reaches each file.",
+    "yui s": "owner's merge 2026-09-13: Kitsu Yui -> Kitsu Yue. CORRECTIONS already rendered it this way; the sources are catching up as the pass reaches each file."
+  },
+  "per_file": {
+    "s02-loyalty-castle.md": [
+      [
+        "assume",
+        "opened 'Assume from here that she is not on any list…'"
+      ],
+      [
+        "sceptics",
+        "'Sceptics call it a peasant story' — the table said 'some people scoff at it as a peasant legend', which is a weaker claim than a named faction of sceptics. Now 'Some call it a peasant legend.'"
+      ],
+      [
+        "useful",
+        "'Useful, and so far willing' — an Archivist-era judgement of Akodo Masami that the recording does not support. What he actually did is now itemised instead."
+      ]
+    ],
+    "s06-ambush-on-the-road.md": [
+      [
+        "bandits",
+        "the old epigraph ended 'That is not banditry. Bandits do not sort their prisoners by rank.' They did not sort by rank — the GM is explicit that they released both women on finding the wrong sex, having grabbed riders blind in the smoke. The claim the word was carrying is false, so the epigraph it lived in is gone."
+      ]
+    ],
+    "s08-whispers-of-the-ancestors.md": [
+      [
+        "note",
+        "opened 'Note the technique.'"
+      ],
+      [
+        "whether",
+        "opened 'Whether it also told Kitsu Takeko where the pressure goes is a question worth holding.'"
+      ]
+    ],
+    "s09-emerald-diplomacy.md": [],
+    "s10-clash-of-lion-and-unicorn.md": [
+      [
+        "twice",
+        "'refused delay twice'. She did not refuse it twice. She put the question to the room — what do we gain by not giving battle today — and nobody could answer it concretely. The record now says what actually happened."
+      ]
+    ],
+    "s13-winters-wrath.md": [
+      [
+        "hold",
+        "opened 'Hold that against Shoshuro Amane at the parley.'"
+      ],
+      [
+        "shoshuro aishi",
+        "closed the Setsuna section: the Scorpion's claim 'is that they already knew, and were already using it… which is why Shoshuro Aishi will never put it that way'. Aishi is a present-day advocate who was not at the Snow Plain, and the argument put to him rested on the s12 mines claim that the recordings do not support. Shoshuro Amane, who WAS there, is still named."
+      ],
+      [
+        "aishi",
+        "same sentence."
+      ],
+      [
+        "rewarmed",
+        "'Akodo Kayamayako: Rewarmed a frostbitten foot with gentle fire, carefully controlled.' She did not — she is not a shugenja and says so on the recording. She called for one, warning that the full power of a fire kami would cost him the foot; Kitsu Somalia called the fire and held Extinguish over it. Both halves are now in the narrative and in both bullets."
+      ],
+      [
+        "clan",
+        "the pre-pass file wrote '[[Lion Clan]]' and '[[Unicorn Clan]]' bare, so the word 'Clan' rendered five times in prose. This pass pipes them to '[[Lion Clan|Lion]]' as the rest of the corrected sessions do. Every link is still here — the links channel reports no loss."
+      ]
+    ],
+    "s19-negotiations-and-hidden-truths.md": [
+      [
+        "watch",
+        "opened 'Watch for them trying to hold the offer without paying for it.'"
+      ],
+      [
+        "akodo atsushi",
+        "the hostile exchange over the journals was not with Akodo Atsushi. The recording never names the man — he is the War College QUARTERMASTER, a bushi who pulls the rosters, answers Monban's questions about how a journal enters a library, shuts down the suggestion that one could be altered, and leaves saying 'I have a class to instruct'. Atsushi is a different Lion, whose export entry describes a tea house with Kitsu Takeko and a deployment after the attack on the magistrates. The scene is all here; the wrong name is not."
+      ],
+      [
+        "atsushi",
+        "same misattribution."
+      ],
+      [
+        "turned",
+        "'Turned hostile the moment a cover-up was suggested' — the quartermaster's bullet is gone with his wrong name, and what he actually said is quoted in the narrative twice."
+      ],
+      [
+        "diary don ever heard keeping scorpion think",
+        "*I don't think I've ever heard of a Scorpion keeping a diary* is given in the record as the instructor refusing the question. On the recording it is BAYUSHI MONBAN's own aside to the table while he frames it — 'Scorpion wouldn't do it, you'd have to admit to the dirty deeds you do'. The quartermaster's real answers are now quoted in his place, and they are better: 'I could not imagine such a thing, because it would not be done', and 'No samurai worth their salt ever suggests something so dishonourable as… falsifying the sacred last will and testament of another samurai.'"
+      ],
+      [
+        "i ve",
+        "the contraction inside that removed line."
+      ],
+      [
+        "okoto sakuon",
+        "renamed. There is no Okoto family — it is the transcription's rendering of Akodo, and Kitsu Takeko says 'my cousin, Akodo Sakuon' on this recording. See archivist.CORRECTIONS."
+      ],
+      [
+        "okoto",
+        "same rename."
+      ],
+      [
+        "commands",
+        "'Commands at the front, and holds Shinjo Harunobu' — his bullet now opens with what the recording adds, that he is Akodo Akihito's father and one of Akodo Toturi's principal generals, and still says he holds Harunobu."
+      ],
+      [
+        "house",
+        "'[[Ikoma Hall of Scribes|Ikoma House of Scribes]]' — the page is the Hall of Scribes and every other corrected session calls it that; the alias was the odd one out."
+      ],
+      [
+        "three",
+        "'they arrived at three' became 'Three agents, then.' — a capitalised sentence opener the shared vocabulary discounts. The count, and all three of them, are still there."
+      ],
+      [
+        "unicorn aligned",
+        "'a known Unicorn-aligned agent' became 'The one the Lion knew about, working with the Unicorn' — which is how the recording puts it."
+      ],
+      [
+        "clan",
+        "'[[Lion Clan]]' bare became '[[Lion Clan|Lion]]'. The links channel reports no loss."
+      ],
+      [
+        "clan s",
+        "same piping."
+      ]
+    ],
+    "s25-court-of-competing-claims.md": [
+      [
+        "read",
+        "opened 'Read it either way and it is worth knowing which'"
+      ],
+      [
+        "testimonial",
+        "the old close, 'Testimonial evidence next session'. The recording has Kaage say 'we are going to move into the testamentary side of the argument', so the record now uses his word."
+      ],
+      [
+        "imperial holding",
+        "tokeniser artefact -- 'Imperial holding' is present verbatim in Kazumi's motion, but the name channel fingerprints the pair only when both words are capitalised, and 'holding' is not."
+      ]
+    ],
+    "s43-the-midnight-treaty.md": [
+      [
+        "deploy",
+        "opened 'Deploy it last, when it will land, not first.'"
+      ]
+    ],
+    "s48-the-stone-in-the-shoe.md": [
+      [
+        "ask",
+        "opened 'Ask before the delegations sit down, not after.'"
+      ]
+    ],
+    "s37-investigation-amidst-fog.md": [
+      [
+        "miya s niece",
+        "the export filed the governor's niece as her own NPC as well as under her name, and the old record carried the duplicate as a Learned bullet. She is MIYA MISATO: the recording has Tetsuya calling her 'my niece' and the party using both forms in one breath. archivist.ALIASES now points the relationship at the name and the extra export page is superseded."
+      ],
+      [
+        "miya s",
+        "the same duplicate."
+      ],
+      [
+        "niece",
+        "the same duplicate. She is still described as his niece throughout; what is gone is the second entity."
+      ],
+      [
+        "calling",
+        "'Calling it a courtesy rather than a formal inquiry' -- the point survives, in the governor's own words: he says he will lodge a formal request if he has to, and Setsuna answers that this has not been elevated to an official inquiry."
+      ],
+      [
+        "third",
+        "'the third time this campaign a group in the dark has checked a face and let the wrong person go'. One of the three was the session-6 road ambush, and the s36 correction established that the connection to those men was invented. Two attested instances remain and the record now says two."
+      ]
+    ],
+    "s36-intrigue-and-deception.md": [
+      [
+        "asako taishi",
+        "the old Setsuna section claimed the dark blue cloth was what the session-6 ambushers wore -- the ones who let two Emerald Magistrates go and took Asako Taishi. The recording rules it out: Midori asks whether she has seen the colour recently or on any samurai of her acquaintance and the GM answers no, and says it does not look like it belongs to any samurai's clothing at all. It is shinobi cloth, cut to vanish against a shadow. The connection was invented."
+      ],
+      [
+        "asako",
+        "the same invented connection."
+      ],
+      [
+        "taishi",
+        "the same invented connection."
+      ]
+    ],
+    "s34-confrontation-with-the-efreet.md": [
+      [
+        "daimyo shosuro",
+        "a title used as a name. Monban's lord is SHOSURO HAMETSU, named since s09 -- the recording says 'my lord's daimyo, Shosuro' and then 'Hametsu, you owe me one'. archivist.ALIASES already pointed the wikilink at the right page, so nothing was duplicated; the record simply headed his s34 bullet with a title, so no reader could connect him to s09 and s47."
+      ],
+      [
+        "daimyo",
+        "the same phantom, and its Learned bullet, which said only that he issued the edict. The record now has where the order actually came from: Setsuna's own lord asked for a bodyguard, the favour was traded round a table, and Hametsu took the job as a way of punishing a servant who annoys him."
+      ],
+      [
+        "shosuro s",
+        "the possessive of the same phantom."
+      ],
+      [
+        "issued",
+        "'Issued the edict binding Monban to Setsuna's protection' -- the bullet that carried the phantom. The order is now described on Hametsu's own bullet, with its provenance."
+      ]
+    ],
+    "s33-spirits-binding.md": [
+      [
+        "tonbo higuchi",
+        "the possessed author is SHINJO Higuchi. The 2025-12-22 recording names her Shinjo Higuchi and nothing else, and the s32 recording already had Tonbo Kuma give that name for the person researching spirits. Tonbo Higuchi is a different man -- Kuma's go opponent in s32 -- and the old s33 record merged the two. The name survives in the Setsuna section, which explains the correction."
+      ],
+      [
+        "provided",
+        "'Provided the replacement vessel' in Asahina Nao's bullet. She still brings the vessel; the bullet now also carries what the recording has her doing with it and what she argued for."
+      ],
+      [
+        "three",
+        "'calling this trade blasphemy for three sessions on principle' -- an editorial tally, not a fact from any recording, and the recording shows Midori arguing the opposite way round from what that sentence set up."
+      ]
+    ],
+    "s32-spirits-and-shadows.md": [
+      [
+        "the burned theatre",
+        "the Learned bullet is now marked '(unpaged)'. build_site requires every Learned name to resolve to an entity page, and the theatre is described but never named in the record. The bullet text is unchanged."
+      ],
+      [
+        "kaeru haia",
+        "merged into Kaeru Haya on the owner's call; her s32 bullet is now the second half of Haya's."
+      ],
+      [
+        "haia",
+        "same merge."
+      ],
+      [
+        "mantis captain",
+        "the old record referred to him as the Mantis Captain. He has been named since s31 -- Captain Kubota -- and the record now uses the name."
+      ],
+      [
+        "captain s",
+        "the same reference's possessive."
+      ],
+      [
+        "rested",
+        "'Rested, they crossed to the Dragonfly shrines' -- the recording places the crossing on the late afternoon of their second day, after an afternoon's sleep, a self-healed rib and a shopping errand, and the record now says so."
+      ],
+      [
+        "ronin s",
+        "'the Kaeru Ronin's competence is on the page' in the old account of the report. The record now sets out what Setsuna actually spent her effort on -- two thirds of it on the Kaeru, including a recommendation that they be considered for inclusion as a clan."
+      ],
+      [
+        "writing",
+        "'written so that...' in the same sentence, replaced by the contents of both documents -- hers and the separate, harsher letter Monban sent under his own name."
+      ]
+    ],
+    "s31-docks-of-deception.md": [
+      [
+        "kaeru haia",
+        "the old s31 used Kaeru Haya in the narrative and Kaeru Haia once in its own Setsuna section. Per the owner's 2026-08-13 merge they are one woman, on HAYA, and the record is now consistent."
+      ],
+      [
+        "haia s",
+        "the same sentence's possessive."
+      ],
+      [
+        "captain kubota unpaged",
+        "he is no longer marked unpaged -- the bullet resolves, and the 2025-12-08 recording gives him far more than a ship: a Fleet Admiral and a daimyo's equivalent, of standing enough to have had the Emperor's ear."
+      ],
+      [
+        "reliable",
+        "'Reliable, and now owed something' in the old Kaeru Haya bullet. Replaced by what she actually did -- gave up a weeks-old stakeout the moment she heard a magistrate was missing, and turned her whole watch out to search."
+      ],
+      [
+        "stabilised",
+        "'Stabilised' in the old account of Setsuna's examination. On the recording her medicine check gets zero successes and it is Midori who treats herself; the record now says so."
+      ]
+    ],
+    "s30-dusk-of-the-smugglers.md": [
+      [
+        "kaeru haia",
+        "the owner's 2026-08-13 merge: Kaeru Haia and Kaeru Haya are one woman, merged onto HAYA. The old s30 record still used Haia; the rewrite uses Haya, which is also what she calls herself on the 2025-12-01 recording when she finally introduces herself."
+      ],
+      [
+        "haia",
+        "same merge."
+      ],
+      [
+        "the ronin at the docks unpaged",
+        "the old bullet for an unnamed ronin. He has a name on the recording -- Kaeru Naito -- given when another ronin tells him off for leaving his post, and he now has his own bullet under it."
+      ],
+      [
+        "confronted",
+        "'Confronted Monban directly over drawing steel on her men' in the old Kaeru Haya bullet. Superseded by the finding that actually matters -- she jailed half the Mantis crew on purpose to strand the ship, which is why people are now being taken off the docks."
+      ],
+      [
+        "owns",
+        "'Owns the Mantis ship that has been sitting in the harbour' in the old Yoritomo Kuroba bullet. He captains it on the recording; ownership is not stated, and Monban's reaction to the name is the part worth recording."
+      ],
+      [
+        "reports",
+        "'Reports a Mantis ship lingering... opium... and sailors going missing' -- the same three facts, now attributed to her in the causal order the recording gives them rather than as a list."
+      ]
+    ],
+    "s29-curios-and-hidden-threats.md": [
+      [
+        "hanano",
+        "the old record ran the pen name together as 'Hanano Ame' in the epigraph and the Setsuna section. The corpus form is 'Hana no Ame' (five files), which is what the record now uses throughout; the name itself is unchanged."
+      ],
+      [
+        "ame hanano",
+        "the same two italic runs, refingerprinted after the spelling was normalised."
+      ],
+      [
+        "flirts",
+        "'Flirts, and travels with a bodyguard who apologises for him' in the old Daidoji Shin bullet. He still does both; the bullet now names the bodyguard (Mori Kasami) and records what he actually is -- one of Daidoji Uji's more disposable agents, posted out here for being obnoxious."
+      ],
+      [
+        "sells",
+        "'Sells gaijin and Rokugani curios and will not knowingly touch spirit-bearing goods in front of magistrates' in the old Shopkeeper bullet. Superseded by Setsuna's actual read of him: he suspects what passes through his hands and has deliberately never confirmed it, because confirming it would sink him."
+      ]
+    ],
+    "s28-secrets-of-the-city.md": [
+      [
+        "isawa kaede",
+        "a fabricated identification. The 2025-11-17 recording has Iuchi Minoru quote an unnamed male Isawa -- 'an Isawa once put it to me that my magic requires caging that which should never be bound', stopped short of a duel because HIS superior told him to stand down. The Archivist completed the family name to the famous Isawa Kaede, who in this corpus (s08, s09) is a woman, the Lion Champion's betrothed and a Void shugenja, and has nothing to do with this teahouse. The old bullet even invented a relationship for her."
+      ],
+      [
+        "kaede",
+        "same fabrication. 'Kaede' appears nowhere in the recording; the only 'Kaede' in the whole transcript set is the ASR mishearing 'Kaage-sensei' on 2025-10-13."
+      ],
+      [
+        "directed",
+        "'Directed Setsuna to a curiosities shop' in the old Ide Iwena bullet. The bullet now leads with the finding that displaces it -- she is not hunting the author on orders, she is protecting a friend she thinks is in danger."
+      ],
+      [
+        "proposed",
+        "'Proposed using Kazumi as bait' in the old Kaeru Akiara bullet. Reversed by the recording: Kazumi watered his own sake, played drunk, and pushed until Akiara offered him the part. The offer is Akiara's; the idea is Kazumi's."
+      ],
+      [
+        "putting",
+        "'Putting Kakita Kazumi on the docks as bait is Kaeru Akiara's idea' in the old Setsuna section -- the same reversal, and the section now says who actually authored it."
+      ]
+    ],
+    "s27-journey-to-unicorn-lands.md": [
+      [
+        "karu",
+        "my own ASR error from the previous commit, corrected against the corpus. The 2025-11-10 audio renders the ronin family as 'Karu' (the GM spelled it in chat, which the transcript cannot capture); the corpus has Kaeru Akiara 9 times, Kaeru Haya 7, Kaeru Ronin 4. My s27 line was the only 'Karu' anywhere in the corpus. Now Kaeru, and linked."
+      ],
+      [
+        "matsu koda",
+        "the old record identified the Lion at the teahouse as 'the same Matsu Koda who duelled Kakita Kazumi at Loyalty Castle and apologised to her in open court'. Matsu Koda does not appear anywhere in the 2025-11-10 recording. The Lion pair are an unnamed young Matsu woman on an errand she thinks is nonsense, and Karu Akiara, a former Lion now of the Karu ronin. A known NPC was written into a scene he was not in."
+      ],
+      [
+        "koda",
+        "same fabrication."
+      ],
+      [
+        "kakita",
+        "same sentence -- 'duelled Kakita Kazumi at Loyalty Castle'."
+      ],
+      [
+        "kazumi",
+        "same sentence. Kazumi is not present in this session at all."
+      ],
+      [
+        "loyalty",
+        "same sentence -- 'at Loyalty Castle'."
+      ],
+      [
+        "crab forged",
+        "'Crab-forged, supernaturally pure' in the old Sword of Hiruma bullet. Superseded by the recording's fuller account: one of the blades forged for the clans before meishodo returned to Rokugan, supernatural without a shugenja's hand, and pure through the fall of the Hiruma lands. The recording does not say Crab-forged."
+      ],
+      [
+        "approved",
+        "'Approved Ayoko's appointment' in the old Kitsu Takeko bullet. The bullet now records that she granted it outright despite a badly delivered petition, which is the finding."
+      ],
+      [
+        "holds",
+        "'Holds a letter Monban has now asked her to return' -- wrong person. On the recording Monban asks DOJI SETSUNA for Akodo Akihito's letter back, not Kitsu Takeko."
+      ],
+      [
+        "harunobu request response shinjo yet",
+        "the old italic ran 'There has been no response yet to my request to have Shinjo Harunobu...'. What is actually said is shorter -- 'there's not been a response yet' -- and the italic now matches it, with the request described in the prose around it rather than inside the quotation."
+      ]
+    ],
+    "s26-court-of-ancestral-shadows.md": [
+      [
+        "note",
+        "opened 'Note that this is the second time this week…'"
+      ],
+      [
+        "shoshuro aishi",
+        "the duplicate ledger key. Its content — that the ancestor manifested in the courtroom alongside Ikoma Akuyaku — is folded into the surviving Shosuro Aishi bullet, which previously overwrote it."
+      ],
+      [
+        "manifested",
+        "still present, in lower case, inside that folded sentence. The capitalised form now reads as a sentence opener and is discounted."
+      ],
+      [
+        "shinjo altansari",
+        "the old line had the witnesses naming 'Shinjo Altansari and Matsu Sakura' as the fixed points they could check each other against. The recording names SHINJO KAMO and Matsu Sakura. Altansari is the present-day Unicorn Champion (s09) and was not at the Snow Plain three centuries ago; Kamo commanded there. A conflation of two Shinjo."
+      ],
+      [
+        "altansari",
+        "same line."
+      ],
+      [
+        "imperial custody",
+        "tokeniser artefact -- 'Imperial custody' is present verbatim in Kazumi's testimony and in his Learned bullet, but the name channel fingerprints the pair only when both words are capitalised. Same as 'Imperial holding' in s25."
+      ],
+      [
+        "argues",
+        "present-tense verb from the old Shosuro Aishi bullet, 'Argues Morozane's own account proves...'. The bullet now records what she did in the session rather than a standing position."
+      ],
+      [
+        "openly",
+        "'Openly sceptical of ancestral vision' in the old Kaage bullet. Replaced by what he actually said -- the mushroom spores line -- and by the fact that he allowed it anyway."
+      ]
+    ],
+    "s51-matters-of-fact.md": [
+      [
+        "west",
+        "was the bold section label '**West.**'. The scene keeps its place and its opening now reads 'Far to the west, …', so the word survives in lower case."
+      ]
+    ],
+    "s11-clash-of-clans-at-snow-plain.md": [
+      [
+        "shadow",
+        "'the Ikoma Shadow School' — twice, and the whole clause 'which is what the Ikoma Shadow School is for'. The session names none of Akuyaku's schooling; what it names are Swift Scouting, Like a Ghost and Skulk, and the record now says what he actually did with them."
+      ],
+      [
+        "school",
+        "same clause as 'shadow'."
+      ],
+      [
+        "hall",
+        "'the Hall of Scribes does not have it' — the claim the archive is missing an infiltration that did not happen."
+      ],
+      [
+        "scribes",
+        "same clause as 'hall'."
+      ],
+      [
+        "ikoma hall of scribes",
+        "the wikilink inside that same removed claim. Ikoma Ichigo is still named in the Setsuna section, and s09 already carries what his compilation is and is not."
+      ],
+      [
+        "akuyaku s",
+        "possessive, from 'to cover Akuyaku’s infiltration of the Unicorn camp'. There was no infiltration to cover."
+      ],
+      [
+        "given",
+        "'Given the right, along the river, deliberately' — a capitalised sentence opener. The fact survives: the Learned bullet still says she was placed on the river flank so a Kitsu could reach the water kami."
+      ],
+      [
+        "animal",
+        "'held by an Animal Bond'. The recording never mentions the advantage; Chinmoku is simply Morozane's lion, and his page and s14–s17 carry the relationship."
+      ],
+      [
+        "bond",
+        "same clause as 'animal'."
+      ],
+      [
+        "red robed",
+        "the hyphenated form. The men are still there — 'Lightly armoured men in red robes came forward out of the Unicorn line'."
+      ]
+    ],
+    "s12-clash-on-the-snow-plain.md": [
+      [
+        "old diamond mines",
+        "the unsourced claim that the mines are on the hill above the battlefield. s10 already records the honest version: the council argues that ground all evening and never mentions them."
+      ],
+      [
+        "old",
+        "same clause."
+      ],
+      [
+        "mines",
+        "same clause."
+      ],
+      [
+        "diamond",
+        "same clause."
+      ],
+      [
+        "hundred",
+        "'three hundred years ago', from the removed closing paragraph about what Shoshuro Aishi can and cannot say in court — an argument that only stood on the mines claim."
+      ],
+      [
+        "shoshuro aishi",
+        "same paragraph. Aishi is a present-day advocate and was not at the Snow Plain."
+      ],
+      [
+        "aishi",
+        "same paragraph."
+      ],
+      [
+        "ikoma hall of scribes",
+        "from 'It also settles the archive' — the claim that the Lion silence about the mines is proven ignorance rather than editing. Nothing in the session establishes it."
+      ],
+      [
+        "hall",
+        "same paragraph."
+      ],
+      [
+        "scribes",
+        "same paragraph."
+      ],
+      [
+        "ikoma ichigo",
+        "same paragraph."
+      ],
+      [
+        "ichigo s",
+        "same paragraph."
+      ],
+      [
+        "matsumura zane",
+        "there is no Matsumura Zane. The transcription mishears Matsu Morozane and the export built a second PC page from it; the two are now merged. Every action filed under the name is his and is still here."
+      ],
+      [
+        "matsumura",
+        "same merge."
+      ],
+      [
+        "zane",
+        "same merge."
+      ],
+      [
+        "warned",
+        "'Warned Kitsu Somalia that…' became 'Said plainly that…' in the same bullet, which now also carries what she actually said."
+      ]
+    ],
+    "Unicorn Officer.md": [
+      [
+        "shiguro chinmoku",
+        "in the s11 and s12 ledger bullets."
+      ],
+      [
+        "chinmoku",
+        "same."
+      ],
+      [
+        "shiguro",
+        "same."
+      ],
+      [
+        "snow plain",
+        "the page is reached from the Snow Plain sessions; the link was decoration on prose that never shipped."
+      ],
+      [
+        "snow",
+        "same."
+      ],
+      [
+        "plain",
+        "same."
+      ],
+      [
+        "making",
+        "'Making the Unicorn name their commanders was the whole strategic objective' — carried by the s11 Setsuna section and the s11 bullet 'The Lion never learned his name'."
+      ],
+      [
+        "first",
+        "'first move' — in the s12 bullet."
+      ],
+      [
+        "one",
+        "'two fatigue paid, four taken' and 'ran two rounds' — the numbers are all in the s11 and s12 bullets."
+      ],
+      [
+        "two",
+        "same."
+      ],
+      [
+        "four",
+        "same."
+      ]
+    ],
+    "s14-avalanche-of-battles-end.md": [
+      [
+        "kitsu yui",
+        "the source catching up to the owner's 2026-09-13 merge. archivist.CORRECTIONS already rewrote Yui -> Yue at read time, so the rendered page said 'Kitsu Yue' either way; the file now says it too. Her link, her bullet and every fact in them are here under the right name."
+      ],
+      [
+        "yui",
+        "same merge."
+      ],
+      [
+        "atop",
+        "opened 'Atop the hill Kitsu Somalia gathered her cohorts…'. Where she was standing and what she did from there are both still in the paragraph."
+      ],
+      [
+        "somewhere",
+        "opened 'Somewhere between this hill and the ending the Lion lost what they were standing on' — the same argument now runs 'There are days of this left. An army that holds a hill on one evening can lose everything by the next.'"
+      ],
+      [
+        "clan",
+        "the pre-pass file wrote '[[Lion Clan]]' bare once, so the word 'Clan' rendered in prose; this pass pipes it to '[[Lion Clan|Lion]]'. The links channel reports no loss."
+      ]
+    ],
+    "s15-battlefield-of-resilience.md": [
+      [
+        "honour horse stake",
+        "*I will stake my horse against your honour* — a line Matsu Morozane never says. It is the Archivist mishearing the table: he is on FOOT, and what he does is put his yari into the charging horse — 'stake the horse as it comes at me and have the horse rear up'. The record then built 'went off his horse onto a stake' on top of the same mishearing. Both are gone; what actually happened is in the narrative and in both bullets."
+      ],
+      [
+        "kitsu yui",
+        "the source catching up to the owner's 2026-09-13 merge; archivist.CORRECTIONS was already rewriting Yui -> Yue at read time, so no rendered page changes name."
+      ],
+      [
+        "yui",
+        "same merge."
+      ],
+      [
+        "none",
+        "'None of it mattered.' became 'It changed nothing.' — same sentence, same place, same claim."
+      ]
+    ],
+    "s16-chaos-and-resilience.md": [
+      [
+        "kitsu yui",
+        "the source catching up to the owner's 2026-09-13 merge; archivist.CORRECTIONS was already rewriting Yui -> Yue at read time, so no rendered page changes name."
+      ],
+      [
+        "yui",
+        "same merge."
+      ],
+      [
+        "speared",
+        "'Speared and knocked down during the ancestral charge' became 'she could not hold them, took a spear and went down' — the same event, now with what the recording actually establishes around it: she did not summon them on purpose and could not control them."
+      ],
+      [
+        "tengoku s",
+        "'Drew Tengoku's warmth over a freezing camp' became 'Pulled Tengoku down over the camp', twice, with the hallowed-fire place of power and the second calling that covered the whole camp. Tengoku is still linked."
+      ]
+    ],
+    "s17-banners-fall.md": [
+      [
+        "1123",
+        "the pre-pass Setsuna section asked 'who held the hill in 1123-minus-two-hundred'. The year is right (s1 opens in 1123) but the arithmetic is not: every other statement in the corpus — s10's lede, s9, s12, s15, and this file's own closing — puts the Snow Plain three HUNDRED years back, not two. Replaced with 'three hundred years ago' rather than propagate a contradiction into the one section a reader would check."
+      ],
+      [
+        "kitsu yui",
+        "the source catching up to the owner's 2026-09-13 merge; archivist.CORRECTIONS was already rewriting Yui -> Yue at read time, so no rendered page changes name."
+      ],
+      [
+        "yui",
+        "same merge."
+      ],
+      [
+        "clan",
+        "'[[Lion Clan]]' bare became '[[Lion Clan|Lion]]', as in the rest of the corrected sessions. The links channel reports no loss."
+      ]
+    ],
+    "s18-historical-intrigue.md": [
+      [
+        "changes come gave honor lost name snow spring world",
+        "Kitsu Yue's death poem, which the record carried as ONE run with an ellipsis swallowing the middle of it: 'I gave my name and I lost my honor in the snow… Come spring, the world changes again.' The recording has three lines, and the missing one is the one the table spent ten minutes on — 'The sting is in the words the children learn.' Kazumi goes hunting the Lion poetry cross-index for it. The poem is now set as three lines, which is what splits the fingerprint; every word of the original is still here and one line more."
+      ],
+      [
+        "kitsu yui",
+        "the source catching up to the owner's 2026-09-13 merge; archivist.CORRECTIONS was already rewriting Yui -> Yue at read time, so no rendered page changes name."
+      ],
+      [
+        "yui",
+        "same merge."
+      ],
+      [
+        "yui s",
+        "same merge — 'Kitsu Yui's record ends in verse'."
+      ],
+      [
+        "ayoko s",
+        "'insulted Kitsuko Ayoko's standing carelessly, and it registered'. It was not careless and it was not a standing. The recording has Doji Setsuna say to her face that she is not samurai and not of the right families, knowing better, and then discover she believes it. That is now the finding, in the narrative and in the Setsuna section."
+      ],
+      [
+        "quartermasters",
+        "opened a sentence — 'Quartermasters' books, to prove the supply failures were sabotage.' The quartermasters' books survive twice, as the party's chosen target and as Setsuna's reason for it, in lower case both times."
+      ]
+    ],
+    "s20-political-intrigues.md": [
+      [
+        "shosuro amaro",
+        "there is no Shosuro Amaro. The export's own page for the name describes 'an ancestor of the Scorpion Clan, renowned for her role as an advisor to the Unicorn Clan' — which is Shosuro Amane entire — and the count is 37 Amane to 5 Amaro. Merged in archivist.CORRECTIONS. The feast Monban commissions is still here, under her right name."
+      ],
+      [
+        "amaro",
+        "same merge."
+      ],
+      [
+        "yamako s",
+        "'Soshi Yamako's other proposal — a forged Unicorn-Scorpion agreement' was the wrong Scorpion. Yamako is Kazumi's forger, met at the Path of Splinters. The Unicorn-Scorpion agreement is negotiated by MONBAN with SHOSURO IMAKO, and that scene — the handwriting sample, the beneficiary, 'risk is part of the game' — is now in full."
+      ],
+      [
+        "chose",
+        "'Chose to stay in the castle guarding Setsuna rather than hunt evidence in the field' — the party's decision to build the case here rather than ride for the Snow Plain is in the narrative, with the reason the recording gives: it is ten days away through a war."
+      ],
+      [
+        "genshin s",
+        "'Otomo Genshin's hand in the Lion-Crane truce' — his hand in it is now four sentences rather than a clause, including who appointed him."
+      ],
+      [
+        "scorpion s",
+        "'the Scorpion's own price', 'the Scorpion's price' — the recording does not have them name a price. They answered that they were open to it and asked what she had to offer, and Setsuna says out loud that she still needs an affirmative. The record had the clause coming back from their side as a matching demand, which would mean she had read them; she has not, yet."
+      ],
+      [
+        "first",
+        "'She set it before she heard the Scorpion's price' — same removal, for the same reason."
+      ]
+    ],
+    "s21-courtly-intrigues.md": [
+      [
+        "midori s",
+        "'The imperial-possession proposal… is Shiba Midori's' — it is KAKITA KAZUMI's. Midori reports the courtyard conversation to Setsuna and says so: she and Kazumi and Kitsuko Ayoko talked, the three of them converged on restoring Kitsu Yue's honour, and Kazumi was the one taken with declaring the mines an Imperial possession. Midori still carries it to Setsuna and still argues for Yue and Hideri; she just did not think of it."
+      ],
+      [
+        "formally",
+        "'Formally cleared by his sensei at the War College' — the clearing, the sensei and the quoted finding all open the session."
+      ],
+      [
+        "ichigo s",
+        "'Ikoma Ichigo's young Kitsu has supply documents' — the documents, the young Kitsu who gathered them and what they do and do not show are now three sentences of his own speech."
+      ],
+      [
+        "kitsu s",
+        "same clause."
+      ],
+      [
+        "kaage s",
+        "'the day before Kitsuki Kaage's arrival' — she still spends the last free day on the plains, and Kaage is still arriving."
+      ],
+      [
+        "half",
+        "'which was the polite half' — the denial and the threat are now given in full and in her own words, so the aside is no longer doing any work."
+      ]
+    ],
+    "s24-clash-of-honor-and-secrets.md": [
+      [
+        "once",
+        "filler adverb from the old 'the forgery ... produced in open court', a sentence the 2025-10-06 recording replaces wholesale."
+      ],
+      [
+        "consulted",
+        "the old bullet had Tsubame 'consulted the Commandant of the Academy'. On the recording the hidden ink only tells her to go, and going is her downtime action -- the consultation has not happened yet."
+      ],
+      [
+        "shosuro sealed",
+        "'a Shosuro-sealed letter'. Superseded and more exact: the recording has it signed with nothing but a stylised drawing of the Shosuro mon, no seal and no name."
+      ],
+      [
+        "two",
+        "filler numeral from the old lede's 'Two deliveries opened the day', a framing the recording does not support -- the packet is the librarian's answer to Kaage's order, not a delivery."
+      ]
+    ],
+    "s23-clan-tensions.md": [
+      [
+        "bayushi lowest",
+        "s23 rendered the epithet 'the lowest of the Bayushi' because the 2025-09-29 table said both 'least' and 'lowest' while working the culture check. The 2025-10-06 recording settles it: the sealed letter itself, which is the primary document, says LEAST throughout. s23 now leads with 'least' and keeps 'the lowest' as the variant the room also turned over, so the two sessions name the same phrase."
+      ],
+      [
+        "soshi yamako",
+        "the Setsuna section's claim that the treaty is 'the forgery from Soshi Yamako, laundered through her own yojimbo'. The 2025-09-29 recording has Setsuna reach only as far as 'this is a forgery, you just cannot prove it' -- from the wordiness and from 'the lowest of the Bayushi' being a present-day nickname for Monban. She does not know who made it. Kazumi's commission from Yamako is s20 and his denunciation is s25; naming her here got ahead of play by two sessions."
+      ],
+      [
+        "soshi",
+        "same sentence."
+      ],
+      [
+        "yamako",
+        "same sentence."
+      ],
+      [
+        "named",
+        "'Named as the other signatory of the secret treaty' in the old Shinjo Kamo bullet. Superseded and strengthened: the recording has the document written in Kamo's own hand and sealed with his chop, which is now what the bullet says."
+      ],
+      [
+        "four",
+        "tokeniser artefact -- 'Four Lion bushi' survives verbatim in the narrative (two instances of four/Four), but the old text had 'Four' adjacent to a wikilink and the name channel fingerprinted the pair."
+      ],
+      [
+        "once",
+        "filler adverb in the old 'once she had noticed it she could not stop noticing it', a sentence describing an insight the recording attributes differently."
+      ]
+    ],
+    "s22-clash-of-clans-and-diplomacy.md": [
+      [
+        "akodo kayamayako",
+        "the Setsuna section's paragraph on the medic's erasure from the genealogies. That finding is s18 and s19 and is recorded in both; it was doing nothing in a session about a hearing, and the space went to what Kaage actually ruled on."
+      ],
+      [
+        "akodo",
+        "same paragraph."
+      ],
+      [
+        "kayamayako s",
+        "same paragraph."
+      ],
+      [
+        "detecting",
+        "the epigraph's 'Detecting exactly this is what the school is for' — replaced by what Kaage says in the room, which is sharper: at least two are forgeries, he trained all four of them, and he is saving them the embarrassment of calling it out."
+      ]
+    ],
+    "s04-the-duel.md": [
+      [
+        "empire",
+        "Only occurrence was the narrator's aside on Monban's trade of honour for contempt — 'which is the sort of trade the Empire makes constantly'. An opinion about the setting, not a fact about the session."
+      ],
+      [
+        "chan",
+        "the record had the admirer under the cherry tree calling Monban 'Chan'. On the recording they call him 'my dear Bayushi'; 'Chan' is the family habit he described in s2 and the name Kakita Kazumi then needled him with afterwards. Misattributed."
+      ]
+    ]
+  }
+}
