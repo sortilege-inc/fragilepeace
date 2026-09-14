@@ -55,8 +55,17 @@ what hung in the vent was half a demon and half a rather handsome man with a ver
 smile. Which is the first time the how of it has been said plainly: when they died, they
 had to wear masks to go into [[Jigoku]], and he made a bargain with [[Onahime]] that they
 would stay joined. She is not an evil thing. She kept him alive down there and brought
-him out, and what she asked in return was to take a piece of him with her when she left.
-She has kept her side of it since.
+him out — he was eaten down there and he exploded and he came through anyway — and what she
+asked in return was to take a piece of him with her when she left. She has kept her side of
+it since.
+
+He set out the rest of it while he hung there. The scar that rings his neck carries three
+characters: one [[Onahime]]'s, one the [[Lady of Decay]]'s, and a third at the back he
+started to describe and did not finish. Certain kihō bring [[Onahime]] up whether he means
+it or not; using more of them afterwards brings the [[Lady of Decay]] out properly, and then
+the coughing stops. And he named the risk himself, which nobody had put to him: to anyone
+who does not know what they are looking at, all of this looks exactly like a man possessed
+by an evil spirit.
 
 He kicked one troll off its feet with a fist of air and hauled himself out onto the roof of
 the mountain, between two rock teeth, with one spirit dead, one dying, two trolls entirely
@@ -159,6 +168,8 @@ sitting here instead.
 - Akodo Akihito: Came back after the recess in an entirely different register — the Lion razed nothing, answered no insult with insult, killed only warriors defending their homes, and he praised the Unicorn for their courage. He calls the war a duel writ large between clans rather than champions, presently undecided, and says this is the moment to step back before someone takes a blow they cannot answer. The Lion are prepared to settle. Someone has given him new orders.
 - The Unicorn's Iuchi Advisor: A middle-aged woman in a shugenja's robes and talismans who gave the morning blessing herself because Midori is a party to the case. Kage's opposite number. Her warning: a lion in a trap is more dangerous, because it believes it has nothing left to lose, and the trick is to let them lose without feeling they have lost. Her advice on Ikari: find her quickly, and do not put her in front of this table. Her priorities, in order: land, horses, hostages — give those three and she can likely bring Altansarnai to the rest.
 - Bayushi Monban: Permitted only two fire spirits up the mountain instead of six. Burned out the troll cave and left one thing standing — a picture of himself the trolls drew and defaced — so that whoever lives there remembers who got them the place. One spirit dead, one dying, both trolls unhurt: their skin adapts to what is hurting it.
+- Lady of Decay: Comes out properly once he has spent enough kihō, and when she does the coughing stops. The demon wound carries her character alongside Onahime's.
+- The Demon Wound: The scar that rings his neck carries three characters — Onahime's, the Lady of Decay's, and a third at the back he did not finish describing.
 - Onahime: The bargain is finally plain. When they died they had to be masked to enter Jigoku, and he made an agreement with her that they would remain joined. She kept him alive down there and brought him out; what she asked was to take a piece of him with her when she left. She is not an evil thing, and she has kept her side of it.
 - Asako Ikari: Nobody has found her. The Unicorn's own advisor thinks it would be better for the case if she were located and *not* called to speak.
 

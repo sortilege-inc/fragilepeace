@@ -3056,6 +3056,70 @@ wearing a real phrase as a title.
 Superseded. The local replacement is filed as **lore, not faction**, lists the
 usage above, and says in terms that the referent is held open on the owner's call.
 
+## The demon wound and the Onahime bargain — same treatment
+
+Gathered across all 73 recordings: **19 mentions of the wound in 9 recordings, and
+Onahime in 10** (spelled Onahime, Onohime and Onihime by the transcriber, one
+person). Unlike "first enemy blood", most of this **is** settled — the
+2026-08-10 recording, which is session 52, has Monban explain the whole thing
+unprompted when a companion asks whether it is Shadowlands taint or mahō.
+
+### What was already right
+
+s52 carries the bargain accurately and well: masks to enter [[Jigoku]], she kept
+him alive and brought him out, what she asked was to take a piece of him with her
+when she left, and she is not an evil thing. s5 carries the wound itself — a scar
+that **rings his whole neck**, which lit red and burned when [[Matsu Tomoe]]
+reached for it without touching it, and his answer that he had walked that place
+and returned whole, *judged worthy by he who makes those choices*.
+
+### What the same recording had and the record did not
+
+- **The wound carries three characters.** One [[Onahime]]'s, one the
+  [[Lady of Decay]]'s, and **a third at the back** — he began to describe it and
+  did not finish, and nothing else in 73 recordings returns to it. Held open, the
+  same way "first enemy blood" is held open.
+- **The mechanism behind the coughing.** Certain kihō bring Onahime up whether he
+  means it or not; spending more of them afterwards brings the Lady of Decay out
+  properly, *"and I'll stop coughing and getting sick again."* That ties together
+  a thread running from s33 — where calling her sets the wound burning and starts
+  him coughing "the way he had not coughed in weeks" — and it was never stated.
+- **He was eaten and he exploded** getting through Jigoku, and came out anyway.
+- **He named the risk himself**, unprompted: to anyone who does not know what they
+  are looking at, all of this looks exactly like a man possessed by an evil
+  spirit. That is his reading, not an accusation somebody made.
+
+All four restored to s52, with Learned bullets for the Lady of Decay and the
+wound.
+
+### Two pages written
+
+**`The Demon Wound`** (lore) — the collar scar, the three characters and the
+unfinished third, what makes it burn (spiritual working, calling the Lady of
+Decay, standing over water infused with negative energy), what it costs him
+mechanically, and who he has deliberately shown it to.
+
+**`Onahime`** rewritten from four thin lines. It ended *"Something bearing her
+aspect now speaks and shows through him"* — a hedge written before the
+explanation existed. It now carries the bargain, how she manifests (blackness
+from the left of his face ringed like a snowflake, a second shape off his
+shoulders and head, half a demon and half a handsome man with a wicked smile,
+and a woman laughing childishly because she is enjoying herself), and the witness
+problem: *"The lady Doji is mine, and Onahime will have her doom"* — screamed in
+a tent, seen by [[Shiba Midori]] and [[Kakita Kazumi]] and possibly
+[[Ikoma Tadayoshi]], while [[Doji Setsuna]] was knocked down before the change
+finished.
+
+### One thing checked and deliberately not treated as a table secret
+
+The s33 recording has *"they didn't know that their buddy had signed a demon
+contract. Nobody knew, damn it… nobody's allowed to know about that."* Read in
+context that is **in-fiction**: the players are saying it to each other, openly,
+about what Rokugan does not know. It is a character secret, not a table one, and
+the 2026-05-04 notes track it as an escalating witness problem rather than
+something concealed from the group. Recorded as "no one in the Empire knows what
+he signed," which is what the pass has held since s33.
+
 ## Open questions — revisit after the pass
 
 - **Export session dates run a day late.** For 29 of the 35 export-era sessions
