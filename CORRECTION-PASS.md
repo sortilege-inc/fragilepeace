@@ -1082,7 +1082,10 @@ so the in-fiction content is denser than the line count suggests.
 
   This also corrects a 2026-08 voice-pass note: that pass found two Shosuro Aishi
   ledger bullets in s26 and folded "the ancestor" into the living advocate's bullet.
-  There never were two Aishi. The accept reason in `factguard.py` now says so.
+  There never were two Aishi. That was recorded as a per-file accept reason;
+  the reason was removed on 2026-09-14 as dead configuration — the token is
+  accepted globally by the Shoshuro spelling ruling, so the per-file text was
+  never consulted — and this paragraph is the record of it.
 
 - **What the spirits actually did.** They looked at one another with open disgust,
   and Kitsu Takeko — who can make them seen but not heard except by shugenja —
@@ -2810,12 +2813,19 @@ Flagged rather than corrected — nothing is wrong, these simply never come back
   `scripts/acceptcheck.py` gates it.
 
   Extracting it surfaced something the old checker could not see: **14 per-file
-  reasons are shadowed by entries later promoted to `all`** — `shoshuro aishi`
+  reasons were shadowed by entries later promoted to `all`** — `shoshuro aishi`
   across s12, s13 and s26, and `kitsu yui` / `yui` / `yui s` across s14 to s18.
-  Nothing is lost, because the token is still accepted via `all`; the per-file
-  text is simply dead and reads as live. Reported as a warning rather than a
-  failure, and **not deleted** — retiring 14 recorded justifications is the
-  owner's call, not the agent's.
+  Nothing was lost by them, because those tokens are still accepted via `all`;
+  the per-file text was simply dead and read as live.
+
+  **Removed on the owner's call, 2026-09-14.** Checked first: the eleven Kitsu
+  Yui entries only restate the global merge reason. The three `shoshuro aishi`
+  ones carried real file-specific reasoning — the invented mines claim that the
+  s12 and s13 Setsuna sections rested on, and the s26 duplicate ledger key — but
+  this log already records all three at greater length, in the s12 and s26
+  sections, so the accept entries were the redundant copy rather than the record.
+  They are in git history either way, which is the point of having versioned the
+  table first. 183 per-file tokens across 36 files became 169 across 35.
 
 - **Onahime / Kuni Wardens** said the Hunter visages were painted on Monban's
   *mask*. The s6 recording has him take the mask off to show them painted on his
