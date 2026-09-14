@@ -2881,6 +2881,62 @@ changed." When a config moves, prove the consumer picked it up before reporting
 the move done — this is the same failure as reporting `build_site` OK at s30
 without checking the exit code, one level further in.
 
+## Audit: every export-invented identification, checked for the same residue
+
+Done mechanically against an enumerable set rather than from memory. **Every
+deliberate removal in this pass has an accept-table entry**, so the accept table
+is the list of names the pass struck. Cross-referenced each accepted token
+against the entity page titles: **13 accepted tokens are the title of a real
+page**, meaning a person or place the pass removed from a session's prose.
+
+Three of the thirteen still carried the residue — the page went on listing a
+session its subject was never in. The other ten were already clear.
+
+| Page | Listed | Verdict |
+|---|---|---|
+| Akodo Atsushi | s19 | **Misplaced.** The hostile exchange over the journals was with the War College quartermaster, whom the 2025-09-01 recording never names. Atsushi is a different Lion; his own entry puts him at a tea house with Kitsu Takeko. |
+| Tonbo Higuchi | s33 | **Misplaced.** The export thought he was the possessed novelist and put him in the exorcism. He is Tonbo Kuma's go opponent, met once in s32 and excused from the board. |
+| Mantis Captain | s32 | **Not misplaced — duplicated.** He was there. He has been named since s31, and the role page is an empty placeholder beside Captain Kubota's. |
+
+The first two are now in `MISREAD_APPEARANCES`. The third is a different defect
+and needed a different fix.
+
+### The wider sweep, and five split identities
+
+The accept table only catches names the pass had occasion to *remove*. A name the
+prose never mentioned could still be sitting in a session on the export's word
+alone. So, separately: for every session, every page the export puts in its cast
+that the corrected source never echoes — and of those, the pages where **that is
+true of every appearance they have**, which is the signature of a page existing
+on export assertion alone. 49 pages.
+
+Most are a different defect again: the export minting a page for a role or a noun
+(`Tea Mistress`, `Unicorn Duelist`, `Three Unidentified Figures`, an item called
+`Family`, another called `Quack`). But five were **one person split in two by a
+mis-heard name**, each a thin page beside a fat canonical one:
+
+| Export page | Is | Appearances before → after |
+|---|---|---|
+| Onohime | [[Onahime]] | 1 → Onahime 1→2 |
+| Okoto Totori | [[Akodo Toturi]] | 1 → Toturi 8→9 |
+| Lady Takeko | [[Kitsu Takeko]] | 1 → Takeko 6→7 |
+| Torunako | [[Akodo Toronoko]] | 3 → Toronoko 8→11 |
+| Mantis Captain | [[Captain Kubota]] | 1 → Kubota 1→2 |
+
+Merged with `RENAMES` + `ALIASES` where the canonical page is the export's, so
+content survives the merge; with `SUPERSEDED_BY_LOCAL` + `ALIASES` for `Onohime`
+and `Okoto Totori`, whose canonical pages are local and where a rename collides
+with the duplicate check. All five duplicates are gone and every appearance
+landed on the right person.
+
+### What is left, and not taken
+
+**45 pages still have no appearance the corrected sources echo** — 21 npc, 13
+location, 6 item, 5 faction. These are not misplaced people; they are pages the
+export minted for a role, a noun, or a passing description, and folding them into
+named people or retiring them is a content decision per page, not a sweep. Listed
+here as a known seam rather than acted on.
+
 ## Open questions — revisit after the pass
 
 - **Export session dates run a day late.** For 29 of the 35 export-era sessions
