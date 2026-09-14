@@ -3110,7 +3110,7 @@ a tent, seen by [[Shiba Midori]] and [[Kakita Kazumi]] and possibly
 [[Ikoma Tadayoshi]], while [[Doji Setsuna]] was knocked down before the change
 finished.
 
-### One thing checked and deliberately not treated as a table secret
+### Owner's ruling, 2026-09-14: in-fiction, not a table secret — RESOLVED
 
 The s33 recording has *"they didn't know that their buddy had signed a demon
 contract. Nobody knew, damn it… nobody's allowed to know about that."* Read in
@@ -3119,6 +3119,9 @@ about what Rokugan does not know. It is a character secret, not a table one, and
 the 2026-05-04 notes track it as an escalating witness problem rather than
 something concealed from the group. Recorded as "no one in the Empire knows what
 he signed," which is what the pass has held since s33.
+
+**Put to the owner and confirmed: the reading is right, leave it.** Settled, so
+nothing here needs re-arguing the next time the line surfaces in a recording.
 
 ## Open questions — revisit after the pass
 
