@@ -278,9 +278,9 @@ of the woman who had counselled her: *it is a credit to you. When this is done, 
 be honoured for it.*
 
 There is a go board in the corner of that room with a game on it, untouched since it was
-interrupted. It is his standing game with [[Tonbo Kuma]], and they were to have continued
+interrupted. It is his standing game with [[Tonbo Kuma]], and the two of them were to have continued
 it today. [[Doji Setsuna]] does not play go. She asked leave to look at it anyway, and read
-the position: [[Tonbo Kuma]]'s group has one eye, which is not life, and it is his turn.
+the position: [[Tonbo Kuma]]'s group has one eye, which is not life, and it is their turn.
 She put the second eye in. The group cannot be killed now.
 
 *I expected that to be his next move when we rejoin.* He is not a spiritual man and said
@@ -302,7 +302,7 @@ wherever he is. She said she hoped he would be proved right.
 - Shun: Took Monban's parting instruction without comment — *protect him. From himself.*
 - Shinjō Harunobu: At Castle of the Swift Sword because his wife asked for him to be separated from the other four hostages, which is why he could not be released with them. Akihito rides to fetch him. He trained under Hida Katsuro.
 - Governor Miya Tetsuya: Learned of his niece's death from Setsuna and did not let it show. He wants the men who ordered it, not only the men who held the knife. He keeps a standing go game with Tonbo Kuma, will not call himself spiritual, and has been unable to stop reading the abandoned board as an omen.
-- Tonbo Kuma: Went aboard the ship at the Dragon docks on the third night and vanished with it at dawn. His go game with the governor sits unfinished; his group had one eye when he left it.
+- Tonbo Kuma: Went aboard the ship at the Dragon docks on the third night and vanished with it at dawn. Their go game with the governor sits unfinished; their group had one eye when they left it.
 - Kuni Wardens: Monban wears the Hunter marks on his skin, not only on his mask. He showed them to Akodo Akihito alone, in a closed tent, and closed his shirt again before he left it. Nobody in Scorpion lands is looking for a Kuni Warden, which is the entire point of the plan he is going south under.
 - Mayoibune: A ship that appears somewhere on the water after Lord Moon's light touches it and is gone by dawn, never twice in the same place. Unicorn boarders found it empty and heard wailing below decks. Lion boarders did not return. Tonbo Kuma did not return. Every ship that can leave the city has left, trade has stopped, and three clans' quarter of the city is paralysed.
 - The Drowned Merchant River (unpaged): Flooded along its whole length through the city with something that howls like Gaki-dō to anyone who touches it, and the elemental balance of the water is wrong. The sound does not stop anywhere in the city; it gets louder towards Central Island and the governor's palace. Monban has been thrown into this river before and it was not like this.

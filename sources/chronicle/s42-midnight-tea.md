@@ -21,8 +21,9 @@ him something he did not have: on the way in, the [[Lion Clan|Lion]] had burned
 [[Unicorn Clan|Unicorn]] land and desecrated the bodies of the dead.
 
 [[Doji Setsuna]] was travelling by norimono, still carrying her own void wound from the
-[[Terminating Tea]] she drank at the Governor's Tea House — a thing only [[Shiba Midori]]
-and [[Kakita Kazumi]] know the cause of. She spent her one void point on getting it down,
+[[Terminating Tea]] she drank at the Governor's Tea House — a thing [[Shiba Midori]]
+and [[Kakita Kazumi]] know the cause of, and which [[Bayushi Monban]] worked out for
+himself and has never been told. She spent her one void point on getting it down,
 and it worked: the wound went from severe to slight, and it went like a fever breaking. It
 also left her with nothing in reserve for the rest of the night, which turned out to matter
 at the gate.

@@ -2726,6 +2726,69 @@ before reporting it done.
 - **Misato is hidden** somewhere by her uncle and has not been seen.
 - **Kazumi and Monban's deaths**, and what changed in each of them.
 
+## Sessions 41–55 — continuity review against the corrected record
+
+Sessions 41–55 (plus 38–40, which have no recording) were hand-authored from the
+same sources **before** the correction pass, so the risk was that they carry forward
+facts the pass has since overturned. Swept mechanically for every name and fact the
+pass changed, then read where anything hit.
+
+**Clean:** no superseded spelling survives anywhere in 38–55 — checked Kitsuko,
+Shoshuro, Ide Subane, Kitsu Yui, Katsuki, Karu, Miya Amaya, Daimyo Shosuro, Miya's
+Niece, Efreet, Okoto, Shinjo Higoichi. No fabrication the pass removed reappears —
+Matsu Koda, Isawa Kaede, Shinjo Altansari are absent. `verify_site` reports 0
+superseded spellings rendered.
+
+**Chains that hold.** The Ifrit is coherent end to end: sealed in a jar at s33, taken
+by Monban at s34, worn without his remembering at s36, inside him and bargained over
+at s39 (*"the old boxes are spent"* — consistent with him having emptied them), speaking
+in his head at s41, freed at s49, gone at s54. s38 picks up s37's cliffhanger exactly:
+the two of them search the Crane guest rooms and find contact poison in the ceiling.
+And s52 explains the death Monban and Kazumi refer to at s37 — the masks, Jigoku, and
+the bargain with Onahime — so the s37 exchange is corroborated downstream rather than
+contradicted.
+
+### Three corrections made
+
+**1. Tonbo Kuma is they/them, and two sessions had him as he/him.** The 2025-12-22
+recording settles it in the GM's own words at 2:31:10 — *"Tonbo Kuma is the they-them"*
+— in the same breath as confirming Asahina Nao is she. The 2025-12-15 recording uses
+"they" throughout (*"Kuma will say that they..."*, *"Kuma said that they spoke with him
+two or three days ago"*). s32 had "his shelf", "he is an admirer", "he gestures"; s55
+had "his group", "it is his turn", "his go game". Corrected in both, and in the
+`Tonbo Higuchi` entity page I wrote yesterday, which had the same slip.
+
+**2. s42 said only two people know about the tea.** *"a thing only Shiba Midori and
+Kakita Kazumi know the cause of."* That is the claim the s35 correction removed:
+Monban failed to see inside the bundles, deduced their contents from his own
+herbalism, was refused to his face, and then made a sentiment roll the GM answered
+with *"you can put two and two together."* He has not been told, which is a different
+and thinner thing. Reworded to say exactly that.
+
+**3. s38 presented the breathing tubes as the discovery.** They are the *second* set.
+The export distinguishes them itself — it has separate item pages for `Bamboo
+Breathing Tubes` (two-foot, watertight, buried among reeds) and `Snapped Reins
+Breathing Tubes` (under shoreline rocks), and says plainly that the reins were *"a
+different set... in a subsequent investigation."* s38 named only the reins, which
+silently dropped the bamboo set recovered on the s37 recording — and with it the fact
+that Kazumi poisoned those and left them in place. The export corroborates that too:
+it has a `Numbing Poison` page saying Kazumi applied it to bamboo breathing tubes to
+trap whoever came back. s38 now says two sets, and that more than one party came in
+through the water.
+
+### Threads left dangling, not contradicted
+
+Flagged rather than corrected — nothing is wrong, these simply never come back:
+
+- **The second, larger bound spirit** from the burned theatre (s32). Never mentioned
+  again in 38–55.
+- **The bamboo tubes in the reeds**, poisoned and left as a trap at s37. Nobody is
+  ever shown springing it.
+- **Aoi**, who signed the warning on the envoy's wall at s36, is named nowhere after.
+- **Irei Sakube** (s35) and **the Crane with an appetite for curiosities from beyond
+  the border** (s37) are never followed up under those descriptions, though s38's
+  search of the Crane quarters is plainly the next step on the same trail.
+
 ## Open questions — revisit after the pass
 
 - **Export session dates run a day late.** For 29 of the 35 export-era sessions
