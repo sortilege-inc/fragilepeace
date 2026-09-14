@@ -40,7 +40,7 @@ The ink on the note is the same dark blue as the cloth. There was nothing hidden
 
 [[Ryu]] found him there, having been sent across the water by [[Kakita Kazumi]] to fetch his master back by the hair if necessary, and put him in a hired cart. The man pushing it wanted paying. Told his passenger was an Emerald Magistrate, he said he was His Majesty the Emperor and still had rent to find.
 
-There was a man waiting in the boat who [[Bayushi Monban]] did not know — plain black shirt, brown trousers, a bundle in his hands that looked like it had come from the market. He leaned over, said his lord sent his regards, put the bundle into [[Bayushi Monban]]'s hands, and stepped off.
+There were people waiting in the boat who [[Bayushi Monban]] did not know — *there are three of them to your eyes*, which is the sort of thing a man is told when he has drunk a bottle of sake and cannot clear the condition. Plain black shirts, brown trousers, and a bundle that looked as though it had come from the market. One of them leaned over, said his lord sent his regards, put the bundle into [[Bayushi Monban]]'s hands, and they stepped off.
 
 He arrived at the mansion held up by [[Ryu]], bloodshot and unable to hold a straight line, into a house full of guards and a crying envoy. [[Kakita Kazumi]] asked whether he had trained at the school of the drunken fist. Asked why [[Doji Setsuna]] looked the way she did, and told it was because her bodyguard had not been there, he had an answer ready. He had asked, the night before, what was going on. He had been told by [[Doji Setsuna]] that it was none of his business and to go away, and by [[Shiba Midori]] the same, and he had gone away. Now he was back. So what was the problem?
 

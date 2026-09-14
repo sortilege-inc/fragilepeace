@@ -2931,11 +2931,73 @@ landed on the right person.
 
 ### What is left, and not taken
 
-**45 pages still have no appearance the corrected sources echo** — 21 npc, 13
-location, 6 item, 5 faction. These are not misplaced people; they are pages the
-export minted for a role, a noun, or a passing description, and folding them into
-named people or retiring them is a content decision per page, not a sweep. Listed
-here as a known seam rather than acted on.
+**45 pages had no appearance the corrected sources echo.** Worked through
+individually — see the section below. The short version: the seam was not a seam.
+
+## Working through the 45 — the seam was not a seam
+
+Each of the 45 pages checked against the **recordings**, not the corpus. The
+result overturns the premise: the "no echoed appearance" signal was mostly
+measuring that the corrected prose is terser than the export, not that the export
+invented anything. **Not one of the remaining pages is demonstrably invented.**
+
+Three rounds of checking, because the first two were not good enough:
+
+1. A phrase search for each title across all 73 recordings. Too loose — several
+   pages "matched" on a single common word (`elemental`, `physician`, `matsu`),
+   which proves nothing.
+2. That left five with no hit at all. Two of those are untestable rather than
+   unsupported: `Matsu Seishi` (s38) and `Miya estates` (s39) sit in sessions
+   that **have no recording**. Absence of evidence, and the record says so.
+3. The other three searched inside their own session's recording, allowing for
+   the transcriber's spacing. All three are there: **`motososa`** in the
+   2025-06-16 recording, **`akio`** in the 2025-10-06 one, **`snow field`** in
+   the 2025-06-23 one. Moto Sosa, Shosuro Akio and the Open Snowfield are real;
+   my matcher was wrong, not the pages.
+
+### What the sweep did turn up
+
+**A sixth split identity.** `Lady Matsu` is an empty placeholder with one
+appearance, beside [[Matsu Tsuko]], who has content and is the Matsu daimyō. The
+recordings use the two interchangeably — *"the Lady Matsu, Lady Daimyō Matsu"* —
+and put her in command of the Lion host. Merged.
+
+**A conflated location.** The export's `City Between the Rivers` page opens by
+calling it *"also known as the City of the Rich Frog."* It is a different city:
+the 2025-11-10 recording routes the party **from** the City of the Rich Frog
+**to** it and on toward the Golden Yurts of the Ide, and following the river
+north from there approaches Battle Maiden Castle. Replaced with a local page that
+says what the recording says.
+
+**Three facts my own rewrites had dropped**, all recovered from the recordings
+while checking pages I suspected of being artefacts:
+
+- **Monban's katana is named.** I read *"I will draw family the blood-bound
+  blade"* in the s33 transcript as garble and left it out. It is not garble — the
+  2026-05-04 recording says it twice, once as *"my katana. Uh, Family, the
+  blood-bound blade."* The blade is [[Family]]. Restored to s33.
+- **Matsu Tsuko commands the Lion army** at s35, and the party knew it when they
+  set out — *"the Lady Matsu has control of the army right now… ninety-nine per
+  cent odds Lady Matsu's there. She wouldn't miss a good fight. Certainly not one
+  her own family started."* Restored.
+- **There were three figures in the boat at s36, not one.** I wrote one. The GM
+  says *"there's three of them to your eyes"* — to a man who had just failed to
+  clear the intoxicated condition, which the record now notes rather than
+  resolves.
+
+**One page whose framing is wrong but whose subject is real.** `First Enemy
+Blood` is filed as *"a faction within Rokugan, represented by Bayushi Monban."*
+The phrase is his, and attested — *"he is our brother and first enemy blood"* —
+but it is a form of words about kinship and the first enemy, not an organisation
+with a membership. Left alone: correcting an export page's category is a
+different job from correcting the chronicle, and nothing links to it as a faction.
+
+### Method note
+
+Three of the five "not found" results were my search being wrong, and I nearly
+reported them as fabrications. A negative result from a matcher is a claim about
+the matcher until it has been tested the other way. Check the tool before
+indicting the data.
 
 ## Open questions — revisit after the pass
 

@@ -30,7 +30,7 @@ And [[Shiba Midori]], reading the instructions properly, found the sentence at t
 
 He went up on Riding the Clouds, carried the vessel and the instructions across to [[Shiba Midori]], and then picked her up and threw her at a naked woman, because she is small and light and the rite needs a hand on the target. She caught [[Shinjo Higuchi]] by the temples. *Spirit, I revoke your welcome in this body. Go away.*
 
-The body convulsed, flames came up around it, and the fire boiled her clothes off her as the thing tore loose. [[Bayushi Monban]] pulled her clear of it, closed his eyes, and said *Onahime, little sister, time to play* — and a second black shape came out of his shoulders and his head as he drew.
+The body convulsed, flames came up around it, and the fire boiled her clothes off her as the thing tore loose. [[Bayushi Monban]] pulled her clear of it, closed his eyes, and said *Onahime, little sister, time to play* — and a second black shape came out of his shoulders and his head as he drew [[Family]], the blood-bound blade.
 
 The [[Ifrit]] stood up out of her, towering, made of ash and dust and fire. [[Doji Setsuna]] and [[Tonbo Kuma]] walked in on it. [[Kakita Kazumi]] looked up from his drink and thought: this is the apocalypse.
 
