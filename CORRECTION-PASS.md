@@ -60,6 +60,7 @@ at the site repo root beside `REWRITE.md`.
 | 36 | Done — commit `50ec033` |
 | 37 | Done — **every session with a recording is now corrected** |
 | 41 → 55 | Hand-authored from these same sources; lower priority |
+| 56 | **Written from the recording**, 2026-09-14 — the first session recorded straight rather than corrected |
 
 **No recording exists for sessions 1, 3, 38, 39 and 40.** 3 was corrected from
 session 4's opening recap; 38–40 have nothing.
@@ -3122,6 +3123,72 @@ he signed," which is what the pass has held since s33.
 
 **Put to the owner and confirmed: the reading is right, leave it.** Settled, so
 nothing here needs re-arguing the next time the line surfaces in a recording.
+
+## Session 56 — written from the recording, not corrected
+
+The first session put into the record straight from its own recording rather than
+corrected against the Archivist. Two files, `2026-09-14 - Fragile Peace 1` and `2`,
+922 normalised utterances between them. Filed as
+`sources/chronicle/s56-the-hungry-dead.md`; `verify_site` now spans 56 sessions,
+2025-03-11 to 2026-09-14.
+
+**Very noisy**, as the owner warned. Part 1 is largely table admin — a returning
+player being walked through Foundry — and the Foundry talk continues through much
+of part 2. Speaker attribution is collapsed almost throughout, with one tag
+carrying the GM and several players. Beats that could not be read confidently were
+left out rather than guessed at, per the standing method.
+
+### A returning PC, and a thread from session 2
+
+[[Kitsuki Wataru]] is a **player character**, already categorised `pc`, whose
+player has been away roughly fifty sessions. He does not appear until late. He
+comes back a [[Togashi Family|Togashi]] monk — and **session 2 already recorded
+that he had taken a monk's name, Chosun, and hoped to be received by the Togashi.**
+Fifty-four sessions later it paid off. The record did not need correcting for it;
+it needed noticing.
+
+### What the session is
+
+The [[Mayoibune]] payoff. The ship is a portal to [[Gaki-dō]]; [[Tonbo Kuma]] went
+after it three days ago and [[Kitsuki Wataru]] followed two days ago and found
+him. It sails itself. Every sunrise it runs aground somewhere desolate; every
+sunset it comes down the river out of [[Unicorn Clan|Unicorn]] country and enters
+[[Gaki-dō]] again as though for the first time.
+
+The far side is the [[City Of The Rich Frog]] with the governor's palace simply
+absent and the great willow it is built in the roots of standing withered, ringed
+with small black fires. [[Tonbo Kuma]] reads that as [[Jigoku]] reaching into
+[[Gaki-dō]] and means to close the gate. Everyone who dies there becomes gaki. The
+ship turned out to be carrying crates of teardrop jade under a burned-away deck,
+which is for the tree.
+
+### Setsuna is barely in it, deliberately
+
+She crosses a river that is smooth as glass, sees skeletal faces in white robes and
+hears a starving howl, and feels the hair rise exactly as it does for her own ghost
+**without the ghost being there**. Then the ship arrives and she declines to board,
+sends support, and goes back to the bath — stated plainly at the table, not a
+gap in the recording.
+
+That is consistent rather than awkward: s55's own Setsuna section had already
+concluded she is *"the only person in that city with nothing to bring to what is in
+the river."* `unknown: Kitsuki Wataru` is set, because she never meets him.
+
+### Held open
+
+- **The fox's name.** [[Kitsuki Wataru]] asks her politely and she gives one,
+  having previously told [[Bayushi Monban]] she had none and did not know what a
+  name was. The transcription of it is unusable. The exchange is recorded; the
+  name is not.
+- **What is on the other side of the water for Setsuna** — the same signature as
+  her haunting, without her haunting in it.
+
+### Filing
+
+`.txt` transcripts to `archive/transcriptions/` (now 75 files), `.m4a` audio to
+`archive/recordings/`, which existed and was empty — the first audio archived
+there. Incoming names already matched the convention and were kept.
+`fragile-peace-support/unsorted/` is empty.
 
 ## Open questions — revisit after the pass
 
