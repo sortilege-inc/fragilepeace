@@ -3186,9 +3186,15 @@ the river."* `unknown: Kitsuki Wataru` is set, because she never meets him.
 ### Filing
 
 `.txt` transcripts to `archive/transcriptions/` (now 75 files), `.m4a` audio to
-`archive/recordings/`, which existed and was empty — the first audio archived
-there. Incoming names already matched the convention and were kept.
+`archive/recordings/`. Incoming names already matched the convention and were kept.
 `fragile-peace-support/unsorted/` is empty.
+
+**Owner's note, 2026-09-16: `recordings/` is the right folder and audio keeps going
+there.** It is normally empty or partial, because the audio is copied up to the SAN
+and deleted locally to save space — so an empty `recordings/` does not mean audio is
+not archived here, and nothing should be inferred from finding it bare. The
+transcripts in `archive/transcriptions/` are the durable local artefact, and they are
+what every gate and every correction in this log actually rests on.
 
 ## Open questions — revisit after the pass
 
