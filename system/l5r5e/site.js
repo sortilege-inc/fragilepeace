@@ -437,16 +437,16 @@ window.VttSiteTabs = (function () {
 
   const tabs = [
     { id: 'book', label: 'The books', render: renderBook, books: true },
-    { id: 'schools', label: 'Schools', render: renderSchools, books: true },
-    { id: 'techniques', label: 'Techniques', render: renderTechniques, books: true },
-    { id: 'npcs', label: 'NPCs', render: renderNpcs, books: true },
-    { id: 'characters', label: 'Characters', render: renderPregens, books: true },
+    { id: 'schools', label: 'Schools', render: renderSchools },
+    { id: 'techniques', label: 'Techniques', render: renderTechniques },
+    { id: 'npcs', label: 'NPCs', render: renderNpcs },
+    { id: 'characters', label: 'Characters', render: renderPregens },
     { id: 'adventures', label: 'Adventures', render: renderAdventures, books: true },
     { id: 'lore', label: 'Lore', render: renderLore, books: true },
     { id: 'dice', label: 'Dice', render: renderDice },
     { id: 'search', label: 'Search', render: renderSearch, books: true },
   ];
   // the creator adds its tab when it is loaded (system/l5r5e/creator.js)
-  if (window.L5RCreator) tabs.splice(5, 0, { id: 'create', label: 'Make a character', render: window.L5RCreator.render, books: true });
+  if (window.L5RCreator) tabs.splice(5, 0, { id: 'create', label: 'Make a character', render: window.L5RCreator.render });
   return tabs;
 })();

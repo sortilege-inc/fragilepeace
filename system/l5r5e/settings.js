@@ -26,7 +26,7 @@ window.L5RSettings = (function () {
     let on = !!CFG.siteBooks;
     try { const v = localStorage.getItem(BOOKS_KEY); if (v !== null) on = v === '1'; } catch (e) { /* default */ }
     box.appendChild(el('div', { class: 'guidance-k' }, ['The books on the site']));
-    box.appendChild(el('p', { class: 'muted small' }, ['Whether the site’s pages show the books — the shelf, schools, techniques, NPCs, adventures and search. Off, the site shows the campaign’s own tabs and the dice. This setting is for this browser only; other visitors see the site’s default (' + (CFG.siteBooks ? 'on' : 'off') + ').']));
+    box.appendChild(el('p', { class: 'muted small' }, ['Whether the site shows the books’ own text — the shelf, the lore, adventures and search. Off, the schools, techniques, NPCs, characters, the creator and the dice still show, and a link to one entry still opens it. This setting is for this browser only; other visitors see the site’s default (' + (CFG.siteBooks ? 'on' : 'off') + ').']));
     box.appendChild(el('label', { class: 'set-row' }, [
       el('input', { type: 'checkbox', checked: on || null, onchange: (ev) => { try { localStorage.setItem(BOOKS_KEY, ev.target.checked ? '1' : '0'); } catch (e) { /* private mode */ } redraw(); } }),
       ' Show the books on the site, in this browser',
