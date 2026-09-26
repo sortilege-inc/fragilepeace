@@ -3263,9 +3263,38 @@ own additions kept (39 items against 38, gaining *Command +1 (2 → 3)*). The
 eleven items still without text are advancement records and mundane props, and
 they had none in the previous export either.
 
-`doji-setsuna/build/build_sheet.py` has **not** been re-run — regenerating her
-published sheet is a separate call from filing the export, and is waiting on the
-owner.
+### The sheet rebuild, and a corpus version migration it forced
+
+Run on the owner's call. `build_sheet.py` failed immediately: it reads the l5r5e
+rules corpus for the four techniques the Foundry export omits, and the **0.4 tree
+no longer exists** — it has been replaced by 0.5. Per the standing rule to default
+to the highest spec, pointed both at 0.5: one line in `site.config.json`
+(`external.dsl_l5r5e`, which is exactly what that key is for) and the version in
+the corpus filename inside the builder.
+
+**Checked the parse rather than trusting it**, because spec 0.5 changed list
+bodies in a way that makes consumers read them as empty *silently*. It is fine
+here — the parser looks for `^"<name>" DEF {` and exits loudly if a technique is
+missing, and OPPORTUNITIES is a brace block rather than a bracket list. All four
+corpus techniques came back with text, and all four came back **longer**.
+
+They came back longer because the 2026-09-23 corpus pass fixed paraphrased rules
+text, and this sheet had been carrying the paraphrase:
+
+| | 0.4 (was on the sheet) | 0.5 (now) |
+|---|---|---|
+| Shallow Waters | *"Learn the target's Ninjō."* | *"Learn the target's ninjō (see page 38)."* |
+| Crescent Moon Style | *"When you perform Guard action, you may spend (op):"* | *"When you perform Guard action (see page 264), you may spend (op) in the following way:"* |
+| Crescent Moon Style | *"(if within weapon's range)"* … *"Persists until start of your next turn"* | *"(if they are within your weapon's range)"* … *"This effect persists until the start of your next turn"* |
+
+Page references restored, en dashes restored, full book phrasing restored. The
+rebuild **fixed** a verbatim-rules-text problem rather than introducing one.
+
+The whole diff is 17 lines: those four techniques, **Command 2 → 3** from the
+session's advancement, and the actor's name losing a working label the previous
+pinned export had baked in (*"Doji Setsuna (Aug 19 corrected)"* → *"Doji
+Setsuna"*). *Scorn of Kakita* and *Shinjō Harunobu* both render correctly, which
+is the point of having reverted them first.
 
 ## Open questions — revisit after the pass
 
