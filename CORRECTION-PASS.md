@@ -3248,6 +3248,16 @@ is the trap the project memory records. Handled on the existing convention:
   (*Scorn of Kakita* → *Scorn of [One Group]*, and *Shinjō Harunobu* losing its
   macron)
 
+**Owner's ruling, 2026-09-26: both of Foundry's renames are wrong.** *Scorn of
+Kakita* and *Shinjō Harunobu* are correct. Reverted in the merged working file, so
+the next `build_sheet.py` run cannot regress them — the published sheet already
+says *Scorn of Kakita*, and rebuilding from the unfixed export would have silently
+changed it.
+
+Harunobu's macron needed nothing on the site: `archivist.CORRECTIONS` already
+carries `\bShinjo\b → Shinjō`, applied at read time, so all 53 plain spellings in
+`sources/` render with the macron and only the Foundry item name was wrong.
+
 Verified: 28 descriptions before, 28 after, **none lost**, and the new export's
 own additions kept (39 items against 38, gaining *Command +1 (2 → 3)*). The
 eleven items still without text are advancement records and mundane props, and
