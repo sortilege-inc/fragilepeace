@@ -3418,9 +3418,11 @@ Also fixed in `play/sheet.js`: a clan with no mon in `assets/mon` published a
 broken-image box in the toolbar. Dragonfly is the first minor clan to have a
 sheet. The image now removes itself on error; Morozane's Lion mon still loads.
 
-**Corpus gaps noted, not filled:** the 0.5 corpus carries no Damage for Katana,
+**Corpus gaps noted, not filled:** ~~the 0.5 corpus carries no Damage for Katana,
 Wakizashi or Tessen and no Physical/Supernatural for Ashigaru Armor or Traveling
-Clothes, so those cards show what it does carry. It has no Description for Scroll
+Clothes~~ — **wrong, and corrected below (2026-09-26, "The damage and armour
+values were there all along"). The corpus carries every one of them; my reader
+was asking for the wrong key names.** It has no Description for Scroll
 satchel, Journal of Observations or Traveling pack, and none for the kami's
 Liquid Body or Without Convictions. Kuma's Calligraphy Set description carries a
 hyphenation artefact from the source PDF ("callig- rapher").
@@ -3428,5 +3430,60 @@ hyphenation artefact from the source PDF ("callig- rapher").
 **Held for the owner:** his `system.social.giri` ends mid-phrase in the export —
 "To represent the Dragon Clan's interests in" — and is published exactly as it
 stands. The build says so on stderr every run.
+
+Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
+
+## 2026-09-26 — the damage and armour values were there all along
+
+I reported, an hour earlier in this same log, that the 0.5 corpus carried no
+damage for Katana, Wakizashi or Tessen and no resistances for Ashigaru Armor or
+Traveling Clothes. **That was wrong.** The owner said so, and the owner was
+right. The corpus carries all of it; my reader asked for names the corpus does
+not use, and a key that is absent looks exactly like a key that does not exist.
+
+`^"Katana" DEF` in `l5r5e-0.5-core-systems.ttrpg` holds Category, Skill, Range,
+**Base Damage 4**, Deadliness 5, Grips, **Qualities ["Ceremonial",
+"Razor-Edged"]**, Rarity 7, Price and Description. Three separate mistakes:
+
+| the reader asked for | the corpus writes |
+|---|---|
+| `Damage` | **`Base Damage`** in core; `Damage` only in Fields of Victory |
+| `Physical` / `Supernatural` | **`Physical Resistance`** / **`Supernatural Resistance`** |
+| `STRING` or `INTEGER` | `Qualities` is a **`LIST OF STRING [...]`**, matched by neither |
+
+The third is the one worth remembering: it is the same silent-miss shape as the
+§5d hash-bound list bodies. A scalar-only reader does not fail on a list — it
+reports the key as absent and moves on.
+
+Fixed in both builders that read gear from the corpus. `_prop()` now reads
+STRING, INTEGER and LIST OF STRING (tolerating an optional `#hash ^"Type"`
+before the bracket, so a corpus that adopts §5d's form does not go quiet), and
+each sheet field maps to the list of spellings the corpus actually uses.
+
+Morozane's swords now carry their damage, grips and qualities — Katana 4/5,
+Wakizashi 3/5, Tessen 4/3, Nagae Yari 5/2 — and his armour its resistance
+(Ashigaru 3, Traveling Clothes 2). **Harunobu's three armours had published with
+no resistance at all**, by the same cause: Ceremonial Clothes 1, Lacquered Armor
+4, Traveling Clothes 2.
+
+**Both builds now refuse rather than publish bare.** A Weapon without damage,
+deadliness or skill, or Armour without physical resistance, exits 1. Proven by
+pointing each reader back at the old key names: "corpus: Katana is a weapon with
+no damage — check the property names" and "corpus: Ceremonial Clothes is armour
+with no physical resistance", each exit 1. All six published sheets now pass a
+sweep for weapons or armour missing their numbers.
+
+Ashigaru Armor and Traveling Clothes have a Physical Resistance and no
+Supernatural one in the corpus. That reads as a genuine zero rather than a
+missing key, and the engine hides a zero, so those cards stay as they are.
+
+### Kuma's giri, completed by the owner
+
+The export's field stops at "To represent the Dragon Clan's interests in ". The
+owner supplied the ending (2026-09-26): **the City of the Rich Frog**, a place
+the chronicle already knows well — it appears in a dozen source files and has
+its own page. The builder publishes the completed sentence, defers the moment an
+export lands whose giri finishes its own sentence, and says loudly if a future
+export says something else instead.
 
 Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
