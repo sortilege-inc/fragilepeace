@@ -61,6 +61,7 @@ at the site repo root beside `REWRITE.md`.
 | 37 | Done — **every session with a recording is now corrected** |
 | 41 → 55 | Hand-authored from these same sources; lower priority |
 | 56 | **Written from the recording**, 2026-09-14 — the first session recorded straight rather than corrected |
+| 57 | Written from the recording, 2026-09-21 |
 
 **No recording exists for sessions 1, 3, 38, 39 and 40.** 3 was corrected from
 session 4's opening recap; 38–40 have nothing.
@@ -3195,6 +3196,66 @@ and deleted locally to save space — so an empty `recordings/` does not mean au
 not archived here, and nothing should be inferred from finding it bare. The
 transcripts in `archive/transcriptions/` are the durable local artefact, and they are
 what every gate and every correction in this log actually rests on.
+
+## Session 57 — written from the recording
+
+Two files, `2026-09-21 - L5R 1` and `2`, 635 normalised utterances. Filed as
+`sources/chronicle/s57-the-withered-tree.md`; the span is now 57 sessions to
+2026-09-21.
+
+Much cleaner than s56 — one long combat and then the climb over the tree, with
+the noise mostly a player's failing microphone rather than table admin.
+
+### Setsuna is not in it at all
+
+One mention of her name across both files, and it is the GM previewing next
+session. She stayed behind in s56 and never appears. **Setsuna's player ran
+[[Tonbo Kuma]] for the evening**, which is why a Foundry actor export for Kuma
+arrived with the recording. Recorded here because it explains the export, not in
+the chronicle, which does not track who is at the table.
+
+The knowledge model does the rest: the company pools what it learns, so she has
+the account without having been there, and the `## Setsuna` section says plainly
+that this is the largest thing to happen in the city since she arrived and her
+whole part in it was declining to go.
+
+### Held open
+
+**The willow's name.** The transcriber renders it four different ways across one
+session — *Sig on ashokie*, *seven Ashoki*, *Saban Shockey*, *seven Shockey* —
+and never twice the same. Recorded as "the great willow", as s56 had it, with the
+name left for the table to settle. Same treatment as the fox's name.
+
+### Four Foundry actor exports came with it
+
+Filed to `archive/foundry-export/` under the convention there, which drops the
+Foundry id suffix: `fvtt-Actor-tonbo-kuma.json` and
+`fvtt-Actor-tonbo-kuma-manifest-water-kami.json` are new;
+`fvtt-Actor-shinjo-harunobu.json` overwrote the existing one **after checking it
+was a strict superset** — 43 items against 41, 33 descriptions against 31,
+nothing dropped, gaining *Piercing Bolt Style* and a *Doji Setsuna* item.
+`scripts/build_harunobu_sheet.py` reads that file.
+
+**Setsuna's export needed the documented care and would have lost rules text
+without it.** The raw export carries **14 item descriptions against the pinned
+file's 28** — Foundry strips descriptions from gear it stores by reference, which
+is the trap the project memory records. Handled on the existing convention:
+
+- `fvtt-Actor-doji-setsuna-raw-2026-09-21.json` — the export exactly as it came
+- `fvtt-Actor-doji-setsuna-prev-2026-09-21.json` — the file the build had been reading
+- `fvtt-Actor-doji-setsuna.json` — the new export with the missing descriptions
+  carried forward from the previous one, including across two renames Foundry made
+  (*Scorn of Kakita* → *Scorn of [One Group]*, and *Shinjō Harunobu* losing its
+  macron)
+
+Verified: 28 descriptions before, 28 after, **none lost**, and the new export's
+own additions kept (39 items against 38, gaining *Command +1 (2 → 3)*). The
+eleven items still without text are advancement records and mundane props, and
+they had none in the previous export either.
+
+`doji-setsuna/build/build_sheet.py` has **not** been re-run — regenerating her
+published sheet is a separate call from filing the export, and is waiting on the
+owner.
 
 ## Open questions — revisit after the pass
 
