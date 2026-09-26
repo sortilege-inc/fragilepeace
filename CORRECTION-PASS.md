@@ -3370,3 +3370,63 @@ Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 
 
 **Not acted on:** `archive/foundry-export/fvtt-Actor-tonbo-kuma.json` (2026-09-21) exists
 and has no sheet builder. Kuma is the character Setsuna's player ran in s57.
+
+## 2026-09-26 — Tonbo Kuma's sheet, and three defects it exposed
+
+Built `play/kuma.html` on the owner's instruction, with the ruling recorded that
+**Kuma does not recur** — Setsuna's player ran him for s57 while she was absent.
+He is therefore deliberately not on the character chooser, and his bar carries no
+Bio link because he has no entity page; the builder refuses to emit if the
+template's Bio link ever stops being the string it removes.
+
+`scripts/build_kuma_sheet.py` is modelled on Jūjirō's, the other shugenja. His
+export is unusually complete — it carries the rules text for all 13 techniques
+and all 6 peculiarities, and full stats for his gear — so the corpus is consulted
+only for the gear *descriptions*, which Foundry strips on export.
+
+**The roller buttons are audited, not trusted.** Only each technique's action
+type is authored here; the TN, skill and ring come from the export and are then
+cross-checked against the Activation line the book prints, with a mismatch
+fatal. Proven by injection: changing Rise, Water's TN to 5, Slippery Manoeuvres'
+ring to fire, and one advancement's XP produced three FATALs and exit 1.
+
+His companion is a first — the manifest water kami Rise, Water summons is a real
+Adversary export, where Morozane's lion had to be transcribed from screenshots.
+
+### Three defects found by comparing the builders
+
+Building a sixth sheet meant reading the engine's contract closely, and
+**Morozane's sheet did not meet it** — all three confirmed in the browser before
+and after:
+
+1. **Skills rendered as `[object Object]`**, all thirteen. His builder emitted
+   `{"rank": n, "group": g}` where the engine reads `S.skills[name]` as a
+   number — in the skill list, the roller's die count, and the specialisation
+   lookups. The other four sheets emit plain integers. His roller had been
+   reading a non-number for its skill dice.
+2. **His gear showed names only.** The builder pulled Category, Skill, Range,
+   Damage, Deadliness, Rarity from the corpus, joined them into a `stats`
+   string, and wrote it into the page — but the engine reads `g.category`,
+   `g.skill`, `g.damage` and the rest individually, so every number it fetched
+   was dropped at render. `corpus_props()` now returns a dict and `gear()`
+   emits the engine's own fields.
+3. **His peculiarity cards had no label** — no Distinction, Passion or
+   Adversity tag — because the builder emitted `kind` where `entry()` reads
+   `tag`.
+
+Also fixed in `play/sheet.js`: a clan with no mon in `assets/mon` published a
+broken-image box in the toolbar. Dragonfly is the first minor clan to have a
+sheet. The image now removes itself on error; Morozane's Lion mon still loads.
+
+**Corpus gaps noted, not filled:** the 0.5 corpus carries no Damage for Katana,
+Wakizashi or Tessen and no Physical/Supernatural for Ashigaru Armor or Traveling
+Clothes, so those cards show what it does carry. It has no Description for Scroll
+satchel, Journal of Observations or Traveling pack, and none for the kami's
+Liquid Body or Without Convictions. Kuma's Calligraphy Set description carries a
+hyphenation artefact from the source PDF ("callig- rapher").
+
+**Held for the owner:** his `system.social.giri` ends mid-phrase in the export —
+"To represent the Dragon Clan's interests in" — and is published exactly as it
+stands. The build says so on stderr every run.
+
+Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.

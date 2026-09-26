@@ -168,7 +168,11 @@
     id.appendChild(el("div","sub2", S.school+" · Rank "+S.rank+" "+S.role));
     head.appendChild(id);
     var tools=el("div","sh-tools");
-    var mon=el("img","sh-mon"); mon.src="../assets/mon/"+S.clan.toLowerCase()+".svg"; mon.alt=S.clan+" mon"; tools.appendChild(mon);
+    // Minor clans have no mon in assets/mon — Tonbo Kuma is Dragonfly — and a
+    // missing file otherwise publishes as a broken-image box in the toolbar.
+    var mon=el("img","sh-mon"); mon.src="../assets/mon/"+S.clan.toLowerCase()+".svg"; mon.alt=S.clan+" mon";
+    mon.onerror=function(){ if(this.parentNode) this.parentNode.removeChild(this); };
+    tools.appendChild(mon);
     tools.appendChild(buildIO());
     head.appendChild(tools);
     root.appendChild(head);

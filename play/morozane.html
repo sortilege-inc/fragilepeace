@@ -66,58 +66,19 @@
     "status": 45
   },
   "skills": {
-    "fitness": {
-      "rank": 1,
-      "group": "martial"
-    },
-    "melee": {
-      "rank": 2,
-      "group": "martial"
-    },
-    "ranged": {
-      "rank": 1,
-      "group": "martial"
-    },
-    "unarmed": {
-      "rank": 1,
-      "group": "martial"
-    },
-    "meditation": {
-      "rank": 3,
-      "group": "martial"
-    },
-    "tactics": {
-      "rank": 1,
-      "group": "martial"
-    },
-    "culture": {
-      "rank": 1,
-      "group": "scholar"
-    },
-    "government": {
-      "rank": 1,
-      "group": "scholar"
-    },
-    "medicine": {
-      "rank": 1,
-      "group": "scholar"
-    },
-    "sentiment": {
-      "rank": 1,
-      "group": "scholar"
-    },
-    "command": {
-      "rank": 4,
-      "group": "social"
-    },
-    "performance": {
-      "rank": 1,
-      "group": "social"
-    },
-    "survival": {
-      "rank": 3,
-      "group": "trade"
-    }
+    "fitness": 1,
+    "melee": 2,
+    "ranged": 1,
+    "unarmed": 1,
+    "meditation": 3,
+    "tactics": 1,
+    "culture": 1,
+    "government": 1,
+    "medicine": 1,
+    "sentiment": 1,
+    "command": 4,
+    "performance": 1,
+    "survival": 3
   },
   "bushido": {
     "paramount": "",
@@ -212,82 +173,91 @@
   "peculiarities": [
     {
       "name": "Animal Bond",
-      "kind": "Distinction",
+      "tag": "Distinction",
       "text": "Effects: The following apply to a character with the Animal Bond passion:\n\n• Reciprocating your interest, a small, mundane animal of some kind has attached itself to you. Choose one silhouette 0 or 1 animal; it follows you around wherever you go and generally acts as your companion. It can be cajoled to do what you want, but it might need incentives (usually food) to perform difficult tasks on demand. If you are granted an animal as part of your starting outfit, that animal can be your companion (regardless of the usual size restrictions).\n\n• After performing a check to interact with an animal (such as a Medicine [Earth] check to mend its injuries or a Survival [Earth] check to calm it), you remove 3 strife."
     },
     {
       "name": "Glorious Deeds",
-      "kind": "Distinction",
+      "tag": "Distinction",
       "text": "Effects: The following apply to a character with the Glorious Deeds passion:\n\n• You find risking your life to be a simple matter, as long as there is a witness to remember your bravery. No threat or challenge deters you if you might be remembered for it, making even the most daunting tasks easy ones for which to prepare.\n\n• After performing a check to improve your reputation or gain fame as a great samurai (such as a Performance [Fire] check to impress a court with your new melody, or a Tactics [Fire] check to execute a daring raid on the enemy), you remove 3 strife."
     },
     {
       "name": "Famously Lucky",
-      "kind": "Distinction",
+      "tag": "Distinction",
       "text": "Effects: The following apply to a character with the Famously Lucky distinction:\n\n• Other people have heard of you for your good fortune, and they believe it by default unless given evidence to the contrary.\n\n• When performing a check for which you need to leverage your reputation for having things turn out your way (such as a Command [Void] check to get your troops to put their faith in you utterly or a Games [Void] check to let fate decide the match), you may reroll up to two dice."
     },
     {
       "name": "Generosity",
-      "kind": "Passion",
+      "tag": "Passion",
       "text": "Effects: The following apply to a character with the Generosity passion:\n\n• You can always identify a proper gift for a particular person that does not risk giving offense or slighting them publicly.\n\n• After performing a check to acquire or give a gift (such as a Design [Water] check to select an item that complements someone’s wardrobe or a Commerce [Water] check to find and select a gift at a market), you remove 3 strife."
     },
     {
       "name": "Ferocity",
-      "kind": "Passion",
+      "tag": "Passion",
       "text": "Effects: The following apply to a character with the Ferocity anxiety:\n\n• When you strike, you have trouble holding back your power, and you tend to lash out even when a subtler approach would be more appropriate. When you defeat a minion NPC, the minion is always killed, even if you would prefer to incapacitate them.\n\n• After performing a check to intentionally hold back or apply force subtly (such as a Games [Air] check to manipulate your opponent or a Martial Arts [Melee] [Air] check to strike a precise blow), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
     },
     {
       "name": "Belligerent",
-      "kind": "Adversity",
+      "tag": "Adversity",
       "text": "Effects: The following apply to a character with the Belligerent anxiety:\n\n• You find it nearly impossible to keep your cool when provoked, and may even look for an excuse to fight with people you consider deserving of a good thrashing. Delicate social situations can easily spiral out of control when you suspect the other party of giving offense.\n\n• After performing a check to respond to provocation without resorting to violence or threats (such as a Performance [Earth] check to calmly sing a song that was originally composed to paint your lineage in an unflattering light or a Meditation [Earth] check to stay in formation when you spot a rival across the battlefield), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point."
     },
     {
       "name": "Lost Arm or Lost Hand",
-      "kind": "Adversity",
+      "tag": "Adversity",
       "text": "Effects: The following apply to a character with the Lost Arm or Lost Hand adversity:\n\n• You have only one usable hand or arm. You cannot wield weapons in a two-handed grip or hold anything in your missing hand. If you are missing only the hand, you can strap items to the arm for use.\n\n• When you make a check for which having two hands is very valuable (such as a Martial Arts [Unarmed] [Fire] check to grapple a foe into submission or a Survival [Fire] check to leap onto a galloping horse’s back), you must choose and reroll two dice containing (su) or (ex).\n\n \n\nAfter resolving the check, if you failed, you gain 1 Void point."
     }
   ],
   "gear": [
     {
       "name": "Nagae Yari",
-      "stats": "Category Polearm · Skill Martial Arts [Melee] · Range 2 · Damage 5 · Deadliness 2 · Rarity 2",
-      "equipped": true,
-      "text": ""
+      "kind": "Weapon",
+      "category": "Polearm",
+      "range": "2",
+      "damage": "5",
+      "deadliness": "2",
+      "rarity": 2,
+      "skill": "melee"
     },
     {
       "name": "Katana",
-      "stats": "Category Swords · Skill Martial Arts [Melee] · Range 1 · Deadliness 5 · Rarity 7",
-      "equipped": false,
-      "text": ""
+      "kind": "Weapon",
+      "category": "Swords",
+      "range": "1",
+      "deadliness": "5",
+      "rarity": 7,
+      "skill": "melee"
     },
     {
       "name": "Wakizashi",
-      "stats": "Category Swords · Skill Martial Arts [Melee] · Range 0-1 · Deadliness 5 · Rarity 7",
-      "equipped": false,
-      "text": ""
+      "kind": "Weapon",
+      "category": "Swords",
+      "range": "0-1",
+      "deadliness": "5",
+      "rarity": 7,
+      "skill": "melee"
     },
     {
       "name": "Tessen",
-      "stats": "Category Hand Weapons · Skill Martial Arts [Melee] · Range 0-1 · Deadliness 3 · Rarity 7",
-      "equipped": false,
-      "text": ""
+      "kind": "Weapon",
+      "category": "Hand Weapons",
+      "range": "0-1",
+      "deadliness": "3",
+      "rarity": 7,
+      "skill": "melee"
     },
     {
       "name": "Ashigaru Armor",
-      "stats": "Rarity 3",
-      "equipped": true,
-      "text": ""
+      "kind": "Armour",
+      "rarity": 3
     },
     {
       "name": "Traveling Clothes",
-      "stats": "Rarity 2",
-      "equipped": false,
-      "text": ""
+      "kind": "Armour",
+      "rarity": 2
     },
     {
       "name": "Traveling pack",
-      "stats": "",
-      "equipped": false,
-      "text": ""
+      "kind": "Item"
     }
   ],
   "titles": [],
