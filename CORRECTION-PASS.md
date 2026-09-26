@@ -3334,3 +3334,39 @@ is the point of having reverted them first.
 - **Onahime / Kuni Wardens** said the Hunter visages were painted on Monban's
   *mask*. The s6 recording has him take the mask off to show them painted on his
   *face*. Both pages corrected; check nothing later contradicts it.
+
+## 2026-09-26 — the other four sheet builders, migrated and rebuilt
+
+Setsuna's rebuild exposed a 0.4 corpus reference; this pass swept the other four.
+
+**Paths were already correct.** `build_harunobu_sheet.py`, `build_jujiro_sheet.py`,
+`build_anzu_sheet.py` and `build_morozane_sheet.py` all resolve `CORPUS_DIR` through
+`cfg.DSL_L5R5E`, so the one-line `site.config.json` edit migrated them too. Only their
+docstrings still said 0.4 (now 0.5, in all five).
+
+**But their built sheets were stale** — last built 2026-09-13, against 0.4. Rebuilt all
+four. Three kinds of change came back:
+
+1. *Verbatim rules text restored* by the 2026-09-23 corpus pass, as with Setsuna.
+2. **Mechanical corrections**, not just wording. Three found, all in Morozane:
+   - Rallying Cry — targets add a kept ring die to an `(op)(st)` result, **not** `(su)(st)`.
+   - Battle in the Mind — naming two rings costs **`(op)(op)`**, not one `(op)`.
+   - Striking as Fire / Battle in the Mind — `+(op)` read back as `(op)+`.
+   The sheet had been showing the wrong cost and the wrong die result since it was built.
+3. **A missed advancement.** Harunobu's export is dated 2026-09-21 (the s57 drop) and
+   carries **Piercing Bolt Style**, a Kata his sheet never showed — the sheet was a full
+   build behind the export, not a corpus problem.
+
+**A defect the migration introduced, found and fixed.** The 0.5 corpus writes paragraph
+breaks as a `\n` escape inside DEF strings; none of the five builders decoded it, so the
+escape reached the page as two literal characters (2 occurrences each in anzu, harunobu,
+jujiro). The chained `.replace()` unescapers could not be extended safely — they would
+turn a literal `\\n` into a newline — so all five now run one regex pass over `\\(.)`.
+Verified: `grep -o '\\\\n'` counts 2/2/2 before, 0 across all five after.
+
+Harunobu's `corpus_props()` did no unescaping at all; it now does.
+
+Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
+
+**Not acted on:** `archive/foundry-export/fvtt-Actor-tonbo-kuma.json` (2026-09-21) exists
+and has no sheet builder. Kuma is the character Setsuna's player ran in s57.
