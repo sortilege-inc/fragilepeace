@@ -3565,3 +3565,32 @@ Files archived: `.m4a` to `archive/recordings/`, `.txt` to
 `archive/transcriptions/`.
 
 Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
+
+## 2026-09-29 — Harunobu's glory award
+
+Owner's ruling: a major glory award for his conduct in the war, **+6 to a total
+of 55**. The pinned export predates it and reads 49, and 49 + 6 = 55, so the
+owner's total and the export's starting point agree — which is the only reason
+this could be applied as an award rather than as a number typed over the top.
+
+`GLORY_AWARD = {"before": 49, "delta": 6}` in `build_harunobu_sheet.py`, applied
+to `system.social.glory` on the way to the sheet. Recorded as the arithmetic
+rather than as a flat 55 so it retires itself. Both branches proven by faking the
+export value and rebuilding:
+
+- export reading **55** → *"GLORY_AWARD is no longer needed — the export carries
+  55 itself"*, and the award stops applying.
+- export reading anything else (tested 42) → *"NOTE: export glory is 42, neither
+  the pre-award 49 nor the post-award 55; publishing it verbatim"* — because an
+  export that has moved to a third number means something happened that this
+  block does not know about, and adjusting it silently would be the wrong answer.
+
+The export was restored byte-identical afterwards and the sheet rebuilt from it.
+His sheet now reads honour 55, glory 55, status 35.
+
+**Not added to any chronicle entry.** The award is for the war, no session's
+recording contains it being given, and s58's Learned holds what the 2026-09-28
+recording supports. It belongs in whichever session actually awarded it, and
+that is the owner's call rather than a guess.
+
+Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
