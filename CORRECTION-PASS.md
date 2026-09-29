@@ -3588,9 +3588,10 @@ export value and rebuilding:
 The export was restored byte-identical afterwards and the sheet rebuilt from it.
 His sheet now reads honour 55, glory 55, status 35.
 
-**Not added to any chronicle entry.** The award is for the war, no session's
-recording contains it being given, and s58's Learned holds what the 2026-09-28
-recording supports. It belongs in whichever session actually awarded it, and
-that is the owner's call rather than a guess.
+**Not added to any chronicle entry, and settled that way.** The award is for the
+war and no session's recording contains it being given. Owner, 2026-09-29: it was
+awarded out of play, at his capture, and is not to be integrated into the
+chronicle. The sheet carries it; the record does not. Closed — not an open thread
+for a later pass to reopen.
 
 Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
