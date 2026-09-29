@@ -1,0 +1,81 @@
+EXTENSION "FragilePeace_Companions" {
+    NAME "The Fragile Peace — the companions"
+    VERSION "0.1.0"
+    SPEC_VERSION "0.5"
+    RELEASE_DATE "2026-09-29"
+    DEPENDS_ON "L5R5e_Core_Core"
+
+    # The horses and the summoned kami, as instances of the corpus's ^"NPC" — the shape
+    # its own 149 statblocks use. Converted from campaign/source/foundry/ (the Foundry
+    # exports, byte for byte) by campaign/source/convert_companions.py;
+    # campaign/source/check_companions.py reads the built layer back against them.
+
+    # From foundry/fvtt-Actor-khar-baatar.json.
+    #FPnpcKharBaatar ^"Khar Baatar" DEF {
+        EXTENDS #t4540de6f35155c46f41f0 ^"NPC"
+        PROPERTIES {
+            ^"Name" STRING "Khar Baatar" FIXED
+            ^"Type" STRING "Minion" FIXED
+            ^"Companion Of" #FPpcShinjoHarunobu ^"Shinjō Harunobu"
+            ^"Combat Conflict Rank" INTEGER 3
+            ^"Intrigue Conflict Rank" INTEGER 1
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 1 ^"Fire" INTEGER 1 ^"Water" INTEGER 1 ^"Void" INTEGER 1 }
+            ^"Demeanor" STRING "Loyal"
+            ^"Social Skill Check TN Modifiers" STRING "Fire -2, Air +1, Earth -2"
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 4
+            ^"Focus" INTEGER 6
+            ^"Vigilance" INTEGER 2
+            ^"Advantages" LIST OF STRING ["Brute Strength", "Masterful Fighter"]
+            ^"Disadvantages" LIST OF STRING ["Willful"]
+            ^"Favored Weapons" LIST OF STRING ["Hooves"]
+        }
+        DESCRIPTION "Moto Charger.\n\nThere were horses in Rokugan before the Unicorn Clan returned with their foreign-bred steeds, and though they are not as fierce, they still can be ridden.\n\nLoyal Steed: A Rokugani pony is a silhouette 3 creature. It can be ridden by a human-sized (silhouette 2 or lower) rider.\nMounts and Riding\nWhile it is being ridden during a conflict, a mount does not take a turn of its own, and provides the following benefits to its rider:\n- When the rider succeeds on a Movement action check, add bonus successes equal to the mount's Water Ring.\n-  The rider may use their Survival skill in place of their Fitness skill for any Fitness check they make. During narrative and downtime scenes, a mounted character doubles their overland travel speed."
+    }
+
+    # From foundry/fvtt-Actor-kurige.json.
+    #FPnpcKurige ^"Kurige" DEF {
+        EXTENDS #t4540de6f35155c46f41f0 ^"NPC"
+        PROPERTIES {
+            ^"Name" STRING "Kurige" FIXED
+            ^"Type" STRING "Minion" FIXED
+            ^"Companion Of" #FPpcShinjoAnzu ^"Shinjō Anzu"
+            ^"Combat Conflict Rank" INTEGER 3
+            ^"Intrigue Conflict Rank" INTEGER 1
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 1 ^"Fire" INTEGER 1 ^"Water" INTEGER 1 ^"Void" INTEGER 1 }
+            ^"Demeanor" STRING "Cautious"
+            ^"Social Skill Check TN Modifiers" STRING "Air +2, Earth -2"
+            ^"Endurance" INTEGER 10
+            ^"Composure" INTEGER 4
+            ^"Focus" INTEGER 6
+            ^"Vigilance" INTEGER 2
+            ^"Advantages" LIST OF STRING ["Fleet of Foot"]
+            ^"Favored Weapons" LIST OF STRING ["Hooves"]
+        }
+        DESCRIPTION "There were horses in Rokugan before the Unicorn Clan returned with their foreign-bred steeds, and though they are not as fierce, they still can be ridden.\n\nLoyal Steed: A Rokugani pony is a silhouette 3 creature. It can be ridden by a human-sized (silhouette 2 or lower) rider.\nMounts and Riding\nWhile it is being ridden during a conflict, a mount does not take a turn of its own, and provides the following benefits to its rider:\n- When the rider succeeds on a Movement action check, add bonus successes equal to the mount's Water Ring.\n-  The rider may use their Survival skill in place of their Fitness skill for any Fitness check they make. During narrative and downtime scenes, a mounted character doubles their overland travel speed."
+    }
+
+    # From foundry/fvtt-Actor-tonbo-kuma-manifest-water-kami.json.
+    #FPnpcManifestWaterKami ^"Tonbo Kuma's Manifest Water Kami" DEF {
+        EXTENDS #t4540de6f35155c46f41f0 ^"NPC"
+        PROPERTIES {
+            ^"Name" STRING "Tonbo Kuma's Manifest Water Kami" FIXED
+            ^"Type" STRING "Adversary" FIXED
+            ^"Companion Of" #FPpcTonboKuma ^"Tonbo Kuma"
+            ^"Combat Conflict Rank" INTEGER 7
+            ^"Intrigue Conflict Rank" INTEGER 4
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 1 ^"Fire" INTEGER 1 ^"Water" INTEGER 6 ^"Void" INTEGER 2 }
+            ^"Demeanor" STRING "Adaptable"
+            ^"Social Skill Check TN Modifiers" STRING "Fire +2, Earth -2"
+            ^"Endurance" INTEGER 14
+            ^"Composure" INTEGER 8
+            ^"Focus" INTEGER 8
+            ^"Vigilance" INTEGER 2
+            ^"Advantages" LIST OF STRING ["Liquid Body"]
+            ^"Disadvantages" LIST OF STRING ["Without Convictions"]
+            ^"Favored Weapons" LIST OF STRING ["Smashing Torrent: Range 1–2, Damage 7, Deadliness 3, Snaring, deals supernatural damage"]
+            ^"Gear" LIST OF STRING ["Enshrouding Fog (Physical 3, Supernatural 4)"]
+        }
+        DESCRIPTION "Water kami usually take the form of a humanoid torso rising from a source of water; if they have legs, these are often obscured within the water or become visible only if the kami stride onto land. The forms of these kami shift and change as circumstances require, and they can even split themselves to act in multiple places at once and reabsorb damaged copies to restore their own vitality.\n\nLiving Water Spirit: A manifest kami is an Otherworldly being. Additionally, once per scene as an action of the appropriate types, a manifest water kami may perform any one Water invocation other than Rise, Water. It counts as succeeding with 3 bonus successes and 2 (op)."
+    }
+}

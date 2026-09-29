@@ -87,8 +87,19 @@ that were not in the plan —
   sheet builder and nowhere else; the export still reads 49. Converting without noticing would have
   published 49 and lost it. `OWNER_RULINGS` now carries it as the arithmetic, self-retiring.
 
-**Still to do in M3:** the three companions — Khar Baatar, Kurige and the manifest water kami — which
-are Foundry `npc` actors and want the corpus's NPC type, not `Samurai`.
+Landed for the companions too: Khar Baatar, Kurige and the manifest water kami, as instances of
+the corpus's `^"NPC"` in exactly the property set its own 149 statblocks use, with a
+`^"Companion Of"` reference to the character each belongs to — the one thing the retiring sheets
+showed that the corpus's shape has nowhere to put. **69 fields compared, 0 differ**, three planted
+differences each caught. The check found a real loss on the way: Khar Baatar's Foundry `notes` say
+*Moto Charger.* — his breed, and not a Rokugani pony — which the first draft dropped. It now leads
+his description.
+
+**Corrected 2026-09-29 (owner):** *Voice of Authority* is not homebrew and not a signature scroll.
+It is the `TITLE_ABILITY` of the corpus's Emerald Magistrate, word for word, and Foundry types the
+item wrongly. It is skipped as a title ability like any other — but only once the sheet is shown to
+hold the title that grants it, proven by removing that title and watching the conversion refuse.
+The invented entity the first pass created is gone.
 
 **Not in the layer at all:** Shiba Midori and Bayushi Monban. They are other players' characters and
 no export of either is in this campaign's archive; `convert_cast.MISSING` names them so the absence
@@ -104,7 +115,7 @@ At deploy, not before.
 | **M0 landed** | This plan; owner's answers on F1–F3 | — |
 | **M1 landed** | **The fork.** Three commits on `vtt-instance`: `git mv` everything under `campaign/`; merge `upstream/main` with `--allow-unrelated-histories`; the boundary files + `.gitattributes` + the driver | 697 files `R100`, 0 insertions, 0 deletions. Merge: no collisions. Boundary proven by making it fail first — without the driver, `CONFLICT … engine/config.js`, exit 1; with it, exit 0, config keeps *The Fragile Peace* and the upstream-owned file takes its change |
 | **M2 landed** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` All five exit 0 from `campaign/source/`, and `build_site` rewrote the 509 pages **byte-identically** after the move — zero changed files. `factguard` proven still to read git at the new path by planting a cut and watching its counts drop |
-| **M3 landed (characters); companions pending** | **The cast into `campaign/dsl/`** | 8 sheets, **336 fields compared, 0 differ** (`check_cast.py`, reading the BUILT layer back against the exports). Three planted differences each caught, exit 1. Layer gated three ways by `build_layer.sh`: 401 strings 0 uncovered, 9 ids none the corpus's, every reference resolving |
+| **M3 landed** | **The cast into `campaign/dsl/`** | 8 sheets, **336 fields compared, 0 differ** (`check_cast.py`, reading the BUILT layer back against the exports). Three planted differences each caught, exit 1. Layer gated three ways by `build_layer.sh`: 401 strings 0 uncovered, 9 ids none the corpus's, every reference resolving |
 | **M4** | **The characters onto the VTT sheet**; `play/` deleted | Every version of every character checked against its old sheet |
 | **M5** | **The content into tabs** — `build_site.py` retargeted, stylesheet scoped to its element, tabs pushed at the `site` stage, the cast page rebuilt on the DSL layer keeping its storage keys | Old output vs new, text-identical; every link resolves; no `:root`/`body` rule escaping into the VTT |
 | **M6** | **The GM's material** into `campaign/pack/seed.json`; `/gm/` gate, `ownAdventure`, `hidePanes`, robots | The family standards checked in the browser on :8734 |

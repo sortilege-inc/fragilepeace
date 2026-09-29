@@ -68,9 +68,6 @@ LAYERS = [
      'The cast: instances of the Samurai ACTOR in the corpus\'s pregen conventions.'),
 ]
 
-# Homebrew the campaign plays and no book carries. Each is emitted as its own DEF in the cast
-# layer, its rules text taken verbatim from the Foundry export rather than retyped here, and
-# referenced from the sheets that hold it. A homebrew item with no entry stops the conversion.
 # What the owner has ruled and no Foundry export carries yet. Applied on top of the export's own
 # value, as the arithmetic rather than as a number, so it retires itself: when an export arrives
 # already carrying the ruled value the build says so on stderr and the entry can be deleted, and an
@@ -103,16 +100,9 @@ def ruled(pid, field, value):
                      % (pid, field, value, r['before'], r['after'], r['why']))
 
 
-HOMEBREW = {
-    'Voice of Authority': {
-        'id': '#FPhbVoiceOfAuthority',
-        'type': 'Technique',
-        'kind': 'Signature Scroll',
-        # Doji Setsuna's, bought at rank 2. Foundry records no source book or page, which is what
-        # marks it homebrew rather than a book entry the corpus is missing.
-        'from': ('fvtt-Actor-doji-setsuna.json', 'Voice of Authority'),
-    },
-}
+# Items Foundry files under the wrong type. The value is the entity that actually grants the
+# ability; the sheet must be holding it for the item to be skipped as coming with it.
+MISCLASSIFIED = {'Voice of Authority': 'Emerald Magistrate'}
 
 MARTIAL = {'melee': 'Martial Arts [Melee]', 'ranged': 'Martial Arts [Ranged]', 'unarmed': 'Martial Arts [Unarmed]'}
 # Foundry's name → the corpus's, where they differ by more than a clan suffix, a specifier or the apostrophe:
@@ -227,13 +217,19 @@ def fields(D, d, archived=False, pid=None):
         elif t == 'advancement':
             continue
         elif t == 'signature_scroll':
-            # Homebrew: a signature scroll with no source_reference, so it is in no book and the
-            # corpus cannot be asked for it. Carried as a campaign entity of its own, defined in
-            # HOMEBREW below with its rules text verbatim from the export, and referenced here the
-            # way a corpus technique would be. Foundry's own type is kept on the entity.
-            if nm not in HOMEBREW:
-                raise Unresolved('%s: homebrew (%s) with no entry in HOMEBREW' % (nm, t))
-            techs.append('%s ^"%s"' % (HOMEBREW[nm]['id'], nm)); continue
+            # Foundry's item type is wrong here (owner, 2026-09-29). Voice of Authority is not a
+            # signature scroll: it is the TITLE_ABILITY of the corpus's Emerald Magistrate, word
+            # for word. A title ability comes with its Title, as a school ability does with its
+            # School, so it is skipped — but only once the sheet is shown to hold the title that
+            # grants it, or a misfiled item could vanish off a character who never had it.
+            grant = MISCLASSIFIED.get(nm)
+            if not grant:
+                raise Unresolved('%s: an item Foundry types %s, with no entry in MISCLASSIFIED'
+                                 % (nm, t))
+            if not any(i['type'] == 'title' and i['name'] == grant for i in d['items']):
+                raise Unresolved('%s comes with the title %r, which this sheet does not hold'
+                                 % (nm, grant))
+            continue
         else:
             raise Unresolved('%s: an item of no known type (%s)' % (nm, t))
         if cn != nm.replace('\u2019', "'"):
@@ -296,33 +292,6 @@ def fields(D, d, archived=False, pid=None):
     return P
 
 
-def homebrew_blocks():
-    """The campaign's own entities, defined before the sheets that reference them.
-
-    The rules text is read out of the Foundry export named in HOMEBREW, never retyped here, so the
-    entity and the sheet cannot disagree. Each extends the corpus's Technique, because that is what
-    the text is — an activation with an effect — and carries Foundry's own word for it in
-    ^"Kind" so nothing about where it came from is lost.
-    """
-    out = []
-    for name, hb in HOMEBREW.items():
-        fn, item = hb['from']
-        d = json.load(open(os.path.join(FOUNDRY, fn), encoding='utf-8'))
-        hits = [i for i in d['items'] if i['name'] == item]
-        if len(hits) != 1:
-            raise SystemExit('homebrew %s: %d items named %r in %s' % (name, len(hits), item, fn))
-        text = html_text(hits[0]['system'].get('description'))
-        if not text:
-            raise SystemExit('homebrew %s: no rules text in %s' % (name, fn))
-        P = ['^"Name" STRING %s FIXED' % q(name),
-             '^"Kind" STRING %s' % q(hb['kind']),
-             '^"Effect" STRING %s' % q(text)]
-        out.append('    # Homebrew, from foundry/%s. No book carries it.\n    %s ^"%s" DEF {\n'
-                   '        EXTENDS %s\n        PROPERTIES {\n%s\n        }\n    }\n'
-                   % (fn, hb['id'], name, TECH, '\n'.join('            ' + x for x in P)))
-    return out
-
-
 def block(h, name, P, comment):
     return '    # %s\n    %s ^"%s" DEF {\n        EXTENDS %s\n        PROPERTIES {\n%s\n        }\n    }\n' % (
         comment, h, name, SAMURAI, '\n'.join('            ' + p for p in P))
@@ -365,7 +334,7 @@ def main():
                 except Unresolved as e:
                     errors.append('%s (%s): %s' % (name, f, e))
         if blocks:
-            wrote.append((out, ext, title, version, about, homebrew_blocks() + blocks))
+            wrote.append((out, ext, title, version, about, blocks))
     if errors:
         print('\n'.join('UNRESOLVED ' + e for e in errors)); sys.exit(1)
     for out, ext, title, version, about, blocks in wrote:

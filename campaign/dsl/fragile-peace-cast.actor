@@ -9,16 +9,6 @@ EXTENSION "FragilePeace_Cast" {
     # campaign/source/foundry/ (the Foundry exports, byte for byte) by campaign/source/convert_pcs.py;
     # campaign/source/check_pcs.py reads the built layer back against them field by field.
 
-    # Homebrew, from foundry/fvtt-Actor-doji-setsuna.json. No book carries it.
-    #FPhbVoiceOfAuthority ^"Voice of Authority" DEF {
-        EXTENDS #L5R350fG9hI1jK3lM5nO7p ^"Technique"
-        PROPERTIES {
-            ^"Name" STRING "Voice of Authority" FIXED
-            ^"Kind" STRING "Signature Scroll"
-            ^"Effect" STRING "Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets."
-        }
-    }
-
     # The current sheet: foundry/fvtt-Actor-doji-setsuna.json.
     #FPpcDojiSetsuna ^"Doji Setsuna" DEF {
         EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
@@ -41,7 +31,7 @@ EXTENSION "FragilePeace_Cast" {
             ^"Ninjō" STRING "Strictures too often interfere with a beautiful tale.\n\nShe escapes into literature, particularly pillow-books, and riding her horse, Kogorashi, a Utaku steed and wedding gift from her husband's family."
             ^"Giri" STRING "Currently, Kitsuki Kāgi, in service as an Emerald Magistrate under the Emperor.\n\nPreviously, she served Asahina Shigehiro, lord of the city of Shirogome, on issues of imperial law and legal arbitration.\n\nHer giri: Rule must bind, and if needed, contort."
             ^"Skills" LIST OF STRING ["Composition 2", "Design 2", "Fitness 1", "Martial Arts [Unarmed] 3", "Culture 2", "Government 3", "Sentiment 2", "Command 3", "Courtesy 3", "Performance 1", "Commerce 1"]
-            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#kcz9tYqb7ZkxEjkD96CUXF ^"Courtier's Resolve", #n1bPScWFDIHIP8vDn1nCBD ^"Stonewall Tactics", #NHSvf55MvHC872WUw9laYv ^"Beware the Smallest Mouse", #HqWk8bnWA0tB1rZgr0Ru1f ^"Treaty Signing", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #svvmtBGYb5XXrrqx9aY0hD ^"Well of Desire", #9joMTiwaMNeSp95EKmWY6s ^"The Wind Blows Both Ways", #FI4nQQ3pXWkloDjbYP6e6w ^"Call to Ride", #ptNdPtiPE6nxbxWJzsFBAe ^"Hidden in Smoke", #FPhbVoiceOfAuthority ^"Voice of Authority"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#kcz9tYqb7ZkxEjkD96CUXF ^"Courtier's Resolve", #n1bPScWFDIHIP8vDn1nCBD ^"Stonewall Tactics", #NHSvf55MvHC872WUw9laYv ^"Beware the Smallest Mouse", #HqWk8bnWA0tB1rZgr0Ru1f ^"Treaty Signing", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #svvmtBGYb5XXrrqx9aY0hD ^"Well of Desire", #9joMTiwaMNeSp95EKmWY6s ^"The Wind Blows Both Ways", #FI4nQQ3pXWkloDjbYP6e6w ^"Call to Ride", #ptNdPtiPE6nxbxWJzsFBAe ^"Hidden in Smoke"]
             ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#k6iLCNkoKlSSE9s8S4yNxI ^"Wordplay", #esSp6Eof1QH3kxH40Z7DB7 ^"Blessed Lineage", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet", #TgTnBnqZtHhNPTHTtfP8Ul ^"Famously Successful", #Yh2FO13lb5Hhsp27DHIPaf ^"Legal Scholarship", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet"]
             ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#De0xOyZvPCpMxKmEu43H7M ^"Scorn of [One Group]", #ck5C2s1z0QzPvtY5f3zH8d ^"Fear of Death", #varuU3zrlVDHkMrUhqq4xt ^"Haunting", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
             ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#te00d8a952f43f435d9017 ^"Emerald Magistrate", #9CQXynRmsZhECY4Lgu5sWP ^"Advisor"]

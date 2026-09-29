@@ -15,8 +15,8 @@ import json, os, re, sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(HERE, 'campaign/source'))
-from convert_cast import (SHEETS, GM_SHEETS, FOUNDRY, ALIAS, SCHOOL_ALIAS, HOMEBREW,  # noqa: E402
-                          AS_RECORDED_FIX, OWNER_RULINGS)
+from convert_cast import (SHEETS, GM_SHEETS, FOUNDRY, ALIAS, SCHOOL_ALIAS,  # noqa: E402
+                          AS_RECORDED_FIX, OWNER_RULINGS, MISCLASSIFIED)
 
 # each group of sheets against its own built layer (a book of its own)
 LAYERS = [(SHEETS, 'campaign/data/campaign.js')]
@@ -135,11 +135,16 @@ def compare(label, name, d, P, archived=None, eid=None):
     nz = sorted((k, v) for g in s['skills'].values() for k, v in g.items() if v)
     got = sorted((re.sub(r'^Martial Arts \[(\w+)\]$', lambda m: m.group(1).lower(), x.rsplit(' ', 1)[0]).lower(), int(x.rsplit(' ', 1)[1])) for x in P.get('Skills') or [])
     eq('skills (every non-zero rank)', nz, got)
-    # Homebrew signature scrolls are carried as entities extending Technique (convert_cast.HOMEBREW),
-    # so they are expected in Techniques even though Foundry files them under their own item type.
-    eq('techniques (less the school/title ability, plus homebrew scrolls)',
-       [plain(i['name']) for i in items if i['type'] == 'technique' and i['system'].get('technique_type') not in COMES_WITH]
-       + [i['name'] for i in items if i['type'] == 'signature_scroll'], P.get('Techniques'))
+    eq('techniques (less the school/title ability)',
+       [plain(i['name']) for i in items if i['type'] == 'technique'
+        and i['system'].get('technique_type') not in COMES_WITH], P.get('Techniques'))
+    # An item Foundry types wrongly, which really comes with a title, is absent from the layer like
+    # any other title ability — and the title that grants it has to be on the sheet.
+    for i in items:
+        if i['type'] == 'signature_scroll':
+            grant = MISCLASSIFIED.get(i['name'])
+            eq('%s: comes with a title the sheet holds' % i['name'], True,
+               bool(grant) and any(j['type'] == 'title' and j['name'] == grant for j in items))
     eq('peculiarities: distinction + passion', [plain(i['name']) for i in items if i['type'] == 'peculiarity' and i['system']['peculiarity_type'] in ('distinction', 'passion')], P.get('Advantages'))
     eq('peculiarities: adversity + anxiety', [plain(i['name']) for i in items if i['type'] == 'peculiarity' and i['system']['peculiarity_type'] in ('adversity', 'anxiety')], P.get('Disadvantages'))
     eq('titles', [plain(i['name']) for i in items if i['type'] == 'title'], P.get('Titles', []))
