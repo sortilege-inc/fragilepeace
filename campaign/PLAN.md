@@ -50,7 +50,7 @@ check is the gate, not the build succeeding.
 Work through M0–M6 to a site that runs locally. The Worker, Pages and HTTPS are a separate step
 the owner confirms.
 
-**F4 — The content moves by rebuilding it, not by scraping it. PROPOSED.**
+**F4 — The content moves by rebuilding it, not by scraping it. PROPOSED (M5 depends on it).**
 INSTANCES.md step 5 says move the old pages rather than rewrite them, because Portents' pages were
 hand-authored HTML. Fragile Peace's are **generated**: 509 pages built from 60 chronicle files and
 56 local entity files by `build_site.py`. Scraping its own output back into `campaign/docs/` would
@@ -60,11 +60,16 @@ VTT supplies, and keep `sources/` where it is so `factguard` keeps its git histo
 the same one the playbook asks for — text identical to the old region, every link resolving —
 run as a diff of old output against new before anything is deleted.
 
-**F5 — `scripts/` comes into the repo. PROPOSED.**
+**F5 — `scripts/` comes into the repo. Landed 2026-09-29.**
 The builders and all five gates live in the unversioned support folder, which has been a known gap
-for months. An instance that cannot rebuild its own content from a clone is not finished. Move
-`fragile-peace-support/scripts/` to `campaign/source/`, leaving `archive/` (raw recordings, the
-Archivist export, Foundry dumps) and `site.config.json` outside as they are.
+for months. An instance that cannot rebuild its own content from a clone is not finished. Moved `fragile-peace-support/scripts/` to `campaign/source/` and `site.config.json` to
+`campaign/`, leaving `archive/` (raw recordings, the Archivist export, Foundry dumps) and
+`doji-setsuna/` outside. The config now splits two things the fork made different: `output_repo`
+is the **git** root, because `factguard` resolves old versions with `git show <ref>:<path>` and
+those paths are repo-root-relative; the new `site_root` is where pages are written and crawled
+beneath it. The support-folder copies were deleted afterwards so nothing can drift — all five
+gates were re-run with them gone. Setsuna's generator stays in the support folder and reaches the
+shared config where it now lives.
 
 **F6 — The homebrew layer is the cast, and only the cast. PROPOSED.**
 There are no campaign statblocks in the chronicle and no house rules on record. `campaign/dsl/`
@@ -79,9 +84,9 @@ At deploy, not before.
 
 | | What | Proof |
 |---|---|---|
-| **M0** | This plan; owner's answers on F4–F6 | — |
-| **M1** | **The fork.** Three commits on `vtt-instance`: `git mv` everything under `campaign/`; merge `upstream/main` with `--allow-unrelated-histories`; the boundary files + `.gitattributes` + the driver | Move commit is `R100` only, 0 insertions, 0 deletions. Boundary proven by making it fail first in a throwaway clone |
-| **M2** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` | Five exit codes, before any content change |
+| **M0 landed** | This plan; owner's answers on F1–F3 | — |
+| **M1 landed** | **The fork.** Three commits on `vtt-instance`: `git mv` everything under `campaign/`; merge `upstream/main` with `--allow-unrelated-histories`; the boundary files + `.gitattributes` + the driver | 697 files `R100`, 0 insertions, 0 deletions. Merge: no collisions. Boundary proven by making it fail first — without the driver, `CONFLICT … engine/config.js`, exit 1; with it, exit 0, config keeps *The Fragile Peace* and the upstream-owned file takes its change |
+| **M2 landed** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` All five exit 0 from `campaign/source/`, and `build_site` rewrote the 509 pages **byte-identically** after the move — zero changed files. `factguard` proven still to read git at the new path by planting a cut and watching its counts drop |
 | **M3** | **The cast into `campaign/dsl/`**, piloted on one character field by field including a planted difference that must fail, then the rest | Per-character field check vs the retiring sheet; layer gated three ways by `build_layer.sh` |
 | **M4** | **The characters onto the VTT sheet**; `play/` deleted | Every version of every character checked against its old sheet |
 | **M5** | **The content into tabs** — `build_site.py` retargeted, stylesheet scoped to its element, tabs pushed at the `site` stage, the cast page rebuilt on the DSL layer keeping its storage keys | Old output vs new, text-identical; every link resolves; no `:root`/`body` rule escaping into the VTT |
