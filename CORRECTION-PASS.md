@@ -3487,3 +3487,81 @@ export lands whose giri finishes its own sentence, and says loudly if a future
 export says something else instead.
 
 Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
+
+## 2026-09-28 — session 58 written; Kuma and Harunobu made playable
+
+`sources/chronicle/s58-a-different-person.md`, from the 2026-09-28 recording
+(`[Speaker N]` .txt, 1,025 lines after `norm_txt2.py`, plus the .m4a). A downtime
+session: the morning after the willow, the parole, the disguise, a duel in the
+street, and the party dividing.
+
+**Speaker tags in this transcript are unreliable** and were not used for
+attribution. Both S4 and S5 voice Harunobu in the same scene, and S3 voices
+Monban and Midori within four lines of each other. Everything attributed in the
+chronicle is attributed from content, not from the tag.
+
+### Names resolved before writing, not after
+
+- The Lion who delivers the parole and the one-eyed man Midori is treating are
+  the same person, **Akodo Akihito** — spelled a dozen ways in the transcript
+  ("okoakahigito", "Dakota wakagito", "Akijito"). s57's *Ahead* and the export
+  both settle it. His lord, "at koto Totoro", is **Akodo Toturi**.
+- "miharo" is **Shinjō Miharu**, who has a page.
+- The governor is **Miya Tetsuya**, established since s55.
+- The monk's name the GM spelled aloud: **Togashi Gembei** (new page).
+- "sushiro hametsu" is the export's **Shiro Hametsu**, corrected to Shosuro
+  Hametsu by `archivist.correct()` — my local page for him was refused by the
+  builder as a duplicate, which is the rule working.
+
+**Monban's disguise is not a new idea.** He tells the sensei that *my brother in
+first enemy blood* suggested it; s55 already records Akodo Akihito giving him
+exactly that plan — unmask, change clothes, drop the name, sail the River of
+Gold through the enemy's front gate — and the lore page already records Akihito
+as the *brother*. The reference resolves cleanly and is written as continuous.
+
+**Left unhardened.** Someone says *we are brother and sister in first enemy
+blood* in the Monban/Midori tea scene, and the tags do not establish which of
+them. `First Enemy Blood.md` currently says nobody but Monban uses the phrase;
+that claim is not being changed on the strength of an unreliable tag. Also
+unresolved: the "Phoenix twins" the forged complaint is pinned on, who appear
+nowhere in the record — written as *a pair of Phoenix twins the party has met
+before* rather than asserting the place the transcript names.
+
+### Playable characters
+
+Owner's ruling: the playable characters should include Tonbo Kuma and Shinjō
+Harunobu. Both were filed by the export under `Characters/NPCs`, so both were in
+Dramatis Personae rather than The Party. Recategorised through
+`archivist.RECAT` and added to `build_site.CURRENT_PARTY`, with Kuma added to
+`PLAYABLE`.
+
+**Three latent bugs surfaced doing it**, all of the same kind — a table keyed by
+page title, holding a title that matches no page, failing silently:
+
+1. `PLAYABLE["Shinjo Harunobu"]` has **never matched**. His corrected title
+   carries a macron — Shinjō — so his entity page has never once carried a link
+   to the sheet the table says he has.
+2. `DOSSIER["Shinjo Harunobu"]` had the same fault, so the hand-authored
+   dossier at `character/harunobu.html` was equally unreachable from his page.
+3. `FLASHBACK_PARTY` still listed **"Matsumura Zane"**, which
+   `archivist.CORRECTIONS` rewrites to Matsu Morozane — already first in that
+   same list. It has matched nothing since that correction landed.
+
+All three now fail the build: `build_site` raises if any title in PLAYABLE,
+CURRENT_PARTY, FLASHBACK_PARTY or DOSSIER matches no page. Proven by restoring
+the macron-less spelling — *"PLAYABLE names 'Shinjo Harunobu', which match no
+page"*, exit 1.
+
+`notes/index.html` is hand-authored and carried three links to
+`dramatis-personae/shinjo-harunobu.html`; repointed to `party/`, which
+`verify_site` caught.
+
+**Kuma's sheet said Miya Tetsua.** The Foundry actor misspells the governor in
+his Ally peculiarity, and the sheet was the only page on the site publishing it
+wrong. Corrected in the builder, which now reports on stderr when a fresh export
+makes the fix unnecessary.
+
+Files archived: `.m4a` to `archive/recordings/`, `.txt` to
+`archive/transcriptions/`.
+
+Gates: build_site, acceptcheck, factguard, voicecheck, verify_site — all exit 0.
