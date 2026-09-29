@@ -2,16 +2,16 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "vtt-l5r5e",
+      "name": "fragilepeace",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8740"],
-      "port": 8740
+      "runtimeArgs": ["-m", "http.server", "8734"],
+      "port": 8734
     },
     {
-      "name": "vtt-l5r5e-worker",
+      "name": "fragilepeace-worker",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["wrangler", "dev", "--port", "8792"],
-      "port": 8792,
+      "runtimeArgs": ["wrangler", "dev", "--port", "8800"],
+      "port": 8800,
       "cwd": "worker"
     }
   ]

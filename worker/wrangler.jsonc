@@ -1,13 +1,14 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sortilege-vtt-l5r5e",
+  "name": "fragile-peace",
   "main": "src/index.ts",
   "compatibility_date": "2026-09-08",
   "observability": { "enabled": true, "head_sampling_rate": 1 },
   "vars": {
     // The app's own origins, comma-separated — the only non-localhost origins the Worker
-    // answers to. Until the owner picks the deployment origin (PLAN.md D3) only the github.io
-    // address is listed; localhost / 127.0.0.1 are always admitted for `wrangler dev`.
+    // answers to. INSTANCE-OWNED (The Fragile Peace). The custom domain is added at deploy
+    // (campaign/PLAN.md M7) and proven with curl from each origin; localhost / 127.0.0.1 are
+    // always admitted for `wrangler dev`.
     "ALLOWED_ORIGIN": "https://sortilege-inc.github.io"
   },
   "durable_objects": {

@@ -1,32 +1,34 @@
-# sortilege-vtt-l5r5e
+# The Fragile Peace
 
-A virtual tabletop for **Legend of the Five Rings, 5th Edition**, generated from the Titterpig
-corpus `titterpig-dsl-l5r5e/0.5`: the books to read, the Roll & Keep dice, character creation
-by the Twenty Questions, the GM's table for the sixteen published adventures, and live sessions
-for players on their own devices.
+A Legend of the Five Rings 5th Edition campaign — Emerald Magistrates sent to hold a ceasefire
+between the Lion and the Unicorn, and what they found under the great willow at the City of the
+Rich Frog.
 
-- `/` — the site: the books, schools, techniques, NPCs, pregens, adventures, the lore, the dice,
-  making a character, search. Writes nothing.
-- `/gm/` — the GM's table: panels over the campaign, the map table (`gm/vtt.html`), the
-  player's page (`gm/play.html`).
+The site is an **instance** of [`sortilege-vtt-l5r5e`](https://github.com/sortilege-inc/sortilege-vtt-l5r5e):
+the VTT owns the root — the site, the GM's table, the player's page, the engine and the generated
+books — and the campaign owns `campaign/`. The boundary, and how to pull upstream, are in
+`~/Sortilege/VTT/INSTANCES.md`; this campaign's plan and decision log are in `campaign/PLAN.md`.
 
-No build step for the pages; `data/` is generated:
+Live at **fragilepeace.sortilege.online**.
+
+## The campaign
+
+| | |
+|---|---|
+| `campaign/sources/chronicle/` | The session record, written from the recordings. Sessions 1–58. |
+| `campaign/sources/entities/` | Entity pages the Archivist export never had. |
+| `campaign/CORRECTION-PASS.md` | The audit log: every correction made against a recording, with its proof. |
+| `campaign/REWRITE.md` | How the chronicle's voice is written. |
+
+The five gates — `build_site`, `acceptcheck`, `factguard`, `voicecheck`, `verify_site` — must all
+exit 0. `factguard` proves a rewrite lost no facts by diffing each source file against its
+committed version, which is why `campaign/sources/` is versioned here rather than kept in the
+support folder beside it.
+
+## Running it
 
 ```bash
-bash build/build.sh
+git config merge.ours.driver true   # once per clone; see .gitattributes
 ```
 
-It parses every corpus file, writes `data/`, and gates the result both ways (every string the
-corpus prints reaches the data as often as it is printed, and nothing in the data is not in the
-corpus). The art is copied from the owner's Portents & Fortunes site by `bash build/build_art.sh`.
-
-A campaign can run as an **instance** of this VTT — a fork that owns a `campaign/` folder and
-never edits upstream. It declares its own scripts in `engine/config.js` (loaded by
-`engine/instance.js`) and builds its homebrew as one more book, gated as the books are:
-
-```bash
-bash build/build_layer.sh campaign/dsl campaign "<its title>" campaign/data
-```
-
-Local: the launch entries `vtt-l5r5e` (8740) and `vtt-l5r5e-worker` (8792). See `PLAN.md` for
-the milestones, the decisions and the proof of each, and its *Instances* section for the pattern.
+Launch `fragilepeace` (the site, port 8734) and `fragilepeace-worker` (`wrangler dev`, 8800).

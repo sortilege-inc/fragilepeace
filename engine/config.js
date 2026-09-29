@@ -1,9 +1,10 @@
 // engine/config.js — where things are. The one file a deployment edits.
+// INSTANCE-OWNED: The Fragile Peace (merge=ours; see ~/Sortilege/VTT/INSTANCES.md and campaign/PLAN.md).
 window.VttConfig = {
   system: 'l5r5e',
-  title: 'Legend of the Five Rings',
-  channel: 'sortilege-vtt-l5r5e',        // BroadcastChannel name (same-machine windows)
-  storagePrefix: 'sortilege-vtt-l5r5e',  // localStorage key prefix
+  title: 'The Fragile Peace',
+  channel: 'fragilepeace-vtt',            // BroadcastChannel name (same-machine windows)
+  storagePrefix: 'fragilepeace-vtt',  // localStorage key prefix
   dataGlobal: 'L5R5E',                   // the global data/*.js registers into
   // The pages, relative to the site root; the gm/ pages carry <base href="../"> so every
   // path stays root-relative.
@@ -18,7 +19,19 @@ window.VttConfig = {
   // a .html src is the instance's own fragment, inserted as it is; anything else reads as Markdown.
   // (The family standard is the GM's material in the GM tabs, in the pack — PLAYBOOK.md — so a
   // Notes document is for an instance that has not moved there yet.)
-  defaultCampaign: { name: 'A new campaign', modules: [], books: [] },
+  defaultCampaign: { name: 'The Fragile Peace', modules: [], books: [], seed: 'campaign/pack/seed.json' },
+  // the campaign is its own adventure; the published-adventure picker and the Notes document
+  // are left out (PLAYBOOK §4b)
+  ownAdventure: { title: 'The Fragile Peace' },
+  hidePanes: ['adventure', 'notes'],
+  paneOrder: ['overview', 'scenes', 'threads', 'encounters', 'cast', 'places', 'party', 'inspector', 'dice', 'rules', 'log', 'lore', 'campaign', 'settings'],
+  // the warning in front of /gm/, once per tab (PLAYBOOK §4b.3) — a courtesy, not access control
+  gmGate: {
+    title: 'The Magistrate’s Desk',
+    text: 'Beyond this point are the GM’s papers. The chronicle on the public side is what the company knows; these are the answers behind it. Enter, or turn back and find out at the table.',
+    enter: 'Enter',
+    leave: 'Turn back',
+  },
   // the three panels the GM page opens on (engine/app.js)
   defaultSlots: ['adventure', 'party', 'inspector'],
   // Instance knobs, all off here:
@@ -29,14 +42,19 @@ window.VttConfig = {
   //   gmGate: { title, text, enter, leave } — the warning in front of /gm/ (engine/app.js).
   //   siteBooks — whether the public site shows the books' tabs; an instance leaves it off, and
   //     the GM turns them on per browser in Settings (engine/site.js).
-  siteBooks: true,
+  siteBooks: false,   // the books' tabs off the public site; the GM turns them on per browser (§4b.4)
   // The Worker that holds player sessions. Served from localhost the app talks to
   // `wrangler dev`; deployed, to the URL below. Empty = sessions disabled until the owner
   // deploys (PLAN.md D3).
   // An instance (a campaign repo forked from this VTT) declares its own scripts here — its
   // data layer, site tabs, GM panels and styles — and engine/instance.js loads them at the
   // stages the upstream pages mark. Upstream declares none. Shape: engine/instance.js.
-  instance: null,
+  instance: {
+    // filled as the milestones land (campaign/PLAN.md M3, M5); a stage naming a file that does
+    // not exist yet would 404 on every page, so each entry arrives with its file.
+    styles: [],
+    stages: { data: [], site: [], gm: [], table: [], play: [] },
+  },
   worker: {
     deployed: '',
     local: 'http://localhost:8792',
