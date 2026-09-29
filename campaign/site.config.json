@@ -1,0 +1,27 @@
+{
+  "_comment": "Single source of truth for the build pipeline. All paths are relative to this file's directory, which the scripts treat as the base path — campaign/ since the build moved into the repo (campaign/PLAN.md F5). Override the base with the FRAGILEPEACE_SUPPORT_DIR env var. Same contract as Caul's caul-support/site.config.json. No snapshot key: nothing in this campaign is dated by vintage, so no path uses one.",
+  "title": "The Fragile Peace",
+  "output_repo": "..",
+  "_sources": "Raw exports. The Archivist export is a snapshot and stops at session 39; sessions after that are hand-authored in repo_inputs.chronicle.",
+  "sources": {
+    "obsidian": "../../fragile-peace-support/archive/obsidian-export/The Fragile Peace - Archivist",
+    "foundry": "../../fragile-peace-support/archive/foundry-export"
+  },
+  "_site_root": "The campaign owns campaign/ inside the VTT instance (campaign/PLAN.md M1). output_repo is the GIT root — factguard resolves old versions with `git show <ref>:<path>`, which is repo-root-relative — and site_root is where the generated pages are written and crawled beneath it. Empty means the repo root, as it was before the fork.",
+  "site_root": "campaign",
+
+  "_repo_inputs": "Hand-authored build inputs that live in the SITE REPO, relative to output_repo. They are versioned there on purpose: scripts/factguard.py proves a voice rewrite lost no facts by diffing each file against its committed version (git show <ref>:<path>), so this material needs git history. Moving it into this unversioned support folder would break that gate permanently.",
+  "repo_inputs": {
+    "chronicle": "campaign/sources/chronicle",
+    "entities": "campaign/sources/entities",
+    "accept_table": "campaign/sources/factguard-accept.json"
+  },
+  "_tools": "doji-setsuna is a sibling generator, not a script: it builds its own standalone sheet and writes play/setsuna.html into the site repo, which the four other sheet builders then use as their template.",
+  "tools": {
+    "doji_setsuna": "../../fragile-peace-support/doji-setsuna"
+  },
+  "_external": "Paths outside this campaign, centralised so a move is a one-line edit here. Titterpig moved from ~/Working to ~/Sortilege/Titterpig on 2026-09-13; these values were the only change needed.",
+  "external": {
+    "dsl_l5r5e": "~/Sortilege/Titterpig/DSL/titterpig-dsl-l5r5e/0.5"
+  }
+}
