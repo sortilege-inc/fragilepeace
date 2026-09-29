@@ -1,0 +1,3 @@
+{
+  "_comment": "defaultCampaign.seed — what a fresh browser is given before the GM has a pack of their own. It fills what the campaign has never had (a key, an entry by id, a field) and never overwrites or re-adds what the GM changed or removed, so it is safe to extend. Filled at campaign/PLAN.md M6, from the chronicle and the GM's own notes; empty until then so the page does not 404 on every load."
+}
