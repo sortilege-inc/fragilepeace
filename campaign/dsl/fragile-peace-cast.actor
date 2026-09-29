@@ -1,0 +1,325 @@
+EXTENSION "FragilePeace_Cast" {
+    NAME "The Fragile Peace — the cast"
+    VERSION "0.1.0"
+    SPEC_VERSION "0.5"
+    RELEASE_DATE "2026-09-26"
+    DEPENDS_ON "L5R5e_Core_Core"
+
+    # The cast: instances of the Samurai ACTOR in the corpus's pregen conventions. Converted from
+    # campaign/source/foundry/ (the Foundry exports, byte for byte) by campaign/source/convert_pcs.py;
+    # campaign/source/check_pcs.py reads the built layer back against them field by field.
+
+    # Homebrew, from foundry/fvtt-Actor-doji-setsuna.json. No book carries it.
+    #FPhbVoiceOfAuthority ^"Voice of Authority" DEF {
+        EXTENDS #L5R350fG9hI1jK3lM5nO7p ^"Technique"
+        PROPERTIES {
+            ^"Name" STRING "Voice of Authority" FIXED
+            ^"Kind" STRING "Signature Scroll"
+            ^"Effect" STRING "Once per game session when making a Scheme or Support action check using a Social skill, you may choose additional targets equal to your Glory rank. You cannot choose any additional target with vigilance higher than the highest among your initial targets."
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-doji-setsuna.json.
+    #FPpcDojiSetsuna ^"Doji Setsuna" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Doji Setsuna" FIXED
+            ^"Clan" STRING "Crane" FIXED
+            ^"Family" STRING "Doji" FIXED
+            ^"School" STRING "Doji Bureaucrat"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Courtier"]
+            ^"Rings" DEF { ^"Air" INTEGER 3 ^"Earth" INTEGER 3 ^"Fire" INTEGER 2 ^"Water" INTEGER 3 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 69
+            ^"Glory" INTEGER 71
+            ^"Status" INTEGER 60
+            ^"Endurance" INTEGER 10
+            ^"Composure" INTEGER 12
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 3
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "Strictures too often interfere with a beautiful tale.\n\nShe escapes into literature, particularly pillow-books, and riding her horse, Kogorashi, a Utaku steed and wedding gift from her husband's family."
+            ^"Giri" STRING "Currently, Kitsuki Kāgi, in service as an Emerald Magistrate under the Emperor.\n\nPreviously, she served Asahina Shigehiro, lord of the city of Shirogome, on issues of imperial law and legal arbitration.\n\nHer giri: Rule must bind, and if needed, contort."
+            ^"Skills" LIST OF STRING ["Composition 2", "Design 2", "Fitness 1", "Martial Arts [Unarmed] 3", "Culture 2", "Government 3", "Sentiment 2", "Command 3", "Courtesy 3", "Performance 1", "Commerce 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#kcz9tYqb7ZkxEjkD96CUXF ^"Courtier's Resolve", #n1bPScWFDIHIP8vDn1nCBD ^"Stonewall Tactics", #NHSvf55MvHC872WUw9laYv ^"Beware the Smallest Mouse", #HqWk8bnWA0tB1rZgr0Ru1f ^"Treaty Signing", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #svvmtBGYb5XXrrqx9aY0hD ^"Well of Desire", #9joMTiwaMNeSp95EKmWY6s ^"The Wind Blows Both Ways", #FI4nQQ3pXWkloDjbYP6e6w ^"Call to Ride", #ptNdPtiPE6nxbxWJzsFBAe ^"Hidden in Smoke", #FPhbVoiceOfAuthority ^"Voice of Authority"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#k6iLCNkoKlSSE9s8S4yNxI ^"Wordplay", #esSp6Eof1QH3kxH40Z7DB7 ^"Blessed Lineage", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet", #TgTnBnqZtHhNPTHTtfP8Ul ^"Famously Successful", #Yh2FO13lb5Hhsp27DHIPaf ^"Legal Scholarship", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#De0xOyZvPCpMxKmEu43H7M ^"Scorn of [One Group]", #ck5C2s1z0QzPvtY5f3zH8d ^"Fear of Death", #varuU3zrlVDHkMrUhqq4xt ^"Haunting", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#te00d8a952f43f435d9017 ^"Emerald Magistrate", #9CQXynRmsZhECY4Lgu5sWP ^"Advisor"]
+            ^"Bonds" LIST OF #L5R262wX4yZ6aB8cD0eF2g ^"Bond" [#CyrnYiMyZEIYWW6UWAi5LT ^"Lover Bond"]
+            ^"Equipment" LIST OF STRING ["Ceremonial Clothes", "Calligraphy Set", "Wakizashi", "Personal Seal or Chop", "Blank Forms", "Legal Primer", "Hano no Ami Pillow Book", "Scroll of Authority from Magistrate of Shirogome", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Courtesy" ^"Less Significant Tenet" STRING "Courage" }
+            ^"Experience" INTEGER 103
+            ^"Experience Spent" INTEGER 98
+            ^"Experience Ledger" LIST OF STRING ["4 · Government +1 (1 -> 2) · rank 1", "6 · Government +1 (2 -> 3) · rank 1", "3 · Beware The Smallest Mouse · rank 1", "3 · Treaty Signing · rank 1", "4 · Sentiment +1 (1 -> 2) · rank 1", "6 · Fire +1 (1 -> 2) · rank 2", "6 · Void +1 (1 -> 2) · rank 2", "3 · Civility Foremost · rank 2", "3 · Well of Desire · rank 2", "3 · The Wind Blows Both Ways · rank 2", "30 · Emerald Magistrate · rank 2", "6 · Courtesy +1 (2 -> 3) · rank 2", "3 · Call to Ride · rank 2", "3 · Hidden in Smoke · rank 3", "9 · Personal Advisor to Miya Misato · rank 3", "6 · Command +1 (2 -> 3) · rank 3"]
+            ^"Stance" STRING "Air"
+            ^"Description" STRING "Doji Setsuna is a Crane noblewoman of Imperial Bloodline, Emerald Magistrate, and Personal Advisor to the Imperial Envoy — a lawyer trained to wield the law as a blade and a courtier who has built her interior architecture around the institutional doctrine that visibility, when properly deployed, is the surest armor.\nShe is in her mid-twenties — slight of build at about 5'4\", finely-boned with soft hands, light skin warmed by an undertone of gold, and dark brown eyes set in a composed face. Her long black hair is worn in a high, elegant bun from which a few strands always escape — the one persistent imperfection in an otherwise immaculate presentation. She carries herself with a tall, deliberate poise that makes her seem larger than her frame, and her dress is consistently the finest in any party she travels with: refined Crane silks in pale blue and white, often with gold detailing, cut and worn to suggest understated harmlessness rather than display. Her station speaks for her; she does not need to."
+            ^"Notes" STRING "Kogarashi is a white Utaku steed with a silver mane and tail — lean, swift, and always poised. She was a wedding gift from the Shinjo family and is the one being in Setsuna's life to whom warmth flows without mediation. Ridden equally for pleasure and for political effect, Kogarashi's distinctive Utaku breeding marks Setsuna at distance to any Unicorn who sees her.\nSetsuna currently serves Imperial Envoy Miya Misato as her Personal Advisor. Her giri is to see Misato succeed in brokering a peace between the Lion and the Unicorn. Her ninjō is to innovate the trilateral agreement for Toshi Ranbo — for the Crane clan, for her grandmother, and to see to her husband's freedom.\nHousehold\nAika — Personal attendant. Former geisha, now in Setsuna's intimate care. Manages hair, dress, and the chamber. Geisha-trained discretion. One of the two senior women of the household.Ishika — Lady's maid and personal attendant. Quiet, middle-aged, motherly. Carries the maternal-continuity register of the household. The second of the two senior women.Otoya — Scribe and legal assistant. A Crane man with encyclopedic knowledge of Imperial law. Setsuna's working partner for document preparation and legal research.Jiro — Horse attendant. A Unicorn, responsible for the care of Kogarashi.Bayushi Monbon — Yojimbo. A Scorpion samurai assigned to Setsuna as punishment duty by his lord, originally without the right of seppuku. Fired by Setsuna at the Ifrit incident and reclaimed at the Midnight Treaty; his ransom was invoiced back to his lord. Currently in functional partnership with her. Carries a bound Lady of Decay that has been growing in visibility.Family\nDoji Masateru — Father. Imperial legal scholar, well-versed and emotionally distant. Taught her to wield the law like a sword: a single correct argument, like a single cut, should be fatal.Doji Ayaka — Mother. Arranged her marriage to Harunobu. A year later, advised obliquely that a daughter of the Doji turns infidelities into poetry.Doji Retsuo — Older brother. The model heir. Thinks she is too verbose.Doji Emika — Younger sister. Sees Setsuna as a woman trapped by duty, but keeps her thoughts private. Has no desire to follow in her footsteps. Reserved in Setsuna's plans for the Toshi Ranbo settlement, to marry into the Matsu family and satisfy the grandmother's restoration demand.Matsu Tomoe — Late maternal grandmother. Married into the Crane from the Matsu and hated being a Crane for the rest of her life. Now haunts Setsuna as a ghost, demanding the restoration of Toshi Ranbo and the Matsu lineage.Marriage\nShinjo Harunobu — Husband. A respected Shinjo commander, currently a Lion prisoner of war. Loves her and respects her intellect, though he considers her work legal trickery and prefers to solve problems directly. He understands he has married up. They communicate by letter; the marriage has been long-distance for years.Mentors and Superiors\nBayushi Tomono — Scorpion courtier she encountered in Shirogome. Engaged her in wordplay and taught her how to exploit Imperial law and weaponize harmlessness. One of three people whose approval she cares about.Asahina Shigehiro — Her former lord, Crane shugenja and ruler of the city of Shirogome. Employed her as legal counsel on matters of Imperial law. One of three whose approval matters.Kitsuki Kāgi — Her Emerald Magistrate superior. Recruited her into Imperial service after the Kakita tax loophole brought her to his attention. One of three whose approval matters.Magistrate Colleagues\nKakita Kazumi — Kakita duelist, Topaz Champion, and trained Crane Harrier (shinobi) operating in plain sight. Has consistently shown her discretion and quiet loyalty, including providing logistical support during the abortion procedure.Shiba Midori — Phoenix shugenja. Brewed the abortifacient and conducted the procedure. The sole peer-level intimate with whom Setsuna has been visibly unmasked. Her shugenja presence first allowed the grandmother's ghost to manifest.Lord\nMiya Misato — Imperial Envoy, sixteen years old. Originally dispatched on a mission designed to fail. Setsuna appointed herself as her advisor and has invested her own XP transferring skills to her. Nearly assassinated and now blind, but alive. The displaced object of the motherhood Setsuna refused, and simultaneously her operational frame and political instrument.Adversary\nKakita Noritomo — The Kakita provincial daimyō whose new artisan tax Setsuna voided through an Imperial precedent during her time in Shirogome. He banned her from his lands rather than risk a contest he would lose; the institutional grudge remains active in the Kakita family.The Lover At Court\nAn unnamed member of an Imperial family in Otosan Uchi. Father of the pregnancy Setsuna conceived approximately four months before her departure for Loyalty Castle. He does not know she was pregnant and has never known. Setsuna does not pursue contact."
+            ^"As Recorded" LIST OF STRING ["Scorn of Kakita", "Paragon of Courtesy", "Beware The Smallest Mouse", "Paragon of Courage", "Shinjō Harunobu", "Personal Advisor to Miya Misato"]
+        }
+    }
+
+    # Archived: foundry/fvtt-Actor-doji-setsuna-prev-2026-08-10.json.
+    #FPpcDojiSetsuna20260810 ^"Doji Setsuna (10 Aug 2026)" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Version Of" #FPpcDojiSetsuna ^"Doji Setsuna"
+            ^"Version Label" STRING "Foundry export · 10 Aug 2026"
+            ^"Version Date" STRING "2026-08-10"
+            ^"Name" STRING "Doji Setsuna" FIXED
+            ^"Clan" STRING "Crane" FIXED
+            ^"Family" STRING "Doji" FIXED
+            ^"School" STRING "Doji Bureaucrat"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Courtier"]
+            ^"Rings" DEF { ^"Air" INTEGER 3 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 3 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 66
+            ^"Glory" INTEGER 65
+            ^"Status" INTEGER 60
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 3
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "To innovate the trilateral agreement for Toshi Ranbo — for the Crane clan, for her grandmother, and to see to her husband's freedom.\n                                                                                    \n                                                                                    Strictures too often interfere with a beautiful tale.\n                                                                                                                                                                                                                                                                                                                                                                                                                                    \n                                                                                                                                                                                                                                                                                                                                                                                                                                    She escapes into literature, particularly pillow-books, and riding her horse, Kogorashi, a Utaku steed and wedding gift from her husband's family."
+            ^"Giri" STRING "Currently: To ensure Imperial Envoy Miya Misato succeeds in brokering peace between the Lion and the Unicorn.\n                                                                                                \n                                                                                                Previously, Kitsuki Kāgi, in service as an Emerald Magistrate under the Emperor.\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Before that, she served Asahina Shigehiro, lord of the city of Shirogome, on issues of imperial law and legal arbitration.\n                                                                                                                                                                                                                                                                                                                                                                                                                                    \n                                                                                                                                                                                                                                                                                                                                                                                                                                    Her giri: Rule must bind, and if needed, contort."
+            ^"Skills" LIST OF STRING ["Composition 2", "Design 1", "Fitness 1", "Martial Arts [Unarmed] 3", "Culture 2", "Government 3", "Sentiment 2", "Command 1", "Courtesy 3", "Games 1", "Performance 1", "Commerce 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#kcz9tYqb7ZkxEjkD96CUXF ^"Courtier's Resolve", #n1bPScWFDIHIP8vDn1nCBD ^"Stonewall Tactics", #HqWk8bnWA0tB1rZgr0Ru1f ^"Treaty Signing", #NHSvf55MvHC872WUw9laYv ^"Beware the Smallest Mouse", #9joMTiwaMNeSp95EKmWY6s ^"The Wind Blows Both Ways", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #svvmtBGYb5XXrrqx9aY0hD ^"Well of Desire", #ptNdPtiPE6nxbxWJzsFBAe ^"Hidden in Smoke"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#esSp6Eof1QH3kxH40Z7DB7 ^"Blessed Lineage", #k6iLCNkoKlSSE9s8S4yNxI ^"Wordplay", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet", #TgTnBnqZtHhNPTHTtfP8Ul ^"Famously Successful", #Yh2FO13lb5Hhsp27DHIPaf ^"Legal Scholarship", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#De0xOyZvPCpMxKmEu43H7M ^"Scorn of [One Group]", #ck5C2s1z0QzPvtY5f3zH8d ^"Fear of Death", #varuU3zrlVDHkMrUhqq4xt ^"Haunting", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#te00d8a952f43f435d9017 ^"Emerald Magistrate", #9CQXynRmsZhECY4Lgu5sWP ^"Advisor"]
+            ^"Bonds" LIST OF #L5R262wX4yZ6aB8cD0eF2g ^"Bond" [#CyrnYiMyZEIYWW6UWAi5LT ^"Lover Bond"]
+            ^"Equipment" LIST OF STRING ["Wakizashi", "Ceremonial Clothes", "Calligraphy Set", "Legal Primer", "Blank Forms", "Scroll of Authority from Magistrate of Shirogome", "Hano no Ami Pillow Book", "Personal Seal or Chop", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Courtesy" ^"Less Significant Tenet" STRING "Sincerity" }
+            ^"Experience" INTEGER 84
+            ^"Experience Spent" INTEGER 84
+            ^"Experience Ledger" LIST OF STRING ["30 · Emerald Magistrate · rank 2", "3 · Treaty Signing · rank 1", "3 · Beware The Smallest Mouse · rank 1", "4 · Government +1 (1 -> 2) · rank 1", "6 · Government +1 (2 -> 3) · rank 1", "4 · Composition +1 (1 -> 2) · rank 1", "4 · Sentiment +1 (1 -> 2) · rank 2", "3 · The Wind Blows Both Ways · rank 2", "3 · Civility Foremost · rank 2", "3 · Well of Desire · rank 2", "3 · Hidden in Smoke · rank 3", "6 · Courtesy +1 (2 -> 3) · rank 2", "6 · Void +1 (1 -> 2) · rank 2", "6 · Fire +1 (1 -> 2) · rank 2"]
+            ^"Stance" STRING "Earth"
+            ^"Description" STRING "Doji Setsuna is a Crane noblewoman of Imperial Bloodline, Emerald Magistrate, and Personal Advisor to the Imperial Envoy — a lawyer trained to wield the law as a blade and a courtier who has built her interior architecture around the institutional doctrine that visibility, when properly deployed, is the surest armor.\nShe is in her mid-twenties — slight of build at about 5'4\", finely-boned with soft hands, light skin warmed by an undertone of gold, and dark brown eyes set in a composed face. Her long black hair is worn in a high, elegant bun from which a few strands always escape — the one persistent imperfection in an otherwise immaculate presentation. She carries herself with a tall, deliberate poise that makes her seem larger than her frame, and her dress is consistently the finest in any party she travels with: refined Crane silks in pale blue and white, often with gold detailing, cut and worn to suggest understated harmlessness rather than display. Her station speaks for her; she does not need to."
+            ^"Notes" STRING "Kogarashi is a white Utaku steed with a silver mane and tail — lean, swift, and always poised. She was a wedding gift from the Shinjo family and is the one being in Setsuna's life to whom warmth flows without mediation. Ridden equally for pleasure and for political effect, Kogarashi's distinctive Utaku breeding marks Setsuna at distance to any Unicorn who sees her.\nSetsuna currently serves Imperial Envoy Miya Misato as her Personal Advisor. Her giri is to see Misato succeed in brokering a peace between the Lion and the Unicorn. Her ninjō is to innovate the trilateral agreement for Toshi Ranbo — for the Crane clan, for her grandmother, and to see to her husband's freedom.\nHousehold\nAika — Personal attendant. Former geisha, now in Setsuna's intimate care. Manages hair, dress, and the chamber. Geisha-trained discretion. One of the two senior women of the household.Ishika — Lady's maid and personal attendant. Quiet, middle-aged, motherly. Carries the maternal-continuity register of the household. The second of the two senior women.Otoya — Scribe and legal assistant. A Crane man with encyclopedic knowledge of Imperial law. Setsuna's working partner for document preparation and legal research.Jiro — Horse attendant. A Unicorn, responsible for the care of Kogarashi.Bayushi Monbon — Yojimbo. A Scorpion samurai assigned to Setsuna as punishment duty by his lord, originally without the right of seppuku. Fired by Setsuna at the Ifrit incident and reclaimed at the Midnight Treaty; his ransom was invoiced back to his lord. Currently in functional partnership with her. Carries a bound Lady of Decay that has been growing in visibility.Family\nDoji Masateru — Father. Imperial legal scholar, well-versed and emotionally distant. Taught her to wield the law like a sword: a single correct argument, like a single cut, should be fatal.Doji Ayaka — Mother. Arranged her marriage to Harunobu. A year later, advised obliquely that a daughter of the Doji turns infidelities into poetry.Doji Retsuo — Older brother. The model heir. Thinks she is too verbose.Doji Emika — Younger sister. Sees Setsuna as a woman trapped by duty, but keeps her thoughts private. Has no desire to follow in her footsteps. Reserved in Setsuna's plans for the Toshi Ranbo settlement, to marry into the Matsu family and satisfy the grandmother's restoration demand.Matsu Tomoe — Late maternal grandmother. Married into the Crane from the Matsu and hated being a Crane for the rest of her life. Now haunts Setsuna as a ghost, demanding the restoration of Toshi Ranbo and the Matsu lineage.Marriage\nShinjo Harunobu — Husband. A respected Shinjo commander, currently a Lion prisoner of war. Loves her and respects her intellect, though he considers her work legal trickery and prefers to solve problems directly. He understands he has married up. They communicate by letter; the marriage has been long-distance for years.Mentors and Superiors\nBayushi Tomono — Scorpion courtier she encountered in Shirogome. Engaged her in wordplay and taught her how to exploit Imperial law and weaponize harmlessness. One of three people whose approval she cares about.Asahina Shigehiro — Her former lord, Crane shugenja and ruler of the city of Shirogome. Employed her as legal counsel on matters of Imperial law. One of three whose approval matters.Kitsuki Kāgi — Her Emerald Magistrate superior. Recruited her into Imperial service after the Kakita tax loophole brought her to his attention. One of three whose approval matters.Magistrate Colleagues\nKakita Kazumi — Kakita duelist, Topaz Champion, and trained Crane Harrier (shinobi) operating in plain sight. Has consistently shown her discretion and quiet loyalty, including providing logistical support during the abortion procedure.Shiba Midori — Phoenix shugenja. Brewed the abortifacient and conducted the procedure. The sole peer-level intimate with whom Setsuna has been visibly unmasked. Her shugenja presence first allowed the grandmother's ghost to manifest.Lord\nMiya Misato — Imperial Envoy, sixteen years old. Originally dispatched on a mission designed to fail. Setsuna appointed herself as her advisor and has invested her own XP transferring skills to her. Nearly assassinated and now blind, but alive. The displaced object of the motherhood Setsuna refused, and simultaneously her operational frame and political instrument.Adversary\nKakita Noritomo — The Kakita provincial daimyō whose new artisan tax Setsuna voided through an Imperial precedent during her time in Shirogome. He banned her from his lands rather than risk a contest he would lose; the institutional grudge remains active in the Kakita family.The Lover At Court\nAn unnamed member of an Imperial family in Otosan Uchi. Father of the pregnancy Setsuna conceived approximately four months before her departure for Loyalty Castle. He does not know she was pregnant and has never known. Setsuna does not pursue contact."
+            ^"Strife" INTEGER 6
+            ^"Fatigue" INTEGER 0
+            ^"As Recorded" LIST OF STRING ["Scorn of Kakita", "Beware The Smallest Mouse", "Paragon of Courtesy", "Dark Secret (Abortion)", "Personal Advisor to Imperial Envoy Miya Misato", "Shinjō Harunobu", "Paragon of Courage"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-shinjo-harunobu.json.
+    #FPpcShinjoHarunobu ^"Shinjō Harunobu" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Shinjō Harunobu" FIXED
+            ^"Foundry Name" STRING "Shinjo Harunobu"
+            ^"Clan" STRING "Unicorn" FIXED
+            ^"Family" STRING "Shinjo" FIXED
+            ^"School" STRING "Hida Battle Leader"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 3 ^"Fire" INTEGER 3 ^"Water" INTEGER 2 ^"Void" INTEGER 3 }
+            ^"Honor" INTEGER 55
+            ^"Glory" INTEGER 55
+            ^"Status" INTEGER 35
+            ^"Endurance" INTEGER 12
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 3
+            ^"Ninjō" STRING "He feels constrained by courts and by command. He wants men under his own command, particularly after the debacle with the Lion.\n\n1. **He Disagrees with Kamoko but Must Obey**\n    - He believes **his strategies are often more sound**, but as long as **Kamoko holds authority**, he **must defer to her final decision**—even when he sees a mistake coming.\n    - He might **occasionally challenge her, but always within respectful bounds**—never outright defying her, though the temptation is there.\n2. **He Watches Kamoko Command and Thinks, ‘That Should Be Me.’**\n    - He respects Kamoko but **knows he is just as capable**—perhaps even more so, because he understands **both Unicorn and Crab military doctrines**.\n    - The **frustration of seeing an opportunity and being unable to seize it** gnaws at him.\n3. **He Feels Trapped by Loyalty**\n    - If Kamoko **relies on him so much**, why isn’t he **the one leading the armies**?\n    - He cannot **betray her or act dishonorably**, but his **own ambition remains unfulfilled**.\n4. **He Sees Court Politics as a Route to Power, But Refuses to Engage**\n    - The irony is that **a politically savvy samurai could maneuver themselves into a greater command**, but Harunobu **disdains courtly maneuvering**—which **keeps him locked in Kamoko’s shadow**.\n    - His **refusal to play the political game could be what’s preventing his rise**, but he still **sees politics as beneath him**."
+            ^"Giri" STRING "Utaku Kamoko\n\n1. **Strategic Commander in Utaku Kamoko’s Forces**\n    - Commands **a specialized force within the Unicorn army**, focusing on **long-term campaign planning and battlefield logistics**.\n    - **Directs defensive operations** when Kamoko’s usual fast-strike tactics need reinforcement.\n    - Trusted to **lead forces independently** when Kamoko must focus elsewhere.\n2. **Kamoko’s Personal Advisor**\n    - One of **the few people Kamoko trusts to challenge her ideas** without undermining her authority.\n    - Offers **alternative strategies** when pure cavalry charges won’t work.\n    - Helps Kamoko **anticipate enemy movements**, particularly against foes like the **Lion and Scorpion**, who rely on deception and layered tactics.\n3. **Crab Clan Liaison**\n    - Handles **military negotiations between the Unicorn and Crab**, ensuring both sides **coordinate effectively** in shared operations.\n    - Respected by **Crab commanders**, even if they see him as **too soft for having returned to the Unicorn**.\n    - Acts as a **buffer** when Unicorn cavalry tactics clash with the Crab’s **fortification and attrition warfare strategies**.\n    - Ensures that **Unicorn supply lines remain open** when dealing with the often blunt and inflexible Hida."
+            ^"Skills" LIST OF STRING ["Fitness 1", "Martial Arts [Melee] 3", "Martial Arts [Ranged] 2", "Meditation 1", "Tactics 3", "Sentiment 2", "Command 3", "Courtesy 1", "Survival 3"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#UskyyuB3xgSuYTawcQK1cn ^"Tactical Assessment", #Y4ExqealyrjNSVmSFr8BKz ^"Fortress of Necessity", #9tRfTUVEqQttQnyyl3PNXp ^"Beseech Hida's Might", #sOAprLVAYXiYFAMDSflMNu ^"Battle of No Escape", #UflzaeVG3sMdnX2D8WpBmM ^"Soaring Slice", #RmhsIc0PPNoVYKsaRR08By ^"Striking as Fire", #CxCHlu7u5FjgSZVJVo0N4x ^"Warrior's Resolve", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #c4KvPwB5uGyV658OSHDJK9 ^"Great Anvil's Measure", #jvGI4C2UEc8x2OUbAJtQE9 ^"Beseech Shiba's Calm", #fbWIpV8KvO0fta0DnPmJKE ^"The Patient Viper", #uhu7SYjHiK7fZphsuynezu ^"Beseech Akodo's Judgment", #CenLFFRsP00BU2YHBN0626 ^"Piercing Bolt Style"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#Y72Ck7VwxiiSWaFwOFS7ep ^"Bishamon's Blessing", #TRPKf3PWIglw9AIbwILynA ^"Glorious Deeds", #k0snjNMswu7VKFSOWAakZR ^"Indomitable Will"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#8ZxjI2CjzD73Z0uR5sgrpd ^"Fukurokujin's Curse", #BkrSj7NWJDQh8Vl7EXFavH ^"Belligerent", #cIjK5KIAsniJIzD7ml1Thp ^"Superstition"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#xfmn5zLJZB4SrYpBZBh27R ^"Renowned Warrior"]
+            ^"Bonds" LIST OF #L5R262wX4yZ6aB8cD0eF2g ^"Bond" [#CyrnYiMyZEIYWW6UWAi5LT ^"Lover Bond"]
+            ^"Equipment" LIST OF STRING ["Lacquered Armor", "Traveling Clothes", "Katana", "Wakizashi", "Tetsubō", "Horsebow", "Gunbai", "Traveling pack", "Finger of Jade", "Ceremonial Clothes", "Three Victories", "Scroll of Battle Tactics", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Courage" ^"Less Significant Tenet" STRING "Courtesy" }
+            ^"Experience" INTEGER 103
+            ^"Experience Spent" INTEGER 103
+            ^"Experience Ledger" LIST OF STRING ["3 · Beseech Hida's Might · rank 1", "3 · Battle of No Escape · rank 1", "3 · Soaring Slice · rank 1", "3 · Striking as Fire · rank 1", "3 · Warrior’s Resolve · rank 1", "3 · Striking as Earth · rank 1", "2 · Courtesy +1 (0 -> 1) · rank 1", "9 · Void +1 (2 -> 3) · rank 2", "9 · Fire +1 (2 -> 3) · rank 2", "4 · Martial Arts [Melee] +1 (1 -> 2) · rank 2", "6 · Martial Arts [Melee] +1 (2 -> 3) · rank 2", "3 · Great Anvil's Measure · rank 2", "3 · Beseech Shiba's Calm · rank 2", "16 · Renowned Warrior · rank 3", "3 · Behold the Legend · rank 3", "3 · The Patient Viper · rank 3", "3 · Beseech Akodo's Judgment · rank 3", "6 · Command +1 (2 -> 3) · rank 3", "9 · Earth +1 (2 -> 3) · rank 3", "6 · Tactics +1 (2 -> 3) · rank 3", "3 · Piercing Bolt Style · rank 3"]
+            ^"Stance" STRING "Void"
+            ^"Notes" STRING "Harunobu’s Core ResponsibilitiesStrategic Commander in Utaku Kamoko’s Forces\nCommands a specialized force within the Unicorn army, focusing on long-term campaign planning and battlefield logistics.\nDirects defensive operations when Kamoko’s usual fast-strike tactics need reinforcement.\nTrusted to lead forces independently when Kamoko must focus elsewhere.\nKamoko’s Personal Advisor\nOne of the few people Kamoko trusts to challenge her ideas without undermining her authority.\nOffers alternative strategies when pure cavalry charges won’t work.\nHelps Kamoko anticipate enemy movements, particularly against foes like the Lion and Scorpion, who rely on deception and layered tactics.\nCrab Clan Liaison\nHandles military negotiations between the Unicorn and Crab, ensuring both sides coordinate effectively in shared operations.\nRespected by Crab commanders, even if they see him as too soft for having returned to the Unicorn.\nActs as a buffer when Unicorn cavalry tactics clash with the Crab’s fortification and attrition warfare strategies.\nEnsures that Unicorn supply lines remain open when dealing with the often blunt and inflexible Hida.\nHow This Affects His Relationship with Doji SetsunaAlways in military councils, rarely in court.\nHarunobu is busy with Kamoko’s campaigns and dealing with the Crab, meaning he is almost never around Setsuna for long.\nHe doesn’t see court politics as an active threat because his world is the battlefield—leaving Setsuna to fight battles he doesn’t realize exist.\nKamoko trusts him, but Setsuna protects him.\nKamoko respects his loyalty and intellect, but doesn’t concern herself with his political vulnerabilities.\nSetsuna, however, is likely protecting Harunobu from courtly enemies without him even realizing it."
+            ^"As Recorded" LIST OF STRING ["Doji Setsuna"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-tonbo-kuma.json.
+    #FPpcTonboKuma ^"Tonbo Kuma" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Tonbo Kuma" FIXED
+            ^"Clan" STRING "Dragonfly" FIXED
+            ^"Family" STRING "Tonbo" FIXED
+            ^"School" STRING "Dragonfly Grace of the Spirits"
+            ^"School Rank" INTEGER 4
+            ^"Roles" LIST OF STRING ["Courtier", "Shugenja"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 4 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 30
+            ^"Glory" INTEGER 35
+            ^"Status" INTEGER 30
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 12
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 3
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "To understand the spirits and their perspective on the world"
+            ^"Giri" STRING "To represent the Dragon Clan's interests in "
+            ^"Skills" LIST OF STRING ["Aesthetics 1", "Composition 1", "Martial Arts [Melee] 1", "Culture 2", "Government 2", "Medicine 1", "Sentiment 2", "Theology 4", "Command 1", "Courtesy 2", "Games 3", "Performance 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#vq88zxQr2hbdo1gHvYKeXr ^"Dominion of Suijin", #qz7ErNaO2gYWCc2MWV95Km ^"Reflections of P'an Ku", #0ThQxz2j6q0FzktJJUhQXK ^"Cleansing Rite", #i2GEqhySgpp0wZ2MGeJZXo ^"Commune with the Spirits", #bNxt2ZFUbgSKhc6XxSTMUh ^"Divination", #YhsrUsNdIExy7aarFIb0Tq ^"Heart of the Water Dragon", #92FDBSLYNzoMbnc4ueKtnX ^"By the Light of the Lord Moon", #nxdWnvAmxztpXKdAjM5FRH ^"Eyes Up!", #V2GiQ9rSTBn8gNE2cQ2vxo ^"Slippery Maneuvers", #XfCP5vVEcizWd4A7HhjF8l ^"Call Upon the Wind", #xPU8WmbyxLxC5CxRZEdt3b ^"Tea Ceremony", #i69RClcbahfKFcRPV7qlgZ ^"Rise, Water"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#NB8LlDIASOd3ccgS6BwhtS ^"Famously Lucky", #bzYHoMnigihpZguj26otrN ^"Precise Memory", #cpDClG2BOTwUsHUek6aCfs ^"Ally [Name]", #wxKOSKNgjjOnNXrsQbWvv2 ^"Rock Gardening"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#qUq30cp8s1TUJO0ZJNZrjc ^"Omen of Bad Luck", #bDRUDqvSGVZW1drTAjDMVA ^"Benten's Curse"]
+            ^"Equipment" LIST OF STRING ["Traveling Clothes", "Katana", "Wakizashi", "Bō", "Scroll satchel", "Calligraphy Set", "Journal of Observations", "Traveling pack", "Sanctified Robes", "Umbrella", "Traveling Board Games", "150 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Courtesy" ^"Less Significant Tenet" STRING "Duty and Loyalty" }
+            ^"Experience" INTEGER 100
+            ^"Experience Spent" INTEGER 100
+            ^"Experience Ledger" LIST OF STRING ["3 · Dominion of Suijin · rank 0", "3 · Reflections of P’an Ku · rank 0", "3 · Cleansing Rite · rank 0", "3 · Commune with the Spirits · rank 0", "3 · Divination · rank 0", "3 · Heart of the Water Dragon · rank 1", "3 · By the Light of the Lord Moon · rank 1", "4 · Games +1 (1 -> 2) · rank 1", "3 · Eyes Up! · rank 1", "3 · Slippery Maneuvers · rank 1", "4 · Government +1 (1 -> 2) · rank 1", "6 · Games +1 (2 -> 3) · rank 2", "3 · Call Upon the Wind · rank 2", "4 · Theology +1 (1 -> 2) · rank 2", "6 · Theology +1 (2 -> 3) · rank 2", "3 · Tea Ceremony · rank 2", "2 · Performance +1 (0 -> 1) · rank 2", "3 · Rise, Water · rank 3", "8 · Theology +1 (3 -> 4) · rank 3", "12 · Water +1 (3 -> 4) · rank 3", "4 · Courtesy +1 (1 -> 2) · rank 3", "4 · Culture +1 (1 -> 2) · rank 3", "6 · Fire +1 (1 -> 2) · rank 3", "4 · Sentiment +1 (1 -> 2) · rank 3"]
+            ^"Stance" STRING "Air"
+            ^"As Recorded" LIST OF STRING ["Ally: Miya Tetsuya"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-asahina-jujiro.json.
+    #FPpcAsahinaJujiro ^"Asahina Jūjirō" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Asahina Jūjirō" FIXED
+            ^"Foundry Name" STRING "Asahina Jûjirô (50 XP)"
+            ^"Clan" STRING "Crane" FIXED
+            ^"Family" STRING "Asahina" FIXED
+            ^"School" STRING "Asahina Artificer"
+            ^"School Rank" INTEGER 2
+            ^"Roles" LIST OF STRING ["Artisan"]
+            ^"Rings" DEF { ^"Air" INTEGER 3 ^"Earth" INTEGER 1 ^"Fire" INTEGER 3 ^"Water" INTEGER 2 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 60
+            ^"Glory" INTEGER 78
+            ^"Status" INTEGER 35
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 6
+            ^"Focus" INTEGER 6
+            ^"Vigilance" INTEGER 3
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "Convince the family to use their time-honored method to find him a match that truly is a fit, and not merely a force-fit."
+            ^"Giri" STRING "Lord: Asahina Shigehiro of Shirogome, a distant relation, to whose house the family is attached. That duty stands but is in abeyance: when the Emperor's consort asks for your artisan, you lend them, and Shigehiro did."
+            ^"Skills" LIST OF STRING ["Aesthetics 3", "Design 1", "Smithing 1", "Meditation 2", "Culture 2", "Medicine 1", "Sentiment 1", "Theology 3", "Courtesy 2", "Performance 2"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#86DyTuZ2YGO79E8j8SfbMT ^"Armor of Radiance", #YY6q3YNKSDp3EMJu8qmnwY ^"Cloak of Night", #F2o0nLWXD2ZlK9J1o0RCpG ^"Path to Inner Peace", #qz7ErNaO2gYWCc2MWV95Km ^"Reflections of P'an Ku", #BBT7VBmJQGzmfoApPgFvRG ^"Token of Memory", #0ThQxz2j6q0FzktJJUhQXK ^"Cleansing Rite", #i2GEqhySgpp0wZ2MGeJZXo ^"Commune with the Spirits", #xPU8WmbyxLxC5CxRZEdt3b ^"Tea Ceremony", #VWaekx4sOx9p31xOOeVWoA ^"Artisan's Appraisal"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#FH1M8O6rJN4ocFVaq6pkZK ^"Benten's Blessing", #gfC119POx9QXvpRRRgQk6u ^"Charity"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#56Pk0CrN1f6wxwvRF9jxTu ^"Bitter Betrothal", #eqpjc9ProkDIMiUowetI2o ^"Claustrophobia", #7YMFaRmsEnh08prShJn2DR ^"Incurable Illness"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#vjy7ijED6zppsSOtQ77hAX ^"Master Artisan"]
+            ^"Equipment" LIST OF STRING ["Sanctified Robes", "Wakizashi", "Knife", "Yumi", "Omamori (Boon of Benten)", "300 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Courtesy" ^"Less Significant Tenet" STRING "Courage" }
+            ^"Experience" INTEGER 50
+            ^"Experience Spent" INTEGER 65
+            ^"Experience Ledger" LIST OF STRING ["12 · Master Artisan · rank 1", "4 · Theology +1 (1 -> 2) · rank 1", "6 · Theology +1 (2 -> 3) · rank 1", "4 · Courtesy +1 (1 -> 2) · rank 1", "6 · Water +1 (1 -> 2) · rank 2", "2 · Performance +1 (0 -> 1) · rank 2", "4 · Performance +1 (1 -> 2) · rank 2", "3 · Armor of Radiance · rank 2", "3 · Cloak of Night · rank 2", "3 · Path to Inner Peace · rank 2", "3 · Reflections of P’an Ku · rank 2", "3 · Token of Memory · rank 2", "3 · Cleansing Rite · rank 2", "3 · Commune with the Spirits · rank 2", "3 · Tea Ceremony · rank 2", "3 · Artisan’s Appraisal · rank 2"]
+            ^"Stance" STRING "Void"
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-shinjo-anzu.json.
+    #FPpcShinjoAnzu ^"Shinjō Anzu" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Shinjō Anzu" FIXED
+            ^"Foundry Name" STRING "Shinjō Anzu (104 XP)"
+            ^"Clan" STRING "Unicorn" FIXED
+            ^"Family" STRING "Shinjo" FIXED
+            ^"School" STRING "Iuchi Meishōdō Master"
+            ^"School Rank" INTEGER 4
+            ^"Roles" LIST OF STRING ["Artisan"]
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 2 ^"Fire" INTEGER 5 ^"Water" INTEGER 3 ^"Void" INTEGER 4 }
+            ^"Honor" INTEGER 40
+            ^"Glory" INTEGER 46
+            ^"Status" INTEGER 33
+            ^"Endurance" INTEGER 14
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 6
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 4
+            ^"Ninjō" STRING "She wants children and has not been able to have them."
+            ^"Giri" STRING "Her giri is to Shinjo Altansarnai, Khan of Khans and daimyō of the Shinjo: she makes meishōdō for the family's own use, issued where they are needed rather than given where they are wanted."
+            ^"Skills" LIST OF STRING ["Aesthetics 1", "Design 3", "Smithing 3", "Medicine 1", "Sentiment 1", "Theology 2", "Courtesy 1", "Survival 3"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#mcHQRuTWw8KlIwpUzilJC9 ^"Jurōjin's Balm", #quZAMCVlPWiE1TbXNbhTeF ^"The Rushing Wave", #i2GEqhySgpp0wZ2MGeJZXo ^"Commune with the Spirits", #OeYj4seb4GneHX6VlWs6m3 ^"Ancestry Unearthed", #oSNFgOvcypSN4OVr8Hhc1F ^"Sight beyond Existence", #lxGvcBNlSjehHqUT3zoFUv ^"Sympathetic Energies", #0ThQxz2j6q0FzktJJUhQXK ^"Cleansing Rite", #ppc9oDk4evzd6leQJ1IEHa ^"Hands of the Tides", #jB66LO3XY0680iyjeeXNHC ^"Courage of Seven Thunders", #EgewuV5s96on3zjNrTvJpe ^"Dazzling Performance", #sKdFvbJx8cCcZoqVOtV3ND ^"Rise, Earth"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#LEO6VozPQNQIqKHnt0XYhO ^"Famously Reliable", #DFcGhskrhubdikFxEfJy4G ^"Hot Pot", #GzaV1DwWdbXIcG6nCTXjuB ^"Skilled Midwife"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#ViZEZC9NLFpkr6h8uRsThv ^"Encompassing Duty", #VwJL896PcbUKjUbMiWjGGM ^"Conspiracy"]
+            ^"Equipment" LIST OF STRING ["Ceremonial Clothes", "Traveling Clothes", "Wakizashi", "Horsebow", "Calligraphy Set", "Traveling pack", "Maker's Punch", "Herbal Medicines", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Compassion" ^"Less Significant Tenet" STRING "Honour" }
+            ^"Experience" INTEGER 104
+            ^"Experience Spent" INTEGER 104
+            ^"Experience Ledger" LIST OF STRING ["2 · Courtesy +1 (0 -> 1) · rank 1", "6 · Void +1 (1 -> 2) · rank 1", "9 · Void +1 (2 -> 3) · rank 1", "12 · Fire +1 (3 -> 4) · rank 1", "3 · Sympathetic Energies · rank 1", "3 · Cleansing Rite · rank 1", "12 · Void +1 (3 -> 4) · rank 2", "15 · Fire +1 (4 -> 5) · rank 2", "4 · Design +1 (1 -> 2) · rank 2", "3 · Hands of the Tides · rank 2", "3 · Courage of Seven Thunders · rank 2", "6 · Design +1 (2 -> 3) · rank 3", "4 · Smithing +1 (1 -> 2) · rank 3", "3 · Dazzling Performance · rank 3", "3 · Rise, Earth · rank 3", "6 · Survival +1 (2 -> 3) · rank 3", "6 · Smithing +1 (2 -> 3) · rank 3", "4 · Theology +1 (1 -> 2) · rank 3"]
+            ^"Stance" STRING "Void"
+            ^"As Recorded" LIST OF STRING ["Iuchi Meishodo Master School"]
+        }
+    }
+
+    # Archived: foundry/fvtt-Actor-shinjo-anzu-chargen.json.
+    #FPpcShinjoAnzuAtcharactercreation ^"Shinjō Anzu (At character creation)" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Version Of" #FPpcShinjoAnzu ^"Shinjō Anzu"
+            ^"Version Label" STRING "At character creation"
+            ^"Name" STRING "Shinjō Anzu" FIXED
+            ^"Foundry Name" STRING "Shinjo Anzu"
+            ^"Clan" STRING "Unicorn" FIXED
+            ^"Family" STRING "Shinjo" FIXED
+            ^"School" STRING "Iuchi Meishōdō Master"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING ["Artisan"]
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 2 ^"Fire" INTEGER 3 ^"Water" INTEGER 3 ^"Void" INTEGER 1 }
+            ^"Honor" INTEGER 40
+            ^"Glory" INTEGER 46
+            ^"Status" INTEGER 33
+            ^"Endurance" INTEGER 10
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 1
+            ^"Ninjō" STRING "She wants children and has not been able to have them."
+            ^"Giri" STRING "Her giri is to Shinjo Altansarnai, Khan of Khans and daimyō of the Shinjo: she makes meishōdō for the family's own use, issued where they are needed rather than given where they are wanted."
+            ^"Skills" LIST OF STRING ["Aesthetics 1", "Design 1", "Smithing 1", "Medicine 1", "Sentiment 1", "Theology 1", "Survival 2"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#mcHQRuTWw8KlIwpUzilJC9 ^"Jurōjin's Balm", #quZAMCVlPWiE1TbXNbhTeF ^"The Rushing Wave", #i2GEqhySgpp0wZ2MGeJZXo ^"Commune with the Spirits", #OeYj4seb4GneHX6VlWs6m3 ^"Ancestry Unearthed", #oSNFgOvcypSN4OVr8Hhc1F ^"Sight beyond Existence"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#LEO6VozPQNQIqKHnt0XYhO ^"Famously Reliable", #DFcGhskrhubdikFxEfJy4G ^"Hot Pot", #GzaV1DwWdbXIcG6nCTXjuB ^"Skilled Midwife"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#ViZEZC9NLFpkr6h8uRsThv ^"Encompassing Duty", #VwJL896PcbUKjUbMiWjGGM ^"Conspiracy"]
+            ^"Equipment" LIST OF STRING ["Ceremonial Clothes", "Traveling Clothes", "Wakizashi", "Horsebow", "Calligraphy Set", "Traveling pack", "Maker's Punch", "Herbal Medicines", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Compassion" ^"Less Significant Tenet" STRING "Honour" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 0
+            ^"Stance" STRING "Void"
+            ^"Strife" INTEGER 0
+            ^"Fatigue" INTEGER 0
+            ^"As Recorded" LIST OF STRING ["Iuchi Meishodo Master School"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-matsu-morozane.json.
+    #FPpcMatsuMorozane ^"Matsu Morozane" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Matsu Morozane" FIXED
+            ^"Clan" STRING "Lion" FIXED
+            ^"Family" STRING "Matsu" FIXED
+            ^"School" STRING "Matsu Beastmaster"
+            ^"School Rank" INTEGER 2
+            ^"Roles" LIST OF STRING ["Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 3 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 20
+            ^"Glory" INTEGER 55
+            ^"Status" INTEGER 45
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 3
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING ""
+            ^"Giri" STRING ""
+            ^"Skills" LIST OF STRING ["Fitness 1", "Martial Arts [Melee] 2", "Martial Arts [Ranged] 1", "Martial Arts [Unarmed] 1", "Meditation 3", "Tactics 1", "Culture 1", "Government 1", "Medicine 1", "Sentiment 1", "Command 4", "Performance 1", "Survival 3"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#CxCHlu7u5FjgSZVJVo0N4x ^"Warrior's Resolve", #UQ7tsy5zsi4HEBifu1tLoK ^"Righteous Example", #la0OZXZOgaNKK56rl8pUwu ^"Beseech Shinjo's Empathy", #IGquxVDtJcTEXwn2nTUvqG ^"Lightning Raid", #JsORqVBbGU90uyrtQRQ7xt ^"Call the Wild"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#evdyG9NzxDveALXwmOvTLQ ^"Animal Bond", #TRPKf3PWIglw9AIbwILynA ^"Glorious Deeds", #x0Zi5b4zaxe1o0S3USAX6K ^"Generosity", #NB8LlDIASOd3ccgS6BwhtS ^"Famously Lucky"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#aeieH2qhXQSi10JKL8tAUH ^"Lost Arm or Lost Hand", #aKvwLUBV7Y1FGuS7XFbsHt ^"Ferocity", #BkrSj7NWJDQh8Vl7EXFavH ^"Belligerent"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#Q93fb38lIZlK7MrgtxkTBc ^"Gunso", #xfmn5zLJZB4SrYpBZBh27R ^"Renowned Warrior"]
+            ^"Equipment" LIST OF STRING ["Ashigaru Armor", "Traveling Clothes", "Katana", "Wakizashi", "Nagae Yari", "Traveling pack", "Tessen", "250 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "" ^"Less Significant Tenet" STRING "" }
+            ^"Experience" INTEGER 60
+            ^"Experience Spent" INTEGER 63
+            ^"Experience Ledger" LIST OF STRING ["24 · Gunso · rank 1", "3 · Beseech Shinjo's Empathy · rank 1", "3 · Lightning Raid · rank 1", "6 · Survival +1 (2 -> 3) · rank 1", "2 · Martial Arts [Unarmed] +1 (0 -> 1) · rank 1", "4 · Martial Arts [Melee] +1 (1 -> 2) · rank 1", "2 · Culture +1 (0 -> 1) · rank 1", "16 · Renowned Warrior · rank 2", "3 · Call the Wild · rank 1"]
+            ^"Stance" STRING "Water"
+            ^"Notes" STRING "Fire Ring damaged: +3 difficulty."
+        }
+    }
+}

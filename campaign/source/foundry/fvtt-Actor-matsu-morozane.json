@@ -1,0 +1,1891 @@
+{
+  "folder": "DwIlzihQYKDLBtUU",
+  "name": "Matsu Morozane",
+  "type": "character",
+  "img": "https://assets.forge-vtt.com/646b7657183352870b99aaf0/morozane.png",
+  "prototypeToken": {
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "fatigue"
+    },
+    "bar2": {
+      "attribute": "strife"
+    },
+    "name": "Matsu Morozane",
+    "displayName": 0,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "https://assets.forge-vtt.com/646b7657183352870b99aaf0/morozane.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "displayBars": 0,
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "flags": {},
+    "randomImg": false,
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null
+  },
+  "system": {
+    "soft_locked": false,
+    "identity": {
+      "age": "",
+      "clan": "Lion",
+      "family": "Matsu",
+      "female": null,
+      "marital_status": "",
+      "roles": "Bushi",
+      "school": "Matsu Beastmaster School",
+      "school_rank": 2,
+      "school_curriculum_journal": {}
+    },
+    "rings": {
+      "earth": 2,
+      "air": 1,
+      "water": 3,
+      "fire": 2,
+      "void": 2
+    },
+    "notes": "<p>Fire Ring damaged: +3 difficulty.</p>",
+    "description": "",
+    "social": {
+      "honor": 20,
+      "glory": 55,
+      "status": 45,
+      "ninjo": "",
+      "giri": "",
+      "bushido_tenets": {
+        "paramount": "",
+        "less_significant": ""
+      }
+    },
+    "skills": {
+      "artisan": {
+        "aesthetics": 0,
+        "composition": 0,
+        "design": 0,
+        "smithing": 0
+      },
+      "martial": {
+        "fitness": 1,
+        "melee": 2,
+        "ranged": 1,
+        "unarmed": 1,
+        "meditation": 3,
+        "tactics": 1
+      },
+      "scholar": {
+        "culture": 1,
+        "government": 1,
+        "medicine": 1,
+        "sentiment": 1,
+        "theology": 0
+      },
+      "social": {
+        "command": 4,
+        "courtesy": 0,
+        "games": 0,
+        "performance": 1
+      },
+      "trade": {
+        "commerce": 0,
+        "labor": 0,
+        "seafaring": 0,
+        "skulduggery": 0,
+        "survival": 3
+      }
+    },
+    "techniques": {
+      "kata": true,
+      "kiho": false,
+      "inversion": false,
+      "invocation": false,
+      "ritual": true,
+      "shuji": true,
+      "maho": false,
+      "ninjutsu": false,
+      "mantra": false,
+      "specificity": true
+    },
+    "endurance": 8,
+    "composure": 10,
+    "focus": 3,
+    "vigilance": 2,
+    "void_points": {
+      "max": 2,
+      "value": 0
+    },
+    "fatigue": {
+      "max": 8,
+      "value": 0
+    },
+    "strife": {
+      "max": 10,
+      "value": 2
+    },
+    "stance": "water",
+    "prepared": true,
+    "xp_total": 60,
+    "xp_spent": 0,
+    "xp_saved": 0,
+    "template": "core",
+    "twenty_questions": {},
+    "zeni": 250,
+    "money": {
+      "koku": 0,
+      "bu": 0,
+      "zeni": 0
+    }
+  },
+  "items": [
+    {
+      "_id": "j9lxKyc8TMDFAuCS",
+      "name": "Warrior’s Resolve",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000007",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747109677429,
+        "modifiedTime": 1747334973693,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 178
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">Once per scene, as a Support action, you </span><span class=\"fontstyle2\">may spend 1 Void point to recover.</span></p>\n<p>&nbsp;</p>\n<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">Remove fatigue equal to your honor rank.</span>&nbsp;</p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "kata"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "FlVqpOSRA7xXj4iB",
+      "name": "Righteous Example",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000079",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747109959339,
+        "modifiedTime": 1747334958703,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 101
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">As an Attack and Support action during a </span><span class=\"fontstyle2\">mass battle, you may make a </span><span class=\"fontstyle0\">TN 3 Martial Arts (Fire) </span><span class=\"fontstyle0\">check&nbsp;</span><span class=\"fontstyle2\">targeting an enemy leader&rsquo;s cohort.</span></p>\n<p>&nbsp;</p>\n<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">If you succeed, the enemy army suffers attrition and panic equal to 1 plus your bonus successes.</span></p>\n<p><span class=\"fontstyle2\">If you succeed, other leaders in your army reduce </span><span class=\"fontstyle2\">the TN of their Attack action checks by 1. This effect </span><span class=\"fontstyle2\">persists until the end of your next turn.</span></p>\n<p><span class=\"fontstyle2\">If you fail, reduce the TN of Attack and Scheme </span><span class=\"fontstyle2\">action checks targeting your cohort by 1. This effect </span><span class=\"fontstyle2\">persists until the end of your next turn.</span>&nbsp;</p>\n<p>&nbsp;</p>\n<p><span class=\"fontstyle0\"><strong>New Opportunities: </strong>Fire&nbsp;<span class=\"fontstyle4\">(op) (op)</span></span><span class=\"fontstyle0\">: </span><span class=\"fontstyle3\">If you are both the commander and a leader, </span><span class=\"fontstyle3\">your army gains 1 momentum point toward its current </span><span class=\"fontstyle3\">strategic objective.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "fire",
+        "skill": "martial",
+        "difficulty": "3",
+        "technique_type": "shuji"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "NsZEBF7ivSBtIUhR",
+      "name": "Animal Bond",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-passions.Item.L5RCorePas000001",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747110721562,
+        "modifiedTime": 1747111727420,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 111
+        },
+        "description": "<p><strong><span class=\"fontstyle0\">Effects: </span></strong><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Animal Bond passion:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">Reciprocating your interest, a small, mundane </span>animal of some kind has attached itself to you. Choose one silhouette 0 or 1 animal; it follows you around wherever you go and generally acts as your companion. It can be cajoled to do what you want, but it might need incentives (usually food) to perform difficult tasks on demand. If you are granted an animal as part of your starting outfit, that animal can be your companion (regardless of the usual size restrictions).</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">After performing a check to interact with an </span>animal (such as a Medicine [Earth] check to mend its injuries or a Survival [Earth] check to calm it), you remove 3 strife.</li>\n</ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "earth",
+        "peculiarity_type": "passion",
+        "types": "Interpersonal, Mental"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "m2AQRQupf0K55Z5g",
+      "name": "One with the Pride",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/clans/lion.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-school.Item.L5RCoreSch000090",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747110873883,
+        "modifiedTime": 1747110931159,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 80
+        },
+        "description": "<p><span class=\"fontstyle0\">Increase each </span><span class=\"fontstyle0\">of your bonded animals&rsquo; endurance, composure, </span><span class=\"fontstyle0\">and ranks in Martial skill group by an amount equal </span><span class=\"fontstyle0\">to your school rank (its skill ranks still cannot exceed </span><span class=\"fontstyle0\">5). If a bonded animal is a minion, it becomes an </span><span class=\"fontstyle0\">adversary instead.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "school_ability"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "brR5oPPLremzo2Ld",
+      "name": "Ashigaru Armor",
+      "type": "armor",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/armor.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-armors.Item.L5RCoreArm000001",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747110953557,
+        "modifiedTime": 1747110959328,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "239"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": true,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "3",
+        "zeni": "5 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "armor": {
+          "physical": "3",
+          "supernatural": ""
+        }
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "cWdkbMbGqLjJRjI3",
+      "name": "Traveling Clothes",
+      "type": "armor",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/keikogi.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-armors.Item.L5RCoreArm000006",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747110975109,
+        "modifiedTime": 1747110975109,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "239"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "2",
+        "zeni": "2 bu",
+        "properties": [
+          {
+            "id": "L5RCorePro000015",
+            "name": "Durable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          },
+          {
+            "id": "L5RCorePro000016",
+            "name": "Subtle"
+          }
+        ],
+        "armor": {
+          "physical": "2",
+          "supernatural": ""
+        }
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "VneyVwpGnnpPcez2",
+      "name": "Katana",
+      "type": "weapon",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000007",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747110993294,
+        "modifiedTime": 1747110993294,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "232"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "7",
+        "zeni": "20 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "1",
+        "damage": "4",
+        "deadliness": "5",
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "5hs0ojwhcGyLT9oE",
+      "name": "Wakizashi",
+      "type": "weapon",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000009",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747110998083,
+        "modifiedTime": 1747110998083,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "233"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": "3",
+        "deadliness": "5",
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "RjPHiYvUYKeJUwos",
+      "name": "Nagae Yari",
+      "type": "weapon",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/weapons/bo.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000090",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747111019764,
+        "modifiedTime": 1747111022514,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": "88"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": true,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "2",
+        "zeni": "1 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "category": "Polearms",
+        "skill": "melee",
+        "readied": false,
+        "range": "2",
+        "damage": "5",
+        "deadliness": "2",
+        "grip_1": "N/A",
+        "grip_2": ""
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "wTETtJmWWpXLrl4n",
+      "name": "Traveling pack",
+      "type": "item",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000032",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747111451199,
+        "modifiedTime": 1747111451199,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "245"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "0",
+        "rarity": "1",
+        "zeni": "10 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ]
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "lk5j8hlZAmmIrwuV",
+      "name": "Glorious Deeds",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-passions.Item.L5RCorePas000042",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747113115694,
+        "modifiedTime": 1747113198887,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 83
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Effects:</strong>&nbsp;</span><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Glorious Deeds passion:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">You find risking your life to be a simple matter, as </span>long as there is a witness to remember your bravery. No threat or challenge deters you if you might be remembered for it, making even the most daunting tasks easy ones for which to prepare.</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">After performing a check to improve your reputation or gain fame as a great samurai (such as a Performance [Fire] check to impress a court with your </span>new melody, or a Tactics [Fire] check to execute a daring raid on the enemy), you remove 3 strife.<span style=\"font-size: 0.875rem;\">&nbsp;</span></li>\n</ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "fire",
+        "peculiarity_type": "passion",
+        "types": "Martial, Social"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "T2I20un0yRGJEU0K",
+      "name": "Lost Arm or Lost Hand",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-adversities.Item.L5RCoreAdv000028",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747113556158,
+        "modifiedTime": 1747113618539,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 123
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Lost Arm or Lost Hand adversity:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">You have only one usable hand or arm. You </span>cannot wield weapons in a two-handed grip or hold anything in your missing hand. If you are missing only the hand, you can strap items to the arm for use.</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">When you make a check for which having </span>two hands is very valuable (such as a Martial Arts [Unarmed] [Fire] check to grapple a foe into submission or a Survival [Fire] check to leap onto a galloping horse&rsquo;s back), you must choose and reroll two dice containing (su)<span class=\"fontstyle4\" style=\"font-size: 0.875rem;\">&nbsp;</span><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">or (ex)</span><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">.</span></li>\n</ul>\n<p>&nbsp;</p>\n<p><span class=\"fontstyle2\">After resolving the check, if you failed, you gain </span><span class=\"fontstyle2\">1 Void point.</span>&nbsp;</p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "fire",
+        "peculiarity_type": "adversity",
+        "types": "Physical, Scar"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "1AZSNKHNfLyCIEm4",
+      "name": "Generosity",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-passions.Item.L5RCorePas000009",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747113845024,
+        "modifiedTime": 1747113888544,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 113
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Generosity passion:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">You can always identify a proper gift for a particular person that does not risk giving offense </span>or slighting them publicly.</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">After performing a check to acquire or give a </span>gift (such as a Design [Water] check to select an item that complements someone&rsquo;s wardrobe or a Commerce [Water] check to find and select a gift at a market), you remove 3 strife.<span style=\"font-size: 0.875rem;\">&nbsp;</span></li>\n</ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "water",
+        "peculiarity_type": "passion",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "9PLvyd4yTCLhQsck",
+      "name": "Ferocity",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-anxieties.Item.L5RCoreAnx000007",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747114103563,
+        "modifiedTime": 1747114148030,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 132
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Ferocity anxiety:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">When you strike, you have trouble holding </span>back your power, and you tend to lash out even when a subtler approach would be more appropriate. When you defeat a minion NPC, the minion is always killed, even if you would prefer to incapacitate them.</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">After performing a check to intentionally hold </span>back or apply force subtly (such as a Games [Air] check to manipulate your opponent or a Martial Arts [Melee] [Air] check to strike a precise blow), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<span style=\"font-size: 0.875rem;\">&nbsp;</span></li>\n</ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "air",
+        "peculiarity_type": "anxiety",
+        "types": "Mental, Physical"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "8057maujiPduNuMF",
+      "name": "Famously Lucky",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000012",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747114596391,
+        "modifiedTime": 1747114626249,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 104
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Famously Lucky distinction:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">Other people have heard of you for your good </span>fortune, and they believe it by default unless given evidence to the contrary.</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">When performing a check for which you need </span>to leverage your reputation for having things turn out your way (such as a Command [Void] check to get your troops to put their faith in you utterly or a Games [Void] check to let fate decide the match), you may reroll up to two dice.<span style=\"font-size: 0.875rem;\">&nbsp;</span></li>\n</ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "peculiarity_type": "distinction",
+        "types": "Fame, Interpersonal"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "pIxKPVrUFo3zM0uf",
+      "name": "Belligerent",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-anxieties.Item.L5RCoreAnx000038",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747114637290,
+        "modifiedTime": 1747114669230,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 85
+        },
+        "description": "<p><span class=\"fontstyle0\"><strong>Effects:</strong> </span><span class=\"fontstyle2\">The following apply to a character with the </span><span class=\"fontstyle2\">Belligerent anxiety:</span></p>\n<ul>\n<li><span class=\"fontstyle2\">You find it nearly impossible to keep your </span>cool when provoked, and may even look for an excuse to fight with people you consider deserving of a good thrashing. Delicate social situations can easily spiral out of control when you suspect the other party of giving offense.</li>\n<li><span class=\"fontstyle2\" style=\"font-size: 0.875rem;\">After performing a check to respond to provocation without resorting to violence or threats </span>(such as a Performance [Earth] check to calmly sing a song that was originally composed to paint your lineage in an unflattering light or a Meditation [Earth] check to stay in formation when you spot a rival across the battlefield), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.<span style=\"font-size: 0.875rem;\">&nbsp;</span></li>\n</ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 1,
+        "ring": "earth",
+        "peculiarity_type": "anxiety",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "jHPneHIvBC62mace",
+      "name": "Tessen",
+      "type": "weapon",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/weapons/knife.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000021",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747115068371,
+        "modifiedTime": 1747115068371,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "235"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000005",
+            "name": "Concealable"
+          }
+        ],
+        "category": "Hand Weapons",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": "4",
+        "deadliness": "3",
+        "grip_1": "",
+        "grip_2": "N/A"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "igL70WiV0US7akVH",
+      "name": "Gunso",
+      "type": "title",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/title.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-titles.Item.L5RCoreTit000018",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747334997884,
+        "modifiedTime": 1747338738716,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "emerald_empire",
+          "page": 250
+        },
+        "description": "<h2>Curriculum</h2>\n<table>\n<tbody>\n<tr>\n<td>Martial Skills</td>\n<td>Skill Group</td>\n</tr>\n<tr>\n<td>Command</td>\n<td>Skill</td>\n</tr>\n<tr>\n<td>Government</td>\n<td>Skill</td>\n</tr>\n<tr>\n<td><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-4 Kata</a></td>\n<td>Tech. Grp.</td>\n</tr>\n<tr>\n<td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000020\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000020\">(shuji) Rallying Cry</a> (prereq)</td>\n<td>Technique</td>\n</tr>\n<tr>\n<td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000026\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000026\">(shuji) Stirring the Embers</a> (prereq)</td>\n<td>Technique</td>\n</tr>\n<tr>\n<td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000011\">(shuji) Touchstone of Courage</a> (prereq)</td>\n<td>Technique</td>\n</tr>\n</tbody>\n</table>",
+        "parent_id": null,
+        "items": [
+          {
+            "_id": "64UPSra9z0pKYnMg",
+            "name": "Rallying Cry",
+            "type": "technique",
+            "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 219
+              },
+              "description": "<p><em>The leader roars, calling their troops to battle, and the voice of an army echoes around them as the single cry is joined by many. As one, the troops surge forward to claim victory or perish in the attempt.</em></p>\n<p><strong>Activation</strong>: As a Support action, you may make a TN 2 Command (Fire) or Performance (Fire) check targeting any number of characters in the scene (or one cohort in a mass battle).</p>\n<p><strong>Effects</strong>: If you succeed, the targets are energized and excited by your rhetoric. After Step 5: Choose Kept Dice, each target adds a kept (ring) set to an (op) (str) result. This effect persists until the end of your next turn.</p>\n<p>New Opportunities</p>\n<p>Fire (op)+: In a skirmish, each enemy in the scene suffers 1 strife per  spent this way.</p>\n<p>Fire (op)+: In a mass battle, the enemy army suffers 1 panic per  spent this way.</p>",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 3,
+              "bought_at_rank": 0,
+              "ring": "fire",
+              "skill": "command,performance",
+              "difficulty": "2",
+              "technique_type": "shuji"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100001,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": null,
+              "systemVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000020",
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "78U20Z5Dvw4Jrus5",
+            "name": "Touchstone of Courage",
+            "type": "technique",
+            "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 217
+              },
+              "description": "<p><em>Armies are rarely routed in the field; instead, most collapse when morale becomes impossible to maintain. As panic rises in the ranks, soldiers look to leaders to set an example. The character does just this, speaking to the importance of duty to bring their troops back from the edge of chaos.</em></p>\n<p><strong>Activation</strong>: As a Support action, you may make a TN 4 Command (Earth) check targeting any number of characters (or your cohort during a mass battle).</p>\n<p><strong>Effects</strong>: If you succeed during an intrigue, duel, or skirmish conflict, each target increases their composure by your Earth Ring. This effect persists until the end of the scene. If you succeed during a mass battle, increase your army&rsquo;s discipline by your Earth Ring plus your bonus successes. This effect persists until the end of the scene.&nbsp;</p>\n<p>New Opportunities</p>\n<p>Earth (op) (op): During an intrigue, duel, or skirmish, each target removes strife equal to your Earth Ring.</p>\n<p>Earth (op) (op) During a mass battle, your army removes panic equal to your Earth Ring</p>",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 3,
+              "bought_at_rank": 0,
+              "ring": "earth",
+              "skill": "command",
+              "difficulty": "4",
+              "technique_type": "shuji"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100001,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": null,
+              "systemVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000011",
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "iciOR4jZ3aJHIR2B",
+            "name": "Shattering Tide Style",
+            "type": "technique",
+            "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "fields_of_victory",
+                "page": 95
+              },
+              "description": "<p><em>It is rare that a samurai can pick the site of a battle, and battles can occur in locations where no actual fighting is needed for harm to come to all parties. Where the environment is as hazardous as sharp steel or heavy fists, learning ways to incorporate such terrain into attacks makes each strike all the more effective.</em></p>\n<p><strong>Activation</strong>: When you make a Martial Arts [Unarmed] check, you may spend (op) in the following ways:</p>\n<ul>\n<li>(op): If you succeed, and both you and your target are in Confining or Dangerous terrain, treat the damage and deadliness of the weapon you used as 1 higher for each kept  result on your check.</li>\n<li>(op) (op): If both you and your target are in Confining or Dangerous terrain, your target suffers the Dazed condition.</li>\n</ul>\n<p><!-- notionvc: e6db70d8-ef71-4dd2-913a-4fa0b7fff413 --></p>",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 3,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100001,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": null,
+              "systemVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000067",
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "g3NKwhQkyTVthsQ7",
+            "name": "Battle in the Mind",
+            "type": "technique",
+            "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 174
+              },
+              "description": "<p><em>As two masters of any martial art square off before a duel, each seeks to predict the other&rsquo;s angle of attack and strategy, and the ways their predictions might be foiled by the opponent&rsquo;s.</em></p>\n<p><strong>Activation</strong>: When you make an Initiative check for a duel using your Void Ring, you may spend (op) in the following way:</p>\n<p>Void (op) (op): You name two rings, then your opponent must name one of those two rings. When your opponent selects their stance during their first turn of the duel, they cannot select the ring they named as their stance.</p>\n<p>Void (op)+: Choose a technique category. Learn one of your opponent&rsquo;s known techniques of that category (chosen by the opponent) per (op) spent this way.</p>",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 3,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100001,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": null,
+              "systemVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000004",
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "QoQYIJYZYfgErptY",
+            "name": "Command 1 -> 2",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 4,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "command"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": "l5r5e",
+              "systemVersion": "1.12.3",
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "ATUeU4uccW5kIhgq",
+            "name": "Command 2 -> 3",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 6,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "command"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": "l5r5e",
+              "systemVersion": "1.12.3",
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "P5XvBaISSekSEWCq",
+            "name": "Martial Arts [Ranged] 0 -> 1",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "igL70WiV0US7akVH",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 2,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "ranged"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": "l5r5e",
+              "systemVersion": "1.12.3",
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null
+            }
+          }
+        ],
+        "in_curriculum": false,
+        "xp_used": 24,
+        "xp_cost": 24,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancements": [],
+        "xp_used_total": 24
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "X461ZQJpHRsuvudl",
+      "name": "Beseech Shinjo's Empathy",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/ritual.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000028",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747336807936,
+        "modifiedTime": 1747336911920,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 97
+        },
+        "description": "<p><em>Shinjo&rsquo;s innate connection to the wilds of the world is carried on by many of her descendants. On their long journey across the wider world and back to Rokugan, Shinjo&rsquo;s heirs have kept her wisdom alive and flourishing as they raise and train animals from hounds and hunting hawks to mighty Utaku steeds. Their techniques have even been adopted by some stablemasters of other Great Clans after their return to Rokugan.</em></p>\n<p><strong>Activation</strong>: Once per session as a downtime activity or Support action, you may make a Survival (Water) check targeting a friendly animal at range 0&ndash;1. The TN is equal to the (mil) conflict rank of the animal. If this is an animal</p>\n<p>you are bonded with (see page 111 of the core rulebook), reduce the TN of the check by 2 (to a minimum of 1).</p>\n<p><strong>Effects</strong>: If you succeed, your target removes 3 fatigue, plus 1 additional fatigue per bonus success on the check.</p>\n<p>New Opportunities</p>\n<p>(op): You and the target each remove 1 strife per bonus success.</p>\n<p>(op): If you succeed, your target removes additional fatigue equal to your ranks in Medicine.</p>\n<p>(op): Remove the Bleeding condition from the target.</p>\n<p>(op) (op): Remove the Lightly Wounded condition from the target, or reduce the Severely Wounded condition to the Lightly Wounded condition.</p>\n<p>(op) (op): If you succeed, remove the Dying condition from the target.</p>\n<p>(op) (op)+: Choose one additional friendly animal of the same  conflict rank or lower in range as a target per  spent this way</p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 3,
+        "xp_cost": 3,
+        "rank": 2,
+        "bought_at_rank": 1,
+        "ring": "water",
+        "skill": "survival",
+        "difficulty": "@T:martialRank",
+        "technique_type": "ritual"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "KeRiMWLTvqR30t7E",
+      "name": "Lightning Raid",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000025",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747337078116,
+        "modifiedTime": 1748915770542,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 218
+        },
+        "description": "<p><em>The Unicorn Clan is famous for its quick strikes, smashing down upon its enemies with cavalry to sow chaos in their ranks and leave them vulnerable to the rest of the army. Other clans employ similar tactics, usually by ambushing exposed cities or supply trains in the field. The leader rouses their troops for a swift attack to leave the enemy in a state of disarray.</em></p>\n<p>Activation: Once per scene, as an Attack and Movement action, you may make a TN 3 Command (Fire) check targeting any number of characters in the scene (or one cohort in a mass battle)</p>\n<p>Effects: If you succeed during a skirmish, each character increases their initiative by your Fire Ring plus your bonus successes at the beginning of the next round. If you succeed during a mass battle, one enemy&nbsp;leader&rsquo;s cohort suffers panic equal to your Fire Ring plus your bonus successes.</p>\n<p>New Opportunities</p>\n<p>Fire (op): During a skirmish, immediately perform a Strike action (see page 260).</p>\n<p>Fire (op): During a mass battle, immediately perform an Assault action (see page 278) against the chosen enemy cohort&rsquo;s leader.</p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 3,
+        "xp_cost": 3,
+        "rank": 2,
+        "bought_at_rank": 1,
+        "ring": "fire",
+        "skill": "command,performance",
+        "difficulty": "3",
+        "technique_type": "shuji"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Survival +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "pSIDrUxVwiOKqUaX",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 6,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "survival"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747337866653,
+        "modifiedTime": 1747337874779,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Martial Arts [Unarmed] +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "HMKGiUtCmvrTH2bL",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 2,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "unarmed"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747337884090,
+        "modifiedTime": 1747337899543,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Martial Arts [Melee] +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "nk2pm4VOzrtE3zuB",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 4,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "melee"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747337909343,
+        "modifiedTime": 1747337915148,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Culture +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "zq4cnuMZrRSfkhoq",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 2,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "culture"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747337954740,
+        "modifiedTime": 1747337959298,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "mb6J4wmLQ1fFmFP6",
+      "name": "Renowned Warrior",
+      "type": "title",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/items/title.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-titles.Item.L5RCoreTit000033",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747338961181,
+        "modifiedTime": 1747339246823,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 135
+        },
+        "description": "<h2>Curriculum</h2><table><tr><td>Martial Skills</td><td>Skill Group</td></tr><tr><td>Command</td><td>Skill</td></tr><tr><td>Culture</td><td>Skill</td></tr><tr><td>Performance</td><td>Skill</td></tr><tr><td><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-2 Kata</a> (prereq)</td><td>Tech. Grp.</td></tr><tr><td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000003\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000003\">(kata) Heartpiercing Strike</a> (prereq)</td><td>Technique</td></tr><tr><td><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000079\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000079\">(shuji) Righteous Example</a> (prereq)</td><td>Technique</td></tr></table>",
+        "parent_id": null,
+        "items": [
+          {
+            "_id": "8NGYYznPRkK1YJTb",
+            "name": "Heartpiercing Strike",
+            "type": "technique",
+            "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 176
+              },
+              "description": "<p><em><span class=\"fontstyle0\">Battle is the art of killing, and woe betide any warrior </span><span class=\"fontstyle0\">who forgets it. With a roar, the bushi launches forward, </span><span class=\"fontstyle0\">stabbing out with their weapon to fatally impale their </span><span class=\"fontstyle0\">enemy. Even if the strike does not slay the foe, it is </span><span class=\"fontstyle0\">likely to weaken them significantly.</span></em></p>\n<p><span class=\"fontstyle2\"><strong>Activation</strong>: </span><span class=\"fontstyle3\">As an Attack and Movement action using </span><span class=\"fontstyle3\">a readied weapon, you may make a </span><span class=\"fontstyle2\">TN 4 Martial Arts </span><span class=\"fontstyle2\">(Fire) check </span><span class=\"fontstyle3\">using the appropriate skill for that weapon, targeting one character within the weapon&rsquo;s range.</span></p>\n<p><span class=\"fontstyle2\"><strong>Effects</strong>:&nbsp;</span><span class=\"fontstyle3\">If you succeed, your target suffers a critical strike </span><span class=\"fontstyle3\">with severity equal to your weapon&rsquo;s deadliness plus your </span><span class=\"fontstyle3\">bonus successes. The TN of the Fitness check to resist this </span><span class=\"fontstyle3\">critical strike is 3 (Air 4, Water 1) instead of the normal TN.</span></p>\n<p><span class=\"fontstyle3\">If you fail, you suffer the Disoriented condition.</span></p>\n<p><span class=\"fontstyle4\">New Opportunities</span></p>\n<p><span class=\"fontstyle2\">Fire&nbsp;</span><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Before resolving the effect, move up to 1 range </span><span class=\"fontstyle3\">band toward your target.</span>&nbsp;</p>",
+              "parent_id": {
+                "item_id": "mb6J4wmLQ1fFmFP6",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 3,
+              "bought_at_rank": 0,
+              "ring": "fire",
+              "skill": "melee",
+              "difficulty": "4",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100001,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": null,
+              "systemVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000003",
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "wYK7X0Y90xwG83yX",
+            "name": "Performance 0 -> 1",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "mb6J4wmLQ1fFmFP6",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 2,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "performance"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": "l5r5e",
+              "systemVersion": "1.12.3",
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "dodkROappn6jwopK",
+            "name": "Command 3 -> 4",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "mb6J4wmLQ1fFmFP6",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 8,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "command"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": "l5r5e",
+              "systemVersion": "1.12.3",
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null
+            }
+          },
+          {
+            "_id": "60fb699jiLsFbRyN",
+            "name": "Striking as Fire",
+            "type": "technique",
+            "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 178
+              },
+              "description": "<p><em><span class=\"fontstyle0\">Victory cannot be achieved through defense alone, </span><span class=\"fontstyle0\">and it is a poor student of the sword who forgets that </span><span class=\"fontstyle0\">their most important goal is simple: cut down their </span><span class=\"fontstyle0\">enemy. All else fades to the background as the bushi </span><span class=\"fontstyle0\">fiercely presses the attack, trying to force an error or </span><span class=\"fontstyle0\">open an opportunity to end their foe.</span></em></p>\n<p><span class=\"fontstyle2\"><strong>Activation</strong>:&nbsp;</span><span class=\"fontstyle3\">When you make a Martial Arts [Melee, </span><span class=\"fontstyle3\">Ranged, or Unarmed] (Fire) Attack action check, you </span><span class=\"fontstyle3\">may spend (op)</span><span class=\"fontstyle4\">&nbsp;</span><span class=\"fontstyle3\">in the following way:</span></p>\n<p><span class=\"fontstyle2\">Fire (op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">The next time your target suffers a critical </span><span class=\"fontstyle3\">strike, increase its severity by 1 per (op)</span><span class=\"fontstyle4\">&nbsp;</span><span class=\"fontstyle3\">spent this way. </span><span class=\"fontstyle3\">This effect persists until the end of your next turn.</span>&nbsp;</p>",
+              "parent_id": {
+                "item_id": "mb6J4wmLQ1fFmFP6",
+                "actor_id": "ym4i4R82EQa9L6q0"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 0,
+              "ring": "fire",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100001,
+            "ownership": {
+              "default": 2,
+              "A88pz0QQdIW2iYMv": 3,
+              "k4AAbzALTvtrTA9c": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "12.343",
+              "systemId": null,
+              "systemVersion": null,
+              "createdTime": null,
+              "modifiedTime": null,
+              "lastModifiedBy": null,
+              "compendiumSource": "Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000013",
+              "duplicateSource": null
+            }
+          }
+        ],
+        "in_curriculum": false,
+        "xp_used": 16,
+        "xp_cost": 16,
+        "rank": 1,
+        "bought_at_rank": 2,
+        "ring": "void",
+        "advancements": [],
+        "xp_used_total": 16
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "DbXhOdFGHIDA5CBh",
+      "name": "Call the Wild",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "https://assets.forge-vtt.com/bazaar/systems/l5r5e/assets/assets/icons/techs/shuji.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000078",
+        "duplicateSource": null,
+        "coreVersion": "13.348",
+        "systemId": "l5r5e",
+        "systemVersion": "1.12.3",
+        "createdTime": 1747361017906,
+        "modifiedTime": 1747361161378,
+        "lastModifiedBy": "A88pz0QQdIW2iYMv",
+        "exportSource": null
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 101
+        },
+        "description": "<p><em><span class=\"fontstyle0\">While an animal or spiritual companion can be a source </span><span class=\"fontstyle0\">of comfort and camaraderie for Rokugani, there are </span><span class=\"fontstyle0\">times when the untamed beast is needed. Even the </span><span class=\"fontstyle0\">bravest of bushi might falter when a great cat bares its </span><span class=\"fontstyle0\">claws and makes ready to leap, or a growling wolf pads </span><span class=\"fontstyle0\">out of the darkness with blood on its fangs.</span></em></p>\n<p><span class=\"fontstyle2\"><strong>Activation</strong>:&nbsp;</span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">Survival (Fire) check </span><span class=\"fontstyle3\">targeting one friendly animal or manifest kami at range 0&ndash;2. The TN of the check is equal to </span><span class=\"fontstyle3\">the animal or kami&rsquo;s&nbsp;</span><span class=\"fontstyle4\"> </span><span class=\"fontstyle3\">conflict rank.</span></p>\n<p><span class=\"fontstyle2\"><strong>Effects</strong>:&nbsp;</span><span class=\"fontstyle3\">If you succeed, increase the damage and </span><span class=\"fontstyle3\">deadliness of the animal or kami&rsquo;s weapon profiles by </span><span class=\"fontstyle3\">1, plus 1 for every two bonus successes beyond the </span><span class=\"fontstyle3\">first. This effect persists until the end of the scene.</span></p>\n<p><span class=\"fontstyle5\">New Opportunities</span></p>\n<p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">You may target one additional friendly animal or </span><span class=\"fontstyle3\">manifest kami per </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">spent this way.</span></p>\n<p><span class=\"fontstyle2\">(op)+: </span><span class=\"fontstyle3\">The target animal or kami removes 1 fatigue per </span><span class=\"fontstyle4\"><span class=\"fontstyle2\">(op)</span> </span><span class=\"fontstyle3\">spent this way.</span></p>\n<p><span class=\"fontstyle4\"><span class=\"fontstyle2\">(op)</span></span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">The animal gains the Enraged condition, then </span><span class=\"fontstyle3\">removes all strife.</span>&nbsp;</p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 3,
+        "xp_cost": 3,
+        "rank": 3,
+        "bought_at_rank": 1,
+        "ring": "fire",
+        "skill": "survival",
+        "difficulty": "@T:martialRank",
+        "technique_type": "shuji"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "13.348",
+    "systemId": "l5r5e",
+    "systemVersion": "1.12.3",
+    "createdTime": 1747108749148,
+    "modifiedTime": 1753152233196,
+    "lastModifiedBy": "A88pz0QQdIW2iYMv",
+    "exportSource": {
+      "worldId": "my-first-world",
+      "uuid": "Actor.ym4i4R82EQa9L6q0",
+      "coreVersion": "13.351",
+      "systemId": "l5r5e",
+      "systemVersion": "1.13.4"
+    }
+  },
+  "ownership": {
+    "default": 2
+  }
+}
