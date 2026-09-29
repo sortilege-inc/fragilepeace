@@ -1,0 +1,33 @@
+EXTENSION "Fixture_Layer" EXTENDS "L5R5e_Core_NPCs" {
+    NAME "The layer build's own fixture"
+    VERSION "0.1.0"
+    SPEC_VERSION "0.5"
+    RELEASE_DATE "2026-09-23"
+
+    # Not game content. The smallest layer that exercises every path of build/build_layer.py: one
+    # NPC on the corpus's NPC chassis (the references gate), a technique referenced by name and a
+    # MODIFY and CONCERNS by name on an entity the corpus leaves unhashed (the names gate). Built
+    # only to a scratch folder by the layer's tests, never into data/.
+
+    MODIFY ^"Composure" {
+        GUIDANCE {
+            ENTRY ^"fixture-guidance" #FXLayerFixtureGuide01 {
+                CONCERNS [ ^"Composure" ]
+                TOPICS [ "fixture" ]
+                TEXT "A fixture guidance entry, not a rule."
+            }
+        }
+    }
+
+    #FXLayerFixtureNPC00001 ^"Fixture Adversary" DEF {
+        EXTENDS #t4540de6f35155c46f41f0 ^"NPC"
+
+        PROPERTIES {
+            ^"Type" STRING "Minion" FIXED
+            ^"Combat Conflict Rank" INTEGER 1
+            ^"Intrigue Conflict Rank" INTEGER 1
+            ^"Description" STRING "A fixture for the layer build, not a character."
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [^"One within the Void"]
+        }
+    }
+}
