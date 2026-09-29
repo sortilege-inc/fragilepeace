@@ -71,11 +71,28 @@ beneath it. The support-folder copies were deleted afterwards so nothing can dri
 gates were re-run with them gone. Setsuna's generator stays in the support folder and reaches the
 shared config where it now lives.
 
-**F6 — The homebrew layer is the cast, and only the cast. PROPOSED.**
+**F6 — The homebrew layer is the cast, and only the cast. Characters landed 2026-09-29.**
 There are no campaign statblocks in the chronicle and no house rules on record. `campaign/dsl/`
-gets the 6 PCs and the 3 companions, as instances of the system's actor; NPCs stay prose on their
-entity pages until one of them needs numbers. Sheet records in `campaign/source/` byte for byte,
-checked every version.
+gets the characters and the 3 companions, as instances of the system's actor; NPCs stay prose on
+their entity pages until one of them needs numbers. Sheet records in `campaign/source/` byte for
+byte, checked every version.
+
+Landed for the characters: 6 sheets and 2 archived versions. Two things the conversion turned up
+that were not in the plan —
+
+- **One homebrew item.** *Voice of Authority*, a signature scroll on Setsuna's sheet with no source
+  book, so the corpus cannot be asked for it. Carried as its own entity in the layer, rules text
+  read out of the export rather than retyped.
+- **An owner ruling that existed only in code.** Harunobu's +6 glory award lived in the retiring
+  sheet builder and nowhere else; the export still reads 49. Converting without noticing would have
+  published 49 and lost it. `OWNER_RULINGS` now carries it as the arithmetic, self-retiring.
+
+**Still to do in M3:** the three companions — Khar Baatar, Kurige and the manifest water kami — which
+are Foundry `npc` actors and want the corpus's NPC type, not `Samurai`.
+
+**Not in the layer at all:** Shiba Midori and Bayushi Monban. They are other players' characters and
+no export of either is in this campaign's archive; `convert_cast.MISSING` names them so the absence
+is stated rather than noticed later.
 
 **F7 — Worker `fragile-peace`, origin `fragilepeace.sortilege.online` + the github.io behind it.**
 At deploy, not before.
@@ -87,7 +104,7 @@ At deploy, not before.
 | **M0 landed** | This plan; owner's answers on F1–F3 | — |
 | **M1 landed** | **The fork.** Three commits on `vtt-instance`: `git mv` everything under `campaign/`; merge `upstream/main` with `--allow-unrelated-histories`; the boundary files + `.gitattributes` + the driver | 697 files `R100`, 0 insertions, 0 deletions. Merge: no collisions. Boundary proven by making it fail first — without the driver, `CONFLICT … engine/config.js`, exit 1; with it, exit 0, config keeps *The Fragile Peace* and the upstream-owned file takes its change |
 | **M2 landed** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` All five exit 0 from `campaign/source/`, and `build_site` rewrote the 509 pages **byte-identically** after the move — zero changed files. `factguard` proven still to read git at the new path by planting a cut and watching its counts drop |
-| **M3** | **The cast into `campaign/dsl/`**, piloted on one character field by field including a planted difference that must fail, then the rest | Per-character field check vs the retiring sheet; layer gated three ways by `build_layer.sh` |
+| **M3 landed (characters); companions pending** | **The cast into `campaign/dsl/`** | 8 sheets, **336 fields compared, 0 differ** (`check_cast.py`, reading the BUILT layer back against the exports). Three planted differences each caught, exit 1. Layer gated three ways by `build_layer.sh`: 401 strings 0 uncovered, 9 ids none the corpus's, every reference resolving |
 | **M4** | **The characters onto the VTT sheet**; `play/` deleted | Every version of every character checked against its old sheet |
 | **M5** | **The content into tabs** — `build_site.py` retargeted, stylesheet scoped to its element, tabs pushed at the `site` stage, the cast page rebuilt on the DSL layer keeping its storage keys | Old output vs new, text-identical; every link resolves; no `:root`/`body` rule escaping into the VTT |
 | **M6** | **The GM's material** into `campaign/pack/seed.json`; `/gm/` gate, `ownAdventure`, `hidePanes`, robots | The family standards checked in the browser on :8734 |
