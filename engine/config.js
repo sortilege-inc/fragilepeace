@@ -53,7 +53,11 @@ window.VttConfig = {
     // filled as the milestones land (campaign/PLAN.md M3, M5); a stage naming a file that does
     // not exist yet would 404 on every page, so each entry arrives with its file.
     styles: [],
-    stages: { data: [], site: [], gm: [], table: [], play: [] },
+    stages: {
+      // the campaign's own book (M3): the cast and the companions, built from campaign/dsl/
+      data: ['campaign/data/index.js'],
+      site: [], gm: [], table: [], play: [],
+    },
   },
   worker: {
     deployed: '',

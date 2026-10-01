@@ -118,6 +118,16 @@ isn't wired into `instance.stages` yet (M5). The core pregen Ide Yuina stood in.
 fold; versions newest first; and her advantages, which she has none of. The merged tree passed 13 of 13,
 with 0 console errors.
 
+**F9 — The campaign layer wired in (owner, 2026-10-01: "wire the Fragile Peace campaign layer in").**
+`engine/config.js` `instance.stages.data: ['campaign/data/index.js']`. Every page now loads the book
+*The Fragile Peace*: the site, `/gm/`, the table and the player's page. It brings the six characters as
+pregens and the three companions as NPCs. The layer was rebuilt first, byte-identical, and `check_cast`
+(337 fields, 0 differ) and `check_companions` (69, 0 differ) passed. `campaign/source/check_layer.js`
+(headless) adds Setsuna through the Party pane's picker and reads her sheet: rings and skills as the book,
+all nine techniques. Before, 5 FAIL (no book on any page); after, PASS with 0 console errors. Doing this
+found upstream I21: the live sheet named 1 of her 9 techniques, a regression of I20. Fixed upstream and
+merged here.
+
 ## Milestones
 
 | | What | Proof |
@@ -126,7 +136,7 @@ with 0 console errors.
 | **M1 landed** | **The fork.** Three commits on `vtt-instance`: `git mv` everything under `campaign/`; merge `upstream/main` with `--allow-unrelated-histories`; the boundary files + `.gitattributes` + the driver | 697 files `R100`, 0 insertions, 0 deletions. Merge: no collisions. Boundary proven by making it fail first — without the driver, `CONFLICT … engine/config.js`, exit 1; with it, exit 0, config keeps *The Fragile Peace* and the upstream-owned file takes its change |
 | **M2 landed** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` All five exit 0 from `campaign/source/`, and `build_site` rewrote the 509 pages **byte-identically** after the move — zero changed files. `factguard` proven still to read git at the new path by planting a cut and watching its counts drop |
 | **M3 landed** | **The cast into `campaign/dsl/`** | 8 sheets, **336 fields compared, 0 differ** (`check_cast.py`, reading the BUILT layer back against the exports). Three planted differences each caught, exit 1. Layer gated three ways by `build_layer.sh`: 401 strings 0 uncovered, 9 ids none the corpus's, every reference resolving |
-| **M4** | **The characters onto the VTT sheet**; `play/` deleted | Every version of every character checked against its old sheet |
+| **M4** | **The characters onto the VTT sheet** (layer wired 2026-10-01, F9); `play/` deleted | Every version of every character checked against its old sheet |
 | **M5** | **The content into tabs** — `build_site.py` retargeted, stylesheet scoped to its element, tabs pushed at the `site` stage, the cast page rebuilt on the DSL layer keeping its storage keys | Old output vs new, text-identical; every link resolves; no `:root`/`body` rule escaping into the VTT |
 | **M6** | **The GM's material** into `campaign/pack/seed.json`; `/gm/` gate, `ownAdventure`, `hidePanes`, robots | The family standards checked in the browser on :8734 |
 | **M7** | **Deploy** — owner's step, not taken here | — |
