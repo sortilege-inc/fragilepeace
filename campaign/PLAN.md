@@ -142,19 +142,21 @@ differences across 6 sheets. Each was traced to its source:
   and was finished by the owner on 2026-09-26 (`OWNER_RULINGS`); and *Kogarashi*, which the export
   misspells in Setsuna's ninjō (`CORRECTIONS`).
 - **Facts no export carries** (`FROM_THE_OLD_SHEETS`, from the builders, verbatim):
-  - Setsuna's Void Wound, bushidō register, her horse, and the two things *in hand, unspent*;
+  - Setsuna's bushidō register, her horse, and the two things *in hand, unspent*. Her old sheet's Void
+    Wound is not carried: she healed it some time ago (owner, 2026-10-01);
   - Anzu's note that she is not a campaign character;
   - Morozane's lion, Shigo no Chinmoku, from the owner's screenshots, with the Hunting Cat's two
     abilities verbatim from core (`convert_companions.TRANSCRIBED`).
 - **House spelling** (`archivist.CORRECTIONS`, as `verify_site` states it) now applies to what the
   table wrote: family, ninjō, giri, description, notes. It does not apply to a book's own names or to
   Foundry's name for the actor.
-- **13 differences are the layer being right**, each with its reason in `check_sheets.ACCOUNTED`:
+- **14 differences are the layer being right**, each with its reason in `check_sheets.ACCOUNTED`:
   - six school names in the corpus's form;
   - Jūjirō's live ninjō over his creation answer;
   - Ferocity, an anxiety in both the corpus and Foundry;
   - Morozane's two titles, which the old sheet showed only as their title abilities;
-  - Harunobu's "awaiting the GM" notes, settled by the +6 glory ruling.
+  - Harunobu's "awaiting the GM" notes, settled by the +6 glory ruling;
+  - Setsuna's Void Wound, healed.
 
 The players' saves: `campaign/site/import-old-sheet.js` takes a retired page's `pf-sheet-<id>` and
 `pf-log-<id>` once, into the matching party member. It takes trackers, stance, conditions, conflict,
@@ -170,7 +172,7 @@ to run; they are kept as provenance. Every Play link goes to `/gm/play.html`, as
 | **M1 landed** | **The fork.** Three commits on `vtt-instance`: `git mv` everything under `campaign/`; merge `upstream/main` with `--allow-unrelated-histories`; the boundary files + `.gitattributes` + the driver | 697 files `R100`, 0 insertions, 0 deletions. Merge: no collisions. Boundary proven by making it fail first — without the driver, `CONFLICT … engine/config.js`, exit 1; with it, exit 0, config keeps *The Fragile Peace* and the upstream-owned file takes its change |
 | **M2 landed** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` All five exit 0 from `campaign/source/`, and `build_site` rewrote the 509 pages **byte-identically** after the move — zero changed files. `factguard` proven still to read git at the new path by planting a cut and watching its counts drop |
 | **M3 landed** | **The cast into `campaign/dsl/`** | 8 sheets, **336 fields compared, 0 differ** (`check_cast.py`, reading the BUILT layer back against the exports). Three planted differences each caught, exit 1. Layer gated three ways by `build_layer.sh`: 401 strings 0 uncovered, 9 ids none the corpus's, every reference resolving |
-| **M4 landed** | **The characters onto the VTT sheet** (layer wired 2026-10-01, F9); `play/` deleted (F10) | `check_sheets.py`: 197 fields across 6 sheets and Anzu's creation version, 0 differ, 13 accounted for. Against the layer before F10 it fails 12. `check_cast` 337 fields, 0 differ, and fails 4 sheets on the old layer. `check_companions` 69, 0 differ. Headless `check_m4.js`, through the Party picker: all six characters with their portraits and every technique, title-held ones included; Setsuna's carried facts in her biography. The import (test saves) takes trackers, Dazed and a glory changed in play, not the printed honor or Harunobu's stale 49; it runs once. The old site's Play links reach `/gm/play.html`. 0 console errors, after upstream I22. All five site gates exit 0 with `play/` gone. |
+| **M4 landed** | **The characters onto the VTT sheet** (layer wired 2026-10-01, F9); `play/` deleted (F10) | `check_sheets.py`: 197 fields across 6 sheets and Anzu's creation version, 0 differ, 14 accounted for (the Void Wound healed, owner 2026-10-01). Against the layer before F10 it fails 12. `check_cast` 337 fields, 0 differ, and fails 4 sheets on the old layer. `check_companions` 69, 0 differ. Headless `check_m4.js`, through the Party picker: all six characters with their portraits and every technique, title-held ones included; Setsuna's carried facts in her biography. The import (test saves) takes trackers, Dazed and a glory changed in play, not the printed honor or Harunobu's stale 49; it runs once. The old site's Play links reach `/gm/play.html`. 0 console errors, after upstream I22. All five site gates exit 0 with `play/` gone. |
 | **M5** | **The content into tabs** — `build_site.py` retargeted, stylesheet scoped to its element, tabs pushed at the `site` stage, the cast page rebuilt on the DSL layer keeping its storage keys | Old output vs new, text-identical; every link resolves; no `:root`/`body` rule escaping into the VTT |
 | **M6** | **The GM's material** into `campaign/pack/seed.json`; `/gm/` gate, `ownAdventure`, `hidePanes`, robots | The family standards checked in the browser on :8734 |
 | **M7** | **Deploy** — owner's step, not taken here | — |

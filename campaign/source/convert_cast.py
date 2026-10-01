@@ -69,7 +69,7 @@ SHEETS = [x for x in SHEETS if x[2]]
 GM_SHEETS = []   # this campaign keeps no separate GM layer: everything on the site is the table's
 # (sheets, the .actor file, EXTENSION id, its NAME, what the file's header says)
 LAYERS = [
-    (SHEETS, 'campaign/dsl/fragile-peace-cast.actor', 'FragilePeace_Cast', 'The Fragile Peace — the cast', '0.1.1',
+    (SHEETS, 'campaign/dsl/fragile-peace-cast.actor', 'FragilePeace_Cast', 'The Fragile Peace — the cast', '0.1.2',
      'The cast: instances of the Samurai ACTOR in the corpus\'s pregen conventions.'),
 ]
 
@@ -135,14 +135,11 @@ def ruled(pid, field, value):
 # verbatim, found by M4's check against the old sheets (campaign/source/check_sheets.py). Properties
 # the Samurai ACTOR does not declare; the sheet lists them with the biography. The current sheet only.
 #   Setsuna — from fragile-peace-support/doji-setsuna/build/build_sheet.py (the owner's dossier):
-#   the standing Void wound, the register of her bushidō, her horse, and what is "in hand, unspent".
+#   the register of her bushidō, her horse, and what is "in hand, unspent". (Not the old sheet's Void wound:
+#   healed some time ago — owner, 2026-10-01.)
 #   Anzu — from build_anzu_sheet.py: what the sheet is for.
 FROM_THE_OLD_SHEETS = {
     '#FPpcDojiSetsuna': [
-        ('Afflictions', ['Void Wound — severe, partially healed: Sustained during the termination. '
-                         'Increases the TN of Void-stance and Void-skill checks rather than reducing pool '
-                         'capacity. It has persisted across the whole arc of the campaign and does not clear '
-                         'on a scene reset.']),
         ('Bushido Register', 'Rigid acquiescence'),
         ('Mounts', ['Kogarashi: A white Utaku steed with a silver mane and tail — lean, swift, always '
                     'poised. A wedding gift from the Shinjō family, and the one being to whom her warmth '

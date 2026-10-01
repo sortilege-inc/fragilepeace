@@ -76,8 +76,9 @@ const CAST = [
     expect('every technique, a title\'s own included (' + want.techs.length + ')', got.techs, want.techs.map((t) => t.toLowerCase()));
     if (id === '#FPpcDojiSetsuna') {
       expect('Setsuna: Shallow Waters and the three kata', ['shallow waters', 'coiling serpent style', 'crescent moon style', 'open-hand style'].every((t) => got.techs.indexOf(t) !== -1), true);
-      expect('Setsuna: the old sheet\'s facts in her biography', ['Void Wound', 'Rigid acquiescence', 'Kogarashi', 'Two boons, owed by the Lion', 'Miya Satoshi'].filter((t) => got.bio.indexOf(t) === -1), []);
+      expect('Setsuna: the old sheet\'s facts in her biography', ['Rigid acquiescence', 'Kogarashi', 'Two boons, owed by the Lion', 'Miya Satoshi'].filter((t) => got.bio.indexOf(t) === -1), []);
     }
+    if (id === '#FPpcDojiSetsuna') expect('Setsuna: no Void Wound (healed — owner, 2026-10-01)', /Void Wound/.test(got.bio), false);
     if (id === '#FPpcShinjoAnzu') expect('Anzu: not a campaign character', /does not appear in the chronicle/.test(got.bio), true);
     if (id === '#FPpcTonboKuma') expect('Kuma: the giri finished', /City of the Rich Frog/.test(got.bio), true);
   }

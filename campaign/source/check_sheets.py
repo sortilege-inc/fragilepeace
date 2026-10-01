@@ -40,6 +40,7 @@ ACCOUNTED = {
     ('morozane', 'Advantages'): 'Ferocity is an Anxiety in the corpus (core-anxieties) and in Foundry; the retiring builder tagged it a Distinction',
     ('morozane', 'Disadvantages'): 'Ferocity is an Anxiety in the corpus (core-anxieties) and in Foundry; the retiring builder tagged it a Distinction',
     ('morozane', 'Titles'): 'Foundry holds the titles Gunso and Renowned Warrior; the retiring sheet showed them only as their title abilities',
+    ('setsuna', 'Affliction'): 'healed some time ago (owner, 2026-10-01); the retired sheet still carried it',
     ('harunobu', 'Pending: Glory award outstanding for his part in the Unicor'): "resolved: the award is OWNER_RULINGS' +6 glory (owner, 2026-09-29), which the layer carries",
     ('harunobu', 'Pending: The glory, honour and status below are therefore p'): "resolved with the award above: the layer's glory is post-award",
 }
