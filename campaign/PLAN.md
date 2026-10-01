@@ -108,6 +108,16 @@ is stated rather than noticed later.
 **F7 — Worker `fragile-peace`, origin `fragilepeace.sortilege.online` + the github.io behind it.**
 At deploy, not before.
 
+**F8 — Upstream I20 merged (owner, 2026-10-01: "merge the fix into the Bushi Oni instance too and fragile peace").**
+The GM Inspector's party sheet without its duplicated blocks (`f39afa9`, from Portents' decision 80): the
+live sheet's own blocks, then only the skills, advantages, the rest of the gear and the biography folded;
+one GM-notes heading; versions oldest first. Client files only, so no Worker redeploy. Proven headless
+through the real controls on this repo. Setsuna can't be the test character, because the campaign layer
+isn't wired into `instance.stages` yet (M5). The core pregen Ide Yuina stood in. The pre-merge tree
+(`51b5df9`) failed 5 checks: a second ring row; a second header, type line, stats and technique list; no
+fold; versions newest first; and her advantages, which she has none of. The merged tree passed 13 of 13,
+with 0 console errors.
+
 ## Milestones
 
 | | What | Proof |
