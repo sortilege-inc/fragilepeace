@@ -34,12 +34,13 @@ function expect(label, got, want) {
 
   // every page loads the layer
   const PCS = ['Doji Setsuna', 'Shinjō Harunobu', 'Tonbo Kuma', 'Asahina Jūjirō', 'Shinjō Anzu', 'Matsu Morozane'];
-  const NPCS = ['Khar Baatar', 'Kurige', "Tonbo Kuma's Manifest Water Kami"];
+  // and Morozane's lion, transcribed (F10)
+  const NPCS = ['Khar Baatar', 'Kurige', "Tonbo Kuma's Manifest Water Kami", 'Shigo no Chinmoku'];
   for (const pg of ['', 'gm/', 'gm/vtt.html', 'gm/play.html']) {
     const p = await ctx.newPage(); watch(p, pg || 'site');
     await p.goto(ORIGIN + '/' + pg); await wait(3500);
     const r = await p.evaluate(() => window.L5RData ? { campaign: L5RData.books().some((b) => b.id === 'campaign'), label: L5RData.label ? L5RData.label('campaign') : null, pregens: L5RData.pregens().filter((x) => x.book === 'campaign').map((x) => x.name), npcs: L5RData.npcs().filter((x) => x.book === 'campaign').map((x) => x.name).sort() } : null);
-    expect((pg || 'site') + ': the campaign book, its 6 characters and 3 companions', r, (x) => x && x.campaign && JSON.stringify(x.pregens) === JSON.stringify(PCS) && JSON.stringify(x.npcs) === JSON.stringify(NPCS.slice().sort()));
+    expect((pg || 'site') + ': the campaign book, its 6 characters and 4 companions', r, (x) => x && x.campaign && JSON.stringify(x.pregens) === JSON.stringify(PCS) && JSON.stringify(x.npcs) === JSON.stringify(NPCS.slice().sort()));
     if (!pg) console.log('  site pregens: ' + JSON.stringify(r && r.pregens) + ' · label ' + JSON.stringify(r && r.label));
     await p.close();
   }
