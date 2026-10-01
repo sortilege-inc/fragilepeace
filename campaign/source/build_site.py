@@ -22,7 +22,12 @@ import archivist as A
 from archivist import slugify, norm, rel, link_wikilinks, md_inline
 
 ROOT = A.ROOT            # the git root
-SITE = A.SITE            # where pages are written: campaign/, since the VTT owns the root
+SITE = A.SITE            # the old site's root, campaign/ (the hand-written assets live there)
+# M5 (campaign/PLAN.md F4): each page is written as a document of the VTT's site tabs, campaign/docs/<its
+# old path>, by to_docs.document — the page's content less the shell's nav and footer, its links rewritten
+# to tab routes. The pages are still assembled in the shell below, so what a document holds is exactly
+# what the old page's content was; check_docs.py proves it against the old site.
+DOCS = os.path.join(SITE, "docs")
 BRAND = "The Fragile Peace"
 FOOT = ('<footer class="foot"><span class="mark">&#10070;</span>'
         'The Fragile Peace &middot; Legend of the Five Rings</footer>')
@@ -140,7 +145,9 @@ def month_year(iso):
 
 
 def write(url, content):
-    path = os.path.join(SITE, url)
+    from to_docs import document
+    content = document(url, content)
+    path = os.path.join(DOCS, url)
     d = os.path.dirname(path)
     if d and not os.path.isdir(d):
         os.makedirs(d)
@@ -867,7 +874,7 @@ def main():
     by_no = {e.number: e for e in entries}
 
     for d in GENERATED:
-        p = os.path.join(SITE, d)
+        p = os.path.join(DOCS, d)
         if os.path.isdir(p):
             shutil.rmtree(p)
 
@@ -1002,7 +1009,8 @@ Empire as its interpreters of Heaven's will.</p>
     for p in pages:
         link_wikilinks(p.raw, p.url, reg, unres2); tot += len(A.LINK_RE.findall(p.raw))
 
-    print("pages written        : %d" % n)
+    from to_docs import write_manifest
+    print("pages written        : %d (as documents; manifest %d)" % (n, write_manifest(DOCS)))
     written = sum(1 for s in sessions if s.number in rewrites)
     print("sessions             : %d (%d rewritten, %d raw), %d interlude(s)"
           % (len(sessions), written, len(sessions) - written, len(interludes)))

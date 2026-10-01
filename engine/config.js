@@ -52,12 +52,21 @@ window.VttConfig = {
   instance: {
     // filled as the milestones land (campaign/PLAN.md M3, M5); a stage naming a file that does
     // not exist yet would 404 on every page, so each entry arrives with its file.
-    styles: [],
+    // the old site's fonts, and its stylesheets scoped to .fp-doc (campaign/source/scope_css.py), then the
+    // hand-written fit (M5)
+    styles: [
+      'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap',
+      // the character dossiers' own fonts
+      'https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+SC:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap',
+      'campaign/site/fp-reset.css', 'campaign/site/campaign.css', 'campaign/site/fp.css',
+    ],
     stages: {
       // the campaign's own book (M3): the cast and the companions, built from campaign/dsl/; and the
       // portraits the retired play/ sheets showed (M4)
       data: ['campaign/data/index.js', 'campaign/site/portraits.js'],
-      site: [],
+      // the campaign's tabs (M5): the old site's pages as documents under campaign/docs/, and its map and
+      // roster filters as functions the tabs call
+      site: ['campaign/docs/manifest.js', 'campaign/site/map.js', 'campaign/site/roster.js', 'campaign/site/site.js'],
       // a player's saves from the retired play/ sheets, taken once into their party member (M4)
       gm: ['campaign/site/import-old-sheet.js'],
       table: [],

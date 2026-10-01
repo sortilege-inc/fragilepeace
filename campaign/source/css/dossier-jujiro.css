@@ -1,0 +1,612 @@
+/* The Jujiro dossier's own <style>, verbatim from the old campaign/character/jujiro.html (M5). */
+  :root {
+    --paper: #f4efe5;
+    --paper-dark: #e8e0cf;
+    --ink: #1f1d1a;
+    --ink-soft: #4a463f;
+    --ink-faint: #7a7468;
+    --crane-blue: #6b8caf;
+    --crane-blue-deep: #3d5a7a;
+    --gold: #a88a4a;
+    --gold-deep: #7e6432;
+    --crimson: #8b3a3a;
+    --rule: #c9bfa8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "EB Garamond", "Cormorant Garamond", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  body {
+    background-image:
+      radial-gradient(ellipse at 20% 10%, rgba(168, 138, 74, 0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 90%, rgba(107, 140, 175, 0.05) 0%, transparent 50%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .document {
+    max-width: 880px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 4rem 4.5rem 5rem;
+    box-shadow:
+      0 1px 2px rgba(31, 29, 26, 0.08),
+      0 8px 32px rgba(31, 29, 26, 0.12);
+    position: relative;
+    border: 1px solid var(--rule);
+  }
+  .document::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg,
+      var(--crane-blue-deep) 0%,
+      var(--crane-blue) 25%,
+      var(--gold) 50%,
+      var(--crane-blue) 75%,
+      var(--crane-blue-deep) 100%);
+  }
+
+  /* HEADER */
+  header.title-block {
+    text-align: center;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  header.title-block::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1rem auto 0;
+  }
+  /* Standing notice — table facts the sheet cannot carry yet: an award the GM
+     has still to set, or a credit taken in play and not spent. Mirrors
+     .pend-banner on the play sheet. Delete an entry the moment it lands. */
+  aside.standing {
+    display: flex;
+    gap: 0.9rem;
+    align-items: flex-start;
+    background: rgba(168, 138, 74, 0.09);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--crimson);
+    padding: 0.9rem 1.15rem;
+    margin: 0 0 2.75rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  aside.standing .seal { color: var(--crimson); font-size: 1.2rem; line-height: 1.25; }
+  aside.standing .standing-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+  aside.standing ul { margin: 0.35rem 0 0; padding-left: 1.1rem; }
+  aside.standing li { margin: 0.25rem 0; }
+  aside.standing strong { color: var(--ink); }
+
+  .eyebrow {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  h1.character-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+  }
+  .character-name .given {
+    font-style: italic;
+    color: var(--crane-blue-deep);
+  }
+  .epithets {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0.5rem 0 1rem;
+  }
+  .vitals {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+  }
+  .vitals span {
+    border-left: 1px solid var(--rule);
+    padding-left: 1.25rem;
+  }
+  .vitals span:first-child { border-left: none; padding-left: 0; }
+
+  /* SECTIONS */
+  section {
+    margin-bottom: 3rem;
+  }
+  h2.section-title {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.32em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.5rem;
+    position: relative;
+  }
+  h2.section-title::before {
+    content: "§";
+    color: var(--gold);
+    margin-right: 0.6rem;
+    font-style: italic;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+  }
+  h3.subhead {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--crane-blue-deep);
+    margin: 1.5rem 0 0.5rem;
+    font-style: italic;
+  }
+  h4.entry-label {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    text-transform: uppercase;
+    margin: 1rem 0 0.25rem;
+  }
+
+  p { margin: 0 0 1rem; }
+  ul, ol { margin: 0.5rem 0 1rem 1.5rem; padding: 0; }
+  li { margin-bottom: 0.4rem; }
+  em { color: var(--ink-soft); }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* PULL-QUOTES */
+  blockquote.maxim {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--crane-blue-deep);
+    border-left: 3px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(168, 138, 74, 0.04);
+  }
+  blockquote.maxim .attribution {
+    display: block;
+    font-size: 0.85rem;
+    font-style: normal;
+    color: var(--ink-faint);
+    font-family: "Cormorant SC", serif;
+    letter-spacing: 0.15em;
+    margin-top: 0.5rem;
+  }
+
+  /* TABLES */
+  table.dossier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.92rem;
+  }
+  table.dossier-table th {
+    text-align: left;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  table.dossier-table td:first-child {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-right: 1.5rem;
+  }
+  table.dossier-table tr:last-child td { border-bottom: none; }
+
+  /* PRIORITY TABLE (Advancement Plan) */
+  table.dossier-table.priority td.priority-num {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gold-deep);
+    text-align: center;
+    width: 2.5rem;
+    line-height: 1.2;
+  }
+  table.dossier-table.priority td.purchase {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: normal;
+    padding-right: 0.75rem;
+    width: 30%;
+  }
+  table.dossier-table.priority td.purchase em {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.15rem;
+  }
+  table.dossier-table.priority td.xp-cost {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    color: var(--ink);
+    text-align: center;
+    width: 3rem;
+    white-space: nowrap;
+    padding-right: 0.75rem;
+  }
+  table.dossier-table.priority td.priority-notes {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+  table.dossier-table.priority tr.subtotal td {
+    background: rgba(168, 138, 74, 0.08);
+    font-family: "Cormorant SC", serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  table.dossier-table.priority tr.subtotal td.label {
+    text-align: right;
+    font-family: "Cormorant SC", serif;
+  }
+  table.dossier-table.priority tr.subtotal td.xp-cost,
+  table.dossier-table.priority tr.subtotal td.priority-notes {
+    color: var(--ink);
+    font-weight: 500;
+  }
+  table.dossier-table.priority tr.cycle-break td {
+    padding: 0.3rem 0;
+    border-bottom: none;
+    background: transparent;
+  }
+
+  /* STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid var(--rule);
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .stat-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .stat-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+  }
+
+  /* SOCIAL STATS */
+  .social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+  }
+  .social-cell {
+    border: 1px solid var(--rule);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .social-cell .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .social-cell .value {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: var(--crane-blue-deep);
+    font-weight: 500;
+    line-height: 1;
+  }
+  .social-cell .delta {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin-top: 0.25rem;
+  }
+
+  /* TWO-COLUMN */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+
+  /* CALL-OUT */
+  .callout {
+    border: 1px solid var(--crane-blue);
+    border-left: 4px solid var(--crane-blue-deep);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba(107, 140, 175, 0.06);
+  }
+  .callout .label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    color: var(--crane-blue-deep);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* RELATIONSHIP CARDS */
+  .relations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .relation {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .relation:last-child { border-bottom: none; }
+  .relation .name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 0.15rem;
+  }
+  .relation .name .role {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+  .relation .name .clan {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold-deep);
+    margin-left: 0.5rem;
+  }
+  .relation .text {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.25rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+  .timeline-entry {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    left: -1.85rem;
+    top: 0.5rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--gold);
+  }
+  .timeline-entry .when {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .what {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .timeline-entry .detail {
+    font-size: 0.93rem;
+    color: var(--ink-soft);
+  }
+
+  /* TOC */
+  nav.toc {
+    border: 1px solid var(--rule);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.4);
+    columns: 2;
+    column-gap: 2rem;
+  }
+  nav.toc .toc-label {
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    column-span: all;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    font-family: "EB Garamond", serif;
+  }
+  nav.toc ol li {
+    counter-increment: toc;
+    font-size: 0.93rem;
+    margin-bottom: 0.3rem;
+    break-inside: avoid;
+  }
+  nav.toc ol li::before {
+    content: counter(toc, upper-roman) ". ";
+    color: var(--gold-deep);
+    font-style: italic;
+    margin-right: 0.3rem;
+  }
+  nav.toc a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s;
+  }
+  nav.toc a:hover { border-bottom-color: var(--crane-blue); }
+
+  /* FOOTER */
+  footer.colophon {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+    font-family: "Cormorant SC", serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  footer.colophon::before {
+    content: "❖";
+    display: block;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: white; padding: 0; }
+    .document { box-shadow: none; padding: 1in; max-width: none; }
+  }
+
+  /* MOBILE */
+  @media (max-width: 700px) {
+    body { padding: 1rem 0.5rem; }
+    .document { padding: 2rem 1.5rem 3rem; }
+    h1.character-name { font-size: 2.5rem; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+    .stat-grid { grid-template-columns: repeat(5, 1fr); gap: 0.25rem; }
+    .stat-cell { padding: 0.5rem 0.25rem; }
+    .stat-cell .value { font-size: 1.3rem; }
+    .social-grid { grid-template-columns: 1fr; }
+    nav.toc { columns: 1; }
+    .vitals { gap: 0.75rem; font-size: 0.7rem; }
+    .vitals span { border-left: none; padding-left: 0; }
+  }
+  /* Portrait */
+  .portrait-wrap {
+    text-align: center;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .portrait-wrap img {
+    max-width: 360px;
+    width: 100%;
+    border: 2px solid var(--gold);
+    box-shadow: 0 4px 16px rgba(31,29,26,0.12);
+  }
+
+  /* ---- site chrome (The Fragile Peace) — values literal from rokugan.css ---- */
+  body { padding-top: 0; }
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; flex-wrap:wrap; align-items:center; gap:0.1rem 1.4rem;
+    padding:0.72rem clamp(1rem,4vw,3rem);
+    margin:0 -1rem;
+    background:linear-gradient(180deg, rgba(23,18,13,0.98), rgba(23,18,13,0.9));
+    border-bottom:2px solid #b62432;
+    box-shadow:0 2px 0 rgba(154,123,63,0.35), 0 10px 24px rgba(0,0,0,0.25);
+    backdrop-filter:blur(3px);
+  }
+  .topnav .brand{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-weight:600; letter-spacing:0.24em;
+    text-transform:uppercase; font-size:0.82rem; color:#c2a25c;
+    margin-right:auto; white-space:nowrap;
+  }
+  .topnav .brand::before{ content:"\2756"; color:#b62432; margin-right:0.5em; font-size:0.8em; }
+  .topnav a{
+    font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif; font-size:0.86rem; letter-spacing:0.12em;
+    text-transform:uppercase; color:#cdc0a2; text-decoration:none;
+    padding:0.15rem 0; border-bottom:2px solid transparent; transition:.18s;
+  }
+  .topnav a:hover{ color:#fff; }
+  .topnav a.active{ color:#fff; border-bottom-color:#b62432; }
+  .topnav a.notes{ color:#b9c6a8; }
+  .topnav a.notes::before{ content:"\270E\00a0"; }
+  .topnav a.notes:hover{ color:#dcecc8; }
+  .document{ margin-top:2rem; }
+  .sitefoot{
+    text-align:center; margin:3rem auto 0; padding:2rem 1rem 0; max-width:880px;
+    color:#7a7468; font-family:"Barlow Condensed","Trebuchet MS",Arial,sans-serif;
+    text-transform:uppercase; letter-spacing:0.18em; font-size:0.74rem;
+    border-top:1px solid #c9bfa8;
+  }
+  .sitefoot .mark{ color:#b62432; margin-right:0.6em; }

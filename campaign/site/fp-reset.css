@@ -1,0 +1,9 @@
+/* campaign/site/fp-reset.css — hand-written, loaded BEFORE campaign.css (engine/config.js). Inside a document
+   every element sheds what the VTT's own stylesheet gives it (its `a`, `code`, `.ref`, `.card`, `.tag` …):
+   `all: revert` puts each property back to the browser's, which is what the old site built on. At the
+   weight of one class — above every VTT rule the documents meet, which load earlier — and below every
+   rule of the old site's (campaign.css, loaded after, scoped .fp-doc .fp-site/.fp-own-*), so the old site's
+   own rules, its universal `*` included, still win. Custom properties are untouched by `all`; an SVG's
+   drawing (the map's regions, filled by attribute) is left alone, since `all` would override that too.
+   check_tabs.js proves the result against the old pages, element by element. */
+.fp-doc :where(:not(svg, svg *)) { all: revert; }

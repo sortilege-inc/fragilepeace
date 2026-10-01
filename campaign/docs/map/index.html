@@ -1,0 +1,30 @@
+<div class="wrap">
+<p class="crumb"><a href="#fp">Home</a><span class="sep">›</span>Atlas<span class="sep">›</span>Map</p>
+<header class="masthead" style="padding-bottom:0.6rem"><div class="eyebrow">Atlas of Rokugan</div>
+<h1>The Map of Rokugan</h1>
+<p class="sub">The Emerald Empire, clan by clan. Choose a territory to descend into its own detailed map.</p></header>
+<div class="section-toggle"><a href="#atlas" class="active">Map</a><a href="#atlas/gazetteer">Gazetteer</a></div>
+
+<div class="mapapp">
+  <div class="map-toolbar">
+    <button class="map-btn" id="backBtn" disabled>‹ Rokugan</button>
+    <span class="rtitle" id="rtitle">The Emerald Empire of Rokugan</span>
+    <span class="map-hint" id="hint">Choose a clan's lands to descend</span>
+    <span class="zoomctl"><button class="map-btn" id="zout">−</button><button class="map-btn" id="zreset">Reset</button><button class="map-btn" id="zin">+</button></span>
+  </div>
+
+  <div class="map-viewport" id="viewport">
+    <div class="map-frame" id="frame">
+      <img class="base" id="baseimg" src="campaign/assets/rokugan-map.webp" alt="Map of Rokugan">
+      <img class="region" id="regionimg" style="display:none" alt="">
+      <svg class="hotspots" id="hotspots" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      <div class="labels" id="labels"></div>
+      <div class="pins hidden" id="pins"></div>
+    </div>
+  </div>
+
+  <div class="clanrow" id="clanrow"></div>
+  <p class="meta" style="margin-top:0.8rem">Six of the Great Clans' territories are charted here. The Scorpion lands and the Shadowlands beyond the Kaiu Wall are not, and a traveller's papers would not admit them there in any case. Region maps carry markers for sites once the <a class="ref" href="#atlas/gazetteer">gazetteer</a> has entries to point at.</p>
+</div>
+
+</div>

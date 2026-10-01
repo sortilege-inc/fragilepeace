@@ -21,23 +21,30 @@ import archivist as A
 from archivist import norm
 import build_site as B
 
-ROOT = A.SITE            # crawl the generated site: campaign/, since the VTT owns the root
+# M5: the site is the VTT's tabs; its pages are documents under campaign/docs/ (to_docs.py), drawn into the
+# VTT's root page, so a document's links are routes (#tab/…) or paths from the repo's root. Crawl them, and
+# the campaign's own stylesheets (campaign/site/), whose url()s are relative to themselves.
+ROOT = os.path.join(A.SITE, "docs")
+REPO = os.path.dirname(A.SITE)
+STYLES = os.path.join(A.SITE, "site")
 SKIP = (".git", "ingest", "sources", "scripts", "__pycache__")
 HREF_RE = re.compile(r"""(?:href|src)\s*=\s*["']([^"']+)["']""")
 CSSURL_RE = re.compile(r"""url\(\s*["']?([^"')]+)["']?\s*\)""")
 MASK_RE = re.compile(r"<[^>]*class=[\"'][^\"']*mask-bar[^\"']*[\"'][^>]*>(.*?)</\w+>", re.S)
 
 
-def walk():
-    for base, dirs, files in os.walk(ROOT):
+def walk(root=None):
+    for base, dirs, files in os.walk(root or ROOT):
         dirs[:] = [d for d in dirs if d not in SKIP and not d.startswith(".")]
         for fn in files:
             yield os.path.join(base, fn)
 
 
 def check_links():
+    from check_docs import resolve
+    docs = {os.path.relpath(p, ROOT) for p in walk() if p.endswith(".html")}
     bad, n = [], 0
-    for path in walk():
+    for path in list(walk()) + list(walk(STYLES)):
         ext = os.path.splitext(path)[1].lower()
         if ext not in (".html", ".css", ".js"):
             continue
@@ -48,13 +55,19 @@ def check_links():
             # Unquote first: a data: URI can carry its own percent-encoded
             # url(%23n) fragment, which is not a file reference.
             r = unquote(r)
-            if re.match(r"^(https?:|mailto:|data:|#|//)", r):
+            if re.match(r"^(https?:|mailto:|data:|//)", r):
+                continue
+            if r.startswith("#"):          # a route: the tabs' rules (check_docs.resolve, site.js)
+                n += 1
+                if ext == ".html" and not resolve(r, docs):
+                    bad.append((os.path.relpath(path, ROOT), r))
                 continue
             n += 1
             tgt = r.split("#")[0].split("?")[0]
             if not tgt:
                 continue
-            full = os.path.normpath(os.path.join(os.path.dirname(path), tgt))
+            here = os.path.dirname(path) if ext == ".css" else REPO   # a document is drawn into the root page
+            full = os.path.normpath(os.path.join(here, tgt))
             if not os.path.exists(full):
                 bad.append((os.path.relpath(path, ROOT), r))
     return n, bad

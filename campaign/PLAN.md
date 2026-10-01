@@ -50,7 +50,7 @@ check is the gate, not the build succeeding.
 Work through M0–M6 to a site that runs locally. The Worker, Pages and HTTPS are a separate step
 the owner confirms.
 
-**F4 — The content moves by rebuilding it, not by scraping it. PROPOSED (M5 depends on it).**
+**F4 — The content moves by rebuilding it, not by scraping it. Accepted (owner, 2026-10-01: "go ahead with M5").**
 INSTANCES.md step 5 says move the old pages rather than rewrite them, because Portents' pages were
 hand-authored HTML. Fragile Peace's are **generated**: 509 pages built from 60 chronicle files and
 56 local entity files by `build_site.py`. Scraping its own output back into `campaign/docs/` would
@@ -164,6 +164,29 @@ gear and the log. It takes honor, glory and status only where the save differs f
 printed, so a stale save cannot undo a ruling (Harunobu's 49). The five builders and Setsuna's refuse
 to run; they are kept as provenance. Every Play link goes to `/gm/play.html`, as in Portents.
 
+**F11 — M5: the old site as the VTT's site tabs (2026-10-01).**
+- **Documents, written at their old paths.** `build_site.py` writes each page through `to_docs.document` into
+  `campaign/docs/<old path>`. The shell's nav bar, footer and scripts are dropped, and every href is rewritten:
+  a page to its route, an anchor on the page to the page's route plus that anchor, an asset to
+  `campaign/assets/…`. Generation is otherwise unchanged. `migrate_docs.py` moved the 8 hand-written pages
+  once: home, the 5 characters pages, notes, and the map. `docs/manifest.js` lists all 517.
+- **Breadcrumbs kept**, against the playbook's "drop the breadcrumb": these sections are two and three
+  levels deep (Lore › Factions › a clan), and the crumb is the only way back up inside a tab.
+- **Eight tabs, in the old nav's order.** Ids avoid the VTT's own: `fp`, `pcs`, `party`, `chronicle`,
+  `personae`, `atlas`, `rokugan`, `notes`. Labels are the old nav's, except *The Characters*, the page's own
+  title, since the VTT has a *Characters* tab of its own. Atlas is the map, with its gazetteer at
+  `#atlas/gazetteer` and each place at `#atlas/<slug>`.
+- **Styles.** The old pages used two kinds, and `check_docs` now proves each page's: 513 used the site's
+  stylesheet (`rokugan.css`; the map adds `map.css`), scoped to `.fp-doc.fp-site`. The four character
+  dossiers used only a `<style>` of their own and their own fonts. Each style is kept verbatim in
+  `campaign/source/css/dossier-<name>.css` and scoped to `.fp-doc.fp-own-<name>`. `fp-reset.css` strips the VTT's
+  own element and class styles from the documents (`all: revert`, at the weight of one class, before
+  `campaign.css`). Without it, links took the VTT's crimson and `code` its font. On a phone each dossier
+  table scrolls inside itself; the old pages scrolled sideways.
+- **Not applicable here:** the playbook's "cast page rebuilt on the DSL layer, keeping its storage keys".
+  This campaign's NPCs are prose (F6), and no old page stored anything.
+- **The old URLs under `/campaign/…` now 404**, as Portents' did; no redirects.
+
 ## Milestones
 
 | | What | Proof |
@@ -173,13 +196,13 @@ to run; they are kept as provenance. Every Play link goes to `/gm/play.html`, as
 | **M2 landed** | **The gates keep working** from the new paths — all five exit 0 with `sources/` under `campaign/` All five exit 0 from `campaign/source/`, and `build_site` rewrote the 509 pages **byte-identically** after the move — zero changed files. `factguard` proven still to read git at the new path by planting a cut and watching its counts drop |
 | **M3 landed** | **The cast into `campaign/dsl/`** | 8 sheets, **336 fields compared, 0 differ** (`check_cast.py`, reading the BUILT layer back against the exports). Three planted differences each caught, exit 1. Layer gated three ways by `build_layer.sh`: 401 strings 0 uncovered, 9 ids none the corpus's, every reference resolving |
 | **M4 landed** | **The characters onto the VTT sheet** (layer wired 2026-10-01, F9); `play/` deleted (F10) | `check_sheets.py`: 197 fields across 6 sheets and Anzu's creation version, 0 differ, 14 accounted for (the Void Wound healed, owner 2026-10-01). Against the layer before F10 it fails 12. `check_cast` 337 fields, 0 differ, and fails 4 sheets on the old layer. `check_companions` 69, 0 differ. Headless `check_m4.js`, through the Party picker: all six characters with their portraits and every technique, title-held ones included; Setsuna's carried facts in her biography. The import (test saves) takes trackers, Dazed and a glory changed in play, not the printed honor or Harunobu's stale 49; it runs once. The old site's Play links reach `/gm/play.html`. 0 console errors, after upstream I22. All five site gates exit 0 with `play/` gone. |
-| **M5** | **The content into tabs** — `build_site.py` retargeted, stylesheet scoped to its element, tabs pushed at the `site` stage, the cast page rebuilt on the DSL layer keeping its storage keys | Old output vs new, text-identical; every link resolves; no `:root`/`body` rule escaping into the VTT |
+| **M5 landed** | **The content into tabs** (F4, F11): `build_site.py` writes documents, the stylesheets scoped by group, the tabs pushed at the `site` stage, the map and roster filters as functions | `check_docs.py`: 517 pages against the old site (git `5a1f6a6`), text identical in 517; 21,182 links, every one resolving; every page's styles carried. It fails a planted letter, a bad route, a bad anchor and an altered dossier style. Headless `check_tabs.js`: all 517 documents draw at their routes; a link, an anchor, the session page's Entities switch, the map's regions and the roster filters work. 17 sample pages styled as their old page, element by element, 0 differing (about 4,700 elements), checked while the old pages were still served. The VTT's own page is unchanged by the campaign's styles; no sideways scroll at 375px; 0 console errors. After deleting the old site (521 files): a rebuild reproduces all 518 files byte for byte, and `verify_site` (retargeted to the documents, and failing a planted route), `acceptcheck`, `factguard`, `voicecheck`, the three character checks and the three headless checks all pass. |
 | **M6** | **The GM's material** into `campaign/pack/seed.json`; `/gm/` gate, `ownAdventure`, `hidePanes`, robots | The family standards checked in the browser on :8734 |
 | **M7** | **Deploy** — owner's step, not taken here | — |
 
 ## Open questions for the owner
 
-1. **F4, F5, F6** above — each is a PROPOSED with a recommendation.
+1. **F4, F5, F6** are settled (F4 accepted with M5, 2026-10-01).
 2. **What is the arc?** `ownAdventure.title` names the campaign's own adventure. *The Fragile Peace*
    unless there is a better name for the current arc.
 3. **The `/gm/` gate wording.** Portents and Bushi Oni each have their own veil text.

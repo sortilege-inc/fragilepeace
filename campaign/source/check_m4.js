@@ -103,10 +103,11 @@ const CAST = [
   expect('a reload imports nothing again', await p.evaluate(() => (VttState.state.log || []).length), nLog);
 
   // the old site's Play links land on the player's page
-  for (const pg of ['campaign/character/index.html', 'campaign/party/doji-setsuna.html']) {
+  // since M5 the old pages are documents in the site's tabs (#pcs, #party/doji-setsuna)
+  for (const pg of ['#pcs', '#party/doji-setsuna']) {
     const q = await ctx.newPage(); watch(q, pg);
-    await q.goto(ORIGIN + '/' + pg); await wait(800);
-    const hrefs = await q.evaluate(() => [...document.querySelectorAll('a')].map((a) => a.href).filter((h) => /play/.test(h)));
+    await q.goto(ORIGIN + '/' + pg); await wait(1500);
+    const hrefs = await q.evaluate(() => [...document.querySelectorAll('.fp-doc a')].map((a) => a.href).filter((h) => /play/.test(h)));
     expect(pg + ': its Play links go to /gm/play.html', [...new Set(hrefs.map((h) => new URL(h).pathname))], ['/gm/play.html']);
     await q.close();
   }
