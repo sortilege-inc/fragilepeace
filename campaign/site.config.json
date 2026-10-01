@@ -16,7 +16,7 @@
     "entities": "campaign/sources/entities",
     "accept_table": "campaign/sources/factguard-accept.json"
   },
-  "_tools": "doji-setsuna is a sibling generator, not a script: it builds its own standalone sheet and writes play/setsuna.html into the site repo, which the four other sheet builders then use as their template.",
+  "_tools": "doji-setsuna is a sibling generator, not a script. It and the five sheet builders in campaign/source/ are retired since M4 (2026-10-01): play/ is gone, the sheets are built from campaign/dsl/ by convert_cast.py, and the builders are kept as provenance.",
   "tools": {
     "doji_setsuna": "../../fragile-peace-support/doji-setsuna"
   },

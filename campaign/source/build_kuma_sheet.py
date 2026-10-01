@@ -45,6 +45,11 @@ import os
 import re
 import sys
 
+# Retired 2026-10-01 (campaign/PLAN.md M4): play/ is gone and the character is on the VTT sheet,
+# built from campaign/dsl/ by convert_cast.py, which carries what only this builder held
+# (FROM_THE_OLD_SHEETS, OWNER_RULINGS, CORRECTIONS; check_sheets.py proves it). Kept as provenance.
+sys.exit('build_kuma_sheet.py is retired: play/ was removed at M4 (fragile-peace/campaign/PLAN.md); the sheet is built by campaign/source/convert_cast.py')
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from config import cfg

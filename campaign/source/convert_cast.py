@@ -29,6 +29,11 @@ import json, os, re, sys
 HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(HERE, 'campaign/source'))
 from corpus_index import load, resolve  # noqa: E402
+# The site's house corrections (owner rulings on names, and its orthography: "Shinjō"), applied to what
+# the table wrote — family, ninjō, giri, description, notes — and never to a book's own names (a
+# technique, the XP ledger's item names) or to Foundry's name for the actor, kept verbatim as a record.
+# verify_site.py states the same rule for the old sheets: authored data the house way, quoted text exact.
+from archivist import correct as house  # noqa: E402
 
 SAMURAI = '#L5R003xY4zA6bC8dE0fG2hI ^"Samurai"'
 TECH, ADV, DIS = '#L5R350fG9hI1jK3lM5nO7p ^"Technique"', '#L5R263hI5jK7lM9nO1pQ3r ^"Advantage"', '#L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage"'
@@ -64,7 +69,7 @@ SHEETS = [x for x in SHEETS if x[2]]
 GM_SHEETS = []   # this campaign keeps no separate GM layer: everything on the site is the table's
 # (sheets, the .actor file, EXTENSION id, its NAME, what the file's header says)
 LAYERS = [
-    (SHEETS, 'campaign/dsl/fragile-peace-cast.actor', 'FragilePeace_Cast', 'The Fragile Peace — the cast', '0.1.0',
+    (SHEETS, 'campaign/dsl/fragile-peace-cast.actor', 'FragilePeace_Cast', 'The Fragile Peace — the cast', '0.1.1',
      'The cast: instances of the Samurai ACTOR in the corpus\'s pregen conventions.'),
 ]
 
@@ -82,22 +87,78 @@ OWNER_RULINGS = {
         'why': 'a major glory award for his conduct in the war, +6, awarded out of play at his '
                'capture (owner, 2026-09-29; campaign/CORRECTION-PASS.md)',
     },
+    # Foundry's giri stops mid-sentence and holds no fuller copy; the owner supplied the ending, so
+    # what is published is the export's own words finished, not rewritten. It lived only in the
+    # retiring build_kuma_sheet.py (GIRI_COMPLETED) until M4's check against the old sheet found it.
+    ('#FPpcTonboKuma', 'Giri'): {
+        'before': "To represent the Dragon Clan's interests in ",
+        'after': "To represent the Dragon Clan's interests in the City of the Rich Frog.",
+        'why': 'the ending supplied by the owner, 2026-09-26 (build_kuma_sheet.py)',
+    },
+}
+
+# Corrections to an export's own text, each with the evidence for it, applied as a replacement so that
+# an export which already carries the corrected text passes through untouched.
+CORRECTIONS = {
+    # The export spells her horse two ways; its own notes and the owner's dossier both say Kogarashi
+    # (the retiring doji-setsuna/build/build_sheet.py made the same fix).
+    ('#FPpcDojiSetsuna', 'Ninjō'): {'replace': ('Kogorashi', 'Kogarashi'),
+                                    'why': 'the horse is Kogarashi in the notes and the dossier'},
 }
 
 
 def ruled(pid, field, value):
-    """The owner's value for a field, where they have ruled one; otherwise the export's."""
+    """The owner's value for a field, where they have ruled one (or a recorded correction applies);
+    otherwise the export's."""
+    c = CORRECTIONS.get((pid, field))
+    if c:
+        old, new = c['replace']
+        if old in value:
+            return value.replace(old, new)
+        print('  CORRECTIONS (%s %s) found no %r — the export may be fixed; delete the entry'
+              % (pid, field, old), file=sys.stderr)
+        return value
     r = OWNER_RULINGS.get((pid, field))
     if not r:
         return value
     if value == r['before']:
         return r['after']
     if value == r['after']:
-        print('  OWNER_RULINGS (%s %s) is no longer needed — the export carries %d itself'
+        print('  OWNER_RULINGS (%s %s) is no longer needed — the export carries %r itself'
               % (pid, field, r['after']), file=sys.stderr)
         return value
     raise Unresolved('%s %s is %r in the export, neither the pre-ruling %r nor the ruled %r: %s'
                      % (pid, field, value, r['before'], r['after'], r['why']))
+
+
+# What the retiring play/ sheets showed that no Foundry export carries: each builder's own constants,
+# verbatim, found by M4's check against the old sheets (campaign/source/check_sheets.py). Properties
+# the Samurai ACTOR does not declare; the sheet lists them with the biography. The current sheet only.
+#   Setsuna — from fragile-peace-support/doji-setsuna/build/build_sheet.py (the owner's dossier):
+#   the standing Void wound, the register of her bushidō, her horse, and what is "in hand, unspent".
+#   Anzu — from build_anzu_sheet.py: what the sheet is for.
+FROM_THE_OLD_SHEETS = {
+    '#FPpcDojiSetsuna': [
+        ('Afflictions', ['Void Wound — severe, partially healed: Sustained during the termination. '
+                         'Increases the TN of Void-stance and Void-skill checks rather than reducing pool '
+                         'capacity. It has persisted across the whole arc of the campaign and does not clear '
+                         'on a scene reset.']),
+        ('Bushido Register', 'Rigid acquiescence'),
+        ('Mounts', ['Kogarashi: A white Utaku steed with a silver mane and tail — lean, swift, always '
+                    'poised. A wedding gift from the Shinjō family, and the one being to whom her warmth '
+                    'flows unmediated. Her distinctive Utaku breeding marks Setsuna at distance to any '
+                    'Unicorn who sees her.']),
+        ('In Hand, Unspent', ['Two boons, owed by the Lion. Unspent and unspecified, taken in the tent at '
+                              'session 53 when they were left choosing between giving ground and owing her.',
+                              'Next Social skill check against Miya Satoshi: TN −4, to a minimum of TN 1. '
+                              'Worth spending on a Social (Water) check so Shallow Waters can buy his ninjō '
+                              'at two opportunities.']),
+    ],
+    '#FPpcShinjoAnzu': [
+        ('Not a Campaign Character', 'Shinjō Anzu does not appear in the chronicle and is not played. She is '
+                                     "Shinjō Harunobu's older sister, and this sheet exists to try the build."),
+    ],
+}
 
 
 # Items Foundry files under the wrong type. The value is the entity that actually grants the
@@ -202,6 +263,20 @@ def fields(D, d, archived=False, pid=None):
             else: raise Unresolved('%s: a peculiarity of no known kind (%s)' % (nm, k))
         elif t == 'title':
             h, cn = ref(D, 'title', nm); titles.append('%s ^"%s"' % (h, cn))
+            # the title's own As Recorded before its items', in the order the sheet holds them
+            if cn != nm.replace('\u2019', "'"):
+                recorded.append(AS_RECORDED_FIX.get(nm, nm))
+                cn = nm.replace('\u2019', "'")
+            # A technique bought through a title is the title's own item (`system.items`), not a
+            # top-level one — the character has it all the same. Its XP is already in the title's
+            # xp_used, so only the technique itself is taken; the title's advancements are skipped.
+            subs = si.get('items') or []
+            for sub in (subs.values() if isinstance(subs, dict) else subs):
+                if sub.get('type') != 'technique' or (sub.get('system') or {}).get('technique_type') in COMES_WITH:
+                    continue
+                sh, scn = ref(D, 'technique', sub['name']); techs.append('%s ^"%s"' % (sh, scn))
+                if scn != sub['name'].replace('\u2019', "'"):
+                    recorded.append(AS_RECORDED_FIX.get(sub['name'], sub['name']))
         elif t == 'bond':
             # A bond is named for the person it is with — "Doji Setsuna", "Shinjō Harunobu" — and
             # the corpus entity is the KIND of bond, which Foundry keeps separately as
@@ -254,7 +329,7 @@ def fields(D, d, archived=False, pid=None):
         '^"Name" STRING %s FIXED' % q(NAME),
     ] + (['^"Foundry Name" STRING %s' % q(d['name'])] if d['name'] != NAME else []) + [
         '^"Clan" STRING %s FIXED' % q(idn['clan']),
-        '^"Family" STRING %s FIXED' % q(idn['family']),
+        '^"Family" STRING %s FIXED' % q(house(idn['family'])),
         '^"School" STRING %s' % q(sch),
         '^"School Rank" INTEGER %d' % idn['school_rank'],
         '^"Roles" LIST OF STRING [%s]' % ', '.join(q(x.strip()) for x in idn['roles'].split(',') if x.strip()),
@@ -265,8 +340,8 @@ def fields(D, d, archived=False, pid=None):
         '^"Endurance" INTEGER %d' % s['endurance'], '^"Composure" INTEGER %d' % s['composure'],
         '^"Focus" INTEGER %d' % s['focus'], '^"Vigilance" INTEGER %d' % s['vigilance'],
         '^"Void Points" INTEGER %d' % s['void_points']['max'],
-        '^"Ninjō" STRING %s' % q(so['ninjo']),
-        '^"Giri" STRING %s' % q(so['giri']),
+        '^"Ninjō" STRING %s' % q(house(ruled(pid, 'Ninjō', so['ninjo']))),
+        '^"Giri" STRING %s' % q(house(ruled(pid, 'Giri', so['giri']))),
         '^"Skills" LIST OF STRING [%s]' % ', '.join(q(x) for x in skills),
         '^"Techniques" LIST OF %s [%s]' % (TECH, ', '.join(techs)),
         '^"Advantages" LIST OF %s [%s]' % (ADV, ', '.join(adv)),
@@ -285,10 +360,13 @@ def fields(D, d, archived=False, pid=None):
     P.append('^"Stance" STRING %s' % q(s['stance'].title()))
     for key, label in (('description', 'Description'), ('notes', 'Notes')):
         if html_text(s[key]):
-            P.append('^"%s" STRING %s' % (label, q(html_text(s[key]))))
+            P.append('^"%s" STRING %s' % (label, q(house(html_text(s[key])))))
     if archived:
         P += ['^"Strife" INTEGER %d' % s['strife']['value'], '^"Fatigue" INTEGER %d' % s['fatigue']['value']]
     if recorded: P.append('^"As Recorded" LIST OF STRING [%s]' % ', '.join(q(x) for x in recorded))
+    if not archived:
+        for k, v in FROM_THE_OLD_SHEETS.get(pid, []):
+            P.append('^"%s" %s' % (k, ('LIST OF STRING [%s]' % ', '.join(q(x) for x in v)) if isinstance(v, list) else 'STRING ' + q(v)))
     return P
 
 

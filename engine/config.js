@@ -54,9 +54,14 @@ window.VttConfig = {
     // not exist yet would 404 on every page, so each entry arrives with its file.
     styles: [],
     stages: {
-      // the campaign's own book (M3): the cast and the companions, built from campaign/dsl/
-      data: ['campaign/data/index.js'],
-      site: [], gm: [], table: [], play: [],
+      // the campaign's own book (M3): the cast and the companions, built from campaign/dsl/; and the
+      // portraits the retired play/ sheets showed (M4)
+      data: ['campaign/data/index.js', 'campaign/site/portraits.js'],
+      site: [],
+      // a player's saves from the retired play/ sheets, taken once into their party member (M4)
+      gm: ['campaign/site/import-old-sheet.js'],
+      table: [],
+      play: ['campaign/site/import-old-sheet.js'],
     },
   },
   worker: {

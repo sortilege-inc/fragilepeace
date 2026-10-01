@@ -73,10 +73,12 @@ FLASHBACK_SESSIONS = set(range(10, 18))
 # only because he was statted. That stopped being true: he has been played since
 # his parole in session 58, and Tonbo Kuma since session 57. Both are in
 # CURRENT_PARTY above and recategorised to "pc" in archivist.RECAT.
-PLAYABLE = {"Doji Setsuna": "play/setsuna.html",
-            "Matsu Morozane": "play/morozane.html",
-            "Shinjō Harunobu": "play/harunobu.html",
-            "Tonbo Kuma": "play/kuma.html"}
+# Since M4 (2026-10-01) every one of them plays on the VTT's player page, which is outside the site
+# root (a sibling of campaign/), as Portents & Fortunes' do; play/ is gone.
+PLAYABLE = {"Doji Setsuna": "../gm/play.html",
+            "Matsu Morozane": "../gm/play.html",
+            "Shinjō Harunobu": "../gm/play.html",
+            "Tonbo Kuma": "../gm/play.html"}
 
 # Hand-authored dossiers under character/. Setsuna's is also reachable from
 # character/index.html; an NPC's entity page is the only route to theirs.

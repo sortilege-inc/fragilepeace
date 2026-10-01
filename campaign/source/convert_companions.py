@@ -47,6 +47,29 @@ COMPANIONS = [
      'fvtt-Actor-tonbo-kuma-manifest-water-kami.json', ('#FPpcTonboKuma', 'Tonbo Kuma')),
 ]
 
+# A companion with no export: transcribed by the retiring build_morozane_sheet.py from the owner's
+# Foundry screenshots (2026-08-12), and found missing by M4's check against the old sheet. Its numbers
+# are that transcription's, as the old sheet showed them; its two abilities are named there and their
+# text is the corpus's Hunting Cat's (core, p. 327), verbatim. Replace with a real export when one lands.
+TRANSCRIBED = [
+    ('#FPnpcShigoNoChinmoku', 'Shigo no Chinmoku', ('#FPpcMatsuMorozane', 'Matsu Morozane'), [
+        '^"Name" STRING "Shigo no Chinmoku" FIXED',
+        '^"Type" STRING "Adversary" FIXED',
+        '^"Companion Of" #FPpcMatsuMorozane ^"Matsu Morozane"',
+        '^"Combat Conflict Rank" INTEGER 6',
+        '^"Intrigue Conflict Rank" INTEGER 1',
+        '^"Rings" DEF { ^"Air" INTEGER 4 ^"Earth" INTEGER 2 ^"Fire" INTEGER 1 ^"Water" INTEGER 3 ^"Void" INTEGER 1 }',
+        '^"Demeanor" STRING "Opportunistic"',
+        '^"Social Skill Check TN Modifiers" STRING "Water +2, Fire -2"',
+        '^"Endurance" INTEGER 7', '^"Composure" INTEGER 11', '^"Focus" INTEGER 5', '^"Vigilance" INTEGER 3',
+        '^"Skills" LIST OF STRING ["Martial 3"]',
+    ], "Lion · Animal Bond companion. Transcribed from the owner's Foundry screenshots (2026-08-12), not "
+       "from an export. Verify before leaning on the numbers.\n\n"
+       "Pouncing Predator: A hunting cat is a silhouette 3 creature. When performing an Attack action check "
+       "against an unaware or Prone target, it may spend (op) as follows: (op): The target suffers the "
+       "Disoriented condition.\n\n"
+       "Savage Mauling: Disoriented targets cannot defend against damage dealt by a hunting cat."),
+]
 ADVANTAGE_TYPES, DISADVANTAGE_TYPES = {'distinction', 'passion'}, {'adversity', 'anxiety'}
 RINGS = ('air', 'earth', 'fire', 'water', 'void')
 
@@ -162,9 +185,13 @@ def main():
                       % (fn, eid, name, NPC,
                          '\n'.join('            ' + p for p in P),
                          ('        DESCRIPTION %s\n' % q(desc)) if desc else ''))
+    for eid, name, owner, P, desc in TRANSCRIBED:
+        blocks.append('    # Transcribed (no export): the retiring build_morozane_sheet.py.\n    %s ^"%s" DEF {\n        EXTENDS %s\n'
+                      '        PROPERTIES {\n%s\n        }\n        DESCRIPTION %s\n    }\n'
+                      % (eid, name, NPC, '\n'.join('            ' + p for p in P), q(desc.replace('\\n', '\n'))))
     body = ('EXTENSION "FragilePeace_Companions" {\n'
             '    NAME "The Fragile Peace — the companions"\n'
-            '    VERSION "0.1.0"\n'
+            '    VERSION "0.1.1"\n'
             '    SPEC_VERSION "0.5"\n'
             '    RELEASE_DATE "2026-09-29"\n'
             '    DEPENDS_ON "L5R5e_Core_Core"\n\n'

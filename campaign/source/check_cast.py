@@ -15,8 +15,9 @@ import json, os, re, sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(HERE, 'campaign/source'))
+from archivist import correct as house  # noqa: E402  (the site's house corrections; convert_cast.py)
 from convert_cast import (SHEETS, GM_SHEETS, FOUNDRY, ALIAS, SCHOOL_ALIAS,  # noqa: E402
-                          AS_RECORDED_FIX, OWNER_RULINGS, MISCLASSIFIED)
+                          AS_RECORDED_FIX, OWNER_RULINGS, CORRECTIONS, MISCLASSIFIED)
 
 # each group of sheets against its own built layer (a book of its own)
 LAYERS = [(SHEETS, 'campaign/data/campaign.js')]
@@ -97,6 +98,31 @@ def plain(n):
     return ALIAS.get(n, n)
 
 
+def held(items):
+    """Every item the character holds, a title's own items after it: a technique bought through a
+    title lives in that title's `system.items`, not at the top level (Harunobu's Righteous Example and
+    Heartpiercing Strike; Morozane's six; Setsuna's Shallow Waters and three kata)."""
+    for i in items:
+        yield i
+        if i['type'] == 'title':
+            subs = (i.get('system') or {}).get('items') or []
+            for j in (subs.values() if isinstance(subs, dict) else subs):
+                yield j
+
+
+def ruled_text(eid, field, v):
+    """The text the layer must hold: the export's, with an owner ruling or a recorded correction applied."""
+    for table in (OWNER_RULINGS, CORRECTIONS):
+        r = table.get((eid, field))
+        if not r:
+            continue
+        if 'replace' in r and r['replace'][0] in v:
+            return v.replace(*r['replace'])
+        if 'before' in r and v == r['before']:
+            return r['after']
+    return v
+
+
 def compare(label, name, d, P, archived=None, eid=None):
     s, rows = d['system'], []
     def eq(field, old, new):
@@ -105,7 +131,7 @@ def compare(label, name, d, P, archived=None, eid=None):
     eq('name = the id\'s', name, P.get('Name'))
     eq('Foundry\'s name, verbatim (Foundry Name, or Name when the same)', d['name'], P.get('Foundry Name', P.get('Name')))
     eq('identity.clan', idn['clan'], P.get('Clan'))
-    eq('identity.family', idn['family'], P.get('Family'))
+    eq('identity.family (house spelling)', house(idn['family']), P.get('Family'))
     sch = re.sub(r' School$', '', re.sub(r' \[[^\]]+\]$', '', idn['school']))
     eq('identity.school (less " School", "[Clan]"; SCHOOL_ALIAS)', SCHOOL_ALIAS.get(sch, sch), P.get('School'))
     eq('identity.school_rank', idn['school_rank'], P.get('School Rank'))
@@ -120,8 +146,8 @@ def compare(label, name, d, P, archived=None, eid=None):
         if r and want == r['before']:
             want = r['after']
         eq('social.' + k + (' (owner ruling)' if r and want != so[k] else ''), want, P.get(k.title()))
-    eq('social.ninjo', so['ninjo'], P.get('Ninjō'))
-    eq('social.giri', so['giri'], P.get('Giri'))
+    eq('social.ninjo', house(ruled_text(eid, 'Ninjō', so['ninjo'])), P.get('Ninjō'))
+    eq('social.giri', house(ruled_text(eid, 'Giri', so['giri'])), P.get('Giri'))
     eq('social.bushido_tenets.paramount', so['bushido_tenets']['paramount'], (P.get('Bushido') or {}).get('Paramount Tenet'))
     eq('social.bushido_tenets.less_significant', so['bushido_tenets']['less_significant'], (P.get('Bushido') or {}).get('Less Significant Tenet'))
     for k in ('endurance', 'composure', 'focus', 'vigilance'):
@@ -135,8 +161,8 @@ def compare(label, name, d, P, archived=None, eid=None):
     nz = sorted((k, v) for g in s['skills'].values() for k, v in g.items() if v)
     got = sorted((re.sub(r'^Martial Arts \[(\w+)\]$', lambda m: m.group(1).lower(), x.rsplit(' ', 1)[0]).lower(), int(x.rsplit(' ', 1)[1])) for x in P.get('Skills') or [])
     eq('skills (every non-zero rank)', nz, got)
-    eq('techniques (less the school/title ability)',
-       [plain(i['name']) for i in items if i['type'] == 'technique'
+    eq('techniques, a title\'s own included (less the school/title ability)',
+       [plain(i['name']) for i in held(items) if i['type'] == 'technique'
         and i['system'].get('technique_type') not in COMES_WITH], P.get('Techniques'))
     # An item Foundry types wrongly, which really comes with a title, is absent from the layer like
     # any other title ability — and the title that grants it has to be on the sheet.
@@ -160,7 +186,7 @@ def compare(label, name, d, P, archived=None, eid=None):
     money = s.get('zeni') or 0
     eq('gear names + money', [i['name'] for i in items if i['type'] in ('weapon', 'armor', 'item')] + (['%d zeni' % money] if money else []), P.get('Equipment'))
     # A bond's recorded name is always the partner, because the entity is the kind.
-    recorded = [AS_RECORDED_FIX.get(i['name'], i['name']) for i in items
+    recorded = [AS_RECORDED_FIX.get(i['name'], i['name']) for i in held(items)
                 if i['type'] in ('technique', 'peculiarity', 'title', 'bond')
                 and i['system'].get('technique_type') not in COMES_WITH
                 and (i['type'] == 'bond' or plain(i['name']) != i['name'].replace('\u2019', "'"))]
@@ -172,7 +198,7 @@ def compare(label, name, d, P, archived=None, eid=None):
        {'koku': 0, 'bu': 0, 'zeni': 0} | {k: (v or 0) for k, v in (s.get('money') or {}).items()})
     for key in ('description', 'notes'):
         # the rich text read here with the stdlib parser, not the converter's regex
-        eq(key + ' (as text, a line a paragraph)', text_of(s[key]), P.get(key.title(), ''))
+        eq(key + ' (as text, a line a paragraph; house spelling)', house(text_of(s[key])), P.get(key.title(), ''))
     left = [i['type'] + ':' + i['name'] for i in items if i['type'] not in ('technique', 'peculiarity', 'title', 'bond', 'weapon', 'armor', 'item', 'advancement')]
     eq('no item of another type', [], [x for x in left if not x.startswith('signature_scroll:')])
     if archived:

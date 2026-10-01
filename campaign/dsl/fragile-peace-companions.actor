@@ -1,6 +1,6 @@
 EXTENSION "FragilePeace_Companions" {
     NAME "The Fragile Peace — the companions"
-    VERSION "0.1.0"
+    VERSION "0.1.1"
     SPEC_VERSION "0.5"
     RELEASE_DATE "2026-09-29"
     DEPENDS_ON "L5R5e_Core_Core"
@@ -77,5 +77,26 @@ EXTENSION "FragilePeace_Companions" {
             ^"Gear" LIST OF STRING ["Enshrouding Fog (Physical 3, Supernatural 4)"]
         }
         DESCRIPTION "Water kami usually take the form of a humanoid torso rising from a source of water; if they have legs, these are often obscured within the water or become visible only if the kami stride onto land. The forms of these kami shift and change as circumstances require, and they can even split themselves to act in multiple places at once and reabsorb damaged copies to restore their own vitality.\n\nLiving Water Spirit: A manifest kami is an Otherworldly being. Additionally, once per scene as an action of the appropriate types, a manifest water kami may perform any one Water invocation other than Rise, Water. It counts as succeeding with 3 bonus successes and 2 (op)."
+    }
+
+    # Transcribed (no export): the retiring build_morozane_sheet.py.
+    #FPnpcShigoNoChinmoku ^"Shigo no Chinmoku" DEF {
+        EXTENDS #t4540de6f35155c46f41f0 ^"NPC"
+        PROPERTIES {
+            ^"Name" STRING "Shigo no Chinmoku" FIXED
+            ^"Type" STRING "Adversary" FIXED
+            ^"Companion Of" #FPpcMatsuMorozane ^"Matsu Morozane"
+            ^"Combat Conflict Rank" INTEGER 6
+            ^"Intrigue Conflict Rank" INTEGER 1
+            ^"Rings" DEF { ^"Air" INTEGER 4 ^"Earth" INTEGER 2 ^"Fire" INTEGER 1 ^"Water" INTEGER 3 ^"Void" INTEGER 1 }
+            ^"Demeanor" STRING "Opportunistic"
+            ^"Social Skill Check TN Modifiers" STRING "Water +2, Fire -2"
+            ^"Endurance" INTEGER 7
+            ^"Composure" INTEGER 11
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 3
+            ^"Skills" LIST OF STRING ["Martial 3"]
+        }
+        DESCRIPTION "Lion · Animal Bond companion. Transcribed from the owner's Foundry screenshots (2026-08-12), not from an export. Verify before leaning on the numbers.\n\nPouncing Predator: A hunting cat is a silhouette 3 creature. When performing an Attack action check against an unaware or Prone target, it may spend (op) as follows: (op): The target suffers the Disoriented condition.\n\nSavage Mauling: Disoriented targets cannot defend against damage dealt by a hunting cat."
     }
 }
